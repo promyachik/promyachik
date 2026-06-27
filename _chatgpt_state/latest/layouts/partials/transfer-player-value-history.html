@@ -149,10 +149,16 @@
             <h2 class="transfer-value-history__title">Динамика стоимости {{ .Params.player }}</h2>
         </div>
 
-        {{ with .Params.market_value }}
+        {{ with .Params.market_value_display }}
             <div class="transfer-value-history__current">
                 Сейчас: {{ . }}
             </div>
+        {{ else }}
+            {{ with .Params.market_value }}
+                <div class="transfer-value-history__current">
+                    Сейчас: {{ . }}
+                </div>
+            {{ end }}
         {{ end }}
     </div>
 
@@ -165,10 +171,7 @@
                 </div>
 
                 <div class="transfer-value-history__bar-wrap">
-                    <div
-                        class="transfer-value-history__bar"
-                        style="height: {{ $height }}px"
-                    ></div>
+                    <div class="transfer-value-history__bar" style="height: {{ $height }}px"></div>
                 </div>
 
                 <div class="transfer-value-history__label">

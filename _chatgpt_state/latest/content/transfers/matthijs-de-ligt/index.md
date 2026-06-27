@@ -11,7 +11,10 @@ status: "official"
 player: "Matthijs de Ligt"
 player_initials: "MDL"
 player_id: 532
-player_image: "images/players/cutout/532.png"
+player_image: "images/players/cutout/532-de-ligt-real.png"
+api_player_image: "images/players/cutout/532-de-ligt-real.png"
+cutout_player_image: "images/players/cutout/532-de-ligt-real.png"
+ticker_image: "images/players/cutout/532-de-ligt-real.png"
 player_image_source_name: "UniqRenders"
 player_image_source_url: "https://uniqrenders.com/athletes/football/matthijs-de-ligt-manchester-united-premier-league-netherlands-dutch-footballers-5248"
 player_image_background_removed: true
@@ -34,7 +37,8 @@ to_club_logo: "images/clubs/api/33.png"
 fee: "€45 млн + €5 млн бонусами"
 source_name: "Manchester United"
 source_url: ""
-market_value: "€65M"
+market_value: "65 млн евро"
+market_value_display: "€65M"
 
 value_history:
   - date: "2019"
