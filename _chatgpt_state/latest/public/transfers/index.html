@@ -230,9 +230,10 @@
 
 </header>
 
-<style id="pf-top-ticker-stronger-dividers-141">
+<style id="pf-top-ticker-all-seam-dividers-142">
  
 
+ 
 .pf-ticker__badge .pf-ticker__live-dot,
 .pf-ticker__live-dot {
     display: none !important;
@@ -250,19 +251,17 @@
     gap: 0 !important;
 }
 
+ 
 .pf-ticker__group > .pf-ticker__item {
     position: relative !important;
+    margin-right: 18px !important;
+    padding-right: 22px !important;
 }
 
-.pf-ticker__group > .pf-ticker__item + .pf-ticker__item {
-    margin-left: 18px !important;
-    padding-left: 22px !important;
-}
-
-.pf-ticker__group > .pf-ticker__item + .pf-ticker__item::before {
+.pf-ticker__group > .pf-ticker__item::after {
     content: "" !important;
     position: absolute !important;
-    left: 0 !important;
+    right: 0 !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     width: 1px !important;
