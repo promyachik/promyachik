@@ -1,0 +1,42 @@
+START 123 DE LIGT NO AVATAR OVERLAY + MARKET VALUE TEXT
+Fixes:
+1) player initials/placeholder no longer appears behind or next to real player image
+2) market value no longer renders as double euro / double millions
+Does NOT change the De Ligt photo file/source.
+Does NOT touch Ramos, Endrick, favicon, ticker-template, or var folders.
+
+AVATAR FALLBACK PATCH COUNT: 2
+MARKET VALUE PATCH COUNT: 1
+BACKUP: layouts\transfers\single.html -> _backup_123_de_ligt_no_avatar_overlay\layouts-transfers-single.before_123_20260627_215414.html
+OK: layout patched
+OK: De Ligt page market value already normalized or unchanged
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4530 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1760 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: layout now hides initials fallback when player image exists
+OK: old market value builder removed
+OK: public HTML has no double euro market value
+OK: public HTML still has dynamic value block

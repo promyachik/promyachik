@@ -457,14 +457,13 @@
                                 aria-label="Открыть страницу игрока {{ .Params.player }}"
                             >
 
-                                <span class="player-brief__avatar-fallback">
-                                    {{ default
-                                        "PF"
-                                        $page.Params.player_initials
-                                    }}
-                                </span>
+                                {{ if not $playerImage }}
+                                    <span class="player-brief__avatar-fallback">
+                                        {{ default "PF" $page.Params.player_initials }}
+                                    </span>
+                                {{ end }}
 
-                                {{ with $playerImage }}
+{{ with $playerImage }}
 
                                     <img
                                         src="{{ . }}"
@@ -492,14 +491,13 @@
 
                             <div class="player-brief__avatar">
 
-                                <span class="player-brief__avatar-fallback">
-                                    {{ default
-                                        "PF"
-                                        $page.Params.player_initials
-                                    }}
-                                </span>
+                                {{ if not $playerImage }}
+                                    <span class="player-brief__avatar-fallback">
+                                        {{ default "PF" $page.Params.player_initials }}
+                                    </span>
+                                {{ end }}
 
-                                {{ with $playerImage }}
+{{ with $playerImage }}
 
                                     <img
                                         src="{{ . }}"
@@ -840,13 +838,16 @@
 
                     {{ end }}
 
-                    {{ with .Params.market_value }}
 
-                        {{ $marketValueAmount := replaceRE
-                            `(?i)\s*(млн\.?|миллионов?)\s*(евро|€)?\s*$`
-                            ""
-                            .
-                        }}
+                    {{ $marketValueText := default "" .Params.market_value_display }}
+
+                    {{ if not $marketValueText }}
+                        {{ with .Params.market_value }}
+                            {{ $marketValueText = . }}
+                        {{ end }}
+                    {{ end }}
+
+                    {{ with $marketValueText }}
 
                         <div>
 
@@ -875,35 +876,13 @@
                                         href="{{ $marketValueURL }}"
                                         title="Открыть историю рыночной стоимости"
                                     >
-
-                                        <span
-                                            class="player-brief__currency"
-                                            aria-hidden="true"
-                                        >
-                                            €
-                                        </span>
-
-                                        <span>
-                                            {{ $marketValueAmount }} миллионов
-                                        </span>
-
+                                        <span>{{ . }}</span>
                                     </a>
 
                                 {{ else }}
 
                                     <span class="player-brief__market-value">
-
-                                        <span
-                                            class="player-brief__currency"
-                                            aria-hidden="true"
-                                        >
-                                            €
-                                        </span>
-
-                                        <span>
-                                            {{ $marketValueAmount }} миллионов
-                                        </span>
-
+                                        <span>{{ . }}</span>
                                     </span>
 
                                 {{ end }}
@@ -913,6 +892,7 @@
                         </div>
 
                     {{ end }}
+
 
                 </dl>
 
