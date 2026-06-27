@@ -226,39 +226,7 @@
 }}
 
 <style>
-/* Step 138: soft gold separators between transfers in the TOP ticker only. */
-.pf-ticker__item {
-    position: relative;
-    margin-right: 18px !important;
-    padding-right: 24px !important;
-}
-
-.pf-ticker__item::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 7px;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 18px;
-    border-radius: 999px;
-    background: linear-gradient(
-        180deg,
-        rgba(212, 175, 55, 0) 0%,
-        rgba(212, 175, 55, 0.16) 14%,
-        rgba(212, 175, 55, 0.48) 50%,
-        rgba(212, 175, 55, 0.16) 86%,
-        rgba(212, 175, 55, 0) 100%
-    );
-    box-shadow: 0 0 8px rgba(212, 175, 55, 0.10);
-    pointer-events: none;
-}
-
-.pf-ticker__group > .pf-ticker__item:last-child::after {
-    display: none;
-}
-
-    .pf-ticker__player-photo {
+.pf-ticker__player-photo {
         display: inline-flex;
         align-items: center;
         justify-content: center;

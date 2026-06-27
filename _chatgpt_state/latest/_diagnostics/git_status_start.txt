@@ -56,6 +56,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 136_TOP_TICKER_BLACK_ONLY.bat
 ?? 137_REMOVE_TOP_TICKER_PLAYER_PHOTO_FRAME.bat
 ?? 138_TOP_TICKER_SOFT_GOLD_SEPARATORS.bat
+?? 139_REMOVE_BAD_TOP_TICKER_SEPARATORS.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -99,6 +100,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _136_top_ticker_black_only_report_20260627_233619.txt
 ?? _137_remove_top_ticker_player_photo_frame_report_20260627_234019.txt
 ?? _138_top_ticker_soft_gold_separators_report_20260627_234613.txt
+?? _139_remove_bad_top_ticker_separators_report_20260627_234838.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -130,10 +132,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_136_top_ticker_black_only/
 ?? _backup_137_remove_top_ticker_player_photo_frame/
 ?? _backup_138_top_ticker_soft_gold_separators/
+?? _backup_139_remove_bad_top_ticker_separators/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_136_top_ticker_black_only_report_20260627_233619.txt
-?? _chatgpt_state/latest/_latest_reports/_137_remove_top_ticker_player_photo_frame_report_20260627_234019.txt
-?? _chatgpt_state/latest/_latest_reports/_138_top_ticker_soft_gold_separators_report_20260627_234613.txt
+?? _chatgpt_state/latest/_latest_reports/_139_remove_bad_top_ticker_separators_report_20260627_234838.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

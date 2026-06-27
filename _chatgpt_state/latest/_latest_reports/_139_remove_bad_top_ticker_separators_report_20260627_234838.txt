@@ -1,7 +1,13 @@
-COMMAND: hugo
-EXIT_CODE: 0
+START 139 REMOVE BAD TOP TICKER SEPARATORS
+Goal: rollback only the bad 138 separator change.
+No ticker color changes. No photo/button/fade/text/movement changes.
 
---- STDOUT ---
+BACKUP: layouts\partials\transfer-ticker.html -> _backup_139_remove_bad_top_ticker_separators\transfer-ticker.before_139_20260627_234838.html
+OK: removed bad 138 separator CSS from upper ticker
+OK: ticker color was not changed
+OK: photos, button, fade, text, movement, logos and sizes were not changed
+HUGO EXIT CODE: 0
+HUGO STDOUT:
 Start building sites … 
 hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
 
@@ -16,11 +22,15 @@ hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2
  Aliases          │    1 
  Cleaned          │    0 
 
-Total in 1631 ms
+Total in 1764 ms
 
-
---- STDERR ---
+HUGO STDERR:
 WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
-WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
 WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
 WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: 138 separator CSS removed from transfer-ticker.html
+OK: public HTML does not contain 138 separator CSS
