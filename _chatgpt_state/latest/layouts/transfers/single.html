@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>{{ .Title }} — {{ .Site.Title }}</title>
+
+    <meta
+        name="description"
+        content="{{ .Description }}"
+    >
+
+    <link
+        rel="canonical"
+        href="{{ .Permalink }}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ "css/style.css" | relURL }}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ "css/transfer-article.css" | relURL }}"
+    >
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=sgVjfn-8kNa_I5S-NcQ4biBKkVbcXUo6M9htjIv-OyDhxb4tuSE97Juppdh9OV4pfnPu6bUa4pwtxW1Wwqqowr9WLfdScuIDGCFte8YadSThKyyy7HcPxahXlbfKKStVPBgi-v5OgV9qMb0GrHocwFUnyk6C9wtNYkv7iiBJ-3akO_D8N06g2WPAIlOmnyHR7knTPHe0RQyZb8UYfs5d9-LlNRoSajgq9RxHzlNn1RfzZ87cnYtkx8PBUDaGevBxb1opkxUo0Q7q7_-BbGQyEpyKj2GaW0zeGxu-HinenbpSHQcCm22SlqkOMvaEUJx6No87RfN0IH6cxF2XtMI2JA" charset="UTF-8"></script>{{ partial "favicon.html" . }}
+    <link rel="stylesheet" href="{{ "css/transfer-player-market-value-chart.css" | relURL }}">
+    <script defer src="{{ "js/transfer-player-market-value-chart.js" | relURL }}"></script>
+
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+</head>
+
+<body class="transfer-page">
+
+{{ partial "header.html" . }}
+
+{{ $page := . }}
+
+{{ $playerProfileURL := default "" .Params.player_url }}
+
+{{ $playerImage := default "" .Params.player_image }}
+
+{{ if and
+    $playerImage
+    (not (hasPrefix $playerImage "http://"))
+    (not (hasPrefix $playerImage "https://"))
+}}
+    {{ $playerImage = $playerImage | relURL }}
+{{ end }}
+
+{{ $playerImageAPIFallback := "" }}
+
+{{ with .Params.player_id }}
+
+    {{ $playerID := printf "%v" . }}
+
+    {{ if not $playerImage }}
+        {{ $playerImage = printf "images/players/api/%s.png" $playerID | relURL }}
+    {{ end }}
+
+    {{ $playerImageAPIFallback = printf
+        "https://media.api-sports.io/football/players/%s.png"
+        $playerID
+    }}
+
+{{ end }}
+
+{{ $playerImageSourceName := default
+    "API-Football"
+    .Params.player_image_source_name
+}}
+
+{{ $playerImageSourceURL := default
+    "https://www.api-football.com/"
+    .Params.player_image_source_url
+}}
+
+{{ $nationalityLabel := default
+    ""
+    .Params.nationality
+}}
+
+{{ $nationalityFlag := default
+    "🌍"
+    .Params.nationality_flag
+}}
+
+{{ $marketValueURL := default
+    ""
+    .Params.market_value_url
+}}
+
+{{ if and
+    (not $marketValueURL)
+    .Params.player_slug
+}}
+    {{ $marketValueURL = printf
+        "players/%s/#market-value"
+        .Params.player_slug
+        | relURL
+    }}
+{{ end }}
+
+
+{{ $statusLabels := dict
+    "rumour" "СЛУХ"
+    "negotiations" "ПЕРЕГОВОРЫ"
+    "agreement" "СОГЛАСОВАНО"
+    "confirmed" "ПОДТВЕРЖДЕНО"
+    "official" "ОФИЦИАЛЬНО"
+}}
+
+{{ $statusKey := default "rumour" .Params.status }}
+
+{{ $statusLabel := default
+    "ТРАНСФЕР"
+    (index $statusLabels $statusKey)
+}}
+
+{{ $clubLogoData := index .Site.Data "club-logos" }}
+
+{{ $clubs := dict }}
+
+{{ with $clubLogoData }}
+    {{ with .clubs }}
+        {{ $clubs = . }}
+    {{ end }}
+{{ end }}
+
+{{ $fromName := default
+    "Неизвестный клуб"
+    .Params.from_club_name
+}}
+
+{{ $fromLogo := default
+    ""
+    .Params.from_club_logo
+}}
+
+{{ with .Params.from_club_id }}
+
+    {{ $fromKey := printf "%v" . }}
+    {{ $fromClub := index $clubs $fromKey }}
+
+    {{ with $fromClub }}
+
+        {{ with .configured_name }}
+            {{ $fromName = . }}
+        {{ else }}
+            {{ with .name }}
+                {{ $fromName = . }}
+            {{ end }}
+        {{ end }}
+
+        {{ with .logo }}
+            {{ $fromLogo = . | relURL }}
+        {{ end }}
+
+    {{ end }}
+
+{{ end }}
+
+{{ $toName := default
+    "Неизвестный клуб"
+    .Params.to_club_name
+}}
+
+{{ $toLogo := default
+    ""
+    .Params.to_club_logo
+}}
+
+{{ with .Params.to_club_id }}
+
+    {{ $toKey := printf "%v" . }}
+    {{ $toClub := index $clubs $toKey }}
+
+    {{ with $toClub }}
+
+        {{ with .configured_name }}
+            {{ $toName = . }}
+        {{ else }}
+            {{ with .name }}
+                {{ $toName = . }}
+            {{ end }}
+        {{ end }}
+
+        {{ with .logo }}
+            {{ $toLogo = . | relURL }}
+        {{ end }}
+
+    {{ end }}
+
+{{ end }}
+
+<main class="transfer-article">
+
+    <nav
+        class="transfer-breadcrumbs"
+        aria-label="Хлебные крошки"
+    >
+
+        <a href="{{ .Site.Home.RelPermalink }}">
+            Главная
+        </a>
+
+        <span>/</span>
+
+        <a href="{{ "transfers/" | relURL }}">
+            Трансферы
+        </a>
+
+        <span>/</span>
+
+        <span>
+            {{ .Params.player }}
+        </span>
+
+    </nav>
+
+    <section class="transfer-stage">
+
+        <div class="transfer-stage__route">
+
+            <div class="transfer-stage__club">
+
+                <span
+                    class="transfer-stage__logo-box{{ if not $fromLogo }} is-placeholder{{ end }}"
+                >
+
+                    {{ with $fromLogo }}
+
+                        <img
+                            class="transfer-stage__logo"
+                            src="{{ . }}"
+                            alt="Логотип клуба {{ $fromName }}"
+                            onerror="
+                                this.style.display='none';
+                                this.parentElement.classList.add('is-placeholder');
+                            "
+                        >
+
+                    {{ end }}
+
+                </span>
+
+                <span class="transfer-stage__club-name">
+                    {{ $fromName }}
+                </span>
+
+            </div>
+
+            <div
+                class="transfer-stage__arrow"
+                aria-hidden="true"
+            >
+                <span></span>
+            </div>
+
+            <div class="transfer-stage__club">
+
+                <span
+                    class="transfer-stage__logo-box{{ if not $toLogo }} is-placeholder{{ end }}"
+                >
+
+                    {{ with $toLogo }}
+
+                        <img
+                            class="transfer-stage__logo"
+                            src="{{ . }}"
+                            alt="Логотип клуба {{ $toName }}"
+                            onerror="
+                                this.style.display='none';
+                                this.parentElement.classList.add('is-placeholder');
+                            "
+                        >
+
+                    {{ end }}
+
+                </span>
+
+                <span class="transfer-stage__club-name">
+                    {{ $toName }}
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="transfer-stage__identity">
+
+            <p class="transfer-stage__player">
+                {{ .Params.player }}
+            </p>
+
+            <h1>
+                {{ .Title }}
+            </h1>
+
+            <div class="transfer-stage__meta">
+
+                <span
+                    class="transfer-status transfer-status--{{ $statusKey }}"
+                >
+                    {{ $statusLabel }}
+                </span>
+
+                <time
+                    datetime="{{ .Date.Format "2006-01-02" }}"
+                >
+                    {{ .Date.Format "02.01.2006" }}
+                </time>
+
+                {{ with .Params.fee }}
+
+                    <span>
+                        {{ . }}
+                    </span>
+
+                {{ end }}
+
+            </div>
+
+            {{ with .Params.source_name }}
+
+                <p class="transfer-stage__source">
+
+                    Источник:
+
+                    {{ with $page.Params.source_url }}
+
+                        <a
+                            href="{{ . }}"
+                            target="_blank"
+                            rel="nofollow noopener"
+                        >
+                            {{ $page.Params.source_name }}
+                        </a>
+
+                    {{ else }}
+
+                        <strong>
+                            {{ . }}
+                        </strong>
+
+                    {{ end }}
+
+                </p>
+
+            {{ end }}
+
+        </div>
+
+    </section>
+
+    <section class="transfer-main-grid">
+
+        <article class="transfer-story">
+
+            <header class="transfer-story__header">
+
+                <span>
+                    ТРАНСФЕРНАЯ НОВОСТЬ
+                </span>
+
+                <p>
+                    {{ .Description }}
+                </p>
+
+            </header>
+
+            <div class="transfer-story__content">
+                {{ .Content }}
+            </div>
+
+            <footer class="transfer-story__footer">
+
+                <div>
+
+                    <span>
+                        Опубликовано
+                    </span>
+
+                    <strong>
+                        {{ .Date.Format "02.01.2006" }}
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Обновлено
+                    </span>
+
+                    <strong>
+                        {{ .Lastmod.Format "02.01.2006" }}
+                    </strong>
+
+                </div>
+
+                {{ with .Params.source_name }}
+
+                    <div>
+
+                        <span>
+                            Первоисточник
+                        </span>
+
+                        {{ with $page.Params.source_url }}
+
+                            <a
+                                href="{{ . }}"
+                                target="_blank"
+                                rel="nofollow noopener"
+                            >
+                                {{ $page.Params.source_name }}
+                            </a>
+
+                        {{ else }}
+
+                            <strong>
+                                {{ . }}
+                            </strong>
+
+                        {{ end }}
+
+                    </div>
+
+                {{ end }}
+
+            </footer>
+
+        </article>
+
+        <aside class="transfer-side-column">
+
+            <section class="player-brief">
+
+                <div class="player-brief__top">
+
+                    <div class="player-brief__photo-column">
+
+                        {{ if $playerProfileURL }}
+
+                            <a
+                                class="player-brief__avatar"
+                                href="{{ $playerProfileURL | relURL }}"
+                                aria-label="Открыть страницу игрока {{ .Params.player }}"
+                            >
+
+                                <span class="player-brief__avatar-fallback">
+                                    {{ default
+                                        "PF"
+                                        $page.Params.player_initials
+                                    }}
+                                </span>
+
+                                {{ with $playerImage }}
+
+                                    <img
+                                        src="{{ . }}"
+                                        data-api-fallback="{{ $playerImageAPIFallback }}"
+                                        alt="{{ $page.Params.player }}"
+                                        loading="lazy"
+                                        onerror="
+                                            if (
+                                                this.dataset.apiFallback &&
+                                                this.src !== this.dataset.apiFallback
+                                            ) {
+                                                this.src = this.dataset.apiFallback;
+                                                return;
+                                            }
+
+                                            this.style.display='none';
+                                        "
+                                    >
+
+                                {{ end }}
+
+                            </a>
+
+                        {{ else }}
+
+                            <div class="player-brief__avatar">
+
+                                <span class="player-brief__avatar-fallback">
+                                    {{ default
+                                        "PF"
+                                        $page.Params.player_initials
+                                    }}
+                                </span>
+
+                                {{ with $playerImage }}
+
+                                    <img
+                                        src="{{ . }}"
+                                        data-api-fallback="{{ $playerImageAPIFallback }}"
+                                        alt="{{ $page.Params.player }}"
+                                        loading="lazy"
+                                        onerror="
+                                            if (
+                                                this.dataset.apiFallback &&
+                                                this.src !== this.dataset.apiFallback
+                                            ) {
+                                                this.src = this.dataset.apiFallback;
+                                                return;
+                                            }
+
+                                            this.style.display='none';
+                                        "
+                                    >
+
+                                {{ end }}
+
+                            </div>
+
+                        {{ end }}
+
+
+                    </div>
+
+                    <div class="player-brief__identity">
+
+                        <strong>
+                            {{ .Params.player }}
+                        </strong>
+
+                        <span>
+                            {{ .Params.position }}
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <dl class="player-brief__list">
+
+                    {{ with .Params.birth_date }}
+
+                        <div>
+
+                            <dt class="player-brief__label">
+
+                                <span
+                                    class="player-brief__label-icon"
+                                    aria-hidden="true"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M7 2v3M17 2v3M3.5 9h17M5.5 4h13a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                                    </svg>
+                                </span>
+
+                                <span>Дата рождения</span>
+
+                            </dt>
+
+                            <dd>{{ . }}</dd>
+
+                        </div>
+
+                    {{ end }}
+
+                    {{ $playerAge := default
+                        .Params.age_at_transfer
+                        .Params.age
+                    }}
+
+                    {{ with $playerAge }}
+
+                        <div>
+
+                            <dt class="player-brief__label">
+
+                                <span
+                                    class="player-brief__label-icon"
+                                    aria-hidden="true"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="9" />
+                                        <path d="M12 7v5l3 2" />
+                                    </svg>
+                                </span>
+
+                                <span>Возраст</span>
+
+                            </dt>
+
+                            <dd>{{ . }} лет</dd>
+
+                        </div>
+
+                    {{ end }}
+
+                    {{ with .Params.nationality }}
+
+                        <div>
+
+                            <dt class="player-brief__label">
+
+                                <span
+                                    class="player-brief__label-icon"
+                                    aria-hidden="true"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="9" />
+                                        <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+                                    </svg>
+                                </span>
+
+                                <span>Гражданство</span>
+
+                            </dt>
+
+                            <dd class="player-brief__nationality">
+
+                                <span
+                                    class="player-brief__flag"
+                                    data-tooltip="{{ . }}"
+                                    aria-label="{{ . }}"
+                                    tabindex="0"
+                                >
+
+                                    {{ if eq . "Франция" }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 3 2"
+                                            role="img"
+                                            aria-label="Флаг Франции"
+                                        >
+                                            <rect
+                                                x="0"
+                                                y="0"
+                                                width="1"
+                                                height="2"
+                                                fill="#0055a4"
+                                            />
+                                            <rect
+                                                x="1"
+                                                y="0"
+                                                width="1"
+                                                height="2"
+                                                fill="#ffffff"
+                                            />
+                                            <rect
+                                                x="2"
+                                                y="0"
+                                                width="1"
+                                                height="2"
+                                                fill="#ef4135"
+                                            />
+                                        </svg>
+
+                                    {{ else if eq . "Германия" }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 5 3"
+                                            role="img"
+                                            aria-label="Флаг Германии"
+                                        >
+                                            <rect
+                                                x="0"
+                                                y="0"
+                                                width="5"
+                                                height="1"
+                                                fill="#000000"
+                                            />
+                                            <rect
+                                                x="0"
+                                                y="1"
+                                                width="5"
+                                                height="1"
+                                                fill="#dd0000"
+                                            />
+                                            <rect
+                                                x="0"
+                                                y="2"
+                                                width="5"
+                                                height="1"
+                                                fill="#ffce00"
+                                            />
+                                        </svg>
+
+                                    {{ else if or (eq . "Испания") (eq . "Испании") }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 6 4"
+                                            role="img"
+                                            aria-label="Флаг Испании"
+                                        >
+                                            <rect x="0" y="0" width="6" height="1" fill="#aa151b" />
+                                            <rect x="0" y="1" width="6" height="2" fill="#f1bf00" />
+                                            <rect x="0" y="3" width="6" height="1" fill="#aa151b" />
+                                        </svg>
+
+                                    {{ else if or (eq . "Нидерланды") (eq . "Нидерландов") }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 6 4"
+                                            role="img"
+                                            aria-label="Флаг Нидерландов"
+                                        >
+                                            <rect x="0" y="0" width="6" height="1.333" fill="#ae1c28" />
+                                            <rect x="0" y="1.333" width="6" height="1.334" fill="#ffffff" />
+                                            <rect x="0" y="2.667" width="6" height="1.333" fill="#21468b" />
+                                        </svg>
+
+                                    {{ else if eq . "Аргентина" }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 6 4"
+                                            role="img"
+                                            aria-label="Флаг Аргентины"
+                                        >
+                                            <rect x="0" y="0" width="6" height="1.333" fill="#74acdf" />
+                                            <rect x="0" y="1.333" width="6" height="1.334" fill="#ffffff" />
+                                            <rect x="0" y="2.667" width="6" height="1.333" fill="#74acdf" />
+                                            <circle cx="3" cy="2" r="0.32" fill="#f6b40e" />
+                                        </svg>
+
+                                    {{ else if eq . "Португалия" }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 5 3"
+                                            role="img"
+                                            aria-label="Флаг Португалии"
+                                        >
+                                            <rect x="0" y="0" width="2" height="3" fill="#046a38" />
+                                            <rect x="2" y="0" width="3" height="3" fill="#da291c" />
+                                            <circle cx="2" cy="1.5" r="0.42" fill="#ffcc00" />
+                                        </svg>
+
+                                    {{ else if eq . "Англия" }}
+
+                                        <svg
+                                            class="player-brief__flag-svg"
+                                            viewBox="0 0 6 4"
+                                            role="img"
+                                            aria-label="Флаг Англии"
+                                        >
+                                            <rect x="0" y="0" width="6" height="4" fill="#ffffff" />
+                                            <rect x="2.5" y="0" width="1" height="4" fill="#cf142b" />
+                                            <rect x="0" y="1.5" width="6" height="1" fill="#cf142b" />
+                                        </svg>
+
+                                    {{ else }}
+
+                                        <span class="player-brief__flag-fallback">
+                                            {{ . }}
+                                        </span>
+
+                                    {{ end }}
+
+                                </span>
+
+                            </dd>
+
+                        </div>
+
+                    {{ end }}
+
+                    {{ with .Params.preferred_foot }}
+
+                        <div>
+
+                            <dt class="player-brief__label">
+
+                                <span
+                                    class="player-brief__label-icon player-brief__label-icon--foot"
+                                    aria-hidden="true"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.2 5.8C8.55 5.8 8.02 6.33 8.02 6.98V10.68C8.02 11.54 7.71 12.37 7.15 13.03L5.58 14.89C4.98 15.61 5.27 16.72 6.14 17.05L11.26 19.03C12.13 19.37 13.11 18.91 13.42 18.03L14.35 15.42C14.63 14.63 15.14 13.95 15.82 13.47L17.27 12.45C18.04 11.91 17.99 10.75 17.17 10.29L15.34 9.26C14.75 8.93 14.28 8.44 13.99 7.84L13.45 6.72C13 5.79 11.93 5.37 11 5.78L10.73 5.9C10.26 6.1 9.73 6.05 9.2 5.8Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.8"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M14.55 7.15L15.15 6.35"
+                                            stroke="currentColor"
+                                            stroke-width="1.8"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M15.95 8L16.78 7.46"
+                                            stroke="currentColor"
+                                            stroke-width="1.8"
+                                            stroke-linecap="round"
+                                        />
+                                        <path
+                                            d="M17.02 9.35L17.98 9.18"
+                                            stroke="currentColor"
+                                            stroke-width="1.8"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                </span>
+
+                                <span>Рабочая нога</span>
+
+                            </dt>
+
+                            <dd class="player-brief__foot">
+
+                                <span
+                                    class="player-brief__boot"
+                                    aria-hidden="true"
+                                >
+                                    <img
+                                        src="{{ "images/icons/football-boot-variant-1.png" | relURL }}"
+                                        alt=""
+                                    >
+                                </span>
+
+                                <small>{{ . }}</small>
+
+                            </dd>
+
+                        </div>
+
+                    {{ end }}
+
+                    {{ with .Params.market_value }}
+
+                        {{ $marketValueAmount := replaceRE
+                            `(?i)\s*(млн\.?|миллионов?)\s*(евро|€)?\s*$`
+                            ""
+                            .
+                        }}
+
+                        <div>
+
+                            <dt class="player-brief__label">
+
+                                <span
+                                    class="player-brief__label-icon"
+                                    aria-hidden="true"
+                                >
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M4 18 9 13l3 3 7-8" />
+                                        <path d="M14 8h5v5" />
+                                    </svg>
+                                </span>
+
+                                <span>Рыночная стоимость</span>
+
+                            </dt>
+
+                            <dd>
+
+                                {{ if $marketValueURL }}
+
+                                    <a
+                                        class="player-brief__market-value"
+                                        href="{{ $marketValueURL }}"
+                                        title="Открыть историю рыночной стоимости"
+                                    >
+
+                                        <span
+                                            class="player-brief__currency"
+                                            aria-hidden="true"
+                                        >
+                                            €
+                                        </span>
+
+                                        <span>
+                                            {{ $marketValueAmount }} миллионов
+                                        </span>
+
+                                    </a>
+
+                                {{ else }}
+
+                                    <span class="player-brief__market-value">
+
+                                        <span
+                                            class="player-brief__currency"
+                                            aria-hidden="true"
+                                        >
+                                            €
+                                        </span>
+
+                                        <span>
+                                            {{ $marketValueAmount }} миллионов
+                                        </span>
+
+                                    </span>
+
+                                {{ end }}
+
+                            </dd>
+
+                        </div>
+
+                    {{ end }}
+
+                </dl>
+
+            </section>
+
+</aside>
+
+    </section>
+
+        {{ partial "transfer-player-stats.html" . }}
+
+        {{ partial "transfer-player-value-history.html" . }}
+
+    {{ $bottomTransfers := slice }}
+    {{ range .Site.Data.transfers }}
+        {{ if or (eq .status "official") (eq .slug "goncalo-ramos-ac-milan") }}
+            {{ $bottomTransfers = $bottomTransfers | append . }}
+        {{ end }}
+    {{ end }}
+    {{ $bottomTransfers = first 6 $bottomTransfers }}
+
+    <style>
+        .transfer-status--confirmed {
+            border-color: rgba(74, 222, 128, 0.48) !important;
+            color: #91f0ad !important;
+            background: rgba(34, 197, 94, 0.18) !important;
+            box-shadow: 0 0 18px rgba(34, 197, 94, 0.10) !important;
+        }
+
+        .transfer-status--official {
+            border-color: rgba(74, 222, 128, 0.62) !important;
+            color: #a7f3bb !important;
+            background: rgba(22, 163, 74, 0.24) !important;
+            box-shadow: 0 0 20px rgba(22, 163, 74, 0.14) !important;
+        }
+
+        .bottom-transfer-strip-v3 {
+            position: relative !important;
+            width: 100% !important;
+            height: 108px !important;
+            margin: 30px 0 0 !important;
+            overflow: hidden !important;
+            border: 1px solid rgba(212, 175, 55, 0.28) !important;
+            border-radius: 18px !important;
+            background:
+                radial-gradient(
+                    circle at 15% 0%,
+                    rgba(212, 175, 55, 0.10),
+                    transparent 34%
+                ),
+                linear-gradient(
+                    110deg,
+                    #07090c 0%,
+                    #10151c 52%,
+                    #07090c 100%
+                ) !important;
+            box-shadow:
+                0 18px 42px rgba(0, 0, 0, 0.34),
+                inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;
+        }
+
+        .bottom-transfer-strip-v3::before,
+        .bottom-transfer-strip-v3::after {
+            content: "" !important;
+            position: absolute !important;
+            top: 0 !important;
+            bottom: 0 !important;
+            z-index: 7 !important;
+            width: 72px !important;
+            pointer-events: none !important;
+        }
+
+        .bottom-transfer-strip-v3::before {
+            left: 0 !important;
+            background:
+                linear-gradient(
+                    90deg,
+                    #07090c 0%,
+                    rgba(7, 9, 12, 0.84) 38%,
+                    transparent 100%
+                ) !important;
+        }
+
+        .bottom-transfer-strip-v3::after {
+            right: 0 !important;
+            background:
+                linear-gradient(
+                    270deg,
+                    #07090c 0%,
+                    rgba(7, 9, 12, 0.84) 38%,
+                    transparent 100%
+                ) !important;
+        }
+
+        .bottom-transfer-strip-v3__viewport {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden !important;
+            cursor: grab !important;
+            touch-action: pan-y !important;
+            user-select: none !important;
+        }
+
+        .bottom-transfer-strip-v3__viewport.is-dragging {
+            cursor: grabbing !important;
+        }
+
+        .bottom-transfer-strip-v3__track {
+            display: flex !important;
+            align-items: stretch !important;
+            width: max-content !important;
+            height: 100% !important;
+            will-change: transform !important;
+        }
+
+        .bottom-transfer-strip-v3__group {
+            display: flex !important;
+            align-items: stretch !important;
+            flex-shrink: 0 !important;
+            height: 100% !important;
+        }
+
+        .bottom-transfer-strip-v3__card {
+            position: relative !important;
+            display: grid !important;
+            grid-template-columns: 92px auto !important;
+            align-items: center !important;
+            gap: 16px !important;
+            min-width: 570px !important;
+            height: 100% !important;
+            padding: 0 30px 0 14px !important;
+            color: #ffffff !important;
+            text-decoration: none !important;
+            box-sizing: border-box !important;
+        }
+
+        .bottom-transfer-strip-v3__card::after {
+            content: "" !important;
+            position: absolute !important;
+            top: 20px !important;
+            right: 0 !important;
+            bottom: 20px !important;
+            width: 1px !important;
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(212, 175, 55, 0.38),
+                    transparent
+                ) !important;
+        }
+
+
+        .bottom-transfer-strip-v3__photo {
+            position: relative !important;
+            display: flex !important;
+            align-items: flex-end !important;
+            justify-content: center !important;
+            width: 88px !important;
+            height: 88px !important;
+            overflow: visible !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .bottom-transfer-strip-v3__photo img {
+            display: block !important;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
+            max-height: none !important;
+            margin: 0 !important;
+            border: 0 !important;
+            object-fit: contain !important;
+            object-position: center bottom !important;
+            filter:
+                blur(0.10px)
+                drop-shadow(0 10px 18px rgba(0, 0, 0, 0.34)) !important;
+            pointer-events: none !important;
+        }
+
+        .bottom-transfer-strip-v3__photo.is-placeholder::before {
+            content: attr(data-initials) !important;
+            color: #e6c55f !important;
+            font-family:
+                "Trebuchet MS",
+                "Segoe UI",
+                Arial,
+                sans-serif !important;
+            font-size: 18px !important;
+            font-weight: 900 !important;
+            letter-spacing: 0.04em !important;
+        }
+
+
+        .bottom-transfer-strip-v3__info {
+            display: flex !important;
+            align-items: flex-start !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+            gap: 10px !important;
+            min-width: max-content !important;
+        }
+
+        .bottom-transfer-strip-v3__headline,
+        .bottom-transfer-strip-v3__route {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            width: max-content !important;
+            white-space: nowrap !important;
+        }
+
+        .bottom-transfer-strip-v3__status {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex: 0 0 auto !important;
+            padding: 5px 8px !important;
+            border: 1px solid rgba(112, 230, 145, 0.25) !important;
+            border-radius: 6px !important;
+            color: #82efa0 !important;
+            background: rgba(55, 184, 91, 0.12) !important;
+            font-size: 8px !important;
+            font-weight: 950 !important;
+            line-height: 1 !important;
+            letter-spacing: 0.09em !important;
+            text-transform: uppercase !important;
+        }
+
+        .bottom-transfer-strip-v3__status--rumour {
+            border-color: rgba(230, 191, 79, 0.28) !important;
+            color: #e8c65f !important;
+            background: rgba(212, 175, 55, 0.10) !important;
+        }
+
+        .bottom-transfer-strip-v3__status--negotiations {
+            border-color: rgba(99, 164, 235, 0.28) !important;
+            color: #8bc2ff !important;
+            background: rgba(65, 129, 215, 0.11) !important;
+        }
+
+        .bottom-transfer-strip-v3__status--agreement {
+            border-color: rgba(230, 191, 79, 0.28) !important;
+            color: #efcf6c !important;
+            background: rgba(212, 175, 55, 0.11) !important;
+        }
+
+        .bottom-transfer-strip-v3__name {
+            display: block !important;
+            width: max-content !important;
+            overflow: visible !important;
+            color: #ffffff !important;
+            font-family:
+                Impact,
+                Haettenschweiler,
+                "Arial Narrow Bold",
+                sans-serif !important;
+            font-size: 23px !important;
+            font-style: italic !important;
+            font-weight: 900 !important;
+            line-height: 1 !important;
+            letter-spacing: 0.045em !important;
+            text-overflow: clip !important;
+            text-transform: uppercase !important;
+            white-space: nowrap !important;
+            text-shadow:
+                0 5px 16px rgba(0, 0, 0, 0.45) !important;
+        }
+
+        .bottom-transfer-strip-v3__route {
+            color: #c5cad1 !important;
+            font-size: 12px !important;
+            font-weight: 800 !important;
+            line-height: 1 !important;
+        }
+
+        .bottom-transfer-strip-v3__club {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 7px !important;
+        }
+
+        .bottom-transfer-strip-v3__club-logo {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex: 0 0 27px !important;
+            width: 27px !important;
+            height: 27px !important;
+        }
+
+        .bottom-transfer-strip-v3__club-logo img {
+            display: block !important;
+            width: 27px !important;
+            height: 27px !important;
+            max-width: 27px !important;
+            max-height: 27px !important;
+            margin: 0 !important;
+            border: 0 !important;
+            object-fit: contain !important;
+            pointer-events: none !important;
+        }
+
+        .bottom-transfer-strip-v3__club-logo.is-placeholder {
+            border: 1px solid rgba(212, 175, 55, 0.3) !important;
+            border-radius: 50% !important;
+            background: rgba(212, 175, 55, 0.07) !important;
+        }
+
+        .bottom-transfer-strip-v3__club-logo.is-placeholder::before {
+            content: "PF" !important;
+            color: #d8b34a !important;
+            font-size: 7px !important;
+            font-weight: 950 !important;
+        }
+
+        .bottom-transfer-strip-v3__arrow {
+            color: #e5bd4c !important;
+            font-size: 19px !important;
+            font-weight: 950 !important;
+        }
+
+        @media (max-width: 760px) {
+            .bottom-transfer-strip-v3 {
+                height: 94px !important;
+            }
+
+            .bottom-transfer-strip-v3__card {
+                grid-template-columns: 78px auto !important;
+                min-width: 485px !important;
+                gap: 12px !important;
+                padding: 0 22px 0 14px !important;
+            }
+
+            .bottom-transfer-strip-v3__photo {
+                width: 74px !important;
+                height: 74px !important;
+            }
+
+            .bottom-transfer-strip-v3__name {
+                font-size: 19px !important;
+            }
+
+            .bottom-transfer-strip-v3__route {
+                font-size: 10px !important;
+            }
+
+            .bottom-transfer-strip-v3__club-logo,
+            .bottom-transfer-strip-v3__club-logo img {
+                width: 23px !important;
+                height: 23px !important;
+                max-width: 23px !important;
+                max-height: 23px !important;
+                flex-basis: 23px !important;
+            }
+        }
+    </style>
+
+
+    <style>
+        .bottom-transfer-strip-v3__headline {
+            gap: 0 !important;
+        }
+
+        .bottom-transfer-strip-v3__name {
+            display: block !important;
+            width: max-content !important;
+            color: #f7f8fa !important;
+            font-family:
+                "Trebuchet MS",
+                "Segoe UI",
+                Arial,
+                sans-serif !important;
+            font-size: 21px !important;
+            font-style: normal !important;
+            font-weight: 900 !important;
+            line-height: 1.05 !important;
+            letter-spacing: 0.018em !important;
+            text-transform: none !important;
+            white-space: nowrap !important;
+            -webkit-text-stroke:
+                0.12px rgba(255, 255, 255, 0.16) !important;
+            text-shadow:
+                0 4px 14px rgba(0, 0, 0, 0.55),
+                0 0 10px rgba(212, 175, 55, 0.055) !important;
+            filter: blur(0.10px) !important;
+        }
+
+        .bottom-transfer-strip-v3__name::after {
+            content: "" !important;
+            display: block !important;
+            width: 34px !important;
+            height: 2px !important;
+            margin-top: 7px !important;
+            border-radius: 999px !important;
+            background:
+                linear-gradient(
+                    90deg,
+                    #f1d36d,
+                    rgba(241, 211, 109, 0)
+                ) !important;
+        }
+
+        @media (max-width: 760px) {
+            .bottom-transfer-strip-v3__name {
+                font-size: 18px !important;
+            }
+        }
+    </style>
+
+
+    <style>
+        /*
+           НОВЫЙ ФОРМАТ ПОРТРЕТОВ:
+           крупное лицо / голова и плечи, без обрамления,
+           без золотого контура, как фото на стикерах.
+        */
+
+        .bottom-transfer-strip-v3__card {
+            grid-template-columns:
+                102px auto !important;
+            min-width: 590px !important;
+            gap: 18px !important;
+            padding-left: 12px !important;
+        }
+
+        .bottom-transfer-strip-v3__photo {
+            width: 100px !important;
+            height: 96px !important;
+            align-self: end !important;
+            margin-bottom: 0 !important;
+            overflow: visible !important;
+            background: transparent !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .bottom-transfer-strip-v3__photo img {
+            width: 100px !important;
+            height: 96px !important;
+            max-width: none !important;
+            max-height: none !important;
+            object-fit: contain !important;
+            object-position: center bottom !important;
+            filter:
+                blur(0.10px)
+                drop-shadow(
+                    0 5px 12px
+                    rgba(0, 0, 0, 0.34)
+                ) !important;
+        }
+
+        .bottom-transfer-strip-v3__info {
+            gap: 9px !important;
+        }
+
+        .bottom-transfer-strip-v3__name {
+            font-size: 22px !important;
+            letter-spacing: 0.012em !important;
+        }
+
+        .bottom-transfer-strip-v3__route {
+            font-size: 12px !important;
+        }
+
+        @media (max-width: 760px) {
+            .bottom-transfer-strip-v3__card {
+                grid-template-columns:
+                    82px auto !important;
+                min-width: 500px !important;
+                gap: 12px !important;
+            }
+
+            .bottom-transfer-strip-v3__photo,
+            .bottom-transfer-strip-v3__photo img {
+                width: 80px !important;
+                height: 82px !important;
+            }
+
+            .bottom-transfer-strip-v3__name {
+                font-size: 18px !important;
+            }
+        }
+    </style>
+
+    <section
+        class="bottom-transfer-strip-v3"
+        data-ticker-duration="46"
+        aria-label="Последние переходы игроков"
+    >
+
+        <div class="bottom-transfer-strip-v3__viewport">
+
+            <div class="bottom-transfer-strip-v3__track">
+
+                {{ range $groupNumber := seq 2 }}
+
+                    <div
+                        class="bottom-transfer-strip-v3__group"
+                        {{ if eq $groupNumber 2 }}aria-hidden="true"{{ end }}
+                    >
+
+                        {{ range $bottomTransfers }}
+
+                            {{ $transfer := . }}
+
+                            {{ $itemStatusKey := default "rumour" $transfer.status }}
+
+                            {{ $itemStatusLabel := default
+                                "ТРАНСФЕР"
+                                (index $statusLabels $itemStatusKey)
+                            }}
+
+                            {{ $itemFromName := default
+                                "Неизвестный клуб"
+                                $transfer.from_club_name
+                            }}
+
+                            {{ $itemFromLogo := default
+                                ""
+                                $transfer.from_club_logo
+                            }}
+
+                            {{ with $transfer.from_club_id }}
+
+                                {{ $itemFromKey := printf "%v" . }}
+                                {{ $itemFromClub := index $clubs $itemFromKey }}
+
+                                {{ with $itemFromClub }}
+
+                                    {{ $itemFromName = default
+                                        .name
+                                        .configured_name
+                                    }}
+
+                                    {{ with .logo }}
+                                        {{ $itemFromLogo = . | relURL }}
+                                    {{ end }}
+
+                                {{ end }}
+
+                            {{ end }}
+
+                            {{ $itemToName := default
+                                "Неизвестный клуб"
+                                $transfer.to_club_name
+                            }}
+
+                            {{ $itemToLogo := default
+                                ""
+                                $transfer.to_club_logo
+                            }}
+
+                            {{ with $transfer.to_club_id }}
+
+                                {{ $itemToKey := printf "%v" . }}
+                                {{ $itemToClub := index $clubs $itemToKey }}
+
+                                {{ with $itemToClub }}
+
+                                    {{ $itemToName = default
+                                        .name
+                                        .configured_name
+                                    }}
+
+                                    {{ with .logo }}
+                                        {{ $itemToLogo = . | relURL }}
+                                    {{ end }}
+
+                                {{ end }}
+
+                            {{ end }}
+
+                            {{ $itemPhoto := default
+                                ""
+                                $transfer.player_image
+                            }}
+
+                            {{ $itemPhotoFallback := "" }}
+
+                            {{ with $transfer.player_id }}
+
+                                {{ $itemPlayerID := printf "%v" . }}
+
+                                {{ if not $itemPhoto }}
+
+                                    {{ $itemPhoto = printf
+                                        "images/players/api/%s.png"
+                                        $itemPlayerID
+                                        | relURL
+                                    }}
+
+                                {{ end }}
+
+                                {{ $itemPhotoFallback = printf
+                                    "https://media.api-sports.io/football/players/%s.png"
+                                    $itemPlayerID
+                                }}
+
+                            {{ end }}
+
+                            {{ $itemURL := default
+                                $page.RelPermalink
+                                $transfer.url
+                            }}
+
+                            <a
+                                class="bottom-transfer-strip-v3__card"
+                                href="{{ $itemURL | relURL }}"
+                                {{ if eq $groupNumber 2 }}tabindex="-1"{{ end }}
+                            >
+
+                                <span
+                                    class="bottom-transfer-strip-v3__photo{{ if not $itemPhoto }} is-placeholder{{ end }}{{ if in $itemPhoto "cutout" }} is-cutout{{ end }}"
+                                    data-initials="PF"
+                                >
+
+                                    {{ with $itemPhoto }}
+
+                                        <img
+                                            src="{{ . | relURL }}"
+                                            alt="{{ $transfer.player }}"
+                                            loading="lazy"
+                                            draggable="false"
+                                            {{ if $itemPhotoFallback }}
+                                                onerror="
+                                                    this.onerror=null;
+                                                    this.src='{{ $itemPhotoFallback }}';
+                                                "
+                                            {{ else }}
+                                                onerror="
+                                                    this.style.display='none';
+                                                    this.parentElement.classList.add('is-placeholder');
+                                                "
+                                            {{ end }}
+                                        >
+
+                                    {{ end }}
+
+                                </span>
+
+                                <span class="bottom-transfer-strip-v3__info">
+
+                                    <span class="bottom-transfer-strip-v3__headline">
+
+                                        <strong class="bottom-transfer-strip-v3__name">
+                                            {{ $transfer.player }}
+                                        </strong>
+
+                                    </span>
+
+                                    <span class="bottom-transfer-strip-v3__route">
+
+                                        <span class="bottom-transfer-strip-v3__club">
+
+                                            <span
+                                                class="bottom-transfer-strip-v3__club-logo{{ if not $itemFromLogo }} is-placeholder{{ end }}"
+                                            >
+
+                                                {{ with $itemFromLogo }}
+
+                                                    <img
+                                                        src="{{ . }}"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        draggable="false"
+                                                    >
+
+                                                {{ end }}
+
+                                            </span>
+
+                                            <span>
+                                                {{ $itemFromName }}
+                                            </span>
+
+                                        </span>
+
+                                        <span
+                                            class="bottom-transfer-strip-v3__arrow"
+                                            aria-hidden="true"
+                                        >
+                                            →
+                                        </span>
+
+                                        <span class="bottom-transfer-strip-v3__club">
+
+                                            <span
+                                                class="bottom-transfer-strip-v3__club-logo{{ if not $itemToLogo }} is-placeholder{{ end }}"
+                                            >
+
+                                                {{ with $itemToLogo }}
+
+                                                    <img
+                                                        src="{{ . }}"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        draggable="false"
+                                                    >
+
+                                                {{ end }}
+
+                                            </span>
+
+                                            <span>
+                                                {{ $itemToName }}
+                                            </span>
+
+                                        </span>
+
+                                    </span>
+
+                                </span>
+
+                            </a>
+
+                        {{ end }}
+
+                    </div>
+
+                {{ end }}
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        (function () {
+            const ticker = document.querySelector(
+                ".bottom-transfer-strip-v3"
+            );
+
+            if (!ticker || ticker.dataset.dragReady === "true") {
+                return;
+            }
+
+            const viewport = ticker.querySelector(
+                ".bottom-transfer-strip-v3__viewport"
+            );
+
+            const track = ticker.querySelector(
+                ".bottom-transfer-strip-v3__track"
+            );
+
+            const firstGroup = track
+                ? track.querySelector(
+                    ".bottom-transfer-strip-v3__group"
+                )
+                : null;
+
+            if (!viewport || !track || !firstGroup) {
+                return;
+            }
+
+            ticker.dataset.dragReady = "true";
+
+            const duration = Math.max(
+                Number(ticker.dataset.tickerDuration) || 46,
+                1
+            );
+
+            const dragThreshold = 10;
+
+            let loopWidth = 0;
+            let offset = 0;
+            let lastFrame = performance.now();
+
+            let pointerIsDown = false;
+            let isDragging = false;
+            let activePointerId = null;
+            let dragStartX = 0;
+            let dragStartOffset = 0;
+            let resumeAt = 0;
+            let blockNextClick = false;
+
+            function normalizeOffset(value) {
+                if (!loopWidth) {
+                    return 0;
+                }
+
+                while (value <= -loopWidth) {
+                    value += loopWidth;
+                }
+
+                while (value > 0) {
+                    value -= loopWidth;
+                }
+
+                return value;
+            }
+
+            function render() {
+                track.style.transform =
+                    "translate3d(" + offset + "px, 0, 0)";
+            }
+
+            function measure() {
+                const previousWidth = loopWidth;
+
+                const progress = previousWidth
+                    ? -offset / previousWidth
+                    : 0;
+
+                loopWidth =
+                    firstGroup.getBoundingClientRect().width;
+
+                if (!loopWidth) {
+                    return;
+                }
+
+                offset = normalizeOffset(
+                    -progress * loopWidth
+                );
+
+                render();
+            }
+
+            function animate(now) {
+                const elapsed = Math.min(
+                    (now - lastFrame) / 1000,
+                    0.1
+                );
+
+                lastFrame = now;
+
+                if (
+                    !pointerIsDown &&
+                    now >= resumeAt &&
+                    loopWidth
+                ) {
+                    const speed = loopWidth / duration;
+
+                    offset = normalizeOffset(
+                        offset - speed * elapsed
+                    );
+
+                    render();
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            function finishPointer(event) {
+                if (
+                    !pointerIsDown ||
+                    event.pointerId !== activePointerId
+                ) {
+                    return;
+                }
+
+                pointerIsDown = false;
+
+                if (isDragging) {
+                    blockNextClick = true;
+                    isDragging = false;
+                    viewport.classList.remove("is-dragging");
+
+                    if (
+                        viewport.hasPointerCapture(
+                            event.pointerId
+                        )
+                    ) {
+                        viewport.releasePointerCapture(
+                            event.pointerId
+                        );
+                    }
+
+                    resumeAt = performance.now() + 500;
+                } else {
+                    resumeAt = performance.now();
+                }
+
+                activePointerId = null;
+            }
+
+            viewport.addEventListener(
+                "pointerdown",
+                function (event) {
+                    if (event.button !== 0 || !loopWidth) {
+                        return;
+                    }
+
+                    pointerIsDown = true;
+                    isDragging = false;
+                    activePointerId = event.pointerId;
+                    dragStartX = event.clientX;
+                    dragStartOffset = offset;
+                    resumeAt = Number.POSITIVE_INFINITY;
+                }
+            );
+
+            viewport.addEventListener(
+                "pointermove",
+                function (event) {
+                    if (
+                        !pointerIsDown ||
+                        event.pointerId !== activePointerId
+                    ) {
+                        return;
+                    }
+
+                    const deltaX =
+                        event.clientX - dragStartX;
+
+                    if (!isDragging) {
+                        if (
+                            Math.abs(deltaX) <
+                            dragThreshold
+                        ) {
+                            return;
+                        }
+
+                        isDragging = true;
+                        viewport.classList.add(
+                            "is-dragging"
+                        );
+
+                        viewport.setPointerCapture(
+                            event.pointerId
+                        );
+                    }
+
+                    offset = normalizeOffset(
+                        dragStartOffset + deltaX
+                    );
+
+                    render();
+                    event.preventDefault();
+                }
+            );
+
+            viewport.addEventListener(
+                "pointerup",
+                finishPointer
+            );
+
+            viewport.addEventListener(
+                "pointercancel",
+                finishPointer
+            );
+
+            viewport.addEventListener(
+                "click",
+                function (event) {
+                    if (!blockNextClick) {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    event.stopPropagation();
+                    blockNextClick = false;
+                },
+                true
+            );
+
+            viewport.addEventListener(
+                "dragstart",
+                function (event) {
+                    event.preventDefault();
+                }
+            );
+
+            if ("ResizeObserver" in window) {
+                const resizeObserver =
+                    new ResizeObserver(measure);
+
+                resizeObserver.observe(firstGroup);
+                resizeObserver.observe(viewport);
+            } else {
+                window.addEventListener(
+                    "resize",
+                    measure
+                );
+            }
+
+            document.addEventListener(
+                "visibilitychange",
+                function () {
+                    lastFrame = performance.now();
+                }
+            );
+
+            requestAnimationFrame(function () {
+                measure();
+                lastFrame = performance.now();
+                requestAnimationFrame(animate);
+            });
+        })();
+    </script>
+
+
+
+
+
+
+</main>
+
+    <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
+
+</body>
+</html>
+
+
+
+

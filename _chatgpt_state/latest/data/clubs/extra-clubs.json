@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "description": "Дополнительные клубы, которых может не быть в основной базе лиг.",
+  "logo_directory": "static/images/clubs/chart",
+  "clubs": [
+    {
+      "slug": "sparta-rotterdam",
+      "name": "Sparta Rotterdam",
+      "api_id": null,
+      "fallback_logo": "images/clubs/chart/sparta-rotterdam.svg"
+    },
+    {
+      "slug": "heerenveen",
+      "name": "SC Heerenveen",
+      "api_id": null,
+      "fallback_logo": "images/clubs/chart/heerenveen.svg"
+    },
+    {
+      "slug": "river-plate",
+      "name": "River Plate",
+      "api_id": null,
+      "fallback_logo": "images/clubs/chart/river-plate.svg"
+    }
+  ]
+}

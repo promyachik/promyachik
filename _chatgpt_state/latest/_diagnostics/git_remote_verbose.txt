@@ -1,0 +1,9 @@
+COMMAND: git remote -v
+EXIT_CODE: 0
+
+--- STDOUT ---
+origin	https://github.com/promyachik/promyachik.git (fetch)
+origin	https://github.com/promyachik/promyachik.git (push)
+
+
+--- STDERR ---

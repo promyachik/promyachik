@@ -1,0 +1,20 @@
+{{ $transfersRaw := .Site.Data.transfers }}
+{{ $transfers := $transfersRaw }}
+{{ if reflect.IsMap $transfersRaw }}
+  {{ with $transfersRaw.transfers }}{{ $transfers = . }}{{ end }}
+{{ end }}
+
+{{ if $transfers }}
+<div class="ticker">
+  <div class="ticker-line">
+    {{ range first 12 $transfers }}
+      {{ if .slug }}
+        {{ $url := printf "transfers/%s/" .slug }}
+        {{ $label := .player_name | default .player | default .slug }}
+        {{ $toName := .to_club_name | default .to_club | default .to | default "" }}
+        <a href="{{ $url | relURL }}">{{ $label }}{{ with $toName }} → {{ . }}{{ end }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

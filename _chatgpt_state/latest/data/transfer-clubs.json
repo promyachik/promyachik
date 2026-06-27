@@ -1,0 +1,164 @@
+[
+  {
+    "id": 50,
+    "name": "Manchester City",
+    "country": "England",
+    "league": "Premier League"
+  },
+  {
+    "id": 33,
+    "name": "Manchester United",
+    "country": "England",
+    "league": "Premier League"
+  },
+  {
+    "id": 40,
+    "name": "Liverpool",
+    "country": "England",
+    "league": "Premier League"
+  },
+  {
+    "id": 42,
+    "name": "Arsenal",
+    "country": "England",
+    "league": "Premier League"
+  },
+  {
+    "id": 49,
+    "name": "Chelsea",
+    "country": "England",
+    "league": "Premier League"
+  },
+  {
+    "id": 47,
+    "name": "Tottenham",
+    "country": "England",
+    "league": "Premier League"
+  },
+  {
+    "id": 541,
+    "name": "Real Madrid",
+    "country": "Spain",
+    "league": "La Liga"
+  },
+  {
+    "id": 529,
+    "name": "Barcelona",
+    "country": "Spain",
+    "league": "La Liga"
+  },
+  {
+    "id": 530,
+    "name": "Atletico Madrid",
+    "country": "Spain",
+    "league": "La Liga"
+  },
+  {
+    "id": 505,
+    "name": "Inter",
+    "country": "Italy",
+    "league": "Serie A"
+  },
+  {
+    "id": 496,
+    "name": "Juventus",
+    "country": "Italy",
+    "league": "Serie A"
+  },
+  {
+    "id": 489,
+    "name": "AC Milan",
+    "country": "Italy",
+    "league": "Serie A"
+  },
+  {
+    "id": 492,
+    "name": "Napoli",
+    "country": "Italy",
+    "league": "Serie A"
+  },
+  {
+    "id": 157,
+    "name": "Bayern Munich",
+    "country": "Germany",
+    "league": "Bundesliga"
+  },
+  {
+    "id": 165,
+    "name": "Borussia Dortmund",
+    "country": "Germany",
+    "league": "Bundesliga"
+  },
+  {
+    "id": 168,
+    "name": "Bayer Leverkusen",
+    "country": "Germany",
+    "league": "Bundesliga"
+  },
+  {
+    "id": 85,
+    "name": "Paris Saint Germain",
+    "country": "France",
+    "league": "Ligue 1"
+  },
+  {
+    "id": 81,
+    "name": "Marseille",
+    "country": "France",
+    "league": "Ligue 1"
+  },
+  {
+    "id": 91,
+    "name": "Monaco",
+    "country": "France",
+    "league": "Ligue 1"
+  },
+  {
+    "id": 645,
+    "name": "Galatasaray",
+    "country": "Turkey",
+    "league": "Super Lig"
+  },
+  {
+    "id": 611,
+    "name": "Fenerbahce",
+    "country": "Turkey",
+    "league": "Super Lig"
+  },
+  {
+    "id": 549,
+    "name": "Besiktas",
+    "country": "Turkey",
+    "league": "Super Lig"
+  },
+  {
+    "id": 998,
+    "name": "Trabzonspor",
+    "country": "Turkey",
+    "league": "Super Lig"
+  },
+  {
+    "id": 211,
+    "name": "Benfica",
+    "country": "Portugal",
+    "league": "Primeira Liga"
+  },
+  {
+    "id": 212,
+    "name": "FC Porto",
+    "country": "Portugal",
+    "league": "Primeira Liga"
+  },
+  {
+    "id": 228,
+    "name": "Sporting CP",
+    "country": "Portugal",
+    "league": "Primeira Liga"
+  },
+  {
+    "id": 217,
+    "name": "SC Braga",
+    "country": "Portugal",
+    "league": "Primeira Liga"
+  }
+]

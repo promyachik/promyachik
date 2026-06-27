@@ -1,0 +1,52 @@
+[
+  {
+    "status": "official",
+    "player": "Kylian Mbappé",
+    "from_club_name": "Paris Saint-Germain",
+    "from_club_logo": "/promyachik/images/clubs/club-4202da5587-balanced-bottom.png",
+    "to_club_name": "Real Madrid",
+    "to_club_logo": "/promyachik/images/clubs/club-e81d2b137b-balanced-bottom.png",
+    "fee": "Свободный агент",
+    "url": "transfers/kylian-mbappe-real-madrid/"
+  },
+  {
+    "status": "confirmed",
+    "player": "Тестовый трансфер",
+    "from_club_name": "Клуб A",
+    "from_club_logo": "",
+    "to_club_name": "Клуб B",
+    "to_club_logo": "",
+    "fee": "€25 млн",
+    "url": "transfers/"
+  },
+  {
+    "status": "agreement",
+    "player": "Игрок согласовал контракт",
+    "from_club_name": "Текущий клуб",
+    "from_club_logo": "",
+    "to_club_name": "Новый клуб",
+    "to_club_logo": "",
+    "fee": "",
+    "url": "transfers/"
+  },
+  {
+    "status": "negotiations",
+    "player": "Клубы обсуждают переход",
+    "from_club_name": "Клуб C",
+    "from_club_logo": "",
+    "to_club_name": "Клуб D",
+    "to_club_logo": "",
+    "fee": "",
+    "url": "transfers/"
+  },
+  {
+    "status": "rumour",
+    "player": "Возможный переход",
+    "from_club_name": "Клуб E",
+    "from_club_logo": "",
+    "to_club_name": "Клуб F",
+    "to_club_logo": "",
+    "fee": "",
+    "url": "transfers/"
+  }
+]

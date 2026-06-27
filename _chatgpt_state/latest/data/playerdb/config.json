@@ -1,0 +1,57 @@
+{
+  "version": 3,
+  "description": "Seven ProFutbik leagues. API request uses league + season=2024. Squads are loaded separately through players/squads.",
+  "leagues": [
+    {
+      "id": 39,
+      "name": "Premier League",
+      "country": "England",
+      "free_plan_season": 2024
+    },
+    {
+      "id": 140,
+      "name": "La Liga",
+      "country": "Spain",
+      "free_plan_season": 2024
+    },
+    {
+      "id": 135,
+      "name": "Serie A",
+      "country": "Italy",
+      "free_plan_season": 2024
+    },
+    {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "free_plan_season": 2024
+    },
+    {
+      "id": 61,
+      "name": "Ligue 1",
+      "country": "France",
+      "free_plan_season": 2024
+    },
+    {
+      "id": 203,
+      "name": "Süper Lig",
+      "country": "Türkiye",
+      "free_plan_season": 2024
+    },
+    {
+      "id": 94,
+      "name": "Primeira Liga",
+      "country": "Portugal",
+      "free_plan_season": 2024
+    }
+  ],
+  "selection": {
+    "mode": "all_current_teams",
+    "team_ids": []
+  },
+  "paths": {
+    "raw_photos": "static/images/players/api",
+    "cutout_photos": "static/images/players/cutout"
+  },
+  "free_plan_season": 2024
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "player_id": "41585",
+    "player_name": "Gonçalo Ramos",
+    "source_image": "/images/players/api/41585.png",
+    "target_image": "images/players/cutout/41585.png",
+    "status": "queued",
+    "created_at": "2026-06-27T19:13:31",
+    "reason": "NEWS_ON_MAIN requires transparent/cutout player photo"
+  }
+]

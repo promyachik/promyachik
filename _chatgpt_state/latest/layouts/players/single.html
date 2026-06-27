@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+>
+
+<title>{{ .Title }} - Promyachik</title>
+
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+<link
+    rel="stylesheet"
+    href="{{ "css/transfer-player-market-value-chart.css" | relURL }}"
+>
+
+<link
+    rel="stylesheet"
+    href="{{ "css/player-brief-standalone-addon.css" | relURL }}"
+>
+
+<script
+    defer
+    src="{{ "js/transfer-player-market-value-chart.js" | relURL }}"
+></script>
+
+{{ partial "favicon.html" . }}
+
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+</head>
+
+
+<body class="transfer-page player-profile-page">
+
+
+{{ partial "header.html" . }}
+
+
+
+<div
+    class="player-card player-brief player-brief--standalone"
+    data-player-page="{{ .RelPermalink }}"
+>
+
+
+<h1>
+⚽ {{ .Title }}
+</h1>
+
+
+<div class="player-info">
+
+
+<p>
+🏟 Клуб:
+{{ .Params.club }}
+</p>
+
+
+<p>
+🎯 Позиция:
+{{ .Params.position }}
+</p>
+
+
+<p>
+🌍 Страна:
+{{ .Params.country }}
+</p>
+
+
+<p class="price">
+
+💰 {{ .Params.value }}
+
+</p>
+
+
+</div>
+
+
+<div class="player-text">
+
+{{ .Content }}
+
+</div>
+
+
+</div>
+
+
+
+    <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
+
+</body>
+
+</html>

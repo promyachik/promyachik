@@ -1,0 +1,3406 @@
+{
+  "generated_at": "2026-06-26T06:31:14+00:00",
+  "count": 136,
+  "items": [
+    {
+      "id": 180,
+      "name": "1. FC Heidenheim",
+      "code": "HEI",
+      "country": "Germany",
+      "founded": 1946,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/180.png",
+      "venue": {
+        "id": 723,
+        "name": "Voith-Arena",
+        "address": "Schloßhaustraße 160",
+        "city": "Heidenheim an der Brenz",
+        "capacity": 15000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/723.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 167,
+      "name": "1899 Hoffenheim",
+      "code": "HOF",
+      "country": "Germany",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/167.png",
+      "venue": {
+        "id": 724,
+        "name": "PreZero Arena",
+        "address": "Dietmar-Hopp-Straße 1",
+        "city": "Sinsheim",
+        "capacity": 30164,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/724.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 168,
+      "name": "Bayer Leverkusen",
+      "code": "BAY",
+      "country": "Germany",
+      "founded": 1904,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/168.png",
+      "venue": {
+        "id": 699,
+        "name": "BayArena",
+        "address": "Bismarckstr. 122-124",
+        "city": "Leverkusen",
+        "capacity": 30210,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/699.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 157,
+      "name": "Bayern München",
+      "code": "BAY",
+      "country": "Germany",
+      "founded": 1900,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/157.png",
+      "venue": {
+        "id": 700,
+        "name": "Allianz Arena",
+        "address": "Werner-Heisenberg-Allee 25",
+        "city": "München",
+        "capacity": 75024,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/700.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 165,
+      "name": "Borussia Dortmund",
+      "code": "DOR",
+      "country": "Germany",
+      "founded": 1909,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/165.png",
+      "venue": {
+        "id": 19381,
+        "name": "SIGNAL IDUNA PARK",
+        "address": "Strobelalle 50",
+        "city": "Dortmund",
+        "capacity": 81365,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19381.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 163,
+      "name": "Borussia Mönchengladbach",
+      "code": "MOE",
+      "country": "Germany",
+      "founded": 1900,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/163.png",
+      "venue": {
+        "id": 20471,
+        "name": "BORUSSIA-PARK",
+        "address": "Hennes-Weisweiler-Allee 1",
+        "city": "Mönchengladbach",
+        "capacity": 54057,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20471.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 169,
+      "name": "Eintracht Frankfurt",
+      "code": "EIN",
+      "country": "Germany",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/169.png",
+      "venue": {
+        "id": 10491,
+        "name": "Deutsche Bank Park",
+        "address": "Mörfelder Landstr. 362",
+        "city": "Frankfurt am Main",
+        "capacity": 59500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/10491.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 170,
+      "name": "FC Augsburg",
+      "code": "AUG",
+      "country": "Germany",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/170.png",
+      "venue": {
+        "id": 698,
+        "name": "WWK Arena",
+        "address": "Bürgermeister Ulrich-Straße 90",
+        "city": "Augsburg",
+        "capacity": 30662,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/698.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 186,
+      "name": "FC St. Pauli",
+      "code": "PAU",
+      "country": "Germany",
+      "founded": 1910,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/186.png",
+      "venue": {
+        "id": 745,
+        "name": "Millerntor-Stadion",
+        "address": "Harald-Stender-Platz 1",
+        "city": "Hamburg",
+        "capacity": 29564,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/745.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 164,
+      "name": "FSV Mainz 05",
+      "code": "MAI",
+      "country": "Germany",
+      "founded": 1905,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/164.png",
+      "venue": {
+        "id": 11899,
+        "name": "MEWA ARENA",
+        "address": "Eugen-Salomon-Straße 1",
+        "city": "Mainz",
+        "capacity": 34034,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/11899.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 191,
+      "name": "Holstein Kiel",
+      "code": "HOL",
+      "country": "Germany",
+      "founded": 1900,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/191.png",
+      "venue": {
+        "id": 725,
+        "name": "Holstein-Stadion",
+        "address": "Westring 501",
+        "city": "Kiel",
+        "capacity": 15034,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/725.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 173,
+      "name": "RB Leipzig",
+      "code": "LEI",
+      "country": "Germany",
+      "founded": 2009,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/173.png",
+      "venue": {
+        "id": 738,
+        "name": "Red Bull Arena",
+        "address": "Am Sportforum 3",
+        "city": "Leipzig",
+        "capacity": 47800,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/738.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 160,
+      "name": "SC Freiburg",
+      "code": "FRE",
+      "country": "Germany",
+      "founded": 1904,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/160.png",
+      "venue": {
+        "id": 12717,
+        "name": "Europa-Park Stadion",
+        "address": "Achim-Stocker-Straße 1",
+        "city": "Freiburg im Breisgau",
+        "capacity": 34700,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/12717.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1660,
+      "name": "SV Elversberg",
+      "code": "ELV",
+      "country": "Germany",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1660.png",
+      "venue": {
+        "id": 710,
+        "name": "URSAPHARM-Arena an der Kaiserlinde",
+        "address": "Lindenstraße 7",
+        "city": "Spiesen-Elversberg",
+        "capacity": 11150,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/710.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 182,
+      "name": "Union Berlin",
+      "code": "UNI",
+      "country": "Germany",
+      "founded": 1966,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/182.png",
+      "venue": {
+        "id": 748,
+        "name": "Stadion An der Alten Försterei",
+        "address": "An der Wuhlheide 263, Köpenick",
+        "city": "Berlin",
+        "capacity": 22467,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/748.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 172,
+      "name": "VfB Stuttgart",
+      "code": "STU",
+      "country": "Germany",
+      "founded": 1893,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/172.png",
+      "venue": {
+        "id": 20473,
+        "name": "MHPArena",
+        "address": "Mercedesstrasse 87",
+        "city": "Stuttgart",
+        "capacity": 60469,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20473.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 176,
+      "name": "VfL Bochum",
+      "code": "BOC",
+      "country": "Germany",
+      "founded": 1848,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/176.png",
+      "venue": {
+        "id": 751,
+        "name": "Vonovia Ruhrstadion",
+        "address": "Castropher Straße 145",
+        "city": "Bochum",
+        "capacity": 27599,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/751.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 161,
+      "name": "VfL Wolfsburg",
+      "code": "WOL",
+      "country": "Germany",
+      "founded": 1945,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/161.png",
+      "venue": {
+        "id": 752,
+        "name": "Volkswagen Arena",
+        "address": "In den Allerwiesen 1",
+        "city": "Wolfsburg",
+        "capacity": 30000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/752.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 162,
+      "name": "Werder Bremen",
+      "code": "WER",
+      "country": "Germany",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/162.png",
+      "venue": {
+        "id": 22796,
+        "name": "Weserstadion",
+        "address": "Franz-Böhmert-Straße 1c",
+        "city": "Bremen",
+        "capacity": 42100,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22796.png"
+      },
+      "league": {
+        "id": 78,
+        "name": "Bundesliga",
+        "country": "Germany",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 542,
+      "name": "Alaves",
+      "code": "ALA",
+      "country": "Spain",
+      "founded": 1921,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "venue": {
+        "id": 1470,
+        "name": "Estadio de Mendizorroza",
+        "address": "Paseo de Cervantes",
+        "city": "Vitoria-Gasteiz",
+        "capacity": 19840,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1470.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 531,
+      "name": "Athletic Club",
+      "code": "BIL",
+      "country": "Spain",
+      "founded": 1898,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "venue": {
+        "id": 1460,
+        "name": "San Mamés Barria",
+        "address": "Rafael Moreno Pitxitxi Kalea",
+        "city": "Bilbao",
+        "capacity": 53289,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1460.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 530,
+      "name": "Atletico Madrid",
+      "code": "ATM",
+      "country": "Spain",
+      "founded": 1903,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "venue": {
+        "id": 19217,
+        "name": "Estádio Cívitas Metropolitano",
+        "address": "Rosas",
+        "city": "Madrid",
+        "capacity": 70460,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19217.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 529,
+      "name": "Barcelona",
+      "code": "BAR",
+      "country": "Spain",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "venue": {
+        "id": 19939,
+        "name": "Camp Nou",
+        "address": "Les Corts, 08028",
+        "city": "Barcelona",
+        "capacity": 55926,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19939.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 538,
+      "name": "Celta Vigo",
+      "code": "CEL",
+      "country": "Spain",
+      "founded": 1923,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "venue": {
+        "id": 22784,
+        "name": "Estadio Abanca-Balaídos",
+        "address": "Avenida de Balaídos",
+        "city": "Vigo",
+        "capacity": 24791,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22784.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 540,
+      "name": "Espanyol",
+      "code": "ESP",
+      "country": "Spain",
+      "founded": 1900,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/540.png",
+      "venue": {
+        "id": 20421,
+        "name": "Stage Front Stadium",
+        "address": "Avenida Baix Llobregat 100",
+        "city": "Cornella de Llobregat",
+        "capacity": 40423,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20421.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 546,
+      "name": "Getafe",
+      "code": "GET",
+      "country": "Spain",
+      "founded": 1983,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "venue": {
+        "id": 20422,
+        "name": "Estadio Coliseum",
+        "address": "Avenida de Teresa de Calcuta",
+        "city": "Getafe",
+        "capacity": 17393,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20422.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 547,
+      "name": "Girona",
+      "code": "GIR",
+      "country": "Spain",
+      "founded": 1930,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "venue": {
+        "id": 1478,
+        "name": "Estadi Municipal de Montilivi",
+        "address": "Avenida Montlivi 141",
+        "city": "Girona",
+        "capacity": 14500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1478.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 534,
+      "name": "Las Palmas",
+      "code": "PAL",
+      "country": "Spain",
+      "founded": 1949,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "venue": {
+        "id": 1481,
+        "name": "Estadio de Gran Canaria",
+        "address": "Avenida Pío XII 29",
+        "city": "Las Palmas de Gran Canaria",
+        "capacity": 32392,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1481.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 537,
+      "name": "Leganes",
+      "code": "LEG",
+      "country": "Spain",
+      "founded": 1928,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/537.png",
+      "venue": {
+        "id": 1464,
+        "name": "Estadio Municipal de Butarque",
+        "address": "Calle Arquitectura",
+        "city": "Leganés",
+        "capacity": 12450,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1464.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 798,
+      "name": "Mallorca",
+      "code": "MAL",
+      "country": "Spain",
+      "founded": 1916,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "venue": {
+        "id": 19940,
+        "name": "Estadi Mallorca Son Moix",
+        "address": "Camí dels Reis",
+        "city": "Palma de Mallorca",
+        "capacity": 23142,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19940.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 727,
+      "name": "Osasuna",
+      "code": "OSA",
+      "country": "Spain",
+      "founded": 1920,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "venue": {
+        "id": 1486,
+        "name": "Estadio El Sadar",
+        "address": "Carretera El Sadar",
+        "city": "Iruñea",
+        "capacity": 23576,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1486.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "code": "RAY",
+      "country": "Spain",
+      "founded": 1924,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "venue": {
+        "id": 1488,
+        "name": "Estadio de Vallecas",
+        "address": "Calle Payaso Fofó",
+        "city": "Madrid",
+        "capacity": 15500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1488.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 543,
+      "name": "Real Betis",
+      "code": "BET",
+      "country": "Spain",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/543.png",
+      "venue": {
+        "id": 22785,
+        "name": "Estadio La Cartuja de Sevilla",
+        "address": "Edificio Suroeste, Puerta E",
+        "city": "Sevilla",
+        "capacity": 72000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22785.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 541,
+      "name": "Real Madrid",
+      "code": "REA",
+      "country": "Spain",
+      "founded": 1902,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/541.png",
+      "venue": {
+        "id": 1456,
+        "name": "Estadio Santiago Bernabéu",
+        "address": "Avenida de Concha Espina 1, Chamartín",
+        "city": "Madrid",
+        "capacity": 85454,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1456.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 548,
+      "name": "Real Sociedad",
+      "code": "RSO",
+      "country": "Spain",
+      "founded": 1909,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/548.png",
+      "venue": {
+        "id": 1491,
+        "name": "Reale Arena",
+        "address": "Paseo de Anoeta 1",
+        "city": "Donostia-San Sebastián",
+        "capacity": 40000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1491.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 536,
+      "name": "Sevilla",
+      "code": "SEV",
+      "country": "Spain",
+      "founded": 1890,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "venue": {
+        "id": 1494,
+        "name": "Estadio Ramón Sánchez Pizjuán",
+        "address": "Avenida de Eduardo Dato",
+        "city": "Sevilla",
+        "capacity": 48649,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1494.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 532,
+      "name": "Valencia",
+      "code": "VAL",
+      "country": "Spain",
+      "founded": 1919,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/532.png",
+      "venue": {
+        "id": 1497,
+        "name": "Estadio de Mestalla",
+        "address": "Avenida de Suecia",
+        "city": "Valencia",
+        "capacity": 55000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1497.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 720,
+      "name": "Valladolid",
+      "code": "VAL",
+      "country": "Spain",
+      "founded": 1928,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "venue": {
+        "id": 1492,
+        "name": "Estadio Municipal José Zorrilla",
+        "address": "Avenida del Mundial 82",
+        "city": "Valladolid",
+        "capacity": 26512,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1492.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 533,
+      "name": "Villarreal",
+      "code": "VIL",
+      "country": "Spain",
+      "founded": 1923,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/533.png",
+      "venue": {
+        "id": 1498,
+        "name": "Estadio de la Cerámica",
+        "address": "Plaza Labrador",
+        "city": "Villarreal",
+        "capacity": 24500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1498.png"
+      },
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 77,
+      "name": "Angers",
+      "code": "ANG",
+      "country": "France",
+      "founded": 1919,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/77.png",
+      "venue": {
+        "id": 634,
+        "name": "Stade Raymond-Kopa",
+        "address": "73, boulevard Pierre de Coubertin",
+        "city": "Angers",
+        "capacity": 19000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/634.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 108,
+      "name": "Auxerre",
+      "code": "AUX",
+      "country": "France",
+      "founded": 1905,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/108.png",
+      "venue": {
+        "id": 636,
+        "name": "Stade de l'Abbé Deschamps",
+        "address": "Route de Vaux",
+        "city": "Auxerre",
+        "capacity": 23467,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/636.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 111,
+      "name": "Le Havre",
+      "code": "HAV",
+      "country": "France",
+      "founded": 1872,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/111.png",
+      "venue": {
+        "id": 652,
+        "name": "Stade Océane",
+        "address": "Boulevard de Léningrad",
+        "city": "Le Havre",
+        "capacity": 25178,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/652.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 116,
+      "name": "Lens",
+      "code": "LEN",
+      "country": "France",
+      "founded": 1906,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/116.png",
+      "venue": {
+        "id": 654,
+        "name": "Stade Bollaert-Delelis",
+        "address": "83, rue Maurice-Carton",
+        "city": "Lens",
+        "capacity": 41233,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/654.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 79,
+      "name": "Lille",
+      "code": "LIL",
+      "country": "France",
+      "founded": 1944,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/79.png",
+      "venue": {
+        "id": 22783,
+        "name": "Decathlon Arena - Stade Pierre-Mauroy",
+        "address": "261, Boulevard de Tournai, l&apos;Hôtel de Ville",
+        "city": "Villeneuve d&apos;Ascq",
+        "capacity": 50083,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22783.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 80,
+      "name": "Lyon",
+      "code": "LYO",
+      "country": "France",
+      "founded": 1950,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/80.png",
+      "venue": {
+        "id": 666,
+        "name": "Groupama Stadium",
+        "address": "Chemin du Montout",
+        "city": "Décines-Charpieu",
+        "capacity": 61556,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/666.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 81,
+      "name": "Marseille",
+      "code": "MAR",
+      "country": "France",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/81.png",
+      "venue": {
+        "id": 12678,
+        "name": "Stade Orange Vélodrome",
+        "address": "3, boulevard Michelet",
+        "city": "Marseille",
+        "capacity": 67394,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/12678.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 112,
+      "name": "Metz",
+      "code": "MET",
+      "country": "France",
+      "founded": 1932,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/112.png",
+      "venue": {
+        "id": 658,
+        "name": "Stade Saint-Symphorien",
+        "address": "3, allée Saint-Symphorien",
+        "city": "Longeville-lès-Metz",
+        "capacity": 30000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/658.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 91,
+      "name": "Monaco",
+      "code": "MON",
+      "country": "France",
+      "founded": 1919,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/91.png",
+      "venue": {
+        "id": 20470,
+        "name": "Stade Louis-II",
+        "address": "7, avenue des Castelans",
+        "city": "Monaco",
+        "capacity": 18523,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20470.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 82,
+      "name": "Montpellier",
+      "code": "MON",
+      "country": "France",
+      "founded": 1974,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/82.png",
+      "venue": {
+        "id": 20107,
+        "name": "Stade de la Mosson-Mondial 98",
+        "address": "Avenue de Heidelberg",
+        "city": "Montpellier",
+        "capacity": 32939,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20107.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 83,
+      "name": "Nantes",
+      "code": "NAN",
+      "country": "France",
+      "founded": 1943,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/83.png",
+      "venue": {
+        "id": 662,
+        "name": "Stade de la Beaujoire - Louis Fonteneau",
+        "address": "5, boulevard de la Beaujoire",
+        "city": "Nantes",
+        "capacity": 38285,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/662.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 84,
+      "name": "Nice",
+      "code": "NIC",
+      "country": "France",
+      "founded": 1904,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/84.png",
+      "venue": {
+        "id": 663,
+        "name": "Allianz Riviera",
+        "address": "Boulevard des Jardiniers",
+        "city": "Nice",
+        "capacity": 35624,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/663.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 85,
+      "name": "Paris Saint Germain",
+      "code": "PSG",
+      "country": "France",
+      "founded": 1970,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/85.png",
+      "venue": {
+        "id": 671,
+        "name": "Parc des Princes",
+        "address": "24, rue du Commandant Guilbaud",
+        "city": "Paris",
+        "capacity": 47929,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/671.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 93,
+      "name": "Reims",
+      "code": "REI",
+      "country": "France",
+      "founded": 1909,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/93.png",
+      "venue": {
+        "id": 22707,
+        "name": "Stade Auguste-Delaune",
+        "address": "33, Chaussée Bocquaine",
+        "city": "Reims",
+        "capacity": 21684,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22707.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 94,
+      "name": "Rennes",
+      "code": "REN",
+      "country": "France",
+      "founded": 1901,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/94.png",
+      "venue": {
+        "id": 680,
+        "name": "Roazhon Park",
+        "address": "111, route de Lorient",
+        "city": "Rennes",
+        "capacity": 31127,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/680.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1063,
+      "name": "Saint Etienne",
+      "code": "ETI",
+      "country": "France",
+      "founded": 1920,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1063.png",
+      "venue": {
+        "id": 676,
+        "name": "Stade Geoffroy-Guichard",
+        "address": "14, rue Pierre et Paul Guichard",
+        "city": "Saint-Ètienne",
+        "capacity": 41965,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/676.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 106,
+      "name": "Stade Brestois 29",
+      "code": "BRE",
+      "country": "France",
+      "founded": 1950,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/106.png",
+      "venue": {
+        "id": 641,
+        "name": "Stade Francis-Le Blé",
+        "address": "26, rue de Quimper",
+        "city": "Brest",
+        "capacity": 15931,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/641.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 95,
+      "name": "Strasbourg",
+      "code": "STR",
+      "country": "France",
+      "founded": 1906,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/95.png",
+      "venue": {
+        "id": 681,
+        "name": "Stade de la Meinau",
+        "address": "12, rue de l&apos;Extenwoerth",
+        "city": "Strasbourg",
+        "capacity": 26109,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/681.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 96,
+      "name": "Toulouse",
+      "code": "TOU",
+      "country": "France",
+      "founded": 1937,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/96.png",
+      "venue": {
+        "id": 682,
+        "name": "Stadium de Toulouse",
+        "address": "1, allée Gabriel Biènés",
+        "city": "Toulouse",
+        "capacity": 33150,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/682.png"
+      },
+      "league": {
+        "id": 61,
+        "name": "Ligue 1",
+        "country": "France",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 42,
+      "name": "Arsenal",
+      "code": "ARS",
+      "country": "England",
+      "founded": 1886,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/42.png",
+      "venue": {
+        "id": 494,
+        "name": "Emirates Stadium",
+        "address": "Hornsey Road",
+        "city": "London",
+        "capacity": 60383,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/494.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 66,
+      "name": "Aston Villa",
+      "code": "AST",
+      "country": "England",
+      "founded": 1874,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/66.png",
+      "venue": {
+        "id": 495,
+        "name": "Villa Park",
+        "address": "Trinity Road",
+        "city": "Birmingham",
+        "capacity": 42824,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/495.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 35,
+      "name": "Bournemouth",
+      "code": "BOU",
+      "country": "England",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/35.png",
+      "venue": {
+        "id": 504,
+        "name": "Vitality Stadium",
+        "address": "Dean Court, Kings Park",
+        "city": "Bournemouth, Dorset",
+        "capacity": 12000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/504.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 55,
+      "name": "Brentford",
+      "code": "BRE",
+      "country": "England",
+      "founded": 1889,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/55.png",
+      "venue": {
+        "id": 10503,
+        "name": "Gtech Community Stadium",
+        "address": "166 Lionel Rd N, Brentford",
+        "city": "Brentford, Middlesex",
+        "capacity": 17250,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/10503.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Brighton",
+      "code": "BRI",
+      "country": "England",
+      "founded": 1901,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/51.png",
+      "venue": {
+        "id": 508,
+        "name": "American Express Stadium",
+        "address": "Village Way",
+        "city": "Falmer, East Sussex",
+        "capacity": 31872,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/508.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 49,
+      "name": "Chelsea",
+      "code": "CHE",
+      "country": "England",
+      "founded": 1905,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/49.png",
+      "venue": {
+        "id": 519,
+        "name": "Stamford Bridge",
+        "address": "Fulham Road",
+        "city": "London",
+        "capacity": 41841,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/519.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 52,
+      "name": "Crystal Palace",
+      "code": "CRY",
+      "country": "England",
+      "founded": 1861,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/52.png",
+      "venue": {
+        "id": 525,
+        "name": "Selhurst Park",
+        "address": "Holmesdale Road",
+        "city": "London",
+        "capacity": 26309,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/525.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 45,
+      "name": "Everton",
+      "code": "EVE",
+      "country": "England",
+      "founded": 1878,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/45.png",
+      "venue": {
+        "id": 22033,
+        "name": "Hill Dickinson Stadium",
+        "address": "35 Regent Road, Bramley-Moore Dock, Vauxhall",
+        "city": "Liverpool, Merseyside",
+        "capacity": 52888,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22033.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 36,
+      "name": "Fulham",
+      "code": "FUL",
+      "country": "England",
+      "founded": 1879,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/36.png",
+      "venue": {
+        "id": 535,
+        "name": "Craven Cottage",
+        "address": "Stevenage Road",
+        "city": "London",
+        "capacity": 29589,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/535.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 57,
+      "name": "Ipswich",
+      "code": "IPS",
+      "country": "England",
+      "founded": 1878,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/57.png",
+      "venue": {
+        "id": 545,
+        "name": "Portman Road",
+        "address": "Portman Road",
+        "city": "Ipswich, Suffolk",
+        "capacity": 30311,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/545.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Leicester",
+      "code": "LEI",
+      "country": "England",
+      "founded": 1884,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/46.png",
+      "venue": {
+        "id": 547,
+        "name": "King Power Stadium",
+        "address": "Filbert Way",
+        "city": "Leicester, Leicestershire",
+        "capacity": 34310,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/547.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 40,
+      "name": "Liverpool",
+      "code": "LIV",
+      "country": "England",
+      "founded": 1892,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/40.png",
+      "venue": {
+        "id": 550,
+        "name": "Anfield",
+        "address": "Anfield Road",
+        "city": "Liverpool",
+        "capacity": 61276,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/550.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 50,
+      "name": "Manchester City",
+      "code": "MCI",
+      "country": "England",
+      "founded": 1880,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/50.png",
+      "venue": {
+        "id": 555,
+        "name": "Etihad Stadium",
+        "address": "Rowsley Street",
+        "city": "Manchester",
+        "capacity": 55097,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/555.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 33,
+      "name": "Manchester United",
+      "code": "MUN",
+      "country": "England",
+      "founded": 1878,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/33.png",
+      "venue": {
+        "id": 556,
+        "name": "Old Trafford",
+        "address": "Sir Matt Busby Way",
+        "city": "Manchester",
+        "capacity": 76212,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/556.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 34,
+      "name": "Newcastle",
+      "code": "NEW",
+      "country": "England",
+      "founded": 1892,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/34.png",
+      "venue": {
+        "id": 562,
+        "name": "St. James' Park",
+        "address": "St. James&apos; Street",
+        "city": "Newcastle upon Tyne",
+        "capacity": 52758,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/562.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 65,
+      "name": "Nottingham Forest",
+      "code": "NOT",
+      "country": "England",
+      "founded": 1865,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/65.png",
+      "venue": {
+        "id": 566,
+        "name": "The City Ground",
+        "address": "Pavilion Road",
+        "city": "Nottingham, Nottinghamshire",
+        "capacity": 30576,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/566.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 41,
+      "name": "Southampton",
+      "code": "SOU",
+      "country": "England",
+      "founded": 1885,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/41.png",
+      "venue": {
+        "id": 585,
+        "name": "St. Mary's Stadium",
+        "address": "Britannia Road",
+        "city": "Southampton, Hampshire",
+        "capacity": 32689,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/585.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 47,
+      "name": "Tottenham",
+      "code": "TOT",
+      "country": "England",
+      "founded": 1882,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/47.png",
+      "venue": {
+        "id": 593,
+        "name": "Tottenham Hotspur Stadium",
+        "address": "Bill Nicholson Way, 748 High Road",
+        "city": "London",
+        "capacity": 62850,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/593.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 48,
+      "name": "West Ham",
+      "code": "WES",
+      "country": "England",
+      "founded": 1895,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/48.png",
+      "venue": {
+        "id": 598,
+        "name": "London Stadium",
+        "address": "Marshgate Lane, Stratford",
+        "city": "London",
+        "capacity": 64472,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/598.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Wolves",
+      "code": "WOL",
+      "country": "England",
+      "founded": 1877,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/39.png",
+      "venue": {
+        "id": 600,
+        "name": "Molineux Stadium",
+        "address": "Waterloo Road",
+        "city": "Wolverhampton, West Midlands",
+        "capacity": 34624,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/600.png"
+      },
+      "league": {
+        "id": 39,
+        "name": "Premier League",
+        "country": "England",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 21595,
+      "name": "AVS",
+      "code": null,
+      "country": "Portugal",
+      "founded": null,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/21595.png",
+      "venue": {
+        "id": 1272,
+        "name": "Estádio Clube Desportivo das Aves",
+        "address": "Rua Luís Gonzaga Mendes de Carvalho 265",
+        "city": "Vila das Aves",
+        "capacity": 8560,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1272.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 240,
+      "name": "Arouca",
+      "code": "ARO",
+      "country": "Portugal",
+      "founded": 1951,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/240.png",
+      "venue": {
+        "id": 1275,
+        "name": "Estádio Municipal de Arouca",
+        "address": "Afonso Pinto Magalhães Valdasna",
+        "city": "Arouca",
+        "capacity": 7000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1275.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 211,
+      "name": "Benfica",
+      "code": "BEN",
+      "country": "Portugal",
+      "founded": 1904,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/211.png",
+      "venue": {
+        "id": 1265,
+        "name": "Estádio do Sport Lisboa e Benfica (da Luz)",
+        "address": "Rua José Maria Nicolau",
+        "city": "Lisboa",
+        "capacity": 65647,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1265.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 222,
+      "name": "Boavista",
+      "code": null,
+      "country": "Portugal",
+      "founded": 1903,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/222.png",
+      "venue": {
+        "id": 1267,
+        "name": "Estádio do Bessa Século XXI",
+        "address": "Rua O Primeiro de Janeiro, Boavista",
+        "city": "Porto",
+        "capacity": 28263,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1267.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 4716,
+      "name": "Casa Pia",
+      "code": "CAS",
+      "country": "Portugal",
+      "founded": 1920,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/4716.png",
+      "venue": {
+        "id": 1262,
+        "name": "Estádio Nacional",
+        "address": "Rua Monsanto",
+        "city": "Jamor, Oeiras",
+        "capacity": 38000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1262.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 230,
+      "name": "Estoril",
+      "code": "EST",
+      "country": "Portugal",
+      "founded": 1939,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/230.png",
+      "venue": {
+        "id": 1274,
+        "name": "Estádio António Coimbra da Mota",
+        "address": "Rua Dom Bosco",
+        "city": "Estoril",
+        "capacity": 8015,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1274.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 15130,
+      "name": "Estrela",
+      "code": null,
+      "country": "Portugal",
+      "founded": 0,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/15130.png",
+      "venue": {
+        "id": 22604,
+        "name": "Campo Municipal dos Prazeres",
+        "address": "Alameda Bonifácio Lázaro Lozano",
+        "city": "Amadora",
+        "capacity": 800,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22604.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 212,
+      "name": "FC Porto",
+      "code": "POR",
+      "country": "Portugal",
+      "founded": 1893,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/212.png",
+      "venue": {
+        "id": 1286,
+        "name": "Estádio Do Dragão",
+        "address": "Via Futebol Clube do Porto",
+        "city": "Porto",
+        "capacity": 50399,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1286.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 242,
+      "name": "Famalicao",
+      "code": "FAM",
+      "country": "Portugal",
+      "founded": 1931,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/242.png",
+      "venue": {
+        "id": 1276,
+        "name": "Estádio Municipal 22 de Junho",
+        "address": "Alameda dos Bargos",
+        "city": "Vila Nova de Famalicão",
+        "capacity": 8000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1276.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 231,
+      "name": "Farense",
+      "code": "FAR",
+      "country": "Portugal",
+      "founded": 1910,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/231.png",
+      "venue": {
+        "id": 1290,
+        "name": "Estádio de São Lúis",
+        "address": "Rua do Sporting Club Farense",
+        "city": "Faro",
+        "capacity": 12000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1290.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 762,
+      "name": "GIL Vicente",
+      "code": "VIC",
+      "country": "Portugal",
+      "founded": 1924,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/762.png",
+      "venue": {
+        "id": 2811,
+        "name": "Estádio Cidade de Barcelos",
+        "address": "strada Nacional 103, Vila Boa",
+        "city": "Barcelos",
+        "capacity": 12046,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/2811.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 224,
+      "name": "Guimaraes",
+      "code": "GUI",
+      "country": "Portugal",
+      "founded": 1922,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/224.png",
+      "venue": {
+        "id": 1295,
+        "name": "Estádio Dom Afonso Henriques",
+        "address": "Rua de São Gonçalo 505",
+        "city": "Guimarães",
+        "capacity": 30165,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1295.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 215,
+      "name": "Moreirense",
+      "code": "MOR",
+      "country": "Portugal",
+      "founded": null,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/215.png",
+      "venue": {
+        "id": 1280,
+        "name": "Parque Desportivo Comendador Joaquim de Almeida Freitas",
+        "address": "Avenida Comendador Joaquim de Almeida Freitas",
+        "city": "Moreira de Cónegos",
+        "capacity": 13000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1280.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 225,
+      "name": "Nacional",
+      "code": "NAC",
+      "country": "Portugal",
+      "founded": 1910,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/225.png",
+      "venue": {
+        "id": 1281,
+        "name": "Estádio da Madeira",
+        "address": "Rua do Esmeraldo, nº 46",
+        "city": "Ilha da Madeira",
+        "capacity": 5200,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1281.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 226,
+      "name": "Rio Ave",
+      "code": "RIO",
+      "country": "Portugal",
+      "founded": 1939,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/226.png",
+      "venue": {
+        "id": 1288,
+        "name": "Estádio do Rio Ave Futebol Clube",
+        "address": "Rua Dona Maria Pães Ribeiro",
+        "city": "Vila do Conde",
+        "capacity": 12815,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1288.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 217,
+      "name": "SC Braga",
+      "code": "BRA",
+      "country": "Portugal",
+      "founded": 1921,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/217.png",
+      "venue": {
+        "id": 1291,
+        "name": "Estádio Municipal de Braga",
+        "address": "Avenida do Estádio",
+        "city": "Braga",
+        "capacity": 30286,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1291.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 227,
+      "name": "Santa Clara",
+      "code": "SAN",
+      "country": "Portugal",
+      "founded": 1921,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/227.png",
+      "venue": {
+        "id": 1289,
+        "name": "Estádio de São Miguel",
+        "address": "Rua Comandante Jaime de Sousa 21",
+        "city": "Ponta Delgada, Ilha de São Miguel, Açores",
+        "capacity": 13277,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1289.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 228,
+      "name": "Sporting CP",
+      "code": "SPO",
+      "country": "Portugal",
+      "founded": 1906,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/228.png",
+      "venue": {
+        "id": 1293,
+        "name": "Estádio José Alvalade",
+        "address": "Rua Professor Fernando da Fonseca",
+        "city": "Lisboa",
+        "capacity": 50466,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1293.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 810,
+      "name": "Vizela",
+      "code": "VIZ",
+      "country": "Portugal",
+      "founded": 1939,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/810.png",
+      "venue": {
+        "id": 2817,
+        "name": "Estádio Do Vizela",
+        "address": null,
+        "city": "Caldas de Vizela",
+        "capacity": 6565,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/2817.png"
+      },
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 489,
+      "name": "AC Milan",
+      "code": "MIL",
+      "country": "Italy",
+      "founded": 1899,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/489.png",
+      "venue": {
+        "id": 907,
+        "name": "Stadio Giuseppe Meazza",
+        "address": "Via Piccolomini 5",
+        "city": "Milano",
+        "capacity": 80018,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/907.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 497,
+      "name": "AS Roma",
+      "code": "ROM",
+      "country": "Italy",
+      "founded": 1927,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/497.png",
+      "venue": {
+        "id": 910,
+        "name": "Stadio Olimpico",
+        "address": "Viale dei Gladiatori, 2 / Via del Foro Italico",
+        "city": "Roma",
+        "capacity": 68530,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/910.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 499,
+      "name": "Atalanta",
+      "code": "ATA",
+      "country": "Italy",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/499.png",
+      "venue": {
+        "id": 879,
+        "name": "Gewiss Stadium",
+        "address": "Viale Giulio Cesare 18",
+        "city": "Bergamo",
+        "capacity": 21300,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/879.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 500,
+      "name": "Bologna",
+      "code": "BOL",
+      "country": "Italy",
+      "founded": 1909,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/500.png",
+      "venue": {
+        "id": 881,
+        "name": "Stadio Renato Dall'Ara",
+        "address": "Via Andrea Costa, 174",
+        "city": "Bologna",
+        "capacity": 39279,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/881.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 490,
+      "name": "Cagliari",
+      "code": "CAG",
+      "country": "Italy",
+      "founded": 1920,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/490.png",
+      "venue": {
+        "id": 12275,
+        "name": "Unipol Domus",
+        "address": "Via Raimondo Carta Raspi",
+        "city": "Cagliari",
+        "capacity": 16416,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/12275.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 895,
+      "name": "Como",
+      "code": "COM",
+      "country": "Italy",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/895.png",
+      "venue": {
+        "id": 892,
+        "name": "Stadio Giuseppe Sinigaglia",
+        "address": "Via Giuseppe Sinigaglia, 3",
+        "city": "Como",
+        "capacity": 13602,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/892.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 511,
+      "name": "Empoli",
+      "code": "EMP",
+      "country": "Italy",
+      "founded": 1920,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/511.png",
+      "venue": {
+        "id": 20109,
+        "name": "Stadio Carlo Castellani – Computer Gross Arena",
+        "address": "Viale delle Olimpiadi",
+        "city": "Empoli",
+        "capacity": 16284,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20109.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 502,
+      "name": "Fiorentina",
+      "code": "FIO",
+      "country": "Italy",
+      "founded": 1926,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/502.png",
+      "venue": {
+        "id": 902,
+        "name": "Stadio Artemio Franchi",
+        "address": "Viale Manfredo Fanti 14",
+        "city": "Firenze",
+        "capacity": 43147,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/902.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 495,
+      "name": "Genoa",
+      "code": "GEN",
+      "country": "Italy",
+      "founded": 1893,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/495.png",
+      "venue": {
+        "id": 905,
+        "name": "Stadio Comunale Luigi Ferraris",
+        "address": "Via Giovanni De Prà, 1",
+        "city": "Genova",
+        "capacity": 36703,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/905.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 504,
+      "name": "Hellas Verona",
+      "code": "VER",
+      "country": "Italy",
+      "founded": 1903,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/504.png",
+      "venue": {
+        "id": 890,
+        "name": "Stadio Marc'Antonio Bentegodi",
+        "address": "Piazzale Olimpia",
+        "city": "Verona",
+        "capacity": 39211,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/890.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 505,
+      "name": "Inter",
+      "code": "INT",
+      "country": "Italy",
+      "founded": 1908,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/505.png",
+      "venue": {
+        "id": 907,
+        "name": "Stadio Giuseppe Meazza",
+        "address": "Via Piccolomini 5",
+        "city": "Milano",
+        "capacity": 80018,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/907.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 496,
+      "name": "Juventus",
+      "code": "JUV",
+      "country": "Italy",
+      "founded": 1897,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/496.png",
+      "venue": {
+        "id": 909,
+        "name": "Allianz Stadium",
+        "address": "Strada Comunale di Altessano 131",
+        "city": "Torino",
+        "capacity": 45666,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/909.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 487,
+      "name": "Lazio",
+      "code": "LAZ",
+      "country": "Italy",
+      "founded": 1900,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/487.png",
+      "venue": {
+        "id": 910,
+        "name": "Stadio Olimpico",
+        "address": "Viale dei Gladiatori, 2 / Via del Foro Italico",
+        "city": "Roma",
+        "capacity": 68530,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/910.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 867,
+      "name": "Lecce",
+      "code": "LEC",
+      "country": "Italy",
+      "founded": 1908,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/867.png",
+      "venue": {
+        "id": 911,
+        "name": "Stadio Comunale Via del Mare",
+        "address": "Viale dello Stadio",
+        "city": "Lecce",
+        "capacity": 33876,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/911.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1579,
+      "name": "Monza",
+      "code": "MON",
+      "country": "Italy",
+      "founded": 1912,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1579.png",
+      "venue": {
+        "id": 12086,
+        "name": "U-Power Stadium",
+        "address": "Via Franco Tognini",
+        "city": "Monza",
+        "capacity": 18568,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/12086.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 492,
+      "name": "Napoli",
+      "code": "NAP",
+      "country": "Italy",
+      "founded": 1904,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/492.png",
+      "venue": {
+        "id": 11904,
+        "name": "Stadio Diego Armando Maradona",
+        "address": "Pizzale Vincenzo Tecchio",
+        "city": "Napoli",
+        "capacity": 60240,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/11904.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 523,
+      "name": "Parma",
+      "code": "PAR",
+      "country": "Italy",
+      "founded": 1913,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/523.png",
+      "venue": {
+        "id": 921,
+        "name": "Stadio Ennio Tardini",
+        "address": "Via Partigiani d&apos;Italia, 1",
+        "city": "Parma",
+        "capacity": 22885,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/921.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 503,
+      "name": "Torino",
+      "code": "TOR",
+      "country": "Italy",
+      "founded": 1906,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/503.png",
+      "venue": {
+        "id": 943,
+        "name": "Stadio Olimpico Grande Torino",
+        "address": "Corso Sebastopoli 123, Santa Rita",
+        "city": "Torino",
+        "capacity": 27958,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/943.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 494,
+      "name": "Udinese",
+      "code": "UDI",
+      "country": "Italy",
+      "founded": 1896,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/494.png",
+      "venue": {
+        "id": 20416,
+        "name": "Bluenergy Stadium",
+        "address": "Piazza le Repubblica Argentina, 3",
+        "city": "Udine",
+        "capacity": 25952,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20416.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 517,
+      "name": "Venezia",
+      "code": "VEN",
+      "country": "Italy",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/517.png",
+      "venue": {
+        "id": 948,
+        "name": "Stadio Pierluigi Penzo",
+        "address": "Isola di Sant&apos;Elena",
+        "city": "Venezia",
+        "capacity": 11150,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/948.png"
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 3563,
+      "name": "Adana Demirspor",
+      "code": "ADA",
+      "country": "Turkey",
+      "founded": 1941,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3563.png",
+      "venue": {
+        "id": 11924,
+        "name": "Yeni Adana Stadyumu",
+        "address": "Çarkıpare, Sarıçam",
+        "city": "Adana",
+        "capacity": 33543,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/11924.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 996,
+      "name": "Alanyaspor",
+      "code": "ALA",
+      "country": "Turkey",
+      "founded": 1948,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/996.png",
+      "venue": {
+        "id": 22465,
+        "name": "GAIN Park Stadium",
+        "address": "Sarıkadıoğlu Caddesi, Oba, Obaköy, Alanya",
+        "city": "Antalya",
+        "capacity": 15000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22465.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1005,
+      "name": "Antalyaspor",
+      "code": "ANT",
+      "country": "Turkey",
+      "founded": 1966,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1005.png",
+      "venue": {
+        "id": 19220,
+        "name": "Corendon Airlines Park",
+        "address": "100. Yıl Bulvarı",
+        "city": "Antalya",
+        "capacity": 33032,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19220.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 564,
+      "name": "Başakşehir",
+      "code": "IST",
+      "country": "Turkey",
+      "founded": 1990,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/564.png",
+      "venue": {
+        "id": 1584,
+        "name": "Başakşehir Fatih Terim Stadyumu",
+        "address": "Yunus Emre Caddesi, Başakşehir",
+        "city": "İstanbul",
+        "capacity": 17319,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1584.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 549,
+      "name": "Beşiktaş",
+      "code": "BES",
+      "country": "Turkey",
+      "founded": 1903,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/549.png",
+      "venue": {
+        "id": 20423,
+        "name": "Tüpraş Stadyumu",
+        "address": "Dolmabahçe Gazhane Caddesi, Beşiktaş",
+        "city": "İstanbul",
+        "capacity": 43500,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20423.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 3583,
+      "name": "Bodrum FK",
+      "code": null,
+      "country": "Turkey",
+      "founded": 1931,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3583.png",
+      "venue": {
+        "id": 2385,
+        "name": "Bodrum İlçe Stadı",
+        "address": "Marsmabedi Caddesi",
+        "city": "Bodrum",
+        "capacity": 3000,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/2385.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 3588,
+      "name": "Eyüpspor",
+      "code": "EYU",
+      "country": "Turkey",
+      "founded": 1919,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3588.png",
+      "venue": {
+        "id": 22763,
+        "name": "Recep Tayyip Erdoğan Stadyumu",
+        "address": "Tepebaşı Caddesi, Kasımpaşa, Beyoğlu",
+        "city": "İstanbul",
+        "capacity": 14234,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22763.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 611,
+      "name": "Fenerbahçe",
+      "code": "FEN",
+      "country": "Turkey",
+      "founded": 1907,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/611.png",
+      "venue": {
+        "id": 22760,
+        "name": "Chobani Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+        "address": "Recep Peker Caddesi, Kadıköy",
+        "city": "İstanbul",
+        "capacity": 47834,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22760.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 645,
+      "name": "Galatasaray",
+      "code": "GAL",
+      "country": "Turkey",
+      "founded": 1905,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/645.png",
+      "venue": {
+        "id": 22761,
+        "name": "RAMS Park",
+        "address": "İstanbul Çevre Yolu, Aslantepe",
+        "city": "İstanbul",
+        "capacity": 53798,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22761.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 3573,
+      "name": "Gaziantep FK",
+      "code": "GAZ",
+      "country": "Turkey",
+      "founded": 1988,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3573.png",
+      "venue": {
+        "id": 2375,
+        "name": "Gaziantep Stadyumu",
+        "address": "Yukarıbeylerbeyi Mah. 15 Nolu Sok., Şehitkamil",
+        "city": "Gaziantep",
+        "capacity": 35558,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/2375.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 994,
+      "name": "Göztepe",
+      "code": "GOZ",
+      "country": "Turkey",
+      "founded": 1925,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/994.png",
+      "venue": {
+        "id": 22441,
+        "name": "Gürsel Aksel Stadyumu",
+        "address": "Mehmet Ali Akman, 20/3. Sk. No:28, Konak",
+        "city": "İzmir",
+        "capacity": 30035,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22441.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 3575,
+      "name": "Hatayspor",
+      "code": "HAT",
+      "country": "Turkey",
+      "founded": 1967,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3575.png",
+      "venue": {
+        "id": 8392,
+        "name": "Mersin Stadyumu",
+        "address": "Haraparası, Süreyya Halefoğlu Cd. No:64",
+        "city": "Mersin",
+        "capacity": 25534,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/8392.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1004,
+      "name": "Kasımpaşa",
+      "code": "KAS",
+      "country": "Turkey",
+      "founded": 1921,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1004.png",
+      "venue": {
+        "id": 22763,
+        "name": "Recep Tayyip Erdoğan Stadyumu",
+        "address": "Tepebaşı Caddesi, Kasımpaşa, Beyoğlu",
+        "city": "İstanbul",
+        "capacity": 14234,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22763.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1001,
+      "name": "Kayserispor",
+      "code": "KAY",
+      "country": "Turkey",
+      "founded": 1966,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1001.png",
+      "venue": {
+        "id": 19613,
+        "name": "RHG Enertürk Enerji Stadyumu",
+        "address": "İle Fırat Caddesi",
+        "city": "Kayseri",
+        "capacity": 32864,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/19613.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 607,
+      "name": "Konyaspor",
+      "code": "KON",
+      "country": "Turkey",
+      "founded": 1922,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/607.png",
+      "venue": {
+        "id": 22762,
+        "name": "Medaş Konya Büyükşehir Stadyumu",
+        "address": "Sille Parsana Mh., Kaletaş Caddesi, Selçuklu",
+        "city": "Konya",
+        "capacity": 42276,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/22762.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1007,
+      "name": "Rizespor",
+      "code": "RIZ",
+      "country": "Turkey",
+      "founded": 1953,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1007.png",
+      "venue": {
+        "id": 1580,
+        "name": "Çaykur Didi Stadyumu",
+        "address": "Karadeniz Sahli Yolu Yanyolu",
+        "city": "Rize",
+        "capacity": 15558,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/1580.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 3603,
+      "name": "Samsunspor",
+      "code": "SAM",
+      "country": "Turkey",
+      "founded": 1965,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/3603.png",
+      "venue": {
+        "id": 11925,
+        "name": "Samsun Yeni 19 Mayıs Stadyumu",
+        "address": "Sanayi Mahallesi, Tekkeköy",
+        "city": "Samsun",
+        "capacity": 34658,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/11925.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 1002,
+      "name": "Sivasspor",
+      "code": "SIV",
+      "country": "Turkey",
+      "founded": 1967,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/1002.png",
+      "venue": {
+        "id": 20425,
+        "name": "BG Group 4 Eylül Stadyumu",
+        "address": "Muhsin Yazıcıoğlu Bulvarı",
+        "city": "Sivas",
+        "capacity": 27532,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20425.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    },
+    {
+      "id": 998,
+      "name": "Trabzonspor",
+      "code": "TRA",
+      "country": "Turkey",
+      "founded": 1967,
+      "national": false,
+      "logo": "https://media.api-sports.io/football/teams/998.png",
+      "venue": {
+        "id": 20189,
+        "name": "Papara Park",
+        "address": "Trabzon Giresun Yolu, Akyaz",
+        "city": "Trabzon",
+        "capacity": 41513,
+        "surface": "grass",
+        "image": "https://media.api-sports.io/football/venues/20189.png"
+      },
+      "league": {
+        "id": 203,
+        "name": "Süper Lig",
+        "country": "Türkiye",
+        "reference_season": 2024,
+        "squad_source": "players/squads current response"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+START 118 ROLLBACK 117 RAW CONTENT
+This removes the failed raw HTML block and restores the page to the state before 117.
+It does not touch Ramos, Endrick, favicon, ticker-template, data/transfers.json, or var folders.
+BACKUP: content\transfers\matthijs-de-ligt\index.md -> _backup_118_rollback_117_raw_content\matthijs-de-ligt-index.before_118_20260627_205548.md
+RESTORED PAGE FROM 117 BACKUP: _backup_117_de_ligt_raw_content_block\matthijs-de-ligt-index.before_117_20260627_205416.md -> content\transfers\matthijs-de-ligt\index.md
+Layout has no dead De Ligt fallback block
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4529 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1769 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.

@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+body.transfer-page .transfer-side-column,
+body.transfer-page .player-brief {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+body.transfer-page .player-market-chart {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    margin: 18px 0 0;
+    padding: 18px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.transfer-page .player-market-chart__canvas {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: visible;
+    border: 1px solid rgba(212, 175, 55, 0.11);
+    border-radius: 12px;
+    background:
+        radial-gradient(
+            circle at 50% 0,
+            rgba(212, 175, 55, 0.09),
+            transparent 58%
+        ),
+        rgba(5, 8, 11, 0.66);
+}
+
+body.transfer-page .player-market-chart__canvas svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+body.transfer-page .player-market-chart__grid {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.065);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+}
+
+body.transfer-page .player-market-chart__area {
+    stroke: none;
+}
+
+body.transfer-page .player-market-chart__line {
+    fill: none;
+    stroke: #e7c65b;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 5px rgba(231, 198, 91, 0.28));
+    vector-effect: non-scaling-stroke;
+}
+
+body.transfer-page .player-market-chart__dot {
+    fill: #11161c;
+    stroke: #f0d16d;
+    stroke-width: 2.2;
+    vector-effect: non-scaling-stroke;
+}
+
+body.transfer-page .player-market-chart__club-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+body.transfer-page .player-market-chart__club-marker {
+    --club-logo-size: 38px;
+    --club-logo-gap: 10px;
+    position: absolute;
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    z-index: 3;
+    pointer-events: none;
+    transform: translate(-50%, calc(-100% - var(--club-logo-gap)));
+}
+
+body.transfer-page .player-market-chart__club-logo {
+    display: block;
+    width: var(--club-logo-size);
+    height: var(--club-logo-size);
+    min-width: var(--club-logo-size);
+    min-height: var(--club-logo-size);
+    max-width: var(--club-logo-size);
+    max-height: var(--club-logo-size);
+    object-fit: contain;
+    object-position: center;
+}
+
+body.transfer-page .player-market-chart__points {
+    display: grid;
+    grid-template-columns:
+        repeat(var(--market-point-count), minmax(0, 1fr));
+    gap: 5px;
+    margin-top: 9px;
+}
+
+body.transfer-page .player-market-chart__point {
+    display: grid;
+    min-width: 0;
+    gap: 2px;
+    text-align: center;
+}
+
+body.transfer-page .player-market-chart__point small {
+    overflow: hidden;
+    color: #8c96a1;
+    font-size: 7px;
+    font-weight: 850;
+    line-height: 1.15;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+body.transfer-page .player-market-chart__point strong {
+    color: #d6dbe1;
+    font-size: 8px;
+    font-weight: 900;
+    line-height: 1.15;
+    white-space: nowrap;
+}
+
+body.transfer-page .player-market-chart__note {
+    margin: 10px 0 0;
+    color: #666e78;
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.transfer-player-stats {
+    margin-top: 30px;
+}
+
+.transfer-player-stats .transfer-stats {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.transfer-player-stats .transfer-stats__card {
+    min-width: 0;
+}
+
+.transfer-player-stats__source {
+    margin: 12px 0 0;
+    color: #6d7680;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 920px) {
+    .transfer-player-stats .transfer-stats {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    body.transfer-page .player-market-chart__canvas {
+        height: 150px;
+    }
+
+    body.transfer-page .player-market-chart__club-marker {
+        --club-logo-size: 25px;
+        width: 29px;
+        height: 29px;
+    }
+
+    body.transfer-page .player-market-chart__points {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 8px;
+    }
+
+    .transfer-player-stats .transfer-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+body.transfer-page .player-market-chart--zoomable {
+    cursor: zoom-in;
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease;
+}
+
+body.transfer-page .player-market-chart--zoomable:hover,
+body.transfer-page .player-market-chart--zoomable:focus-visible {
+    outline: none;
+    border-top-color: rgba(231, 198, 91, 0.38);
+}
+
+.player-market-chart-modal[hidden] {
+    display: none !important;
+}
+
+.player-market-chart-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.player-market-chart-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.84);
+    backdrop-filter: blur(8px);
+    cursor: zoom-out;
+}
+
+.player-market-chart-modal__dialog {
+    position: relative;
+    z-index: 1;
+    width: min(1050px, 96vw);
+    max-height: 92vh;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 38px 28px 28px;
+    border: 1px solid rgba(231, 198, 91, 0.22);
+    border-radius: 22px;
+    background: #080c11;
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.78);
+}
+
+.player-market-chart-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    z-index: 5;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+    color: #e4e7eb;
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.player-market-chart-modal__content {
+    width: 100%;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-top: 0 !important;
+    cursor: default !important;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__canvas {
+    height: min(54vw, 470px);
+    min-height: 330px;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__club-marker {
+    --club-logo-size: 62px;
+    --club-logo-gap: 20px;
+    width: 68px;
+    height: 68px;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__point small {
+    font-size: 12px;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__point strong {
+    font-size: 14px;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__note {
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+body.player-market-chart-modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .player-market-chart-modal {
+        padding: 10px;
+    }
+
+    .player-market-chart-modal__dialog {
+        width: 100%;
+        padding: 44px 14px 20px;
+        border-radius: 17px;
+    }
+
+    .player-market-chart-modal
+    .player-market-chart--enlarged
+    .player-market-chart__canvas {
+        height: 360px;
+        min-height: 360px;
+    }
+
+    .player-market-chart-modal
+    .player-market-chart--enlarged
+    .player-market-chart__club-marker {
+        --club-logo-size: 38px;
+        width: 43px;
+        height: 43px;
+    }
+}
+
+body.transfer-page
+.player-market-chart__club-marker[data-club-slug="real-madrid"]
+.player-market-chart__club-logo {
+    transform: scale(1.12);
+    transform-origin: center;
+}
+
+/* PROFUTBIK CHART PRICE STYLE V33 START */
+
+/*
+ * Join the chart directly to the information separator
+ * under the final player-detail row.
+ */
+body.transfer-page
+.player-brief__list {
+    margin-bottom: 0 !important;
+}
+
+body.transfer-page
+.player-brief__list + .player-market-chart,
+body.transfer-page
+.player-brief dl + .player-market-chart {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: 0 !important;
+}
+
+body.transfer-page
+.player-brief__list + .player-market-chart
+.player-market-chart__canvas,
+body.transfer-page
+.player-brief dl + .player-market-chart
+.player-market-chart__canvas {
+    border-top: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+body.transfer-page
+.player-brief,
+body.transfer-page
+.transfer-side-column,
+body.transfer-page
+.player-market-chart {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/*
+ * Keep years restrained and make only progression prices
+ * use the stronger sports-style display face.
+ */
+body.transfer-page
+.player-market-chart__point small {
+    font-family:
+        "Montserrat",
+        Arial,
+        sans-serif;
+    letter-spacing: 0.015em;
+}
+
+body.transfer-page
+.player-market-chart__point strong {
+    font-family:
+        "Russo One",
+        "Montserrat",
+        Arial,
+        sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    color: #f1f3f5;
+    text-shadow:
+        0 0 8px rgba(231, 198, 91, 0.14);
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__point strong {
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    text-shadow:
+        0 0 12px rgba(231, 198, 91, 0.18);
+}
+
+/* PROFUTBIK CHART PRICE STYLE V33 END */
+
+/* PROFUTBIK CHART CLEAN LOOK V42 START */
+
+.player-market-chart__area {
+    display: none;
+}
+
+body.transfer-page
+.player-market-chart__club-marker--last {
+    transform:
+        translate(
+            -50%,
+            calc(-100% - var(--club-logo-gap))
+        );
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged
+.player-market-chart__club-marker--last {
+    transform:
+        translate(
+            -50%,
+            calc(-100% - var(--club-logo-gap))
+        );
+}
+
+/* PROFUTBIK CHART CLEAN LOOK V42 END */

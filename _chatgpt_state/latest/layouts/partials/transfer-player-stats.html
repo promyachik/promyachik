@@ -1,0 +1,130 @@
+{{ with .Params.previous_club_stats }}
+
+{{ $hasRealStats := false }}
+
+{{ $values := slice
+    .matches
+    .goals
+    .assists
+    .minutes
+    .yellow_cards
+    .red_cards
+}}
+
+{{ range $values }}
+
+    {{ $value := printf "%v" . }}
+
+    {{ if and
+        (ne $value "")
+        (ne $value "—")
+        (ne $value "-")
+        (ne $value "null")
+        (ne $value "<nil>")
+    }}
+
+        {{ $hasRealStats = true }}
+
+    {{ end }}
+
+{{ end }}
+
+{{ if $hasRealStats }}
+
+<section class="transfer-section transfer-player-stats">
+
+    <div class="transfer-section__heading">
+        <div>
+
+            <span>СТАТИСТИКА</span>
+
+            <h2>
+                {{ default
+                    "Статистика игрока"
+                    .label
+                }}
+            </h2>
+
+        </div>
+    </div>
+
+    <div class="transfer-stats">
+
+        <article class="transfer-stats__card transfer-stats__card--matches">
+            <strong>{{ .matches }}</strong>
+            <span class="transfer-stats__label">
+                Матчи
+            </span>
+        </article>
+
+        <article class="transfer-stats__card transfer-stats__card--goals">
+            <strong>{{ .goals }}</strong>
+            <span class="transfer-stats__label">
+                Голы
+            </span>
+        </article>
+
+        <article class="transfer-stats__card transfer-stats__card--assists">
+            <strong>{{ .assists }}</strong>
+            <span class="transfer-stats__label">
+                Голевые передачи
+            </span>
+        </article>
+
+        <article class="transfer-stats__card transfer-stats__card--minutes">
+            <strong>{{ .minutes }}</strong>
+            <span class="transfer-stats__label">
+                Минуты
+            </span>
+        </article>
+
+        <article class="transfer-stats__card transfer-stats__card--yellow">
+            <strong>{{ .yellow_cards }}</strong>
+            <span class="transfer-stats__label">
+                Жёлтые карточки
+            </span>
+        </article>
+
+        <article class="transfer-stats__card transfer-stats__card--red">
+            <strong>{{ .red_cards }}</strong>
+            <span class="transfer-stats__label">
+                Красные карточки
+            </span>
+        </article>
+
+        {{ with .season }}
+
+            <article class="transfer-stats__card transfer-stats__card--season">
+                <strong>{{ . }}</strong>
+                <span class="transfer-stats__label">
+                    Сезон
+                </span>
+            </article>
+
+        {{ end }}
+
+    </div>
+
+    {{ with .source_note }}
+
+        {{ if not
+            (strings.Contains
+                .
+                "Данные будут заполнены"
+            )
+        }}
+
+            <p class="transfer-player-stats__source">
+                {{ . }}
+            </p>
+
+        {{ end }}
+
+    {{ end }}
+
+</section>
+
+{{ end }}
+
+{{ end }}
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

@@ -1,0 +1,38 @@
+START 109 RESTORE REAL DE LIGT PAGE FROM BACKUP
+This restores the old De Ligt page. No Ramos, no Endrick, no favicon.
+STEP 1: find real old De Ligt page
+Page candidates found: 1
+  1. score=350 | content\transfers\matthijs-de-ligt\index.md | --- title: "Matthijs de Ligt" slug: "matthijs-de-ligt" player_name: "Matthijs de Ligt" player_image: "/images/players/cutout/532.png" status: "official" draft: false --- Matthijs de Ligt.
+ERROR: No good old De Ligt page found in backups. Current broken skeleton was not overwritten.
+
+STEP 2: restore De Ligt data record only
+Data candidates found: 2
+  1. score=330 | data\transfers.before-mbappe-cutout.json | title=Matthijs de Ligt | slug=matthijs-de-ligt | from=None | to=None
+  2. score=330 | data\transfers.json | title=Matthijs de Ligt | slug=matthijs-de-ligt | from=None | to=None
+BACKUP: data\transfers.json -> _backup_109_de_ligt_page\transfers-json.before_109_20260627_201927.json
+RESTORED DATA RECORD from data\transfers.before-mbappe-cutout.json | removed_current=1 | inserted_position=1
+
+STEP 3: Hugo build check
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4529 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1713 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.

@@ -1,0 +1,69 @@
+<link
+    rel="stylesheet"
+    href="{{ "css/header.css" | relURL }}"
+>
+
+<link
+    rel="stylesheet"
+    href="{{ "css/transfer-ticker.css" | relURL }}"
+>
+
+<header class="pf-header">
+
+    <div class="pf-header__inner">
+
+        <a
+            class="pf-header__logo"
+            href="{{ .Site.Home.RelPermalink }}"
+            aria-label="Главная страница ProFutbik"
+        >
+            <img
+                class="pf-header__logo-image"
+                src="{{ "css/profutbik-logo-site.png" | relURL }}"
+                alt="ProFutbik"
+            >
+        </a>
+
+        <nav
+            class="pf-header__nav"
+            aria-label="Основная навигация"
+        >
+            <a
+                class="pf-header__nav-link{{ if .IsHome }} is-active{{ end }}"
+                href="{{ .Site.Home.RelPermalink }}"
+                {{ if .IsHome }}aria-current="page"{{ end }}
+            >
+                Главная
+            </a>
+
+            <a
+                class="pf-header__nav-link{{ if eq .Section "transfers" }} is-active{{ end }}"
+                href="{{ "transfers/" | relURL }}"
+                {{ if eq .Section "transfers" }}aria-current="page"{{ end }}
+            >
+                Трансферы
+            </a>
+
+            <a
+                class="pf-header__nav-link{{ if eq .Section "news" }} is-active{{ end }}"
+                href="{{ "news/" | relURL }}"
+                {{ if eq .Section "news" }}aria-current="page"{{ end }}
+            >
+                Новости
+            </a>
+
+            <a
+                class="pf-header__nav-link{{ if eq .Section "about" }} is-active{{ end }}"
+                href="{{ "about/" | relURL }}"
+                {{ if eq .Section "about" }}aria-current="page"{{ end }}
+            >
+                О проекте
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+{{ partial "transfer-ticker.html" . }}
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

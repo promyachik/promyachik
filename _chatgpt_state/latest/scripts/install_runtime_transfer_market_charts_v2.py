@@ -1,0 +1,242 @@
+from __future__ import annotations
+
+import re
+import shutil
+import subprocess
+from datetime import datetime
+from pathlib import Path
+
+
+PROJECT = Path(r"C:\Users\Dmitrii\Promyachik")
+LAYOUTS = PROJECT / "layouts"
+CSS = PROJECT / "static" / "css" / "transfer-player-market-value-chart.css"
+JS = PROJECT / "static" / "js" / "transfer-player-market-value-chart.js"
+BUILD = PROJECT / "var" / "runtime_market_chart_build_v2"
+BACKUP = PROJECT / "var" / (
+    "runtime_market_chart_backup_v2_"
+    + datetime.now().strftime("%Y%m%d_%H%M%S")
+)
+
+CSS_MARKER = "transfer-player-market-value-chart.css"
+JS_MARKER = "transfer-player-market-value-chart.js"
+
+INJECTION = '''    <link rel="stylesheet" href="{{ "css/transfer-player-market-value-chart.css" | relURL }}">
+    <script defer src="{{ "js/transfer-player-market-value-chart.js" | relURL }}"></script>
+'''
+
+modified: list[Path] = []
+
+
+def relative(path: Path) -> Path:
+    return path.resolve().relative_to(PROJECT.resolve())
+
+
+def backup(path: Path) -> None:
+    if path in modified:
+        return
+
+    destination = BACKUP / relative(path)
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(path, destination)
+    modified.append(path)
+
+
+def restore() -> None:
+    for path in reversed(modified):
+        source = BACKUP / relative(path)
+
+        if source.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, path)
+
+
+def install_links() -> int:
+    changed = 0
+
+    for template in LAYOUTS.rglob("*.html"):
+        text = template.read_text(
+            encoding="utf-8-sig",
+            errors="strict",
+        )
+
+        if re.search(r"(?i)</head>", text) is None:
+            continue
+
+        if CSS_MARKER in text and JS_MARKER in text:
+            continue
+
+        updated = re.sub(
+            r"(?i)</head>",
+            INJECTION + "\n</head>",
+            text,
+            count=1,
+        )
+
+        if updated != text:
+            backup(template)
+            template.write_text(
+                updated,
+                encoding="utf-8",
+                newline="\n",
+            )
+            changed += 1
+            print("Connected in: " + str(relative(template)))
+
+    return changed
+
+
+def run_hugo() -> None:
+    hugo = shutil.which("hugo")
+
+    if not hugo:
+        raise RuntimeError("Hugo was not found in PATH.")
+
+    if BUILD.exists():
+        shutil.rmtree(BUILD)
+
+    result = subprocess.run(
+        [
+            hugo,
+            "--minify",
+            "--destination",
+            str(BUILD),
+            "--baseURL",
+            "http://127.0.0.1:1313/promyachik/",
+        ],
+        cwd=PROJECT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(
+            "Hugo build failed with code "
+            + str(result.returncode)
+        )
+
+
+def validate() -> None:
+    html_files = list(BUILD.rglob("*.html"))
+    pages_with_assets = []
+
+    for html_file in html_files:
+        html = html_file.read_text(
+            encoding="utf-8-sig",
+            errors="replace",
+        )
+
+        if JS_MARKER in html and CSS_MARKER in html:
+            pages_with_assets.append(html_file)
+
+    if not pages_with_assets:
+        raise RuntimeError(
+            "No built page contains the market chart CSS and JavaScript."
+        )
+
+    transfer_pages = [
+        html_file
+        for html_file in pages_with_assets
+        if "transfers" in {
+            part.casefold()
+            for part in html_file.relative_to(BUILD).parts
+        }
+    ]
+
+    if not transfer_pages:
+        raise RuntimeError(
+            "No built transfer page contains the market chart assets."
+        )
+
+    built_js = BUILD / "js" / "transfer-player-market-value-chart.js"
+    built_css = BUILD / "css" / "transfer-player-market-value-chart.css"
+
+    if not built_js.exists():
+        raise RuntimeError(
+            "Built JavaScript file is missing: " + str(built_js)
+        )
+
+    if not built_css.exists():
+        raise RuntimeError(
+            "Built CSS file is missing: " + str(built_css)
+        )
+
+    js_text = built_js.read_text(
+        encoding="utf-8-sig",
+        errors="replace",
+    )
+
+    required_keys = [
+        "mbappe",
+        "wirtz",
+        "konate",
+        "cucurella",
+        "dumfries",
+        "alvarez",
+        "anderson",
+        "bernardo",
+    ]
+
+    missing_keys = [
+        key
+        for key in required_keys
+        if key not in js_text
+    ]
+
+    if missing_keys:
+        raise RuntimeError(
+            "Player chart data is missing from JavaScript: "
+            + ", ".join(missing_keys)
+        )
+
+    print(
+        "Built pages with chart assets: "
+        + str(len(pages_with_assets))
+    )
+    print(
+        "Built transfer pages with chart assets: "
+        + str(len(transfer_pages))
+    )
+    print(
+        "Player datasets inside JavaScript: 8"
+    )
+
+
+def main() -> int:
+    for required in (LAYOUTS, CSS, JS):
+        if not required.exists():
+            print("ERROR: required path not found: " + str(required))
+            return 1
+
+    BACKUP.mkdir(parents=True, exist_ok=True)
+
+    try:
+        print()
+        print("STEP 1 OF 3: connecting CSS and JavaScript...")
+        changed = install_links()
+
+        if changed == 0:
+            print("Links were already present.")
+
+        print("STEP 2 OF 3: building Hugo...")
+        run_hugo()
+
+        print("STEP 3 OF 3: checking transfer pages...")
+        validate()
+
+        print()
+        print("DONE")
+        print("RUNTIME CHART CONNECTION READY: 8 PLAYERS")
+        return 0
+
+    except Exception as error:
+        print()
+        print("ERROR: " + str(error))
+        print("Restoring every modified layout file...")
+        restore()
+        print("Previous layout state restored.")
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,48 @@
+START 107 SET CORRECT FAVICON FROM var/mbappe_exact_chart_test
+This changes only favicon files and favicon <link> lines.
+Favicon candidates:
+  score=2120 | var\mbappe_exact_chart_test\favicon.ico | 68002 bytes
+  score=1070 | var\mbappe_exact_chart_test\favicon-16x16.png | 740 bytes
+  score=1070 | var\mbappe_exact_chart_test\favicon-32x32.png | 1947 bytes
+  score=370 | var\mbappe_exact_chart_test\android-chrome-192x192.png | 25310 bytes
+  score=370 | var\mbappe_exact_chart_test\android-chrome-512x512.png | 125866 bytes
+  score=370 | var\mbappe_exact_chart_test\apple-touch-icon.png | 22662 bytes
+  score=370 | var\mbappe_exact_chart_test\images\clubs\club-4202da5587-balanced-bottom.png | 19263 bytes
+  score=370 | var\mbappe_exact_chart_test\images\clubs\club-4202da5587-balanced.png | 19263 bytes
+  score=370 | var\mbappe_exact_chart_test\images\clubs\club-4202da5587-centered.png | 19263 bytes
+  score=370 | var\mbappe_exact_chart_test\images\clubs\club-4202da5587.png | 21278 bytes
+
+Selected source favicon: var\mbappe_exact_chart_test\favicon.ico
+Copy targets:
+  static\favicon.ico
+BACKUP: static\favicon.ico -> _backup_107_favicon\favicon.ico.before_107_20260627_201236
+COPIED: var\mbappe_exact_chart_test\favicon.ico -> static\favicon.ico
+
+Patch favicon links in head/layouts
+BACKUP: layouts\_default\baseof.html -> _backup_107_favicon\baseof.html.before_107_20260627_201236
+PATCHED favicon links: layouts\_default\baseof.html
+
+Run Hugo build check
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   22 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4529 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1824 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.

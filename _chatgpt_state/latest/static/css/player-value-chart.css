@@ -1,0 +1,573 @@
+/* =========================================
+   PROFUTBIK — ГРАФИК СТОИМОСТИ ИГРОКА
+========================================= */
+
+.value-dashboard {
+    display: grid;
+    grid-template-columns: 390px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 24px;
+
+    width: min(1380px, calc(100% - 40px));
+    margin: 32px auto 50px;
+    padding: 22px;
+
+    border: 1px solid rgba(220, 174, 55, 0.24);
+    border-radius: 22px;
+
+    background:
+        radial-gradient(
+            circle at 14% 22%,
+            rgba(220, 174, 55, 0.08),
+            transparent 34%
+        ),
+        linear-gradient(
+            145deg,
+            #0c0e10,
+            #07090b
+        );
+
+    box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ЛЕВАЯ КОЛОНКА
+========================================= */
+
+.value-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    width: 100%;
+    min-width: 0;
+}
+
+
+.value-summary-card {
+    width: 100%;
+    border: 1px solid rgba(220, 174, 55, 0.24);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.035),
+            rgba(255, 255, 255, 0.008)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.value-summary-card--player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 18px 16px 20px;
+}
+
+
+.value-summary-card--change {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 110px;
+    padding: 16px 14px;
+}
+
+
+/* =========================================
+   КАРТОЧКА МБАППЕ
+========================================= */
+
+.player-mini-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 100%;
+    height: 500px;
+    margin: 0 auto 12px;
+    padding: 0;
+
+    background: transparent;
+    overflow: visible;
+}
+
+
+.player-mini-card__image {
+    display: block;
+
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    max-height: 490px;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    background: transparent;
+
+    filter:
+        drop-shadow(0 16px 20px rgba(0, 0, 0, 0.58))
+        drop-shadow(0 0 12px rgba(220, 174, 55, 0.14));
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+
+.player-mini-card__image:hover {
+    transform: translateY(-3px) scale(1.01);
+
+    filter:
+        drop-shadow(0 20px 24px rgba(0, 0, 0, 0.62))
+        drop-shadow(0 0 16px rgba(220, 174, 55, 0.18));
+}
+
+
+/* =========================================
+   ТЕКУЩАЯ СТОИМОСТЬ
+========================================= */
+
+.value-summary-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #d4aa3d;
+
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.value-current-price {
+    display: block;
+
+    color: #e1b943;
+
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+
+    text-shadow:
+        0 0 14px rgba(220, 174, 55, 0.18);
+}
+
+
+/* =========================================
+   ПОСЛЕДНЕЕ ИЗМЕНЕНИЕ
+========================================= */
+
+.value-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+
+.value-change--up {
+    color: #69df50;
+}
+
+
+.value-change-arrow {
+    font-size: 23px;
+    line-height: 1;
+}
+
+
+.value-change small {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   ПРАВАЯ КОЛОНКА — ГРАФИК
+========================================= */
+
+.value-chart-area {
+    width: 100%;
+    min-width: 0;
+
+    padding: 20px 20px 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.065);
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.025),
+            rgba(255, 255, 255, 0.005)
+        );
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.value-chart-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 16px;
+    margin-bottom: 6px;
+}
+
+
+.value-chart-eyebrow {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #e1b943;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+.value-chart-heading h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+
+.value-chart-period {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 10px;
+
+    border: 1px solid rgba(220, 174, 55, 0.24);
+    border-radius: 8px;
+
+    color: #e1b943;
+    background: rgba(220, 174, 55, 0.06);
+
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.15;
+    text-align: center;
+}
+
+
+.value-chart-scroll {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color:
+        rgba(225, 185, 67, 0.8)
+        rgba(255, 255, 255, 0.06);
+}
+
+
+.value-chart-scroll::-webkit-scrollbar {
+    height: 7px;
+}
+
+
+.value-chart-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+.value-chart-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(225, 185, 67, 0.82);
+}
+
+
+.value-chart-svg {
+    display: block;
+
+    width: 100%;
+    min-width: 720px;
+    height: auto;
+    max-height: 430px;
+
+    margin: 0;
+
+    overflow: visible;
+}
+
+
+/* =========================================
+   СЕТКА И ОСИ
+========================================= */
+
+.value-grid-line {
+    stroke: rgba(255, 255, 255, 0.075);
+    stroke-width: 1;
+    stroke-dasharray: 5 7;
+}
+
+
+.value-axis-line {
+    stroke: rgba(255, 255, 255, 0.16);
+    stroke-width: 2;
+}
+
+
+.value-guide-line {
+    stroke: rgba(220, 174, 55, 0.16);
+    stroke-width: 1;
+    stroke-dasharray: 5 7;
+}
+
+
+.value-axis-text {
+    fill: #c6a13b;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ЛИНИЯ ДИНАМИКИ
+========================================= */
+
+.value-segment {
+    fill: none;
+
+    stroke-width: 5;
+    stroke-linecap: round;
+
+    filter: url("#goldGlow");
+}
+
+
+.value-segment--gold {
+    stroke: #e2b63f;
+}
+
+
+.value-segment--down {
+    stroke: #d84f4f;
+}
+
+
+.value-segment--up {
+    stroke: #70db52;
+}
+
+
+/* =========================================
+   ТОЧКИ
+========================================= */
+
+.value-point {
+    fill: #f5c853;
+    stroke: #fff1b2;
+    stroke-width: 3;
+
+    filter: url("#goldGlow");
+}
+
+
+.value-point--down {
+    fill: #d84f4f;
+    stroke: #ffaaaa;
+}
+
+
+.value-point--up {
+    fill: #70db52;
+    stroke: #ceffc3;
+
+    filter: url("#greenGlow");
+}
+
+
+/* =========================================
+   ЦЕНЫ И ГОДЫ
+========================================= */
+
+.value-price-label {
+    fill: #f1c64c;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+
+.value-price-label--down {
+    fill: #e96b6b;
+}
+
+
+.value-year-label {
+    fill: #d5b243;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   ПЛАНШЕТЫ
+========================================= */
+
+@media (max-width: 1150px) {
+
+    .value-dashboard {
+        grid-template-columns: 320px minmax(0, 1fr);
+        width: min(100% - 24px, 1160px);
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .player-mini-card {
+        height: 430px;
+    }
+
+    .player-mini-card__image {
+        width: 270px;
+        max-height: 420px;
+    }
+
+    .value-current-price {
+        font-size: 23px;
+    }
+
+    .value-chart-area {
+        padding: 17px 14px 8px;
+    }
+}
+
+
+/* =========================================
+   ТЕЛЕФОНЫ
+========================================= */
+
+@media (max-width: 720px) {
+
+    .value-dashboard {
+        display: block;
+
+        width: calc(100% - 20px);
+        margin: 20px auto 36px;
+        padding: 14px;
+
+        border-radius: 18px;
+    }
+
+    .value-summary {
+        margin-bottom: 14px;
+    }
+
+    .value-summary-card--player {
+        padding: 15px 12px 18px;
+    }
+
+    .player-mini-card {
+        height: 360px;
+    }
+
+    .player-mini-card__image {
+        width: 230px;
+        max-height: 350px;
+    }
+
+    .value-current-price {
+        font-size: 22px;
+    }
+
+    .value-summary-card--change {
+        min-height: 85px;
+    }
+
+    .value-chart-area {
+        padding: 14px 10px 7px;
+    }
+
+    .value-chart-heading {
+        align-items: center;
+    }
+
+    .value-chart-heading h2 {
+        font-size: 18px;
+    }
+
+    .value-chart-svg {
+        min-width: 680px;
+        max-height: none;
+    }
+}
+
+
+/* =========================================
+   МАЛЕНЬКИЕ ТЕЛЕФОНЫ
+========================================= */
+
+@media (max-width: 420px) {
+
+    .player-mini-card {
+        height: 300px;
+    }
+
+    .player-mini-card__image {
+        width: 195px;
+        max-height: 290px;
+    }
+
+    .value-current-price {
+        font-size: 20px;
+    }
+
+    .value-change {
+        font-size: 17px;
+    }
+
+    .value-chart-heading h2 {
+        font-size: 16px;
+    }
+}

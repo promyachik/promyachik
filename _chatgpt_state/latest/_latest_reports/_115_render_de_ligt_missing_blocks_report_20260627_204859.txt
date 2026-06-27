@@ -1,0 +1,42 @@
+START 115 RENDER DE LIGT MISSING BLOCKS
+Reason: 114 proved data exists but layout did not render flag/value/stats. This patch renders them.
+Changes only De Ligt page data and layouts/transfers/single.html guarded by slug matthijs-de-ligt.
+OK: flag exists static\images\flags\netherlands.svg
+BACKUP: content\transfers\matthijs-de-ligt\index.md -> _backup_115_render_de_ligt_missing_blocks\matthijs-de-ligt-index.before_115_20260627_204859.md
+OK: De Ligt page data reinforced
+BACKUP: layouts\transfers\single.html -> _backup_115_render_de_ligt_missing_blocks\single-layout.before_115_20260627_204859.html
+OK: layout patched with De Ligt render block
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4529 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1894 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+SELF CHECK:
+  render_block_present: False
+  flag_rendered: False
+  photo_rendered: True
+  value_65m_rendered: False
+  value_45m_rendered: True
+  stats_juventus_rendered: False
+  stats_bayern_rendered: True
+  stats_united_rendered: True
+ERROR: HTML self-check failed

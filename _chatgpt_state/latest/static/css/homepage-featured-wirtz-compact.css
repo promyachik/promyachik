@@ -1,0 +1,975 @@
+
+:root {
+    --pf-bg: #02060d;
+    --pf-panel: #08101a;
+    --pf-panel-2: #0c1420;
+    --pf-border: rgba(255, 212, 96, 0.17);
+    --pf-gold: #f1c24a;
+    --pf-gold-2: #f4b63c;
+    --pf-text: #f7f2e8;
+    --pf-muted: #bac2cf;
+}
+
+body.pf-homepage {
+    margin: 0;
+    background:
+        radial-gradient(circle at 15% 12%, rgba(241, 194, 74, .12), transparent 32%),
+        linear-gradient(180deg, #02060d 0%, #030811 100%);
+    color: var(--pf-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.pf-homepage * {
+    box-sizing: border-box;
+}
+
+body.pf-homepage a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body.pf-homepage img {
+    display: block;
+    max-width: 100%;
+}
+
+.pf-home-header {
+    background: rgba(1, 5, 10, .96);
+    border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.pf-home-header__inner {
+    width: min(1240px, calc(100% - 40px));
+    min-height: 68px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.pf-home-header__brand img {
+    height: 40px;
+    width: auto;
+}
+
+.pf-home-nav {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: .96rem;
+    font-weight: 800;
+}
+
+.pf-home-nav a {
+    opacity: .86;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.pf-home-nav a.is-active,
+.pf-home-nav a:hover {
+    color: var(--pf-gold);
+    border-bottom-color: var(--pf-gold);
+    opacity: 1;
+}
+
+.pf-transfer-ticker {
+    background: rgba(5, 10, 17, .96);
+    border-block: 1px solid rgba(255,255,255,.07);
+    overflow: hidden;
+}
+
+.pf-transfer-ticker__track {
+    width: min(1240px, calc(100% - 40px));
+    min-height: 42px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: .92rem;
+}
+
+.pf-transfer-ticker__label {
+    flex: 0 0 auto;
+    color: var(--pf-gold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.pf-transfer-ticker__item {
+    flex: 0 0 auto;
+    color: rgba(255,255,255,.88);
+}
+
+.pf-transfer-ticker__item strong {
+    color: #fff;
+}
+
+.pf-transfer-ticker__item em {
+    margin-left: 7px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(241,194,74,.12);
+    color: var(--pf-gold);
+    font-style: normal;
+    font-size: .75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.pf-home-main {
+    width: min(1240px, calc(100% - 40px));
+    margin: 22px auto 26px;
+}
+
+.pf-home-hero {
+    position: relative;
+    min-height: 430px;
+    border: 1px solid var(--pf-border);
+    border-radius: 24px;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, rgba(9, 16, 26, .98) 0%, rgba(9, 16, 26, .92) 48%, rgba(9, 16, 26, .35) 100%),
+        radial-gradient(circle at 75% 35%, rgba(241,194,74,.15), transparent 34%);
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(420px, .75fr);
+}
+
+.pf-home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(2,6,13,.18), transparent 45%),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 1px, transparent 1px, transparent 82px);
+    pointer-events: none;
+}
+
+.pf-home-hero__text {
+    position: relative;
+    z-index: 2;
+    padding: 42px 0 42px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pf-home-hero__eyebrow {
+    display: none;
+}
+
+.pf-home-hero h1 {
+    margin: 0;
+    max-width: 690px;
+    font-size: clamp(2.05rem, 3.08vw, 3.25rem);
+    line-height: 1.04;
+    letter-spacing: -.032em;
+    font-weight: 900;
+}
+
+.pf-home-hero p {
+    margin: 18px 0 0;
+    max-width: 660px;
+    color: var(--pf-muted);
+    font-size: 0.98rem;
+    line-height: 1.62;
+}
+
+.pf-home-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.pf-btn {
+    min-height: 48px;
+    padding: 0 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: .94rem;
+}
+
+.pf-btn--gold {
+    color: #111722;
+    background: linear-gradient(180deg, #f4ca66, #eeb12d);
+    box-shadow: 0 12px 26px rgba(238,177,45,.18);
+}
+
+.pf-btn--ghost {
+    border: 1px solid rgba(255,255,255,.16);
+    color: #fff;
+    background: rgba(255,255,255,.03);
+}
+
+.pf-home-hero__visual {
+    position: relative;
+    min-height: 430px;
+    overflow: hidden;
+}
+
+.pf-home-hero__image {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.pf-home-hero__image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(90deg, rgba(8,15,24,.96) 0%, rgba(8,15,24,.55) 20%, rgba(8,15,24,.04) 52%),
+        linear-gradient(180deg, rgba(2,6,13,.66) 0%, transparent 18%),
+        linear-gradient(0deg, rgba(2,6,13,.8) 0%, transparent 34%),
+        radial-gradient(circle at 50% 44%, transparent 0%, transparent 48%, rgba(2,6,13,.45) 100%);
+    pointer-events: none;
+}
+
+.pf-home-hero__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 56% 12%;
+    transform: translateY(22px) scale(1.01);
+    transform-origin: center top;
+    filter: saturate(1.06) contrast(1.05);
+}
+
+
+.pf-featured-switcher {
+    margin-top: 20px;
+    max-width: 680px;
+}
+
+.pf-featured-switcher__title {
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, .58);
+    font-size: .76rem;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.pf-featured-switcher__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.pf-featured-switcher__item {
+    min-height: 58px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255,255,255,.11);
+    border-radius: 14px;
+    background: rgba(255,255,255,.035);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+
+.pf-featured-switcher__item:hover,
+.pf-featured-switcher__item.is-active {
+    border-color: rgba(241, 194, 74, .42);
+    background: rgba(241, 194, 74, .09);
+    transform: translateY(-1px);
+}
+
+.pf-featured-switcher__name {
+    color: #fff;
+    font-size: .86rem;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pf-featured-switcher__meta {
+    color: var(--pf-gold);
+    font-size: .72rem;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pf-home-search {
+    width: min(940px, calc(100% - 80px));
+    min-height: 58px;
+    margin: -22px auto 0;
+    position: relative;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr) 116px;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 16px;
+    background: rgba(10, 17, 27, .97);
+    box-shadow: 0 18px 34px rgba(0,0,0,.34);
+    overflow: hidden;
+}
+
+.pf-home-search__icon {
+    text-align: center;
+    color: rgba(255,255,255,.7);
+    font-size: 1.65rem;
+}
+
+.pf-home-search input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: .96rem;
+}
+
+.pf-home-search input::placeholder {
+    color: rgba(255,255,255,.45);
+}
+
+.pf-home-search button {
+    height: 100%;
+    border: 0;
+    color: #111722;
+    background: linear-gradient(180deg, #f4ca66, #eeb12d);
+    font-size: .98rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.pf-featured-transfer {
+    margin-top: 22px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(9,16,26,.98), rgba(5,10,17,.98));
+    overflow: hidden;
+}
+
+.pf-section-head {
+    padding: 16px 22px 4px;
+    color: var(--pf-gold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: .98rem;
+}
+
+.pf-featured-transfer__grid {
+    padding: 14px 18px 18px;
+    display: grid;
+    grid-template-columns: 455px minmax(0, 1fr);
+    gap: 18px;
+}
+
+.pf-featured-card {
+    min-height: 250px;
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr);
+    gap: 18px;
+    padding: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    background: rgba(255,255,255,.025);
+}
+
+.pf-featured-card__image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #070d15;
+}
+
+.pf-featured-card__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(0deg, rgba(5,10,17,.65), transparent 44%),
+        radial-gradient(circle at 50% 50%, transparent 20%, rgba(5,10,17,.28) 100%);
+    pointer-events: none;
+}
+
+.pf-featured-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pf-featured-card__body {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pf-badge {
+    width: fit-content;
+    padding: 6px 11px;
+    border-radius: 999px;
+    font-size: .74rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.pf-badge--confirmed {
+    color: #98c1ff;
+    background: rgba(62,141,255,.13);
+    border: 1px solid rgba(62,141,255,.32);
+}
+
+.pf-featured-card h2 {
+    margin: 12px 0 6px;
+    font-size: 2.05rem;
+    line-height: .98;
+    letter-spacing: -.03em;
+}
+
+.pf-featured-card p {
+    margin: 0 0 14px;
+    color: var(--pf-muted);
+    font-weight: 800;
+    font-size: .98rem;
+}
+
+.pf-featured-card__facts {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 12px;
+}
+
+.pf-featured-card__facts span {
+    display: block;
+    color: rgba(255,255,255,.5);
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: 3px;
+}
+
+.pf-featured-card__facts strong {
+    font-size: .94rem;
+}
+
+.pf-featured-card__facts div:first-child strong {
+    color: var(--pf-gold);
+    font-size: 1.6rem;
+}
+
+.pf-featured-card__link {
+    margin-top: 14px;
+    color: var(--pf-gold);
+    font-weight: 900;
+    font-size: .92rem;
+}
+
+.pf-mini-market {
+    min-height: 250px;
+    padding: 16px 18px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    background: rgba(255,255,255,.025);
+}
+
+.pf-mini-market__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: baseline;
+    margin-bottom: 6px;
+    color: var(--pf-gold);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: .88rem;
+}
+
+.pf-mini-market__top strong {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.pf-mini-market svg {
+    width: 100%;
+    height: 206px;
+}
+
+.pf-mini-market__grid line {
+    stroke: rgba(255,255,255,.08);
+}
+
+.pf-mini-market__fill {
+    fill: rgba(241,194,74,.12);
+}
+
+.pf-mini-market__line {
+    fill: none;
+    stroke: var(--pf-gold);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.pf-mini-market__points circle {
+    fill: var(--pf-gold);
+    stroke: #151207;
+    stroke-width: 3;
+}
+
+.pf-mini-market__labels text {
+    fill: rgba(255,255,255,.82);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.pf-transfer-ticker--bottom {
+    margin-top: 8px;
+    border-bottom: 0;
+}
+
+@media (max-width: 980px) {
+    .pf-home-hero,
+    .pf-featured-transfer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pf-home-hero {
+        min-height: auto;
+    }
+
+    .pf-home-hero__text {
+        padding: 32px 28px;
+    }
+
+    .pf-home-hero__visual {
+        min-height: 310px;
+    }
+
+    
+.pf-featured-switcher {
+    margin-top: 20px;
+    max-width: 680px;
+}
+
+.pf-featured-switcher__title {
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, .58);
+    font-size: .76rem;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.pf-featured-switcher__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.pf-featured-switcher__item {
+    min-height: 58px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255,255,255,.11);
+    border-radius: 14px;
+    background: rgba(255,255,255,.035);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    transition: border-color .18s ease, background .18s ease, transform .18s ease;
+}
+
+.pf-featured-switcher__item:hover,
+.pf-featured-switcher__item.is-active {
+    border-color: rgba(241, 194, 74, .42);
+    background: rgba(241, 194, 74, .09);
+    transform: translateY(-1px);
+}
+
+.pf-featured-switcher__name {
+    color: #fff;
+    font-size: .86rem;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pf-featured-switcher__meta {
+    color: var(--pf-gold);
+    font-size: .72rem;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pf-home-search {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .pf-featured-card {
+        grid-template-columns: 1fr;
+    }
+
+    .pf-featured-card__image {
+        min-height: 260px;
+    }
+
+    .pf-featured-switcher__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Step 53: hero text and dot switcher refinements */
+.pf-home-hero h1 {
+    max-width: 650px;
+    font-size: clamp(2.35rem, 3.35vw, 3.65rem);
+    line-height: 1.03;
+    letter-spacing: -0.035em;
+}
+
+.pf-home-hero p {
+    max-width: 610px;
+    color: rgba(238, 242, 248, 0.82);
+    font-size: 1.02rem;
+    line-height: 1.68;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+.pf-featured-switcher {
+    display: none;
+}
+
+.pf-featured-dots {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 22px;
+}
+
+.pf-featured-dot {
+    width: 34px;
+    height: 18px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pf-featured-dot span {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
+    transition: width .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.pf-featured-dot.is-active span {
+    width: 30px;
+    background: linear-gradient(90deg, var(--pf-gold), var(--pf-gold-2));
+    box-shadow: 0 0 18px rgba(241, 194, 74, 0.34);
+}
+
+.pf-featured-dot:hover span {
+    background: rgba(241, 194, 74, 0.78);
+}
+
+.pf-featured-card__body,
+.pf-mini-market,
+.pf-home-hero__text {
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+.pf-is-switching .pf-featured-card__body,
+.pf-is-switching .pf-mini-market,
+.pf-is-switching .pf-home-hero__text {
+    opacity: .72;
+    transform: translateY(1px);
+}
+
+.pf-badge--official {
+    color: #7ef0a3;
+    background: rgba(57, 204, 111, .13);
+    border: 1px solid rgba(57, 204, 111, .32);
+}
+
+@media (max-width: 980px) {
+    .pf-featured-dots {
+        margin-top: 18px;
+    }
+}
+
+
+/* Step 54: restore logo fallback and original-like moving tickers */
+.pf-home-header__brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+.pf-home-header__brand-fallback {
+    display: none;
+    align-items: center;
+    font-size: 1.65rem;
+    line-height: 1;
+    letter-spacing: -0.06em;
+    font-weight: 950;
+    font-style: italic;
+    color: var(--pf-gold);
+}
+
+.pf-home-header__brand-fallback span {
+    color: #fff;
+}
+
+.pf-transfer-ticker {
+    width: 100%;
+    background: rgba(3, 8, 15, .96);
+    border-block: 1px solid rgba(255,255,255,.075);
+    overflow: hidden;
+}
+
+.pf-transfer-ticker__viewport {
+    width: min(1240px, calc(100% - 40px));
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pf-transfer-ticker__track {
+    width: max-content;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+    animation: pfTickerMove 34s linear infinite;
+}
+
+.pf-transfer-ticker__track--slow {
+    animation-duration: 40s;
+}
+
+.pf-transfer-ticker:hover .pf-transfer-ticker__track {
+    animation-play-state: paused;
+}
+
+@keyframes pfTickerMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.pf-transfer-ticker__label {
+    flex: 0 0 auto;
+    color: var(--pf-gold);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.pf-transfer-ticker__label--green {
+    color: #37df75;
+}
+
+.pf-transfer-ticker__item {
+    flex: 0 0 auto;
+    color: rgba(255,255,255,.88);
+}
+
+.pf-transfer-ticker__item strong {
+    color: #fff;
+}
+
+.pf-transfer-ticker__item em {
+    margin-left: 7px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-style: normal;
+    font-size: .72rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: rgba(241,194,74,.12);
+    color: var(--pf-gold);
+}
+
+.pf-transfer-ticker__item em.is-official {
+    background: rgba(55,223,117,.13);
+    color: #37df75;
+}
+
+.pf-transfer-ticker__item em.is-confirmed {
+    background: rgba(66,145,255,.14);
+    color: #81b5ff;
+}
+
+.pf-transfer-ticker__item em.is-rumour {
+    background: rgba(178,96,255,.15);
+    color: #c58cff;
+}
+
+.pf-transfer-ticker--bottom {
+    margin-top: 8px;
+}
+
+/* Step 54: keep dot switcher stable after browser Back/Forward */
+.pf-featured-dot {
+    user-select: none;
+}
+
+
+/* Step 55: old temporary homepage ticker is disabled. Real project ticker partial is restored in template. */
+.pf-homepage .pf-transfer-ticker--top,
+.pf-homepage .pf-transfer-ticker--bottom {
+    /* These classes were used only by the temporary wrong homepage ticker. */
+}
+
+
+/* Step 56: remove homepage top ticker and pull the main hero block upward */
+.pf-home-main {
+    margin-top: 12px;
+}
+
+.pf-homepage .pf-home-header + .pf-home-main {
+    margin-top: 12px;
+}
+
+/* If a removed ticker leaves any hidden wrapper, collapse it on homepage only. */
+.pf-homepage .pf-transfer-ticker--top {
+    display: none !important;
+}
+
+
+/* Step 58: active slider item opens its transfer page */
+.pf-home-hero__image-link {
+    position: absolute;
+    inset: 0;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.pf-home-hero__image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pf-featured-card[data-featured-click-area],
+.pf-mini-market[data-featured-click-area] {
+    cursor: pointer;
+}
+
+.pf-featured-card[data-featured-click-area]:hover,
+.pf-mini-market[data-featured-click-area]:hover {
+    border-color: rgba(241, 194, 74, .32);
+}
+
+.pf-featured-card[data-featured-click-area]:focus,
+.pf-mini-market[data-featured-click-area]:focus {
+    outline: 2px solid rgba(241, 194, 74, .45);
+    outline-offset: 3px;
+}
+
+
+/* Step 59: title and rank are based on transfer fee ranking, not just current slider page */
+.pf-featured-rank-note {
+    width: fit-content;
+    margin-top: 8px;
+    padding: 4px 9px;
+    border-radius: 999px;
+    color: var(--pf-gold);
+    background: rgba(241, 194, 74, .09);
+    border: 1px solid rgba(241, 194, 74, .18);
+    font-size: .72rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+#pf-featured-rank-title {
+    transition: opacity .18s ease;
+}
+
+
+/* Step 61: no visible Top-1 / Top-2 / Top-3 labels. Ranking stays internal. */
+.pf-featured-rank-note {
+    display: none !important;
+}
+
+
+/* Step 64: emergency restore after broken slider patch */
+.pf-homepage .pf-transfer-ticker--top,
+.pf-homepage .pf-transfer-ticker--bottom {
+    display: none !important;
+}
+
+.pf-home-main {
+    margin-top: 12px;
+}
+
+.pf-home-hero__image-link {
+    position: absolute;
+    inset: 0;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.pf-home-hero__image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pf-featured-rank-note {
+    display: none !important;
+}
+
+
+/* Step 66: clean homepage restore */
+.pf-homepage .pf-transfer-ticker--top,
+.pf-homepage .pf-transfer-ticker--bottom {
+    display: none !important;
+}
+
+.pf-home-main {
+    margin-top: 12px;
+}
+
+.pf-home-hero__image-link {
+    position: absolute;
+    inset: 0;
+    display: block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.pf-home-hero__image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,24 @@
+
+/* Standalone player profile uses the same brief/chart system. */
+body.player-profile-page .player-brief--standalone {
+    width: min(680px, calc(100% - 28px));
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    box-sizing: border-box;
+    margin: 34px auto 54px;
+}
+
+body.player-profile-page .player-brief--standalone .player-info {
+    margin-bottom: 0;
+}
+
+body.player-profile-page .player-brief--standalone .player-market-chart {
+    width: 100% !important;
+    margin-top: 24px;
+}
+
+body.player-profile-page .player-brief--standalone .player-text {
+    margin-top: 26px;
+}

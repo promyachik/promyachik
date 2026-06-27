@@ -1,0 +1,43 @@
+<article class="card">
+
+
+<h3>
+
+<a href="{{ .RelPermalink }}">
+
+{{ .Title }}
+
+</a>
+
+</h3>
+
+
+
+<p class="date">
+
+📅 {{ .Date.Format "02.01.2006" }}
+
+</p>
+
+
+
+
+<p>
+
+{{ .Summary }}
+
+</p>
+
+
+
+
+<a href="{{ .RelPermalink }}">
+
+Читать далее →
+
+</a>
+
+
+
+</article>
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

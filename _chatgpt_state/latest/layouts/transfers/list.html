@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>{{ .Title }} — {{ .Site.Title }}</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ "css/style.css" | relURL }}"
+    >
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            color: #f4f5f7;
+            background:
+                linear-gradient(
+                    180deg,
+                    #07090c,
+                    #0c0f13
+                );
+            font-family:
+                Inter,
+                Manrope,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+        }
+
+        .transfer-list-page {
+            width: min(1200px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 42px 0 70px;
+        }
+
+        .transfer-list-page h1 {
+            margin: 0 0 12px;
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .transfer-list-page__description {
+            max-width: 760px;
+            margin-bottom: 34px;
+            color: #9da3ad;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .transfer-list {
+            display: grid;
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+            gap: 20px;
+        }
+
+        .transfer-list__item {
+            display: block;
+            padding: 24px;
+            border:
+                1px solid rgba(212, 175, 55, 0.18);
+            border-radius: 18px;
+            color: #ffffff;
+            background:
+                linear-gradient(
+                    145deg,
+                    #12161b,
+                    #0c0f13
+                );
+            text-decoration: none;
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .transfer-list__item:hover {
+            transform: translateY(-3px);
+            border-color:
+                rgba(212, 175, 55, 0.5);
+        }
+
+        .transfer-list__status {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 5px 9px;
+            border-radius: 6px;
+            color: #78e597;
+            background:
+                rgba(75, 195, 108, 0.12);
+            font-size: 9px;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+        }
+
+        .transfer-list__item h2 {
+            margin: 0 0 14px;
+            font-size: 21px;
+            line-height: 1.25;
+        }
+
+        .transfer-list__item p {
+            margin: 0;
+            color: #9da3ad;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+    </style>
+
+{{ partial "favicon.html" . }}
+    <link rel="stylesheet" href="{{ "css/transfer-player-market-value-chart.css" | relURL }}">
+    <script defer src="{{ "js/transfer-player-market-value-chart.js" | relURL }}"></script>
+
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+</head>
+
+<body>
+
+
+{{ partial "header.html" . }}
+
+
+<main class="transfer-list-page">
+
+    <h1>
+        {{ .Title }}
+    </h1>
+
+    {{ with .Description }}
+
+        <div class="transfer-list-page__description">
+            {{ . }}
+        </div>
+
+    {{ end }}
+
+    <div class="transfer-list">
+
+        {{ range .RegularPages.ByDate.Reverse }}
+
+            <a
+                class="transfer-list__item"
+                href="{{ .RelPermalink }}"
+            >
+
+                <span class="transfer-list__status">
+                    {{ if eq .Params.status "official" }}
+                        ОФИЦИАЛЬНО
+                    {{ else if eq .Params.status "confirmed" }}
+                        ПОДТВЕРЖДЕНО
+                    {{ else if eq .Params.status "agreement" }}
+                        СОГЛАСОВАНО
+                    {{ else if eq .Params.status "negotiations" }}
+                        ПЕРЕГОВОРЫ
+                    {{ else }}
+                        СЛУХ
+                    {{ end }}
+                </span>
+
+                <h2>
+                    {{ .Title }}
+                </h2>
+
+                {{ with .Description }}
+
+                    <p>
+                        {{ . }}
+                    </p>
+
+                {{ end }}
+
+            </a>
+
+        {{ end }}
+
+    </div>
+
+</main>
+
+
+    <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
+
+</body>
+
+</html>

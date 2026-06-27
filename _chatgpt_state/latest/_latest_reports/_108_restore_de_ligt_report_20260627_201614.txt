@@ -1,0 +1,61 @@
+START 108 RESTORE DE LIGT ONLY
+Changes: De Ligt data + De Ligt image if found. No Ramos, no Endrick, no var render folders.
+De Ligt records found: 2
+  1. score=360 | data\transfers.json | kind=list | index=11 | title=Matthijs de Ligt | slug=matthijs-de-ligt | ids=['532'] | paths=['/images/players/cutout/532.png', 'https://cdn2.pixelcut.app/public/result/31ec2815-6f4a-4f21-81f6-59d0023248ef.png', 'https://media.api-sports.io/football/players/532.png', 'images/players/api/532.png', 'images/players/cutout/532.png']
+  2. score=50 | data\transfers.before-mbappe-cutout.json | kind=list | index=4 | title=Matthijs de Ligt | slug=None | ids=['532'] | paths=['https://cdn2.pixelcut.app/public/result/31ec2815-6f4a-4f21-81f6-59d0023248ef.png', 'https://media.api-sports.io/football/players/532.png', 'images/players/api/532.png']
+De Ligt ids found: ['532']
+De Ligt image paths found: ['/images/players/cutout/532.png', 'https://cdn2.pixelcut.app/public/result/31ec2815-6f4a-4f21-81f6-59d0023248ef.png', 'https://media.api-sports.io/football/players/532.png', 'images/players/api/532.png', 'images/players/cutout/532.png']
+De Ligt image candidates found: 10
+  1. score=330 | static\images\players\ticker\matthijs-de-ligt-cutout.png | size=300x313; alpha_min=0; alpha_max=255; white_border=0.00; bad_placeholder_420x560=False
+  2. score=310 | var\mbappe_exact_chart_test\images\players\ticker\matthijs-de-ligt-cutout.png | size=300x313; alpha_min=0; alpha_max=255; white_border=0.00; bad_placeholder_420x560=False
+  3. score=280 | static\images\players\cutout\532.png | size=150x150; alpha_min=0; alpha_max=255; white_border=0.00; bad_placeholder_420x560=False
+  4. score=200 | static\images\players\ticker\matthijs-de-ligt-closeup.png | size=420x420; alpha_min=0; alpha_max=255; white_border=0.95; bad_placeholder_420x560=False
+  5. score=180 | var\mbappe_exact_chart_test\images\players\ticker\matthijs-de-ligt-closeup.png | size=420x420; alpha_min=0; alpha_max=255; white_border=0.95; bad_placeholder_420x560=False
+  6. score=180 | static\images\clubs\api\532.png | size=240x150; alpha_min=0; alpha_max=255; white_border=0.00; bad_placeholder_420x560=False
+  7. score=160 | var\mbappe_exact_chart_test\images\clubs\api\532.png | size=240x150; alpha_min=0; alpha_max=255; white_border=0.00; bad_placeholder_420x560=False
+  8. score=100 | static\images\players\ticker\matthijs-de-ligt.jpg | size=420x420; alpha_min=255; alpha_max=255; white_border=0.04; bad_placeholder_420x560=False
+  9. score=80 | var\mbappe_exact_chart_test\images\players\ticker\matthijs-de-ligt.jpg | size=420x420; alpha_min=255; alpha_max=255; white_border=0.04; bad_placeholder_420x560=False
+  10. score=30 | static\images\players\api\532.png | size=150x150; alpha_min=255; alpha_max=255; white_border=0.65; bad_placeholder_420x560=False
+BACKUP: static\images\players\cutout\532.png -> _backup_108_de_ligt\532.png.before_108_20260627_201614
+INSTALLED De Ligt image: static\images\players\ticker\matthijs-de-ligt-cutout.png -> static\images\players\cutout\532.png
+Ticker/data candidate files:
+  - data\club-logos.json
+  - data\transfer-clubs.json
+  - data\transfers-api-preview.json
+  - data\transfers-filtered-preview.json
+  - data\transfers.backup-20260623-204348.json
+  - data\transfers.backup-20260623-204913.json
+  - data\transfers.before-bottom-align.json
+  - data\transfers.before-center.json
+  - data\transfers.before-mbappe-cutout.json
+  - data\transfers.json
+BACKUP: data\transfers.before-mbappe-cutout.json -> _backup_108_de_ligt\transfers.before-mbappe-cutout.json.before_108_20260627_201614
+PATCHED JSON: data\transfers.before-mbappe-cutout.json | removed_old=1 | inserted_top=True
+BACKUP: data\transfers.json -> _backup_108_de_ligt\transfers.json.before_108_20260627_201614
+PATCHED JSON: data\transfers.json | removed_old=1 | inserted_top=True
+CREATED missing content page for ticker link: content\transfers\matthijs-de-ligt\index.md
+
+Hugo build check
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4529 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1690 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.

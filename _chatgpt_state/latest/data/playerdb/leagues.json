@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-26T06:31:14+00:00",
+  "items": [
+    {
+      "id": 39,
+      "name": "Premier League",
+      "country": "England",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 20
+    },
+    {
+      "id": 61,
+      "name": "Ligue 1",
+      "country": "France",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 19
+    },
+    {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 19
+    },
+    {
+      "id": 94,
+      "name": "Primeira Liga",
+      "country": "Portugal",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 19
+    },
+    {
+      "id": 135,
+      "name": "Serie A",
+      "country": "Italy",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 20
+    },
+    {
+      "id": 140,
+      "name": "La Liga",
+      "country": "Spain",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 20
+    },
+    {
+      "id": 203,
+      "name": "Süper Lig",
+      "country": "Türkiye",
+      "reference_season": 2024,
+      "squad_source": "players/squads current response",
+      "team_count": 19
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+<span
+    hidden
+    data-mbappe-runtime-hook="21"
+></span>
+
+<style>
+    body.pf-mbappe-standalone .player-card,
+    body.pf-mbappe-standalone .player-brief {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        box-sizing: border-box !important;
+        margin: 24px 0 0 !important;
+        padding: 18px 0 0 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 12px;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__header > div {
+        display: grid;
+        gap: 4px;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__eyebrow {
+        color: #aaa06f;
+        font-size: 8px;
+        font-weight: 950;
+        line-height: 1.2;
+        letter-spacing: 0.12em;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__current {
+        color: #f1cf6b;
+        font-size: 20px;
+        font-weight: 950;
+        line-height: 1;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__source {
+        display: inline-flex;
+        min-height: 24px;
+        align-items: center;
+        padding: 0 8px;
+        border: 1px solid rgba(212, 175, 55, 0.25);
+        border-radius: 999px;
+        color: #d9c36e;
+        background: rgba(212, 175, 55, 0.07);
+        font-size: 8px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__canvas {
+        width: 100%;
+        height: 124px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.11);
+        border-radius: 12px;
+        background:
+            radial-gradient(
+                circle at 50% 0,
+                rgba(212, 175, 55, 0.09),
+                transparent 58%
+            ),
+            rgba(5, 8, 11, 0.66);
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__canvas svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__grid {
+        fill: none;
+        stroke: rgba(255, 255, 255, 0.065);
+        stroke-width: 1;
+        vector-effect: non-scaling-stroke;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__line {
+        fill: none;
+        stroke: #e7c65b;
+        stroke-width: 2.4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__dot {
+        fill: #11161c;
+        stroke: #f0d16d;
+        stroke-width: 2.2;
+        vector-effect: non-scaling-stroke;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__points {
+        display: grid;
+        grid-template-columns:
+            repeat(
+                var(--market-point-count),
+                minmax(0, 1fr)
+            );
+        gap: 5px;
+        margin-top: 9px;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__point {
+        display: grid;
+        min-width: 0;
+        gap: 2px;
+        text-align: center;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__point small {
+        color: #737b85;
+        font-size: 7px;
+        font-weight: 850;
+        white-space: nowrap;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__point strong {
+        color: #d6dbe1;
+        font-size: 8px;
+        font-weight: 900;
+        white-space: nowrap;
+    }
+
+    body.pf-mbappe-standalone .player-market-chart__note {
+        margin: 10px 0 0;
+        color: #666e78;
+        font-size: 7px;
+        font-weight: 700;
+    }
+</style>
+
+<script>
+(() => {
+    "use strict";
+
+    const VERSION = "21-mbappe-header-runtime";
+
+    if (window.__PFMbappeHeaderRuntime === VERSION) {
+        return;
+    }
+
+    window.__PFMbappeHeaderRuntime = VERSION;
+
+    const normalizePath = (value) => {
+        let path = String(value || "")
+            .split("?")[0]
+            .split("#")[0]
+            .replace(/\\/g, "/")
+            .replace(/\/+/g, "/")
+            .toLowerCase();
+
+        if (!path.endsWith("/")) {
+            path += "/";
+        }
+
+        return path;
+    };
+
+    const isMbappePage = () => {
+        const path = normalizePath(
+            window.location.pathname
+        );
+
+        if (path.endsWith("/players/mbappe/")) {
+            return true;
+        }
+
+        const title = String(
+            document.title || ""
+        ).toLowerCase();
+
+        const heading = String(
+            document.querySelector("h1")
+                ?.textContent || ""
+        ).toLowerCase();
+
+        return (
+            title.includes("kylian mbapp")
+            || heading.includes("kylian mbapp")
+            || title.includes("килиан мбаппе")
+            || heading.includes("килиан мбаппе")
+        );
+    };
+
+    const createChart = () => {
+        const section = document.createElement(
+            "section"
+        );
+
+        section.className =
+            "player-market-chart "
+            + "player-market-chart--mbappe-runtime";
+
+        section.dataset.marketChartKey = "mbappe";
+
+        section.setAttribute(
+            "aria-label",
+            "Динамика рыночной стоимости "
+            + "Килиана Мбаппе"
+        );
+
+        section.innerHTML = `
+            <header class="player-market-chart__header">
+                <div>
+                    <span class="player-market-chart__eyebrow">
+                        ДИНАМИКА СТОИМОСТИ
+                    </span>
+
+                    <strong class="player-market-chart__current">
+                        €180 млн
+                    </strong>
+                </div>
+
+                <a
+                    class="player-market-chart__source"
+                    href="https://www.transfermarkt.com/kylian-mbappe/marktwertverlauf/spieler/342229"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                >
+                    Transfermarkt
+                </a>
+            </header>
+
+            <div class="player-market-chart__canvas">
+                <svg
+                    viewBox="0 0 320 126"
+                    role="img"
+                    aria-label="График изменения рыночной стоимости Килиана Мбаппе"
+                    preserveAspectRatio="none"
+                >
+                    <defs>
+                        <linearGradient
+                            id="pf-market-gradient-mbappe-runtime"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="1"
+                        >
+                            <stop
+                                offset="0%"
+                                stop-color="#e7c65b"
+                                stop-opacity="0.32"
+                            ></stop>
+
+                            <stop
+                                offset="100%"
+                                stop-color="#e7c65b"
+                                stop-opacity="0"
+                            ></stop>
+                        </linearGradient>
+                    </defs>
+
+                    <line
+                        class="player-market-chart__grid"
+                        x1="18"
+                        y1="32"
+                        x2="302"
+                        y2="32"
+                    ></line>
+
+                    <line
+                        class="player-market-chart__grid"
+                        x1="18"
+                        y1="70"
+                        x2="302"
+                        y2="70"
+                    ></line>
+
+                    <line
+                        class="player-market-chart__grid"
+                        x1="18"
+                        y1="110"
+                        x2="302"
+                        y2="110"
+                    ></line>
+
+                    <path
+                        fill="url(#pf-market-gradient-mbappe-runtime)"
+                        d="M 20 95.31 L 113.33 59.64 L 206.67 26.07 L 300 35.46 L 300 110 L 20 110 Z"
+                    ></path>
+
+                    <path
+                        class="player-market-chart__line"
+                        d="M 20 95.31 L 113.33 59.64 L 206.67 26.07 L 300 35.46"
+                    ></path>
+
+                    <circle
+                        class="player-market-chart__dot"
+                        cx="20"
+                        cy="95.31"
+                        r="4.4"
+                    >
+                        <title>2017 — €35 млн</title>
+                    </circle>
+
+                    <circle
+                        class="player-market-chart__dot"
+                        cx="113.33"
+                        cy="59.64"
+                        r="4.4"
+                    >
+                        <title>2018 — €120 млн</title>
+                    </circle>
+
+                    <circle
+                        class="player-market-chart__dot"
+                        cx="206.67"
+                        cy="26.07"
+                        r="4.4"
+                    >
+                        <title>2025 — €200 млн</title>
+                    </circle>
+
+                    <circle
+                        class="player-market-chart__dot"
+                        cx="300"
+                        cy="35.46"
+                        r="4.4"
+                    >
+                        <title>2026 — €180 млн</title>
+                    </circle>
+                </svg>
+            </div>
+
+            <div
+                class="player-market-chart__points"
+                style="--market-point-count:4;"
+            >
+                <span class="player-market-chart__point">
+                    <small>2017</small>
+                    <strong>€35 млн</strong>
+                </span>
+
+                <span class="player-market-chart__point">
+                    <small>2018</small>
+                    <strong>€120 млн</strong>
+                </span>
+
+                <span class="player-market-chart__point">
+                    <small>2025</small>
+                    <strong>€200 млн</strong>
+                </span>
+
+                <span class="player-market-chart__point">
+                    <small>2026</small>
+                    <strong>€180 млн</strong>
+                </span>
+            </div>
+
+            <p class="player-market-chart__note">
+                Оценочная стоимость, не сумма трансфера.
+                Обновлено 26.06.2026.
+            </p>
+        `;
+
+        return section;
+    };
+
+    const install = () => {
+        if (!isMbappePage()) {
+            return true;
+        }
+
+        const card =
+            document.querySelector(".player-card")
+            || document.querySelector(".player-brief");
+
+        if (!card) {
+            return false;
+        }
+
+        document.body.classList.add(
+            "transfer-page",
+            "player-profile-page",
+            "pf-mbappe-standalone"
+        );
+
+        card.classList.add(
+            "player-brief",
+            "player-brief--standalone"
+        );
+
+        const existing = card.querySelector(
+            '.player-market-chart'
+            + '[data-market-chart-key="mbappe"]'
+        );
+
+        if (existing) {
+            existing.style.display = "block";
+            existing.style.visibility = "visible";
+            existing.style.opacity = "1";
+            return true;
+        }
+
+        for (
+            const oldChart
+            of card.querySelectorAll(
+                ".player-market-chart"
+            )
+        ) {
+            oldChart.remove();
+        }
+
+        const chart = createChart();
+        const playerInfo =
+            card.querySelector(".player-info");
+
+        if (playerInfo) {
+            playerInfo.insertAdjacentElement(
+                "afterend",
+                chart
+            );
+        } else {
+            const playerText =
+                card.querySelector(".player-text");
+
+            if (playerText) {
+                playerText.insertAdjacentElement(
+                    "beforebegin",
+                    chart
+                );
+            } else {
+                card.appendChild(chart);
+            }
+        }
+
+        return true;
+    };
+
+    const run = () => {
+        if (install()) {
+            return;
+        }
+
+        let attempts = 0;
+
+        const timer = window.setInterval(() => {
+            attempts += 1;
+
+            if (install() || attempts >= 40) {
+                window.clearInterval(timer);
+            }
+        }, 250);
+    };
+
+    if (document.readyState === "loading") {
+        document.addEventListener(
+            "DOMContentLoaded",
+            run,
+            { once: true }
+        );
+    } else {
+        run();
+    }
+})();
+</script>
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

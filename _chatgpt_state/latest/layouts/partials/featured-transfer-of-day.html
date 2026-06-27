@@ -1,0 +1,44 @@
+{{ $mainTransferURL := "transfers/kylian-mbappe-real-madrid/" | relURL }}
+{{ $isMainTransferPage := in .RelPermalink "kylian-mbappe-real-madrid" }}
+
+<link rel="stylesheet" href="{{ "css/featured-transfer-of-day.css" | relURL }}">
+
+<section class="pf-featured-day-transfer" aria-label="Главный трансфер дня">
+    <div class="pf-featured-day-transfer__inner">
+        <a class="pf-featured-day-transfer__image" href="{{ $mainTransferURL }}">
+            <img
+                src="{{ "images/homepage/featured/kylian-mbappe-real-madrid-card.png" | relURL }}"
+                alt="Kylian Mbappé — главный трансфер дня"
+                loading="lazy"
+            >
+        </a>
+
+        <div class="pf-featured-day-transfer__content">
+            <div class="pf-featured-day-transfer__kicker">
+                ⭐ Главный трансфер дня
+            </div>
+
+            <h2>
+                Kylian Mbappé → Real Madrid
+            </h2>
+
+            <p>
+                {{ if $isMainTransferPage }}
+                    Это текущий главный трансфер дня на ProFutbik.
+                {{ else }}
+                    Текущий главный трансфер дня на ProFutbik. Этот блок не зависит от выбранного слайда или открытой страницы.
+                {{ end }}
+            </p>
+
+            <div class="pf-featured-day-transfer__facts">
+                <span>Сумма: <strong>€180M</strong></span>
+                <span>Статус: <strong>Официально</strong></span>
+            </div>
+
+            <a class="pf-featured-day-transfer__link" href="{{ $mainTransferURL }}">
+                Открыть главный трансфер →
+            </a>
+        </div>
+    </div>
+</section>
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

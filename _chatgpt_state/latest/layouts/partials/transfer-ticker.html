@@ -1,0 +1,410 @@
+{{ $transfers := .Site.Data.transfers }}
+
+{{ $clubLogoData := index .Site.Data "club-logos" }}
+{{ $clubs := $clubLogoData.clubs }}
+
+{{ $statusLabels := dict
+    "rumour" "СЛУХ"
+    "negotiations" "ПЕРЕГОВОРЫ"
+    "agreement" "СОГЛАСОВАНО"
+    "confirmed" "ПОДТВЕРЖДЕНО"
+    "official" "ОФИЦИАЛЬНО"
+}}
+
+{{ $statusClasses := dict
+    "rumour" "rumour"
+    "negotiations" "negotiations"
+    "agreement" "agreement"
+    "confirmed" "confirmed"
+    "official" "official"
+}}
+
+<style>
+    .pf-ticker__player-photo {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 34px;
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.24);
+        border-radius: 10px;
+        background:
+            radial-gradient(circle at 50% 20%, #252f3a 0%, #111720 58%, #07090c 100%);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+    }
+
+    .pf-ticker__player-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+    }
+
+    .pf-ticker__player-photo.is-placeholder::before {
+        content: "PF";
+        color: #e3bd4f;
+        font-size: 12px;
+        font-weight: 950;
+        letter-spacing: 0.02em;
+    }
+    .pf-ticker__status--confirmed {
+        border-color: rgba(74, 222, 128, 0.48) !important;
+        color: #91f0ad !important;
+        background: rgba(34, 197, 94, 0.18) !important;
+    }
+
+    .pf-ticker__status--official {
+        border-color: rgba(74, 222, 128, 0.62) !important;
+        color: #a7f3bb !important;
+        background: rgba(22, 163, 74, 0.24) !important;
+    }
+
+</style>
+
+<div
+    class="pf-ticker"
+    data-ticker-duration="42"
+    aria-label="Последние футбольные трансферы"
+>
+    <div class="pf-ticker__badge">
+        <span class="pf-ticker__live-dot"></span>
+        <span>ТРАНСФЕРЫ</span>
+    </div>
+
+    <div class="pf-ticker__viewport">
+        <div class="pf-ticker__track">
+
+            {{ range $groupNumber := seq 2 }}
+
+                <div
+                    class="pf-ticker__group"
+                    {{ if eq $groupNumber 2 }}aria-hidden="true"{{ end }}
+                >
+
+                    {{ range $transfers }}
+
+                        {{ $transfer := . }}
+
+                        {{ $statusText := default $transfer.status (index $statusLabels $transfer.status) }}
+                        {{ $statusClass := default "rumour" (index $statusClasses $transfer.status) }}
+
+                        {{ $fromName := default "Неизвестный клуб" $transfer.from_club_name }}
+                        {{ $fromLogo := default "" $transfer.from_club_logo }}
+
+                        {{ with $transfer.from_club_id }}
+                            {{ $fromClubKey := printf "%v" . }}
+                            {{ $fromClubData := index $clubs $fromClubKey }}
+                            {{ with $fromClubData }}
+                                {{ $fromName = default .name .configured_name }}
+                                {{ with .logo }}
+                                    {{ $fromLogo = . | relURL }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+
+                        {{ $toName := default "Неизвестный клуб" $transfer.to_club_name }}
+                        {{ $toLogo := default "" $transfer.to_club_logo }}
+
+                        {{ with $transfer.to_club_id }}
+                            {{ $toClubKey := printf "%v" . }}
+                            {{ $toClubData := index $clubs $toClubKey }}
+                            {{ with $toClubData }}
+                                {{ $toName = default .name .configured_name }}
+                                {{ with .logo }}
+                                    {{ $toLogo = . | relURL }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+
+                        {{ $itemPhoto := default "" $transfer.player_image }}
+                        {{ if and (not $itemPhoto) $transfer.player_id }}
+                            {{ $itemPhoto = printf "images/players/api/%v.png" $transfer.player_id | relURL }}
+                        {{ end }}
+
+                        <a
+                            class="pf-ticker__item"
+                            href="{{ $transfer.url | relURL }}"
+                            {{ if eq $groupNumber 2 }}tabindex="-1"{{ end }}
+                        >
+                            <span
+                                class="pf-ticker__player-photo{{ if not $itemPhoto }} is-placeholder{{ end }}"
+                                aria-hidden="true"
+                            >
+                                {{ with $itemPhoto }}
+                                    <img
+                                        src="{{ . | relURL }}"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                {{ end }}
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--{{ $statusClass }}"
+                            >
+                                {{ $statusText }}
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                {{ $transfer.player }}
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box{{ if not $fromLogo }} is-placeholder{{ end }}"
+                                >
+                                    {{ with $fromLogo }}
+                                        <img
+                                            class="pf-ticker__club-logo{{ if eq $fromName "Real Madrid" }} pf-ticker__club-logo--real{{ end }}"
+                                            src="{{ . }}"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    {{ end }}
+                                </span>
+                                <span class="pf-ticker__club-name">{{ $fromName }}</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box{{ if not $toLogo }} is-placeholder{{ end }}"
+                                >
+                                    {{ with $toLogo }}
+                                        <img
+                                            class="pf-ticker__club-logo{{ if eq $toName "Real Madrid" }} pf-ticker__club-logo--real{{ end }}"
+                                            src="{{ . }}"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    {{ end }}
+                                </span>
+                                <span class="pf-ticker__club-name">{{ $toName }}</span>
+                            </span>
+
+                            {{ with $transfer.fee }}
+                                <span class="pf-ticker__fee">· {{ . }}</span>
+                            {{ end }}
+                        </a>
+
+                    {{ end }}
+
+                </div>
+
+            {{ end }}
+
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const ticker = document.querySelector(".pf-ticker");
+
+        if (!ticker || ticker.dataset.dragReady === "true") {
+            return;
+        }
+
+        const viewport = ticker.querySelector(".pf-ticker__viewport");
+        const track = ticker.querySelector(".pf-ticker__track");
+        const firstGroup = track
+            ? track.querySelector(".pf-ticker__group")
+            : null;
+
+        if (!viewport || !track || !firstGroup) {
+            return;
+        }
+
+        ticker.dataset.dragReady = "true";
+        ticker.classList.add("pf-ticker--interactive");
+
+        const baseDuration =
+            Math.max(Number(ticker.dataset.tickerDuration) || 42, 1);
+
+        const reducedMotion =
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        const duration =
+            reducedMotion ? baseDuration * 2 : baseDuration;
+
+        const dragThreshold = 10;
+
+        let loopWidth = 0;
+        let offset = 0;
+        let lastFrame = performance.now();
+
+        let pointerIsDown = false;
+        let isDragging = false;
+        let activePointerId = null;
+        let dragStartX = 0;
+        let dragStartOffset = 0;
+        let resumeAt = 0;
+
+        function normalizeOffset(value) {
+            if (!loopWidth) {
+                return 0;
+            }
+
+            while (value <= -loopWidth) {
+                value += loopWidth;
+            }
+
+            while (value > 0) {
+                value -= loopWidth;
+            }
+
+            return value;
+        }
+
+        function render() {
+            track.style.transform =
+                "translate3d(" + offset + "px, 0, 0)";
+        }
+
+        function measure() {
+            const previousWidth = loopWidth;
+
+            const progress = previousWidth
+                ? -offset / previousWidth
+                : ((Date.now() / 1000) % duration) / duration;
+
+            loopWidth = firstGroup.getBoundingClientRect().width;
+
+            if (!loopWidth) {
+                return;
+            }
+
+            offset = normalizeOffset(-progress * loopWidth);
+            render();
+        }
+
+        function animate(now) {
+            const elapsed =
+                Math.min((now - lastFrame) / 1000, 0.1);
+
+            lastFrame = now;
+
+            if (
+                !pointerIsDown &&
+                now >= resumeAt &&
+                loopWidth
+            ) {
+                const speed = loopWidth / duration;
+
+                offset = normalizeOffset(
+                    offset - speed * elapsed
+                );
+
+                render();
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        function finishPointer(event) {
+            if (
+                !pointerIsDown ||
+                event.pointerId !== activePointerId
+            ) {
+                return;
+            }
+
+            pointerIsDown = false;
+
+            if (isDragging) {
+                isDragging = false;
+                viewport.classList.remove("is-dragging");
+
+                if (viewport.hasPointerCapture(event.pointerId)) {
+                    viewport.releasePointerCapture(event.pointerId);
+                }
+
+                resumeAt = performance.now() + 800;
+            } else {
+                resumeAt = performance.now();
+            }
+
+            activePointerId = null;
+        }
+
+        viewport.addEventListener("pointerdown", function (event) {
+            if (event.button !== 0 || !loopWidth) {
+                return;
+            }
+
+            pointerIsDown = true;
+            isDragging = false;
+            activePointerId = event.pointerId;
+            dragStartX = event.clientX;
+            dragStartOffset = offset;
+            resumeAt = Number.POSITIVE_INFINITY;
+        });
+
+        viewport.addEventListener("pointermove", function (event) {
+            if (
+                !pointerIsDown ||
+                event.pointerId !== activePointerId
+            ) {
+                return;
+            }
+
+            const deltaX = event.clientX - dragStartX;
+
+            if (!isDragging) {
+                if (Math.abs(deltaX) < dragThreshold) {
+                    return;
+                }
+
+                isDragging = true;
+                viewport.classList.add("is-dragging");
+                viewport.setPointerCapture(event.pointerId);
+            }
+
+            offset = normalizeOffset(
+                dragStartOffset + deltaX
+            );
+
+            render();
+            event.preventDefault();
+        });
+
+        viewport.addEventListener("pointerup", finishPointer);
+        viewport.addEventListener("pointercancel", finishPointer);
+
+        viewport.addEventListener("dragstart", function (event) {
+            event.preventDefault();
+        });
+
+        if ("ResizeObserver" in window) {
+            const resizeObserver =
+                new ResizeObserver(measure);
+
+            resizeObserver.observe(firstGroup);
+            resizeObserver.observe(viewport);
+        } else {
+            window.addEventListener("resize", measure);
+        }
+
+        document.addEventListener(
+            "visibilitychange",
+            function () {
+                lastFrame = performance.now();
+            }
+        );
+
+        requestAnimationFrame(function () {
+            measure();
+            lastFrame = performance.now();
+            requestAnimationFrame(animate);
+        });
+    })();
+</script>
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

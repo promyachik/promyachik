@@ -1,0 +1,451 @@
+{{ $transparentCard := "css/profutbik-mbappe-elite-transparent.png" | relURL }}
+{{ $fallbackCard := "css/profutbik-mbappe-elite.webp" | relURL }}
+
+<div class="value-dashboard">
+
+    <div class="value-summary">
+
+        <div class="value-summary-card value-summary-card--player">
+
+            <div class="player-mini-card">
+
+                <img
+                    class="player-mini-card__image"
+                    src="{{ $transparentCard }}"
+                    onerror="this.onerror=null; this.src='{{ $fallbackCard }}';"
+                    alt="Kylian Mbappé Elite card"
+                >
+
+            </div>
+
+            <span class="value-summary-label">
+                Текущая стоимость
+            </span>
+
+            <strong class="value-current-price">
+                €180M
+            </strong>
+
+        </div>
+
+        <div class="value-summary-card value-summary-card--change">
+
+            <span class="value-summary-label">
+                За последнее изменение
+            </span>
+
+            <strong class="value-change value-change--up">
+
+                <span class="value-change-arrow">
+                    ↑
+                </span>
+
+                €15M
+
+                <small>
+                    +9.1%
+                </small>
+
+            </strong>
+
+        </div>
+
+    </div>
+
+    <div class="value-chart-area">
+
+        <div class="value-chart-heading">
+
+            <div>
+
+                <span class="value-chart-eyebrow">
+                    Kylian Mbappé
+                </span>
+
+                <h2>
+                    Динамика стоимости
+                </h2>
+
+            </div>
+
+            <span class="value-chart-period">
+                2021–2026
+            </span>
+
+        </div>
+
+        <div class="value-chart-scroll">
+
+            <svg
+                class="value-chart-svg"
+                viewBox="0 0 920 430"
+                role="img"
+                aria-label="График изменения стоимости Килиана Мбаппе с 2021 по 2026 год"
+            >
+
+                <defs>
+
+                    <filter
+                        id="goldGlow"
+                        x="-50%"
+                        y="-50%"
+                        width="200%"
+                        height="200%"
+                    >
+                        <feGaussianBlur
+                            stdDeviation="5"
+                            result="blur"
+                        />
+
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <filter
+                        id="greenGlow"
+                        x="-50%"
+                        y="-50%"
+                        width="200%"
+                        height="200%"
+                    >
+                        <feGaussianBlur
+                            stdDeviation="7"
+                            result="blur"
+                        />
+
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <marker
+                        id="greenArrow"
+                        viewBox="0 0 10 10"
+                        refX="8"
+                        refY="5"
+                        markerWidth="8"
+                        markerHeight="8"
+                        orient="auto-start-reverse"
+                    >
+                        <path
+                            d="M 0 0 L 10 5 L 0 10 z"
+                            fill="#70db52"
+                        />
+                    </marker>
+
+                </defs>
+
+                <line
+                    class="value-grid-line"
+                    x1="90"
+                    y1="65"
+                    x2="875"
+                    y2="65"
+                />
+
+                <line
+                    class="value-grid-line"
+                    x1="90"
+                    y1="165"
+                    x2="875"
+                    y2="165"
+                />
+
+                <line
+                    class="value-grid-line"
+                    x1="90"
+                    y1="265"
+                    x2="875"
+                    y2="265"
+                />
+
+                <line
+                    class="value-axis-line"
+                    x1="90"
+                    y1="365"
+                    x2="875"
+                    y2="365"
+                />
+
+                <text
+                    class="value-axis-text"
+                    x="20"
+                    y="72"
+                >
+                    200M
+                </text>
+
+                <text
+                    class="value-axis-text"
+                    x="20"
+                    y="172"
+                >
+                    160M
+                </text>
+
+                <text
+                    class="value-axis-text"
+                    x="20"
+                    y="272"
+                >
+                    120M
+                </text>
+
+                <text
+                    class="value-axis-text"
+                    x="35"
+                    y="372"
+                >
+                    80M
+                </text>
+
+                <line
+                    class="value-guide-line"
+                    x1="135"
+                    y1="260"
+                    x2="135"
+                    y2="365"
+                />
+
+                <line
+                    class="value-guide-line"
+                    x1="280"
+                    y1="210"
+                    x2="280"
+                    y2="365"
+                />
+
+                <line
+                    class="value-guide-line"
+                    x1="425"
+                    y1="180"
+                    x2="425"
+                    y2="365"
+                />
+
+                <line
+                    class="value-guide-line"
+                    x1="570"
+                    y1="215"
+                    x2="570"
+                    y2="365"
+                />
+
+                <line
+                    class="value-guide-line"
+                    x1="715"
+                    y1="130"
+                    x2="715"
+                    y2="365"
+                />
+
+                <line
+                    class="value-guide-line"
+                    x1="850"
+                    y1="80"
+                    x2="850"
+                    y2="365"
+                />
+
+                <line
+                    class="value-segment value-segment--gold"
+                    x1="135"
+                    y1="260"
+                    x2="280"
+                    y2="210"
+                />
+
+                <line
+                    class="value-segment value-segment--gold"
+                    x1="280"
+                    y1="210"
+                    x2="425"
+                    y2="180"
+                />
+
+                <line
+                    class="value-segment value-segment--down"
+                    x1="425"
+                    y1="180"
+                    x2="570"
+                    y2="215"
+                />
+
+                <line
+                    class="value-segment value-segment--gold"
+                    x1="570"
+                    y1="215"
+                    x2="715"
+                    y2="130"
+                />
+
+                <line
+                    class="value-segment value-segment--up"
+                    x1="715"
+                    y1="130"
+                    x2="875"
+                    y2="70"
+                    marker-end="url(#greenArrow)"
+                />
+
+                <circle
+                    class="value-point"
+                    cx="135"
+                    cy="260"
+                    r="10"
+                />
+
+                <circle
+                    class="value-point"
+                    cx="280"
+                    cy="210"
+                    r="10"
+                />
+
+                <circle
+                    class="value-point"
+                    cx="425"
+                    cy="180"
+                    r="10"
+                />
+
+                <circle
+                    class="value-point value-point--down"
+                    cx="570"
+                    cy="215"
+                    r="10"
+                />
+
+                <circle
+                    class="value-point"
+                    cx="715"
+                    cy="130"
+                    r="10"
+                />
+
+                <circle
+                    class="value-point value-point--up"
+                    cx="850"
+                    cy="80"
+                    r="11"
+                />
+
+                <text
+                    class="value-price-label"
+                    x="135"
+                    y="230"
+                    text-anchor="middle"
+                >
+                    €120M
+                </text>
+
+                <text
+                    class="value-price-label"
+                    x="280"
+                    y="180"
+                    text-anchor="middle"
+                >
+                    €140M
+                </text>
+
+                <text
+                    class="value-price-label"
+                    x="425"
+                    y="148"
+                    text-anchor="middle"
+                >
+                    €150M
+                </text>
+
+                <text
+                    class="value-price-label value-price-label--down"
+                    x="570"
+                    y="185"
+                    text-anchor="middle"
+                >
+                    €145M
+                </text>
+
+                <text
+                    class="value-price-label"
+                    x="715"
+                    y="100"
+                    text-anchor="middle"
+                >
+                    €165M
+                </text>
+
+                <text
+                    class="value-price-label"
+                    x="850"
+                    y="47"
+                    text-anchor="middle"
+                >
+                    €180M
+                </text>
+
+                <text
+                    class="value-year-label"
+                    x="135"
+                    y="405"
+                    text-anchor="middle"
+                >
+                    2021
+                </text>
+
+                <text
+                    class="value-year-label"
+                    x="280"
+                    y="405"
+                    text-anchor="middle"
+                >
+                    2022
+                </text>
+
+                <text
+                    class="value-year-label"
+                    x="425"
+                    y="405"
+                    text-anchor="middle"
+                >
+                    2023
+                </text>
+
+                <text
+                    class="value-year-label"
+                    x="570"
+                    y="405"
+                    text-anchor="middle"
+                >
+                    2024
+                </text>
+
+                <text
+                    class="value-year-label"
+                    x="715"
+                    y="405"
+                    text-anchor="middle"
+                >
+                    2025
+                </text>
+
+                <text
+                    class="value-year-label"
+                    x="850"
+                    y="405"
+                    text-anchor="middle"
+                >
+                    2026
+                </text>
+
+            </svg>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

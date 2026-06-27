@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+
+<link rel="stylesheet" href="/promyachik/css/style.css">
+
+{{ partial "favicon.html" . }}
+    <link rel="stylesheet" href="{{ "css/transfer-player-market-value-chart.css" | relURL }}">
+    <script defer src="{{ "js/transfer-player-market-value-chart.js" | relURL }}"></script>
+
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+</head>
+
+
+<body>
+
+
+{{ partial "header.html" . }}
+
+
+
+<article class="article">
+
+
+<h1>
+{{ .Title }}
+</h1>
+
+
+<div class="date">
+
+{{ .Date.Format "02.01.2006" }}
+
+</div>
+
+
+
+<div class="content">
+
+
+{{ .Content }}
+
+
+</div>
+
+
+<a href="/promyachik/" class="back">
+
+← Вернуться на главную
+
+</a>
+
+
+</article>
+
+
+
+    <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
+
+</body>
+
+</html>

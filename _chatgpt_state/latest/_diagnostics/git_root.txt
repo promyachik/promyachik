@@ -1,0 +1,8 @@
+COMMAND: git rev-parse --show-toplevel
+EXIT_CODE: 0
+
+--- STDOUT ---
+C:/Users/Dmitrii/Promyachik
+
+
+--- STDERR ---

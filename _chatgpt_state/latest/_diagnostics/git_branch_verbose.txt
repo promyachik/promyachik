@@ -1,0 +1,8 @@
+COMMAND: git branch -vv
+EXIT_CODE: 0
+
+--- STDOUT ---
+* main 5b4d57c [origin/main] настроил Hugo Проект
+
+
+--- STDERR ---

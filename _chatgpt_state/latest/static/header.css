@@ -1,0 +1,419 @@
+
+
+/* Step 70: ticker transfer tab style */
+.pf-transfer-tab-link {
+    cursor: pointer !important;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: .035em !important;
+    text-transform: uppercase !important;
+    color: #111722 !important;
+    text-decoration: none !important;
+    transition: color .16s ease, filter .16s ease;
+}
+
+.pf-transfer-tab-link *,
+.pf-transfer-tab-link span,
+.pf-transfer-tab-link strong {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:hover *,
+.pf-transfer-tab-link:focus-visible,
+.pf-transfer-tab-link:focus-visible * {
+    color: #ffffff !important;
+}
+
+.pf-transfer-tab-dot-hidden,
+.pf-transfer-tab-link .pf-transfer-tab-dot-hidden {
+    display: none !important;
+}
+
+.pf-transfer-tab-link::before {
+    display: none !important;
+    content: none !important;
+}
+
+
+
+/* Step 71: ticker transfer tab right rounded corners */
+.pf-transfer-tab-link {
+    border-radius: 0 6px 6px 0 !important;
+    overflow: hidden !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:focus-visible {
+    border-radius: 0 6px 6px 0 !important;
+}
+
+
+/* Step 72: ticker transfer tab soft gradient edge */
+.pf-transfer-tab-link {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 7 !important;
+    isolation: isolate !important;
+}
+
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -58px !important;
+    width: 58px !important;
+    height: 100% !important;
+    pointer-events: none !important;
+    display: block !important;
+    z-index: 2 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .92) 0%,
+        rgba(229, 180, 58, .62) 34%,
+        rgba(229, 180, 58, .28) 64%,
+        rgba(229, 180, 58, 0) 100%
+    ) !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .96) 0%,
+        rgba(229, 180, 58, .66) 34%,
+        rgba(229, 180, 58, .30) 64%,
+        rgba(229, 180, 58, 0) 100%
+    ) !important;
+}
+
+
+/* Step 73: ticker transfer tab reverse soft gradient */
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -58px !important;
+    width: 58px !important;
+    height: 100% !important;
+    pointer-events: none !important;
+    display: block !important;
+    z-index: 2 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 0) 0%,
+        rgba(229, 180, 58, .24) 36%,
+        rgba(229, 180, 58, .58) 68%,
+        rgba(229, 180, 58, .92) 100%
+    ) !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 0) 0%,
+        rgba(229, 180, 58, .28) 36%,
+        rgba(229, 180, 58, .64) 68%,
+        rgba(229, 180, 58, .96) 100%
+    ) !important;
+}
+
+
+/* Step 74: ticker transfer tab internal gradient */
+.pf-transfer-tab-link {
+    overflow: hidden !important;
+    border-radius: 0 6px 6px 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .98) 0%,
+        rgba(229, 180, 58, .98) 58%,
+        rgba(229, 180, 58, .74) 76%,
+        rgba(229, 180, 58, .42) 90%,
+        rgba(229, 180, 58, .16) 100%
+    ) !important;
+}
+
+/* The previous gradient extension is no longer outside the button. */
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 46px !important;
+    height: 100% !important;
+    pointer-events: none !important;
+    display: block !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 0) 0%,
+        rgba(229, 180, 58, .10) 42%,
+        rgba(5, 9, 16, .16) 100%
+    ) !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:focus-visible {
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 1) 0%,
+        rgba(229, 180, 58, 1) 58%,
+        rgba(229, 180, 58, .78) 76%,
+        rgba(229, 180, 58, .46) 90%,
+        rgba(229, 180, 58, .20) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    right: 0 !important;
+    width: 46px !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 0) 0%,
+        rgba(229, 180, 58, .12) 42%,
+        rgba(5, 9, 16, .12) 100%
+    ) !important;
+}
+
+
+/* Step 75: remove right yellow rim on ticker transfer tab */
+.pf-transfer-tab-link {
+    overflow: hidden !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .98) 0%,
+        rgba(229, 180, 58, .98) 58%,
+        rgba(229, 180, 58, .66) 76%,
+        rgba(229, 180, 58, .26) 90%,
+        rgba(5, 9, 16, .98) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link::after,
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    width: 0 !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:focus-visible {
+    border-right: 0 !important;
+    box-shadow: none !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 1) 0%,
+        rgba(229, 180, 58, 1) 58%,
+        rgba(229, 180, 58, .70) 76%,
+        rgba(229, 180, 58, .30) 90%,
+        rgba(5, 9, 16, .98) 100%
+    ) !important;
+}
+
+
+/* Step 76: internal right fade for ticker entering transfer tab */
+.pf-transfer-tab-link {
+    position: relative !important;
+    overflow: hidden !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 6px 6px 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .98) 0%,
+        rgba(229, 180, 58, .98) 58%,
+        rgba(229, 180, 58, .72) 76%,
+        rgba(229, 180, 58, .36) 90%,
+        rgba(5, 9, 16, .92) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 54px !important;
+    height: 100% !important;
+    display: block !important;
+    pointer-events: none !important;
+    z-index: 3 !important;
+    border-radius: 0 6px 6px 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, 0) 0%,
+        rgba(5, 9, 16, .16) 35%,
+        rgba(5, 9, 16, .44) 70%,
+        rgba(5, 9, 16, .84) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:focus-visible {
+    border-right: 0 !important;
+    box-shadow: none !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, 1) 0%,
+        rgba(229, 180, 58, 1) 58%,
+        rgba(229, 180, 58, .76) 76%,
+        rgba(229, 180, 58, .40) 90%,
+        rgba(5, 9, 16, .92) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    content: "" !important;
+    display: block !important;
+    right: 0 !important;
+    width: 54px !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, 0) 0%,
+        rgba(5, 9, 16, .14) 35%,
+        rgba(5, 9, 16, .40) 70%,
+        rgba(5, 9, 16, .78) 100%
+    ) !important;
+}
+
+
+/* Step 77: ticker text fade before transfer tab */
+.pf-transfer-tab-link {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 30 !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+}
+
+/* This is not a yellow button extension.
+   It is a dark transparent overlay over the ticker text so items fade before entering the tab. */
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -96px !important;
+    width: 96px !important;
+    height: 100% !important;
+    display: block !important;
+    pointer-events: none !important;
+    z-index: 40 !important;
+    border-radius: 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, .94) 0%,
+        rgba(5, 9, 16, .74) 30%,
+        rgba(5, 9, 16, .36) 68%,
+        rgba(5, 9, 16, 0) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    content: "" !important;
+    display: block !important;
+    right: -96px !important;
+    width: 96px !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, .92) 0%,
+        rgba(5, 9, 16, .70) 30%,
+        rgba(5, 9, 16, .34) 68%,
+        rgba(5, 9, 16, 0) 100%
+    ) !important;
+}
+/* Step 78: global transfer ticker tab style */
+.pf-transfer-tab-link {
+    position: relative !important;
+    cursor: pointer !important;
+    overflow: visible !important;
+    z-index: 30 !important;
+    isolation: isolate !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 6px 6px 0 !important;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: .035em !important;
+    text-transform: uppercase !important;
+    color: #111722 !important;
+    text-decoration: none !important;
+    transition: color .16s ease, filter .16s ease;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .98) 0%,
+        rgba(229, 180, 58, .98) 58%,
+        rgba(229, 180, 58, .72) 76%,
+        rgba(229, 180, 58, .36) 90%,
+        rgba(5, 9, 16, .92) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link *,
+.pf-transfer-tab-link span,
+.pf-transfer-tab-link strong {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:hover *,
+.pf-transfer-tab-link:focus-visible,
+.pf-transfer-tab-link:focus-visible * {
+    color: #ffffff !important;
+}
+
+.pf-transfer-tab-dot-hidden,
+.pf-transfer-tab-link .pf-transfer-tab-dot-hidden {
+    display: none !important;
+}
+
+.pf-transfer-tab-link::before {
+    display: none !important;
+    content: none !important;
+}
+
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -96px !important;
+    width: 96px !important;
+    height: 100% !important;
+    display: block !important;
+    pointer-events: none !important;
+    z-index: 40 !important;
+    border-radius: 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, .94) 0%,
+        rgba(5, 9, 16, .74) 30%,
+        rgba(5, 9, 16, .36) 68%,
+        rgba(5, 9, 16, 0) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    content: "" !important;
+    display: block !important;
+    right: -96px !important;
+    width: 96px !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, .92) 0%,
+        rgba(5, 9, 16, .70) 30%,
+        rgba(5, 9, 16, .34) 68%,
+        rgba(5, 9, 16, 0) 100%
+    ) !important;
+}

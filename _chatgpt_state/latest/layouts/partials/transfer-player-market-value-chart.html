@@ -1,0 +1,88 @@
+{{- with .Params.market_value_chart -}}
+<section
+    class="player-market-chart"
+    data-market-chart-key="{{ .key }}"
+    aria-label="Динамика рыночной стоимости {{ .player }}"
+>
+    <header class="player-market-chart__header">
+        <div>
+            <span class="player-market-chart__eyebrow">ДИНАМИКА СТОИМОСТИ</span>
+            <strong class="player-market-chart__current">{{ .current_label }}</strong>
+        </div>
+
+        <a
+            class="player-market-chart__source"
+            href="{{ .source_url }}"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+        >
+            {{ .source_name }}
+        </a>
+    </header>
+
+    <div class="player-market-chart__canvas">
+        <svg
+            viewBox="0 0 320 126"
+            role="img"
+            aria-label="График изменения рыночной стоимости {{ .player }}"
+            preserveAspectRatio="none"
+        >
+            <defs>
+                <linearGradient
+                    id="pf-market-gradient-{{ .key }}"
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                >
+                    <stop offset="0%" stop-color="#e7c65b" stop-opacity="0.32" />
+                    <stop offset="100%" stop-color="#e7c65b" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+
+            <line class="player-market-chart__grid" x1="18" y1="32" x2="302" y2="32" />
+            <line class="player-market-chart__grid" x1="18" y1="70" x2="302" y2="70" />
+            <line class="player-market-chart__grid" x1="18" y1="110" x2="302" y2="110" />
+
+            <path
+                class="player-market-chart__area"
+                style="fill: url('#pf-market-gradient-{{ .key }}');"
+                d="{{ .area_path }}"
+            />
+
+            <path
+                class="player-market-chart__line"
+                d="{{ .path }}"
+            />
+
+            {{- range .points }}
+                <circle
+                    class="player-market-chart__dot"
+                    cx="{{ .x }}"
+                    cy="{{ .y }}"
+                    r="4.4"
+                >
+                    <title>{{ .date_full }} — {{ .value_label }}</title>
+                </circle>
+            {{- end }}
+        </svg>
+    </div>
+
+    <div
+        class="player-market-chart__points"
+        style="--market-point-count: {{ len .points }};"
+    >
+        {{- range .points }}
+            <span class="player-market-chart__point">
+                <small>{{ .date }}</small>
+                <strong>{{ .value_label }}</strong>
+            </span>
+        {{- end }}
+    </div>
+
+    <p class="player-market-chart__note">
+        Оценочная стоимость, не сумма трансфера. Обновлено {{ .updated_at }}.
+    </p>
+</section>
+{{- end -}}
+<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

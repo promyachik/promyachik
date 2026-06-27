@@ -1,0 +1,3449 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Килиан Мбаппе перешёл в «Реал Мадрид» — Promyachik</title>
+
+    <link
+        rel="stylesheet"
+        href="/promyachik/css/style.css"
+    >
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            color: #f4f5f7;
+            background:
+                linear-gradient(
+                    180deg,
+                    #07090c,
+                    #0c0f13
+                );
+            font-family:
+                Inter,
+                Manrope,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+        }
+
+        .transfer-list-page {
+            width: min(1200px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 42px 0 70px;
+        }
+
+        .transfer-list-page h1 {
+            margin: 0 0 12px;
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .transfer-list-page__description {
+            max-width: 760px;
+            margin-bottom: 34px;
+            color: #9da3ad;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .transfer-list {
+            display: grid;
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+            gap: 20px;
+        }
+
+        .transfer-list__item {
+            display: block;
+            padding: 24px;
+            border:
+                1px solid rgba(212, 175, 55, 0.18);
+            border-radius: 18px;
+            color: #ffffff;
+            background:
+                linear-gradient(
+                    145deg,
+                    #12161b,
+                    #0c0f13
+                );
+            text-decoration: none;
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .transfer-list__item:hover {
+            transform: translateY(-3px);
+            border-color:
+                rgba(212, 175, 55, 0.5);
+        }
+
+        .transfer-list__status {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 5px 9px;
+            border-radius: 6px;
+            color: #78e597;
+            background:
+                rgba(75, 195, 108, 0.12);
+            font-size: 9px;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+        }
+
+        .transfer-list__item h2 {
+            margin: 0 0 14px;
+            font-size: 21px;
+            line-height: 1.25;
+        }
+
+        .transfer-list__item p {
+            margin: 0;
+            color: #9da3ad;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+    </style>
+
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/promyachik/favicon-32x32.png"
+>
+<link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/promyachik/favicon-16x16.png"
+>
+<link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/promyachik/apple-touch-icon.png"
+>
+<link
+    rel="shortcut icon"
+    href="/promyachik/favicon.ico"
+>
+<link
+    rel="manifest"
+    href="/promyachik/site.webmanifest"
+>
+<meta
+    name="theme-color"
+    content="#0b0b0b"
+>
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+
+    <link rel="stylesheet" href="/promyachik/css/transfer-player-market-value-chart.css">
+    <script defer src="/promyachik/js/transfer-player-market-value-chart.js"></script>
+
+    <link rel="icon" type="image/png" href="/promyachik/favicon.png">
+    <link rel="shortcut icon" href="/promyachik/favicon.ico">
+</head>
+
+<body>
+
+
+<link
+    rel="stylesheet"
+    href="/promyachik/css/header.css"
+>
+
+<link
+    rel="stylesheet"
+    href="/promyachik/css/transfer-ticker.css"
+>
+
+<header class="pf-header">
+
+    <div class="pf-header__inner">
+
+        <a
+            class="pf-header__logo"
+            href="/promyachik/"
+            aria-label="Главная страница ProFutbik"
+        >
+            <img
+                class="pf-header__logo-image"
+                src="/promyachik/css/profutbik-logo-site.png"
+                alt="ProFutbik"
+            >
+        </a>
+
+        <nav
+            class="pf-header__nav"
+            aria-label="Основная навигация"
+        >
+            <a
+                class="pf-header__nav-link"
+                href="/promyachik/"
+                
+            >
+                Главная
+            </a>
+
+            <a
+                class="pf-header__nav-link is-active"
+                href="/promyachik/transfers/"
+                aria-current="page"
+            >
+                Трансферы
+            </a>
+
+            <a
+                class="pf-header__nav-link"
+                href="/promyachik/news/"
+                
+            >
+                Новости
+            </a>
+
+            <a
+                class="pf-header__nav-link"
+                href="/promyachik/about/"
+                
+            >
+                О проекте
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<style>
+    .pf-ticker__player-photo {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 34px;
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.24);
+        border-radius: 10px;
+        background:
+            radial-gradient(circle at 50% 20%, #252f3a 0%, #111720 58%, #07090c 100%);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
+    }
+
+    .pf-ticker__player-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+    }
+
+    .pf-ticker__player-photo.is-placeholder::before {
+        content: "PF";
+        color: #e3bd4f;
+        font-size: 12px;
+        font-weight: 950;
+        letter-spacing: 0.02em;
+    }
+    .pf-ticker__status--confirmed {
+        border-color: rgba(74, 222, 128, 0.48) !important;
+        color: #91f0ad !important;
+        background: rgba(34, 197, 94, 0.18) !important;
+    }
+
+    .pf-ticker__status--official {
+        border-color: rgba(74, 222, 128, 0.62) !important;
+        color: #a7f3bb !important;
+        background: rgba(22, 163, 74, 0.24) !important;
+    }
+
+</style>
+
+<div
+    class="pf-ticker"
+    data-ticker-duration="42"
+    aria-label="Последние футбольные трансферы"
+>
+    <div class="pf-ticker__badge">
+        <span class="pf-ticker__live-dot"></span>
+        <span>ТРАНСФЕРЫ</span>
+    </div>
+
+    <div class="pf-ticker__viewport">
+        <div class="pf-ticker__track">
+
+            
+
+                <div
+                    class="pf-ticker__group"
+                    
+                >
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/matthijs-de-ligt/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/532.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Matthijs de Ligt
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/157.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Bayern Munich</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/33.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Manchester United</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· €45 млн &#43; €5 млн бонусами</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/ibrahima-konate-real-madrid/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/1145.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Ibrahima Konaté
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/40.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Liverpool</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не раскрывается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/marc-cucurella-real-madrid/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/47380.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Marc Cucurella
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/49.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Chelsea</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· €55 млн &#43; €5 млн бонусами</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/denzel-dumfries-real-madrid/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/226.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--confirmed"
+                            >
+                                ПОДТВЕРЖДЕНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Denzel Dumfries
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/505.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Inter</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не раскрывается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/goncalo-ramos-ac-milan/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/images/players/api/41585.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--agreement"
+                            >
+                                СОГЛАСОВАНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Gonçalo Ramos
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/85.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Paris Saint Germain</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/489.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">AC Milan</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· €74M &#43; add-ons</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/julian-alvarez-barcelona/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/6009.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--negotiations"
+                            >
+                                ПЕРЕГОВОРЫ
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Julián Álvarez
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/530.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Atletico Madrid</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/529.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Barcelona</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Предложение €100 млн</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/elliot-anderson-manchester-city/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/138908.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--agreement"
+                            >
+                                СОГЛАСОВАНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Elliot Anderson
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/65.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Nottingham Forest</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/50.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Manchester City</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· £116 млн</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/bernardo-silva-real-madrid/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/636.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Bernardo Silva
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/50.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Manchester City</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не раскрывается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/florian-wirtz-liverpool/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/203224.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Florian Wirtz
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/168.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Bayer Leverkusen</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/40.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Liverpool</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· До £116,5 млн</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/kylian-mbappe-real-madrid/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/api/278.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Kylian Mbappé
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/85.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Paris Saint Germain</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Свободный агент</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/api/1323.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Dani Olmo
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/173.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">RB Leipzig</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/529.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Barcelona</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не разглашается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/"
+                            
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/images/players/cutout/377122.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Endrick
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/121.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Palmeiras</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не разглашается</span>
+                            
+                        </a>
+
+                    
+
+                </div>
+
+            
+
+                <div
+                    class="pf-ticker__group"
+                    aria-hidden="true"
+                >
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/matthijs-de-ligt/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/532.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Matthijs de Ligt
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/157.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Bayern Munich</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/33.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Manchester United</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· €45 млн &#43; €5 млн бонусами</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/ibrahima-konate-real-madrid/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/1145.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Ibrahima Konaté
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/40.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Liverpool</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не раскрывается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/marc-cucurella-real-madrid/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/47380.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Marc Cucurella
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/49.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Chelsea</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· €55 млн &#43; €5 млн бонусами</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/denzel-dumfries-real-madrid/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/226.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--confirmed"
+                            >
+                                ПОДТВЕРЖДЕНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Denzel Dumfries
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/505.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Inter</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не раскрывается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/goncalo-ramos-ac-milan/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/images/players/api/41585.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--agreement"
+                            >
+                                СОГЛАСОВАНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Gonçalo Ramos
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/85.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Paris Saint Germain</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/489.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">AC Milan</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· €74M &#43; add-ons</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/julian-alvarez-barcelona/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/6009.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--negotiations"
+                            >
+                                ПЕРЕГОВОРЫ
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Julián Álvarez
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/530.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Atletico Madrid</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/529.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Barcelona</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Предложение €100 млн</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/elliot-anderson-manchester-city/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/138908.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--agreement"
+                            >
+                                СОГЛАСОВАНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Elliot Anderson
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/65.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Nottingham Forest</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/50.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Manchester City</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· £116 млн</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/bernardo-silva-real-madrid/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/636.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Bernardo Silva
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/50.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Manchester City</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не раскрывается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/florian-wirtz-liverpool/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/cutout/203224.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Florian Wirtz
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/168.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Bayer Leverkusen</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/40.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Liverpool</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· До £116,5 млн</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/kylian-mbappe-real-madrid/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/api/278.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Kylian Mbappé
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/85.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Paris Saint Germain</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Свободный агент</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/promyachik/images/players/api/1323.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Dani Olmo
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/173.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">RB Leipzig</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/529.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Barcelona</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не разглашается</span>
+                            
+                        </a>
+
+                    
+
+                        
+
+                        
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                            
+                        
+
+                        
+                        
+
+                        <a
+                            class="pf-ticker__item"
+                            href="/promyachik/transfers/"
+                            tabindex="-1"
+                        >
+                            <span
+                                class="pf-ticker__player-photo"
+                                aria-hidden="true"
+                            >
+                                
+                                    <img
+                                        src="/images/players/cutout/377122.png"
+                                        alt=""
+                                        loading="lazy"
+                                        draggable="false"
+                                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                    >
+                                
+                            </span>
+
+                            <span
+                                class="pf-ticker__status pf-ticker__status--official"
+                            >
+                                ОФИЦИАЛЬНО
+                            </span>
+
+                            <strong class="pf-ticker__player">
+                                Endrick
+                            </strong>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo"
+                                            src="/promyachik/images/clubs/api/121.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Palmeiras</span>
+                            </span>
+
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
+
+                            <span class="pf-ticker__club">
+                                <span
+                                    class="pf-ticker__logo-box"
+                                >
+                                    
+                                        <img
+                                            class="pf-ticker__club-logo pf-ticker__club-logo--real"
+                                            src="/promyachik/images/clubs/api/541.png"
+                                            alt=""
+                                            loading="lazy"
+                                            onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                                        >
+                                    
+                                </span>
+                                <span class="pf-ticker__club-name">Real Madrid</span>
+                            </span>
+
+                            
+                                <span class="pf-ticker__fee">· Сумма не разглашается</span>
+                            
+                        </a>
+
+                    
+
+                </div>
+
+            
+
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const ticker = document.querySelector(".pf-ticker");
+
+        if (!ticker || ticker.dataset.dragReady === "true") {
+            return;
+        }
+
+        const viewport = ticker.querySelector(".pf-ticker__viewport");
+        const track = ticker.querySelector(".pf-ticker__track");
+        const firstGroup = track
+            ? track.querySelector(".pf-ticker__group")
+            : null;
+
+        if (!viewport || !track || !firstGroup) {
+            return;
+        }
+
+        ticker.dataset.dragReady = "true";
+        ticker.classList.add("pf-ticker--interactive");
+
+        const baseDuration =
+            Math.max(Number(ticker.dataset.tickerDuration) || 42, 1);
+
+        const reducedMotion =
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        const duration =
+            reducedMotion ? baseDuration * 2 : baseDuration;
+
+        const dragThreshold = 10;
+
+        let loopWidth = 0;
+        let offset = 0;
+        let lastFrame = performance.now();
+
+        let pointerIsDown = false;
+        let isDragging = false;
+        let activePointerId = null;
+        let dragStartX = 0;
+        let dragStartOffset = 0;
+        let resumeAt = 0;
+
+        function normalizeOffset(value) {
+            if (!loopWidth) {
+                return 0;
+            }
+
+            while (value <= -loopWidth) {
+                value += loopWidth;
+            }
+
+            while (value > 0) {
+                value -= loopWidth;
+            }
+
+            return value;
+        }
+
+        function render() {
+            track.style.transform =
+                "translate3d(" + offset + "px, 0, 0)";
+        }
+
+        function measure() {
+            const previousWidth = loopWidth;
+
+            const progress = previousWidth
+                ? -offset / previousWidth
+                : ((Date.now() / 1000) % duration) / duration;
+
+            loopWidth = firstGroup.getBoundingClientRect().width;
+
+            if (!loopWidth) {
+                return;
+            }
+
+            offset = normalizeOffset(-progress * loopWidth);
+            render();
+        }
+
+        function animate(now) {
+            const elapsed =
+                Math.min((now - lastFrame) / 1000, 0.1);
+
+            lastFrame = now;
+
+            if (
+                !pointerIsDown &&
+                now >= resumeAt &&
+                loopWidth
+            ) {
+                const speed = loopWidth / duration;
+
+                offset = normalizeOffset(
+                    offset - speed * elapsed
+                );
+
+                render();
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        function finishPointer(event) {
+            if (
+                !pointerIsDown ||
+                event.pointerId !== activePointerId
+            ) {
+                return;
+            }
+
+            pointerIsDown = false;
+
+            if (isDragging) {
+                isDragging = false;
+                viewport.classList.remove("is-dragging");
+
+                if (viewport.hasPointerCapture(event.pointerId)) {
+                    viewport.releasePointerCapture(event.pointerId);
+                }
+
+                resumeAt = performance.now() + 800;
+            } else {
+                resumeAt = performance.now();
+            }
+
+            activePointerId = null;
+        }
+
+        viewport.addEventListener("pointerdown", function (event) {
+            if (event.button !== 0 || !loopWidth) {
+                return;
+            }
+
+            pointerIsDown = true;
+            isDragging = false;
+            activePointerId = event.pointerId;
+            dragStartX = event.clientX;
+            dragStartOffset = offset;
+            resumeAt = Number.POSITIVE_INFINITY;
+        });
+
+        viewport.addEventListener("pointermove", function (event) {
+            if (
+                !pointerIsDown ||
+                event.pointerId !== activePointerId
+            ) {
+                return;
+            }
+
+            const deltaX = event.clientX - dragStartX;
+
+            if (!isDragging) {
+                if (Math.abs(deltaX) < dragThreshold) {
+                    return;
+                }
+
+                isDragging = true;
+                viewport.classList.add("is-dragging");
+                viewport.setPointerCapture(event.pointerId);
+            }
+
+            offset = normalizeOffset(
+                dragStartOffset + deltaX
+            );
+
+            render();
+            event.preventDefault();
+        });
+
+        viewport.addEventListener("pointerup", finishPointer);
+        viewport.addEventListener("pointercancel", finishPointer);
+
+        viewport.addEventListener("dragstart", function (event) {
+            event.preventDefault();
+        });
+
+        if ("ResizeObserver" in window) {
+            const resizeObserver =
+                new ResizeObserver(measure);
+
+            resizeObserver.observe(firstGroup);
+            resizeObserver.observe(viewport);
+        } else {
+            window.addEventListener("resize", measure);
+        }
+
+        document.addEventListener(
+            "visibilitychange",
+            function () {
+                lastFrame = performance.now();
+            }
+        );
+
+        requestAnimationFrame(function () {
+            measure();
+            lastFrame = performance.now();
+            requestAnimationFrame(animate);
+        });
+    })();
+</script>
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+
+
+
+<main class="transfer-list-page">
+
+    <h1>
+        Килиан Мбаппе перешёл в «Реал Мадрид»
+    </h1>
+
+    
+
+        <div class="transfer-list-page__description">
+            Килиан Мбаппе покинул «Пари Сен-Жермен» и стал игроком мадридского «Реала».
+        </div>
+
+    
+
+    <div class="transfer-list">
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/goncalo-ramos-ac-milan/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        СОГЛАСОВАНО
+                    
+                </span>
+
+                <h2>
+                    Gonçalo Ramos переходит в AC Milan из Paris Saint-Germain
+                </h2>
+
+                
+
+                    <p>
+                        Gonçalo Ramos согласовал переход из Paris Saint-Germain в AC Milan. Сумма сделки — €74M &#43; add-ons, источник — Fabrizio Romano.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/elliot-anderson-manchester-city/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        СОГЛАСОВАНО
+                    
+                </span>
+
+                <h2>
+                    Эллиот Андерсон переходит в «Манчестер Сити»: £116 млн и медосмотр
+                </h2>
+
+                
+
+                    <p>
+                        «Манчестер Сити» согласовал трансфер Эллиота Андерсона из «Ноттингем Форест» за £116 млн. Медосмотр, статус сделки и детали.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/ibrahima-konate-real-madrid/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ОФИЦИАЛЬНО
+                    
+                </span>
+
+                <h2>
+                    Ибраима Конате перешёл в «Реал»: контракт до 2030 года и детали трансфера
+                </h2>
+
+                
+
+                    <p>
+                        Ибраима Конате официально стал игроком мадридского «Реала». Срок контракта, подтверждённые факты и роль защитника в новой команде.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/bernardo-silva-real-madrid/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ОФИЦИАЛЬНО
+                    
+                </span>
+
+                <h2>
+                    Бернарду Силва перешёл в «Реал»: контракт до 2028 года и детали
+                </h2>
+
+                
+
+                    <p>
+                        Бернарду Силва официально стал игроком мадридского «Реала». Срок контракта, подтверждённые факты и возможная роль полузащитника.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/marc-cucurella-real-madrid/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ОФИЦИАЛЬНО
+                    
+                </span>
+
+                <h2>
+                    Марк Кукурелья перешёл в «Реал»: сумма сделки и контракт до 2032 года
+                </h2>
+
+                
+
+                    <p>
+                        Марк Кукурелья официально перешёл из «Челси» в мадридский «Реал». Сумма, срок контракта и главные детали сделки.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/denzel-dumfries-real-madrid/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ПОДТВЕРЖДЕНО
+                    
+                </span>
+
+                <h2>
+                    Дензел Дюмфрис подписал контракт с «Реалом»: что известно о сделке
+                </h2>
+
+                
+
+                    <p>
+                        Дензел Дюмфрис прошёл медосмотр и подписал четырёхлетний контракт с «Реалом». Последние детали перехода из «Интера» и текущий статус.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/julian-alvarez-barcelona/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ПЕРЕГОВОРЫ
+                    
+                </span>
+
+                <h2>
+                    «Барселона» ведёт переговоры по Хулиану Альваресу: предложение и позиция «Атлетико»
+                </h2>
+
+                
+
+                    <p>
+                        «Барселона» сделала предложение по Хулиану Альваресу. Что известно о сумме, позиции игрока, ответе «Атлетико» и текущем статусе переговоров.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/florian-wirtz-liverpool/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ОФИЦИАЛЬНО
+                    
+                </span>
+
+                <h2>
+                    Флориан Вирц перешёл в «Ливерпуль»: сумма трансфера и детали сделки
+                </h2>
+
+                
+
+                    <p>
+                        Флориан Вирц перешёл из «Байера» в «Ливерпуль» 20 июня 2025 года. Сумма, контракт, возраст игрока и главные факты трансфера.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/matthijs-de-ligt/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ОФИЦИАЛЬНО
+                    
+                </span>
+
+                <h2>
+                    Маттейс де Лигт перешёл в «Манчестер Юнайтед»: детали трансфера из «Баварии»
+                </h2>
+
+                
+
+                    <p>
+                        Маттейс де Лигт официально перешёл из «Баварии» в «Манчестер Юнайтед». Сумма сделки, роль защитника и главные детали перехода.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+            <a
+                class="transfer-list__item"
+                href="/promyachik/transfers/kylian-mbappe-real-madrid/"
+            >
+
+                <span class="transfer-list__status">
+                    
+                        ОФИЦИАЛЬНО
+                    
+                </span>
+
+                <h2>
+                    Килиан Мбаппе перешел из ПСЖ в Реал Мадрид - детали трансфера
+                </h2>
+
+                
+
+                    <p>
+                        Подробности перехода Килиана Мбаппе из ПСЖ в Реал Мадрид: статус сделки, контракт, статистика за предыдущий клуб и хронология трансфера.
+                    </p>
+
+                
+
+            </a>
+
+        
+
+    </div>
+
+</main>
+
+
+    <script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+
+</body>
+
+</html>

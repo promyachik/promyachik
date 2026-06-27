@@ -1,0 +1,10 @@
+COMMAND: git log --oneline -10
+EXIT_CODE: 0
+
+--- STDOUT ---
+5b4d57c настроил Hugo Проект
+b064bb8 добавил Hugo Структуру и главную страницу
+ff84b76 Первый запуск Promyachik
+
+
+--- STDERR ---

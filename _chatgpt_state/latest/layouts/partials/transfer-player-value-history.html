@@ -1,0 +1,189 @@
+{{- $history := .Params.value_history -}}
+{{- if $history -}}
+<section class="transfer-value-history" id="market-value" aria-label="Динамика рыночной стоимости игрока">
+    <style>
+        .transfer-value-history {
+            margin: 24px 0 0;
+            padding: 22px;
+            border: 1px solid rgba(212, 175, 55, 0.22);
+            border-radius: 22px;
+            background:
+                radial-gradient(circle at 16% 0%, rgba(212, 175, 55, 0.13), transparent 34%),
+                linear-gradient(135deg, rgba(16, 18, 24, 0.98), rgba(7, 9, 14, 0.96));
+            box-shadow: 0 20px 42px rgba(0, 0, 0, 0.28);
+        }
+
+        .transfer-value-history__header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .transfer-value-history__eyebrow {
+            margin: 0 0 7px;
+            color: #d9b95d;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .transfer-value-history__title {
+            margin: 0;
+            color: #f6f2e6;
+            font-size: 22px;
+            line-height: 1.15;
+            font-weight: 950;
+        }
+
+        .transfer-value-history__current {
+            flex: 0 0 auto;
+            padding: 9px 12px;
+            border: 1px solid rgba(212, 175, 55, 0.28);
+            border-radius: 14px;
+            color: #f4d66f;
+            background: rgba(212, 175, 55, 0.08);
+            font-size: 14px;
+            font-weight: 950;
+            white-space: nowrap;
+        }
+
+        .transfer-value-history__chart {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
+            align-items: end;
+            gap: 12px;
+            min-height: 178px;
+            padding: 18px 14px 12px;
+            border-radius: 18px;
+            background:
+                linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01)),
+                rgba(255,255,255,0.025);
+        }
+
+        .transfer-value-history__point {
+            display: grid;
+            grid-template-rows: 24px 128px 20px;
+            align-items: end;
+            justify-items: center;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        .transfer-value-history__value {
+            color: #f7d86d;
+            font-size: 12px;
+            font-weight: 950;
+            white-space: nowrap;
+        }
+
+        .transfer-value-history__bar-wrap {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            width: 100%;
+            height: 128px;
+        }
+
+        .transfer-value-history__bar {
+            width: 18px;
+            min-height: 24px;
+            border-radius: 999px 999px 5px 5px;
+            background:
+                linear-gradient(180deg, #f3d46a, #b98a23 58%, rgba(185, 138, 35, 0.42));
+            box-shadow:
+                0 0 18px rgba(212, 175, 55, 0.19),
+                inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+
+        .transfer-value-history__label {
+            color: #aeb5c0;
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .transfer-value-history__clubs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .transfer-value-history__club {
+            padding: 6px 9px;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 999px;
+            color: #cdd3dc;
+            background: rgba(255,255,255,0.035);
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        @media (max-width: 720px) {
+            .transfer-value-history {
+                padding: 18px;
+            }
+
+            .transfer-value-history__header {
+                display: block;
+            }
+
+            .transfer-value-history__current {
+                display: inline-flex;
+                margin-top: 12px;
+            }
+
+            .transfer-value-history__chart {
+                gap: 8px;
+                overflow-x: auto;
+                grid-template-columns: repeat(7, minmax(58px, 1fr));
+            }
+        }
+    </style>
+
+    <div class="transfer-value-history__header">
+        <div>
+            <p class="transfer-value-history__eyebrow">Market value</p>
+            <h2 class="transfer-value-history__title">Динамика стоимости {{ .Params.player }}</h2>
+        </div>
+
+        {{ with .Params.market_value }}
+            <div class="transfer-value-history__current">
+                Сейчас: {{ . }}
+            </div>
+        {{ end }}
+    </div>
+
+    <div class="transfer-value-history__chart">
+        {{ range $history }}
+            {{ $height := default 72 .bar_height }}
+            <div class="transfer-value-history__point">
+                <div class="transfer-value-history__value">
+                    {{ default (printf "€%vM" .value) .display }}
+                </div>
+
+                <div class="transfer-value-history__bar-wrap">
+                    <div
+                        class="transfer-value-history__bar"
+                        style="height: {{ $height }}px"
+                    ></div>
+                </div>
+
+                <div class="transfer-value-history__label">
+                    {{ default .date .label }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+
+    <div class="transfer-value-history__clubs">
+        {{ range $history }}
+            {{ with .club }}
+                <span class="transfer-value-history__club">{{ . }}</span>
+            {{ end }}
+        {{ end }}
+    </div>
+</section>
+{{- end -}}

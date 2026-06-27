@@ -1,0 +1,40 @@
+START 119 DE LIGT MATCH DUMFRIES/CUCURELLA STRUCTURE
+This replaces only the broken De Ligt page with a clean structure like Dumfries/Cucurella.
+It also cleans only the De Ligt record in data/transfers.json.
+It does NOT touch Ramos, Endrick, favicon, ticker-template, layouts, public manually, or var folders.
+
+BACKUP: content\transfers\matthijs-de-ligt\index.md -> _backup_119_de_ligt_match_dumfries_cucurella\matthijs-de-ligt-index.before_119_20260627_212842.md
+OK: De Ligt page rewritten in clean Dumfries/Cucurella-style structure
+BACKUP: data\transfers.json -> _backup_119_de_ligt_match_dumfries_cucurella\transfers-json.before_119_20260627_212842.json
+OK: updated De Ligt record in data/transfers.json at index 0
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4529 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1915 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: data/transfers.json De Ligt record checked
+ERROR: public De Ligt HTML still contains forbidden text: Paris Saint Germain
+ERROR: public De Ligt HTML still contains forbidden text: AC Milan
+ERROR: public De Ligt HTML still contains forbidden text: Gonçalo Ramos
+OK: public De Ligt HTML checked
