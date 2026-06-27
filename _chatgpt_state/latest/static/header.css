@@ -417,3 +417,130 @@
         rgba(5, 9, 16, 0) 100%
     ) !important;
 }
+
+/* Step 135: restore top ticker tab and fade, keep pure black ticker */
+
+/* Верхняя бегущая строка: чистый черный фон. 
+   Важно: это только контейнеры строки, не кнопка "Трансферы" и не fade-эффект. */
+.transfer-ticker,
+.transfer-ticker-v3,
+.top-transfer-ticker,
+.top-transfer-strip,
+.top-transfer-strip-v3,
+.header-transfer-ticker,
+.global-transfer-ticker,
+.ticker-strip,
+.news-ticker,
+.pf-transfer-ticker,
+.pf-transfer-ticker-shell,
+.pf-transfer-ticker-wrap,
+.pf-transfer-ticker-bar,
+.pf-transfer-ticker-viewport,
+.transfer-ticker-shell,
+.transfer-ticker-wrap,
+.transfer-ticker-bar,
+.transfer-ticker-viewport {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+}
+
+/* Дорожка/лента внутри строки тоже черная, но псевдо-эффекты не трогаем. */
+.pf-transfer-ticker-track,
+.transfer-ticker-track,
+.pf-transfer-marquee,
+.transfer-marquee,
+.ticker-track,
+.marquee-track {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+}
+
+/* Кнопку "Трансферы" возвращаем золотой, чтобы она не становилась черной. */
+.pf-transfer-tab-link {
+    position: relative !important;
+    cursor: pointer !important;
+    overflow: visible !important;
+    z-index: 30 !important;
+    isolation: isolate !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 6px 6px 0 !important;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: .035em !important;
+    text-transform: uppercase !important;
+    color: #111722 !important;
+    text-decoration: none !important;
+    transition: color .16s ease, filter .16s ease !important;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .98) 0%,
+        rgba(229, 180, 58, .98) 58%,
+        rgba(229, 180, 58, .72) 76%,
+        rgba(229, 180, 58, .36) 90%,
+        rgba(0, 0, 0, .92) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link *,
+.pf-transfer-tab-link span,
+.pf-transfer-tab-link strong {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:hover *,
+.pf-transfer-tab-link:focus-visible,
+.pf-transfer-tab-link:focus-visible * {
+    color: #ffffff !important;
+}
+
+/* Возвращаем затемнение уходящей строки перед кнопкой.
+   Цвет затемнения теперь черный, чтобы совпадал с новой строкой #000000. */
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -96px !important;
+    width: 96px !important;
+    height: 100% !important;
+    display: block !important;
+    pointer-events: none !important;
+    z-index: 40 !important;
+    border-radius: 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, .94) 0%,
+        rgba(0, 0, 0, .74) 30%,
+        rgba(0, 0, 0, .36) 68%,
+        rgba(0, 0, 0, 0) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    content: "" !important;
+    display: block !important;
+    right: -96px !important;
+    width: 96px !important;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, .92) 0%,
+        rgba(0, 0, 0, .70) 30%,
+        rgba(0, 0, 0, .34) 68%,
+        rgba(0, 0, 0, 0) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-dot-hidden,
+.pf-transfer-tab-link .pf-transfer-tab-dot-hidden {
+    display: none !important;
+}
+
+.pf-transfer-tab-link::before {
+    display: none !important;
+    content: none !important;
+}

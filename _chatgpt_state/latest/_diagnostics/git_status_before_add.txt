@@ -23,6 +23,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
+ M _chatgpt_state/latest/static/header.css
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -51,6 +52,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 132_BOTTOM_TICKER_PURE_BLACK.bat
 ?? 133_TOP_TICKER_PURE_BLACK.bat
 ?? 134_TOP_TICKER_WRAPPER_BLACK.bat
+?? 135_RESTORE_TOP_TICKER_TAB_AND_FADE.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -90,6 +92,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _132_bottom_ticker_pure_black_report_20260627_231406.txt
 ?? _133_top_ticker_pure_black_report_20260627_231712.txt
 ?? _134_top_ticker_wrapper_black_report_20260627_232155.txt
+?? _135_restore_top_ticker_tab_and_fade_report_20260627_232647.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -117,8 +120,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_131_bottom_ticker_solid_black/
 ?? _backup_132_bottom_ticker_pure_black/
 ?? _backup_134_top_ticker_wrapper_black/
+?? _backup_135_restore_top_ticker_tab_and_fade/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_134_top_ticker_wrapper_black_report_20260627_232155.txt
+?? _chatgpt_state/latest/_latest_reports/_135_restore_top_ticker_tab_and_fade_report_20260627_232647.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
