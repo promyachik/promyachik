@@ -1,0 +1,45 @@
+START 140 TOP TICKER CLEAN DIVIDERS
+Goal:
+1. We are talking ONLY about the UPPER running ticker.
+2. Remove the dot on the TRANSFERS button.
+3. Add a soft gold divider BETWEEN transfers.
+4. Do NOT touch ticker color.
+5. Do NOT touch fade, photos, text, logos, button color, sizes or movement.
+
+BACKUP: layouts\partials\transfer-ticker.html -> _backup_140_top_ticker_clean_dividers\transfer-ticker.before_140_20260627_235210.html
+OK: removed dot on TRANSFERS button
+OK: added soft gold dividers between upper ticker transfer items
+OK: ticker color was not changed
+OK: fade, button color, photos, text, logos, sizes and movement were not changed
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4530 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1757 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: bad Step 138 CSS is removed
+OK: 140 CSS installed
+OK: live dot hidden
+OK: divider selector exists
+OK: soft gold divider color exists
+OK: public HTML contains Step 140 top ticker dividers
