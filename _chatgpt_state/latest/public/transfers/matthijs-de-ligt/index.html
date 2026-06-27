@@ -3679,12 +3679,11 @@
     style="--market-point-count: 6;"
     aria-label="Динамика рыночной стоимости игрока"
 >
-    <div class="player-market-chart__heading">
-        <span>ДИНАМИКА СТОИМОСТИ</span>
-        
+    
+        <div class="player-market-chart__heading player-market-chart__heading--value-only">
             <strong>€30 млн</strong>
-        
-    </div>
+        </div>
+    
 
     <div class="player-market-chart__canvas">
         <svg viewBox="0 0 320 130" preserveAspectRatio="none" aria-hidden="true">
@@ -4043,18 +4042,7 @@
             overflow: hidden !important;
             border: 1px solid rgba(212, 175, 55, 0.28) !important;
             border-radius: 18px !important;
-            background:
-                radial-gradient(
-                    circle at 15% 0%,
-                    rgba(212, 175, 55, 0.10),
-                    transparent 34%
-                ),
-                linear-gradient(
-                    110deg,
-                    #07090c 0%,
-                    #10151c 52%,
-                    #07090c 100%
-                ) !important;
+            background: #000000 !important;
             box-shadow:
                 0 18px 42px rgba(0, 0, 0, 0.34),
                 inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;

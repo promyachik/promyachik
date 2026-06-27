@@ -6,12 +6,11 @@
     style="--market-point-count: {{ len $chart.points }};"
     aria-label="Динамика рыночной стоимости игрока"
 >
-    <div class="player-market-chart__heading">
-        <span>ДИНАМИКА СТОИМОСТИ</span>
-        {{ with $chart.current_label }}
+    {{ with $chart.current_label }}
+        <div class="player-market-chart__heading player-market-chart__heading--value-only">
             <strong>{{ . }}</strong>
-        {{ end }}
-    </div>
+        </div>
+    {{ end }}
 
     <div class="player-market-chart__canvas">
         <svg viewBox="0 0 320 130" preserveAspectRatio="none" aria-hidden="true">

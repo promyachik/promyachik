@@ -9,7 +9,6 @@ EXIT_CODE: 0
  D _chatgpt_state/latest/_diagnostics/git_remote_verbose.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
  D _chatgpt_state/latest/_diagnostics/git_status_start.txt
- M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
  M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
@@ -47,6 +46,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 127_FIX_MARKET_CHART_PARTIAL_CONTEXT.bat
 ?? 128_DE_LIGT_BASE_TRANSFERMARKT_PHOTO.bat
 ?? 129_MOVE_MARKET_CHART_UNDER_PLAYER_CARD.bat
+?? 130_REMOVE_MARKET_CHART_TITLE.bat
+?? 131_BOTTOM_TICKER_SOLID_BLACK.bat
+?? 132_BOTTOM_TICKER_PURE_BLACK.bat
+?? 133_TOP_TICKER_PURE_BLACK.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -81,6 +84,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _127_fix_market_chart_partial_context_report_20260627_222343.txt
 ?? _128_de_ligt_base_photo_report_20260627_224054.txt
 ?? _129_market_chart_inside_player_card_report_20260627_224415.txt
+?? _130_remove_market_chart_title_report_20260627_224654.txt
+?? _131_bottom_ticker_solid_black_report_20260627_230126.txt
+?? _132_bottom_ticker_pure_black_report_20260627_231406.txt
+?? _133_top_ticker_pure_black_report_20260627_231712.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -104,8 +111,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_127_fix_market_chart_partial_context/
 ?? _backup_128_de_ligt_base_photo/
 ?? _backup_129_market_chart_inside_player_card/
+?? _backup_130_remove_market_chart_title/
+?? _backup_131_bottom_ticker_solid_black/
+?? _backup_132_bottom_ticker_pure_black/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_129_market_chart_inside_player_card_report_20260627_224415.txt
+?? _chatgpt_state/latest/_latest_reports/_130_remove_market_chart_title_report_20260627_224654.txt
+?? _chatgpt_state/latest/_latest_reports/_131_bottom_ticker_solid_black_report_20260627_230126.txt
+?? _chatgpt_state/latest/_latest_reports/_132_bottom_ticker_pure_black_report_20260627_231406.txt
+?? _chatgpt_state/latest/_latest_reports/_133_top_ticker_pure_black_report_20260627_231712.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

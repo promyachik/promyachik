@@ -1,0 +1,38 @@
+START 132 BOTTOM TICKER PURE BLACK
+Goal: make only the lower running ticker the same pure black as the De Ligt photo background.
+Color: rgba(0, 0, 0, 1) / #000000
+No photo changes. No content changes. No ticker layout changes.
+
+BACKUP: layouts\transfers\single.html -> _backup_132_bottom_ticker_pure_black\layouts-transfers-single.before_132_20260627_231406.html
+OK: lower ticker background set to pure black #000000
+OK: no ticker text, logos, images, movement, size or layout changed
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4530 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1739 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: layout lower ticker background is pure black #000000
+OK: layout lower ticker has no gradient and no old #07090c
+OK: public lower ticker background is pure black #000000
+OK: public lower ticker has no gradient and no old #07090c
