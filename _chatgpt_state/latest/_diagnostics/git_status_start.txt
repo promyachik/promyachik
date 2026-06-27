@@ -3,6 +3,14 @@ EXIT_CODE: 0
 
 --- STDOUT ---
  M .gitignore
+ M _chatgpt_state/latest/_STATE_INFO.json
+ D _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
+ D _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
+ D _chatgpt_state/latest/_diagnostics/git_remote_verbose.txt
+ D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
+ D _chatgpt_state/latest/_diagnostics/git_status_start.txt
+ M _chatgpt_state/latest/_diagnostics/hugo_build.txt
+AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -102,7 +110,6 @@ EXIT_CODE: 0
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? PROFUTBIK_PROGRESS.md
-?? PUSH_STATE_TO_GITHUB.bat
 ?? R============INSTALL_PUSH_STATE_TO_GITHUB_V2.bat
 ?? README.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
@@ -137,7 +144,6 @@ EXIT_CODE: 0
 ?? _backup_119_de_ligt_match_dumfries_cucurella/
 ?? _backup_120_de_ligt_photo_value_history/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -158,7 +164,67 @@ EXIT_CODE: 0
 ?? run_api_football_photos_v3.bat
 ?? run_api_football_photos_v4.bat
 ?? run_pixelcut_remove_backgrounds.bat
-?? scripts/
+?? scripts/44_homepage_desktop_step1_hero.py
+?? scripts/45_homepage_desktop_match_approved_design.py
+?? scripts/46_rollback_bad_homepage_step44_45.py
+?? scripts/__pycache__/
+?? scripts/align_logos_bottom.py
+?? scripts/boost_real_madrid_chart_logo.py
+?? scripts/build_current_transfer_batch.py
+?? scripts/build_seven_league_player_database.py
+?? scripts/center_club_logos.py
+?? scripts/center_last_logo_hide_area.py
+?? scripts/clean_profutbik_var.py
+?? scripts/collect_mbappe_chart_diagnostic.py
+?? scripts/download_club_logos.py
+?? scripts/download_ticker_player_photos.py
+?? scripts/equalize_visible_chart_logos.py
+?? scripts/extend_final_transfer_segment.py
+?? scripts/extend_final_transfer_segment_v2.py
+?? scripts/fade_area_and_space_euro.py
+?? scripts/fetch_transfer_preview.py
+?? scripts/fill_six_transfer_pages.ps1
+?? scripts/filter_latest_transfers.py
+?? scripts/fix_market_chart_area_edge.py
+?? scripts/fix_mbappe_shadow_page.py
+?? scripts/fix_transfer_pages_and_bottom_ticker.ps1
+?? scripts/force_visible_transfer_market_charts.py
+?? scripts/install_chart_zoom_and_hide_empty_stats.py
+?? scripts/install_club_timeline_modal_stats.py
+?? scripts/install_direct_transfer_market_charts.py
+?? scripts/install_favicon.ps1
+?? scripts/install_favicon_v2.ps1
+?? scripts/install_full_chart_zoom_fix.py
+?? scripts/install_mbappe_content_shortcode.py
+?? scripts/install_mbappe_content_shortcode_v2.py
+?? scripts/install_mbappe_direct_player_chart.py
+?? scripts/install_mbappe_header_runtime.py
+?? scripts/install_mbappe_market_chart_fix.py
+?? scripts/install_runtime_transfer_market_charts.py
+?? scripts/install_runtime_transfer_market_charts_v2.py
+?? scripts/install_transfer_market_value_charts.py
+?? scripts/install_transfer_market_value_charts_v2.py
+?? scripts/install_transfer_market_value_charts_v3.py
+?? scripts/keep_last_chart_logo_inside.py
+?? scripts/normalize_club_logos.py
+?? scripts/normalize_market_chart_logos.py
+?? scripts/pixelcut_player_database_batch.py
+?? scripts/pixelcut_remove_ticker_backgrounds.py
+?? scripts/profutbik_clone_transfer_page_structure.py
+?? scripts/profutbik_enhancement_payload/
+?? scripts/profutbik_news_on_main_auto.py
+?? scripts/profutbik_strict_news_on_main_validator.py
+?? scripts/pull_last_point_inside_keep_center.py
+?? scripts/remove_api_football_photo_source.py
+?? scripts/remove_chart_current_value_and_source.py
+?? scripts/restore_last_working_chart.py
+?? scripts/style_chart_prices_and_merge_block.py
+?? scripts/test_api_football.py
+?? scripts/transfer_market_chart_pages.json
+?? scripts/unify_mbappe_as_transfer_page.py
+?? scripts/verify_home_placeholder_and_player_charts.py
+?? scripts/verify_mbappe_exact_page_chart.py
+?? scripts/verify_mbappe_hardcoded_chart.py
 ?? static/
 ?? var/
 
