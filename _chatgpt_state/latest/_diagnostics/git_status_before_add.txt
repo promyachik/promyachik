@@ -8,16 +8,17 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
+ M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
- M _chatgpt_state/latest/layouts/transfers/single.html
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
  M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
  M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
  M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/index.html
  M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
@@ -49,6 +50,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 131_BOTTOM_TICKER_SOLID_BLACK.bat
 ?? 132_BOTTOM_TICKER_PURE_BLACK.bat
 ?? 133_TOP_TICKER_PURE_BLACK.bat
+?? 134_TOP_TICKER_WRAPPER_BLACK.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -87,6 +89,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _131_bottom_ticker_solid_black_report_20260627_230126.txt
 ?? _132_bottom_ticker_pure_black_report_20260627_231406.txt
 ?? _133_top_ticker_pure_black_report_20260627_231712.txt
+?? _134_top_ticker_wrapper_black_report_20260627_232155.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -113,11 +116,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_130_remove_market_chart_title/
 ?? _backup_131_bottom_ticker_solid_black/
 ?? _backup_132_bottom_ticker_pure_black/
+?? _backup_134_top_ticker_wrapper_black/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_130_remove_market_chart_title_report_20260627_224654.txt
-?? _chatgpt_state/latest/_latest_reports/_131_bottom_ticker_solid_black_report_20260627_230126.txt
-?? _chatgpt_state/latest/_latest_reports/_132_bottom_ticker_pure_black_report_20260627_231406.txt
-?? _chatgpt_state/latest/_latest_reports/_133_top_ticker_pure_black_report_20260627_231712.txt
+?? _chatgpt_state/latest/_latest_reports/_134_top_ticker_wrapper_black_report_20260627_232155.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
