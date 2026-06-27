@@ -230,7 +230,7 @@
 
 </header>
 
-<style id="pf-top-ticker-real-dom-dividers-144">
+<style id="pf-top-ticker-divider-before-every-item-145">
  
 
  
@@ -252,14 +252,20 @@
 }
 
  
-.pf-ticker__divider {
-    display: inline-flex !important;
-    flex: 0 0 1px !important;
-    align-self: center !important;
+.pf-ticker__group > .pf-ticker__item {
+    position: relative !important;
+    margin-left: 18px !important;
+    padding-left: 22px !important;
+}
+
+.pf-ticker__group > .pf-ticker__item::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
     width: 1px !important;
-    min-width: 1px !important;
     height: 24px !important;
-    margin: 0 18px !important;
     border-radius: 999px !important;
     pointer-events: none !important;
     background: linear-gradient(
@@ -271,6 +277,11 @@
         rgba(212, 175, 55, 0) 100%
     ) !important;
     box-shadow: 0 0 8px rgba(212, 175, 55, 0.20) !important;
+}
+
+ 
+.pf-ticker__divider {
+    display: none !important;
 }
 </style>
 <style id="pf-top-ticker-photo-clean-137">
@@ -657,9 +668,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -767,9 +775,6 @@
                                 <span class="pf-ticker__fee">· Сумма не раскрывается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -879,9 +884,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -989,9 +991,6 @@
                                 <span class="pf-ticker__fee">· Сумма не раскрывается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -1101,9 +1100,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -1211,9 +1207,6 @@
                                 <span class="pf-ticker__fee">· Предложение €100 млн</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -1323,9 +1316,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -1433,9 +1423,6 @@
                                 <span class="pf-ticker__fee">· Сумма не раскрывается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -1545,9 +1532,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -1655,9 +1639,6 @@
                                 <span class="pf-ticker__fee">· Свободный агент</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -1767,9 +1748,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -1877,9 +1855,6 @@
                                 <span class="pf-ticker__fee">· Сумма не разглашается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                 </div>
@@ -2000,9 +1975,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -2110,9 +2082,6 @@
                                 <span class="pf-ticker__fee">· Сумма не раскрывается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -2222,9 +2191,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -2332,9 +2298,6 @@
                                 <span class="pf-ticker__fee">· Сумма не раскрывается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -2444,9 +2407,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -2554,9 +2514,6 @@
                                 <span class="pf-ticker__fee">· Предложение €100 млн</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -2666,9 +2623,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -2776,9 +2730,6 @@
                                 <span class="pf-ticker__fee">· Сумма не раскрывается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -2888,9 +2839,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -2998,9 +2946,6 @@
                                 <span class="pf-ticker__fee">· Свободный агент</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                         
@@ -3110,9 +3055,6 @@
                             
                         </a>
 
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
-
 
                         
 
@@ -3220,9 +3162,6 @@
                                 <span class="pf-ticker__fee">· Сумма не разглашается</span>
                             
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 
 
                 </div>

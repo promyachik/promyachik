@@ -61,6 +61,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 142_TOP_TICKER_ALL_SEAM_DIVIDERS.bat
 ?? 143_TOP_TICKER_DIVIDERS_WITH_SEAM.bat
 ?? 144_TOP_TICKER_REAL_DOM_DIVIDERS.bat
+?? 145_TOP_TICKER_DIVIDER_BEFORE_EVERY_ITEM.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -111,6 +112,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _142_top_ticker_all_seam_dividers_report_20260627_235749.txt
 ?? _143_top_ticker_dividers_with_seam_report_20260628_000045.txt
 ?? _144_top_ticker_real_dom_dividers_report_20260628_000336.txt
+?? _145_top_ticker_divider_before_every_item_report_20260628_000641.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -148,8 +150,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_142_top_ticker_all_seam_dividers/
 ?? _backup_143_top_ticker_dividers_with_seam/
 ?? _backup_144_top_ticker_real_dom_dividers/
+?? _backup_145_top_ticker_divider_before_every_item/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_144_top_ticker_real_dom_dividers_report_20260628_000336.txt
+?? _chatgpt_state/latest/_latest_reports/_145_top_ticker_divider_before_every_item_report_20260628_000641.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

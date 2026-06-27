@@ -1,7 +1,7 @@
-<style id="pf-top-ticker-real-dom-dividers-144">
-/* Step 144: upper ticker only.
-   Real DOM separator after every transfer item.
-   This fixes the missing divider on the loop seam between Endrick and De Ligt.
+<style id="pf-top-ticker-divider-before-every-item-145">
+/* Step 145: upper ticker only.
+   Divider BEFORE every transfer item.
+   This covers the loop seam Endrick -> De Ligt because De Ligt itself carries the divider before it.
    Keep ticker black. Keep the Transfers button dot removed. */
 
 /* Точку на кнопке "Трансферы" не возвращаем. */
@@ -22,16 +22,22 @@
     gap: 0 !important;
 }
 
-/* Реальный разделитель, а не псевдоэлемент.
-   Он стоит отдельным элементом после каждого трансфера, поэтому виден и на стыке цикла. */
-.pf-ticker__divider {
-    display: inline-flex !important;
-    flex: 0 0 1px !important;
-    align-self: center !important;
+/* Каждый трансфер получает разделитель СЛЕВА.
+   Поэтому на стыке цикла перед De Ligt разделитель всегда есть. */
+.pf-ticker__group > .pf-ticker__item {
+    position: relative !important;
+    margin-left: 18px !important;
+    padding-left: 22px !important;
+}
+
+.pf-ticker__group > .pf-ticker__item::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
     width: 1px !important;
-    min-width: 1px !important;
     height: 24px !important;
-    margin: 0 18px !important;
     border-radius: 999px !important;
     pointer-events: none !important;
     background: linear-gradient(
@@ -43,6 +49,11 @@
         rgba(212, 175, 55, 0) 100%
     ) !important;
     box-shadow: 0 0 8px rgba(212, 175, 55, 0.20) !important;
+}
+
+/* Убираем реальный span-разделитель из 144 визуально, если он остался в public из кеша/повторной сборки. */
+.pf-ticker__divider {
+    display: none !important;
 }
 </style>
 <style id="pf-top-ticker-photo-clean-137">
@@ -447,9 +458,6 @@
                                 <span class="pf-ticker__fee">· {{ . }}</span>
                             {{ end }}
                         </a>
-
-                        <span class="pf-ticker__divider" aria-hidden="true"></span>
-
 {{ end }}
 
                 </div>
