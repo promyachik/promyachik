@@ -1,6 +1,6 @@
 .gitignore	43
 _STATE_INFO.json	238
-_diagnostics\hugo_build.txt	1564
+_diagnostics\hugo_build.txt	1129
 _latest_reports\_107_favicon_report_20260627_201236.txt	2597
 _latest_reports\_108_restore_de_ligt_report_20260627_201614.txt	5084
 _latest_reports\_109_restore_de_ligt_page_report_20260627_201927.txt	2192
@@ -22,6 +22,7 @@ _latest_reports\_125_de_ligt_existing_api_pixelcut_chart_report_20260627_220652.
 _latest_reports\_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.txt	770
 _latest_reports\_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt	702
 _latest_reports\_126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt	3622
+_latest_reports\_127_fix_market_chart_partial_context_report_20260627_222343.txt	2098
 content\transfers\_index.md	3350
 content\transfers\bernardo-silva-real-madrid\index.md	6735
 content\transfers\denzel-dumfries-real-madrid\index.md	6796
@@ -63,7 +64,7 @@ layouts\partials\mbappe-player-market-value-chart.html	4711
 layouts\partials\mbappe-standalone-chart-runtime.html	13966
 layouts\partials\player-value-chart.html	12253
 layouts\partials\post-card.html	383
-layouts\partials\transfer-player-market-value-chart.html	2586
+layouts\partials\transfer-player-market-value-chart.html	2693
 layouts\partials\transfer-player-stats.html	3200
 layouts\partials\transfer-player-value-history.html	5956
 layouts\partials\transfer-ticker(1).html	675
@@ -83,7 +84,7 @@ public\transfers\index.html	129721
 public\transfers\julian-alvarez-barcelona\index.html	231820
 public\transfers\kylian-mbappe-real-madrid\index.html	231205
 public\transfers\marc-cucurella-real-madrid\index.html	230583
-public\transfers\matthijs-de-ligt\index.html	240633
+public\transfers\matthijs-de-ligt\index.html	236445
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433

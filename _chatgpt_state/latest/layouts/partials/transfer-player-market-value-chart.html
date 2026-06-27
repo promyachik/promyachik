@@ -26,17 +26,17 @@
         </svg>
 
         <div class="player-market-chart__club-layer" aria-hidden="true">
-            {{ range $chart.points }}
-                {{ with .club_logo }}
+            {{ range $point := $chart.points }}
+                {{ with $point.club_logo }}
                     <span
-                        class="player-market-chart__club-marker"
-                        data-club-slug="{{ default "" $.club_slug }}"
-                        style="left: {{ default 50 $.x_percent }}%; top: {{ default 50 $.y_percent }}%;"
+                        class="player-market-chart__club-marker{{ if $point.is_last }} player-market-chart__club-marker--last{{ end }}"
+                        data-club-slug="{{ default "" $point.club_slug }}"
+                        style="left: {{ default 50 $point.x_percent }}%; top: {{ default 50 $point.y_percent }}%;"
                     >
                         <img
                             class="player-market-chart__club-logo"
                             src="{{ . | relURL }}"
-                            alt="{{ default "Клуб" $.club_label }}"
+                            alt="{{ default "Клуб" $point.club_label }}"
                             loading="lazy"
                         >
                     </span>

@@ -1,0 +1,41 @@
+START 127 FIX MARKET CHART PARTIAL HUGO CONTEXT
+This fixes the 126 Hugo error:
+can't evaluate field club_slug in type *hugolib.pageState
+It does not change photo source, page text, data/transfers.json, Ramos, Endrick, favicon, ticker-template, or var.
+
+BACKUP: layouts\partials\transfer-player-market-value-chart.html -> _backup_127_fix_market_chart_partial_context\transfer-player-market-value-chart.before_127_20260627_222343.html
+OK: fixed transfer-player-market-value-chart partial Hugo context
+Reason fixed: inside {{ with $point.club_logo }}, point fields must be read from $point, not from $ page root.
+OK: layout already clean
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4530 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1755 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: API-Football original preserved: static\images\players\api\532.png (26974 bytes)
+OK: Transfermarkt fallback photo exists: static\images\players\transfermarkt\532.jpg (6133 bytes)
+OK: wrong UniqRenders file absent
+OK: De Ligt page checked
+OK: layout includes player-market-chart partial
+OK: public De Ligt HTML checked
