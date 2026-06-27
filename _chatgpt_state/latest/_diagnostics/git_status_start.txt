@@ -11,6 +11,19 @@ EXIT_CODE: 0
  D _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
+ M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
+ M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
+ M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
+ M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
+ M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/index.html
+ M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
+ M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -96,6 +109,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _140_top_ticker_clean_dividers_report_20260627_235210.txt
 ?? _141_top_ticker_stronger_dividers_report_20260627_235435.txt
 ?? _142_top_ticker_all_seam_dividers_report_20260627_235749.txt
+?? _143_top_ticker_dividers_with_seam_report_20260628_000045.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -131,7 +145,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_140_top_ticker_clean_dividers/
 ?? _backup_141_top_ticker_stronger_dividers/
 ?? _backup_142_top_ticker_all_seam_dividers/
+?? _backup_143_top_ticker_dividers_with_seam/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/_latest_reports/_143_top_ticker_dividers_with_seam_report_20260628_000045.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
