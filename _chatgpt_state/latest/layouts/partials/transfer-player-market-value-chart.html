@@ -1,7 +1,7 @@
 {{- $chart := .Params.market_value_chart -}}
 {{- if $chart -}}
 <section
-    class="player-market-chart player-market-chart--zoomable"
+    class="player-market-chart player-market-chart--inside-card player-market-chart--zoomable"
     id="market-value"
     style="--market-point-count: {{ len $chart.points }};"
     aria-label="Динамика рыночной стоимости игрока"
