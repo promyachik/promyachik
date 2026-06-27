@@ -12,8 +12,8 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
- M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
+ M _chatgpt_state/latest/content/transfers/matthijs-de-ligt/index.md
+ M _chatgpt_state/latest/data/transfers.json
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -35,6 +35,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 125_DE_LIGT_EXISTING_API_PIXELCUT_CHART.bat
 ?? 126_DE_LIGT_TRANSFERMARKT_FALLBACK.bat
 ?? 127_FIX_MARKET_CHART_PARTIAL_CONTEXT.bat
+?? 128_DE_LIGT_BASE_TRANSFERMARKT_PHOTO.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -67,6 +68,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt
 ?? _126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt
 ?? _127_fix_market_chart_partial_context_report_20260627_222343.txt
+?? _128_de_ligt_base_photo_report_20260627_224054.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -88,8 +90,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_125_de_ligt_existing_api_pixelcut_chart/
 ?? _backup_126_de_ligt_transfermarkt_fallback/
 ?? _backup_127_fix_market_chart_partial_context/
+?? _backup_128_de_ligt_base_photo/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_127_fix_market_chart_partial_context_report_20260627_222343.txt
+?? _chatgpt_state/latest/_latest_reports/_128_de_ligt_base_photo_report_20260627_224054.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

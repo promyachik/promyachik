@@ -23,6 +23,7 @@ _latest_reports\_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.
 _latest_reports\_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt	702
 _latest_reports\_126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt	3622
 _latest_reports\_127_fix_market_chart_partial_context_report_20260627_222343.txt	2098
+_latest_reports\_128_de_ligt_base_photo_report_20260627_224054.txt	2571
 content\transfers\_index.md	3350
 content\transfers\bernardo-silva-real-madrid\index.md	6735
 content\transfers\denzel-dumfries-real-madrid\index.md	6796
@@ -34,7 +35,7 @@ content\transfers\julian-alvarez-barcelona\index.md	7419
 content\transfers\kylian-mbappe-real-madrid\index.before-mbappe-cutout.md	7036
 content\transfers\kylian-mbappe-real-madrid\index.md	6876
 content\transfers\marc-cucurella-real-madrid\index.md	6409
-content\transfers\matthijs-de-ligt\index.md	7164
+content\transfers\matthijs-de-ligt\index.md	7143
 data\club-logos.json	87188
 data\clubs\extra-clubs.json	697
 data\image-processing\background-removal-queue.json	327
@@ -52,7 +53,7 @@ data\transfers.backup-20260623-204913.json	1478
 data\transfers.before-bottom-align.json	1496
 data\transfers.before-center.json	1510
 data\transfers.before-mbappe-cutout.json	4547
-data\transfers.json	10846
+data\transfers.json	10825
 hugo.toml	371
 layouts\_default\baseof.html	922
 layouts\_default\single.html	1019

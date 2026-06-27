@@ -1,0 +1,47 @@
+START 128 DE LIGT BASE TRANSFERMARKT PHOTO
+Goal: replace De Ligt photo with the base downloaded/uploaded Transfermarkt photo.
+No transparency. No Pixelcut. No manual background removal.
+Also fixes the Hugo partial context error left after 126.
+
+BACKUP: static\images\players\transfermarkt\532.jpg -> _backup_128_de_ligt_base_photo\transfermarkt-532.before_128_20260627_224054.jpg
+OK: base Transfermarkt photo installed: static\images\players\transfermarkt\532.jpg
+OK: API-Football source preserved: static\images\players\api\532.png (26974 bytes)
+OK: wrong UniqRenders image already absent
+BACKUP: layouts\partials\transfer-player-market-value-chart.html -> _backup_128_de_ligt_base_photo\transfer-player-market-value-chart.before_128_20260627_224054.html
+OK: fixed player-market-chart partial installed
+OK: layout already clean and patched
+BACKUP: content\transfers\matthijs-de-ligt\index.md -> _backup_128_de_ligt_base_photo\matthijs-de-ligt-index.before_128_20260627_224054.md
+OK: De Ligt page uses base Transfermarkt photo, no transparency/cutout
+BACKUP: data\transfers.json -> _backup_128_de_ligt_base_photo\transfers-json.before_128_20260627_224054.json
+OK: updated De Ligt transfer record at index 0
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4530 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 1950 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: base photo checksum matches: static\images\players\transfermarkt\532.jpg
+OK: wrong UniqRenders image absent
+OK: De Ligt page checked
+OK: layout includes player-market-chart partial
+OK: public De Ligt HTML checked

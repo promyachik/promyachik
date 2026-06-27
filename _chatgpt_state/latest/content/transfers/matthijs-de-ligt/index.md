@@ -18,7 +18,7 @@ ticker_image: "images/players/transfermarkt/532.jpg"
 player_image_source_name: "Transfermarkt"
 player_image_source_url: "https://www.transfermarkt.com/matthijs-de-ligt/profil/spieler/326031"
 player_image_background_removed: false
-player_image_processor: "fallback_without_pixelcut"
+player_image_processor: "none"
 position: "Центральный защитник"
 age: 26
 age_at_transfer: 24
