@@ -12,24 +12,24 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/content/transfers/matthijs-de-ligt/index.md
+ M _chatgpt_state/latest/data/transfers.json
+ M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
+ M _chatgpt_state/latest/layouts/transfers/single.html
+ M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
+ M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
+ M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
+ M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/index.html
+ M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
+ M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
-?? 01_build_seven_league_player_database.bat
-?? 02_pixelcut_next_50_players.bat
-?? 03_PROCESS_WIRTZ_PIXELCUT.bat
-?? 04_FORCE_WIRTZ_PIXELCUT_AND_TICKER.bat
-?? 05_build_current_transfer_batch.bat
-?? 09_INSTALL_TRANSFER_MARKET_VALUE_CHARTS_V2.bat
-?? 09_INSTALL_TRANSFER_MARKET_VALUE_CHARTS_V3.bat
-?? 100_ROLLBACK_98_BAD_PLACEHOLDERS_FIX_99.bat
-?? 101_FORCE_ROLLBACK_98_95_DAMAGE.bat
-?? 102_RESTORE_DE_LIGT_BOTTOM_TICKER_APPEND_RAMOS.bat
-?? 103_RESTORE_DE_LIGT_PHOTO_PLACEHOLDER_ONLY.bat
-?? 107_SET_CORRECT_FAVICON_FROM_MBAPPE_TEST.bat
-?? 108_RESTORE_DE_LIGT_ONLY.bat
 ?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
-?? 10_FORCE_VISIBLE_TRANSFER_MARKET_CHARTS.bat
 ?? 110_FIX_DE_LIGT_PAGE_CLUBS_DATE.bat
 ?? 111_DE_LIGT_FULL_PAGE_STATS_VALUE_PHOTO.bat
 ?? 112_CLONE_CUCURELLA_DUMFRIES_STRUCTURE_DE_LIGT.bat
@@ -40,78 +40,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 117_DE_LIGT_RAW_CONTENT_BLOCK.bat
 ?? 118_ROLLBACK_117_RAW_CONTENT.bat
 ?? 119_DE_LIGT_MATCH_DUMFRIES_CUCURELLA_STRUCTURE.bat
-?? 11_INSTALL_DIRECT_TRANSFER_MARKET_CHARTS.bat
 ?? 120_DE_LIGT_PHOTO_VALUE_HISTORY.bat
 ?? 122_DE_LIGT_CACHE_SAFE_PHOTO_VALUE.bat
 ?? 123_DE_LIGT_NO_AVATAR_OVERLAY.bat
 ?? 124_DE_LIGT_API_PIXELCUT_REAL_CHART.bat
 ?? 125_DE_LIGT_EXISTING_API_PIXELCUT_CHART.bat
-?? 12_INSTALL_RUNTIME_TRANSFER_MARKET_CHARTS.bat
-?? 12_INSTALL_RUNTIME_TRANSFER_MARKET_CHARTS_V2.bat
-?? 13_FIX_MBAPPE_MARKET_CHART.bat
-?? 20260627_145809_20260627_PROFUTBIK_PROGRESS_DESKTOP_AND_MOBILE_DESIGN_APPROVED.md
+?? 126_DE_LIGT_TRANSFERMARKT_FALLBACK.bat
 ?? 20260627_170635_PROFUTBIK_PROGRESS_2026-06-27_STEP66.md
-?? 37_EXTEND_FINAL_TRANSFER_SEGMENT.bat
-?? 38_EXTEND_FINAL_TRANSFER_SEGMENT_V2.bat
-?? 39_KEEP_LAST_CHART_LOGO_INSIDE.bat
-?? 40_RESTORE_LAST_WORKING_CHART.bat
-?? 41_CENTER_LAST_LOGO_HIDE_AREA.bat
-?? 42_PULL_LAST_POINT_INSIDE_KEEP_CENTER.bat
-?? 43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.bat
-?? 44_HOMEPAGE_DESKTOP_STEP1_HERO.bat
-?? 45_HOMEPAGE_DESKTOP_MATCH_APPROVED_DESIGN.bat
-?? 46_ROLLBACK_BAD_HOMEPAGE_STEP44_45.bat
-?? 47_HOMEPAGE_FEATURED_WIRTZ_CONCEPT_ART.bat
-?? 48_FORCE_INSTALL_FEATURED_WIRTZ_NO_XCOPY.bat
-?? 49_COMPACT_HOMEPAGE_RESTORE_TICKERS_BLEND_ART.bat
-?? 50_FIX_HERO_IMAGE_CONTAINMENT.bat
-?? 51_TUNE_HEADLINE_TEXT_REMOVE_TRANSFER_WATCH.bat
-?? 52_SEO_HEADING_FEATURED_SWITCHER.bat
-?? 53_DOT_SWITCHER_TEXT_TYPOGRAPHY.bat
-?? 54_RESTORE_LOGO_TICKERS_STABLE_DOTS.bat
-?? 55_RESTORE_EXISTING_PROJECT_TICKER.bat
-?? 56_REMOVE_HOMEPAGE_TOP_TICKER_PULL_HERO_UP.bat
-?? 57_TOP3_FEATURED_TRANSFER_PREMIUM_ART.bat
-?? 58_SLIDER_CLICK_TO_TRANSFER_PAGE.bat
-?? 59_FEATURED_TITLE_BY_TRANSFER_FEE_RANK.bat
-?? 60_GLOBAL_MAIN_TRANSFER_BY_FEE_ON_TRANSFER_PAGES.bat
-?? 61_REMOVE_VISIBLE_RANK_LABELS_KEEP_MAIN_TRANSFER.bat
-?? 62_FORCE_GLOBAL_MBAPPE_BLOCK_ON_TRANSFER_PAGES.bat
-?? 63_FIX_HOMEPAGE_SLIDER_VS_MAIN_TRANSFER.bat
-?? 64_RESTORE_HOMEPAGE_SLIDER_FIXED.bat
-?? 65_FIX_HUGO_TEMPLATE_QUOTES.bat
-?? 66_CLEAN_INDEX_RESTORE_HUGO_SAFE.bat
-?? 67_TUNE_HERO_BUTTON_REMOVE_SECOND.bat
-?? 68_RECTANGULAR_HERO_BUTTON.bat
-?? 69_BUTTON_HOVER_WHITE_TEXT.bat
-?? 70_TICKER_TRANSFER_TAB_STYLE_LINK.bat
-?? 71_TICKER_TAB_RIGHT_CORNERS.bat
-?? 72_TICKER_TAB_SOFT_GRADIENT_EDGE.bat
-?? 73_TICKER_TAB_REVERSE_GRADIENT.bat
-?? 74_TICKER_TAB_INTERNAL_GRADIENT.bat
-?? 75_REMOVE_TICKER_TAB_RIGHT_RIM.bat
-?? 76_TICKER_TAB_INTERNAL_RIGHT_FADE.bat
-?? 77_TICKER_TEXT_FADE_BEFORE_TAB.bat
-?? 78_GLOBAL_TICKER_TRANSFER_TAB_STYLE.bat
-?? 79_ADD_GONCALO_RAMOS_TRANSFER.bat
-?? 80_FIX_TRANSFERS_DATA_SHAPE.bat
-?? 82_NEWS_ON_MAIN_GONCALO_RAMOS_FULL.bat
-?? 83_FIX_HUGO_UNION_BOTTOM_TICKER.bat
-?? 84_FIX_RAMOS_LOGOS_COUNTRY.bat
-?? 85_PROFUTBIK_QUALITY_GATE.bat
-?? 86_RAMOS_SOURCE_FIX_REAL_RENDER_GATE.bat
-?? 87_FAST_VISIBLE_RAMOS_FIX.bat
-?? 88_RAMOS_DEDICATED_PAGE_LAYOUT.bat
-?? 89_CHECK_API_ASSETS.bat
-?? 90_FIX_RAMOS_GENERIC_TEMPLATE_KEYS.bat
-?? 91_AUTO_NEWS_ON_MAIN_PIPELINE_TEST_RAMOS.bat
-?? 92_CLEAN_RAMOS_AND_SHOW_HUGO_ERROR.bat
-?? 93_REMOVE_BROKEN_VISUAL_GUARD.bat
-?? 95_FIX_REAL_RAMOS_PAGE_ASSETS_TICKER.bat
-?? 96_ROLLBACK_95_RESTORE_STRUCTURE.bat
-?? 97_STRICT_NEWS_ON_MAIN_VALIDATOR_TEST_RAMOS.bat
-?? 98_FIX_RAMOS_STRICT_VALIDATOR_BLOCKERS.bat
-?? 99_FIX_VALIDATOR_ENCODING_AND_RERUN.bat
+?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? PROFUTBIK_PROGRESS.md
@@ -138,6 +74,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _123_de_ligt_no_avatar_overlay_report_20260627_215414.txt
 ?? _124_de_ligt_api_pixelcut_real_chart_report_20260627_220340.txt
 ?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_220652.txt
+?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.txt
+?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt
+?? _126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -157,9 +96,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_123_de_ligt_no_avatar_overlay/
 ?? _backup_124_de_ligt_api_pixelcut_real_chart/
 ?? _backup_125_de_ligt_existing_api_pixelcut_chart/
+?? _backup_126_de_ligt_transfermarkt_fallback/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_124_de_ligt_api_pixelcut_real_chart_report_20260627_220340.txt
-?? _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_220652.txt
+?? _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.txt
+?? _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt
+?? _chatgpt_state/latest/_latest_reports/_126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

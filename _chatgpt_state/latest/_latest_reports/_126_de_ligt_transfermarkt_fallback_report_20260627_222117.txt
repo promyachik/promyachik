@@ -1,0 +1,43 @@
+START 126 DE LIGT TRANSFERMARKT FALLBACK + REAL MARKET CHART
+Reason: Pixelcut returned insufficient_api_credits.
+This is temporary: photo source is Transfermarkt, no background removal.
+API-Football local source is preserved.
+
+OK: API-Football local source remains untouched: static\images\players\api\532.png (26974 bytes)
+OK: Transfermarkt fallback photo saved: static\images\players\transfermarkt\532.jpg (6133 bytes)
+BACKUP: layouts\partials\transfer-player-market-value-chart.html -> _backup_126_de_ligt_transfermarkt_fallback\transfer-player-market-value-chart.before_126_20260627_222117.html
+OK: installed player-market-chart partial
+BACKUP: layouts\transfers\single.html -> _backup_126_de_ligt_transfermarkt_fallback\layouts-transfers-single.before_126_20260627_222117.html
+OK: layout patched: wrong partial removed, player-market-chart included
+BACKUP: content\transfers\matthijs-de-ligt\index.md -> _backup_126_de_ligt_transfermarkt_fallback\matthijs-de-ligt-index.before_126_20260627_222117.md
+OK: De Ligt page rewritten with Transfermarkt temporary photo fallback and player-market-chart
+BACKUP: data\transfers.json -> _backup_126_de_ligt_transfermarkt_fallback\transfers-json.before_126_20260627_222117.json
+OK: updated De Ligt transfer record at index 0
+BACKUP: static\images\players\cutout\532-de-ligt-real.png -> _backup_126_de_ligt_transfermarkt_fallback\removed-uniqrenders-532-de-ligt-real.before_126_20260627_222117.png
+OK: removed previous wrong UniqRenders file
+HUGO EXIT CODE: 1
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+Total in 2207 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+ERROR error building site: render: [en v1.0.0 guest] failed to render pages: render of "C:/Users/Dmitrii/Promyachik/content/transfers/matthijs-de-ligt/index.md" failed: "C:\Users\Dmitrii\Promyachik\layouts\transfers\single.html:905:11": execute of template failed: template: transfers/single.html:905:11: executing "transfers/single.html" at <partial "transfer-player-market-value-chart.html" .>: error calling partial: "C:\Users\Dmitrii\Promyachik\layouts\partials\transfer-player-market-value-chart.html:33:55": execute of template failed: template: _partials/transfer-player-market-value-chart.html:33:55: executing "_partials/transfer-player-market-value-chart.html" at <$.club_slug>: can't evaluate field club_slug in type *hugolib.pageState
+
+ERROR: Hugo build failed
+
+SELF CHECK:
+OK: Transfermarkt fallback photo exists: static\images\players\transfermarkt\532.jpg
+OK: wrong UniqRenders file absent
+OK: layout includes player-market-chart partial
+ERROR: public De Ligt HTML missing: player-market-chart
+ERROR: public De Ligt HTML missing: €30 млн
+ERROR: public De Ligt HTML missing: images/players/transfermarkt/532.jpg
+ERROR: public De Ligt HTML still contains bad text: transfer-value-history
+ERROR: public De Ligt HTML still contains bad text: 532-de-ligt-real.png
+OK: public De Ligt HTML checked

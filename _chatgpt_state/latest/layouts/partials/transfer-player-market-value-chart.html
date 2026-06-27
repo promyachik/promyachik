@@ -1,88 +1,65 @@
-{{- with .Params.market_value_chart -}}
+{{- $chart := .Params.market_value_chart -}}
+{{- if $chart -}}
 <section
-    class="player-market-chart"
-    data-market-chart-key="{{ .key }}"
-    aria-label="Динамика рыночной стоимости {{ .player }}"
+    class="player-market-chart player-market-chart--zoomable"
+    id="market-value"
+    style="--market-point-count: {{ len $chart.points }};"
+    aria-label="Динамика рыночной стоимости игрока"
 >
-    <header class="player-market-chart__header">
-        <div>
-            <span class="player-market-chart__eyebrow">ДИНАМИКА СТОИМОСТИ</span>
-            <strong class="player-market-chart__current">{{ .current_label }}</strong>
-        </div>
-
-        <a
-            class="player-market-chart__source"
-            href="{{ .source_url }}"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-        >
-            {{ .source_name }}
-        </a>
-    </header>
-
-    <div class="player-market-chart__canvas">
-        <svg
-            viewBox="0 0 320 126"
-            role="img"
-            aria-label="График изменения рыночной стоимости {{ .player }}"
-            preserveAspectRatio="none"
-        >
-            <defs>
-                <linearGradient
-                    id="pf-market-gradient-{{ .key }}"
-                    x1="0"
-                    y1="0"
-                    x2="0"
-                    y2="1"
-                >
-                    <stop offset="0%" stop-color="#e7c65b" stop-opacity="0.32" />
-                    <stop offset="100%" stop-color="#e7c65b" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-
-            <line class="player-market-chart__grid" x1="18" y1="32" x2="302" y2="32" />
-            <line class="player-market-chart__grid" x1="18" y1="70" x2="302" y2="70" />
-            <line class="player-market-chart__grid" x1="18" y1="110" x2="302" y2="110" />
-
-            <path
-                class="player-market-chart__area"
-                style="fill: url('#pf-market-gradient-{{ .key }}');"
-                d="{{ .area_path }}"
-            />
-
-            <path
-                class="player-market-chart__line"
-                d="{{ .path }}"
-            />
-
-            {{- range .points }}
-                <circle
-                    class="player-market-chart__dot"
-                    cx="{{ .x }}"
-                    cy="{{ .y }}"
-                    r="4.4"
-                >
-                    <title>{{ .date_full }} — {{ .value_label }}</title>
-                </circle>
-            {{- end }}
-        </svg>
+    <div class="player-market-chart__heading">
+        <span>ДИНАМИКА СТОИМОСТИ</span>
+        {{ with $chart.current_label }}
+            <strong>{{ . }}</strong>
+        {{ end }}
     </div>
 
-    <div
-        class="player-market-chart__points"
-        style="--market-point-count: {{ len .points }};"
-    >
-        {{- range .points }}
-            <span class="player-market-chart__point">
+    <div class="player-market-chart__canvas">
+        <svg viewBox="0 0 320 130" preserveAspectRatio="none" aria-hidden="true">
+            <path class="player-market-chart__grid" d="M20 26 H300 M20 54 H300 M20 82 H300 M20 110 H300" />
+            {{ with $chart.area_path }}
+                <path class="player-market-chart__area" d="{{ . }}" />
+            {{ end }}
+            <path class="player-market-chart__line" d="{{ $chart.path }}" />
+            {{ range $chart.points }}
+                <circle class="player-market-chart__dot" cx="{{ .x }}" cy="{{ .y }}" r="3.4" />
+            {{ end }}
+        </svg>
+
+        <div class="player-market-chart__club-layer" aria-hidden="true">
+            {{ range $chart.points }}
+                {{ with .club_logo }}
+                    <span
+                        class="player-market-chart__club-marker"
+                        data-club-slug="{{ default "" $.club_slug }}"
+                        style="left: {{ default 50 $.x_percent }}%; top: {{ default 50 $.y_percent }}%;"
+                    >
+                        <img
+                            class="player-market-chart__club-logo"
+                            src="{{ . | relURL }}"
+                            alt="{{ default "Клуб" $.club_label }}"
+                            loading="lazy"
+                        >
+                    </span>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="player-market-chart__points">
+        {{ range $chart.points }}
+            <div class="player-market-chart__point">
                 <small>{{ .date }}</small>
                 <strong>{{ .value_label }}</strong>
-            </span>
-        {{- end }}
+            </div>
+        {{ end }}
     </div>
 
     <p class="player-market-chart__note">
-        Оценочная стоимость, не сумма трансфера. Обновлено {{ .updated_at }}.
+        Оценочная стоимость, не сумма трансфера.
+        {{ with $chart.updated_at }}Обновлено {{ . }}.{{ end }}
+        {{ with $chart.source_url }}
+            Источник: <a href="{{ . }}">Transfermarkt</a>.
+        {{ end }}
     </p>
 </section>
 {{- end -}}
-<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

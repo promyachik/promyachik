@@ -1,0 +1,9 @@
+START 125 DE LIGT EXISTING API PHOTO + PIXELCUT + REAL MARKET CHART
+This does NOT download API-Football photo if static/images/players/api/532.png already exists.
+It uses existing local API photo as the source record, then Pixelcut on the API-Football URL.
+No external image fallback is allowed.
+
+OK: existing API-Football local photo found: static\images\players\api\532.png (26974 bytes)
+STEP: Pixelcut remove background for API-Football photo URL
+BACKUP: static\images\players\cutout\532.png -> _backup_125_de_ligt_existing_api_pixelcut_chart\cutout-532.before_125_20260627_221122.png
+ERROR: Network error during Pixelcut: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение

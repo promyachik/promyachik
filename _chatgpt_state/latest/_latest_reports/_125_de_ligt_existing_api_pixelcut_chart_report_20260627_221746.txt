@@ -1,0 +1,8 @@
+START 125 DE LIGT EXISTING API PHOTO + PIXELCUT + REAL MARKET CHART
+This does NOT download API-Football photo if static/images/players/api/532.png already exists.
+It uses existing local API photo as the source record, then Pixelcut on the API-Football URL.
+No external image fallback is allowed.
+
+OK: existing API-Football local photo found: static\images\players\api\532.png (26974 bytes)
+STEP: Pixelcut remove background for API-Football photo URL
+ERROR: HTTP error during Pixelcut: 403 {"current_tier":"free","error":"Insufficient API credits","error_code":"insufficient_api_credits","upgrade_url":"https://www.pixelcut.ai/org/edd281ab-7f14-469c-9ffb-ee3944f58787/developer-settings/billing"}
