@@ -1,0 +1,4 @@
+188_FIX_APPROVED_GOALS_ICON_RIGHT_EDGE
+Changed: static/images/stats-icons-v184/goals.png
+Optional partial cache-bust changed: True
+Purpose: keep the approved ball design but give the right edge visible breathing room and force browser refresh.
