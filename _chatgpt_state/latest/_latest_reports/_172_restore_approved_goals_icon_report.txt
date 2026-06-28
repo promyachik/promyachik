@@ -1,0 +1,4 @@
+DONE_172_FULL_RESTORE_APPROVED_GOALS_ICON
+replaced=static\images\stats-icons\goals.png
+changed_only=approved_goals_icon_png
+note=Restores approved goals icon design, only with safe transparent canvas/padding. No CSS/JS/layout changes.

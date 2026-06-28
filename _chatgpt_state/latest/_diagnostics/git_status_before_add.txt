@@ -7,6 +7,7 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
+ M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
@@ -59,8 +60,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 153_FULL_ROLLBACK_152_RESTORE_MARKET_CHART.bat
 ?? 163_FULL_APPROVED_STATS_ICONS.bat
 ?? 164_FULL_FIX_YELLOW_RED_STATS_ICONS.bat
-?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
+?? 171_FULL_FIX_GOALS_ICON_SOURCE.bat
+?? 172_FULL_RESTORE_APPROVED_GOALS_ICON.bat
 ?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
+?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -71,6 +74,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_148.txt
 ?? README_163.txt
 ?? README_164.txt
+?? README_171.txt
+?? README_172.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -119,6 +124,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _153_rollback_152_restore_market_chart_report_20260628_182112.txt
 ?? _163_approved_stats_icons_report.txt
 ?? _164_fix_yellow_red_stats_icons_report.txt
+?? _171_fix_goals_icon_source_report.txt
+?? _172_restore_approved_goals_icon_report.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
@@ -166,7 +173,13 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_153_before_rollback_152_20260628_182112/
 ?? _backup_163_approved_stats_icons/
 ?? _backup_164_fix_yellow_red_stats_icons/
+?? _backup_171_fix_goals_icon_source/
+?? _backup_172_restore_approved_goals_icon/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/_latest_reports/_171_fix_goals_icon_source_report.txt
+?? _chatgpt_state/latest/_latest_reports/_172_restore_approved_goals_icon_report.txt
+?? _chatgpt_state/latest/scripts/171_fix_goals_icon_source.py
+?? _chatgpt_state/latest/scripts/172_restore_approved_goals_icon.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -194,6 +207,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/153_full_rollback_152_restore_market_chart.py
 ?? scripts/163_integrate_approved_stats_icons.py
 ?? scripts/164_fix_yellow_red_stats_icons.py
+?? scripts/171_fix_goals_icon_source.py
+?? scripts/172_restore_approved_goals_icon.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

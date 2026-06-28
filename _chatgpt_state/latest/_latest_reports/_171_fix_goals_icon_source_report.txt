@@ -1,0 +1,4 @@
+DONE_171_FULL_FIX_GOALS_ICON_SOURCE
+replaced=static\images\stats-icons\goals.png
+changed_only=goals_icon_png
+note=No CSS/layout/JS changes. Current pushed state remains source of truth.

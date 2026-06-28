@@ -48,6 +48,8 @@ _latest_reports\_152_restore_approved_market_chart_last5_report_20260628_181907.
 _latest_reports\_153_rollback_152_restore_market_chart_report_20260628_182112.txt	1018
 _latest_reports\_163_approved_stats_icons_report.txt	591
 _latest_reports\_164_fix_yellow_red_stats_icons_report.txt	555
+_latest_reports\_171_fix_goals_icon_source_report.txt	190
+_latest_reports\_172_restore_approved_goals_icon_report.txt	239
 _latest_reports\_SEND_TO_CHATGPT_MARKET_SOURCE.txt	77532
 _latest_reports\_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt	28448
 _latest_reports\_SEND_TO_CHATGPT_STATS_BLOCK.txt	7796
@@ -122,6 +124,8 @@ scripts\152_full_restore_approved_market_chart_last5.py	11901
 scripts\153_full_rollback_152_restore_market_chart.py	3671
 scripts\163_integrate_approved_stats_icons.py	6902
 scripts\164_fix_yellow_red_stats_icons.py	9907
+scripts\171_fix_goals_icon_source.py	1219
+scripts\172_restore_approved_goals_icon.py	1290
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433
@@ -186,7 +190,7 @@ static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
 static\css\style.css	11768
-static\css\transfer-article.css	113655
+static\css\transfer-article.css	119820
 static\css\transfer-player-market-value-chart.css	11050
 static\css\transfer-ticker.css	6526
 static\header.css	15286
