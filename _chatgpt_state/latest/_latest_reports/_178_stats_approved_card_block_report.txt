@@ -1,0 +1,5 @@
+DONE_178_STATS_APPROVED_CARD_BLOCK
+changed=layouts/partials/transfer-player-stats.html
+changed=static/css/transfer-article.css
+changed=static/images/stats-icons/assists.png
+note=Replaces stats block with approved example #2 style: 3+2 icon cards, no visible values, hover tooltip with big number and label, assists icon is boot only. No market chart changes.

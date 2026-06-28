@@ -1,130 +1,51 @@
 {{ with .Params.previous_club_stats }}
+{{ $matches := .matches }}
+{{ $goals := .goals }}
+{{ $assists := .assists }}
+{{ $yellowCards := .yellow_cards }}
+{{ $redCards := .red_cards }}
 
-{{ $hasRealStats := false }}
+<section class="transfer-stats transfer-stats--profutbik-v178" aria-label="Статистика игрока">
+    <div class="transfer-stats__grid" role="list">
+        <article class="transfer-stats__card transfer-stats__card--matches" role="listitem" tabindex="0" aria-label="Матчей: {{ $matches }}">
+            <span class="transfer-stats__icon transfer-stats__icon--matches" aria-hidden="true"></span>
+            <div class="transfer-stats__tooltip" aria-hidden="true">
+                <b>{{ $matches }}</b>
+                <span>МАТЧА</span>
+            </div>
+        </article>
 
-{{ $values := slice
-    .matches
-    .goals
-    .assists
-    .minutes
-    .yellow_cards
-    .red_cards
-}}
+        <article class="transfer-stats__card transfer-stats__card--goals" role="listitem" tabindex="0" aria-label="Голов: {{ $goals }}">
+            <span class="transfer-stats__icon transfer-stats__icon--goals" aria-hidden="true"></span>
+            <div class="transfer-stats__tooltip" aria-hidden="true">
+                <b>{{ $goals }}</b>
+                <span>ГОЛА</span>
+            </div>
+        </article>
 
-{{ range $values }}
+        <article class="transfer-stats__card transfer-stats__card--assists" role="listitem" tabindex="0" aria-label="Голевых передач: {{ $assists }}">
+            <span class="transfer-stats__icon transfer-stats__icon--assists" aria-hidden="true"></span>
+            <div class="transfer-stats__tooltip" aria-hidden="true">
+                <b>{{ $assists }}</b>
+                <span>ПЕРЕДАЧА</span>
+            </div>
+        </article>
 
-    {{ $value := printf "%v" . }}
+        <article class="transfer-stats__card transfer-stats__card--yellow-cards" role="listitem" tabindex="0" aria-label="Жёлтых карточек: {{ $yellowCards }}">
+            <span class="transfer-stats__icon transfer-stats__icon--yellow-cards" aria-hidden="true"></span>
+            <div class="transfer-stats__tooltip" aria-hidden="true">
+                <b>{{ $yellowCards }}</b>
+                <span>ЖЁЛТЫХ</span>
+            </div>
+        </article>
 
-    {{ if and
-        (ne $value "")
-        (ne $value "—")
-        (ne $value "-")
-        (ne $value "null")
-        (ne $value "<nil>")
-    }}
-
-        {{ $hasRealStats = true }}
-
-    {{ end }}
-
-{{ end }}
-
-{{ if $hasRealStats }}
-
-<section class="transfer-section transfer-player-stats">
-
-    <div class="transfer-section__heading">
-        <div>
-
-            <span>СТАТИСТИКА</span>
-
-            <h2>
-                {{ default
-                    "Статистика игрока"
-                    .label
-                }}
-            </h2>
-
-        </div>
+        <article class="transfer-stats__card transfer-stats__card--red-cards" role="listitem" tabindex="0" aria-label="Красных карточек: {{ $redCards }}">
+            <span class="transfer-stats__icon transfer-stats__icon--red-cards" aria-hidden="true"></span>
+            <div class="transfer-stats__tooltip" aria-hidden="true">
+                <b>{{ $redCards }}</b>
+                <span>КРАСНЫХ</span>
+            </div>
+        </article>
     </div>
-
-    <div class="transfer-stats">
-
-        <article class="transfer-stats__card transfer-stats__card--matches">
-            <strong>{{ .matches }}</strong>
-            <span class="transfer-stats__label">
-                Матчи
-            </span>
-        </article>
-
-        <article class="transfer-stats__card transfer-stats__card--goals">
-            <strong>{{ .goals }}</strong>
-            <span class="transfer-stats__label">
-                Голы
-            </span>
-        </article>
-
-        <article class="transfer-stats__card transfer-stats__card--assists">
-            <strong>{{ .assists }}</strong>
-            <span class="transfer-stats__label">
-                Голевые передачи
-            </span>
-        </article>
-
-        <article class="transfer-stats__card transfer-stats__card--minutes">
-            <strong>{{ .minutes }}</strong>
-            <span class="transfer-stats__label">
-                Минуты
-            </span>
-        </article>
-
-        <article class="transfer-stats__card transfer-stats__card--yellow">
-            <strong>{{ .yellow_cards }}</strong>
-            <span class="transfer-stats__label">
-                Жёлтые карточки
-            </span>
-        </article>
-
-        <article class="transfer-stats__card transfer-stats__card--red">
-            <strong>{{ .red_cards }}</strong>
-            <span class="transfer-stats__label">
-                Красные карточки
-            </span>
-        </article>
-
-        {{ with .season }}
-
-            <article class="transfer-stats__card transfer-stats__card--season">
-                <strong>{{ . }}</strong>
-                <span class="transfer-stats__label">
-                    Сезон
-                </span>
-            </article>
-
-        {{ end }}
-
-    </div>
-
-    {{ with .source_note }}
-
-        {{ if not
-            (strings.Contains
-                .
-                "Данные будут заполнены"
-            )
-        }}
-
-            <p class="transfer-player-stats__source">
-                {{ . }}
-            </p>
-
-        {{ end }}
-
-    {{ end }}
-
 </section>
-
 {{ end }}
-
-{{ end }}
-<script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>

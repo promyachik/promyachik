@@ -4143,3 +4143,293 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth
 
 /* PROFUTBIK STATS ICON_ONLY TOOLTIP V177 END */
 
+/* PROFUTBIK STATS APPROVED CARD BLOCK V178 START */
+body.transfer-page .transfer-stats--profutbik-v178 {
+    width: min(100%, 760px) !important;
+    max-width: 760px !important;
+    margin: 26px auto 22px !important;
+    padding: 4px 0 2px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178,
+body.transfer-page .transfer-stats--profutbik-v178 *,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__grid,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card {
+    box-sizing: border-box !important;
+    overflow: visible !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 28px 30px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 10px !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 142px !important;
+    height: 142px !important;
+    padding: 18px !important;
+    border: 1px solid rgba(245, 213, 106, 0.72) !important;
+    border-radius: 26px !important;
+    background:
+        radial-gradient(circle at 50% 38%, rgba(245, 213, 106, 0.10), transparent 44%),
+        linear-gradient(180deg, rgba(28, 28, 26, 0.94), rgba(10, 10, 9, 0.96)) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 18px 36px rgba(0, 0, 0, 0.34) !important;
+    cursor: pointer !important;
+    transform: translateY(0) !important;
+    transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(1) {
+    grid-column: 1 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(2) {
+    grid-column: 3 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(3) {
+    grid-column: 5 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(4) {
+    grid-column: 2 / span 2 !important;
+    grid-row: 2 !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(5) {
+    grid-column: 4 / span 2 !important;
+    grid-row: 2 !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:hover,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:focus-visible {
+    transform: translateY(-3px) !important;
+    border-color: rgba(245, 213, 106, 0.98) !important;
+    box-shadow:
+        0 0 0 1px rgba(245, 213, 106, 0.24),
+        0 0 28px rgba(245, 213, 106, 0.16),
+        0 22px 44px rgba(0, 0, 0, 0.46) !important;
+    outline: none !important;
+}
+
+/* Remove all old visible values/labels/pseudo-icons from previous V163-V177 attempts. */
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card > strong,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card > small {
+    display: none !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card::before,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card::after,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span::before,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span::after,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b::before,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon::before,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon::after {
+    content: "" !important;
+    display: block !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: none !important;
+    filter: drop-shadow(0 7px 8px rgba(0, 0, 0, 0.38)) !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon {
+    width: 92px !important;
+    height: 92px !important;
+    min-width: 92px !important;
+    min-height: 92px !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--matches {
+    width: 104px !important;
+    height: 104px !important;
+    background-image: url("../images/stats-icons/matches.png") !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--goals {
+    width: 106px !important;
+    height: 106px !important;
+    background-image: url("../images/stats-icons/goals.png") !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--assists {
+    width: 106px !important;
+    height: 106px !important;
+    background-image: url("../images/stats-icons/assists.png") !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--yellow-cards,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--red-cards {
+    width: 104px !important;
+    height: 104px !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--yellow-cards {
+    background-image: url("../images/stats-icons/yellow_cards.png") !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--red-cards {
+    background-image: url("../images/stats-icons/red_cards.png") !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: calc(100% + 14px) !important;
+    z-index: 10000 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 158px !important;
+    min-height: 96px !important;
+    padding: 12px 26px 10px !important;
+    border: 2px solid rgba(245, 213, 106, 0.95) !important;
+    border-radius: 18px !important;
+    background: rgba(10, 10, 9, 0.97) !important;
+    box-shadow:
+        0 0 24px rgba(245, 213, 106, 0.15),
+        0 14px 30px rgba(0, 0, 0, 0.55) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateX(-50%) translateY(6px) !important;
+    transition: opacity 0.16s ease, visibility 0.16s ease, transform 0.16s ease !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 100% !important;
+    display: block !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-right: 2px solid rgba(245, 213, 106, 0.95) !important;
+    border-bottom: 2px solid rgba(245, 213, 106, 0.95) !important;
+    background: rgba(10, 10, 9, 0.97) !important;
+    transform: translate(-50%, -9px) rotate(45deg) !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #f5d56a !important;
+    -webkit-text-fill-color: #f5d56a !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 42px !important;
+    line-height: 0.9 !important;
+    font-weight: 900 !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    text-shadow: 0 0 18px rgba(245, 213, 106, 0.25) !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 10px 0 0 !important;
+    padding: 0 !important;
+    color: #f5d56a !important;
+    -webkit-text-fill-color: #f5d56a !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.03em !important;
+    text-align: center !important;
+    text-shadow: none !important;
+    background: none !important;
+}
+
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:hover .transfer-stats__tooltip,
+body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:focus-visible .transfer-stats__tooltip {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+@media (max-width: 720px) {
+    body.transfer-page .transfer-stats--profutbik-v178 {
+        width: min(100%, 560px) !important;
+    }
+
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__grid {
+        gap: 16px 14px !important;
+        padding: 0 4px !important;
+    }
+
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card {
+        min-height: 104px !important;
+        height: 104px !important;
+        border-radius: 18px !important;
+        padding: 12px !important;
+    }
+
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon,
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--matches,
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--goals,
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--assists,
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--yellow-cards,
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--red-cards {
+        width: 72px !important;
+        height: 72px !important;
+        min-width: 72px !important;
+        min-height: 72px !important;
+    }
+
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip {
+        min-width: 118px !important;
+        min-height: 76px !important;
+        padding: 10px 16px 8px !important;
+        border-radius: 14px !important;
+        bottom: calc(100% + 11px) !important;
+    }
+
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b {
+        font-size: 32px !important;
+    }
+
+    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span {
+        font-size: 13px !important;
+        margin-top: 7px !important;
+    }
+}
+/* PROFUTBIK STATS APPROVED CARD BLOCK V178 END */
+
