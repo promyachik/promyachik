@@ -10,19 +10,6 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
- M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
- M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
- M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
- M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
- M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/index.html
- M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
- M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -63,6 +50,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 144_TOP_TICKER_REAL_DOM_DIVIDERS.bat
 ?? 145_TOP_TICKER_DIVIDER_BEFORE_EVERY_ITEM.bat
 ?? 146_FULL_UPPER_TICKER_REAL_SEAM_DIVIDER.bat
+?? 147_UPDATE_DE_LIGT_DYNAMIC_VALUE/
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -155,7 +143,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_145_top_ticker_divider_before_every_item/
 ?? _backup_146_full_upper_ticker_real_seam_divider/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_146_full_upper_ticker_real_seam_divider_report_20260628_000952.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
