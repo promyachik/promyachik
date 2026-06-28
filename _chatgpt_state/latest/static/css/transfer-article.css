@@ -3681,3 +3681,81 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card sma
 }
 /* PROFUTBIK STATS BIGGER ICONS V166 END */
 
+/* PROFUTBIK FIX CLIPPED STATS ICONS V168 START */
+
+/* Базово даём иконкам чуть больше воздуха */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    min-height: 94px !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    min-height: 56px !important;
+    overflow: visible !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
+    overflow: visible !important;
+}
+
+/* ГОЛЫ — мяч больше и без обрезания */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    min-height: 56px !important;
+    background-size: 52px 52px !important;
+    background-position: center center !important;
+}
+
+/* МИНУТЫ — секундомер больше и без обрезания */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    min-height: 56px !important;
+    background-size: 52px 52px !important;
+    background-position: center center !important;
+}
+
+/* ГОЛЕВЫЕ ПЕРЕДАЧИ — делаем заметно крупнее */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    min-height: 56px !important;
+    background-size: 54px 54px !important;
+    background-position: center center !important;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 640px) {
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+        min-height: 88px !important;
+    }
+
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+        min-height: 50px !important;
+    }
+
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before,
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before,
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
+        width: 50px !important;
+        height: 50px !important;
+        min-width: 50px !important;
+        min-height: 50px !important;
+        background-size: 46px 46px !important;
+    }
+}
+
+/* PROFUTBIK FIX CLIPPED STATS ICONS V168 END */
+
