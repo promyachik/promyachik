@@ -45,6 +45,7 @@ _latest_reports\_146_full_upper_ticker_real_seam_divider_report_20260628_000952.
 _latest_reports\_151_limit_player_teams_last5_report_20260628_181442.txt	444
 _latest_reports\_152_restore_approved_market_chart_last5_report_20260628_181907.txt	1009
 _latest_reports\_153_rollback_152_restore_market_chart_report_20260628_182112.txt	1018
+_latest_reports\_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt	28448
 content\transfers\_index.md	3350
 content\transfers\bernardo-silva-real-madrid\index.md	6735
 content\transfers\denzel-dumfries-real-madrid\index.md	6796
@@ -56,7 +57,8 @@ content\transfers\julian-alvarez-barcelona\index.md	7419
 content\transfers\kylian-mbappe-real-madrid\index.before-mbappe-cutout.md	7036
 content\transfers\kylian-mbappe-real-madrid\index.md	6876
 content\transfers\marc-cucurella-real-madrid\index.md	6409
-content\transfers\matthijs-de-ligt\index.md	8617
+content\transfers\matthijs-de-ligt\index.index_before_remove_bad_market_chart.md	8617
+content\transfers\matthijs-de-ligt\index.md	5697
 data\club-logos.json	87984
 data\clubs\extra-clubs.json	697
 data\image-processing\background-removal-queue.json	327
@@ -107,7 +109,7 @@ public\transfers\index.html	130880
 public\transfers\julian-alvarez-barcelona\index.html	236162
 public\transfers\kylian-mbappe-real-madrid\index.html	235600
 public\transfers\marc-cucurella-real-madrid\index.html	234924
-public\transfers\matthijs-de-ligt\index.html	268676
+public\transfers\matthijs-de-ligt\index.html	237080
 scripts\148_full_autosync_de_ligt_dynamic_value.py	17457
 scripts\150_full_safe_autosync_de_ligt_dynamic_value.py	17462
 scripts\151_full_limit_player_teams_last5.py	6580

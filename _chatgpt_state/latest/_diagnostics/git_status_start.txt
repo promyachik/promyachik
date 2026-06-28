@@ -12,7 +12,7 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
+ M _chatgpt_state/latest/content/transfers/matthijs-de-ligt/index.md
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M content/posts/test.md
  M hugo.toml
@@ -116,6 +116,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _151_limit_player_teams_last5_report_20260628_181442.txt
 ?? _152_restore_approved_market_chart_last5_report_20260628_181907.txt
 ?? _153_rollback_152_restore_market_chart_report_20260628_182112.txt
+?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -159,12 +160,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_152_restore_approved_market_chart_last5_20260628_181907/
 ?? _backup_153_before_rollback_152_20260628_182112/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_151_limit_player_teams_last5_report_20260628_181442.txt
-?? _chatgpt_state/latest/_latest_reports/_152_restore_approved_market_chart_last5_report_20260628_181907.txt
-?? _chatgpt_state/latest/_latest_reports/_153_rollback_152_restore_market_chart_report_20260628_182112.txt
-?? _chatgpt_state/latest/scripts/151_full_limit_player_teams_last5.py
-?? _chatgpt_state/latest/scripts/152_full_restore_approved_market_chart_last5.py
-?? _chatgpt_state/latest/scripts/153_full_rollback_152_restore_market_chart.py
+?? _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
+?? _chatgpt_state/latest/content/transfers/matthijs-de-ligt/index.index_before_remove_bad_market_chart.md
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
