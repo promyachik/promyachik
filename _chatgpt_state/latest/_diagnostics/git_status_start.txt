@@ -17,7 +17,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
- M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
  M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
@@ -75,6 +74,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 171_FULL_FIX_GOALS_ICON_SOURCE.bat
 ?? 172_FULL_RESTORE_APPROVED_GOALS_ICON.bat
 ?? 178_STATS_APPROVED_CARD_BLOCK.bat
+?? 179_FIX_STATS_CARD_BLOCK.bat
+?? 180_APPROVED_STATS_EXACT_BLOCK.bat
 ?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
 ?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -90,6 +91,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_171.txt
 ?? README_172.txt
 ?? README_178.txt
+?? README_179.txt
+?? README_180.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -141,6 +144,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _171_fix_goals_icon_source_report.txt
 ?? _172_restore_approved_goals_icon_report.txt
 ?? _178_stats_approved_card_block_report.txt
+?? _180_approved_stats_exact_block_report.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
@@ -191,9 +195,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_171_fix_goals_icon_source/
 ?? _backup_172_restore_approved_goals_icon/
 ?? _backup_178_stats_approved_card_block/
+?? _backup_180_approved_stats_exact_block/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_178_stats_approved_card_block_report.txt
-?? _chatgpt_state/latest/scripts/178_stats_approved_card_block.py
+?? _chatgpt_state/latest/_latest_reports/_180_approved_stats_exact_block_report.txt
+?? _chatgpt_state/latest/scripts/179_fix_stats_card_block.py
+?? _chatgpt_state/latest/scripts/180_approved_stats_exact_block.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -224,6 +230,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/171_fix_goals_icon_source.py
 ?? scripts/172_restore_approved_goals_icon.py
 ?? scripts/178_stats_approved_card_block.py
+?? scripts/179_fix_stats_card_block.py
+?? scripts/180_approved_stats_exact_block.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

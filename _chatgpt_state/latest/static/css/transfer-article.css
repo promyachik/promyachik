@@ -3206,1230 +3206,394 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--se
 }
 /* PROFUTBIK STATS TIGHT VALUE LABEL GAP V159 END */
 
-/* PROFUTBIK STATS GOLD LIKE BIRTHDATE V160 START */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head strong,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header strong {
-    color: #f5d56a !important;
-    -webkit-text-fill-color: #f5d56a !important;
-    background: none !important;
-    background-image: none !important;
-    -webkit-background-clip: initial !important;
-    background-clip: initial !important;
-    text-shadow: none !important;
-    filter: none !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-    border-color: rgba(245, 213, 106, 0.22) !important;
-}
-/* PROFUTBIK STATS GOLD LIKE BIRTHDATE V160 END */
-
-/* PROFUTBIK STATS ICON LABELS V161 START */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    font-size: 0 !important;
-    line-height: 1 !important;
-    min-height: 16px !important;
-    margin-top: 1px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 18px !important;
-    height: 18px !important;
-    font-size: 14px !important;
-    line-height: 1 !important;
-    color: #f5d56a !important;
-    -webkit-text-fill-color: #f5d56a !important;
-    text-shadow: none !important;
-    filter: none !important;
-}
-
-/* Матчи */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before {
-    content: "◷";
-}
-
-/* Голы */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
-    content: "⚽";
-}
-
-/* Голевые передачи */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
-    content: "↗";
-}
-
-/* Минуты */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
-    content: "⏱";
-}
-
-/* Жёлтые карточки */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before {
-    content: "▰";
-}
-
-/* Красные карточки */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before {
-    content: "■";
-}
-
-/* Сезон */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before {
-    content: "◇";
-}
-/* PROFUTBIK STATS ICON LABELS V161 END */
-
-/* PROFUTBIK STATS FONTAWESOME ICONS V162 START */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    font-size: 0 !important;
-    line-height: 1 !important;
-    min-height: 18px !important;
-    margin-top: 2px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    font-family: "Font Awesome 6 Free" !important;
-    font-weight: 900 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 18px !important;
-    height: 18px !important;
-    font-size: 13px !important;
-    line-height: 1 !important;
-    color: #f5d56a !important;
-    -webkit-text-fill-color: #f5d56a !important;
-    text-shadow: none !important;
-    filter: none !important;
-}
-
-/* Матчи */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before {
-    content: "\f091";
-}
-
-/* Голы */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
-    content: "\f1e3";
-}
-
-/* Голевые передачи */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
-    content: "\f061";
-}
-
-/* Минуты */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
-    content: "\f017";
-}
-
-/* Жёлтые карточки */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before {
-    content: "\f02b";
-}
-
-/* Красные карточки */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before {
-    content: "\f577";
-}
-
-/* Сезон */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before {
-    content: "\f073";
-}
-/* PROFUTBIK STATS FONTAWESOME ICONS V162 END */
-
-/* PROFUTBIK APPROVED STATS ICONS V163 START */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    font-size: 0 !important;
-    line-height: 1 !important;
-    min-height: 18px !important;
-    height: 18px !important;
-    margin-top: 2px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    content: "" !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 22px !important;
-    height: 22px !important;
-    min-width: 22px !important;
-    min-height: 22px !important;
-    font-family: inherit !important;
-    font-size: 0 !important;
-    line-height: 1 !important;
-    background-color: transparent !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: contain !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
-    text-shadow: none !important;
-    filter: none !important;
-}
-
-/* Матчи = утверждена иконка №1 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before {
-    background-image: url("../images/stats-icons/matches.png") !important;
-}
-
-/* Голы = утверждена иконка №3 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
-    background-image: url("../images/stats-icons/goals.png") !important;
-}
-
-/* Голевые передачи = утверждена иконка №2 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
-    background-image: url("../images/stats-icons/assists.png") !important;
-}
-
-/* Минуты = утверждена иконка №1 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
-    background-image: url("../images/stats-icons/minutes.png") !important;
-}
-
-/* Жёлтые карточки = утверждена иконка №3 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before {
-    background-image: url("../images/stats-icons/yellow_cards.png") !important;
-}
-
-/* Красные карточки = утверждена иконка №3 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before {
-    background-image: url("../images/stats-icons/red_cards.png") !important;
-}
-
-/* Сезон = утверждена иконка №2 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before {
-    width: 21px !important;
-    height: 21px !important;
-    min-width: 21px !important;
-    min-height: 21px !important;
-    background-image: url("../images/stats-icons/season.png") !important;
-}
-/* PROFUTBIK APPROVED STATS ICONS V163 END */
-
-/* PROFUTBIK FIX YELLOW RED STATS ICONS V164 START */
-/* Fix stat icon mapping after V163: robust class names + nth-of-type fallback. */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    font-size: 0 !important;
-    line-height: 1 !important;
-    min-height: 18px !important;
-    height: 18px !important;
-    margin-top: 2px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    content: "" !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 22px !important;
-    height: 22px !important;
-    min-width: 22px !important;
-    min-height: 22px !important;
-    font-size: 0 !important;
-    line-height: 1 !important;
-    background-color: transparent !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: contain !important;
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
-    text-shadow: none !important;
-    filter: none !important;
-}
-
-/* Matches = approved option 1 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(1) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(1) small::before {
-    background-image: url("../images/stats-icons/matches.png") !important;
-}
-
-/* Goals = approved option 3 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(2) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(2) small::before {
-    background-image: url("../images/stats-icons/goals.png") !important;
-}
-
-/* Assists = approved option 2 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(3) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(3) small::before {
-    background-image: url("../images/stats-icons/assists.png") !important;
-}
-
-/* Minutes = approved option 1 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(4) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(4) small::before {
-    background-image: url("../images/stats-icons/minutes.png") !important;
-}
-
-/* Yellow cards = approved option 3 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-card small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_card small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--bookings span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--bookings small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(5) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(5) small::before {
-    background-image: url("../images/stats-icons/yellow_cards.png") !important;
-}
-
-/* Red cards = approved option 3 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-card small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_card small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(6) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(6) small::before {
-    background-image: url("../images/stats-icons/red_cards.png") !important;
-}
-
-/* Season = approved option 2 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(7) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid > .transfer-stats__card:nth-of-type(7) small::before {
-    width: 21px !important;
-    height: 21px !important;
-    min-width: 21px !important;
-    min-height: 21px !important;
-    background-image: url("../images/stats-icons/season.png") !important;
-}
-/* PROFUTBIK FIX YELLOW RED STATS ICONS V164 END */
-
-/* PROFUTBIK STATS ICONS NO INNER CARDS V165 START */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
-    gap: 14px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-    min-height: 72px !important;
-    padding: 6px 4px !important;
-    border: 0 !important;
-    border-color: transparent !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    outline: 0 !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card::after {
-    display: none !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
-    height: 19px !important;
-    min-height: 19px !important;
-    margin: 0 0 5px !important;
-    font-size: 17px !important;
-    font-weight: 500 !important;
-    color: #f5d56a !important;
-    -webkit-text-fill-color: #f5d56a !important;
-    text-shadow: none !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    min-height: 34px !important;
-    margin: 0 !important;
-    font-size: 0 !important;
-    line-height: 1 !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    content: "" !important;
-    display: inline-flex !important;
-    width: 34px !important;
-    height: 34px !important;
-    min-width: 34px !important;
-    min-height: 34px !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: contain !important;
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
-    text-shadow: none !important;
-    filter: none !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season strong {
-    font-size: 14px !important;
-}
-/* PROFUTBIK STATS ICONS NO INNER CARDS V165 END */
-
-/* PROFUTBIK STATS BIGGER ICONS V166 START */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-    min-height: 88px !important;
-    padding: 5px 4px 7px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
-    margin-bottom: 7px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    min-height: 48px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
-    min-height: 48px !important;
-    background-size: contain !important;
-}
-
-@media (max-width: 640px) {
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-        min-height: 82px !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-        min-height: 44px !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-        width: 44px !important;
-        height: 44px !important;
-        min-width: 44px !important;
-        min-height: 44px !important;
-    }
-}
-/* PROFUTBIK STATS BIGGER ICONS V166 END */
-
-/* PROFUTBIK FIX CLIPPED STATS ICONS V168 START */
-
-/* Базово даём иконкам чуть больше воздуха */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-    min-height: 94px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    min-height: 56px !important;
-    overflow: visible !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    overflow: visible !important;
-}
-
-/* ГОЛЫ — мяч больше и без обрезания */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-    background-size: 52px 52px !important;
-    background-position: center center !important;
-}
-
-/* МИНУТЫ — секундомер больше и без обрезания */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-    background-size: 52px 52px !important;
-    background-position: center center !important;
-}
-
-/* ГОЛЕВЫЕ ПЕРЕДАЧИ — делаем заметно крупнее */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-    background-size: 54px 54px !important;
-    background-position: center center !important;
-}
-
-/* Мобильная адаптация */
-@media (max-width: 640px) {
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-        min-height: 88px !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-        min-height: 50px !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
-        width: 50px !important;
-        height: 50px !important;
-        min-width: 50px !important;
-        min-height: 50px !important;
-        background-size: 46px 46px !important;
-    }
-}
-
-/* PROFUTBIK FIX CLIPPED STATS ICONS V168 END */
-
-/* PROFUTBIK FORCE REAL STATS ICON SIZES V169 START */
-
-/* Даём всем иконкам больше места */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-    min-height: 104px !important;
-    overflow: visible !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    min-height: 72px !important;
-    height: 72px !important;
-    overflow: visible !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* Базовый размер всех иконок */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
-    width: 64px !important;
-    height: 64px !important;
-    min-width: 64px !important;
-    min-height: 64px !important;
-    max-width: none !important;
-    max-height: none !important;
-    background-size: 64px 64px !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    overflow: visible !important;
-}
-
-/* Если внутри вдруг img, а не background */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card img {
-    width: 64px !important;
-    height: 64px !important;
-    min-width: 64px !important;
-    min-height: 64px !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    overflow: visible !important;
-}
-
-/* 2-я карточка: ГОЛЫ — мяч крупнее */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small::before {
-    width: 72px !important;
-    height: 72px !important;
-    min-width: 72px !important;
-    min-height: 72px !important;
-    background-size: 72px 72px !important;
-}
-
-/* 3-я карточка: ГОЛЕВЫЕ ПЕРЕДАЧИ — сильно увеличиваем */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) small::before {
-    width: 78px !important;
-    height: 78px !important;
-    min-width: 78px !important;
-    min-height: 78px !important;
-    background-size: 78px 78px !important;
-}
-
-/* 4-я карточка: МИНУТЫ — секундомер крупнее */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) small::before {
-    width: 72px !important;
-    height: 72px !important;
-    min-width: 72px !important;
-    min-height: 72px !important;
-    background-size: 72px 72px !important;
-}
-
-/* Подстраховка для img внутри 2/3/4 карточек */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) img,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) img {
-    width: 72px !important;
-    height: 72px !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) img {
-    width: 78px !important;
-    height: 78px !important;
-}
-
-/* PROFUTBIK FORCE REAL STATS ICON SIZES V169 END */
-
-/* PROFUTBIK FIX ICON CLIPPING WITHOUT RESIZE V170 START */
-
-/* Не меняем визуальный размер иконок, только убираем скрытое обрезание */
-body.transfer-page .transfer-stats--under-market-chart,
-body.transfer-page .transfer-stats--under-market-chart *,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
-    overflow: visible !important;
-}
-
-/* ГОЛЫ: 2-я карточка. Контейнер больше, сама иконка остаётся прежнего размера */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small {
-    width: 92px !important;
-    height: 82px !important;
-    min-width: 92px !important;
-    min-height: 82px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* Визуальный размер мяча оставляем как был после V169 */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small::before {
-    width: 92px !important;
-    height: 82px !important;
-    min-width: 92px !important;
-    min-height: 82px !important;
-    background-size: 72px 72px !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    overflow: visible !important;
-}
-
-/* Если мяч вставлен img, тоже не увеличиваем саму картинку, а даём ей место */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) img {
-    width: 72px !important;
-    height: 72px !important;
-    min-width: 72px !important;
-    min-height: 72px !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    overflow: visible !important;
-}
-/* PROFUTBIK FIX ICON CLIPPING WITHOUT RESIZE V170 END */
-
-/* PROFUTBIK REMOVE MINUTES_SEASON_LABELS_ICONS V174 START */
-
-/* 4-я карточка = Минуты, 7-я карточка = Сезон.
-   Полностью убираем иконку и текст под значением. */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) small,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) small {
-    display: none !important;
-    content: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    margin: 0 !important;
+/* PROFUTBIK STATS EXACT APPROVED BLOCK V180 START */
+
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart {
+    --pfb-stat-gold: #f1c844;
+    --pfb-stat-gold-soft: rgba(241, 200, 68, 0.72);
+    --pfb-stat-gold-dim: rgba(241, 200, 68, 0.38);
+    --pfb-stat-bg: rgba(12, 12, 11, 0.84);
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 28px auto 24px !important;
     padding: 0 !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    background: none !important;
-}
-
-/* На всякий случай убираем псевдоиконки у Минут и Сезона */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) small::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) span::before,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) small::before {
-    display: none !important;
-    content: none !important;
-    background: none !important;
-}
-
-/* Карточки Минут и Сезона становятся компактнее, потому что снизу ничего нет */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4),
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) {
-    min-height: 52px !important;
-    padding: 8px 4px !important;
-    justify-content: center !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) strong,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) strong {
-    margin: 0 !important;
-}
-
-/* PROFUTBIK REMOVE MINUTES_SEASON_LABELS_ICONS V174 END */
-
-/* PROFUTBIK HIDE MINUTES_SEASON_CARDS V175 START */
-
-/* 4-я карточка = Минуты, 7-я карточка = Сезон.
-   Убираем полностью: значение, текст и иконку. */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4),
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) {
-    display: none !important;
-}
-
-/* Оставшиеся карточки распределяем аккуратнее */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-    align-items: center !important;
-}
-
-@media (max-width: 640px) {
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    }
-}
-/* PROFUTBIK HIDE MINUTES_SEASON_CARDS V175 END */
-
-/* PROFUTBIK STATS 3_PLUS_2_GRID V176 START */
-
-/* Сетка: первая строка 3 карточки, вторая строка 2 карточки по центру */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
-    display: grid !important;
-    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
-    gap: 14px 18px !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* 1-я строка */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(1) {
-    grid-column: 1 / span 2 !important;
-    grid-row: 1 !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) {
-    grid-column: 3 / span 2 !important;
-    grid-row: 1 !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) {
-    grid-column: 5 / span 2 !important;
-    grid-row: 1 !important;
-}
-
-/* 2-я строка — жёлтая и красная карточки по центру */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(5) {
-    grid-column: 2 / span 2 !important;
-    grid-row: 2 !important;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(6) {
-    grid-column: 4 / span 2 !important;
-    grid-row: 2 !important;
-}
-
-/* Минуты и сезон остаются полностью скрытыми */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4),
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) {
-    display: none !important;
-}
-
-/* На телефоне тоже оставляем аккуратную схему 3 + 2 */
-@media (max-width: 640px) {
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
-        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
-        gap: 12px 10px !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(1) {
-        grid-column: 1 / span 2 !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) {
-        grid-column: 3 / span 2 !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) {
-        grid-column: 5 / span 2 !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(5) {
-        grid-column: 2 / span 2 !important;
-    }
-
-    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(6) {
-        grid-column: 4 / span 2 !important;
-    }
-}
-/* PROFUTBIK STATS 3_PLUS_2_GRID V176 END */
-
-/* PROFUTBIK STATS ICON_ONLY TOOLTIP V177 START */
-
-/* Оставляем в статистике только иконки, значения прячем */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
-    display: none !important;
-}
-
-/* Карточка нужна как точка привязки для всплывающей подсказки */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
-    position: relative !important;
-    cursor: help !important;
-}
-
-/* У карточек с иконками убираем текст подписи, но оставляем саму иконку */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(1) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(1) small,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) small,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(5) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(5) small,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(6) span,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(6) small {
-    font-size: 0 !important;
-    line-height: 0 !important;
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
-    min-height: 64px !important;
-    height: 64px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    overflow: visible !important;
-}
-
-/* Подсказка при наведении */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]::after {
-    content: attr(data-profutbik-tooltip);
-    position: absolute;
-    left: 50%;
-    bottom: calc(100% + 12px);
-    transform: translateX(-50%) translateY(4px);
-    z-index: 9999;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    padding: 8px 12px;
-    border: 1px solid rgba(245, 213, 106, 0.55);
-    border-radius: 10px;
-
-    background: rgba(7, 7, 7, 0.96);
-    color: #f5d56a;
-    -webkit-text-fill-color: #f5d56a;
-
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    white-space: nowrap;
-
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
-    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
-}
-
-/* Маленький треугольник под подсказкой */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: calc(100% + 5px);
-    transform: translateX(-50%) translateY(4px);
-    z-index: 9999;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid rgba(245, 213, 106, 0.75);
-
-    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
-}
-
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]:hover::after,
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]:hover::before {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-}
-
-/* Минуты и сезон всё ещё полностью скрыты */
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4),
-body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) {
-    display: none !important;
-}
-
-/* PROFUTBIK STATS ICON_ONLY TOOLTIP V177 END */
-
-/* PROFUTBIK STATS APPROVED CARD BLOCK V178 START */
-body.transfer-page .transfer-stats--profutbik-v178 {
-    width: min(100%, 760px) !important;
-    max-width: 760px !important;
-    margin: 26px auto 22px !important;
-    padding: 4px 0 2px !important;
     background: transparent !important;
     border: 0 !important;
+    border-radius: 0 !important;
     box-shadow: none !important;
     overflow: visible !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178,
-body.transfer-page .transfer-stats--profutbik-v178 *,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__grid,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 *,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart * {
     box-sizing: border-box !important;
     overflow: visible !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__grid {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__grid,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart .transfer-stats__grid {
     display: grid !important;
     grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
-    gap: 28px 30px !important;
+    grid-auto-rows: auto !important;
+    gap: 18px 16px !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 100% !important;
-    padding: 0 10px !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart .transfer-stats__card {
     position: relative !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-height: 142px !important;
-    height: 142px !important;
-    padding: 18px !important;
-    border: 1px solid rgba(245, 213, 106, 0.72) !important;
-    border-radius: 26px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    min-height: 116px !important;
+    aspect-ratio: 1.42 / 1 !important;
+    padding: 16px !important;
+    margin: 0 !important;
+    border: 1px solid rgba(241, 200, 68, 0.72) !important;
+    border-radius: 24px !important;
     background:
-        radial-gradient(circle at 50% 38%, rgba(245, 213, 106, 0.10), transparent 44%),
-        linear-gradient(180deg, rgba(28, 28, 26, 0.94), rgba(10, 10, 9, 0.96)) !important;
+        radial-gradient(circle at 50% 42%, rgba(241, 200, 68, 0.12), rgba(241, 200, 68, 0.02) 38%, rgba(0, 0, 0, 0) 68%),
+        linear-gradient(145deg, rgba(31, 31, 29, 0.88), rgba(8, 8, 8, 0.92)) !important;
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.05),
-        0 18px 36px rgba(0, 0, 0, 0.34) !important;
+        inset 0 1px 0 rgba(255, 255, 255, 0.07),
+        inset 0 -18px 30px rgba(0, 0, 0, 0.26),
+        0 16px 32px rgba(0, 0, 0, 0.28) !important;
     cursor: pointer !important;
-    transform: translateY(0) !important;
-    transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease !important;
+    transform: translateZ(0) !important;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(1) {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card:hover,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card:focus-visible {
+    border-color: rgba(255, 216, 86, 0.98) !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.10),
+        0 0 0 1px rgba(241, 200, 68, 0.18),
+        0 0 30px rgba(241, 200, 68, 0.16),
+        0 20px 38px rgba(0, 0, 0, 0.42) !important;
+    transform: translateY(-2px) !important;
+    outline: none !important;
+}
+
+/* 3 сверху */
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card--matches {
     grid-column: 1 / span 2 !important;
     grid-row: 1 !important;
 }
-
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(2) {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card--goals {
     grid-column: 3 / span 2 !important;
     grid-row: 1 !important;
 }
-
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(3) {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card--assists {
     grid-column: 5 / span 2 !important;
     grid-row: 1 !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(4) {
+/* 2 снизу по центру */
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card--yellow-cards {
     grid-column: 2 / span 2 !important;
     grid-row: 2 !important;
 }
-
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:nth-child(5) {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card--red-cards {
     grid-column: 4 / span 2 !important;
     grid-row: 2 !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:hover,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:focus-visible {
-    transform: translateY(-3px) !important;
-    border-color: rgba(245, 213, 106, 0.98) !important;
-    box-shadow:
-        0 0 0 1px rgba(245, 213, 106, 0.24),
-        0 0 28px rgba(245, 213, 106, 0.16),
-        0 22px 44px rgba(0, 0, 0, 0.46) !important;
-    outline: none !important;
-}
-
-/* Remove all old visible values/labels/pseudo-icons from previous V163-V177 attempts. */
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card > strong,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card > small {
+/* У нового блока не должно быть старых цифр/подписей внутри карточек */
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card > strong,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card > small,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card > span:not(.transfer-stats__icon):not(.transfer-stats__tooltip),
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__title,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__meta {
     display: none !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card::before,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card::after,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span::before,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span::after,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b::before,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b::after {
-    display: none !important;
+/* Гасим старые pseudo-иконки из предыдущих версий */
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__icon::before,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__icon::after,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card span::before,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card span::after {
     content: none !important;
+    display: none !important;
     background: none !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon::before,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon::after {
-    content: "" !important;
-    display: block !important;
-    flex: 0 0 auto !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__icon,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart .transfer-stats__icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-size: 0 !important;
-    line-height: 0 !important;
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
-    text-shadow: none !important;
-    filter: drop-shadow(0 7px 8px rgba(0, 0, 0, 0.38)) !important;
-    background-color: transparent !important;
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: contain !important;
+    color: var(--pfb-stat-gold) !important;
+    -webkit-text-fill-color: currentColor !important;
+    background: none !important;
+    border: 0 !important;
+    filter: drop-shadow(0 0 10px rgba(241, 200, 68, 0.26)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.45)) !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon {
-    width: 92px !important;
-    height: 92px !important;
-    min-width: 92px !important;
-    min-height: 92px !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg {
+    display: block !important;
+    flex: 0 0 auto !important;
+    width: 88px !important;
+    height: 88px !important;
+    max-width: 92% !important;
+    max-height: 92% !important;
+    margin: 0 !important;
+    overflow: visible !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--matches {
-    width: 104px !important;
-    height: 104px !important;
-    background-image: url("../images/stats-icons/matches.png") !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--field {
+    width: 98px !important;
+    height: 76px !important;
+    fill: none !important;
+    stroke: currentColor !important;
+    stroke-width: 4.2 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--goals {
-    width: 106px !important;
-    height: 106px !important;
-    background-image: url("../images/stats-icons/goals.png") !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--ball {
+    width: 96px !important;
+    height: 96px !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--assists {
-    width: 106px !important;
-    height: 106px !important;
-    background-image: url("../images/stats-icons/assists.png") !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--ball .ball-patch {
+    fill: #111111 !important;
+    stroke: rgba(255, 221, 101, 0.72) !important;
+    stroke-width: 2.2 !important;
+    stroke-linejoin: round !important;
+}
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--ball .ball-line {
+    fill: none !important;
+    stroke: rgba(255, 232, 138, 0.78) !important;
+    stroke-width: 2.2 !important;
+    stroke-linecap: round !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--yellow-cards,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--red-cards {
-    width: 104px !important;
-    height: 104px !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--boot {
+    width: 98px !important;
+    height: 76px !important;
+    fill: none !important;
+    stroke: currentColor !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+}
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--boot .boot-main {
+    stroke-width: 6.2 !important;
+}
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--boot .boot-line {
+    stroke-width: 4.2 !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--yellow-cards {
-    background-image: url("../images/stats-icons/yellow_cards.png") !important;
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--card {
+    width: 94px !important;
+    height: 94px !important;
+}
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--card rect {
+    stroke: rgba(255, 230, 124, 0.72) !important;
+    stroke-width: 2.2 !important;
+}
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--card .card-gloss {
+    fill: rgba(255, 255, 255, 0.18) !important;
+}
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--card .whistle {
+    fill: none !important;
+    stroke: var(--pfb-stat-gold) !important;
+    stroke-width: 4.6 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--red-cards {
-    background-image: url("../images/stats-icons/red_cards.png") !important;
-}
-
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip {
+/* Tooltip exactly like approved example #2 */
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart .transfer-stats__tooltip {
     position: absolute !important;
     left: 50% !important;
-    bottom: calc(100% + 14px) !important;
+    bottom: calc(100% + 12px) !important;
+    transform: translateX(-50%) translateY(7px) !important;
     z-index: 10000 !important;
+
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    min-width: 158px !important;
-    min-height: 96px !important;
-    padding: 12px 26px 10px !important;
-    border: 2px solid rgba(245, 213, 106, 0.95) !important;
-    border-radius: 18px !important;
-    background: rgba(10, 10, 9, 0.97) !important;
+
+    min-width: 154px !important;
+    min-height: 88px !important;
+    padding: 12px 18px 13px !important;
+
+    border: 2px solid rgba(255, 216, 86, 0.94) !important;
+    border-radius: 15px !important;
+    background:
+        radial-gradient(circle at 50% 18%, rgba(241, 200, 68, 0.10), transparent 62%),
+        rgba(12, 12, 11, 0.97) !important;
     box-shadow:
-        0 0 24px rgba(245, 213, 106, 0.15),
-        0 14px 30px rgba(0, 0, 0, 0.55) !important;
+        0 0 22px rgba(241, 200, 68, 0.20),
+        0 16px 34px rgba(0, 0, 0, 0.58) !important;
+
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
-    transform: translateX(-50%) translateY(6px) !important;
-    transition: opacity 0.16s ease, visibility 0.16s ease, transform 0.16s ease !important;
+    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip::after {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip::after {
     content: "" !important;
     position: absolute !important;
     left: 50% !important;
-    top: 100% !important;
-    display: block !important;
-    width: 18px !important;
-    height: 18px !important;
-    border-right: 2px solid rgba(245, 213, 106, 0.95) !important;
-    border-bottom: 2px solid rgba(245, 213, 106, 0.95) !important;
-    background: rgba(10, 10, 9, 0.97) !important;
-    transform: translate(-50%, -9px) rotate(45deg) !important;
+    top: calc(100% - 1px) !important;
+    width: 20px !important;
+    height: 20px !important;
+    transform: translateX(-50%) rotate(45deg) !important;
+    border-right: 2px solid rgba(255, 216, 86, 0.94) !important;
+    border-bottom: 2px solid rgba(255, 216, 86, 0.94) !important;
+    background: rgba(12, 12, 11, 0.97) !important;
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.18) !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip b {
+    display: block !important;
+    margin: 0 0 4px !important;
+    padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 44px !important;
+    line-height: 0.92 !important;
+    font-weight: 900 !important;
+    color: #f1c844 !important;
+    -webkit-text-fill-color: #f1c844 !important;
+    letter-spacing: -0.03em !important;
+    text-shadow:
+        0 0 10px rgba(241, 200, 68, 0.30),
+        0 4px 8px rgba(0, 0, 0, 0.55) !important;
+}
+
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip em {
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
-    color: #f5d56a !important;
-    -webkit-text-fill-color: #f5d56a !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 42px !important;
-    line-height: 0.9 !important;
-    font-weight: 900 !important;
-    letter-spacing: 0 !important;
-    text-align: center !important;
-    text-shadow: 0 0 18px rgba(245, 213, 106, 0.25) !important;
-}
-
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span {
-    display: block !important;
-    min-height: 0 !important;
-    height: auto !important;
-    margin: 10px 0 0 !important;
-    padding: 0 !important;
-    color: #f5d56a !important;
-    -webkit-text-fill-color: #f5d56a !important;
+    font-style: normal !important;
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 18px !important;
     line-height: 1 !important;
     font-weight: 900 !important;
     letter-spacing: 0.03em !important;
-    text-align: center !important;
-    text-shadow: none !important;
-    background: none !important;
+    color: #f1c844 !important;
+    -webkit-text-fill-color: #f1c844 !important;
+    text-transform: uppercase !important;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.50) !important;
 }
 
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:hover .transfer-stats__tooltip,
-body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card:focus-visible .transfer-stats__tooltip {
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card:hover .transfer-stats__tooltip,
+body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card:focus-visible .transfer-stats__tooltip {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateX(-50%) translateY(0) !important;
 }
 
-@media (max-width: 720px) {
-    body.transfer-page .transfer-stats--profutbik-v178 {
-        width: min(100%, 560px) !important;
+/* Right-column narrow tuning */
+@media (max-width: 1180px) {
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180,
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart,
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__grid {
+        max-width: 390px !important;
     }
 
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__grid {
-        gap: 16px 14px !important;
-        padding: 0 4px !important;
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card {
+        min-height: 108px !important;
+        border-radius: 22px !important;
     }
 
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__card {
-        min-height: 104px !important;
-        height: 104px !important;
-        border-radius: 18px !important;
-        padding: 12px !important;
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--field {
+        width: 90px !important;
+        height: 70px !important;
     }
 
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon,
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--matches,
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--goals,
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--assists,
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--yellow-cards,
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__icon--red-cards {
-        width: 72px !important;
-        height: 72px !important;
-        min-width: 72px !important;
-        min-height: 72px !important;
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--ball {
+        width: 88px !important;
+        height: 88px !important;
     }
 
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip {
-        min-width: 118px !important;
-        min-height: 76px !important;
-        padding: 10px 16px 8px !important;
-        border-radius: 14px !important;
-        bottom: calc(100% + 11px) !important;
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--boot {
+        width: 88px !important;
+        height: 68px !important;
     }
 
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip b {
-        font-size: 32px !important;
-    }
-
-    body.transfer-page .transfer-stats--profutbik-v178 .transfer-stats__tooltip span {
-        font-size: 13px !important;
-        margin-top: 7px !important;
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--card {
+        width: 88px !important;
+        height: 88px !important;
     }
 }
-/* PROFUTBIK STATS APPROVED CARD BLOCK V178 END */
+
+@media (max-width: 760px) {
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180,
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180.transfer-stats--under-market-chart {
+        max-width: 100% !important;
+        padding: 0 2px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__grid {
+        max-width: 390px !important;
+        gap: 14px 10px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__card {
+        min-height: 92px !important;
+        border-radius: 18px !important;
+        padding: 10px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--field {
+        width: 74px !important;
+        height: 58px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--ball {
+        width: 74px !important;
+        height: 74px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--boot {
+        width: 74px !important;
+        height: 58px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__svg--card {
+        width: 76px !important;
+        height: 76px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip {
+        min-width: 126px !important;
+        min-height: 72px !important;
+        padding: 10px 12px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip b {
+        font-size: 34px !important;
+    }
+
+    body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transfer-stats__tooltip em {
+        font-size: 14px !important;
+    }
+}
+
+/* PROFUTBIK STATS EXACT APPROVED BLOCK V180 END */
 

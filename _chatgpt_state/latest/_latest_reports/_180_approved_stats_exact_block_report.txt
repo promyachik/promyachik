@@ -1,0 +1,9 @@
+DONE 180_APPROVED_STATS_EXACT_BLOCK
+Changed:
+- layouts/partials/transfer-player-stats.html
+- static/css/transfer-article.css
+Result:
+- Approved screenshot-like stats block integrated
+- 3 top cards, 2 bottom centered cards
+- Inline SVG icons, no old PNG stats icons for this block
+- Hover tooltip with large number + label

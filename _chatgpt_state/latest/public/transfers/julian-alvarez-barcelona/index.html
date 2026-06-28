@@ -3806,46 +3806,131 @@
 
 
 
-<section class="transfer-stats transfer-stats--profutbik-v178" aria-label="Статистика игрока">
+<section class="transfer-stats transfer-stats--profutbik-v180" aria-label="Статистика игрока">
     <div class="transfer-stats__grid" role="list">
         <article class="transfer-stats__card transfer-stats__card--matches" role="listitem" tabindex="0" aria-label="Матчей: —">
-            <span class="transfer-stats__icon transfer-stats__icon--matches" aria-hidden="true"></span>
-            <div class="transfer-stats__tooltip" aria-hidden="true">
+            <span class="transfer-stats__icon transfer-stats__icon--matches" aria-hidden="true">
+                <svg viewBox="0 0 120 84" class="transfer-stats__svg transfer-stats__svg--field" focusable="false">
+                    <rect x="8" y="10" width="104" height="64" rx="4"></rect>
+                    <line x1="60" y1="10" x2="60" y2="74"></line>
+                    <circle cx="60" cy="42" r="13"></circle>
+                    <circle cx="60" cy="42" r="2.2"></circle>
+                    <rect x="8" y="25" width="17" height="34"></rect>
+                    <rect x="8" y="34" width="8" height="16"></rect>
+                    <rect x="95" y="25" width="17" height="34"></rect>
+                    <rect x="104" y="34" width="8" height="16"></rect>
+                </svg>
+            </span>
+            <span class="transfer-stats__tooltip" aria-hidden="true">
                 <b>—</b>
-                <span>МАТЧА</span>
-            </div>
+                <em>МАТЧА</em>
+            </span>
         </article>
 
         <article class="transfer-stats__card transfer-stats__card--goals" role="listitem" tabindex="0" aria-label="Голов: —">
-            <span class="transfer-stats__icon transfer-stats__icon--goals" aria-hidden="true"></span>
-            <div class="transfer-stats__tooltip" aria-hidden="true">
+            <span class="transfer-stats__icon transfer-stats__icon--goals" aria-hidden="true">
+                <svg viewBox="0 0 120 120" class="transfer-stats__svg transfer-stats__svg--ball" focusable="false">
+                    <defs>
+                        <radialGradient id="profutbikBallGoldV180" cx="36%" cy="26%" r="72%">
+                            <stop offset="0%" stop-color="#fff0a8"/>
+                            <stop offset="38%" stop-color="#f3c743"/>
+                            <stop offset="72%" stop-color="#b98216"/>
+                            <stop offset="100%" stop-color="#5e3b07"/>
+                        </radialGradient>
+                        <filter id="profutbikBallShadowV180" x="-35%" y="-35%" width="170%" height="170%">
+                            <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.55"/>
+                        </filter>
+                    </defs>
+                    <circle cx="60" cy="60" r="44" fill="url(#profutbikBallGoldV180)" filter="url(#profutbikBallShadowV180)"></circle>
+                    <path class="ball-patch" d="M60 31 L77 43 L71 63 L49 63 L43 43 Z"></path>
+                    <path class="ball-patch" d="M28 49 L43 43 L49 63 L36 76 L24 66 Z"></path>
+                    <path class="ball-patch" d="M92 49 L77 43 L71 63 L84 76 L96 66 Z"></path>
+                    <path class="ball-patch" d="M43 89 L49 63 L71 63 L77 89 L60 100 Z"></path>
+                    <path class="ball-line" d="M60 31 L60 16"></path>
+                    <path class="ball-line" d="M77 43 L92 30"></path>
+                    <path class="ball-line" d="M43 43 L28 30"></path>
+                    <path class="ball-line" d="M36 76 L25 91"></path>
+                    <path class="ball-line" d="M84 76 L95 91"></path>
+                    <path class="ball-line" d="M49 63 L36 76"></path>
+                    <path class="ball-line" d="M71 63 L84 76"></path>
+                </svg>
+            </span>
+            <span class="transfer-stats__tooltip" aria-hidden="true">
                 <b>—</b>
-                <span>ГОЛА</span>
-            </div>
+                <em>ГОЛА</em>
+            </span>
         </article>
 
         <article class="transfer-stats__card transfer-stats__card--assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
-            <span class="transfer-stats__icon transfer-stats__icon--assists" aria-hidden="true"></span>
-            <div class="transfer-stats__tooltip" aria-hidden="true">
+            <span class="transfer-stats__icon transfer-stats__icon--assists" aria-hidden="true">
+                <svg viewBox="0 0 130 86" class="transfer-stats__svg transfer-stats__svg--boot" focusable="false">
+                    <path class="boot-main" d="M27 25 C39 33 54 39 78 38 C87 38 95 41 101 47 L111 57 C114 60 112 66 107 67 L45 67 C34 67 24 64 16 58 L11 54 C8 51 10 45 14 45 L23 45 L18 32 C16 27 22 22 27 25 Z"></path>
+                    <path class="boot-line" d="M31 31 L21 44"></path>
+                    <path class="boot-line" d="M45 36 L36 48"></path>
+                    <path class="boot-line" d="M60 40 L51 52"></path>
+                    <path class="boot-line" d="M76 41 L67 53"></path>
+                    <path class="boot-line" d="M39 67 L35 76"></path>
+                    <path class="boot-line" d="M59 67 L55 77"></path>
+                    <path class="boot-line" d="M80 67 L77 76"></path>
+                    <path class="boot-line" d="M100 66 L99 74"></path>
+                </svg>
+            </span>
+            <span class="transfer-stats__tooltip" aria-hidden="true">
                 <b>—</b>
-                <span>ПЕРЕДАЧА</span>
-            </div>
+                <em>ПЕРЕДАЧА</em>
+            </span>
         </article>
 
         <article class="transfer-stats__card transfer-stats__card--yellow-cards" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
-            <span class="transfer-stats__icon transfer-stats__icon--yellow-cards" aria-hidden="true"></span>
-            <div class="transfer-stats__tooltip" aria-hidden="true">
+            <span class="transfer-stats__icon transfer-stats__icon--yellow-cards" aria-hidden="true">
+                <svg viewBox="0 0 120 120" class="transfer-stats__svg transfer-stats__svg--card transfer-stats__svg--yellow-card" focusable="false">
+                    <defs>
+                        <linearGradient id="profutbikYellowCardV180" x1="16%" y1="8%" x2="84%" y2="92%">
+                            <stop offset="0%" stop-color="#fff08a"/>
+                            <stop offset="42%" stop-color="#e7b92c"/>
+                            <stop offset="100%" stop-color="#8e5d08"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="39" y="14" width="42" height="66" rx="7" fill="url(#profutbikYellowCardV180)"></rect>
+                    <path class="card-gloss" d="M48 18 L78 18 L43 66 L43 30 C43 23 45 20 48 18 Z"></path>
+                    <path class="whistle" d="M34 79 C42 68 61 66 76 76"></path>
+                    <path class="whistle" d="M28 91 C39 77 63 75 82 88"></path>
+                    <circle class="whistle" cx="31" cy="95" r="7"></circle>
+                    <path class="whistle" d="M82 72 L89 63"></path>
+                    <path class="whistle" d="M91 78 L102 75"></path>
+                    <path class="whistle" d="M88 88 L99 96"></path>
+                </svg>
+            </span>
+            <span class="transfer-stats__tooltip" aria-hidden="true">
                 <b>—</b>
-                <span>ЖЁЛТЫХ</span>
-            </div>
+                <em>ЖЁЛТЫХ</em>
+            </span>
         </article>
 
         <article class="transfer-stats__card transfer-stats__card--red-cards" role="listitem" tabindex="0" aria-label="Красных карточек: —">
-            <span class="transfer-stats__icon transfer-stats__icon--red-cards" aria-hidden="true"></span>
-            <div class="transfer-stats__tooltip" aria-hidden="true">
+            <span class="transfer-stats__icon transfer-stats__icon--red-cards" aria-hidden="true">
+                <svg viewBox="0 0 120 120" class="transfer-stats__svg transfer-stats__svg--card transfer-stats__svg--red-card" focusable="false">
+                    <defs>
+                        <linearGradient id="profutbikRedCardV180" x1="16%" y1="8%" x2="84%" y2="92%">
+                            <stop offset="0%" stop-color="#ff654d"/>
+                            <stop offset="42%" stop-color="#d91f18"/>
+                            <stop offset="100%" stop-color="#6f0905"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="39" y="14" width="42" height="66" rx="7" fill="url(#profutbikRedCardV180)"></rect>
+                    <path class="card-gloss" d="M48 18 L78 18 L43 66 L43 30 C43 23 45 20 48 18 Z"></path>
+                    <path class="whistle" d="M34 79 C42 68 61 66 76 76"></path>
+                    <path class="whistle" d="M28 91 C39 77 63 75 82 88"></path>
+                    <circle class="whistle" cx="31" cy="95" r="7"></circle>
+                    <path class="whistle" d="M82 72 L89 63"></path>
+                    <path class="whistle" d="M91 78 L102 75"></path>
+                    <path class="whistle" d="M88 88 L99 96"></path>
+                </svg>
+            </span>
+            <span class="transfer-stats__tooltip" aria-hidden="true">
                 <b>—</b>
-                <span>КРАСНЫХ</span>
-            </div>
+                <em>КРАСНЫХ</em>
+            </span>
         </article>
     </div>
 </section>
