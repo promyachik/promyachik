@@ -1,0 +1,3 @@
+DONE V184 approved screenshot stats block applied
+Assets copied to static/images/stats-icons-v184
+Partial replaced: layouts/partials/transfer-player-stats.html

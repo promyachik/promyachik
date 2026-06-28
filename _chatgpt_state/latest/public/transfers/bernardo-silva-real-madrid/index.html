@@ -3810,172 +3810,164 @@
 
 <style>
  
-
-body.transfer-page .transfer-stats.pfb-stats-v183,
-body.transfer-page .transfer-stats.pfb-stats-v183 * {
-    box-sizing: border-box !important;
-    overflow: visible !important;
-}
-
-body.transfer-page .transfer-stats.pfb-stats-v183,
-body.transfer-page .transfer-stats.pfb-stats-v183.transfer-stats--under-market-chart {
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
     display: block !important;
     width: 100% !important;
     max-width: 390px !important;
     margin: 26px auto 22px !important;
-    padding: 20px 14px 22px !important;
+    padding: 18px 12px 20px !important;
+    border: 1px solid rgba(245, 199, 65, 0.18) !important;
+    border-radius: 20px !important;
     background:
-        radial-gradient(circle at 50% 30%, rgba(245, 199, 65, 0.10), transparent 44%),
-        linear-gradient(180deg, rgba(13, 14, 16, 0.96), rgba(5, 6, 8, 0.98)) !important;
-    border: 1px solid rgba(245, 199, 65, 0.22) !important;
-    border-radius: 22px !important;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.38) !important;
+        radial-gradient(circle at 50% 28%, rgba(245, 199, 65, 0.10), transparent 43%),
+        linear-gradient(180deg, rgba(13, 15, 18, 0.95), rgba(5, 6, 8, 0.98)) !important;
+    box-shadow: 0 16px 42px rgba(0,0,0,0.40) !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
 }
 
-body.transfer-page .pfb-stats-v183__grid {
+body.transfer-page #pfb-stats-v184,
+body.transfer-page #pfb-stats-v184 * {
+    box-sizing: border-box !important;
+    overflow: visible !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid {
     display: grid !important;
-    grid-template-columns: repeat(6, 54px) !important;
-    justify-content: center !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-rows: 88px 88px !important;
+    grid-auto-rows: 88px !important;
+    gap: 17px 13px !important;
     align-items: center !important;
-    gap: 16px 12px !important;
+    justify-items: center !important;
+    justify-content: center !important;
     width: 100% !important;
+    max-width: 360px !important;
     margin: 0 auto !important;
     padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
 }
 
-body.transfer-page .pfb-stats-v183__card {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
     position: relative !important;
-    width: 108px !important;
-    height: 88px !important;
-    min-width: 108px !important;
-    min-height: 88px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-
+    flex: 0 0 auto !important;
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+    height: 88px !important;
+    min-height: 88px !important;
+    max-height: 88px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    aspect-ratio: auto !important;
+    border: 1.5px solid rgba(245, 199, 65, 0.78) !important;
+    border-radius: 17px !important;
     background:
-        radial-gradient(circle at 50% 38%, rgba(245,199,65,0.15), transparent 45%),
-        linear-gradient(145deg, #1a1a18, #07080a) !important;
-
-    border: 1.5px solid rgba(245,199,65,0.82) !important;
-    border-radius: 18px !important;
+        radial-gradient(circle at 50% 42%, rgba(245,199,65,0.18), transparent 46%),
+        linear-gradient(145deg, rgba(27,27,24,0.96), rgba(6,7,9,0.99)) !important;
     box-shadow:
-        inset 0 0 22px rgba(245,199,65,0.08),
-        0 12px 26px rgba(0,0,0,0.42) !important;
-
+        inset 0 0 24px rgba(245,199,65,0.08),
+        0 12px 26px rgba(0,0,0,0.43) !important;
     cursor: pointer !important;
-    overflow: visible !important;
     z-index: 2 !important;
-    transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease !important;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease !important;
 }
 
-body.transfer-page .pfb-stats-v183__card:hover {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:hover,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:focus-visible {
     transform: translateY(-3px) !important;
-    border-color: #f5c741 !important;
+    border-color: rgba(255, 218, 83, 1) !important;
     box-shadow:
-        inset 0 0 26px rgba(245,199,65,0.14),
+        inset 0 0 28px rgba(245,199,65,0.13),
         0 0 22px rgba(245,199,65,0.24),
-        0 18px 34px rgba(0,0,0,0.48) !important;
+        0 16px 34px rgba(0,0,0,0.48) !important;
+    outline: none !important;
 }
 
-body.transfer-page .pfb-stats-v183__matches {
-    grid-column: 1 / span 2 !important;
-    grid-row: 1 !important;
-}
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__matches { grid-column: 1 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals   { grid-column: 3 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__assists { grid-column: 5 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__yellow  { grid-column: 2 / span 2 !important; grid-row: 2 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__red     { grid-column: 4 / span 2 !important; grid-row: 2 !important; }
 
-body.transfer-page .pfb-stats-v183__goals {
-    grid-column: 3 / span 2 !important;
-    grid-row: 1 !important;
-}
-
-body.transfer-page .pfb-stats-v183__assists {
-    grid-column: 5 / span 2 !important;
-    grid-row: 1 !important;
-}
-
-body.transfer-page .pfb-stats-v183__yellow {
-    grid-column: 2 / span 2 !important;
-    grid-row: 2 !important;
-}
-
-body.transfer-page .pfb-stats-v183__red {
-    grid-column: 4 / span 2 !important;
-    grid-row: 2 !important;
-}
-
-body.transfer-page .pfb-stats-v183__icon {
-    width: 70px !important;
-    height: 70px !important;
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon {
     display: block !important;
+    width: 72px !important;
+    height: 72px !important;
+    object-fit: contain !important;
+    pointer-events: none !important;
+    filter: drop-shadow(0 0 8px rgba(245,199,65,0.35)) !important;
 }
 
-body.transfer-page .pfb-stats-v183__goals .pfb-stats-v183__icon {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
     width: 78px !important;
     height: 78px !important;
 }
 
-body.transfer-page .pfb-stats-v183__icon svg {
-    width: 100% !important;
-    height: 100% !important;
-    display: block !important;
-    overflow: visible !important;
-    filter: drop-shadow(0 0 8px rgba(245,199,65,0.30)) !important;
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__yellow .pfb-stats-v184__icon,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__red .pfb-stats-v184__icon {
+    width: 76px !important;
+    height: 76px !important;
 }
 
-body.transfer-page .pfb-stats-v183__tip {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip {
     position: absolute !important;
     left: 50% !important;
-    bottom: calc(100% + 14px) !important;
+    bottom: calc(100% + 13px) !important;
     transform: translateX(-50%) translateY(8px) !important;
     z-index: 999999 !important;
-
     min-width: 148px !important;
     padding: 12px 16px 13px !important;
-    text-align: center !important;
-
+    border: 1.5px solid rgba(255, 218, 83, 0.96) !important;
+    border-radius: 12px !important;
     background:
         radial-gradient(circle at 50% 0%, rgba(245,199,65,0.14), transparent 50%),
-        rgba(5,6,8,0.99) !important;
-    border: 1.5px solid rgba(245,199,65,0.95) !important;
-    border-radius: 13px !important;
-    box-shadow:
-        0 0 18px rgba(245,199,65,0.22),
-        0 16px 32px rgba(0,0,0,0.58) !important;
-
+        rgba(6,7,9,0.99) !important;
+    box-shadow: 0 0 18px rgba(245,199,65,0.24), 0 16px 34px rgba(0,0,0,0.56) !important;
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
+    text-align: center !important;
     white-space: nowrap !important;
     transition: opacity .16s ease, visibility .16s ease, transform .16s ease !important;
 }
 
-body.transfer-page .pfb-stats-v183__tip::after {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip::after {
     content: "" !important;
     position: absolute !important;
     left: 50% !important;
     top: 100% !important;
-    width: 16px !important;
-    height: 16px !important;
-    background: rgba(5,6,8,0.99) !important;
-    border-right: 1.5px solid rgba(245,199,65,0.95) !important;
-    border-bottom: 1.5px solid rgba(245,199,65,0.95) !important;
-    transform: translate(-50%, -8px) rotate(45deg) !important;
+    width: 17px !important;
+    height: 17px !important;
+    background: rgba(6,7,9,0.99) !important;
+    border-right: 1.5px solid rgba(255,218,83,0.96) !important;
+    border-bottom: 1.5px solid rgba(255,218,83,0.96) !important;
+    transform: translate(-50%, -8.5px) rotate(45deg) !important;
 }
 
-body.transfer-page .pfb-stats-v183__tip b {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip b {
     display: block !important;
+    margin: 0 0 5px !important;
+    padding: 0 !important;
     color: #f5c741 !important;
     -webkit-text-fill-color: #f5c741 !important;
     font-family: Arial, sans-serif !important;
     font-size: 42px !important;
-    line-height: .9 !important;
+    line-height: .88 !important;
     font-weight: 900 !important;
-    text-shadow: 0 0 14px rgba(245,199,65,0.34) !important;
+    text-shadow: 0 0 15px rgba(245,199,65,0.35) !important;
 }
 
-body.transfer-page .pfb-stats-v183__tip span {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip span {
     display: block !important;
-    margin-top: 5px !important;
+    margin: 0 !important;
+    padding: 0 !important;
     color: #f5c741 !important;
     -webkit-text-fill-color: #f5c741 !important;
     font-family: Arial, sans-serif !important;
@@ -3986,54 +3978,34 @@ body.transfer-page .pfb-stats-v183__tip span {
     text-transform: uppercase !important;
 }
 
-body.transfer-page .pfb-stats-v183__card:hover .pfb-stats-v183__tip {
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:hover .pfb-stats-v184__tip,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:focus-visible .pfb-stats-v184__tip {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateX(-50%) translateY(0) !important;
 }
 
-body.transfer-page .pfb-stats-v183 .gold-line {
-    fill: none !important;
-    stroke: #f5c741 !important;
-    stroke-width: 5 !important;
-    stroke-linecap: round !important;
-    stroke-linejoin: round !important;
-}
-
-body.transfer-page .pfb-stats-v183 .gold-fill {
-    fill: #f5c741 !important;
-}
-
-body.transfer-page .pfb-stats-v183 .dark-fill {
-    fill: #111 !important;
-}
-
-body.transfer-page .pfb-stats-v183 .red-fill {
-    fill: #e42018 !important;
-    stroke: #ff4a34 !important;
-    stroke-width: 4 !important;
-}
-
 @media (max-width: 640px) {
-    body.transfer-page .transfer-stats.pfb-stats-v183,
-    body.transfer-page .transfer-stats.pfb-stats-v183.transfer-stats--under-market-chart {
-        max-width: 340px !important;
-        padding: 18px 10px 20px !important;
+    body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+    body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+        max-width: 335px !important;
+        padding: 16px 9px 18px !important;
     }
-
-    body.transfer-page .pfb-stats-v183__grid {
-        grid-template-columns: repeat(6, 47px) !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid {
+        max-width: 312px !important;
+        grid-template-rows: 78px 78px !important;
+        grid-auto-rows: 78px !important;
         gap: 14px 9px !important;
     }
-
-    body.transfer-page .pfb-stats-v183__card {
-        width: 94px !important;
-        height: 80px !important;
-        min-width: 94px !important;
-        min-height: 80px !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+        width: 96px !important;
+        min-width: 96px !important;
+        max-width: 96px !important;
+        height: 78px !important;
+        min-height: 78px !important;
+        max-height: 78px !important;
     }
-
-    body.transfer-page .pfb-stats-v183__icon {
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon {
         width: 62px !important;
         height: 62px !important;
     }
@@ -4041,73 +4013,32 @@ body.transfer-page .pfb-stats-v183 .red-fill {
  
 </style>
 
-<section class="transfer-stats pfb-stats-v183" aria-label="Статистика игрока">
-    <div class="pfb-stats-v183__grid">
-
-        <article class="pfb-stats-v183__card pfb-stats-v183__matches">
-            <span class="pfb-stats-v183__icon" aria-hidden="true">
-                <svg viewBox="0 0 160 110">
-                    <rect class="gold-line" x="14" y="18" width="132" height="74" rx="5"/>
-                    <line class="gold-line" x1="80" y1="18" x2="80" y2="92"/>
-                    <circle class="gold-line" cx="80" cy="55" r="17"/>
-                    <circle class="gold-fill" cx="80" cy="55" r="4"/>
-                    <rect class="gold-line" x="14" y="38" width="26" height="34"/>
-                    <rect class="gold-line" x="120" y="38" width="26" height="34"/>
-                </svg>
-            </span>
-            <span class="pfb-stats-v183__tip"><b>—</b><span>МАТЧА</span></span>
+<section id="pfb-stats-v184" class="transfer-stats pfb-stats-v184" aria-label="Статистика игрока">
+    <div class="pfb-stats-v184__grid" role="list">
+        <article class="pfb-stats-v184__card pfb-stats-v184__matches" role="listitem" tabindex="0" aria-label="Матчей: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/matches.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>МАТЧА</span></span>
         </article>
 
-        <article class="pfb-stats-v183__card pfb-stats-v183__goals">
-            <span class="pfb-stats-v183__icon" aria-hidden="true">
-                <svg viewBox="0 0 120 120">
-                    <circle cx="60" cy="60" r="48" fill="#f5c741" stroke="#f5c741" stroke-width="4"/>
-                    <polygon class="dark-fill" points="60,30 76,42 70,62 50,62 44,42"/>
-                    <polygon class="dark-fill" points="25,50 39,57 38,76 22,80 15,63"/>
-                    <polygon class="dark-fill" points="95,50 105,63 98,80 82,76 81,57"/>
-                    <polygon class="dark-fill" points="43,88 58,78 75,88 70,104 50,104"/>
-                </svg>
-            </span>
-            <span class="pfb-stats-v183__tip"><b>—</b><span>ГОЛА</span></span>
+        <article class="pfb-stats-v184__card pfb-stats-v184__goals" role="listitem" tabindex="0" aria-label="Голов: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/goals.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>ГОЛА</span></span>
         </article>
 
-        <article class="pfb-stats-v183__card pfb-stats-v183__assists">
-            <span class="pfb-stats-v183__icon" aria-hidden="true">
-                <svg viewBox="0 0 150 105">
-                    <path class="gold-line" d="M24 70 C43 58, 54 48, 66 30 C75 42, 90 50, 114 54 C122 56, 127 62, 125 69 C122 79, 111 82, 94 82 L35 82 C24 82, 18 78, 24 70 Z"/>
-                    <path class="gold-line" d="M35 82 L29 94"/>
-                    <path class="gold-line" d="M54 82 L49 94"/>
-                    <path class="gold-line" d="M82 82 L77 94"/>
-                    <path class="gold-line" d="M107 82 L102 94"/>
-                    <path class="gold-line" d="M68 49 L86 39"/>
-                    <path class="gold-line" d="M78 56 L98 46"/>
-                </svg>
-            </span>
-            <span class="pfb-stats-v183__tip"><b>—</b><span>ПЕРЕДАЧА</span></span>
+        <article class="pfb-stats-v184__card pfb-stats-v184__assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/assists.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>ПЕРЕДАЧА</span></span>
         </article>
 
-        <article class="pfb-stats-v183__card pfb-stats-v183__yellow">
-            <span class="pfb-stats-v183__icon" aria-hidden="true">
-                <svg viewBox="0 0 120 120">
-                    <rect x="35" y="14" width="50" height="76" rx="8" fill="#f5c741" stroke="#f5c741" stroke-width="4"/>
-                    <path class="gold-line" d="M29 97 C43 82, 59 87, 68 99"/>
-                    <path class="gold-line" d="M62 99 C73 84, 91 85, 101 99"/>
-                </svg>
-            </span>
-            <span class="pfb-stats-v183__tip"><b>—</b><span>ЖЁЛТЫХ</span></span>
+        <article class="pfb-stats-v184__card pfb-stats-v184__yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/yellow_cards.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>ЖЁЛТЫХ</span></span>
         </article>
 
-        <article class="pfb-stats-v183__card pfb-stats-v183__red">
-            <span class="pfb-stats-v183__icon" aria-hidden="true">
-                <svg viewBox="0 0 120 120">
-                    <rect class="red-fill" x="35" y="14" width="50" height="76" rx="8"/>
-                    <path class="gold-line" d="M29 97 C43 82, 59 87, 68 99"/>
-                    <path class="gold-line" d="M62 99 C73 84, 91 85, 101 99"/>
-                </svg>
-            </span>
-            <span class="pfb-stats-v183__tip"><b>—</b><span>КРАСНЫХ</span></span>
+        <article class="pfb-stats-v184__card pfb-stats-v184__red" role="listitem" tabindex="0" aria-label="Красных карточек: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/red_cards.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>КРАСНЫХ</span></span>
         </article>
-
     </div>
 </section>
 
