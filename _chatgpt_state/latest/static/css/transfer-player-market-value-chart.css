@@ -463,3 +463,12 @@ body.transfer-page
 }
 
 /* PROFUTBIK CHART CLEAN LOOK V42 END */
+
+/* PROFUTBIK HIDE MARKET VALUE NOTE V167 START */
+body.transfer-page .player-market-chart__note,
+.player-market-chart-modal .player-market-chart__note,
+.player-market-chart--enlarged .player-market-chart__note {
+    display: none !important;
+}
+/* PROFUTBIK HIDE MARKET VALUE NOTE V167 END */
+
