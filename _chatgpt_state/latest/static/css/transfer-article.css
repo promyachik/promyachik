@@ -3597,3 +3597,233 @@ body.transfer-page section.transfer-stats.transfer-stats--profutbik-v180 .transf
 
 /* PROFUTBIK STATS EXACT APPROVED BLOCK V180 END */
 
+/* PROFUTBIK EXACT SCREEN STATS BLOCK V181 START */
+body.transfer-page section.transfer-stats.pfb-stats-v181,
+body.transfer-page section.transfer-stats.pfb-stats-v181.transfer-stats--under-market-chart {
+    --pfb-v181-gold: #f2c746;
+    --pfb-v181-gold-bright: #ffd957;
+    --pfb-v181-border: rgba(242, 199, 70, 0.82);
+    width: 100% !important;
+    max-width: 430px !important;
+    margin: 28px auto 24px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181,
+body.transfer-page section.transfer-stats.pfb-stats-v181 * {
+    box-sizing: border-box !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    grid-template-rows: auto auto !important;
+    gap: 18px 14px !important;
+    width: 100% !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+    padding: 0 4px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 116px !important;
+    min-height: 116px !important;
+    padding: 12px !important;
+    margin: 0 !important;
+    border: 1.4px solid var(--pfb-v181-border) !important;
+    border-radius: 24px !important;
+    background:
+        radial-gradient(circle at 50% 48%, rgba(242, 199, 70, 0.15), rgba(242, 199, 70, 0.035) 44%, transparent 72%),
+        linear-gradient(145deg, rgba(26, 26, 23, 0.94), rgba(5, 5, 5, 0.96)) !important;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 229, 119, 0.035),
+        inset 0 20px 36px rgba(255, 217, 87, 0.025),
+        0 11px 24px rgba(0, 0, 0, 0.34) !important;
+    overflow: visible !important;
+    cursor: pointer !important;
+    transform: none !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card--matches { grid-column: 1 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card--goals { grid-column: 3 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card--assists { grid-column: 5 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card--yellow { grid-column: 2 / span 2 !important; grid-row: 2 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card--red { grid-column: 4 / span 2 !important; grid-row: 2 !important; }
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 svg {
+    display: block !important;
+    width: 92% !important;
+    height: 92% !important;
+    max-width: 118px !important;
+    max-height: 100px !important;
+    overflow: visible !important;
+    filter: drop-shadow(0 6px 5px rgba(0,0,0,0.58)) drop-shadow(0 0 7px rgba(242,199,70,0.18)) !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__icon--ball svg { width: 104% !important; height: 104% !important; max-width: 124px !important; max-height: 108px !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__icon--boot svg { width: 98% !important; height: 84% !important; max-width: 126px !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__icon--yellow svg,
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__icon--red svg { width: 98% !important; height: 102% !important; max-width: 110px !important; max-height: 112px !important; }
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-svg-line,
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-boot-main,
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-boot-line,
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-whistle {
+    fill: none !important;
+    stroke: var(--pfb-v181-gold) !important;
+    stroke-width: 5.5 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-svg-fill { fill: var(--pfb-v181-gold) !important; stroke: none !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-ball-base { fill: url(#pfbBallGoldV181) !important; stroke: #f8d55c !important; stroke-width: 3 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-ball-dark { fill: rgba(12, 12, 12, 0.92) !important; stroke: rgba(255, 218, 91, 0.85) !important; stroke-width: 2.4 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-ball-line { fill: none !important; stroke: rgba(14,14,14,0.92) !important; stroke-width: 4.2 !important; stroke-linecap: round !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-card-yellow { fill: url(#pfbYellowV181) !important; stroke: #ffdf62 !important; stroke-width: 2.5 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-card-red { fill: url(#pfbRedV181) !important; stroke: #ff674d !important; stroke-width: 2.5 !important; }
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-card-gloss { fill: rgba(255,255,255,0.17) !important; stroke: none !important; }
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: calc(100% + 13px) !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    z-index: 10020 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 128px !important;
+    min-height: 82px !important;
+    padding: 9px 18px 11px !important;
+    border: 1.7px solid var(--pfb-v181-gold-bright) !important;
+    border-radius: 14px !important;
+    background:
+        radial-gradient(circle at 50% 34%, rgba(255, 217, 87, 0.10), transparent 62%),
+        rgba(10, 10, 9, 0.985) !important;
+    box-shadow: 0 0 22px rgba(242, 199, 70, 0.22), 0 16px 34px rgba(0,0,0,0.62) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity .16s ease, visibility .16s ease, transform .16s ease !important;
+    white-space: nowrap !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: calc(100% - 1px) !important;
+    width: 18px !important;
+    height: 18px !important;
+    transform: translateX(-50%) rotate(45deg) !important;
+    border-right: 1.7px solid var(--pfb-v181-gold-bright) !important;
+    border-bottom: 1.7px solid var(--pfb-v181-gold-bright) !important;
+    background: rgba(10, 10, 9, 0.985) !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip b {
+    display: block !important;
+    color: var(--pfb-v181-gold-bright) !important;
+    -webkit-text-fill-color: var(--pfb-v181-gold-bright) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 42px !important;
+    line-height: .9 !important;
+    font-weight: 900 !important;
+    letter-spacing: -.02em !important;
+    text-shadow: 0 0 15px rgba(242,199,70,0.28) !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip em {
+    display: block !important;
+    margin-top: 8px !important;
+    color: var(--pfb-v181-gold-bright) !important;
+    -webkit-text-fill-color: var(--pfb-v181-gold-bright) !important;
+    font-style: normal !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: .03em !important;
+    text-transform: uppercase !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card:hover,
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card:focus-visible {
+    border-color: #ffda57 !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 229, 119, 0.12), 0 0 24px rgba(242,199,70,0.18), 0 14px 28px rgba(0,0,0,0.44) !important;
+}
+
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card:hover .pfb-stats-v181__tooltip,
+body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card:focus-visible .pfb-stats-v181__tooltip {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+@media (max-width: 900px) {
+    body.transfer-page section.transfer-stats.pfb-stats-v181,
+    body.transfer-page section.transfer-stats.pfb-stats-v181.transfer-stats--under-market-chart,
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__grid {
+        max-width: 390px !important;
+    }
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card {
+        height: 106px !important;
+        min-height: 106px !important;
+        border-radius: 21px !important;
+    }
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip {
+        min-width: 116px !important;
+        min-height: 74px !important;
+    }
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip b { font-size: 36px !important; }
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__tooltip em { font-size: 17px !important; }
+}
+
+@media (max-width: 520px) {
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__grid {
+        gap: 12px 9px !important;
+        padding: 0 2px !important;
+    }
+    body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card {
+        height: 88px !important;
+        min-height: 88px !important;
+        border-radius: 18px !important;
+        padding: 9px !important;
+    }
+}
+/* PROFUTBIK EXACT SCREEN STATS BLOCK V181 END */
+

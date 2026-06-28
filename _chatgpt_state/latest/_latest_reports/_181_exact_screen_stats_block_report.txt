@@ -1,0 +1,15 @@
+181_EXACT_SCREEN_STATS_BLOCK
+
+Changed:
+- layouts\partials\transfer-player-stats.html
+- static\css\transfer-article.css
+
+Result:
+- New stats block uses isolated pfb-stats-v181 classes.
+- No old PNG stat icons are used.
+- Layout: 3 cards top, 2 cards bottom centered.
+- Hover tooltip: large number + label.
+- Assists icon is boot-only inline SVG.
+
+Backups:
+- _backup_181_exact_screen_stats_block

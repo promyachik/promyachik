@@ -3832,131 +3832,111 @@
 
 
 
-<section class="transfer-stats transfer-stats--profutbik-v180" aria-label="Статистика игрока">
-    <div class="transfer-stats__grid" role="list">
-        <article class="transfer-stats__card transfer-stats__card--matches" role="listitem" tabindex="0" aria-label="Матчей: —">
-            <span class="transfer-stats__icon transfer-stats__icon--matches" aria-hidden="true">
-                <svg viewBox="0 0 120 84" class="transfer-stats__svg transfer-stats__svg--field" focusable="false">
-                    <rect x="8" y="10" width="104" height="64" rx="4"></rect>
-                    <line x1="60" y1="10" x2="60" y2="74"></line>
-                    <circle cx="60" cy="42" r="13"></circle>
-                    <circle cx="60" cy="42" r="2.2"></circle>
-                    <rect x="8" y="25" width="17" height="34"></rect>
-                    <rect x="8" y="34" width="8" height="16"></rect>
-                    <rect x="95" y="25" width="17" height="34"></rect>
-                    <rect x="104" y="34" width="8" height="16"></rect>
+<section class="transfer-stats pfb-stats-v181" aria-label="Статистика игрока">
+    <div class="pfb-stats-v181__grid" role="list">
+        <article class="pfb-stats-v181__card pfb-stats-v181__card--matches" role="listitem" tabindex="0" aria-label="Матчей: —">
+            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--field" aria-hidden="true">
+                <svg viewBox="0 0 160 108" focusable="false">
+                    <rect class="pfb-svg-line" x="13" y="14" width="134" height="80" rx="5" />
+                    <line class="pfb-svg-line" x1="80" y1="14" x2="80" y2="94" />
+                    <circle class="pfb-svg-line" cx="80" cy="54" r="17" />
+                    <circle class="pfb-svg-fill" cx="80" cy="54" r="3.3" />
+                    <rect class="pfb-svg-line" x="13" y="35" width="25" height="38" />
+                    <rect class="pfb-svg-line" x="13" y="45" width="11" height="18" />
+                    <rect class="pfb-svg-line" x="122" y="35" width="25" height="38" />
+                    <rect class="pfb-svg-line" x="136" y="45" width="11" height="18" />
                 </svg>
             </span>
-            <span class="transfer-stats__tooltip" aria-hidden="true">
-                <b>—</b>
-                <em>МАТЧА</em>
-            </span>
+            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>МАТЧА</em></span>
         </article>
 
-        <article class="transfer-stats__card transfer-stats__card--goals" role="listitem" tabindex="0" aria-label="Голов: —">
-            <span class="transfer-stats__icon transfer-stats__icon--goals" aria-hidden="true">
-                <svg viewBox="0 0 120 120" class="transfer-stats__svg transfer-stats__svg--ball" focusable="false">
+        <article class="pfb-stats-v181__card pfb-stats-v181__card--goals" role="listitem" tabindex="0" aria-label="Голов: —">
+            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--ball" aria-hidden="true">
+                <svg viewBox="0 0 150 150" focusable="false">
                     <defs>
-                        <radialGradient id="profutbikBallGoldV180" cx="36%" cy="26%" r="72%">
-                            <stop offset="0%" stop-color="#fff0a8"/>
-                            <stop offset="38%" stop-color="#f3c743"/>
-                            <stop offset="72%" stop-color="#b98216"/>
-                            <stop offset="100%" stop-color="#5e3b07"/>
+                        <radialGradient id="pfbBallGoldV181" cx="34%" cy="25%" r="75%">
+                            <stop offset="0%" stop-color="#fff1a7" />
+                            <stop offset="34%" stop-color="#f3c846" />
+                            <stop offset="69%" stop-color="#b47a12" />
+                            <stop offset="100%" stop-color="#4b3108" />
                         </radialGradient>
-                        <filter id="profutbikBallShadowV180" x="-35%" y="-35%" width="170%" height="170%">
-                            <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.55"/>
-                        </filter>
                     </defs>
-                    <circle cx="60" cy="60" r="44" fill="url(#profutbikBallGoldV180)" filter="url(#profutbikBallShadowV180)"></circle>
-                    <path class="ball-patch" d="M60 31 L77 43 L71 63 L49 63 L43 43 Z"></path>
-                    <path class="ball-patch" d="M28 49 L43 43 L49 63 L36 76 L24 66 Z"></path>
-                    <path class="ball-patch" d="M92 49 L77 43 L71 63 L84 76 L96 66 Z"></path>
-                    <path class="ball-patch" d="M43 89 L49 63 L71 63 L77 89 L60 100 Z"></path>
-                    <path class="ball-line" d="M60 31 L60 16"></path>
-                    <path class="ball-line" d="M77 43 L92 30"></path>
-                    <path class="ball-line" d="M43 43 L28 30"></path>
-                    <path class="ball-line" d="M36 76 L25 91"></path>
-                    <path class="ball-line" d="M84 76 L95 91"></path>
-                    <path class="ball-line" d="M49 63 L36 76"></path>
-                    <path class="ball-line" d="M71 63 L84 76"></path>
+                    <circle class="pfb-ball-base" cx="75" cy="75" r="55" />
+                    <path class="pfb-ball-dark" d="M75 34 L96 50 L88 76 L62 76 L54 50 Z" />
+                    <path class="pfb-ball-dark" d="M34 63 L54 50 L62 76 L46 94 L28 82 Z" />
+                    <path class="pfb-ball-dark" d="M116 63 L96 50 L88 76 L104 94 L122 82 Z" />
+                    <path class="pfb-ball-dark" d="M53 112 L62 76 L88 76 L97 112 L75 126 Z" />
+                    <path class="pfb-ball-line" d="M75 34 L75 19" />
+                    <path class="pfb-ball-line" d="M96 50 L116 32" />
+                    <path class="pfb-ball-line" d="M54 50 L34 32" />
+                    <path class="pfb-ball-line" d="M46 94 L32 116" />
+                    <path class="pfb-ball-line" d="M104 94 L118 116" />
                 </svg>
             </span>
-            <span class="transfer-stats__tooltip" aria-hidden="true">
-                <b>—</b>
-                <em>ГОЛА</em>
-            </span>
+            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>ГОЛА</em></span>
         </article>
 
-        <article class="transfer-stats__card transfer-stats__card--assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
-            <span class="transfer-stats__icon transfer-stats__icon--assists" aria-hidden="true">
-                <svg viewBox="0 0 130 86" class="transfer-stats__svg transfer-stats__svg--boot" focusable="false">
-                    <path class="boot-main" d="M27 25 C39 33 54 39 78 38 C87 38 95 41 101 47 L111 57 C114 60 112 66 107 67 L45 67 C34 67 24 64 16 58 L11 54 C8 51 10 45 14 45 L23 45 L18 32 C16 27 22 22 27 25 Z"></path>
-                    <path class="boot-line" d="M31 31 L21 44"></path>
-                    <path class="boot-line" d="M45 36 L36 48"></path>
-                    <path class="boot-line" d="M60 40 L51 52"></path>
-                    <path class="boot-line" d="M76 41 L67 53"></path>
-                    <path class="boot-line" d="M39 67 L35 76"></path>
-                    <path class="boot-line" d="M59 67 L55 77"></path>
-                    <path class="boot-line" d="M80 67 L77 76"></path>
-                    <path class="boot-line" d="M100 66 L99 74"></path>
+        <article class="pfb-stats-v181__card pfb-stats-v181__card--assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
+            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--boot" aria-hidden="true">
+                <svg viewBox="0 0 170 115" focusable="false">
+                    <path class="pfb-boot-main" d="M39 34 C54 46 75 53 105 52 C118 52 131 58 139 67 L150 80 C154 84 151 91 144 91 L61 91 C45 91 31 86 20 77 L15 73 C10 69 13 61 20 61 L32 61 L26 43 C23 35 32 28 39 34 Z" />
+                    <path class="pfb-boot-line" d="M45 44 L32 61" />
+                    <path class="pfb-boot-line" d="M63 50 L50 66" />
+                    <path class="pfb-boot-line" d="M82 54 L69 70" />
+                    <path class="pfb-boot-line" d="M102 55 L89 72" />
+                    <path class="pfb-boot-line" d="M54 91 L49 103" />
+                    <path class="pfb-boot-line" d="M80 91 L75 105" />
+                    <path class="pfb-boot-line" d="M107 91 L103 103" />
+                    <path class="pfb-boot-line" d="M135 90 L132 101" />
                 </svg>
             </span>
-            <span class="transfer-stats__tooltip" aria-hidden="true">
-                <b>—</b>
-                <em>ПЕРЕДАЧА</em>
-            </span>
+            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>ПЕРЕДАЧА</em></span>
         </article>
 
-        <article class="transfer-stats__card transfer-stats__card--yellow-cards" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
-            <span class="transfer-stats__icon transfer-stats__icon--yellow-cards" aria-hidden="true">
-                <svg viewBox="0 0 120 120" class="transfer-stats__svg transfer-stats__svg--card transfer-stats__svg--yellow-card" focusable="false">
+        <article class="pfb-stats-v181__card pfb-stats-v181__card--yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
+            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--yellow" aria-hidden="true">
+                <svg viewBox="0 0 150 150" focusable="false">
                     <defs>
-                        <linearGradient id="profutbikYellowCardV180" x1="16%" y1="8%" x2="84%" y2="92%">
-                            <stop offset="0%" stop-color="#fff08a"/>
-                            <stop offset="42%" stop-color="#e7b92c"/>
-                            <stop offset="100%" stop-color="#8e5d08"/>
+                        <linearGradient id="pfbYellowV181" x1="18%" y1="6%" x2="86%" y2="96%">
+                            <stop offset="0%" stop-color="#fff27f" />
+                            <stop offset="40%" stop-color="#e3b72e" />
+                            <stop offset="100%" stop-color="#825409" />
                         </linearGradient>
                     </defs>
-                    <rect x="39" y="14" width="42" height="66" rx="7" fill="url(#profutbikYellowCardV180)"></rect>
-                    <path class="card-gloss" d="M48 18 L78 18 L43 66 L43 30 C43 23 45 20 48 18 Z"></path>
-                    <path class="whistle" d="M34 79 C42 68 61 66 76 76"></path>
-                    <path class="whistle" d="M28 91 C39 77 63 75 82 88"></path>
-                    <circle class="whistle" cx="31" cy="95" r="7"></circle>
-                    <path class="whistle" d="M82 72 L89 63"></path>
-                    <path class="whistle" d="M91 78 L102 75"></path>
-                    <path class="whistle" d="M88 88 L99 96"></path>
+                    <rect class="pfb-card-yellow" x="52" y="19" width="50" height="82" rx="8" />
+                    <path class="pfb-card-gloss" d="M62 24 L96 24 L56 87 L56 36 C56 29 58 26 62 24 Z" />
+                    <path class="pfb-whistle" d="M43 100 C54 84 82 82 101 96" />
+                    <path class="pfb-whistle" d="M35 116 C51 97 87 95 111 112" />
+                    <circle class="pfb-whistle" cx="39" cy="120" r="8" />
+                    <path class="pfb-whistle" d="M105 91 L114 80" />
+                    <path class="pfb-whistle" d="M116 99 L130 95" />
+                    <path class="pfb-whistle" d="M112 110 L126 121" />
                 </svg>
             </span>
-            <span class="transfer-stats__tooltip" aria-hidden="true">
-                <b>—</b>
-                <em>ЖЁЛТЫХ</em>
-            </span>
+            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>ЖЁЛТЫХ</em></span>
         </article>
 
-        <article class="transfer-stats__card transfer-stats__card--red-cards" role="listitem" tabindex="0" aria-label="Красных карточек: —">
-            <span class="transfer-stats__icon transfer-stats__icon--red-cards" aria-hidden="true">
-                <svg viewBox="0 0 120 120" class="transfer-stats__svg transfer-stats__svg--card transfer-stats__svg--red-card" focusable="false">
+        <article class="pfb-stats-v181__card pfb-stats-v181__card--red" role="listitem" tabindex="0" aria-label="Красных карточек: —">
+            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--red" aria-hidden="true">
+                <svg viewBox="0 0 150 150" focusable="false">
                     <defs>
-                        <linearGradient id="profutbikRedCardV180" x1="16%" y1="8%" x2="84%" y2="92%">
-                            <stop offset="0%" stop-color="#ff654d"/>
-                            <stop offset="42%" stop-color="#d91f18"/>
-                            <stop offset="100%" stop-color="#6f0905"/>
+                        <linearGradient id="pfbRedV181" x1="18%" y1="6%" x2="86%" y2="96%">
+                            <stop offset="0%" stop-color="#ff6b50" />
+                            <stop offset="42%" stop-color="#d91d18" />
+                            <stop offset="100%" stop-color="#650705" />
                         </linearGradient>
                     </defs>
-                    <rect x="39" y="14" width="42" height="66" rx="7" fill="url(#profutbikRedCardV180)"></rect>
-                    <path class="card-gloss" d="M48 18 L78 18 L43 66 L43 30 C43 23 45 20 48 18 Z"></path>
-                    <path class="whistle" d="M34 79 C42 68 61 66 76 76"></path>
-                    <path class="whistle" d="M28 91 C39 77 63 75 82 88"></path>
-                    <circle class="whistle" cx="31" cy="95" r="7"></circle>
-                    <path class="whistle" d="M82 72 L89 63"></path>
-                    <path class="whistle" d="M91 78 L102 75"></path>
-                    <path class="whistle" d="M88 88 L99 96"></path>
+                    <rect class="pfb-card-red" x="52" y="19" width="50" height="82" rx="8" />
+                    <path class="pfb-card-gloss" d="M62 24 L96 24 L56 87 L56 36 C56 29 58 26 62 24 Z" />
+                    <path class="pfb-whistle" d="M43 100 C54 84 82 82 101 96" />
+                    <path class="pfb-whistle" d="M35 116 C51 97 87 95 111 112" />
+                    <circle class="pfb-whistle" cx="39" cy="120" r="8" />
+                    <path class="pfb-whistle" d="M105 91 L114 80" />
+                    <path class="pfb-whistle" d="M116 99 L130 95" />
+                    <path class="pfb-whistle" d="M112 110 L126 121" />
                 </svg>
             </span>
-            <span class="transfer-stats__tooltip" aria-hidden="true">
-                <b>—</b>
-                <em>КРАСНЫХ</em>
-            </span>
+            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>КРАСНЫХ</em></span>
         </article>
     </div>
 </section>
