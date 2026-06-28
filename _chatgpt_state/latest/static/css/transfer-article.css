@@ -3300,3 +3300,76 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--se
 }
 /* PROFUTBIK STATS ICON LABELS V161 END */
 
+/* PROFUTBIK STATS FONTAWESOME ICONS V162 START */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    font-size: 0 !important;
+    line-height: 1 !important;
+    min-height: 18px !important;
+    margin-top: 2px !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+    color: #f5d56a !important;
+    -webkit-text-fill-color: #f5d56a !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+/* Матчи */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before {
+    content: "\f091";
+}
+
+/* Голы */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
+    content: "\f1e3";
+}
+
+/* Голевые передачи */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
+    content: "\f061";
+}
+
+/* Минуты */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
+    content: "\f017";
+}
+
+/* Жёлтые карточки */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before {
+    content: "\f02b";
+}
+
+/* Красные карточки */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before {
+    content: "\f577";
+}
+
+/* Сезон */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before {
+    content: "\f073";
+}
+/* PROFUTBIK STATS FONTAWESOME ICONS V162 END */
+
