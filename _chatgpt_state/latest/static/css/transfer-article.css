@@ -3093,3 +3093,58 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--se
 }
 /* PROFUTBIK STATS GREEN CLEAN FONT V156 END */
 
+/* PROFUTBIK STATS VALUE ALIGN V157 START */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    min-height: 72px !important;
+    padding: 10px 7px 9px !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 24px !important;
+    min-height: 24px !important;
+    margin: 0 0 7px !important;
+    font-size: clamp(15px, 1.45vw, 18px) !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.035em !important;
+    white-space: nowrap !important;
+    transform: none !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 24px !important;
+    margin: 0 !important;
+    font-size: 8px !important;
+    line-height: 1.05 !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.035em !important;
+    text-align: center !important;
+    max-width: 100% !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season strong {
+    font-size: clamp(11px, 1.15vw, 14px) !important;
+    letter-spacing: -0.045em !important;
+}
+
+@media (max-width: 640px) {
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+        font-size: 15px !important;
+    }
+
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season strong {
+        font-size: 11px !important;
+    }
+}
+/* PROFUTBIK STATS VALUE ALIGN V157 END */
+
