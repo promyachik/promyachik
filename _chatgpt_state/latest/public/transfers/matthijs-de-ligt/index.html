@@ -4539,6 +4539,133 @@
         
     </p>
 </section>
+<style>
+  .pfb-hidden-old-team-logo {
+    display: none !important;
+  }
+</style>
+<script>
+(function () {
+  var LIMIT = 5;
+
+  function unique(list) {
+    var out = [];
+    list.forEach(function (item) {
+      if (item && out.indexOf(item) === -1) out.push(item);
+    });
+    return out;
+  }
+
+  function isInsideTicker(el) {
+    return !!(el.closest('.transfer-ticker') || el.closest('.top-transfer-ticker') || el.closest('.bottom-transfer-ticker') || el.closest('[data-ticker]'));
+  }
+
+  function isUsefulTeamNode(el) {
+    if (!el || isInsideTicker(el)) return false;
+    if (el.matches('[data-club-name], [data-team-name], [data-market-club], [data-player-club]')) return true;
+    if (el.getAttribute('title') || el.getAttribute('aria-label')) return true;
+    if (el.querySelector('img, svg')) return true;
+    if (el.matches('img, svg')) return true;
+    return false;
+  }
+
+  function compactNestedNodes(nodes) {
+    nodes = nodes.filter(isUsefulTeamNode);
+    return nodes.filter(function (node) {
+      return !nodes.some(function (other) {
+        return other !== node && other.contains(node);
+      });
+    });
+  }
+
+  function limitRow(row) {
+    var selectors = [
+      '[data-club-name]',
+      '[data-team-name]',
+      '[data-market-club]',
+      '[data-player-club]',
+      '.market-chart-club',
+      '.market-club',
+      '.player-market-club',
+      '.market-club-logo',
+      '.club-logo-item',
+      '.club-logo-wrap',
+      '.club-badge',
+      '.team-logo-item',
+      '.team-badge'
+    ];
+
+    var nodes = unique(Array.prototype.slice.call(row.querySelectorAll(selectors.join(','))));
+    nodes = compactNestedNodes(nodes);
+
+    if (nodes.length <= LIMIT) {
+      nodes.forEach(function (node) { node.classList.remove('pfb-hidden-old-team-logo'); });
+      return;
+    }
+
+    var firstVisibleIndex = nodes.length - LIMIT;
+    nodes.forEach(function (node, index) {
+      if (index < firstVisibleIndex) {
+        node.classList.add('pfb-hidden-old-team-logo');
+      } else {
+        node.classList.remove('pfb-hidden-old-team-logo');
+      }
+    });
+  }
+
+  function limitPlayerMarketTeams() {
+    var rootSelectors = [
+      '.player-market-chart',
+      '.profutbik-market-chart',
+      '.market-value-chart',
+      '.transfer-value-history',
+      '.transfer-market-chart',
+      '.market-chart',
+      '[data-player-market-chart]',
+      '[data-market-chart]'
+    ];
+
+    var rowSelectors = [
+      '.market-chart-clubs',
+      '.player-market-chart-clubs',
+      '.club-history',
+      '.club-timeline',
+      '.chart-clubs',
+      '.clubs-row',
+      '.teams-row',
+      '[data-club-timeline]',
+      '[data-team-list]'
+    ];
+
+    var roots = unique(Array.prototype.slice.call(document.querySelectorAll(rootSelectors.join(','))));
+
+    roots.forEach(function (root) {
+      if (isInsideTicker(root)) return;
+
+      var rows = unique(Array.prototype.slice.call(root.querySelectorAll(rowSelectors.join(','))));
+      if (!rows.length) rows = [root];
+
+      rows.forEach(limitRow);
+    });
+  }
+
+  function runSoon() {
+    limitPlayerMarketTeams();
+    window.setTimeout(limitPlayerMarketTeams, 250);
+    window.setTimeout(limitPlayerMarketTeams, 1000);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runSoon);
+  } else {
+    runSoon();
+  }
+
+  window.addEventListener('pageshow', runSoon);
+})();
+</script>
+
+
                 
 
             </section>

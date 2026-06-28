@@ -1,0 +1,17 @@
+VERSION 152_FULL_RESTORE_APPROVED_MARKET_CHART_LAST5
+PROJECT C:\Users\Dmitrii\Promyachik
+REFERENCE_FOUND content\transfers\bernardo-silva-real-madrid\index.md
+REFERENCE_FOUND content\transfers\denzel-dumfries-real-madrid\index.md
+REFERENCE_FOUND content\transfers\marc-cucurella-real-madrid\index.md
+NO_APPROVED_BACKUP_FOUND_FOR layouts\partials\profutbik-market-chart-static.html
+BACKUP layouts\partials\profutbik-market-chart-static.html
+REMOVED_151_INJECTION layouts\partials\profutbik-market-chart-static.html
+BACKUP layouts\transfers\single.html
+RESTORED_APPROVED_LAYOUT layouts\transfers\single.html FROM backups\150_FULL_SAFE_AUTOSYNC_DE_LIGT_DYNAMIC_VALUE_20260628_181125
+BACKUP content\transfers\matthijs-de-ligt\index.md
+UPDATED_DE_LIGT_PAGE_LAST5_WITH_APPROVED_MARKET_CHART_PARAMS
+BACKUP data\transfers.json
+UPDATED_TRANSFERS_JSON_DE_LIGT_LINK_VALUE
+RULE_APPROVED_BASE_CUCURELLA_BERNARDO_DUMFRIES
+RULE_SHOW_ONLY_LAST_5_TEAMS_VISUALLY
+DO_NOT_TOUCH_TICKERS_RAMOS_ENDRICK_FAVICON_VAR

@@ -11,20 +11,7 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/content/transfers/matthijs-de-ligt/index.md
- M _chatgpt_state/latest/data/club-logos.json
- M _chatgpt_state/latest/data/transfers.json
- M _chatgpt_state/latest/layouts/transfers/single.html
- M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
- M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
- M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
- M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/index.html
- M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
- M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
+ M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M content/posts/test.md
  M hugo.toml
@@ -69,6 +56,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 147_UPDATE_DE_LIGT_DYNAMIC_VALUE/
 ?? 148_FULL_AUTOSYNC_DE_LIGT_DYNAMIC_VALUE.bat
 ?? 150_FULL_SAFE_AUTOSYNC_DE_LIGT_DYNAMIC_VALUE.bat
+?? 151_FULL_LIMIT_PLAYER_TEAMS_LAST5.bat
+?? 152_FULL_RESTORE_APPROVED_MARKET_CHART_LAST5.bat
+?? 153_FULL_ROLLBACK_152_RESTORE_MARKET_CHART.bat
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -122,6 +112,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _144_top_ticker_real_dom_dividers_report_20260628_000336.txt
 ?? _145_top_ticker_divider_before_every_item_report_20260628_000641.txt
 ?? _146_full_upper_ticker_real_seam_divider_report_20260628_000952.txt
+?? _151_limit_player_teams_last5_report_20260628_181442.txt
+?? _152_restore_approved_market_chart_last5_report_20260628_181907.txt
+?? _153_rollback_152_restore_market_chart_report_20260628_182112.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -161,8 +154,16 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_144_top_ticker_real_dom_dividers/
 ?? _backup_145_top_ticker_divider_before_every_item/
 ?? _backup_146_full_upper_ticker_real_seam_divider/
+?? _backup_151_limit_player_teams_last5/
+?? _backup_152_restore_approved_market_chart_last5_20260628_181907/
+?? _backup_153_before_rollback_152_20260628_182112/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/scripts/150_full_safe_autosync_de_ligt_dynamic_value.py
+?? _chatgpt_state/latest/_latest_reports/_151_limit_player_teams_last5_report_20260628_181442.txt
+?? _chatgpt_state/latest/_latest_reports/_152_restore_approved_market_chart_last5_report_20260628_181907.txt
+?? _chatgpt_state/latest/_latest_reports/_153_rollback_152_restore_market_chart_report_20260628_182112.txt
+?? _chatgpt_state/latest/scripts/151_full_limit_player_teams_last5.py
+?? _chatgpt_state/latest/scripts/152_full_restore_approved_market_chart_last5.py
+?? _chatgpt_state/latest/scripts/153_full_rollback_152_restore_market_chart.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -185,6 +186,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? run_pixelcut_remove_backgrounds.bat
 ?? scripts/148_full_autosync_de_ligt_dynamic_value.py
 ?? scripts/150_full_safe_autosync_de_ligt_dynamic_value.py
+?? scripts/151_full_limit_player_teams_last5.py
+?? scripts/152_full_restore_approved_market_chart_last5.py
+?? scripts/153_full_rollback_152_restore_market_chart.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
