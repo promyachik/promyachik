@@ -3812,35 +3812,30 @@
 <style>
  
 
-body.transfer-page .pfb-stats-v182,
-body.transfer-page .pfb-stats-v182 *,
-body.transfer-page .transfer-stats--under-market-chart,
-body.transfer-page .transfer-stats--under-market-chart *,
-body.transfer-page .player-market-chart,
-body.transfer-page .player-market-chart *,
-body.transfer-page .transfer-sidebar,
-body.transfer-page .transfer-sidebar * {
-    overflow: visible !important;
+body.transfer-page .transfer-stats.pfb-stats-v183,
+body.transfer-page .transfer-stats.pfb-stats-v183 * {
     box-sizing: border-box !important;
+    overflow: visible !important;
 }
 
-body.transfer-page .pfb-stats-v182 {
+body.transfer-page .transfer-stats.pfb-stats-v183,
+body.transfer-page .transfer-stats.pfb-stats-v183.transfer-stats--under-market-chart {
+    display: block !important;
     width: 100% !important;
-    max-width: 370px !important;
+    max-width: 390px !important;
     margin: 26px auto 22px !important;
-    padding: 18px 10px 22px !important;
-    border: 1px solid rgba(255,255,255,0.07) !important;
-    border-radius: 18px !important;
+    padding: 20px 14px 22px !important;
     background:
-        radial-gradient(circle at 50% 30%, rgba(245, 199, 65, 0.08), transparent 42%),
-        linear-gradient(180deg, rgba(10,12,16,0.92), rgba(5,7,10,0.96)) !important;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.35) !important;
+        radial-gradient(circle at 50% 30%, rgba(245, 199, 65, 0.10), transparent 44%),
+        linear-gradient(180deg, rgba(13, 14, 16, 0.96), rgba(5, 6, 8, 0.98)) !important;
+    border: 1px solid rgba(245, 199, 65, 0.22) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.38) !important;
 }
 
-body.transfer-page .pfb-stats-v182__grid {
+body.transfer-page .pfb-stats-v183__grid {
     display: grid !important;
-    grid-template-columns: repeat(6, 52px) !important;
-    grid-auto-rows: auto !important;
+    grid-template-columns: repeat(6, 54px) !important;
     justify-content: center !important;
     align-items: center !important;
     gap: 16px 12px !important;
@@ -3849,131 +3844,127 @@ body.transfer-page .pfb-stats-v182__grid {
     padding: 0 !important;
 }
 
-body.transfer-page .pfb-stats-v182__card {
+body.transfer-page .pfb-stats-v183__card {
     position: relative !important;
-    z-index: 2 !important;
-    width: 104px !important;
+    width: 108px !important;
     height: 88px !important;
-    min-width: 104px !important;
+    min-width: 108px !important;
     min-height: 88px !important;
-    border: 1.5px solid rgba(245, 199, 65, 0.78) !important;
-    border-radius: 18px !important;
-    background:
-        radial-gradient(circle at 50% 35%, rgba(245, 199, 65, 0.13), transparent 42%),
-        linear-gradient(145deg, rgba(26,26,24,0.94), rgba(7,8,10,0.98)) !important;
-    box-shadow:
-        inset 0 0 22px rgba(245, 199, 65, 0.07),
-        0 12px 25px rgba(0,0,0,0.38) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+
+    background:
+        radial-gradient(circle at 50% 38%, rgba(245,199,65,0.15), transparent 45%),
+        linear-gradient(145deg, #1a1a18, #07080a) !important;
+
+    border: 1.5px solid rgba(245,199,65,0.82) !important;
+    border-radius: 18px !important;
+    box-shadow:
+        inset 0 0 22px rgba(245,199,65,0.08),
+        0 12px 26px rgba(0,0,0,0.42) !important;
+
     cursor: pointer !important;
     overflow: visible !important;
-    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease !important;
+    z-index: 2 !important;
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease !important;
 }
 
-body.transfer-page .pfb-stats-v182__card:hover,
-body.transfer-page .pfb-stats-v182__card:focus {
+body.transfer-page .pfb-stats-v183__card:hover {
     transform: translateY(-3px) !important;
-    border-color: rgba(255, 218, 83, 1) !important;
+    border-color: #f5c741 !important;
     box-shadow:
-        inset 0 0 28px rgba(245, 199, 65, 0.12),
-        0 0 22px rgba(245, 199, 65, 0.23),
-        0 18px 34px rgba(0,0,0,0.45) !important;
-    outline: none !important;
+        inset 0 0 26px rgba(245,199,65,0.14),
+        0 0 22px rgba(245,199,65,0.24),
+        0 18px 34px rgba(0,0,0,0.48) !important;
 }
 
-body.transfer-page .pfb-stats-v182__matches {
+body.transfer-page .pfb-stats-v183__matches {
     grid-column: 1 / span 2 !important;
     grid-row: 1 !important;
 }
 
-body.transfer-page .pfb-stats-v182__goals {
+body.transfer-page .pfb-stats-v183__goals {
     grid-column: 3 / span 2 !important;
     grid-row: 1 !important;
 }
 
-body.transfer-page .pfb-stats-v182__assists {
+body.transfer-page .pfb-stats-v183__assists {
     grid-column: 5 / span 2 !important;
     grid-row: 1 !important;
 }
 
-body.transfer-page .pfb-stats-v182__yellow {
+body.transfer-page .pfb-stats-v183__yellow {
     grid-column: 2 / span 2 !important;
     grid-row: 2 !important;
 }
 
-body.transfer-page .pfb-stats-v182__red {
+body.transfer-page .pfb-stats-v183__red {
     grid-column: 4 / span 2 !important;
     grid-row: 2 !important;
 }
 
-body.transfer-page .pfb-stats-v182__icon {
+body.transfer-page .pfb-stats-v183__icon {
+    width: 70px !important;
+    height: 70px !important;
     display: block !important;
-    width: 72px !important;
-    height: 72px !important;
-    pointer-events: none !important;
 }
 
-body.transfer-page .pfb-stats-v182__icon svg {
+body.transfer-page .pfb-stats-v183__goals .pfb-stats-v183__icon {
+    width: 78px !important;
+    height: 78px !important;
+}
+
+body.transfer-page .pfb-stats-v183__icon svg {
     width: 100% !important;
     height: 100% !important;
     display: block !important;
     overflow: visible !important;
-    filter: drop-shadow(0 0 7px rgba(245, 199, 65, 0.25)) !important;
+    filter: drop-shadow(0 0 8px rgba(245,199,65,0.30)) !important;
 }
 
-body.transfer-page .pfb-stats-v182__goals .pfb-stats-v182__icon {
-    width: 80px !important;
-    height: 80px !important;
-}
-
-body.transfer-page .pfb-stats-v182__tooltip {
+body.transfer-page .pfb-stats-v183__tip {
     position: absolute !important;
     left: 50% !important;
     bottom: calc(100% + 14px) !important;
     transform: translateX(-50%) translateY(8px) !important;
-    z-index: 99999 !important;
+    z-index: 999999 !important;
 
-    min-width: 150px !important;
-    padding: 12px 18px 13px !important;
+    min-width: 148px !important;
+    padding: 12px 16px 13px !important;
+    text-align: center !important;
 
-    border: 1.5px solid rgba(255, 218, 83, 0.95) !important;
-    border-radius: 12px !important;
     background:
-        radial-gradient(circle at 50% 0%, rgba(245,199,65,0.12), transparent 48%),
-        rgba(7, 8, 10, 0.98) !important;
-
+        radial-gradient(circle at 50% 0%, rgba(245,199,65,0.14), transparent 50%),
+        rgba(5,6,8,0.99) !important;
+    border: 1.5px solid rgba(245,199,65,0.95) !important;
+    border-radius: 13px !important;
     box-shadow:
         0 0 18px rgba(245,199,65,0.22),
-        0 15px 32px rgba(0,0,0,0.55) !important;
+        0 16px 32px rgba(0,0,0,0.58) !important;
 
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
-
-    text-align: center !important;
     white-space: nowrap !important;
     transition: opacity .16s ease, visibility .16s ease, transform .16s ease !important;
 }
 
-body.transfer-page .pfb-stats-v182__tooltip::after {
+body.transfer-page .pfb-stats-v183__tip::after {
     content: "" !important;
     position: absolute !important;
     left: 50% !important;
     top: 100% !important;
-    width: 18px !important;
-    height: 18px !important;
-    background: rgba(7, 8, 10, 0.98) !important;
-    border-right: 1.5px solid rgba(255, 218, 83, 0.95) !important;
-    border-bottom: 1.5px solid rgba(255, 218, 83, 0.95) !important;
-    transform: translate(-50%, -9px) rotate(45deg) !important;
+    width: 16px !important;
+    height: 16px !important;
+    background: rgba(5,6,8,0.99) !important;
+    border-right: 1.5px solid rgba(245,199,65,0.95) !important;
+    border-bottom: 1.5px solid rgba(245,199,65,0.95) !important;
+    transform: translate(-50%, -8px) rotate(45deg) !important;
 }
 
-body.transfer-page .pfb-stats-v182__tooltip b {
+body.transfer-page .pfb-stats-v183__tip b {
     display: block !important;
-    margin: 0 0 4px !important;
-    padding: 0 !important;
     color: #f5c741 !important;
     -webkit-text-fill-color: #f5c741 !important;
     font-family: Arial, sans-serif !important;
@@ -3983,29 +3974,26 @@ body.transfer-page .pfb-stats-v182__tooltip b {
     text-shadow: 0 0 14px rgba(245,199,65,0.34) !important;
 }
 
-body.transfer-page .pfb-stats-v182__tooltip span {
+body.transfer-page .pfb-stats-v183__tip span {
     display: block !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin-top: 5px !important;
     color: #f5c741 !important;
     -webkit-text-fill-color: #f5c741 !important;
     font-family: Arial, sans-serif !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     line-height: 1 !important;
     font-weight: 900 !important;
     letter-spacing: .04em !important;
     text-transform: uppercase !important;
 }
 
-body.transfer-page .pfb-stats-v182__card:hover .pfb-stats-v182__tooltip,
-body.transfer-page .pfb-stats-v182__card:focus .pfb-stats-v182__tooltip {
+body.transfer-page .pfb-stats-v183__card:hover .pfb-stats-v183__tip {
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateX(-50%) translateY(0) !important;
 }
 
- 
-body.transfer-page .pfb-stats-v182 .pfb-line {
+body.transfer-page .pfb-stats-v183 .gold-line {
     fill: none !important;
     stroke: #f5c741 !important;
     stroke-width: 5 !important;
@@ -4013,172 +4001,112 @@ body.transfer-page .pfb-stats-v182 .pfb-line {
     stroke-linejoin: round !important;
 }
 
-body.transfer-page .pfb-stats-v182 .pfb-fill-gold {
+body.transfer-page .pfb-stats-v183 .gold-fill {
     fill: #f5c741 !important;
 }
 
-body.transfer-page .pfb-stats-v182 .pfb-fill-dark {
-    fill: #111111 !important;
+body.transfer-page .pfb-stats-v183 .dark-fill {
+    fill: #111 !important;
 }
 
-body.transfer-page .pfb-stats-v182 .pfb-card-yellow {
-    fill: url(#pfbYellowGradV182) !important;
-    stroke: #f5c741 !important;
-    stroke-width: 4 !important;
-}
-
-body.transfer-page .pfb-stats-v182 .pfb-card-red {
-    fill: url(#pfbRedGradV182) !important;
-    stroke: #ff3d2e !important;
+body.transfer-page .pfb-stats-v183 .red-fill {
+    fill: #e42018 !important;
+    stroke: #ff4a34 !important;
     stroke-width: 4 !important;
 }
 
 @media (max-width: 640px) {
-    body.transfer-page .pfb-stats-v182 {
-        max-width: 330px !important;
-        padding: 16px 8px 20px !important;
+    body.transfer-page .transfer-stats.pfb-stats-v183,
+    body.transfer-page .transfer-stats.pfb-stats-v183.transfer-stats--under-market-chart {
+        max-width: 340px !important;
+        padding: 18px 10px 20px !important;
     }
 
-    body.transfer-page .pfb-stats-v182__grid {
-        grid-template-columns: repeat(6, 46px) !important;
-        gap: 14px 10px !important;
+    body.transfer-page .pfb-stats-v183__grid {
+        grid-template-columns: repeat(6, 47px) !important;
+        gap: 14px 9px !important;
     }
 
-    body.transfer-page .pfb-stats-v182__card {
-        width: 92px !important;
+    body.transfer-page .pfb-stats-v183__card {
+        width: 94px !important;
         height: 80px !important;
-        min-width: 92px !important;
+        min-width: 94px !important;
         min-height: 80px !important;
     }
 
-    body.transfer-page .pfb-stats-v182__icon {
-        width: 64px !important;
-        height: 64px !important;
-    }
-
-    body.transfer-page .pfb-stats-v182__goals .pfb-stats-v182__icon {
-        width: 70px !important;
-        height: 70px !important;
+    body.transfer-page .pfb-stats-v183__icon {
+        width: 62px !important;
+        height: 62px !important;
     }
 }
  
 </style>
 
-<section class="pfb-stats-v182" aria-label="Статистика игрока">
-    <div class="pfb-stats-v182__grid" role="list">
+<section class="transfer-stats pfb-stats-v183" aria-label="Статистика игрока">
+    <div class="pfb-stats-v183__grid">
 
-        <article class="pfb-stats-v182__card pfb-stats-v182__matches" role="listitem" tabindex="0" aria-label="Матчей: 22">
-            <span class="pfb-stats-v182__icon" aria-hidden="true">
-                <svg viewBox="0 0 160 110" focusable="false">
-                    <rect class="pfb-line" x="14" y="18" width="132" height="74" rx="5"/>
-                    <line class="pfb-line" x1="80" y1="18" x2="80" y2="92"/>
-                    <circle class="pfb-line" cx="80" cy="55" r="17"/>
-                    <circle class="pfb-fill-gold" cx="80" cy="55" r="3.5"/>
-                    <rect class="pfb-line" x="14" y="38" width="26" height="34"/>
-                    <rect class="pfb-line" x="14" y="46" width="12" height="18"/>
-                    <rect class="pfb-line" x="120" y="38" width="26" height="34"/>
-                    <rect class="pfb-line" x="134" y="46" width="12" height="18"/>
+        <article class="pfb-stats-v183__card pfb-stats-v183__matches">
+            <span class="pfb-stats-v183__icon" aria-hidden="true">
+                <svg viewBox="0 0 160 110">
+                    <rect class="gold-line" x="14" y="18" width="132" height="74" rx="5"/>
+                    <line class="gold-line" x1="80" y1="18" x2="80" y2="92"/>
+                    <circle class="gold-line" cx="80" cy="55" r="17"/>
+                    <circle class="gold-fill" cx="80" cy="55" r="4"/>
+                    <rect class="gold-line" x="14" y="38" width="26" height="34"/>
+                    <rect class="gold-line" x="120" y="38" width="26" height="34"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
-                <b>22</b>
-                <span>МАТЧА</span>
-            </span>
+            <span class="pfb-stats-v183__tip"><b>22</b><span>МАТЧА</span></span>
         </article>
 
-        <article class="pfb-stats-v182__card pfb-stats-v182__goals" role="listitem" tabindex="0" aria-label="Голов: 2">
-            <span class="pfb-stats-v182__icon" aria-hidden="true">
-                <svg viewBox="0 0 120 120" focusable="false">
-                    <defs>
-                        <radialGradient id="pfbBallGradV182" cx="38%" cy="25%" r="70%">
-                            <stop offset="0%" stop-color="#fff0a0"/>
-                            <stop offset="46%" stop-color="#f5c741"/>
-                            <stop offset="100%" stop-color="#9b7118"/>
-                        </radialGradient>
-                    </defs>
-                    <circle cx="60" cy="60" r="48" fill="url(#pfbBallGradV182)" stroke="#f5c741" stroke-width="4"/>
-                    <polygon class="pfb-fill-dark" points="60,30 76,42 70,62 50,62 44,42"/>
-                    <polygon class="pfb-fill-dark" points="25,50 39,57 38,76 22,80 15,63"/>
-                    <polygon class="pfb-fill-dark" points="95,50 105,63 98,80 82,76 81,57"/>
-                    <polygon class="pfb-fill-dark" points="43,88 58,78 75,88 70,104 50,104"/>
-                    <line class="pfb-line" x1="44" y1="42" x2="25" y2="50"/>
-                    <line class="pfb-line" x1="76" y1="42" x2="95" y2="50"/>
-                    <line class="pfb-line" x1="50" y1="62" x2="38" y2="76"/>
-                    <line class="pfb-line" x1="70" y1="62" x2="82" y2="76"/>
-                    <line class="pfb-line" x1="58" y1="78" x2="60" y2="62"/>
+        <article class="pfb-stats-v183__card pfb-stats-v183__goals">
+            <span class="pfb-stats-v183__icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="48" fill="#f5c741" stroke="#f5c741" stroke-width="4"/>
+                    <polygon class="dark-fill" points="60,30 76,42 70,62 50,62 44,42"/>
+                    <polygon class="dark-fill" points="25,50 39,57 38,76 22,80 15,63"/>
+                    <polygon class="dark-fill" points="95,50 105,63 98,80 82,76 81,57"/>
+                    <polygon class="dark-fill" points="43,88 58,78 75,88 70,104 50,104"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
-                <b>2</b>
-                <span>ГОЛА</span>
-            </span>
+            <span class="pfb-stats-v183__tip"><b>2</b><span>ГОЛА</span></span>
         </article>
 
-        <article class="pfb-stats-v182__card pfb-stats-v182__assists" role="listitem" tabindex="0" aria-label="Голевых передач: 1">
-            <span class="pfb-stats-v182__icon" aria-hidden="true">
-                <svg viewBox="0 0 150 105" focusable="false">
-                    <path class="pfb-line" d="M24 70 C43 58, 54 48, 66 30 C75 42, 90 50, 114 54 C121 55, 126 61, 125 68 C123 78, 111 82, 94 82 L35 82 C24 82, 18 78, 24 70 Z"/>
-                    <path class="pfb-line" d="M35 82 L29 94"/>
-                    <path class="pfb-line" d="M54 82 L49 94"/>
-                    <path class="pfb-line" d="M82 82 L77 94"/>
-                    <path class="pfb-line" d="M107 82 L102 94"/>
-                    <path class="pfb-line" d="M68 49 L86 39"/>
-                    <path class="pfb-line" d="M78 56 L98 46"/>
-                    <path class="pfb-line" d="M40 66 C57 67, 75 69, 112 69"/>
+        <article class="pfb-stats-v183__card pfb-stats-v183__assists">
+            <span class="pfb-stats-v183__icon" aria-hidden="true">
+                <svg viewBox="0 0 150 105">
+                    <path class="gold-line" d="M24 70 C43 58, 54 48, 66 30 C75 42, 90 50, 114 54 C122 56, 127 62, 125 69 C122 79, 111 82, 94 82 L35 82 C24 82, 18 78, 24 70 Z"/>
+                    <path class="gold-line" d="M35 82 L29 94"/>
+                    <path class="gold-line" d="M54 82 L49 94"/>
+                    <path class="gold-line" d="M82 82 L77 94"/>
+                    <path class="gold-line" d="M107 82 L102 94"/>
+                    <path class="gold-line" d="M68 49 L86 39"/>
+                    <path class="gold-line" d="M78 56 L98 46"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
-                <b>1</b>
-                <span>ПЕРЕДАЧА</span>
-            </span>
+            <span class="pfb-stats-v183__tip"><b>1</b><span>ПЕРЕДАЧА</span></span>
         </article>
 
-        <article class="pfb-stats-v182__card pfb-stats-v182__yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: 5">
-            <span class="pfb-stats-v182__icon" aria-hidden="true">
-                <svg viewBox="0 0 120 120" focusable="false">
-                    <defs>
-                        <linearGradient id="pfbYellowGradV182" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#ffe777"/>
-                            <stop offset="50%" stop-color="#f5c741"/>
-                            <stop offset="100%" stop-color="#a67812"/>
-                        </linearGradient>
-                    </defs>
-                    <rect class="pfb-card-yellow" x="34" y="15" width="50" height="74" rx="8"/>
-                    <path class="pfb-line" d="M30 96 C44 82, 60 86, 68 98"/>
-                    <path class="pfb-line" d="M62 99 C72 84, 91 84, 101 99"/>
-                    <path class="pfb-line" d="M26 84 C18 88, 19 101, 31 101"/>
-                    <path class="pfb-line" d="M84 80 L93 70"/>
-                    <path class="pfb-line" d="M94 88 L108 84"/>
+        <article class="pfb-stats-v183__card pfb-stats-v183__yellow">
+            <span class="pfb-stats-v183__icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120">
+                    <rect x="35" y="14" width="50" height="76" rx="8" fill="#f5c741" stroke="#f5c741" stroke-width="4"/>
+                    <path class="gold-line" d="M29 97 C43 82, 59 87, 68 99"/>
+                    <path class="gold-line" d="M62 99 C73 84, 91 85, 101 99"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
-                <b>5</b>
-                <span>ЖЁЛТЫХ</span>
-            </span>
+            <span class="pfb-stats-v183__tip"><b>5</b><span>ЖЁЛТЫХ</span></span>
         </article>
 
-        <article class="pfb-stats-v182__card pfb-stats-v182__red" role="listitem" tabindex="0" aria-label="Красных карточек: 0">
-            <span class="pfb-stats-v182__icon" aria-hidden="true">
-                <svg viewBox="0 0 120 120" focusable="false">
-                    <defs>
-                        <linearGradient id="pfbRedGradV182" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#ff7a5f"/>
-                            <stop offset="50%" stop-color="#e42018"/>
-                            <stop offset="100%" stop-color="#7d0c0b"/>
-                        </linearGradient>
-                    </defs>
-                    <rect class="pfb-card-red" x="34" y="15" width="50" height="74" rx="8"/>
-                    <path class="pfb-line" d="M30 96 C44 82, 60 86, 68 98"/>
-                    <path class="pfb-line" d="M62 99 C72 84, 91 84, 101 99"/>
-                    <path class="pfb-line" d="M26 84 C18 88, 19 101, 31 101"/>
-                    <path class="pfb-line" d="M84 80 L93 70"/>
-                    <path class="pfb-line" d="M94 88 L108 84"/>
+        <article class="pfb-stats-v183__card pfb-stats-v183__red">
+            <span class="pfb-stats-v183__icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120">
+                    <rect class="red-fill" x="35" y="14" width="50" height="76" rx="8"/>
+                    <path class="gold-line" d="M29 97 C43 82, 59 87, 68 99"/>
+                    <path class="gold-line" d="M62 99 C73 84, 91 85, 101 99"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
-                <b>0</b>
-                <span>КРАСНЫХ</span>
-            </span>
+            <span class="pfb-stats-v183__tip"><b>0</b><span>КРАСНЫХ</span></span>
         </article>
 
     </div>

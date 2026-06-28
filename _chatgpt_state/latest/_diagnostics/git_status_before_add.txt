@@ -7,7 +7,6 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
- M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
