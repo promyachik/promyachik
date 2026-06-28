@@ -3206,3 +3206,97 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--se
 }
 /* PROFUTBIK STATS TIGHT VALUE LABEL GAP V159 END */
 
+/* PROFUTBIK STATS GOLD LIKE BIRTHDATE V160 START */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head strong,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header strong {
+    color: #f5d56a !important;
+    -webkit-text-fill-color: #f5d56a !important;
+    background: none !important;
+    background-image: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    border-color: rgba(245, 213, 106, 0.22) !important;
+}
+/* PROFUTBIK STATS GOLD LIKE BIRTHDATE V160 END */
+
+/* PROFUTBIK STATS ICON LABELS V161 START */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    font-size: 0 !important;
+    line-height: 1 !important;
+    min-height: 16px !important;
+    margin-top: 1px !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    color: #f5d56a !important;
+    -webkit-text-fill-color: #f5d56a !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+/* Матчи */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before {
+    content: "◷";
+}
+
+/* Голы */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
+    content: "⚽";
+}
+
+/* Голевые передачи */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
+    content: "↗";
+}
+
+/* Минуты */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
+    content: "⏱";
+}
+
+/* Жёлтые карточки */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before {
+    content: "▰";
+}
+
+/* Красные карточки */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before {
+    content: "■";
+}
+
+/* Сезон */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before {
+    content: "◇";
+}
+/* PROFUTBIK STATS ICON LABELS V161 END */
+

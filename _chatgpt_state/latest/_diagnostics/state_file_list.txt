@@ -182,7 +182,7 @@ static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
 static\css\style.css	11768
-static\css\transfer-article.css	80319
+static\css\transfer-article.css	84682
 static\css\transfer-player-market-value-chart.css	10282
 static\css\transfer-ticker.css	6526
 static\header.css	15286
