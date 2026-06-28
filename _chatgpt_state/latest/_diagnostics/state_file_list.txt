@@ -83,6 +83,7 @@ layouts\partials\mbappe-player-market-value-chart.html	4711
 layouts\partials\mbappe-standalone-chart-runtime.html	13966
 layouts\partials\player-value-chart.html	12253
 layouts\partials\post-card.html	383
+layouts\partials\profutbik-market-chart-static.html	15825
 layouts\partials\transfer-player-market-value-chart.html	2710
 layouts\partials\transfer-player-stats.html	3200
 layouts\partials\transfer-player-value-history.html	5956
@@ -104,6 +105,7 @@ public\transfers\julian-alvarez-barcelona\index.html	232722
 public\transfers\kylian-mbappe-real-madrid\index.html	232107
 public\transfers\marc-cucurella-real-madrid\index.html	231485
 public\transfers\matthijs-de-ligt\index.html	237364
+scripts\148_full_autosync_de_ligt_dynamic_value.py	17457
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433
