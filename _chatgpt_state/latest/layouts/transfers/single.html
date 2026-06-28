@@ -898,6 +898,11 @@
 
                 {{ partial "transfer-player-market-value-chart.html" . }}
 
+
+                {{ if .Params.market_value_chart }}
+                    {{ partial "profutbik-market-chart-static.html" . }}
+                {{ end }}
+
             </section>
 
 </aside>

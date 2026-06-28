@@ -59,6 +59,14 @@
       "country": "Russia",
       "season": 2024,
       "teams_count": 18
+    },
+    "88": {
+      "id": 88,
+      "name": "Eredivisie",
+      "country": "Netherlands",
+      "season": 2024,
+      "teams_count": null,
+      "note": "Added for De Ligt history; full Eredivisie import should be loaded through API-Football later."
     }
   },
   "clubs": {
@@ -3161,6 +3169,21 @@
         "city": "Vila das Aves",
         "capacity": 8560
       }
+    },
+    "194": {
+      "id": 194,
+      "name": "Ajax",
+      "configured_name": "Ajax",
+      "code": "AJA",
+      "country": "Netherlands",
+      "league_id": 88,
+      "league": "Eredivisie",
+      "season": 2024,
+      "founded": 1900,
+      "national": false,
+      "logo": "images/clubs/api/194.png",
+      "api_logo": "https://media.api-sports.io/football/teams/194.png",
+      "youth_logo_rule": "Ajax Youth / Ajax U17 / Ajax U19 / Ajax U21 use the main Ajax logo; tooltip keeps the exact youth team name."
     }
   }
 }

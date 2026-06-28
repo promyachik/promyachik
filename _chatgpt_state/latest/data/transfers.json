@@ -25,7 +25,7 @@
     "status": "official",
     "status_label": "ОФИЦИАЛЬНО",
     "badge": "ОФИЦИАЛЬНО",
-    "fee": "€45 млн + €5 млн бонусами",
+    "fee": "€45.00m",
     "date": "2024-08-13",
     "display_date": "13.08.2024",
     "source_name": "Manchester United",
@@ -34,7 +34,11 @@
     "show_in_footer_ticker": true,
     "show_in_bottom_ticker": true,
     "show_in_ticker": true,
-    "ticker": true
+    "ticker": true,
+    "market_value": "€30m",
+    "market_value_updated": "2026-06-03",
+    "market_value_source_name": "Transfermarkt",
+    "market_value_source_url": "https://www.transfermarkt.com/matthijs-de-ligt/marktwertverlauf/spieler/326031"
   },
   {
     "status": "official",
