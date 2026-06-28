@@ -1,0 +1,15 @@
+DONE_164_FULL_FIX_YELLOW_RED_STATS_ICONS
+root=C:\Users\Dmitrii\Promyachik
+css=static\css\transfer-article.css
+css_block=added
+icons_copied:
+- static\images\stats-icons\matches.png
+- static\images\stats-icons\goals.png
+- static\images\stats-icons\assists.png
+- static\images\stats-icons\minutes.png
+- static\images\stats-icons\yellow_cards.png
+- static\images\stats-icons\red_cards.png
+- static\images\stats-icons\season.png
+fix:
+- yellow_cards and red_cards get robust class + nth-of-type selectors
+- no layout/partial/market chart changes
