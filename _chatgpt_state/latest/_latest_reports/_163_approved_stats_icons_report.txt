@@ -1,0 +1,20 @@
+DONE_163_FULL_APPROVED_STATS_ICONS
+root=C:\Users\Dmitrii\Promyachik
+css=static\css\transfer-article.css
+css_block=added
+icons:
+- static\images\stats-icons\matches.png
+- static\images\stats-icons\goals.png
+- static\images\stats-icons\assists.png
+- static\images\stats-icons\minutes.png
+- static\images\stats-icons\yellow_cards.png
+- static\images\stats-icons\red_cards.png
+- static\images\stats-icons\season.png
+mapping:
+- matches = option 1
+- goals = option 3
+- assists = option 2
+- minutes = option 1
+- yellow cards = option 3
+- red cards = option 3
+- season = option 2

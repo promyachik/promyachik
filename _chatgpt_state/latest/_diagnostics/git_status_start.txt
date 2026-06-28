@@ -59,6 +59,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 151_FULL_LIMIT_PLAYER_TEAMS_LAST5.bat
 ?? 152_FULL_RESTORE_APPROVED_MARKET_CHART_LAST5.bat
 ?? 153_FULL_ROLLBACK_152_RESTORE_MARKET_CHART.bat
+?? 163_FULL_APPROVED_STATS_ICONS.bat
 ?? 20260627_222213_PROFUTBIK_PROGRESS_2026-06-27.md
 ?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -69,6 +70,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? R==PUSH_STATE_TO_GITHUB.bat
 ?? README.txt
 ?? README_148.txt
+?? README_163.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -115,6 +117,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _151_limit_player_teams_last5_report_20260628_181442.txt
 ?? _152_restore_approved_market_chart_last5_report_20260628_181907.txt
 ?? _153_rollback_152_restore_market_chart_report_20260628_182112.txt
+?? _163_approved_stats_icons_report.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
@@ -160,7 +163,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_151_limit_player_teams_last5/
 ?? _backup_152_restore_approved_market_chart_last5_20260628_181907/
 ?? _backup_153_before_rollback_152_20260628_182112/
+?? _backup_163_approved_stats_icons/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/_latest_reports/_163_approved_stats_icons_report.txt
+?? _chatgpt_state/latest/scripts/163_integrate_approved_stats_icons.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -186,6 +192,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/151_full_limit_player_teams_last5.py
 ?? scripts/152_full_restore_approved_market_chart_last5.py
 ?? scripts/153_full_rollback_152_restore_market_chart.py
+?? scripts/163_integrate_approved_stats_icons.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

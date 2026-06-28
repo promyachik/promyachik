@@ -3373,3 +3373,90 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--se
 }
 /* PROFUTBIK STATS FONTAWESOME ICONS V162 END */
 
+/* PROFUTBIK APPROVED STATS ICONS V163 START */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    font-size: 0 !important;
+    line-height: 1 !important;
+    min-height: 18px !important;
+    height: 18px !important;
+    margin-top: 2px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
+    content: "" !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px !important;
+    min-height: 22px !important;
+    font-family: inherit !important;
+    font-size: 0 !important;
+    line-height: 1 !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+/* Матчи = утверждена иконка №1 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--matches small::before {
+    background-image: url("../images/stats-icons/matches.png") !important;
+}
+
+/* Голы = утверждена иконка №3 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--goals small::before {
+    background-image: url("../images/stats-icons/goals.png") !important;
+}
+
+/* Голевые передачи = утверждена иконка №2 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--assists small::before {
+    background-image: url("../images/stats-icons/assists.png") !important;
+}
+
+/* Минуты = утверждена иконка №1 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--minutes small::before {
+    background-image: url("../images/stats-icons/minutes.png") !important;
+}
+
+/* Жёлтые карточки = утверждена иконка №3 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow-cards small::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--yellow_cards small::before {
+    background-image: url("../images/stats-icons/yellow_cards.png") !important;
+}
+
+/* Красные карточки = утверждена иконка №3 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red-cards small::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--red_cards small::before {
+    background-image: url("../images/stats-icons/red_cards.png") !important;
+}
+
+/* Сезон = утверждена иконка №2 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season small::before {
+    width: 21px !important;
+    height: 21px !important;
+    min-width: 21px !important;
+    min-height: 21px !important;
+    background-image: url("../images/stats-icons/season.png") !important;
+}
+/* PROFUTBIK APPROVED STATS ICONS V163 END */
+
