@@ -176,10 +176,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_171_fix_goals_icon_source/
 ?? _backup_172_restore_approved_goals_icon/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_171_fix_goals_icon_source_report.txt
-?? _chatgpt_state/latest/_latest_reports/_172_restore_approved_goals_icon_report.txt
-?? _chatgpt_state/latest/scripts/171_fix_goals_icon_source.py
-?? _chatgpt_state/latest/scripts/172_restore_approved_goals_icon.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

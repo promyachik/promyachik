@@ -4039,3 +4039,107 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth
 }
 /* PROFUTBIK STATS 3_PLUS_2_GRID V176 END */
 
+/* PROFUTBIK STATS ICON_ONLY TOOLTIP V177 START */
+
+/* Оставляем в статистике только иконки, значения прячем */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+    display: none !important;
+}
+
+/* Карточка нужна как точка привязки для всплывающей подсказки */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    position: relative !important;
+    cursor: help !important;
+}
+
+/* У карточек с иконками убираем текст подписи, но оставляем саму иконку */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(1) span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(1) small,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) small,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(5) span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(5) small,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(6) span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(6) small {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    min-height: 64px !important;
+    height: 64px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+}
+
+/* Подсказка при наведении */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]::after {
+    content: attr(data-profutbik-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 12px);
+    transform: translateX(-50%) translateY(4px);
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    padding: 8px 12px;
+    border: 1px solid rgba(245, 213, 106, 0.55);
+    border-radius: 10px;
+
+    background: rgba(7, 7, 7, 0.96);
+    color: #f5d56a;
+    -webkit-text-fill-color: #f5d56a;
+
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+}
+
+/* Маленький треугольник под подсказкой */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 5px);
+    transform: translateX(-50%) translateY(4px);
+    z-index: 9999;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgba(245, 213, 106, 0.75);
+
+    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]:hover::after,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card[data-profutbik-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Минуты и сезон всё ещё полностью скрыты */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4),
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(7) {
+    display: none !important;
+}
+
+/* PROFUTBIK STATS ICON_ONLY TOOLTIP V177 END */
+
