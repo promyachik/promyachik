@@ -10,6 +10,7 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
+ M _chatgpt_state/latest/_diagnostics/state_file_list.txt
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -65,6 +66,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 180_APPROVED_STATS_EXACT_BLOCK.bat
 ?? 181_EXACT_SCREEN_STATS_BLOCK.bat
 ?? 184_APPROVED_SCREENSHOT_STATS_BLOCK.bat
+?? 185_FIX_MATCHES_FIELD_ICON_FULL.bat
+?? 186_RESTORE_APPROVED_GOALS_ICON.bat
 ?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
 ?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -84,6 +87,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_180.txt
 ?? README_181.txt
 ?? README_184.txt
+?? README_185.txt
+?? README_186.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -138,6 +143,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _180_approved_stats_exact_block_report.txt
 ?? _181_exact_screen_stats_block_report.txt
 ?? _184_approved_screenshot_stats_block_report.txt
+?? _185_fix_matches_field_icon_report.txt
+?? _186_restore_approved_goals_icon_report.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
@@ -191,7 +198,13 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_180_approved_stats_exact_block/
 ?? _backup_181_exact_screen_stats_block/
 ?? _backup_184_approved_screenshot_stats_block/
+?? _backup_185_fix_matches_field_icon/
+?? _backup_186_restore_approved_goals_icon/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/_latest_reports/_185_fix_matches_field_icon_report.txt
+?? _chatgpt_state/latest/_latest_reports/_186_restore_approved_goals_icon_report.txt
+?? _chatgpt_state/latest/scripts/185_fix_matches_field_icon.py
+?? _chatgpt_state/latest/scripts/186_restore_approved_goals_icon.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -226,6 +239,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/180_approved_stats_exact_block.py
 ?? scripts/181_exact_screen_stats_block.py
 ?? scripts/184_approved_screenshot_stats_block.py
+?? scripts/185_fix_matches_field_icon.py
+?? scripts/186_restore_approved_goals_icon.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

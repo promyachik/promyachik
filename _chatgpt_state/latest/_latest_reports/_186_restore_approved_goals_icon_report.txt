@@ -1,0 +1,3 @@
+186_RESTORE_APPROVED_GOALS_ICON
+Changed only: static/images/stats-icons-v184/goals.png
+Purpose: restore the previously approved goals icon in the stats block.

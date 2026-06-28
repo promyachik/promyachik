@@ -16,11 +16,11 @@ hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2
  Aliases          │    1 
  Cleaned          │    0 
 
-Total in 1747 ms
+Total in 1912 ms
 
 
 --- STDERR ---
 WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
 WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
-WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
 WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.

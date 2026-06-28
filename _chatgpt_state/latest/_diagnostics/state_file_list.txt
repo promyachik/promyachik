@@ -54,6 +54,8 @@ _latest_reports\_178_stats_approved_card_block_report.txt	364
 _latest_reports\_180_approved_stats_exact_block_report.txt	331
 _latest_reports\_181_exact_screen_stats_block_report.txt	409
 _latest_reports\_184_approved_screenshot_stats_block_report.txt	163
+_latest_reports\_185_fix_matches_field_icon_report.txt	187
+_latest_reports\_186_restore_approved_goals_icon_report.txt	162
 _latest_reports\_SEND_TO_CHATGPT_MARKET_SOURCE.txt	77532
 _latest_reports\_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt	28448
 _latest_reports\_SEND_TO_CHATGPT_STATS_BLOCK.txt	7796
@@ -135,6 +137,8 @@ scripts\179_fix_stats_card_block.py	20403
 scripts\180_approved_stats_exact_block.py	28326
 scripts\181_exact_screen_stats_block.py	21014
 scripts\184_approved_screenshot_stats_block.py	11710
+scripts\185_fix_matches_field_icon.py	948
+scripts\186_restore_approved_goals_icon.py	923
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433

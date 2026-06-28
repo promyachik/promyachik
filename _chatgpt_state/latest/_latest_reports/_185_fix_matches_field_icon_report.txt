@@ -1,0 +1,3 @@
+185_FIX_MATCHES_FIELD_ICON_FULL
+Changed only: static/images/stats-icons-v184/matches.png
+Purpose: replace cropped match icon with a complete football pitch icon on transparent canvas.
