@@ -1,0 +1,532 @@
+content/transfers/bernardo-silva-real-madrid/index.md:11:player: "Bernardo Silva"
+content/transfers/denzel-dumfries-real-madrid/index.md:11:player: "Denzel Dumfries"
+content/transfers/goncalo-ramos-ac-milan/index.md:57:value_history:
+content/transfers/marc-cucurella-real-madrid/index.md:11:player: "Marc Cucurella"
+data/player-market-values.json:157:        "Marc Cucurella",
+data/player-market-values.json:213:        "Denzel Dumfries",
+data/player-market-values.json:382:        "Bernardo Silva",
+data/playerdb/players.json:51691:      "name": "Marc Cucurella",
+data/playerdb/players.json:56721:      "name": "Bernardo Silva",
+data/transfers-api-preview.json:14315:          "name": "Bernardo Silva"
+data/transfers-api-preview.json:80899:          "name": "Marc Cucurella"
+data/transfers-api-preview.json:125235:          "name": "Marc Cucurella"
+data/transfers-api-preview.json:290000:          "name": "Bernardo Silva"
+data/transfers-api-preview.json:371296:          "name": "Bernardo Silva"
+data/transfers.json:61:    "player": "Marc Cucurella",
+data/transfers.json:67:    "url": "transfers/marc-cucurella-real-madrid/",
+data/transfers.json:77:    "player": "Denzel Dumfries",
+data/transfers.json:83:    "url": "transfers/denzel-dumfries-real-madrid/",
+data/transfers.json:197:    "player": "Bernardo Silva",
+data/transfers.json:203:    "url": "transfers/bernardo-silva-real-madrid/",
+layouts/index.html:9:{{ $bernardoURL := "transfers/bernardo-silva-real-madrid/" | relURL }}
+layouts/index.html:15:{{ $bernardoHero := "images/homepage/featured/bernardo-silva-real-madrid-hero.png" | relURL }}
+layouts/index.html:55:                    <button class="pf-featured-dot" type="button" data-featured-index="2" aria-label="Bernardo Silva — Real Madrid">
+layouts/index.html:187:                name: "Bernardo Silva",
+layouts/index.html:190:                alt: "Bernardo Silva — трансфер Real Madrid"
+layouts/partials/mbappe-player-market-value-chart.html:2:    class="player-market-chart"
+layouts/partials/mbappe-player-market-value-chart.html:6:    <header class="player-market-chart__header">
+layouts/partials/mbappe-player-market-value-chart.html:8:            <span class="player-market-chart__eyebrow">
+layouts/partials/mbappe-player-market-value-chart.html:12:            <strong class="player-market-chart__current">
+layouts/partials/mbappe-player-market-value-chart.html:18:            class="player-market-chart__source"
+layouts/partials/mbappe-player-market-value-chart.html:27:    <div class="player-market-chart__canvas">
+layouts/partials/mbappe-player-market-value-chart.html:56:                class="player-market-chart__grid"
+layouts/partials/mbappe-player-market-value-chart.html:63:                class="player-market-chart__grid"
+layouts/partials/mbappe-player-market-value-chart.html:70:                class="player-market-chart__grid"
+layouts/partials/mbappe-player-market-value-chart.html:78:                class="player-market-chart__area"
+layouts/partials/mbappe-player-market-value-chart.html:84:                class="player-market-chart__line"
+layouts/partials/mbappe-player-market-value-chart.html:89:                class="player-market-chart__dot"
+layouts/partials/mbappe-player-market-value-chart.html:98:                class="player-market-chart__dot"
+layouts/partials/mbappe-player-market-value-chart.html:107:                class="player-market-chart__dot"
+layouts/partials/mbappe-player-market-value-chart.html:116:                class="player-market-chart__dot"
+layouts/partials/mbappe-player-market-value-chart.html:127:        class="player-market-chart__points"
+layouts/partials/mbappe-player-market-value-chart.html:130:        <span class="player-market-chart__point">
+layouts/partials/mbappe-player-market-value-chart.html:135:        <span class="player-market-chart__point">
+layouts/partials/mbappe-player-market-value-chart.html:140:        <span class="player-market-chart__point">
+layouts/partials/mbappe-player-market-value-chart.html:145:        <span class="player-market-chart__point">
+layouts/partials/mbappe-player-market-value-chart.html:151:    <p class="player-market-chart__note">
+layouts/partials/mbappe-standalone-chart-runtime.html:15:    body.pf-mbappe-standalone .player-market-chart {
+layouts/partials/mbappe-standalone-chart-runtime.html:30:    body.pf-mbappe-standalone .player-market-chart__header {
+layouts/partials/mbappe-standalone-chart-runtime.html:38:    body.pf-mbappe-standalone .player-market-chart__header > div {
+layouts/partials/mbappe-standalone-chart-runtime.html:43:    body.pf-mbappe-standalone .player-market-chart__eyebrow {
+layouts/partials/mbappe-standalone-chart-runtime.html:51:    body.pf-mbappe-standalone .player-market-chart__current {
+layouts/partials/mbappe-standalone-chart-runtime.html:58:    body.pf-mbappe-standalone .player-market-chart__source {
+layouts/partials/mbappe-standalone-chart-runtime.html:72:    body.pf-mbappe-standalone .player-market-chart__canvas {
+layouts/partials/mbappe-standalone-chart-runtime.html:87:    body.pf-mbappe-standalone .player-market-chart__canvas svg {
+layouts/partials/mbappe-standalone-chart-runtime.html:93:    body.pf-mbappe-standalone .player-market-chart__grid {
+layouts/partials/mbappe-standalone-chart-runtime.html:100:    body.pf-mbappe-standalone .player-market-chart__line {
+layouts/partials/mbappe-standalone-chart-runtime.html:109:    body.pf-mbappe-standalone .player-market-chart__dot {
+layouts/partials/mbappe-standalone-chart-runtime.html:116:    body.pf-mbappe-standalone .player-market-chart__points {
+layouts/partials/mbappe-standalone-chart-runtime.html:127:    body.pf-mbappe-standalone .player-market-chart__point {
+layouts/partials/mbappe-standalone-chart-runtime.html:134:    body.pf-mbappe-standalone .player-market-chart__point small {
+layouts/partials/mbappe-standalone-chart-runtime.html:141:    body.pf-mbappe-standalone .player-market-chart__point strong {
+layouts/partials/mbappe-standalone-chart-runtime.html:148:    body.pf-mbappe-standalone .player-market-chart__note {
+layouts/partials/mbappe-standalone-chart-runtime.html:215:            "player-market-chart "
+layouts/partials/mbappe-standalone-chart-runtime.html:216:            + "player-market-chart--mbappe-runtime";
+layouts/partials/mbappe-standalone-chart-runtime.html:227:            <header class="player-market-chart__header">
+layouts/partials/mbappe-standalone-chart-runtime.html:229:                    <span class="player-market-chart__eyebrow">
+layouts/partials/mbappe-standalone-chart-runtime.html:233:                    <strong class="player-market-chart__current">
+layouts/partials/mbappe-standalone-chart-runtime.html:239:                    class="player-market-chart__source"
+layouts/partials/mbappe-standalone-chart-runtime.html:248:            <div class="player-market-chart__canvas">
+layouts/partials/mbappe-standalone-chart-runtime.html:278:                        class="player-market-chart__grid"
+layouts/partials/mbappe-standalone-chart-runtime.html:286:                        class="player-market-chart__grid"
+layouts/partials/mbappe-standalone-chart-runtime.html:294:                        class="player-market-chart__grid"
+layouts/partials/mbappe-standalone-chart-runtime.html:307:                        class="player-market-chart__line"
+layouts/partials/mbappe-standalone-chart-runtime.html:312:                        class="player-market-chart__dot"
+layouts/partials/mbappe-standalone-chart-runtime.html:321:                        class="player-market-chart__dot"
+layouts/partials/mbappe-standalone-chart-runtime.html:330:                        class="player-market-chart__dot"
+layouts/partials/mbappe-standalone-chart-runtime.html:339:                        class="player-market-chart__dot"
+layouts/partials/mbappe-standalone-chart-runtime.html:350:                class="player-market-chart__points"
+layouts/partials/mbappe-standalone-chart-runtime.html:353:                <span class="player-market-chart__point">
+layouts/partials/mbappe-standalone-chart-runtime.html:358:                <span class="player-market-chart__point">
+layouts/partials/mbappe-standalone-chart-runtime.html:363:                <span class="player-market-chart__point">
+layouts/partials/mbappe-standalone-chart-runtime.html:368:                <span class="player-market-chart__point">
+layouts/partials/mbappe-standalone-chart-runtime.html:374:            <p class="player-market-chart__note">
+layouts/partials/mbappe-standalone-chart-runtime.html:408:            '.player-market-chart'
+layouts/partials/mbappe-standalone-chart-runtime.html:422:                ".player-market-chart"
+layouts/partials/profutbik-market-chart-static.html:25:    class="player-market-chart player-market-chart--manual"
+layouts/partials/profutbik-market-chart-static.html:29:        body.transfer-page .player-market-chart--manual {
+layouts/partials/profutbik-market-chart-static.html:45:        body.transfer-page .player-market-chart--manual * {
+layouts/partials/profutbik-market-chart-static.html:49:        body.transfer-page .player-market-chart--manual .player-market-chart__head {
+layouts/partials/profutbik-market-chart-static.html:57:        body.transfer-page .player-market-chart--manual .player-market-chart__eyebrow {
+layouts/partials/profutbik-market-chart-static.html:67:        body.transfer-page .player-market-chart--manual h2 {
+layouts/partials/profutbik-market-chart-static.html:75:        body.transfer-page .player-market-chart--manual .player-market-chart__subtitle {
+layouts/partials/profutbik-market-chart-static.html:84:        body.transfer-page .player-market-chart--manual .player-market-chart__current {
+layouts/partials/profutbik-market-chart-static.html:94:        body.transfer-page .player-market-chart--manual .player-market-chart__current span {
+layouts/partials/profutbik-market-chart-static.html:104:        body.transfer-page .player-market-chart--manual .player-market-chart__current strong {
+layouts/partials/profutbik-market-chart-static.html:112:        body.transfer-page .player-market-chart--manual .player-market-chart__scroll {
+layouts/partials/profutbik-market-chart-static.html:119:        body.transfer-page .player-market-chart--manual .player-market-chart__canvas {
+layouts/partials/profutbik-market-chart-static.html:125:        body.transfer-page .player-market-chart--manual svg {
+layouts/partials/profutbik-market-chart-static.html:134:        body.transfer-page .player-market-chart--manual .player-market-chart__grid {
+layouts/partials/profutbik-market-chart-static.html:139:        body.transfer-page .player-market-chart--manual .player-market-chart__line {
+layouts/partials/profutbik-market-chart-static.html:148:        body.transfer-page .player-market-chart--manual .player-market-chart__point {
+layouts/partials/profutbik-market-chart-static.html:154:        body.transfer-page .player-market-chart--manual .player-market-chart__ghost-point {
+layouts/partials/profutbik-market-chart-static.html:161:        body.transfer-page .player-market-chart--manual .player-market-chart__logo-node {
+layouts/partials/profutbik-market-chart-static.html:175:        body.transfer-page .player-market-chart--manual .player-market-chart__logo-node img {
+layouts/partials/profutbik-market-chart-static.html:182:        body.transfer-page .player-market-chart--manual .player-market-chart__fallback-letter {
+layouts/partials/profutbik-market-chart-static.html:190:        body.transfer-page .player-market-chart--manual .player-market-chart__logo-node.is-fallback .player-market-chart__fallback-letter,
+layouts/partials/profutbik-market-chart-static.html:191:        body.transfer-page .player-market-chart--manual .player-market-chart__fallback-letter.is-visible {
+layouts/partials/profutbik-market-chart-static.html:195:        body.transfer-page .player-market-chart--manual .player-market-chart__logo-node::after {
+layouts/partials/profutbik-market-chart-static.html:218:        body.transfer-page .player-market-chart--manual .player-market-chart__logo-node:hover::after,
+layouts/partials/profutbik-market-chart-static.html:219:        body.transfer-page .player-market-chart--manual .player-market-chart__logo-node:focus-visible::after {
+layouts/partials/profutbik-market-chart-static.html:224:        body.transfer-page .player-market-chart--manual .player-market-chart__x-label,
+layouts/partials/profutbik-market-chart-static.html:225:        body.transfer-page .player-market-chart--manual .player-market-chart__value-label {
+layouts/partials/profutbik-market-chart-static.html:232:        body.transfer-page .player-market-chart--manual .player-market-chart__value-label {
+layouts/partials/profutbik-market-chart-static.html:238:        body.transfer-page .player-market-chart--manual .player-market-chart__x-label {
+layouts/partials/profutbik-market-chart-static.html:244:        body.transfer-page .player-market-chart--manual .player-market-chart__club-label {
+layouts/partials/profutbik-market-chart-static.html:255:        body.transfer-page .player-market-chart--manual .player-market-chart__note {
+layouts/partials/profutbik-market-chart-static.html:263:        body.transfer-page .player-market-chart--manual .player-market-chart__source {
+layouts/partials/profutbik-market-chart-static.html:269:        body.transfer-page .player-market-chart--manual .player-market-chart__source:hover {
+layouts/partials/profutbik-market-chart-static.html:274:            body.transfer-page .player-market-chart--manual {
+layouts/partials/profutbik-market-chart-static.html:279:            body.transfer-page .player-market-chart--manual .player-market-chart__head {
+layouts/partials/profutbik-market-chart-static.html:284:            body.transfer-page .player-market-chart--manual .player-market-chart__current {
+layouts/partials/profutbik-market-chart-static.html:291:    <header class="player-market-chart__head">
+layouts/partials/profutbik-market-chart-static.html:293:            <span class="player-market-chart__eyebrow">
+layouts/partials/profutbik-market-chart-static.html:300:                <p class="player-market-chart__subtitle">{{ . }}</p>
+layouts/partials/profutbik-market-chart-static.html:305:            <div class="player-market-chart__current">
+layouts/partials/profutbik-market-chart-static.html:312:    <div class="player-market-chart__scroll" tabindex="0" aria-label="Прокрутка графика стоимости">
+layouts/partials/profutbik-market-chart-static.html:313:        <div class="player-market-chart__canvas">
+layouts/partials/profutbik-market-chart-static.html:315:                <line class="player-market-chart__grid" x1="48" y1="60" x2="932" y2="60" />
+layouts/partials/profutbik-market-chart-static.html:316:                <line class="player-market-chart__grid" x1="48" y1="143" x2="932" y2="143" />
+layouts/partials/profutbik-market-chart-static.html:317:                <line class="player-market-chart__grid" x1="48" y1="226" x2="932" y2="226" />
+layouts/partials/profutbik-market-chart-static.html:318:                <line class="player-market-chart__grid" x1="48" y1="310" x2="932" y2="310" />
+layouts/partials/profutbik-market-chart-static.html:333:                <path class="player-market-chart__line" d="{{ $path }}" />
+layouts/partials/profutbik-market-chart-static.html:341:                        class="{{ if eq $value 0.0 }}player-market-chart__ghost-point{{ else }}player-market-chart__point{{ end }}"
+layouts/partials/profutbik-market-chart-static.html:362:                    class="player-market-chart__logo-node{{ if not $logo }} is-fallback{{ end }}"
+layouts/partials/profutbik-market-chart-static.html:375:                        <span class="player-market-chart__fallback-letter">{{ $fallback }}</span>
+layouts/partials/profutbik-market-chart-static.html:377:                        <span class="player-market-chart__fallback-letter is-visible">{{ $fallback }}</span>
+layouts/partials/profutbik-market-chart-static.html:382:                    class="player-market-chart__value-label"
+layouts/partials/profutbik-market-chart-static.html:389:                    class="player-market-chart__x-label"
+layouts/partials/profutbik-market-chart-static.html:392:                    <span class="player-market-chart__club-label">{{ $club }}</span>
+layouts/partials/profutbik-market-chart-static.html:399:    <p class="player-market-chart__note">
+layouts/partials/profutbik-market-chart-static.html:402:            <a class="player-market-chart__source" href="{{ . }}" target="_blank" rel="nofollow noopener">
+layouts/partials/profutbik-market-chart-static.html:489:      '.player-market-chart',
+layouts/partials/profutbik-market-chart-static.html:495:      '[data-player-market-chart]',
+layouts/partials/profutbik-market-chart-static.html:501:      '.player-market-chart-clubs',
+layouts/partials/transfer-player-market-value-chart.html:4:    class="player-market-chart player-market-chart--inside-card player-market-chart--zoomable"
+layouts/partials/transfer-player-market-value-chart.html:10:        <div class="player-market-chart__heading player-market-chart__heading--value-only">
+layouts/partials/transfer-player-market-value-chart.html:15:    <div class="player-market-chart__canvas">
+layouts/partials/transfer-player-market-value-chart.html:17:            <path class="player-market-chart__grid" d="M20 26 H300 M20 54 H300 M20 82 H300 M20 110 H300" />
+layouts/partials/transfer-player-market-value-chart.html:19:                <path class="player-market-chart__area" d="{{ . }}" />
+layouts/partials/transfer-player-market-value-chart.html:21:            <path class="player-market-chart__line" d="{{ $chart.path }}" />
+layouts/partials/transfer-player-market-value-chart.html:23:                <circle class="player-market-chart__dot" cx="{{ .x }}" cy="{{ .y }}" r="3.4" />
+layouts/partials/transfer-player-market-value-chart.html:27:        <div class="player-market-chart__club-layer" aria-hidden="true">
+layouts/partials/transfer-player-market-value-chart.html:31:                        class="player-market-chart__club-marker{{ if $point.is_last }} player-market-chart__club-marker--last{{ end }}"
+layouts/partials/transfer-player-market-value-chart.html:36:                            class="player-market-chart__club-logo"
+layouts/partials/transfer-player-market-value-chart.html:47:    <div class="player-market-chart__points">
+layouts/partials/transfer-player-market-value-chart.html:49:            <div class="player-market-chart__point">
+layouts/partials/transfer-player-market-value-chart.html:56:    <p class="player-market-chart__note">
+layouts/partials/transfer-player-value-history.html:1:{{- $history := .Params.value_history -}}
+layouts/shortcodes/mbappe-market-chart.html:2:    class="player-market-chart player-market-chart--mbappe-content"
+layouts/shortcodes/mbappe-market-chart.html:7:        .player-market-chart--mbappe-content {
+layouts/shortcodes/mbappe-market-chart.html:32:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:33:        .player-market-chart__header {
+layouts/shortcodes/mbappe-market-chart.html:41:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:42:        .player-market-chart__header > div {
+layouts/shortcodes/mbappe-market-chart.html:47:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:48:        .player-market-chart__eyebrow {
+layouts/shortcodes/mbappe-market-chart.html:56:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:57:        .player-market-chart__current {
+layouts/shortcodes/mbappe-market-chart.html:64:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:65:        .player-market-chart__source {
+layouts/shortcodes/mbappe-market-chart.html:79:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:80:        .player-market-chart__canvas {
+layouts/shortcodes/mbappe-market-chart.html:95:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:96:        .player-market-chart__canvas svg {
+layouts/shortcodes/mbappe-market-chart.html:102:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:103:        .player-market-chart__grid {
+layouts/shortcodes/mbappe-market-chart.html:110:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:111:        .player-market-chart__line {
+layouts/shortcodes/mbappe-market-chart.html:124:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:125:        .player-market-chart__dot {
+layouts/shortcodes/mbappe-market-chart.html:132:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:133:        .player-market-chart__points {
+layouts/shortcodes/mbappe-market-chart.html:144:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:145:        .player-market-chart__point {
+layouts/shortcodes/mbappe-market-chart.html:152:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:153:        .player-market-chart__point small {
+layouts/shortcodes/mbappe-market-chart.html:160:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:161:        .player-market-chart__point strong {
+layouts/shortcodes/mbappe-market-chart.html:168:        .player-market-chart--mbappe-content
+layouts/shortcodes/mbappe-market-chart.html:169:        .player-market-chart__note {
+layouts/shortcodes/mbappe-market-chart.html:178:    <header class="player-market-chart__header">
+layouts/shortcodes/mbappe-market-chart.html:180:            <span class="player-market-chart__eyebrow">
+layouts/shortcodes/mbappe-market-chart.html:184:            <strong class="player-market-chart__current">
+layouts/shortcodes/mbappe-market-chart.html:190:            class="player-market-chart__source"
+layouts/shortcodes/mbappe-market-chart.html:199:    <div class="player-market-chart__canvas">
+layouts/shortcodes/mbappe-market-chart.html:229:                class="player-market-chart__grid"
+layouts/shortcodes/mbappe-market-chart.html:237:                class="player-market-chart__grid"
+layouts/shortcodes/mbappe-market-chart.html:245:                class="player-market-chart__grid"
+layouts/shortcodes/mbappe-market-chart.html:258:                class="player-market-chart__line"
+layouts/shortcodes/mbappe-market-chart.html:263:                class="player-market-chart__dot"
+layouts/shortcodes/mbappe-market-chart.html:272:                class="player-market-chart__dot"
+layouts/shortcodes/mbappe-market-chart.html:281:                class="player-market-chart__dot"
+layouts/shortcodes/mbappe-market-chart.html:290:                class="player-market-chart__dot"
+layouts/shortcodes/mbappe-market-chart.html:301:        class="player-market-chart__points"
+layouts/shortcodes/mbappe-market-chart.html:304:        <span class="player-market-chart__point">
+layouts/shortcodes/mbappe-market-chart.html:309:        <span class="player-market-chart__point">
+layouts/shortcodes/mbappe-market-chart.html:314:        <span class="player-market-chart__point">
+layouts/shortcodes/mbappe-market-chart.html:319:        <span class="player-market-chart__point">
+layouts/shortcodes/mbappe-market-chart.html:325:    <p class="player-market-chart__note">
+static/css/player-brief-standalone-addon.css:17:body.player-profile-page .player-brief--standalone .player-market-chart {
+static/css/transfer-player-market-value-chart.css:14:body.transfer-page .player-market-chart {
+static/css/transfer-player-market-value-chart.css:29:body.transfer-page .player-market-chart__canvas {
+static/css/transfer-player-market-value-chart.css:45:body.transfer-page .player-market-chart__canvas svg {
+static/css/transfer-player-market-value-chart.css:53:body.transfer-page .player-market-chart__grid {
+static/css/transfer-player-market-value-chart.css:60:body.transfer-page .player-market-chart__area {
+static/css/transfer-player-market-value-chart.css:64:body.transfer-page .player-market-chart__line {
+static/css/transfer-player-market-value-chart.css:74:body.transfer-page .player-market-chart__dot {
+static/css/transfer-player-market-value-chart.css:81:body.transfer-page .player-market-chart__club-layer {
+static/css/transfer-player-market-value-chart.css:88:body.transfer-page .player-market-chart__club-marker {
+static/css/transfer-player-market-value-chart.css:101:body.transfer-page .player-market-chart__club-logo {
+static/css/transfer-player-market-value-chart.css:113:body.transfer-page .player-market-chart__points {
+static/css/transfer-player-market-value-chart.css:121:body.transfer-page .player-market-chart__point {
+static/css/transfer-player-market-value-chart.css:128:body.transfer-page .player-market-chart__point small {
+static/css/transfer-player-market-value-chart.css:138:body.transfer-page .player-market-chart__point strong {
+static/css/transfer-player-market-value-chart.css:146:body.transfer-page .player-market-chart__note {
+static/css/transfer-player-market-value-chart.css:182:    body.transfer-page .player-market-chart__canvas {
+static/css/transfer-player-market-value-chart.css:186:    body.transfer-page .player-market-chart__club-marker {
+static/css/transfer-player-market-value-chart.css:192:    body.transfer-page .player-market-chart__points {
+static/css/transfer-player-market-value-chart.css:204:body.transfer-page .player-market-chart--zoomable {
+static/css/transfer-player-market-value-chart.css:211:body.transfer-page .player-market-chart--zoomable:hover,
+static/css/transfer-player-market-value-chart.css:212:body.transfer-page .player-market-chart--zoomable:focus-visible {
+static/css/transfer-player-market-value-chart.css:217:.player-market-chart-modal[hidden] {
+static/css/transfer-player-market-value-chart.css:221:.player-market-chart-modal {
+static/css/transfer-player-market-value-chart.css:230:.player-market-chart-modal__backdrop {
+static/css/transfer-player-market-value-chart.css:238:.player-market-chart-modal__dialog {
+static/css/transfer-player-market-value-chart.css:252:.player-market-chart-modal__close {
+static/css/transfer-player-market-value-chart.css:271:.player-market-chart-modal__content {
+static/css/transfer-player-market-value-chart.css:275:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:276:.player-market-chart--enlarged {
+static/css/transfer-player-market-value-chart.css:284:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:285:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:286:.player-market-chart__canvas {
+static/css/transfer-player-market-value-chart.css:291:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:292:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:293:.player-market-chart__club-marker {
+static/css/transfer-player-market-value-chart.css:300:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:301:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:302:.player-market-chart__point small {
+static/css/transfer-player-market-value-chart.css:306:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:307:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:308:.player-market-chart__point strong {
+static/css/transfer-player-market-value-chart.css:312:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:313:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:314:.player-market-chart__note {
+static/css/transfer-player-market-value-chart.css:319:body.player-market-chart-modal-open {
+static/css/transfer-player-market-value-chart.css:324:    .player-market-chart-modal {
+static/css/transfer-player-market-value-chart.css:328:    .player-market-chart-modal__dialog {
+static/css/transfer-player-market-value-chart.css:334:    .player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:335:    .player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:336:    .player-market-chart__canvas {
+static/css/transfer-player-market-value-chart.css:341:    .player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:342:    .player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:343:    .player-market-chart__club-marker {
+static/css/transfer-player-market-value-chart.css:351:.player-market-chart__club-marker[data-club-slug="real-madrid"]
+static/css/transfer-player-market-value-chart.css:352:.player-market-chart__club-logo {
+static/css/transfer-player-market-value-chart.css:369:.player-brief__list + .player-market-chart,
+static/css/transfer-player-market-value-chart.css:371:.player-brief dl + .player-market-chart {
+static/css/transfer-player-market-value-chart.css:378:.player-brief__list + .player-market-chart
+static/css/transfer-player-market-value-chart.css:379:.player-market-chart__canvas,
+static/css/transfer-player-market-value-chart.css:381:.player-brief dl + .player-market-chart
+static/css/transfer-player-market-value-chart.css:382:.player-market-chart__canvas {
+static/css/transfer-player-market-value-chart.css:393:.player-market-chart {
+static/css/transfer-player-market-value-chart.css:405:.player-market-chart__point small {
+static/css/transfer-player-market-value-chart.css:414:.player-market-chart__point strong {
+static/css/transfer-player-market-value-chart.css:429:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:430:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:431:.player-market-chart__point strong {
+static/css/transfer-player-market-value-chart.css:442:.player-market-chart__area {
+static/css/transfer-player-market-value-chart.css:447:.player-market-chart__club-marker--last {
+static/css/transfer-player-market-value-chart.css:455:.player-market-chart-modal
+static/css/transfer-player-market-value-chart.css:456:.player-market-chart--enlarged
+static/css/transfer-player-market-value-chart.css:457:.player-market-chart__club-marker--last {
+static/js/transfer-player-market-value-chart.js:7:    const PLAYERS = [{"key":"mbappe","name":"Килиан Мбаппе","paths":["/transfers/kylian-mbappe-real-madrid/"],"points":[{"label":"2017","value_label":"€35 млн","value":35,"club":{"slug":"monaco","name":"AS Monaco","short":"ASM","api_id":91,"period":"2015–2017"}},{"label":"2018","value_label":"€120 млн","value":120,"club":{"slug":"psg","name":"Paris Saint-Germain","short":"PSG","api_id":85,"period":"2017–2024"}},{"label":"2025","value_label":"€200 млн","value":200,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2024"}},{"label":"2026","value_label":"€180 млн","value":180,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2024"}}]},{"key":"wirtz","name":"Флориан Вирц","paths":["/transfers/florian-wirtz-liverpool/"],"points":[{"label":"2023","value_label":"€100 млн","value":100,"club":{"slug":"bayer-leverkusen","name":"Bayer Leverkusen","short":"B04","api_id":168,"period":"2020–2025"}},{"label":"июнь 2025","value_label":"€140 млн","value":140,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"с 2025"}},{"label":"дек. 2025","value_label":"€110 млн","value":110,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"с 2025"}},{"label":"2026","value_label":"€100 млн","value":100,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"с 2025"}}]},{"key":"konate","name":"Ибраима Конате","paths":["/transfers/ibrahima-konate-real-madrid/"],"points":[{"label":"2017","value_label":"€300 тыс.","value":0.3,"club":{"slug":"rb-leipzig","name":"RB Leipzig","short":"RBL","api_id":173,"period":"2017–2021"}},{"label":"2021","value_label":"€35 млн","value":35,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"2021–2026"}},{"label":"2025","value_label":"€60 млн","value":60,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"2021–2026"}},{"label":"2026","value_label":"€45 млн","value":45,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2026"}}]},{"key":"cucurella","name":"Марк Кукурелья","paths":["/transfers/marc-cucurella-real-madrid/"],"points":[{"label":"2018","value_label":"€5 млн","value":5,"club":{"slug":"barcelona","name":"Barcelona","short":"FCB","api_id":529,"period":"до 2019"}},{"label":"2019","value_label":"€10 млн","value":10,"club":{"slug":"getafe","name":"Getafe","short":"GET","api_id":546,"period":"2019–2021"}},{"label":"2020","value_label":"€18 млн","value":18,"club":{"slug":"getafe","name":"Getafe","short":"GET","api_id":546,"period":"2019–2021"}},{"label":"2021","value_label":"€20 млн","value":20,"club":{"slug":"brighton","name":"Brighton & Hove Albion","short":"BHA","api_id":51,"period":"2021–2022"}},{"label":"2026","value_label":"€50 млн","value":50,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2026"}}]},{"key":"dumfries","name":"Дензел Дюмфрис","paths":["/transfers/denzel-dumfries-real-madrid/"],"points":[{"label":"2015","value_label":"€50 тыс.","value":0.05,"club":{"slug":"sparta-rotterdam","name":"Sparta Rotterdam","short":"SPA","api_id":null,"period":"2014–2017"}},{"label":"2017","value_label":"€1 млн","value":1,"club":{"slug":"heerenveen","name":"SC Heerenveen","short":"HEE","api_id":null,"period":"2017–2018"}},{"label":"2018","value_label":"€4 млн","value":4,"club":{"slug":"psv","name":"PSV Eindhoven","short":"PSV","api_id":197,"period":"2018–2021"}},{"label":"2021","value_label":"€16 млн","value":16,"club":{"slug":"inter","name":"Inter","short":"INT","api_id":505,"period":"с 2021"}},{"label":"2025","value_label":"€35 млн","value":35,"club":{"slug":"inter","name":"Inter","short":"INT","api_id":505,"period":"с 2021"}},{"label":"2026","value_label":"€25 млн","value":25,"club":{"slug":"inter","name":"Inter","short":"INT","api_id":505,"period":"с 2021"}}]},{"key":"alvarez","name":"Хулиан Альварес","paths":["/transfers/julian-alvarez-barcelona/"],"points":[{"label":"янв. 2022","value_label":"€20 млн","value":20,"club":{"slug":"river-plate","name":"River Plate","short":"CARP","api_id":null,"period":"2018–2022"}},{"label":"июль 2022","value_label":"€23 млн","value":23,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2022–2024"}},{"label":"2023","value_label":"€90 млн","value":90,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2022–2024"}},{"label":"май 2026","value_label":"€90 млн","value":90,"club":{"slug":"atletico-madrid","name":"Atlético Madrid","short":"ATM","api_id":530,"period":"с 2024"}},{"label":"июнь 2026","value_label":"€100 млн","value":100,"club":{"slug":"atletico-madrid","name":"Atlético Madrid","short":"ATM","api_id":530,"period":"с 2024"}}]},{"key":"anderson","name":"Эллиот Андерсон","paths":["/transfers/elliot-anderson-manchester-city/"],"points":[{"label":"2022","value_label":"€200 тыс.","value":0.2,"club":{"slug":"newcastle","name":"Newcastle United","short":"NEW","api_id":34,"period":"2021–2024"}},{"label":"2024","value_label":"€15 млн","value":15,"club":{"slug":"nottingham-forest","name":"Nottingham Forest","short":"NFO","api_id":65,"period":"с 2024"}},{"label":"2025","value_label":"€60 млн","value":60,"club":{"slug":"nottingham-forest","name":"Nottingham Forest","short":"NFO","api_id":65,"period":"с 2024"}},{"label":"2026","value_label":"€75 млн","value":75,"club":{"slug":"nottingham-forest","name":"Nottingham Forest","short":"NFO","api_id":65,"period":"с 2024"}}]},{"key":"bernardo","name":"Бернарду Силва","paths":["/transfers/bernardo-silva-real-madrid/"],"points":[{"label":"2014","value_label":"€2,5 млн","value":2.5,"club":{"slug":"monaco","name":"AS Monaco","short":"ASM","api_id":91,"period":"2014–2017"}},{"label":"2015","value_label":"€3,5 млн","value":3.5,"club":{"slug":"monaco","name":"AS Monaco","short":"ASM","api_id":91,"period":"2014–2017"}},{"label":"2017","value_label":"€40 млн","value":40,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2017–2026"}},{"label":"2019","value_label":"€100 млн","value":100,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2017–2026"}},{"label":"апр. 2026","value_label":"€27 млн","value":27,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2017–2026"}},{"label":"июнь 2026","value_label":"€22 млн","value":22,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2026"}}]}];
+static/js/transfer-player-market-value-chart.js:242:            ".player-market-chart-modal"
+static/js/transfer-player-market-value-chart.js:250:        modal.className = "player-market-chart-modal";
+static/js/transfer-player-market-value-chart.js:255:                class="player-market-chart-modal__backdrop"
+static/js/transfer-player-market-value-chart.js:260:                class="player-market-chart-modal__dialog"
+static/js/transfer-player-market-value-chart.js:266:                    class="player-market-chart-modal__close"
+static/js/transfer-player-market-value-chart.js:275:                    class="player-market-chart-modal__content"
+static/js/transfer-player-market-value-chart.js:286:                    ".player-market-chart-modal__content"
+static/js/transfer-player-market-value-chart.js:291:                "player-market-chart-modal-open"
+static/js/transfer-player-market-value-chart.js:320:            ".player-market-chart-modal__content"
+static/js/transfer-player-market-value-chart.js:326:            "player-market-chart--enlarged"
+static/js/transfer-player-market-value-chart.js:337:            "player-market-chart-modal-open"
+static/js/transfer-player-market-value-chart.js:342:                ".player-market-chart-modal__close"
+static/js/transfer-player-market-value-chart.js:422:        section.className = "player-market-chart";
+static/js/transfer-player-market-value-chart.js:434:                    class="player-market-chart__dot"
+static/js/transfer-player-market-value-chart.js:449:            <span class="player-market-chart__point">
+static/js/transfer-player-market-value-chart.js:458:            <div class="player-market-chart__canvas">
+static/js/transfer-player-market-value-chart.js:488:                    <line class="player-market-chart__grid" x1="18" y1="52" x2="302" y2="52"></line>
+static/js/transfer-player-market-value-chart.js:489:                    <line class="player-market-chart__grid" x1="18" y1="86" x2="302" y2="86"></line>
+static/js/transfer-player-market-value-chart.js:490:                    <line class="player-market-chart__grid" x1="18" y1="122" x2="302" y2="122"></line>
+static/js/transfer-player-market-value-chart.js:493:                        class="player-market-chart__area"
+static/js/transfer-player-market-value-chart.js:499:                        class="player-market-chart__line"
+static/js/transfer-player-market-value-chart.js:506:                <div class="player-market-chart__club-layer"></div>
+static/js/transfer-player-market-value-chart.js:510:                class="player-market-chart__points"
+static/js/transfer-player-market-value-chart.js:516:            <p class="player-market-chart__note">
+static/js/transfer-player-market-value-chart.js:522:        const layer = section.querySelector(".player-market-chart__club-layer");
+static/js/transfer-player-market-value-chart.js:530:                "player-market-chart__club-marker";
+static/js/transfer-player-market-value-chart.js:534:                    "player-market-chart__club-marker--last"
+static/js/transfer-player-market-value-chart.js:552:                "player-market-chart__club-logo";
+static/js/transfer-player-market-value-chart.js:572:            "player-market-chart--zoomable"
+static/js/transfer-player-market-value-chart.js:586:                    "player-market-chart--enlarged"
+static/js/transfer-player-market-value-chart.js:617:        document.querySelectorAll(".player-market-chart")
+scripts/148_full_autosync_de_ligt_dynamic_value.py:358:def clean_wrong_value_history(body: str) -> str:
+scripts/148_full_autosync_de_ligt_dynamic_value.py:378:    for key in ("market_value_chart", "transfer_value_history", "value_history"):
+scripts/148_full_autosync_de_ligt_dynamic_value.py:385:    body = clean_wrong_value_history(body or DEFAULT_PAGE_BODY)
+scripts/150_full_safe_autosync_de_ligt_dynamic_value.py:358:def clean_wrong_value_history(body: str) -> str:
+scripts/150_full_safe_autosync_de_ligt_dynamic_value.py:378:    for key in ("market_value_chart", "transfer_value_history", "value_history"):
+scripts/150_full_safe_autosync_de_ligt_dynamic_value.py:385:    body = clean_wrong_value_history(body or DEFAULT_PAGE_BODY)
+scripts/151_full_limit_player_teams_last5.py:98:      '.player-market-chart',
+scripts/151_full_limit_player_teams_last5.py:104:      '[data-player-market-chart]',
+scripts/151_full_limit_player_teams_last5.py:110:      '.player-market-chart-clubs',
+scripts/152_full_restore_approved_market_chart_last5.py:199:                if "player-market-chart--manual" in source_text and "148" not in str(root):
+scripts/boost_real_madrid_chart_logo.py:29:                "player-market-chart__club-marker";
+scripts/boost_real_madrid_chart_logo.py:33:                "player-market-chart__club-marker";
+scripts/boost_real_madrid_chart_logo.py:63:.player-market-chart__club-marker[data-club-slug="real-madrid"]
+scripts/boost_real_madrid_chart_logo.py:64:.player-market-chart__club-logo {
+scripts/build_current_transfer_batch.py:109:        player="Marc Cucurella",
+scripts/build_current_transfer_batch.py:110:        aliases=["Marc Cucurella", "M. Cucurella"],
+scripts/build_current_transfer_batch.py:112:        slug="marc-cucurella-real-madrid",
+scripts/build_current_transfer_batch.py:157:        player="Denzel Dumfries",
+scripts/build_current_transfer_batch.py:158:        aliases=["Denzel Dumfries", "D. Dumfries"],
+scripts/build_current_transfer_batch.py:160:        slug="denzel-dumfries-real-madrid",
+scripts/build_current_transfer_batch.py:299:        player="Bernardo Silva",
+scripts/build_current_transfer_batch.py:300:        aliases=["Bernardo Silva", "B. Silva"],
+scripts/build_current_transfer_batch.py:302:        slug="bernardo-silva-real-madrid",
+scripts/center_last_logo_hide_area.py:28:CSS_BLOCK = '\n/* PROFUTBIK CHART CLEAN LOOK V41 START */\n\n/* Remove the yellow filled trail under the line */\n.player-market-chart__area {\n    display: none;\n}\n\n/* Center the final club logo exactly above the final point */\nbody.transfer-page\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            -50%,\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n.player-market-chart-modal\n.player-market-chart--enlarged\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            -50%,\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n/* PROFUTBIK CHART CLEAN LOOK V41 END */\n'
+scripts/center_last_logo_hide_area.py:45:        "player-market-chart__club-marker--last",
+scripts/center_last_logo_hide_area.py:98:        "player-market-chart__club-marker--last",
+scripts/center_last_logo_hide_area.py:117:        ".player-market-chart__area",
+scripts/collect_mbappe_chart_diagnostic.py:173:            "has_market_chart_html": "player-market-chart" in html,
+scripts/equalize_visible_chart_logos.py:136:    normal_marker = """body.transfer-page .player-market-chart__club-marker {
+scripts/equalize_visible_chart_logos.py:149:    logo = """body.transfer-page .player-market-chart__club-logo {
+scripts/equalize_visible_chart_logos.py:161:    enlarged = """.player-market-chart-modal
+scripts/equalize_visible_chart_logos.py:162:.player-market-chart--enlarged
+scripts/equalize_visible_chart_logos.py:163:.player-market-chart__club-marker {
+scripts/equalize_visible_chart_logos.py:172:        "body.transfer-page .player-market-chart__club-marker",
+scripts/equalize_visible_chart_logos.py:178:        "body.transfer-page .player-market-chart__club-logo",
+scripts/equalize_visible_chart_logos.py:184:        ".player-market-chart-modal\n.player-market-chart--enlarged\n.player-market-chart__club-marker",
+scripts/fade_area_and_space_euro.py:23:AREA_PATH = '                    <path\n                        class="player-market-chart__area"\n                        fill="url(#pf-market-gradient-${escapeHTML(player.key)})"\n                        d="${escapeHTML(chart.area)}"\n                    ></path>\n'
+scripts/fade_area_and_space_euro.py:24:MASKED_AREA_PATH = '                    <path\n                        class="player-market-chart__area"\n                        fill="url(#pf-market-gradient-${escapeHTML(player.key)})"\n                        mask="url(#pf-market-mask-${escapeHTML(player.key)})"\n                        d="${escapeHTML(chart.area)}"\n                    ></path>\n'
+scripts/fill_six_transfer_pages.ps1:81:        Slug = 'marc-cucurella-real-madrid'
+scripts/fill_six_transfer_pages.ps1:148:        Slug = 'denzel-dumfries-real-madrid'
+scripts/fill_six_transfer_pages.ps1:359:        Slug = 'bernardo-silva-real-madrid'
+scripts/fix_transfer_pages_and_bottom_ticker.ps1:13:    "marc-cucurella-real-madrid",
+scripts/fix_transfer_pages_and_bottom_ticker.ps1:14:    "denzel-dumfries-real-madrid",
+scripts/fix_transfer_pages_and_bottom_ticker.ps1:17:    "bernardo-silva-real-madrid"
+scripts/force_visible_transfer_market_charts.py:86:            "Marc Cucurella",
+scripts/force_visible_transfer_market_charts.py:95:            "Denzel Dumfries",
+scripts/force_visible_transfer_market_charts.py:123:            "Bernardo Silva",
+scripts/force_visible_transfer_market_charts.py:407:            'class="player-market-chart"' in html
+scripts/install_chart_zoom_and_hide_empty_stats.py:78:        "player-market-chart-modal",
+scripts/install_chart_zoom_and_hide_empty_stats.py:79:        "player-market-chart__club-marker",
+scripts/install_chart_zoom_and_hide_empty_stats.py:85:        "player-market-chart__club-button",
+scripts/install_chart_zoom_and_hide_empty_stats.py:90:        ".player-market-chart-modal",
+scripts/install_chart_zoom_and_hide_empty_stats.py:91:        ".player-market-chart__club-marker",
+scripts/install_chart_zoom_and_hide_empty_stats.py:92:        ".player-market-chart--enlarged",
+scripts/install_chart_zoom_and_hide_empty_stats.py:97:        ".player-market-chart__club-button",
+scripts/install_club_timeline_modal_stats.py:66:    "slug": "marc-cucurella-real-madrid",
+scripts/install_club_timeline_modal_stats.py:68:      "Marc Cucurella",
+scripts/install_club_timeline_modal_stats.py:77:    "slug": "denzel-dumfries-real-madrid",
+scripts/install_club_timeline_modal_stats.py:79:      "Denzel Dumfries",
+scripts/install_club_timeline_modal_stats.py:111:    "slug": "bernardo-silva-real-madrid",
+scripts/install_club_timeline_modal_stats.py:113:      "Bernardo Silva",
+scripts/install_club_timeline_modal_stats.py:711:            "player-market-chart__club-button",
+scripts/install_club_timeline_modal_stats.py:719:            "player-market-chart__current",
+scripts/install_club_timeline_modal_stats.py:720:            "player-market-chart__source",
+scripts/install_club_timeline_modal_stats.py:849:        if "player-market-chart__source" in source_js:
+scripts/install_full_chart_zoom_fix.py:55:        "player-market-chart-modal",
+scripts/install_full_chart_zoom_fix.py:56:        "player-market-chart__club-marker",
+scripts/install_full_chart_zoom_fix.py:62:        "player-market-chart__club-button",
+scripts/install_full_chart_zoom_fix.py:67:        ".player-market-chart-modal",
+scripts/install_full_chart_zoom_fix.py:68:        ".player-market-chart__club-marker",
+scripts/install_full_chart_zoom_fix.py:69:        ".player-market-chart--enlarged",
+scripts/install_full_chart_zoom_fix.py:74:        ".player-market-chart__club-button",
+scripts/install_mbappe_content_shortcode.py:254:                "player-market-chart--mbappe-content",
+scripts/install_mbappe_content_shortcode_v2.py:255:                "player-market-chart--mbappe-content",
+scripts/install_mbappe_direct_player_chart.py:185:            "player-market-chart__canvas",
+scripts/install_mbappe_header_runtime.py:150:                "player-market-chart--mbappe-runtime",
+scripts/install_transfer_market_value_charts.py:50:    ("marc-cucurella-real-madrid", "50 млн евро"),
+scripts/install_transfer_market_value_charts.py:51:    ("denzel-dumfries-real-madrid", "25 млн евро"),
+scripts/install_transfer_market_value_charts.py:54:    ("bernardo-silva-real-madrid", "22 млн евро"),
+scripts/install_transfer_market_value_charts.py:236:        if 'class="player-market-chart"' not in html:
+scripts/install_transfer_market_value_charts_v2.py:86:            "Marc Cucurella",
+scripts/install_transfer_market_value_charts_v2.py:95:            "Denzel Dumfries",
+scripts/install_transfer_market_value_charts_v2.py:123:            "Bernardo Silva",
+scripts/install_transfer_market_value_charts_v2.py:446:    if 'class="player-market-chart"' not in html:
+scripts/install_transfer_market_value_charts_v3.py:86:            "Marc Cucurella",
+scripts/install_transfer_market_value_charts_v3.py:95:            "Denzel Dumfries",
+scripts/install_transfer_market_value_charts_v3.py:123:            "Bernardo Silva",
+scripts/install_transfer_market_value_charts_v3.py:407:            'class="player-market-chart"' in html
+scripts/keep_last_chart_logo_inside.py:26:CLASS_LINE_MULTILINE = '            marker.className =\n                "player-market-chart__club-marker";\n'
+scripts/keep_last_chart_logo_inside.py:27:CLASS_REPLACEMENT = '            marker.className =\n                "player-market-chart__club-marker";\n\n            if (index === player.points.length - 1) {\n                marker.classList.add(\n                    "player-market-chart__club-marker--last"\n                );\n            }\n'
+scripts/keep_last_chart_logo_inside.py:28:CSS_BLOCK = '\n/* PROFUTBIK LAST CHART LOGO INSET V39 START */\n\nbody.transfer-page\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            calc(-50% - 14px),\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n.player-market-chart-modal\n.player-market-chart--enlarged\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            calc(-50% - 24px),\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n/* PROFUTBIK LAST CHART LOGO INSET V39 END */\n'
+scripts/keep_last_chart_logo_inside.py:47:    if "player-market-chart__club-marker--last" in text:
+scripts/keep_last_chart_logo_inside.py:59:        '"player-market-chart__club-marker";'
+scripts/keep_last_chart_logo_inside.py:94:        "player-market-chart__club-marker--last",
+scripts/normalize_market_chart_logos.py:60:    old_marker = '''body.transfer-page .player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:71:    new_marker = '''body.transfer-page .player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:83:    old_logo = '''body.transfer-page .player-market-chart__club-logo {
+scripts/normalize_market_chart_logos.py:90:    new_logo = '''body.transfer-page .player-market-chart__club-logo {
+scripts/normalize_market_chart_logos.py:102:    old_enlarged = '''.player-market-chart-modal
+scripts/normalize_market_chart_logos.py:103:.player-market-chart--enlarged
+scripts/normalize_market_chart_logos.py:104:.player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:109:    new_enlarged = '''.player-market-chart-modal
+scripts/normalize_market_chart_logos.py:110:.player-market-chart--enlarged
+scripts/normalize_market_chart_logos.py:111:.player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:117:    old_mobile = '''    body.transfer-page .player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:122:    new_mobile = '''    body.transfer-page .player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:128:    old_mobile_enlarged = '''    .player-market-chart-modal
+scripts/normalize_market_chart_logos.py:129:    .player-market-chart--enlarged
+scripts/normalize_market_chart_logos.py:130:    .player-market-chart__club-marker {
+scripts/normalize_market_chart_logos.py:135:    new_mobile_enlarged = '''    .player-market-chart-modal
+scripts/normalize_market_chart_logos.py:136:    .player-market-chart--enlarged
+scripts/normalize_market_chart_logos.py:137:    .player-market-chart__club-marker {
+scripts/profutbik_clone_transfer_page_structure.py:30:    value_ok = any(has_key(front, k) for k in ["value_history","market_value_history","dynamic_value","price_points","market_history"])
+scripts/profutbik_clone_transfer_page_structure.py:44:        value_ok = any(has_key(front, k) for k in ["value_history","market_value_history","dynamic_value","price_points","market_history"])
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:11:body.transfer-page .player-market-chart {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:26:body.transfer-page .player-market-chart__canvas {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:42:body.transfer-page .player-market-chart__canvas svg {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:50:body.transfer-page .player-market-chart__grid {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:57:body.transfer-page .player-market-chart__area {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:61:body.transfer-page .player-market-chart__line {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:71:body.transfer-page .player-market-chart__dot {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:78:body.transfer-page .player-market-chart__club-layer {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:85:body.transfer-page .player-market-chart__club-marker {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:96:body.transfer-page .player-market-chart__club-logo {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:103:body.transfer-page .player-market-chart__points {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:111:body.transfer-page .player-market-chart__point {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:118:body.transfer-page .player-market-chart__point small {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:128:body.transfer-page .player-market-chart__point strong {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:136:body.transfer-page .player-market-chart__note {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:172:    body.transfer-page .player-market-chart__canvas {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:176:    body.transfer-page .player-market-chart__club-marker {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:181:    body.transfer-page .player-market-chart__points {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:193:body.transfer-page .player-market-chart--zoomable {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:200:body.transfer-page .player-market-chart--zoomable:hover,
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:201:body.transfer-page .player-market-chart--zoomable:focus-visible {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:206:.player-market-chart-modal[hidden] {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:210:.player-market-chart-modal {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:219:.player-market-chart-modal__backdrop {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:227:.player-market-chart-modal__dialog {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:241:.player-market-chart-modal__close {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:260:.player-market-chart-modal__content {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:264:.player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:265:.player-market-chart--enlarged {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:273:.player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:274:.player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:275:.player-market-chart__canvas {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:280:.player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:281:.player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:282:.player-market-chart__club-marker {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:287:.player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:288:.player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:289:.player-market-chart__point small {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:293:.player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:294:.player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:295:.player-market-chart__point strong {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:299:.player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:300:.player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:301:.player-market-chart__note {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:306:body.player-market-chart-modal-open {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:311:    .player-market-chart-modal {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:315:    .player-market-chart-modal__dialog {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:321:    .player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:322:    .player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:323:    .player-market-chart__canvas {
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:328:    .player-market-chart-modal
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:329:    .player-market-chart--enlarged
+scripts/profutbik_enhancement_payload/static/css/transfer-player-market-value-chart.css:330:    .player-market-chart__club-marker {
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:7:    const PLAYERS = [{"key":"mbappe","name":"Килиан Мбаппе","paths":["/transfers/kylian-mbappe-real-madrid/"],"points":[{"label":"2017","value_label":"€35 млн","value":35,"club":{"slug":"monaco","name":"AS Monaco","short":"ASM","api_id":91,"period":"2015–2017"}},{"label":"2018","value_label":"€120 млн","value":120,"club":{"slug":"psg","name":"Paris Saint-Germain","short":"PSG","api_id":85,"period":"2017–2024"}},{"label":"2025","value_label":"€200 млн","value":200,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2024"}},{"label":"2026","value_label":"€180 млн","value":180,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2024"}}]},{"key":"wirtz","name":"Флориан Вирц","paths":["/transfers/florian-wirtz-liverpool/"],"points":[{"label":"2023","value_label":"€100 млн","value":100,"club":{"slug":"bayer-leverkusen","name":"Bayer Leverkusen","short":"B04","api_id":168,"period":"2020–2025"}},{"label":"июнь 2025","value_label":"€140 млн","value":140,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"с 2025"}},{"label":"дек. 2025","value_label":"€110 млн","value":110,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"с 2025"}},{"label":"2026","value_label":"€100 млн","value":100,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"с 2025"}}]},{"key":"konate","name":"Ибраима Конате","paths":["/transfers/ibrahima-konate-real-madrid/"],"points":[{"label":"2017","value_label":"€300 тыс.","value":0.3,"club":{"slug":"rb-leipzig","name":"RB Leipzig","short":"RBL","api_id":173,"period":"2017–2021"}},{"label":"2021","value_label":"€35 млн","value":35,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"2021–2026"}},{"label":"2025","value_label":"€60 млн","value":60,"club":{"slug":"liverpool","name":"Liverpool","short":"LFC","api_id":40,"period":"2021–2026"}},{"label":"2026","value_label":"€45 млн","value":45,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2026"}}]},{"key":"cucurella","name":"Марк Кукурелья","paths":["/transfers/marc-cucurella-real-madrid/"],"points":[{"label":"2018","value_label":"€5 млн","value":5,"club":{"slug":"barcelona","name":"Barcelona","short":"FCB","api_id":529,"period":"до 2019"}},{"label":"2019","value_label":"€10 млн","value":10,"club":{"slug":"getafe","name":"Getafe","short":"GET","api_id":546,"period":"2019–2021"}},{"label":"2020","value_label":"€18 млн","value":18,"club":{"slug":"getafe","name":"Getafe","short":"GET","api_id":546,"period":"2019–2021"}},{"label":"2021","value_label":"€20 млн","value":20,"club":{"slug":"brighton","name":"Brighton & Hove Albion","short":"BHA","api_id":51,"period":"2021–2022"}},{"label":"2026","value_label":"€50 млн","value":50,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2026"}}]},{"key":"dumfries","name":"Дензел Дюмфрис","paths":["/transfers/denzel-dumfries-real-madrid/"],"points":[{"label":"2015","value_label":"€50 тыс.","value":0.05,"club":{"slug":"sparta-rotterdam","name":"Sparta Rotterdam","short":"SPA","api_id":null,"period":"2014–2017"}},{"label":"2017","value_label":"€1 млн","value":1,"club":{"slug":"heerenveen","name":"SC Heerenveen","short":"HEE","api_id":null,"period":"2017–2018"}},{"label":"2018","value_label":"€4 млн","value":4,"club":{"slug":"psv","name":"PSV Eindhoven","short":"PSV","api_id":197,"period":"2018–2021"}},{"label":"2021","value_label":"€16 млн","value":16,"club":{"slug":"inter","name":"Inter","short":"INT","api_id":505,"period":"с 2021"}},{"label":"2025","value_label":"€35 млн","value":35,"club":{"slug":"inter","name":"Inter","short":"INT","api_id":505,"period":"с 2021"}},{"label":"2026","value_label":"€25 млн","value":25,"club":{"slug":"inter","name":"Inter","short":"INT","api_id":505,"period":"с 2021"}}]},{"key":"alvarez","name":"Хулиан Альварес","paths":["/transfers/julian-alvarez-barcelona/"],"points":[{"label":"янв. 2022","value_label":"€20 млн","value":20,"club":{"slug":"river-plate","name":"River Plate","short":"CARP","api_id":null,"period":"2018–2022"}},{"label":"июль 2022","value_label":"€23 млн","value":23,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2022–2024"}},{"label":"2023","value_label":"€90 млн","value":90,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2022–2024"}},{"label":"май 2026","value_label":"€90 млн","value":90,"club":{"slug":"atletico-madrid","name":"Atlético Madrid","short":"ATM","api_id":530,"period":"с 2024"}},{"label":"июнь 2026","value_label":"€100 млн","value":100,"club":{"slug":"atletico-madrid","name":"Atlético Madrid","short":"ATM","api_id":530,"period":"с 2024"}}]},{"key":"anderson","name":"Эллиот Андерсон","paths":["/transfers/elliot-anderson-manchester-city/"],"points":[{"label":"2022","value_label":"€200 тыс.","value":0.2,"club":{"slug":"newcastle","name":"Newcastle United","short":"NEW","api_id":34,"period":"2021–2024"}},{"label":"2024","value_label":"€15 млн","value":15,"club":{"slug":"nottingham-forest","name":"Nottingham Forest","short":"NFO","api_id":65,"period":"с 2024"}},{"label":"2025","value_label":"€60 млн","value":60,"club":{"slug":"nottingham-forest","name":"Nottingham Forest","short":"NFO","api_id":65,"period":"с 2024"}},{"label":"2026","value_label":"€75 млн","value":75,"club":{"slug":"nottingham-forest","name":"Nottingham Forest","short":"NFO","api_id":65,"period":"с 2024"}}]},{"key":"bernardo","name":"Бернарду Силва","paths":["/transfers/bernardo-silva-real-madrid/"],"points":[{"label":"2014","value_label":"€2,5 млн","value":2.5,"club":{"slug":"monaco","name":"AS Monaco","short":"ASM","api_id":91,"period":"2014–2017"}},{"label":"2015","value_label":"€3,5 млн","value":3.5,"club":{"slug":"monaco","name":"AS Monaco","short":"ASM","api_id":91,"period":"2014–2017"}},{"label":"2017","value_label":"€40 млн","value":40,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2017–2026"}},{"label":"2019","value_label":"€100 млн","value":100,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2017–2026"}},{"label":"апр. 2026","value_label":"€27 млн","value":27,"club":{"slug":"manchester-city","name":"Manchester City","short":"MCI","api_id":50,"period":"2017–2026"}},{"label":"июнь 2026","value_label":"€22 млн","value":22,"club":{"slug":"real-madrid","name":"Real Madrid","short":"RMA","api_id":541,"period":"с 2026"}}]}];
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:129:            ".player-market-chart-modal"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:137:        modal.className = "player-market-chart-modal";
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:142:                class="player-market-chart-modal__backdrop"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:147:                class="player-market-chart-modal__dialog"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:153:                    class="player-market-chart-modal__close"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:162:                    class="player-market-chart-modal__content"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:173:                    ".player-market-chart-modal__content"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:178:                "player-market-chart-modal-open"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:207:            ".player-market-chart-modal__content"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:213:            "player-market-chart--enlarged"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:224:            "player-market-chart-modal-open"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:229:                ".player-market-chart-modal__close"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:238:        section.className = "player-market-chart";
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:250:                    class="player-market-chart__dot"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:265:            <span class="player-market-chart__point">
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:272:            <div class="player-market-chart__canvas">
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:300:                    <line class="player-market-chart__grid" x1="18" y1="52" x2="302" y2="52"></line>
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:301:                    <line class="player-market-chart__grid" x1="18" y1="86" x2="302" y2="86"></line>
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:302:                    <line class="player-market-chart__grid" x1="18" y1="122" x2="302" y2="122"></line>
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:305:                        class="player-market-chart__area"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:311:                        class="player-market-chart__line"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:318:                <div class="player-market-chart__club-layer"></div>
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:322:                class="player-market-chart__points"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:328:            <p class="player-market-chart__note">
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:334:        const layer = section.querySelector(".player-market-chart__club-layer");
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:342:                "player-market-chart__club-marker";
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:354:                "player-market-chart__club-logo";
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:369:            "player-market-chart--zoomable"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:383:                    "player-market-chart--enlarged"
+scripts/profutbik_enhancement_payload/static/js/transfer-player-market-value-chart.js:414:        document.querySelectorAll(".player-market-chart")
+scripts/pull_last_point_inside_keep_center.py:28:CSS_BLOCK = '\n/* PROFUTBIK CHART CLEAN LOOK V42 START */\n\n.player-market-chart__area {\n    display: none;\n}\n\nbody.transfer-page\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            -50%,\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n.player-market-chart-modal\n.player-market-chart--enlarged\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            -50%,\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n/* PROFUTBIK CHART CLEAN LOOK V42 END */\n'
+scripts/pull_last_point_inside_keep_center.py:47:        "player-market-chart__club-marker--last",
+scripts/pull_last_point_inside_keep_center.py:106:        "player-market-chart__club-marker--last",
+scripts/pull_last_point_inside_keep_center.py:138:        ".player-market-chart__area",
+scripts/remove_chart_current_value_and_source.py:22:        r'\s*<strong\s+class="player-market-chart__current">\s*.*?\s*</strong>',
+scripts/remove_chart_current_value_and_source.py:29:        r'\s*<a\s+class="player-market-chart__source".*?</a>',
+scripts/remove_chart_current_value_and_source.py:47:        'class="player-market-chart__current"',
+scripts/remove_chart_current_value_and_source.py:48:        'class="player-market-chart__source"',
+scripts/remove_chart_current_value_and_source.py:67:        "player-market-chart__canvas",
+scripts/remove_chart_current_value_and_source.py:68:        "player-market-chart__points",
+scripts/restore_last_working_chart.py:28:LAST_LOGO_CLASS = '            marker.className =\n                "player-market-chart__club-marker";\n\n            if (index === player.points.length - 1) {\n                marker.classList.add(\n                    "player-market-chart__club-marker--last"\n                );\n            }\n'
+scripts/restore_last_working_chart.py:29:LAST_LOGO_CSS = '\n/* PROFUTBIK LAST CHART LOGO INSET V40 START */\n\nbody.transfer-page\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            calc(-50% - 14px),\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n.player-market-chart-modal\n.player-market-chart--enlarged\n.player-market-chart__club-marker--last {\n    transform:\n        translate(\n            calc(-50% - 24px),\n            calc(-100% - var(--club-logo-gap))\n        );\n}\n\n/* PROFUTBIK LAST CHART LOGO INSET V40 END */\n'
+scripts/restore_last_working_chart.py:191:    class_name = "player-market-chart__club-marker--last"
+scripts/restore_last_working_chart.py:205:        '                "player-market-chart__club-marker";\n'
+scripts/restore_last_working_chart.py:210:        '"player-market-chart__club-marker";'
+scripts/restore_last_working_chart.py:283:        "player-market-chart__club-marker--last",
+scripts/style_chart_prices_and_merge_block.py:27:OVERRIDE = '\n/* PROFUTBIK CHART PRICE STYLE V33 START */\n\n/*\n * Join the chart directly to the information separator\n * under the final player-detail row.\n */\nbody.transfer-page\n.player-brief__list {\n    margin-bottom: 0 !important;\n}\n\nbody.transfer-page\n.player-brief__list + .player-market-chart,\nbody.transfer-page\n.player-brief dl + .player-market-chart {\n    margin-top: 0 !important;\n    padding-top: 0 !important;\n    border-top: 0 !important;\n}\n\nbody.transfer-page\n.player-brief__list + .player-market-chart\n.player-market-chart__canvas,\nbody.transfer-page\n.player-brief dl + .player-market-chart\n.player-market-chart__canvas {\n    border-top: 0 !important;\n    border-top-left-radius: 0 !important;\n    border-top-right-radius: 0 !important;\n}\n\nbody.transfer-page\n.player-brief,\nbody.transfer-page\n.transfer-side-column,\nbody.transfer-page\n.player-market-chart {\n    height: auto !important;\n    min-height: 0 !important;\n    max-height: none !important;\n    overflow: visible !important;\n}\n\n/*\n * Keep years restrained and make only progression prices\n * use the stronger sports-style display face.\n */\nbody.transfer-page\n.player-market-chart__point small {\n    font-family:\n        "Montserrat",\n        Arial,\n        sans-serif;\n    letter-spacing: 0.015em;\n}\n\nbody.transfer-page\n.player-market-chart__point strong {\n    font-family:\n        "Russo One",\n        "Montserrat",\n        Arial,\n        sans-serif;\n    font-size: 9px;\n    font-weight: 400;\n    line-height: 1.15;\n    letter-spacing: 0.01em;\n    color: #f1f3f5;\n    text-shadow:\n        0 0 8px rgba(231, 198, 91, 0.14);\n}\n\n.player-market-chart-modal\n.player-market-chart--enlarged\n.player-market-chart__point strong {\n    font-size: 16px;\n    letter-spacing: 0.015em;\n    text-shadow:\n        0 0 12px rgba(231, 198, 91, 0.18);\n}\n\n/* PROFUTBIK CHART PRICE STYLE V33 END */\n'
+scripts/transfer_market_chart_pages.json:135:    "path": "content\\transfers\\marc-cucurella-real-madrid\\index.md",
+scripts/transfer_market_chart_pages.json:186:    "path": "content\\transfers\\denzel-dumfries-real-madrid\\index.md",
+scripts/transfer_market_chart_pages.json:339:    "path": "content\\transfers\\bernardo-silva-real-madrid\\index.md",
