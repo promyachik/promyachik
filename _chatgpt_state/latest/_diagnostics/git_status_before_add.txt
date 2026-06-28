@@ -7,6 +7,7 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
+ M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
@@ -63,6 +64,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
 ?? PROFUTBIK_PROGRESS.md
+?? PUSH_STATE_TO_GITHUB.bat
 ?? R============INSTALL_PUSH_STATE_TO_GITHUB_V2.bat
 ?? R==PUSH_STATE_TO_GITHUB.bat
 ?? README.txt
@@ -159,6 +161,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_152_restore_approved_market_chart_last5_20260628_181907/
 ?? _backup_153_before_rollback_152_20260628_182112/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/PUSH_STATE_TO_GITHUB.bat
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/

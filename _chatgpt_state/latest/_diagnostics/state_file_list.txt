@@ -1,4 +1,5 @@
 .gitignore	43
+PUSH_STATE_TO_GITHUB.bat	569
 _STATE_INFO.json	238
 _diagnostics\hugo_build.txt	1129
 _latest_reports\_107_favicon_report_20260627_201236.txt	2597
@@ -181,7 +182,7 @@ static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
 static\css\style.css	11768
-static\css\transfer-article.css	78155
+static\css\transfer-article.css	79383
 static\css\transfer-player-market-value-chart.css	10282
 static\css\transfer-ticker.css	6526
 static\header.css	15286
