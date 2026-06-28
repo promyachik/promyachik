@@ -3802,112 +3802,378 @@
 
 
 
-<section class="transfer-stats pfb-stats-v181" aria-label="Статистика игрока">
-    <div class="pfb-stats-v181__grid" role="list">
-        <article class="pfb-stats-v181__card pfb-stats-v181__card--matches" role="listitem" tabindex="0" aria-label="Матчей: —">
-            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--field" aria-hidden="true">
-                <svg viewBox="0 0 160 108" focusable="false">
-                    <rect class="pfb-svg-line" x="13" y="14" width="134" height="80" rx="5" />
-                    <line class="pfb-svg-line" x1="80" y1="14" x2="80" y2="94" />
-                    <circle class="pfb-svg-line" cx="80" cy="54" r="17" />
-                    <circle class="pfb-svg-fill" cx="80" cy="54" r="3.3" />
-                    <rect class="pfb-svg-line" x="13" y="35" width="25" height="38" />
-                    <rect class="pfb-svg-line" x="13" y="45" width="11" height="18" />
-                    <rect class="pfb-svg-line" x="122" y="35" width="25" height="38" />
-                    <rect class="pfb-svg-line" x="136" y="45" width="11" height="18" />
+<style>
+ 
+
+body.transfer-page .pfb-stats-v182,
+body.transfer-page .pfb-stats-v182 *,
+body.transfer-page .transfer-stats--under-market-chart,
+body.transfer-page .transfer-stats--under-market-chart *,
+body.transfer-page .player-market-chart,
+body.transfer-page .player-market-chart *,
+body.transfer-page .transfer-sidebar,
+body.transfer-page .transfer-sidebar * {
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+body.transfer-page .pfb-stats-v182 {
+    width: 100% !important;
+    max-width: 370px !important;
+    margin: 26px auto 22px !important;
+    padding: 18px 10px 22px !important;
+    border: 1px solid rgba(255,255,255,0.07) !important;
+    border-radius: 18px !important;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(245, 199, 65, 0.08), transparent 42%),
+        linear-gradient(180deg, rgba(10,12,16,0.92), rgba(5,7,10,0.96)) !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.35) !important;
+}
+
+body.transfer-page .pfb-stats-v182__grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, 52px) !important;
+    grid-auto-rows: auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 16px 12px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+body.transfer-page .pfb-stats-v182__card {
+    position: relative !important;
+    z-index: 2 !important;
+    width: 104px !important;
+    height: 88px !important;
+    min-width: 104px !important;
+    min-height: 88px !important;
+    border: 1.5px solid rgba(245, 199, 65, 0.78) !important;
+    border-radius: 18px !important;
+    background:
+        radial-gradient(circle at 50% 35%, rgba(245, 199, 65, 0.13), transparent 42%),
+        linear-gradient(145deg, rgba(26,26,24,0.94), rgba(7,8,10,0.98)) !important;
+    box-shadow:
+        inset 0 0 22px rgba(245, 199, 65, 0.07),
+        0 12px 25px rgba(0,0,0,0.38) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    overflow: visible !important;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease !important;
+}
+
+body.transfer-page .pfb-stats-v182__card:hover,
+body.transfer-page .pfb-stats-v182__card:focus {
+    transform: translateY(-3px) !important;
+    border-color: rgba(255, 218, 83, 1) !important;
+    box-shadow:
+        inset 0 0 28px rgba(245, 199, 65, 0.12),
+        0 0 22px rgba(245, 199, 65, 0.23),
+        0 18px 34px rgba(0,0,0,0.45) !important;
+    outline: none !important;
+}
+
+body.transfer-page .pfb-stats-v182__matches {
+    grid-column: 1 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+body.transfer-page .pfb-stats-v182__goals {
+    grid-column: 3 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+body.transfer-page .pfb-stats-v182__assists {
+    grid-column: 5 / span 2 !important;
+    grid-row: 1 !important;
+}
+
+body.transfer-page .pfb-stats-v182__yellow {
+    grid-column: 2 / span 2 !important;
+    grid-row: 2 !important;
+}
+
+body.transfer-page .pfb-stats-v182__red {
+    grid-column: 4 / span 2 !important;
+    grid-row: 2 !important;
+}
+
+body.transfer-page .pfb-stats-v182__icon {
+    display: block !important;
+    width: 72px !important;
+    height: 72px !important;
+    pointer-events: none !important;
+}
+
+body.transfer-page .pfb-stats-v182__icon svg {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    overflow: visible !important;
+    filter: drop-shadow(0 0 7px rgba(245, 199, 65, 0.25)) !important;
+}
+
+body.transfer-page .pfb-stats-v182__goals .pfb-stats-v182__icon {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+body.transfer-page .pfb-stats-v182__tooltip {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: calc(100% + 14px) !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    z-index: 99999 !important;
+
+    min-width: 150px !important;
+    padding: 12px 18px 13px !important;
+
+    border: 1.5px solid rgba(255, 218, 83, 0.95) !important;
+    border-radius: 12px !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(245,199,65,0.12), transparent 48%),
+        rgba(7, 8, 10, 0.98) !important;
+
+    box-shadow:
+        0 0 18px rgba(245,199,65,0.22),
+        0 15px 32px rgba(0,0,0,0.55) !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    text-align: center !important;
+    white-space: nowrap !important;
+    transition: opacity .16s ease, visibility .16s ease, transform .16s ease !important;
+}
+
+body.transfer-page .pfb-stats-v182__tooltip::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 100% !important;
+    width: 18px !important;
+    height: 18px !important;
+    background: rgba(7, 8, 10, 0.98) !important;
+    border-right: 1.5px solid rgba(255, 218, 83, 0.95) !important;
+    border-bottom: 1.5px solid rgba(255, 218, 83, 0.95) !important;
+    transform: translate(-50%, -9px) rotate(45deg) !important;
+}
+
+body.transfer-page .pfb-stats-v182__tooltip b {
+    display: block !important;
+    margin: 0 0 4px !important;
+    padding: 0 !important;
+    color: #f5c741 !important;
+    -webkit-text-fill-color: #f5c741 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 42px !important;
+    line-height: .9 !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 14px rgba(245,199,65,0.34) !important;
+}
+
+body.transfer-page .pfb-stats-v182__tooltip span {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #f5c741 !important;
+    -webkit-text-fill-color: #f5c741 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: .04em !important;
+    text-transform: uppercase !important;
+}
+
+body.transfer-page .pfb-stats-v182__card:hover .pfb-stats-v182__tooltip,
+body.transfer-page .pfb-stats-v182__card:focus .pfb-stats-v182__tooltip {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+ 
+body.transfer-page .pfb-stats-v182 .pfb-line {
+    fill: none !important;
+    stroke: #f5c741 !important;
+    stroke-width: 5 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+}
+
+body.transfer-page .pfb-stats-v182 .pfb-fill-gold {
+    fill: #f5c741 !important;
+}
+
+body.transfer-page .pfb-stats-v182 .pfb-fill-dark {
+    fill: #111111 !important;
+}
+
+body.transfer-page .pfb-stats-v182 .pfb-card-yellow {
+    fill: url(#pfbYellowGradV182) !important;
+    stroke: #f5c741 !important;
+    stroke-width: 4 !important;
+}
+
+body.transfer-page .pfb-stats-v182 .pfb-card-red {
+    fill: url(#pfbRedGradV182) !important;
+    stroke: #ff3d2e !important;
+    stroke-width: 4 !important;
+}
+
+@media (max-width: 640px) {
+    body.transfer-page .pfb-stats-v182 {
+        max-width: 330px !important;
+        padding: 16px 8px 20px !important;
+    }
+
+    body.transfer-page .pfb-stats-v182__grid {
+        grid-template-columns: repeat(6, 46px) !important;
+        gap: 14px 10px !important;
+    }
+
+    body.transfer-page .pfb-stats-v182__card {
+        width: 92px !important;
+        height: 80px !important;
+        min-width: 92px !important;
+        min-height: 80px !important;
+    }
+
+    body.transfer-page .pfb-stats-v182__icon {
+        width: 64px !important;
+        height: 64px !important;
+    }
+
+    body.transfer-page .pfb-stats-v182__goals .pfb-stats-v182__icon {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+ 
+</style>
+
+<section class="pfb-stats-v182" aria-label="Статистика игрока">
+    <div class="pfb-stats-v182__grid" role="list">
+
+        <article class="pfb-stats-v182__card pfb-stats-v182__matches" role="listitem" tabindex="0" aria-label="Матчей: —">
+            <span class="pfb-stats-v182__icon" aria-hidden="true">
+                <svg viewBox="0 0 160 110" focusable="false">
+                    <rect class="pfb-line" x="14" y="18" width="132" height="74" rx="5"/>
+                    <line class="pfb-line" x1="80" y1="18" x2="80" y2="92"/>
+                    <circle class="pfb-line" cx="80" cy="55" r="17"/>
+                    <circle class="pfb-fill-gold" cx="80" cy="55" r="3.5"/>
+                    <rect class="pfb-line" x="14" y="38" width="26" height="34"/>
+                    <rect class="pfb-line" x="14" y="46" width="12" height="18"/>
+                    <rect class="pfb-line" x="120" y="38" width="26" height="34"/>
+                    <rect class="pfb-line" x="134" y="46" width="12" height="18"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>МАТЧА</em></span>
+            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
+                <b>—</b>
+                <span>МАТЧА</span>
+            </span>
         </article>
 
-        <article class="pfb-stats-v181__card pfb-stats-v181__card--goals" role="listitem" tabindex="0" aria-label="Голов: —">
-            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--ball" aria-hidden="true">
-                <svg viewBox="0 0 150 150" focusable="false">
+        <article class="pfb-stats-v182__card pfb-stats-v182__goals" role="listitem" tabindex="0" aria-label="Голов: —">
+            <span class="pfb-stats-v182__icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120" focusable="false">
                     <defs>
-                        <radialGradient id="pfbBallGoldV181" cx="34%" cy="25%" r="75%">
-                            <stop offset="0%" stop-color="#fff1a7" />
-                            <stop offset="34%" stop-color="#f3c846" />
-                            <stop offset="69%" stop-color="#b47a12" />
-                            <stop offset="100%" stop-color="#4b3108" />
+                        <radialGradient id="pfbBallGradV182" cx="38%" cy="25%" r="70%">
+                            <stop offset="0%" stop-color="#fff0a0"/>
+                            <stop offset="46%" stop-color="#f5c741"/>
+                            <stop offset="100%" stop-color="#9b7118"/>
                         </radialGradient>
                     </defs>
-                    <circle class="pfb-ball-base" cx="75" cy="75" r="55" />
-                    <path class="pfb-ball-dark" d="M75 34 L96 50 L88 76 L62 76 L54 50 Z" />
-                    <path class="pfb-ball-dark" d="M34 63 L54 50 L62 76 L46 94 L28 82 Z" />
-                    <path class="pfb-ball-dark" d="M116 63 L96 50 L88 76 L104 94 L122 82 Z" />
-                    <path class="pfb-ball-dark" d="M53 112 L62 76 L88 76 L97 112 L75 126 Z" />
-                    <path class="pfb-ball-line" d="M75 34 L75 19" />
-                    <path class="pfb-ball-line" d="M96 50 L116 32" />
-                    <path class="pfb-ball-line" d="M54 50 L34 32" />
-                    <path class="pfb-ball-line" d="M46 94 L32 116" />
-                    <path class="pfb-ball-line" d="M104 94 L118 116" />
+                    <circle cx="60" cy="60" r="48" fill="url(#pfbBallGradV182)" stroke="#f5c741" stroke-width="4"/>
+                    <polygon class="pfb-fill-dark" points="60,30 76,42 70,62 50,62 44,42"/>
+                    <polygon class="pfb-fill-dark" points="25,50 39,57 38,76 22,80 15,63"/>
+                    <polygon class="pfb-fill-dark" points="95,50 105,63 98,80 82,76 81,57"/>
+                    <polygon class="pfb-fill-dark" points="43,88 58,78 75,88 70,104 50,104"/>
+                    <line class="pfb-line" x1="44" y1="42" x2="25" y2="50"/>
+                    <line class="pfb-line" x1="76" y1="42" x2="95" y2="50"/>
+                    <line class="pfb-line" x1="50" y1="62" x2="38" y2="76"/>
+                    <line class="pfb-line" x1="70" y1="62" x2="82" y2="76"/>
+                    <line class="pfb-line" x1="58" y1="78" x2="60" y2="62"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>ГОЛА</em></span>
+            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
+                <b>—</b>
+                <span>ГОЛА</span>
+            </span>
         </article>
 
-        <article class="pfb-stats-v181__card pfb-stats-v181__card--assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
-            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--boot" aria-hidden="true">
-                <svg viewBox="0 0 170 115" focusable="false">
-                    <path class="pfb-boot-main" d="M39 34 C54 46 75 53 105 52 C118 52 131 58 139 67 L150 80 C154 84 151 91 144 91 L61 91 C45 91 31 86 20 77 L15 73 C10 69 13 61 20 61 L32 61 L26 43 C23 35 32 28 39 34 Z" />
-                    <path class="pfb-boot-line" d="M45 44 L32 61" />
-                    <path class="pfb-boot-line" d="M63 50 L50 66" />
-                    <path class="pfb-boot-line" d="M82 54 L69 70" />
-                    <path class="pfb-boot-line" d="M102 55 L89 72" />
-                    <path class="pfb-boot-line" d="M54 91 L49 103" />
-                    <path class="pfb-boot-line" d="M80 91 L75 105" />
-                    <path class="pfb-boot-line" d="M107 91 L103 103" />
-                    <path class="pfb-boot-line" d="M135 90 L132 101" />
+        <article class="pfb-stats-v182__card pfb-stats-v182__assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
+            <span class="pfb-stats-v182__icon" aria-hidden="true">
+                <svg viewBox="0 0 150 105" focusable="false">
+                    <path class="pfb-line" d="M24 70 C43 58, 54 48, 66 30 C75 42, 90 50, 114 54 C121 55, 126 61, 125 68 C123 78, 111 82, 94 82 L35 82 C24 82, 18 78, 24 70 Z"/>
+                    <path class="pfb-line" d="M35 82 L29 94"/>
+                    <path class="pfb-line" d="M54 82 L49 94"/>
+                    <path class="pfb-line" d="M82 82 L77 94"/>
+                    <path class="pfb-line" d="M107 82 L102 94"/>
+                    <path class="pfb-line" d="M68 49 L86 39"/>
+                    <path class="pfb-line" d="M78 56 L98 46"/>
+                    <path class="pfb-line" d="M40 66 C57 67, 75 69, 112 69"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>ПЕРЕДАЧА</em></span>
+            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
+                <b>—</b>
+                <span>ПЕРЕДАЧА</span>
+            </span>
         </article>
 
-        <article class="pfb-stats-v181__card pfb-stats-v181__card--yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
-            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--yellow" aria-hidden="true">
-                <svg viewBox="0 0 150 150" focusable="false">
+        <article class="pfb-stats-v182__card pfb-stats-v182__yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
+            <span class="pfb-stats-v182__icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120" focusable="false">
                     <defs>
-                        <linearGradient id="pfbYellowV181" x1="18%" y1="6%" x2="86%" y2="96%">
-                            <stop offset="0%" stop-color="#fff27f" />
-                            <stop offset="40%" stop-color="#e3b72e" />
-                            <stop offset="100%" stop-color="#825409" />
+                        <linearGradient id="pfbYellowGradV182" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#ffe777"/>
+                            <stop offset="50%" stop-color="#f5c741"/>
+                            <stop offset="100%" stop-color="#a67812"/>
                         </linearGradient>
                     </defs>
-                    <rect class="pfb-card-yellow" x="52" y="19" width="50" height="82" rx="8" />
-                    <path class="pfb-card-gloss" d="M62 24 L96 24 L56 87 L56 36 C56 29 58 26 62 24 Z" />
-                    <path class="pfb-whistle" d="M43 100 C54 84 82 82 101 96" />
-                    <path class="pfb-whistle" d="M35 116 C51 97 87 95 111 112" />
-                    <circle class="pfb-whistle" cx="39" cy="120" r="8" />
-                    <path class="pfb-whistle" d="M105 91 L114 80" />
-                    <path class="pfb-whistle" d="M116 99 L130 95" />
-                    <path class="pfb-whistle" d="M112 110 L126 121" />
+                    <rect class="pfb-card-yellow" x="34" y="15" width="50" height="74" rx="8"/>
+                    <path class="pfb-line" d="M30 96 C44 82, 60 86, 68 98"/>
+                    <path class="pfb-line" d="M62 99 C72 84, 91 84, 101 99"/>
+                    <path class="pfb-line" d="M26 84 C18 88, 19 101, 31 101"/>
+                    <path class="pfb-line" d="M84 80 L93 70"/>
+                    <path class="pfb-line" d="M94 88 L108 84"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>ЖЁЛТЫХ</em></span>
+            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
+                <b>—</b>
+                <span>ЖЁЛТЫХ</span>
+            </span>
         </article>
 
-        <article class="pfb-stats-v181__card pfb-stats-v181__card--red" role="listitem" tabindex="0" aria-label="Красных карточек: —">
-            <span class="pfb-stats-v181__icon pfb-stats-v181__icon--red" aria-hidden="true">
-                <svg viewBox="0 0 150 150" focusable="false">
+        <article class="pfb-stats-v182__card pfb-stats-v182__red" role="listitem" tabindex="0" aria-label="Красных карточек: —">
+            <span class="pfb-stats-v182__icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120" focusable="false">
                     <defs>
-                        <linearGradient id="pfbRedV181" x1="18%" y1="6%" x2="86%" y2="96%">
-                            <stop offset="0%" stop-color="#ff6b50" />
-                            <stop offset="42%" stop-color="#d91d18" />
-                            <stop offset="100%" stop-color="#650705" />
+                        <linearGradient id="pfbRedGradV182" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#ff7a5f"/>
+                            <stop offset="50%" stop-color="#e42018"/>
+                            <stop offset="100%" stop-color="#7d0c0b"/>
                         </linearGradient>
                     </defs>
-                    <rect class="pfb-card-red" x="52" y="19" width="50" height="82" rx="8" />
-                    <path class="pfb-card-gloss" d="M62 24 L96 24 L56 87 L56 36 C56 29 58 26 62 24 Z" />
-                    <path class="pfb-whistle" d="M43 100 C54 84 82 82 101 96" />
-                    <path class="pfb-whistle" d="M35 116 C51 97 87 95 111 112" />
-                    <circle class="pfb-whistle" cx="39" cy="120" r="8" />
-                    <path class="pfb-whistle" d="M105 91 L114 80" />
-                    <path class="pfb-whistle" d="M116 99 L130 95" />
-                    <path class="pfb-whistle" d="M112 110 L126 121" />
+                    <rect class="pfb-card-red" x="34" y="15" width="50" height="74" rx="8"/>
+                    <path class="pfb-line" d="M30 96 C44 82, 60 86, 68 98"/>
+                    <path class="pfb-line" d="M62 99 C72 84, 91 84, 101 99"/>
+                    <path class="pfb-line" d="M26 84 C18 88, 19 101, 31 101"/>
+                    <path class="pfb-line" d="M84 80 L93 70"/>
+                    <path class="pfb-line" d="M94 88 L108 84"/>
                 </svg>
             </span>
-            <span class="pfb-stats-v181__tooltip" aria-hidden="true"><b>—</b><em>КРАСНЫХ</em></span>
+            <span class="pfb-stats-v182__tooltip" aria-hidden="true">
+                <b>—</b>
+                <span>КРАСНЫХ</span>
+            </span>
         </article>
+
     </div>
 </section>
 

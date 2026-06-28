@@ -22,7 +22,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
- M _chatgpt_state/latest/static/css/transfer-article.css
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -201,8 +200,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_180_approved_stats_exact_block/
 ?? _backup_181_exact_screen_stats_block/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_181_exact_screen_stats_block_report.txt
-?? _chatgpt_state/latest/scripts/181_exact_screen_stats_block.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
