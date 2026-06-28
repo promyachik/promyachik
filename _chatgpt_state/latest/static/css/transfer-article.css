@@ -3180,3 +3180,29 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card sma
 }
 /* PROFUTBIK STATS THIN NUMBERS V158 END */
 
+/* PROFUTBIK STATS TIGHT VALUE LABEL GAP V159 START */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    min-height: 64px !important;
+    padding: 9px 7px 8px !important;
+    justify-content: center !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+    height: 20px !important;
+    min-height: 20px !important;
+    margin: 0 0 2px !important;
+    line-height: 1 !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    min-height: 16px !important;
+    margin: 0 !important;
+    line-height: 0.98 !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season strong {
+    margin-bottom: 3px !important;
+}
+/* PROFUTBIK STATS TIGHT VALUE LABEL GAP V159 END */
+
