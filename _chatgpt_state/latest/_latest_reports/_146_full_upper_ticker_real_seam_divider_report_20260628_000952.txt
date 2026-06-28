@@ -1,0 +1,54 @@
+START 146 FULL UPPER TICKER REAL SEAM DIVIDER
+
+Fixes:
+1. Upper running ticker only.
+2. Fully rewrites transfer-ticker.html to avoid broken leftover separator attempts.
+3. Adds a real DOM divider before every item except the first item of group 1.
+4. Group 2 starts with divider, so Endrick -> De Ligt seam is covered.
+5. Keeps black ticker color, removed dot, removed player photo frame.
+
+It does NOT change data/transfers.json, photos, lower ticker, Ramos, Endrick files, favicon or var folder.
+
+BACKUP: layouts\partials\transfer-ticker.html -> _backup_146_full_upper_ticker_real_seam_divider\transfer-ticker.before_146_20260628_000952.html
+OK: transfer-ticker.html fully replaced with clean upper ticker template
+OK: real divider is inserted BEFORE every item except the first item of group 1
+OK: group 2 starts with divider, so the Endrick -> De Ligt seam is covered
+OK: ticker color stays black
+OK: Transfers dot stays removed
+OK: photo frame stays removed
+HUGO EXIT CODE: 0
+HUGO STDOUT:
+Start building sites … 
+hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio
+
+
+                  │  EN  
+──────────────────┼──────
+ Pages            │   23 
+ Paginator pages  │    0 
+ Non-page files   │    0 
+ Static files     │ 4530 
+ Processed images │    0 
+ Aliases          │    1 
+ Cleaned          │    0 
+
+Total in 2127 ms
+
+HUGO STDERR:
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.
+
+
+SELF CHECK:
+OK: indexed range exists
+OK: conditional seam divider exists
+OK: real divider span exists
+OK: divider CSS exists
+OK: strong gold visible
+OK: top ticker black
+OK: dot hidden
+OK: photo frame removed
+INFO: public divider count: 23
+OK: public HTML has real divider elements
