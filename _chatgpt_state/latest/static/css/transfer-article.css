@@ -2893,3 +2893,61 @@ body.transfer-page .transfer-stats__label {
     }
 }
 
+/* PROFUTBIK STATS UNDER MARKET CHART V154 START */
+body.transfer-page .transfer-stats--under-market-chart {
+    width: 100%;
+    margin: 14px auto 28px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__inner,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__wrap {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header {
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    min-height: 74px;
+    padding: 12px 10px;
+    border-radius: 14px;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+    font-size: clamp(20px, 2.5vw, 30px);
+    line-height: 1;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    font-size: 11px;
+    line-height: 1.15;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__note,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__source {
+    font-size: 11px;
+    line-height: 1.35;
+}
+
+@media (max-width: 640px) {
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+/* PROFUTBIK STATS UNDER MARKET CHART V154 END */
+

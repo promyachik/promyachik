@@ -47,6 +47,7 @@ _latest_reports\_152_restore_approved_market_chart_last5_report_20260628_181907.
 _latest_reports\_153_rollback_152_restore_market_chart_report_20260628_182112.txt	1018
 _latest_reports\_SEND_TO_CHATGPT_MARKET_SOURCE.txt	77532
 _latest_reports\_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt	28448
+_latest_reports\_SEND_TO_CHATGPT_STATS_BLOCK.txt	7796
 content\transfers\_index.md	3350
 content\transfers\bernardo-silva-real-madrid\index.md	6735
 content\transfers\denzel-dumfries-real-madrid\index.md	6796
@@ -180,7 +181,7 @@ static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
 static\css\style.css	11768
-static\css\transfer-article.css	65898
+static\css\transfer-article.css	70643
 static\css\transfer-player-market-value-chart.css	10282
 static\css\transfer-ticker.css	6526
 static\header.css	15286

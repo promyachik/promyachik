@@ -12,6 +12,7 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/static/css/transfer-article.css
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -116,6 +117,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _153_rollback_152_restore_market_chart_report_20260628_182112.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
+?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -159,7 +161,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_152_restore_approved_market_chart_last5_20260628_181907/
 ?? _backup_153_before_rollback_152_20260628_182112/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_MARKET_SOURCE.txt
+?? _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_STATS_BLOCK.txt
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
