@@ -2951,3 +2951,145 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__source {
 }
 /* PROFUTBIK STATS UNDER MARKET CHART V154 END */
 
+/* PROFUTBIK COMPACT STATS CLEAN FONT V155 START */
+body.transfer-page .transfer-stats--under-market-chart {
+    margin: 12px auto 26px !important;
+    padding: 14px !important;
+    max-width: min(100%, 760px) !important;
+    border-radius: 18px !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart,
+body.transfer-page .transfer-stats--under-market-chart * {
+    font-family: Inter, Arial, Helvetica, sans-serif !important;
+    font-style: normal !important;
+    text-shadow: none !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)) !important;
+    gap: 8px !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    min-height: 58px !important;
+    height: auto !important;
+    padding: 9px 8px !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+    font-size: clamp(18px, 2vw, 24px) !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.04em !important;
+    transform: none !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    margin-top: 6px !important;
+    font-size: 9px !important;
+    line-height: 1.1 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    text-align: center !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season strong {
+    font-size: clamp(15px, 1.7vw, 20px) !important;
+    letter-spacing: -0.06em !important;
+    white-space: nowrap !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header {
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header span {
+    font-size: 10px !important;
+    letter-spacing: 0.16em !important;
+    font-weight: 800 !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head strong,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header strong {
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__note,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__source {
+    margin-top: 10px !important;
+    font-size: 10px !important;
+    line-height: 1.35 !important;
+}
+
+@media (max-width: 640px) {
+    body.transfer-page .transfer-stats--under-market-chart {
+        padding: 12px !important;
+    }
+
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+        min-height: 54px !important;
+    }
+}
+/* PROFUTBIK COMPACT STATS CLEAN FONT V155 END */
+
+/* PROFUTBIK STATS GREEN CLEAN FONT V156 START */
+body.transfer-page .transfer-stats--under-market-chart,
+body.transfer-page .transfer-stats--under-market-chart * {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__head strong,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__header strong {
+    color: #00ff85 !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #00ff85 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 133, 0.22) !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card strong {
+    font-size: clamp(17px, 1.85vw, 22px) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    font-size: 9px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.04em !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    border-color: rgba(0, 255, 133, 0.24) !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--season strong {
+    font-size: clamp(13px, 1.45vw, 17px) !important;
+    letter-spacing: -0.05em !important;
+}
+/* PROFUTBIK STATS GREEN CLEAN FONT V156 END */
+
