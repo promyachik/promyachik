@@ -186,7 +186,7 @@ static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
 static\css\style.css	11768
-static\css\transfer-article.css	107551
+static\css\transfer-article.css	113655
 static\css\transfer-player-market-value-chart.css	11050
 static\css\transfer-ticker.css	6526
 static\header.css	15286

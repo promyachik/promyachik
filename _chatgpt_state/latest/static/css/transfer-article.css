@@ -3759,3 +3759,142 @@ body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card--as
 
 /* PROFUTBIK FIX CLIPPED STATS ICONS V168 END */
 
+/* PROFUTBIK FORCE REAL STATS ICON SIZES V169 START */
+
+/* Даём всем иконкам больше места */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card {
+    min-height: 104px !important;
+    overflow: visible !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    min-height: 72px !important;
+    height: 72px !important;
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Базовый размер всех иконок */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small::before {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    min-height: 64px !important;
+    max-width: none !important;
+    max-height: none !important;
+    background-size: 64px 64px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    overflow: visible !important;
+}
+
+/* Если внутри вдруг img, а не background */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card img {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    min-height: 64px !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    overflow: visible !important;
+}
+
+/* 2-я карточка: ГОЛЫ — мяч крупнее */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small::before {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+    background-size: 72px 72px !important;
+}
+
+/* 3-я карточка: ГОЛЕВЫЕ ПЕРЕДАЧИ — сильно увеличиваем */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) small::before {
+    width: 78px !important;
+    height: 78px !important;
+    min-width: 78px !important;
+    min-height: 78px !important;
+    background-size: 78px 78px !important;
+}
+
+/* 4-я карточка: МИНУТЫ — секундомер крупнее */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) small::before {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+    background-size: 72px 72px !important;
+}
+
+/* Подстраховка для img внутри 2/3/4 карточек */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) img,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(4) img {
+    width: 72px !important;
+    height: 72px !important;
+}
+
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(3) img {
+    width: 78px !important;
+    height: 78px !important;
+}
+
+/* PROFUTBIK FORCE REAL STATS ICON SIZES V169 END */
+
+/* PROFUTBIK FIX ICON CLIPPING WITHOUT RESIZE V170 START */
+
+/* Не меняем визуальный размер иконок, только убираем скрытое обрезание */
+body.transfer-page .transfer-stats--under-market-chart,
+body.transfer-page .transfer-stats--under-market-chart *,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__grid,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card small {
+    overflow: visible !important;
+}
+
+/* ГОЛЫ: 2-я карточка. Контейнер больше, сама иконка остаётся прежнего размера */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small {
+    width: 92px !important;
+    height: 82px !important;
+    min-width: 92px !important;
+    min-height: 82px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Визуальный размер мяча оставляем как был после V169 */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) span::before,
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) small::before {
+    width: 92px !important;
+    height: 82px !important;
+    min-width: 92px !important;
+    min-height: 82px !important;
+    background-size: 72px 72px !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    overflow: visible !important;
+}
+
+/* Если мяч вставлен img, тоже не увеличиваем саму картинку, а даём ей место */
+body.transfer-page .transfer-stats--under-market-chart .transfer-stats__card:nth-child(2) img {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    overflow: visible !important;
+}
+/* PROFUTBIK FIX ICON CLIPPING WITHOUT RESIZE V170 END */
+
