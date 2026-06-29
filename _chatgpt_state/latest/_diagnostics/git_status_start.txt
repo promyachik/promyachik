@@ -12,6 +12,9 @@ EXIT_CODE: 0
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
  M _chatgpt_state/latest/layouts/_default/baseof.html
+ M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
+ D _chatgpt_state/latest/layouts/partials/promyachik-align-value-labels-232.html
+ D _chatgpt_state/latest/layouts/partials/promyachik-force-align-value-labels-233.html
  M _chatgpt_state/latest/layouts/transfers/single.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
@@ -125,6 +128,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 231_PROMYACHIK_CENTER_VALUE_CHART_TIMELINE_LABELS_CLICK_RUN.bat
 ?? 232_PROMYACHIK_ALIGN_VALUE_LABELS_TO_POINTS_CLICK_RUN.bat
 ?? 233_PROMYACHIK_FORCE_ALIGN_VALUE_LABELS_TO_POINTS_CLICK_RUN.bat
+?? 234_PROMYACHIK_REBUILD_VALUE_CHART_LABELS_IN_SVG_CLICK_RUN.bat
+?? 235_PROMYACHIK_VERTICAL_ALIGN_VALUE_LABELS_WITH_DOTS_CLICK_RUN.bat
+?? 236_PROMYACHIK_INSET_VALUE_CHART_POINTS_AND_LABELS_CLICK_RUN.bat
+?? 237_PROMYACHIK_RESTORE_WORKING_VALUE_CHART_FROM_BACKUP_CLICK_RUN.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -184,6 +191,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_231_PROMYACHIK.txt
 ?? README_232_PROMYACHIK.txt
 ?? README_233_PROMYACHIK.txt
+?? README_234_PROMYACHIK.txt
+?? README_235_PROMYACHIK.txt
+?? README_236_PROMYACHIK.txt
+?? README_237_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -337,12 +348,13 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_231_before_value_chart_labels_20260629_215946/
 ?? _backup_promyachik_232_before_align_value_labels_20260629_220444/
 ?? _backup_promyachik_233_before_force_align_value_labels_20260629_220910/
-?? _chatgpt_state/latest/layouts/partials/promyachik-align-value-labels-232.html
-?? _chatgpt_state/latest/layouts/partials/promyachik-force-align-value-labels-233.html
-?? _chatgpt_state/latest/scripts/230_promyachik_center_market_value_under_chart.py
-?? _chatgpt_state/latest/scripts/231_promyachik_center_value_chart_timeline_labels.py
-?? _chatgpt_state/latest/scripts/232_promyachik_align_value_labels_to_points.py
-?? _chatgpt_state/latest/scripts/233_promyachik_force_align_value_labels_to_points.py
+?? _backup_promyachik_234_before_rebuild_value_chart_labels_20260629_221349/
+?? _backup_promyachik_235_before_vertical_align_value_labels_20260629_221804/
+?? _backup_promyachik_236_before_inset_value_chart_20260629_222321/
+?? _chatgpt_state/latest/scripts/234_promyachik_rebuild_value_chart_labels_in_svg.py
+?? _chatgpt_state/latest/scripts/235_promyachik_vertical_align_value_labels_with_dots.py
+?? _chatgpt_state/latest/scripts/236_promyachik_inset_value_chart_points_and_labels.py
+?? _chatgpt_state/latest/scripts/237_promyachik_restore_working_value_chart_from_backup.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -424,6 +436,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/231_promyachik_center_value_chart_timeline_labels.py
 ?? scripts/232_promyachik_align_value_labels_to_points.py
 ?? scripts/233_promyachik_force_align_value_labels_to_points.py
+?? scripts/234_promyachik_rebuild_value_chart_labels_in_svg.py
+?? scripts/235_promyachik_vertical_align_value_labels_with_dots.py
+?? scripts/236_promyachik_inset_value_chart_points_and_labels.py
+?? scripts/237_promyachik_restore_working_value_chart_from_backup.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
