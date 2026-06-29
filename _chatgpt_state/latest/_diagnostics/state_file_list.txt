@@ -158,6 +158,7 @@ scripts\217_restore_site_blocks_from_real_backup.py	16851
 scripts\218_restore_ramos_page_and_tickers_only.py	16842
 scripts\219_restore_tested_tickers_from_backup_only.py	15316
 scripts\220_full_restore_from_working_snapshot.py	17028
+scripts\221_recover_real_site_per_file_from_backups.py	20770
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433
