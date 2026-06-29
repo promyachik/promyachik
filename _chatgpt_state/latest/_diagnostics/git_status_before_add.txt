@@ -10,6 +10,18 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
+ M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
+ M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
+ M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
+ M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
+ M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
+ M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -71,6 +83,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 187_FIX_GOALS_ICON_RIGHT_CROP.bat
 ?? 188_FIX_APPROVED_GOALS_ICON_RIGHT_EDGE.bat
 ?? 189_FIX_GOALS_ICON_FULL_RIGHT_PADDING.bat
+?? 194_FIX_GOALS_ICON_NO_CROP_PACKAGE.bat
+?? 195_RESTORE_APPROVED_GOALS_BALL_NO_CROP_PACKAGE.bat
 ?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
 ?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
@@ -95,6 +109,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_187.txt
 ?? README_188.txt
 ?? README_189.txt
+?? README_195.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -153,6 +168,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _186_restore_approved_goals_icon_report.txt
 ?? _188_fix_approved_goals_icon_right_edge_report.txt
 ?? _189_fix_goals_icon_full_right_padding_report.txt
+?? _194_goals_icon_fix_report.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
@@ -210,7 +226,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_186_restore_approved_goals_icon/
 ?? _backup_188_fix_approved_goals_icon_right_edge/
 ?? _backup_189_fix_goals_icon_full_right_padding/
+?? _backup_194_fix_goals_icon_no_crop/
+?? _backup_195_restore_approved_goals_ball_no_crop/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/_latest_reports/_194_goals_icon_fix_report.txt
+?? _chatgpt_state/latest/scripts/195_restore_approved_goals_ball_no_crop.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -251,6 +271,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/188_fix_approved_goals_icon_right_edge.py
 ?? scripts/189_fix_goals_icon_full_right_padding.py
 ?? scripts/190_fix_goals_icon_no_crop.py
+?? scripts/194_fix_goals_icon_no_crop_package.ps1
+?? scripts/195_restore_approved_goals_ball_no_crop.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

@@ -1,0 +1,14 @@
+﻿PROFUTBIK 194 - goals icon no crop package
+Project: C:\Users\Dmitrii\Promyachik
+Time: 2026-06-29 18:17:20
+
+Backup saved: _backup_194_fix_goals_icon_no_crop\goals_before_194.png
+Backup saved: _backup_194_fix_goals_icon_no_crop\transfer-player-stats_before_194.html
+Copied clean full-canvas icon to: static\images\stats-icons-v184\goals.png
+Patched partial CSS/cache: layouts\partials\transfer-player-stats.html
+
+Touched files:
+- layouts\partials\transfer-player-stats.html
+- static\images\stats-icons-v184\goals.png
+
+DONE 194. Open the De Ligt page and press Ctrl+F5.
