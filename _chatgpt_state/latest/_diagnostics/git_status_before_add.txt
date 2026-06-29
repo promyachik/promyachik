@@ -81,8 +81,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 186_RESTORE_APPROVED_GOALS_ICON.bat
 ?? 187_FIX_GOALS_ICON_RIGHT_CROP.bat
 ?? 188_FIX_APPROVED_GOALS_ICON_RIGHT_EDGE.bat
-?? 20260628_001503_PROFUTBIK_PROGRESS_2026-06-27_NIGHT_STEP146.md
+?? 189_FIX_GOALS_ICON_FULL_RIGHT_PADDING.bat
 ?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
+?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -104,6 +105,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_186.txt
 ?? README_187.txt
 ?? README_188.txt
+?? README_189.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -161,6 +163,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _185_fix_matches_field_icon_report.txt
 ?? _186_restore_approved_goals_icon_report.txt
 ?? _188_fix_approved_goals_icon_right_edge_report.txt
+?? _189_fix_goals_icon_full_right_padding_report.txt
 ?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
 ?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
 ?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
@@ -217,10 +220,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_185_fix_matches_field_icon/
 ?? _backup_186_restore_approved_goals_icon/
 ?? _backup_188_fix_approved_goals_icon_right_edge/
+?? _backup_189_fix_goals_icon_full_right_padding/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/_latest_reports/_188_fix_approved_goals_icon_right_edge_report.txt
-?? _chatgpt_state/latest/scripts/187_fix_goals_icon_right_crop.py
-?? _chatgpt_state/latest/scripts/188_fix_approved_goals_icon_right_edge.py
+?? _chatgpt_state/latest/_latest_reports/_189_fix_goals_icon_full_right_padding_report.txt
+?? _chatgpt_state/latest/scripts/189_fix_goals_icon_full_right_padding.py
+?? _chatgpt_state/latest/scripts/190_fix_goals_icon_no_crop.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -259,6 +263,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/186_restore_approved_goals_icon.py
 ?? scripts/187_fix_goals_icon_right_crop.py
 ?? scripts/188_fix_approved_goals_icon_right_edge.py
+?? scripts/189_fix_goals_icon_full_right_padding.py
+?? scripts/190_fix_goals_icon_no_crop.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
