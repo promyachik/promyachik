@@ -34,11 +34,11 @@ concept_art: "/images/homepage/featured/goncalo-ramos-ac-milan-card.png"
 hero_image: "/images/homepage/featured/goncalo-ramos-ac-milan-hero.png"
 card_image: "/images/homepage/featured/goncalo-ramos-ac-milan-card.png"
 
-player_image: "/images/players/api/41585.png"
-api_player_image: "/images/players/api/41585.png"
+player_image: /images/players/transfermarkt/goncalo-ramos-550550-black.png
+api_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black.png
 api_photo_missing: false
-player_image_source_name: "API-Football"
-player_image_source_url: "https://media.api-sports.io/football/players/41585.png"
+player_image_source_name: Transfermarkt
+player_image_source_url: https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550
 
 nationality: "Portugal"
 country: "Portugal"
@@ -51,7 +51,7 @@ foot_ru: "Правая"
 height: "1.85 м"
 birth_date: "20.06.2001"
 age: "25"
-market_value: "€30M"
+market_value: €30M
 league: "Serie A"
 
 value_history:
@@ -106,11 +106,11 @@ flag: 🇵🇹
 player_flag: 🇵🇹
 player_country_flag: 🇵🇹
 nationality_flag: 🇵🇹
-country_flag_image: /images/flags/portugal.svg
-flag_image: /images/flags/portugal.svg
-player_flag_image: /images/flags/portugal.svg
-player_country_flag_image: /images/flags/portugal.svg
-nationality_flag_image: /images/flags/portugal.svg
+country_flag_image: /images/flags/portugal-proper.png
+flag_image: /images/flags/portugal-proper.png
+player_flag_image: /images/flags/portugal-proper.png
+player_country_flag_image: /images/flags/portugal-proper.png
+nationality_flag_image: /images/flags/portugal-proper.png
 preferred_foot: "Right"
 preferred_foot_ru: "Правая"
 dominant_foot: "Right"
@@ -143,11 +143,11 @@ permalink: "/transfers/goncalo-ramos-ac-milan/"
 page_url: "/transfers/goncalo-ramos-ac-milan/"
 player_id: "41585"
 api_player_id: "41585"
-cutout_player_image: ""
+cutout_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black.png
 show_in_top_ticker: "True"
 show_in_footer_ticker: "True"
-needs_cutout: "True"
-value: "€30M"
+needs_cutout: false
+value: €30M
 ---
 
 ## Gonçalo Ramos → AC Milan

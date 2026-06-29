@@ -66,7 +66,7 @@ content\transfers\bernardo-silva-real-madrid\index.md	6735
 content\transfers\denzel-dumfries-real-madrid\index.md	6796
 content\transfers\elliot-anderson-manchester-city\index.md	6927
 content\transfers\florian-wirtz-liverpool\index.md	7917
-content\transfers\goncalo-ramos-ac-milan\index.md	5916
+content\transfers\goncalo-ramos-ac-milan\index.md	6070
 content\transfers\ibrahima-konate-real-madrid\index.md	6882
 content\transfers\julian-alvarez-barcelona\index.md	7419
 content\transfers\kylian-mbappe-real-madrid\index.before-mbappe-cutout.md	7036
@@ -118,7 +118,7 @@ public\transfers\bernardo-silva-real-madrid\index.html	252299
 public\transfers\denzel-dumfries-real-madrid\index.html	252328
 public\transfers\elliot-anderson-manchester-city\index.html	252376
 public\transfers\florian-wirtz-liverpool\index.html	255536
-public\transfers\goncalo-ramos-ac-milan\index.html	230671
+public\transfers\goncalo-ramos-ac-milan\index.html	230702
 public\transfers\ibrahima-konate-real-madrid\index.html	253263
 public\transfers\index.html	130880
 public\transfers\julian-alvarez-barcelona\index.html	253104
@@ -150,6 +150,7 @@ scripts\205_check_goncalo_ramos_page_state.py	14135
 scripts\206_fix_player_flags_by_nationality.py	18270
 scripts\207_real_fix_ramos_flag_and_value_alignment.py	9364
 scripts\208_fix_ramos_photo_black_bg_and_portugal_flag.py	9461
+scripts\209_redownload_ramos_transfermarkt_black_bg_and_real_flag.py	13325
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433
@@ -213,7 +214,7 @@ static\css\homepage-featured-wirtz.css	10513
 static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
-static\css\style.css	12750
+static\css\style.css	14274
 static\css\transfer-article.css	109822
 static\css\transfer-player-market-value-chart.css	11050
 static\css\transfer-ticker.css	6526
