@@ -2,31 +2,55 @@ COMMAND: git status --short
 EXIT_CODE: 0
 
 --- STDOUT ---
- M .gitignore
- D PUSH_STATE_TO_GITHUB.bat
- D _chatgpt_state/latest/PUSH_STATE_TO_GITHUB.bat
+ M _chatgpt_state/latest/.gitignore
  M _chatgpt_state/latest/_STATE_INFO.json
  M _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
-AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ D _chatgpt_state/latest/content/transfers/bernardo-silva-real-madrid/index.md
+ D _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/index.md
+ D _chatgpt_state/latest/data/image-processing/background-removal-queue.json
+ D _chatgpt_state/latest/data/playerdb/players.json
+ D _chatgpt_state/latest/data/transfers.json
+ M _chatgpt_state/latest/hugo.toml
+ M _chatgpt_state/latest/layouts/_default/baseof.html
+ M _chatgpt_state/latest/layouts/_default/single.html
+ M _chatgpt_state/latest/layouts/index.html
+ M _chatgpt_state/latest/layouts/partials/favicon.html
+ M _chatgpt_state/latest/layouts/partials/featured-transfer-of-day.html
+ M _chatgpt_state/latest/layouts/partials/header.html
+ M _chatgpt_state/latest/layouts/partials/mbappe-player-market-value-chart.html
+ M _chatgpt_state/latest/layouts/partials/mbappe-standalone-chart-runtime.html
+ M _chatgpt_state/latest/layouts/partials/player-value-chart.html
+ M _chatgpt_state/latest/layouts/partials/post-card.html
+ M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
+ M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
  M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
+ M _chatgpt_state/latest/layouts/partials/transfer-player-value-history.html
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker(1).html
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker(2).html
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
+ M _chatgpt_state/latest/layouts/players/single.html
+ M _chatgpt_state/latest/layouts/shortcodes/mbappe-market-chart.html
+ M _chatgpt_state/latest/layouts/transfers/list.html
+ M _chatgpt_state/latest/layouts/transfers/single.html
  M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
  M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
  M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/index.html
  M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
- M content/posts/test.md
- M hugo.toml
- M layouts/index.html
+ D _chatgpt_state/latest/static/css/style.css
+ M _chatgpt_state/latest/static/css/transfer-article.css
+?? .env
 ?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
 ?? 110_FIX_DE_LIGT_PAGE_CLUBS_DATE.bat
 ?? 111_DE_LIGT_FULL_PAGE_STATS_VALUE_PHOTO.bat
@@ -89,8 +113,26 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 195_RESTORE_APPROVED_GOALS_BALL_NO_CROP_PACKAGE.bat
 ?? 196_REDRAW_FULL_FOOTBALL_GOALS_ICON_PACKAGE.bat
 ?? 197_TEST_GOALS_ICON_VARIANT_1_ONLY_PACKAGE.bat
-?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
+?? 198_TEST_GOALS_ICON_VARIANT_1_FULL_NO_HOLES_PACKAGE.bat
+?? 199_INTEGRATE_APPROVED_NEON_GOALS_ICON_PACKAGE.bat
+?? 200_TEST_GOALS_ICON_VARIANT_3_PACKAGE.bat
+?? 201_REMOVE_OUTER_STATS_BLOCK_WRAPPER_PACKAGE.bat
 ?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
+?? 20260629_191559_20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
+?? 202_SHRINK_STATS_ICON_CARDS_BY_4PX_PACKAGE.bat
+?? 203_SHRINK_STATS_ICON_CARDS_WIDTH_5PX_MORE_PACKAGE.bat
+?? 204_APPLY_APPROVED_STATS_BLOCK_TO_ALL_TRANSFER_PLAYERS_PACKAGE.bat
+?? 205_CHECK_GONCALO_RAMOS_PAGE_STATE_PACKAGE.bat
+?? 206_FIX_PLAYER_FLAGS_BY_NATIONALITY_PACKAGE.bat
+?? 207_REAL_FIX_RAMOS_FLAG_AND_VALUE_ALIGNMENT_PACKAGE.bat
+?? 208_FIX_RAMOS_PHOTO_BLACK_BG_AND_PORTUGAL_FLAG_PACKAGE.bat
+?? 209_REDOWNLOAD_RAMOS_TRANSFERMARKT_BLACK_BG_AND_REAL_FLAG_PACKAGE.bat
+?? 210_HARD_APPLY_RAMOS_PHOTO_FLAG_AND_PUSH_EXACT_FILES_PACKAGE.bat
+?? 211_VERIFIED_RAMOS_PAGE_HARD_FIX_PACKAGE.bat
+?? 212_ROLLBACK_BROKEN_RAMOS_HARDFIX_PACKAGE.bat
+?? 213_EMERGENCY_RESTORE_RAMOS_PAGE_AND_BLOCKS_PACKAGE.bat
+?? 214_RESTORE_RAMOS_PAGE_CHART_AND_STATS_BLOCK_PACKAGE.bat
+?? 215_ROLLBACK_6_COMMITS_AND_PUSH_PACKAGE.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -115,6 +157,24 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_195.txt
 ?? README_196.txt
 ?? README_197.txt
+?? README_198.txt
+?? README_199.txt
+?? README_200.txt
+?? README_201.txt
+?? README_202.txt
+?? README_203.txt
+?? README_204.txt
+?? README_205.txt
+?? README_206.txt
+?? README_207.txt
+?? README_208.txt
+?? README_209.txt
+?? README_210.txt
+?? README_211.txt
+?? README_212.txt
+?? README_213.txt
+?? README_214.txt
+?? README_215.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -180,7 +240,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
-?? _backup_109_de_ligt_page/
 ?? _backup_110_de_ligt_page/
 ?? _backup_111_de_ligt_full_page/
 ?? _backup_112_de_ligt_clone_structure/
@@ -235,7 +294,34 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_195_restore_approved_goals_ball_no_crop/
 ?? _backup_196_redraw_full_football_goals_icon/
 ?? _backup_197_test_goals_icon_variant_1/
+?? _backup_198_test_goals_icon_variant_1_full_no_holes/
+?? _backup_199_integrate_approved_neon_goals_icon/
+?? _backup_200_test_goals_icon_variant_3/
+?? _backup_201_remove_outer_stats_block_wrapper/
+?? _backup_202_shrink_stats_icon_cards_by_4px/
+?? _backup_203_shrink_stats_icon_cards_width_5px_more/
+?? _backup_204_apply_approved_stats_block_to_all_transfer_players/
+?? _backup_206_fix_player_flags_by_nationality/
+?? _backup_207_real_fix_ramos_flag_and_value_alignment/
+?? _backup_208_fix_ramos_photo_black_bg_and_portugal_flag/
+?? _backup_209_redownload_ramos_transfermarkt_black_bg_and_real_flag/
+?? _backup_210_hard_apply_ramos_photo_flag_and_push/
+?? _backup_211_verified_ramos_page_hard_fix/
+?? _backup_212_rollback_broken_ramos_hardfix/
+?? _backup_214_restore_ramos_page_chart_and_stats_block/
+?? _backup_215_rollback_6_commits_and_push/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/scripts/205_check_goncalo_ramos_page_state.py
+?? _chatgpt_state/latest/scripts/206_fix_player_flags_by_nationality.py
+?? _chatgpt_state/latest/scripts/207_real_fix_ramos_flag_and_value_alignment.py
+?? _chatgpt_state/latest/scripts/208_fix_ramos_photo_black_bg_and_portugal_flag.py
+?? _chatgpt_state/latest/scripts/209_redownload_ramos_transfermarkt_black_bg_and_real_flag.py
+?? _chatgpt_state/latest/scripts/210_hard_apply_ramos_photo_flag_and_push.py
+?? _chatgpt_state/latest/scripts/211_verified_ramos_page_hard_fix.py
+?? _chatgpt_state/latest/scripts/212_rollback_broken_ramos_hardfix.py
+?? _chatgpt_state/latest/scripts/213_emergency_restore_ramos_page_and_blocks.py
+?? _chatgpt_state/latest/scripts/214_restore_ramos_page_chart_and_stats_block.py
+?? _chatgpt_state/latest/scripts/215_rollback_6_commits_and_push.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -245,6 +331,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? data/
 ?? download_ticker_player_photos.bat
 ?? fix_api_football_data_error.bat
+?? images/
 ?? isableFastRender/
 ?? layouts/_default/
 ?? layouts/partials/
@@ -280,6 +367,24 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/195_restore_approved_goals_ball_no_crop.py
 ?? scripts/196_redraw_full_football_goals_icon.ps1
 ?? scripts/197_test_goals_icon_variant_1.ps1
+?? scripts/198_test_goals_icon_variant_1_full_no_holes.ps1
+?? scripts/199_integrate_approved_neon_goals_icon.ps1
+?? scripts/200_test_goals_icon_variant_3.ps1
+?? scripts/201_remove_outer_stats_block_wrapper.ps1
+?? scripts/202_shrink_stats_icon_cards_by_4px.ps1
+?? scripts/203_shrink_stats_icon_cards_width_5px_more.ps1
+?? scripts/204_apply_approved_stats_block_to_all_transfer_players.ps1
+?? scripts/205_check_goncalo_ramos_page_state.py
+?? scripts/206_fix_player_flags_by_nationality.py
+?? scripts/207_real_fix_ramos_flag_and_value_alignment.py
+?? scripts/208_fix_ramos_photo_black_bg_and_portugal_flag.py
+?? scripts/209_redownload_ramos_transfermarkt_black_bg_and_real_flag.py
+?? scripts/210_hard_apply_ramos_photo_flag_and_push.py
+?? scripts/211_verified_ramos_page_hard_fix.py
+?? scripts/212_rollback_broken_ramos_hardfix.py
+?? scripts/213_emergency_restore_ramos_page_and_blocks.py
+?? scripts/214_restore_ramos_page_chart_and_stats_block.py
+?? scripts/215_rollback_6_commits_and_push.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

@@ -2,22 +2,3 @@ baseURL = "https://promyachik.github.io/promyachik/"
 languageCode = "ru"
 title = "Promyachik"
 theme = ""
-[[menu.main]]
-name = "Главная"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "Трансферы"
-url = "/transfers/"
-weight = 2
-
-[[menu.main]]
-name = "Новости"
-url = "/news/"
-weight = 3
-
-[[menu.main]]
-name = "О проекте"
-url = "/about/"
-weight = 4
