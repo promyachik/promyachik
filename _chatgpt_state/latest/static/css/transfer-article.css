@@ -3827,3 +3827,56 @@ body.transfer-page section.transfer-stats.pfb-stats-v181 .pfb-stats-v181__card:f
 }
 /* PROFUTBIK EXACT SCREEN STATS BLOCK V181 END */
 
+/* 207 real fix Ramos flag and value alignment */
+body.transfer-page img[src*="/images/flags/"],
+body.transfer-page img[src*="images/flags/"] {
+  width: 24px !important;
+  height: 16px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  display: inline-block !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 2px !important;
+  background: transparent !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  flex: 0 0 24px !important;
+  vertical-align: middle !important;
+}
+
+body.transfer-page .transfer-player-card img[src*="/images/flags/"],
+body.transfer-page .transfer-article img[src*="/images/flags/"],
+body.transfer-page .player-card img[src*="/images/flags/"] {
+  margin-right: 7px !important;
+}
+
+body.transfer-page [class*="nationality"],
+body.transfer-page [class*="country"],
+body.transfer-page [class*="market"],
+body.transfer-page [class*="value"] {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body.transfer-page [class*="market"] *,
+body.transfer-page [class*="value"] *,
+body.transfer-page [class*="price"] *,
+body.transfer-page [class*="fee"] * {
+  white-space: nowrap !important;
+}
+
+body.transfer-page [class*="market"],
+body.transfer-page [class*="value"],
+body.transfer-page [class*="price"] {
+  align-items: center !important;
+  text-align: left !important;
+}
+
+body.transfer-page [class*="country"],
+body.transfer-page [class*="nationality"] {
+  align-items: center !important;
+}

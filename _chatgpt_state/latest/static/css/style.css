@@ -584,3 +584,34 @@ body > section > h3 {
         rgba(5, 9, 16, 0) 100%
     ) !important;
 }
+
+/* 208 ramos flag visibility and market value alignment */
+body.transfer-page img[src*="/images/flags/"],
+body.transfer-page img[src*="images/flags/"] {
+  width: 24px !important;
+  height: 16px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  display: inline-block !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 2px !important;
+  background: transparent !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  box-shadow: none !important;
+  flex: 0 0 24px !important;
+  vertical-align: middle !important;
+}
+
+body.transfer-page [class*="market"],
+body.transfer-page [class*="value"],
+body.transfer-page [class*="price"],
+body.transfer-page [class*="fee"] {
+  white-space: nowrap !important;
+  align-items: center !important;
+  text-align: left !important;
+}

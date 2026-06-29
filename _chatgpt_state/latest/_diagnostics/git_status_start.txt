@@ -12,17 +12,9 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
- M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
- M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
- M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
- M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
- M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
+ M _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/index.md
+ M _chatgpt_state/latest/static/css/style.css
+ M _chatgpt_state/latest/static/css/transfer-article.css
  M content/posts/test.md
  M hugo.toml
  M layouts/index.html
@@ -96,6 +88,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 20260629_191559_20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
 ?? 202_SHRINK_STATS_ICON_CARDS_BY_4PX_PACKAGE.bat
 ?? 203_SHRINK_STATS_ICON_CARDS_WIDTH_5PX_MORE_PACKAGE.bat
+?? 204_APPLY_APPROVED_STATS_BLOCK_TO_ALL_TRANSFER_PLAYERS_PACKAGE.bat
+?? 205_CHECK_GONCALO_RAMOS_PAGE_STATE_PACKAGE.bat
+?? 206_FIX_PLAYER_FLAGS_BY_NATIONALITY_PACKAGE.bat
+?? 207_REAL_FIX_RAMOS_FLAG_AND_VALUE_ALIGNMENT_PACKAGE.bat
+?? 208_FIX_RAMOS_PHOTO_BLACK_BG_AND_PORTUGAL_FLAG_PACKAGE.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -126,6 +123,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_201.txt
 ?? README_202.txt
 ?? README_203.txt
+?? README_204.txt
+?? README_205.txt
+?? README_206.txt
+?? README_207.txt
+?? README_208.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -252,7 +254,15 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_201_remove_outer_stats_block_wrapper/
 ?? _backup_202_shrink_stats_icon_cards_by_4px/
 ?? _backup_203_shrink_stats_icon_cards_width_5px_more/
+?? _backup_204_apply_approved_stats_block_to_all_transfer_players/
+?? _backup_206_fix_player_flags_by_nationality/
+?? _backup_207_real_fix_ramos_flag_and_value_alignment/
+?? _backup_208_fix_ramos_photo_black_bg_and_portugal_flag/
 ?? _backup_clone_transfer_page_20260627_203952/
+?? _chatgpt_state/latest/scripts/205_check_goncalo_ramos_page_state.py
+?? _chatgpt_state/latest/scripts/206_fix_player_flags_by_nationality.py
+?? _chatgpt_state/latest/scripts/207_real_fix_ramos_flag_and_value_alignment.py
+?? _chatgpt_state/latest/scripts/208_fix_ramos_photo_black_bg_and_portugal_flag.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -260,6 +270,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? content/news/
 ?? content/transfers/
 ?? data/
+?? docs/
 ?? download_ticker_player_photos.bat
 ?? fix_api_football_data_error.bat
 ?? isableFastRender/
@@ -303,6 +314,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/201_remove_outer_stats_block_wrapper.ps1
 ?? scripts/202_shrink_stats_icon_cards_by_4px.ps1
 ?? scripts/203_shrink_stats_icon_cards_width_5px_more.ps1
+?? scripts/204_apply_approved_stats_block_to_all_transfer_players.ps1
+?? scripts/205_check_goncalo_ramos_page_state.py
+?? scripts/206_fix_player_flags_by_nationality.py
+?? scripts/207_real_fix_ramos_flag_and_value_alignment.py
+?? scripts/208_fix_ramos_photo_black_bg_and_portugal_flag.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

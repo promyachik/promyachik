@@ -42,7 +42,7 @@ player_image_source_url: "https://media.api-sports.io/football/players/41585.png
 
 nationality: "Portugal"
 country: "Portugal"
-country_flag: "🇵🇹"
+country_flag: 🇵🇹
 position: "Centre-Forward"
 position_ru: "Нападающий"
 main_position: "CF"
@@ -97,20 +97,20 @@ to_club_badge: "/images/clubs/ac-milan.svg"
 to_badge: "/images/clubs/ac-milan.svg"
 new_club_logo: "/images/clubs/ac-milan.svg"
 club_to_logo: "/images/clubs/ac-milan.svg"
-milan_logo: "/images/flags/argentina.svg"
+milan_logo: /images/clubs/ac-milan.svg
 player_country: "Portugal"
 player_nationality: "Portugal"
-country_code: "PT"
-nationality_code: "PT"
-flag: "🇵🇹"
-player_flag: "🇵🇹"
-player_country_flag: "🇵🇹"
-nationality_flag: "🇵🇹"
-country_flag_image: "/images/flags/portugal.svg"
-flag_image: "/images/flags/portugal.svg"
-player_flag_image: "/images/flags/portugal.svg"
-player_country_flag_image: "/images/flags/portugal.svg"
-nationality_flag_image: "/images/flags/portugal.svg"
+country_code: PT
+nationality_code: PT
+flag: 🇵🇹
+player_flag: 🇵🇹
+player_country_flag: 🇵🇹
+nationality_flag: 🇵🇹
+country_flag_image: /images/flags/portugal.svg
+flag_image: /images/flags/portugal.svg
+player_flag_image: /images/flags/portugal.svg
+player_country_flag_image: /images/flags/portugal.svg
+nationality_flag_image: /images/flags/portugal.svg
 preferred_foot: "Right"
 preferred_foot_ru: "Правая"
 dominant_foot: "Right"
@@ -147,6 +147,7 @@ cutout_player_image: ""
 show_in_top_ticker: "True"
 show_in_footer_ticker: "True"
 needs_cutout: "True"
+value: "€30M"
 ---
 
 ## Gonçalo Ramos → AC Milan
