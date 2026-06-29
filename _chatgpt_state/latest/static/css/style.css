@@ -615,3 +615,359 @@ body.transfer-page [class*="fee"] {
   align-items: center !important;
   text-align: left !important;
 }
+
+/* PROMYACHIK 225 OLD TESTED TICKER CSS START */
+.pf-ticker {
+    position: relative;
+    z-index: 19;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    background: linear-gradient(90deg, #07090c, #0c0f13, #07090c);
+}
+
+.pf-ticker__badge {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 0 0 auto;
+    min-width: 145px;
+    height: 100%;
+    padding: 0 18px;
+    border-right: 1px solid rgba(255, 226, 137, 0.3);
+    color: #111111;
+    background: linear-gradient(135deg, #f2d374, #d1a334);
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.11em;
+}
+
+.pf-ticker__live-dot {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+    border-radius: 50%;
+    background: #52db70;
+    box-shadow: 0 0 8px rgba(82, 219, 112, 0.8);
+}
+
+.pf-ticker__viewport {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pf-ticker__track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 100%;
+    will-change: transform;
+    animation: pfTickerScroll var(--pf-ticker-duration, 42s) linear infinite;
+}
+
+.pf-ticker--interactive .pf-ticker__viewport {
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.pf-ticker--interactive .pf-ticker__viewport.is-dragging {
+    cursor: grabbing;
+}
+
+.pf-ticker--interactive .pf-ticker__track {
+    animation: none;
+}
+
+.pf-ticker--interactive .pf-ticker__item {
+    cursor: inherit;
+}
+
+.pf-ticker--interactive .pf-ticker__club-logo {
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.pf-ticker__group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 100%;
+    padding-right: 32px;
+}
+
+.pf-ticker__item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    padding: 0 22px;
+    color: #d9dce2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.pf-ticker__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #b88a27;
+    transform: translateY(-50%);
+}
+
+.pf-ticker__player {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.pf-ticker__club {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.pf-ticker__club-name {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.pf-ticker__logo-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    min-width: 22px;
+    max-width: 22px;
+    height: 22px;
+    min-height: 22px;
+    max-height: 22px;
+    flex: 0 0 22px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.pf-ticker__club-logo {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pf-ticker__logo-box.is-placeholder {
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.08);
+}
+
+.pf-ticker__logo-box.is-placeholder::after {
+    content: "PF";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #d8b34a;
+    font-size: 7px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.pf-ticker__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    color: #ddb344;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.pf-ticker__fee {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    color: #d7b75c;
+    line-height: 1;
+}
+
+.pf-ticker__status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 4px 7px;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.08em;
+}
+
+.pf-ticker__status--official,
+.pf-ticker__status--confirmed {
+    color: #75e292;
+    background: rgba(63, 190, 100, 0.13);
+}
+
+.pf-ticker__status--agreement {
+    color: #f0ca63;
+    background: rgba(212, 175, 55, 0.13);
+}
+
+.pf-ticker__status--negotiations {
+    color: #80b8ff;
+    background: rgba(65, 129, 215, 0.13);
+}
+
+.pf-ticker__status--rumour {
+    color: #f0c965;
+    background: rgba(212, 175, 55, 0.12);
+}
+
+@keyframes pfTickerScroll {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@media (max-width: 800px) {
+    .pf-ticker {
+        height: 44px;
+    }
+
+    .pf-ticker__badge {
+        min-width: 115px;
+        padding: 0 12px;
+        font-size: 9px;
+    }
+
+    .pf-ticker__item {
+        gap: 10px;
+        padding: 0 18px;
+        font-size: 11px;
+    }
+
+    .pf-ticker__club {
+        gap: 5px;
+    }
+
+    .pf-ticker__logo-box,
+    .pf-ticker__club-logo,
+    .pf-ticker__club-name,
+    .pf-ticker__arrow,
+    .pf-ticker__fee {
+        height: 21px;
+    }
+
+    .pf-ticker__logo-box,
+    .pf-ticker__club-logo {
+        width: 21px;
+        min-width: 21px;
+        max-width: 21px;
+    }
+
+    .pf-ticker__logo-box {
+        flex-basis: 21px;
+    }
+}
+
+@media (max-width: 520px) {
+    .pf-ticker {
+        height: 41px;
+    }
+
+    .pf-ticker__badge {
+        min-width: auto;
+        padding: 0 10px;
+        font-size: 0;
+    }
+
+    .pf-ticker__badge::after {
+        content: "LIVE";
+        font-size: 9px;
+        font-weight: 900;
+    }
+
+    .pf-ticker__item {
+        gap: 8px;
+        padding: 0 14px;
+        font-size: 10px;
+    }
+
+    .pf-ticker__club {
+        gap: 4px;
+    }
+
+    .pf-ticker__status {
+        padding: 3px 5px;
+        font-size: 7px;
+    }
+
+    .pf-ticker__logo-box,
+    .pf-ticker__club-logo,
+    .pf-ticker__club-name,
+    .pf-ticker__arrow,
+    .pf-ticker__fee {
+        height: 20px;
+    }
+
+    .pf-ticker__logo-box,
+    .pf-ticker__club-logo {
+        width: 20px;
+        min-width: 20px;
+        max-width: 20px;
+    }
+
+    .pf-ticker__logo-box {
+        flex-basis: 20px;
+    }
+}
+/* PROMYACHIK 225 OLD TESTED TICKER CSS END */

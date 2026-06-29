@@ -11,6 +11,18 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
+ M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
+ M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
+ M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
+ M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/index.html
+ M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
+ M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
+ M _chatgpt_state/latest/static/css/style.css
 ?? .env
 ?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
 ?? 110_FIX_DE_LIGT_PAGE_CLUBS_DATE.bat
@@ -101,6 +113,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 219_RESTORE_TESTED_TICKERS_FROM_BACKUP_ONLY_PACKAGE.bat
 ?? 220_FULL_RESTORE_FROM_WORKING_SNAPSHOT_PACKAGE.bat
 ?? 221_RECOVER_REAL_SITE_PER_FILE_FROM_BACKUPS_PACKAGE.bat
+?? 222_HARD_RESTORE_LAST_GOOD_COMMIT_BEFORE_RAMOS_PHOTO_DAMAGE_PACKAGE.bat
+?? 224_PROMYACHIK_RESTORE_OLD_TICKER_CLICK_RUN.bat
+?? 225_PROMYACHIK_RESTORE_TICKER_FULL_SET_CLICK_RUN.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -149,6 +164,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_219.txt
 ?? README_220.txt
 ?? README_221.txt
+?? README_222.txt
+?? README_224_PROMYACHIK.txt
+?? README_225_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -290,8 +308,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_219_before_restore_tested_tickers_from_backup_only/
 ?? _backup_220_before_full_restore_from_working_snapshot/
 ?? _backup_221_before_recover_real_site_per_file/
+?? _backup_222_before_hard_restore_20260629_210209/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/scripts/221_recover_real_site_per_file_from_backups.py
+?? _backup_promyachik_224_before_old_ticker_20260629_211255/
+?? _backup_promyachik_225_before_old_ticker_full_set_20260629_212311/
+?? _chatgpt_state/latest/data/transfers.json
+?? _chatgpt_state/latest/scripts/222_hard_restore_last_good_commit_before_ramos_photo_damage.py
+?? _chatgpt_state/latest/scripts/224_promyachik_restore_old_ticker_click_run.py
+?? _chatgpt_state/latest/scripts/225_promyachik_restore_old_ticker_full_set_click_run.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -309,6 +333,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? layouts/shortcodes/
 ?? layouts/transfers/
 ?? payload/
+?? restore_files/
 ?? run_api_football_photos_fixed.bat
 ?? run_api_football_photos_v3.bat
 ?? run_api_football_photos_v4.bat
@@ -361,6 +386,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/219_restore_tested_tickers_from_backup_only.py
 ?? scripts/220_full_restore_from_working_snapshot.py
 ?? scripts/221_recover_real_site_per_file_from_backups.py
+?? scripts/222_hard_restore_last_good_commit_before_ramos_photo_damage.py
+?? scripts/224_promyachik_restore_old_ticker_click_run.py
+?? scripts/225_promyachik_restore_old_ticker_full_set_click_run.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
