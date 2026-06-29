@@ -765,3 +765,41 @@ body.transfer-page [class*="fee"] {
 }
 
 /* PROMYACHIK 229 TICKER DRAG AND CLEAN BOTTOM END */
+
+/* PROMYACHIK 233 FORCE ALIGN VALUE LABELS START */
+
+/*
+   Подписи дата+цена под графиком стоимости ставятся по X-точкам графика.
+   Не центрирование всего ряда, а конкретная привязка каждого label-блока к своей точке.
+*/
+
+body.transfer-page .promyachik-value-label-row-233 {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+body.transfer-page .promyachik-value-label-item-233 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    line-height: 1.08 !important;
+    box-sizing: border-box !important;
+    float: none !important;
+}
+
+body.transfer-page .promyachik-value-label-item-233 span,
+body.transfer-page .promyachik-value-label-item-233 strong,
+body.transfer-page .promyachik-value-label-item-233 em {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* PROMYACHIK 233 FORCE ALIGN VALUE LABELS END */

@@ -1,0 +1,372 @@
+{{ if eq .Section "transfers" }}
+<!-- PROMYACHIK 232 ALIGN VALUE LABELS TO POINTS START -->
+<script>
+(function () {
+    if (window.__promyachikAlignValueLabels232Ready) {
+        return;
+    }
+
+    window.__promyachikAlignValueLabels232Ready = true;
+
+    const PRICE_RE = /€\s*\d+(?:[.,]\d+)?\s*(?:млн|m|м)?/i;
+    const DATE_RE = /(янв|фев|мар|апр|май|июн|июл|авг|сен|сент|окт|ноя|дек|май|июнь|июль|20\d{2})/i;
+    const EXCLUDE_SELECTOR = [
+        ".pf-ticker",
+        ".bottom-transfer-strip-v3",
+        ".pf-header",
+        "header",
+        "nav"
+    ].join(",");
+
+    function visible(el) {
+        if (!el || !(el instanceof Element)) {
+            return false;
+        }
+
+        const rect = el.getBoundingClientRect();
+        const style = window.getComputedStyle(el);
+
+        return (
+            rect.width > 0 &&
+            rect.height > 0 &&
+            style.display !== "none" &&
+            style.visibility !== "hidden" &&
+            style.opacity !== "0"
+        );
+    }
+
+    function cleanText(el) {
+        return (el.textContent || "").replace(/\s+/g, " ").trim();
+    }
+
+    function countPrices(text) {
+        return (text.match(/€\s*\d+(?:[.,]\d+)?\s*(?:млн|m|м)?/gi) || []).length;
+    }
+
+    function looksLikeLabelItem(el) {
+        if (!visible(el) || el.closest(EXCLUDE_SELECTOR)) {
+            return false;
+        }
+
+        const text = cleanText(el);
+
+        if (text.length < 5 || text.length > 90) {
+            return false;
+        }
+
+        return PRICE_RE.test(text) && DATE_RE.test(text);
+    }
+
+    function directLabelChildren(parent) {
+        const children = Array.from(parent.children).filter(looksLikeLabelItem);
+
+        if (children.length >= 3 && children.length <= 8) {
+            return children;
+        }
+
+        return [];
+    }
+
+    function nestedLabelChildren(parent) {
+        const all = Array.from(parent.querySelectorAll("div, span, li"))
+            .filter(looksLikeLabelItem)
+            .filter(function (item) {
+                return item.closest(EXCLUDE_SELECTOR) === null;
+            });
+
+        const compact = [];
+
+        all.forEach(function (item) {
+            if (compact.some(function (existing) {
+                return existing.contains(item) || item.contains(existing);
+            })) {
+                return;
+            }
+
+            compact.push(item);
+        });
+
+        if (compact.length >= 3 && compact.length <= 8) {
+            return compact;
+        }
+
+        return [];
+    }
+
+    function findRows() {
+        const candidates = [];
+        const all = Array.from(document.querySelectorAll("div, ul, ol, section"));
+
+        all.forEach(function (parent) {
+            if (!visible(parent) || parent.closest(EXCLUDE_SELECTOR)) {
+                return;
+            }
+
+            const text = cleanText(parent);
+
+            if (text.length > 900 || countPrices(text) < 3) {
+                return;
+            }
+
+            let items = directLabelChildren(parent);
+
+            if (!items.length) {
+                items = nestedLabelChildren(parent);
+            }
+
+            if (items.length < 3 || items.length > 8) {
+                return;
+            }
+
+            const rect = parent.getBoundingClientRect();
+
+            if (rect.height > 140 || rect.width < 220) {
+                return;
+            }
+
+            let score = 0;
+            const className = String(parent.className || "").toLowerCase();
+
+            if (className.includes("chart")) {
+                score += 80;
+            }
+
+            if (className.includes("value") || className.includes("market")) {
+                score += 80;
+            }
+
+            score += items.length * 10;
+            score -= rect.height;
+
+            candidates.push({
+                parent: parent,
+                items: items,
+                score: score
+            });
+        });
+
+        candidates.sort(function (a, b) {
+            return b.score - a.score;
+        });
+
+        const rows = [];
+
+        candidates.forEach(function (candidate) {
+            if (rows.some(function (row) {
+                return row.parent.contains(candidate.parent) || candidate.parent.contains(row.parent);
+            })) {
+                return;
+            }
+
+            rows.push(candidate);
+        });
+
+        return rows.slice(0, 4);
+    }
+
+    function uniqueXs(points) {
+        const xs = points
+            .filter(function (x) { return Number.isFinite(x); })
+            .sort(function (a, b) { return a - b; });
+
+        const out = [];
+
+        xs.forEach(function (x) {
+            if (!out.length || Math.abs(out[out.length - 1] - x) > 8) {
+                out.push(x);
+            }
+        });
+
+        return out;
+    }
+
+    function nearestChartRoot(row) {
+        let node = row.parent.parentElement;
+        let best = row.parent;
+
+        while (node && node !== document.body) {
+            const text = cleanText(node);
+            const rect = node.getBoundingClientRect();
+            const className = String(node.className || "").toLowerCase();
+
+            if (
+                rect.width >= row.parent.getBoundingClientRect().width &&
+                rect.height < 900 &&
+                (
+                    className.includes("chart") ||
+                    className.includes("market") ||
+                    className.includes("value") ||
+                    node.querySelector("svg") ||
+                    node.querySelector("canvas")
+                ) &&
+                countPrices(text) >= 3
+            ) {
+                best = node;
+            }
+
+            node = node.parentElement;
+        }
+
+        return best;
+    }
+
+    function pointXsFromSvg(root, rowRect) {
+        const points = [];
+
+        root.querySelectorAll("svg circle, svg [cx]").forEach(function (node) {
+            if (!visible(node)) {
+                return;
+            }
+
+            const rect = node.getBoundingClientRect();
+
+            if (
+                rect.width > 42 ||
+                rect.height > 42 ||
+                rect.bottom > rowRect.top + 4 ||
+                rect.top < root.getBoundingClientRect().top - 4
+            ) {
+                return;
+            }
+
+            points.push(rect.left + rect.width / 2);
+        });
+
+        return uniqueXs(points);
+    }
+
+    function pointXsFromHtml(root, rowRect) {
+        const points = [];
+
+        root.querySelectorAll("[class*='point'], [class*='dot'], [class*='marker'], [class*='node']").forEach(function (node) {
+            if (!visible(node) || node.closest(EXCLUDE_SELECTOR)) {
+                return;
+            }
+
+            const rect = node.getBoundingClientRect();
+
+            if (
+                rect.width < 5 ||
+                rect.height < 5 ||
+                rect.width > 90 ||
+                rect.height > 90 ||
+                rect.bottom > rowRect.top + 8
+            ) {
+                return;
+            }
+
+            points.push(rect.left + rect.width / 2);
+        });
+
+        return uniqueXs(points);
+    }
+
+    function fallbackXs(rowRect, count) {
+        const leftPad = Math.max(30, rowRect.width * 0.075);
+        const rightPad = Math.max(26, rowRect.width * 0.055);
+        const start = rowRect.left + leftPad;
+        const end = rowRect.right - rightPad;
+
+        if (count <= 1) {
+            return [rowRect.left + rowRect.width / 2];
+        }
+
+        return Array.from({ length: count }, function (_, index) {
+            return start + ((end - start) * index / (count - 1));
+        });
+    }
+
+    function alignRow(row) {
+        const parent = row.parent;
+        const items = row.items;
+
+        if (!items.length) {
+            return false;
+        }
+
+        parent.classList.add("promyachik-value-label-row-232");
+
+        items.forEach(function (item) {
+            item.classList.add("promyachik-value-label-item-232");
+        });
+
+        const rowRect = parent.getBoundingClientRect();
+        const root = nearestChartRoot(row);
+        let xs = [];
+
+        if (root) {
+            xs = pointXsFromSvg(root, rowRect);
+
+            if (xs.length < items.length) {
+                xs = pointXsFromHtml(root, rowRect);
+            }
+        }
+
+        if (xs.length >= items.length) {
+            if (xs.length > items.length) {
+                xs = xs.slice(0, items.length);
+            }
+        } else {
+            xs = fallbackXs(rowRect, items.length);
+        }
+
+        const minHeight = Math.max(parent.getBoundingClientRect().height, 38);
+
+        parent.style.position = "relative";
+        parent.style.display = "block";
+        parent.style.height = minHeight + "px";
+        parent.style.minHeight = minHeight + "px";
+        parent.style.width = "100%";
+        parent.style.maxWidth = "100%";
+        parent.style.overflow = "visible";
+
+        items.forEach(function (item, index) {
+            const x = xs[index] - rowRect.left;
+
+            item.style.position = "absolute";
+            item.style.left = x + "px";
+            item.style.top = "0";
+            item.style.transform = "translateX(-50%)";
+            item.style.textAlign = "center";
+            item.style.whiteSpace = "nowrap";
+            item.style.minWidth = "76px";
+            item.style.maxWidth = "104px";
+        });
+
+        return true;
+    }
+
+    function alignAll() {
+        const rows = findRows();
+        let aligned = 0;
+
+        rows.forEach(function (row) {
+            if (alignRow(row)) {
+                aligned += 1;
+            }
+        });
+
+        document.documentElement.dataset.promyachikValueLabels232 = String(aligned);
+    }
+
+    function boot() {
+        alignAll();
+
+        window.addEventListener("resize", function () {
+            window.requestAnimationFrame(alignAll);
+        });
+
+        window.setTimeout(alignAll, 250);
+        window.setTimeout(alignAll, 900);
+        window.setTimeout(alignAll, 1800);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", boot);
+    } else {
+        boot();
+    }
+})();
+</script>
+<!-- PROMYACHIK 232 ALIGN VALUE LABELS TO POINTS END -->
+{{ end }}

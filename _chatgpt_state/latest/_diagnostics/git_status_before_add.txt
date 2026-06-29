@@ -10,31 +10,13 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/data/transfers.json
  M _chatgpt_state/latest/layouts/_default/baseof.html
- M _chatgpt_state/latest/layouts/_default/single.html
- M _chatgpt_state/latest/layouts/index.html
- M _chatgpt_state/latest/layouts/partials/favicon.html
- M _chatgpt_state/latest/layouts/partials/featured-transfer-of-day.html
- M _chatgpt_state/latest/layouts/partials/footer-transfer-ticker.html
- M _chatgpt_state/latest/layouts/partials/mbappe-player-market-value-chart.html
- M _chatgpt_state/latest/layouts/partials/mbappe-standalone-chart-runtime.html
- M _chatgpt_state/latest/layouts/partials/player-value-chart.html
- M _chatgpt_state/latest/layouts/partials/post-card.html
- M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
- M _chatgpt_state/latest/layouts/partials/transfer-player-value-history.html
- M _chatgpt_state/latest/layouts/partials/transfer-ticker(1).html
- M _chatgpt_state/latest/layouts/partials/transfer-ticker(2).html
- M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
- M _chatgpt_state/latest/layouts/players/single.html
- M _chatgpt_state/latest/layouts/shortcodes/mbappe-market-chart.html
  M _chatgpt_state/latest/layouts/transfers/single.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
  M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
  M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/index.html
  M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
@@ -138,6 +120,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 227_PROMYACHIK_RESTORE_REAL_HOME_API_TICKERS_CLICK_RUN.bat
 ?? 228_PROMYACHIK_REMOVE_RAMOS_V211_HARDFIX_CLICK_RUN.bat
 ?? 229_PROMYACHIK_TICKER_DRAG_AND_CLEAN_BOTTOM_CLICK_RUN.bat
+?? 230_PROMYACHIK_CENTER_MARKET_VALUE_UNDER_CHART_CLICK_RUN.bat
+?? 231_PROMYACHIK_CENTER_VALUE_CHART_TIMELINE_LABELS_CLICK_RUN.bat
+?? 232_PROMYACHIK_ALIGN_VALUE_LABELS_TO_POINTS_CLICK_RUN.bat
+?? 233_PROMYACHIK_FORCE_ALIGN_VALUE_LABELS_TO_POINTS_CLICK_RUN.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -193,6 +179,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_227_PROMYACHIK.txt
 ?? README_228_PROMYACHIK.txt
 ?? README_229_PROMYACHIK.txt
+?? README_230_PROMYACHIK.txt
+?? README_231_PROMYACHIK.txt
+?? README_232_PROMYACHIK.txt
+?? README_233_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -342,9 +332,16 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_227_before_real_home_api_tickers_20260629_214235/
 ?? _backup_promyachik_228_before_remove_ramos_v211_hardfix_20260629_214423/
 ?? _backup_promyachik_229_before_ticker_drag_clean_bottom_20260629_215050/
-?? _chatgpt_state/latest/scripts/227_promyachik_restore_real_home_api_tickers.py
-?? _chatgpt_state/latest/scripts/228_promyachik_remove_ramos_v211_hardfix.py
-?? _chatgpt_state/latest/scripts/229_promyachik_ticker_drag_clean_bottom.py
+?? _backup_promyachik_230_before_center_market_value_20260629_215440/
+?? _backup_promyachik_231_before_value_chart_labels_20260629_215946/
+?? _backup_promyachik_232_before_align_value_labels_20260629_220444/
+?? _backup_promyachik_233_before_force_align_value_labels_20260629_220910/
+?? _chatgpt_state/latest/layouts/partials/promyachik-align-value-labels-232.html
+?? _chatgpt_state/latest/layouts/partials/promyachik-force-align-value-labels-233.html
+?? _chatgpt_state/latest/scripts/230_promyachik_center_market_value_under_chart.py
+?? _chatgpt_state/latest/scripts/231_promyachik_center_value_chart_timeline_labels.py
+?? _chatgpt_state/latest/scripts/232_promyachik_align_value_labels_to_points.py
+?? _chatgpt_state/latest/scripts/233_promyachik_force_align_value_labels_to_points.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -422,6 +419,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/227_promyachik_restore_real_home_api_tickers.py
 ?? scripts/228_promyachik_remove_ramos_v211_hardfix.py
 ?? scripts/229_promyachik_ticker_drag_clean_bottom.py
+?? scripts/230_promyachik_center_market_value_under_chart.py
+?? scripts/231_promyachik_center_value_chart_timeline_labels.py
+?? scripts/232_promyachik_align_value_labels_to_points.py
+?? scripts/233_promyachik_force_align_value_labels_to_points.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
