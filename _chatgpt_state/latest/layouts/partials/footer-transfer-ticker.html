@@ -1,4 +1,6 @@
-{{ $transfers := .Site.Data.transfers }}
+{{ $transfers := where .Site.Data.transfers "status" "official" }}
+
+{{ if gt (len $transfers) 0 }}
 
 {{ $statusLabels := dict
     "rumour" "СЛУХ"
@@ -16,16 +18,14 @@
     "official" "confirmed"
 }}
 
-{{ with $transfers }}
-
 <div
-    class="pf-ticker"
-    data-ticker-duration="42"
-    aria-label="Последние футбольные трансферы"
+    class="pf-ticker pf-ticker--footer"
+    data-ticker-duration="48"
+    aria-label="Официальные футбольные трансферы"
 >
     <div class="pf-ticker__badge">
         <span class="pf-ticker__live-dot"></span>
-        <span>ТРАНСФЕРЫ</span>
+        <span>ОФИЦИАЛЬНО</span>
     </div>
 
     <div class="pf-ticker__viewport">
@@ -45,16 +45,14 @@
                         {{ $toClub := $transfer.to_club }}
 
                         {{ $statusText := default $transfer.status (index $statusLabels $transfer.status) }}
-                        {{ $statusClass := default "rumour" (index $statusClasses $transfer.status) }}
+                        {{ $statusClass := default "confirmed" (index $statusClasses $transfer.status) }}
 
                         <a
                             class="pf-ticker__item"
                             href="{{ $transfer.url | relURL }}"
                             {{ if eq $groupNumber 2 }}tabindex="-1"{{ end }}
                         >
-                            <span
-                                class="pf-ticker__status pf-ticker__status--{{ $statusClass }}"
-                            >
+                            <span class="pf-ticker__status pf-ticker__status--{{ $statusClass }}">
                                 {{ $statusText }}
                             </span>
 
@@ -63,10 +61,7 @@
                             </strong>
 
                             <span class="pf-ticker__club">
-
-                                <span
-                                    class="pf-ticker__club-media{{ if not $fromClub.logo }} is-placeholder{{ end }}"
-                                >
+                                <span class="pf-ticker__club-media{{ if not $fromClub.logo }} is-placeholder{{ end }}">
                                     {{ with $fromClub.logo }}
                                         <img
                                             class="pf-ticker__club-logo"
@@ -77,22 +72,13 @@
                                         >
                                     {{ end }}
                                 </span>
-
-                                <span class="pf-ticker__club-name">
-                                    {{ $fromClub.name }}
-                                </span>
-
+                                <span class="pf-ticker__club-name">{{ $fromClub.name }}</span>
                             </span>
 
-                            <span class="pf-ticker__arrow" aria-hidden="true">
-                                →
-                            </span>
+                            <span class="pf-ticker__arrow" aria-hidden="true">→</span>
 
                             <span class="pf-ticker__club">
-
-                                <span
-                                    class="pf-ticker__club-media{{ if not $toClub.logo }} is-placeholder{{ end }}"
-                                >
+                                <span class="pf-ticker__club-media{{ if not $toClub.logo }} is-placeholder{{ end }}">
                                     {{ with $toClub.logo }}
                                         <img
                                             class="pf-ticker__club-logo"
@@ -103,17 +89,11 @@
                                         >
                                     {{ end }}
                                 </span>
-
-                                <span class="pf-ticker__club-name">
-                                    {{ $toClub.name }}
-                                </span>
-
+                                <span class="pf-ticker__club-name">{{ $toClub.name }}</span>
                             </span>
 
                             {{ with $transfer.fee }}
-                                <span class="pf-ticker__fee">
-                                    · {{ . }}
-                                </span>
+                                <span class="pf-ticker__fee">· {{ . }}</span>
                             {{ end }}
                         </a>
 
@@ -138,7 +118,7 @@
                 return;
             }
 
-            const duration = Number(ticker.dataset.tickerDuration) || 42;
+            const duration = Number(ticker.dataset.tickerDuration) || 48;
             const currentPosition = (Date.now() / 1000) % duration;
 
             track.style.setProperty("--pf-ticker-duration", duration + "s");

@@ -2,22 +2,186 @@
 <html lang="ru">
 
 <head>
-<meta charset="UTF-8">
-<title>Promyachik</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>{{ .Site.Title }}</title>
+
+    <meta
+        name="description"
+        content="Promyachik — футбольные трансферы, слухи, переговоры и официальные переходы."
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ "css/style.css" | relURL }}"
+    >
 </head>
 
-<body>
+<body class="home-page">
 
-<h1>⚽ Promyachik</h1>
+{{ partial "header.html" . }}
 
-<h2>Футбольные новости и трансферы</h2>
+<main class="home-main">
 
-<hr>
+    <section class="home-hero" aria-label="Важные трансферы">
 
-<h3>Последние новости</h3>
+        <div class="home-hero__copy">
 
-<p>Сайт запускается 🚀</p>
+            <p class="home-kicker">
+                Важные трансферы
+            </p>
+
+            <h1>
+                Главные футбольные переходы и слухи
+            </h1>
+
+            <p>
+                Следим за трансферами, статусами сделок, клубами и игроками.
+            </p>
+
+        </div>
+
+        <div class="home-slider" data-home-slider>
+
+            <article class="home-slide is-active" data-slide="0">
+                <a href="{{ "transfers/kylian-mbappe-real-madrid/" | relURL }}">
+                    <img
+                        src="{{ "images/homepage/featured/kylian-mbappe-real-madrid-hero.png" | relURL }}"
+                        alt="Kylian Mbappé — Real Madrid"
+                        loading="eager"
+                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                    >
+                    <span>Kylian Mbappé → Real Madrid</span>
+                </a>
+            </article>
+
+            <article class="home-slide" data-slide="1">
+                <a href="{{ "transfers/florian-wirtz-liverpool/" | relURL }}">
+                    <img
+                        src="{{ "images/homepage/featured/florian-wirtz-liverpool-hero.png" | relURL }}"
+                        alt="Florian Wirtz — Liverpool"
+                        loading="lazy"
+                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                    >
+                    <span>Florian Wirtz → Liverpool</span>
+                </a>
+            </article>
+
+            <article class="home-slide" data-slide="2">
+                <a href="{{ "transfers/bernardo-silva-real-madrid/" | relURL }}">
+                    <img
+                        src="{{ "images/homepage/featured/bernardo-silva-real-madrid-hero.png" | relURL }}"
+                        alt="Bernardo Silva — Real Madrid"
+                        loading="lazy"
+                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+                    >
+                    <span>Bernardo Silva → Real Madrid</span>
+                </a>
+            </article>
+
+            <div class="home-slider__dots" aria-label="Переключение слайдера">
+                <button class="is-active" type="button" data-slide-button="0" aria-label="Mbappé"></button>
+                <button type="button" data-slide-button="1" aria-label="Wirtz"></button>
+                <button type="button" data-slide-button="2" aria-label="Bernardo"></button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home-main-transfer" aria-label="Главный трансфер дня">
+
+        <div class="home-section-title">
+
+            <p class="home-kicker">
+                ⭐ Главный трансфер дня
+            </p>
+
+            <h2>
+                Kylian Mbappé остаётся главным трансфером дня
+            </h2>
+
+            <p>
+                Нижний блок не меняется при переключении hero-слайдера.
+            </p>
+
+        </div>
+
+        <a class="home-main-transfer__card" href="{{ "transfers/kylian-mbappe-real-madrid/" | relURL }}">
+            <img
+                src="{{ "images/homepage/featured/kylian-mbappe-real-madrid-card.png" | relURL }}"
+                alt="Kylian Mbappé — Real Madrid"
+                loading="lazy"
+                onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
+            >
+
+            <div>
+                <span class="home-status">ОФИЦИАЛЬНО</span>
+                <h3>Kylian Mbappé → Real Madrid</h3>
+                <p>Самый дорогой трансфер среди текущих важных сделок.</p>
+            </div>
+        </a>
+
+    </section>
+
+    <section class="home-transfer-list" aria-label="Последние трансферы">
+
+        <div class="home-section-title">
+            <p class="home-kicker">Трансферы</p>
+            <h2>Последние страницы игроков</h2>
+        </div>
+
+        <div class="home-transfer-grid">
+
+            {{ range first 9 (where .Site.RegularPages "Section" "transfers").ByDate.Reverse }}
+                <a class="home-transfer-card" href="{{ .RelPermalink }}">
+                    <span>{{ or .Params.status_label "ТРАНСФЕР" }}</span>
+                    <strong>{{ or .Params.player .Title }}</strong>
+                    <em>{{ .Title }}</em>
+                </a>
+            {{ end }}
+
+        </div>
+
+    </section>
+
+</main>
+
+{{ partial "footer-transfer-ticker.html" . }}
+
+<script>
+    (function () {
+        const root = document.querySelector("[data-home-slider]");
+
+        if (!root) {
+            return;
+        }
+
+        const slides = Array.from(root.querySelectorAll(".home-slide"));
+        const buttons = Array.from(root.querySelectorAll("[data-slide-button]"));
+
+        function activate(index) {
+            slides.forEach(function (slide, slideIndex) {
+                slide.classList.toggle("is-active", slideIndex === index);
+            });
+
+            buttons.forEach(function (button, buttonIndex) {
+                button.classList.toggle("is-active", buttonIndex === index);
+            });
+        }
+
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                activate(Number(button.dataset.slideButton));
+            });
+        });
+    })();
+</script>
 
 </body>
-
 </html>

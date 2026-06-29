@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 <head>
-<link rel="icon" href="{{ "favicon.ico" | relURL }}">
-<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
 
-<title>{{ .Title }} - Promyachik</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    {{ with .Description }}
+        <meta
+            name="description"
+            content="{{ . }}"
+        >
+    {{ end }}
 
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-
-{{ partial "favicon.html" . }}
-    <link rel="stylesheet" href="{{ "css/transfer-player-market-value-chart.css" | relURL }}">
-    <script defer src="{{ "js/transfer-player-market-value-chart.js" | relURL }}"></script>
-
-<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+    <link
+        rel="stylesheet"
+        href="{{ "css/style.css" | relURL }}"
+    >
 </head>
 
-
-<body>
+<body class="{{ if .IsHome }}home-page{{ else }}site-page{{ end }}">
 
 {{ partial "header.html" . }}
 
-
-<main>
-
 {{ block "main" . }}
-
 {{ end }}
 
-</main>
-
-
-    <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
+{{ partial "footer-transfer-ticker.html" . }}
 
 </body>
-
 </html>

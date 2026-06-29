@@ -1,69 +1,142 @@
 [
   {
-    "status": "rumour",
-    "player": "Florian Wirtz",
-    "from_club_id": 168,
-    "from_club_name": "Bayer Leverkusen",
-    "to_club_id": 40,
-    "to_club_name": "Liverpool",
-    "fee": "Сумма обсуждается",
-    "url": "transfers/florian-wirtz-liverpool/",
-    "player_image": "images/placeholders/player-pf.svg",
-    "player_image_source_name": "ProFutbik",
-    "player_image_source_url": "",
-    "player_image_background_removed": false,
-    "player_image_processor": "placeholder"
+    "status": "agreement",
+    "player": "Gonçalo Ramos",
+    "from_club": {
+      "name": "Paris Saint-Germain",
+      "logo": "images/clubs/psg.svg"
+    },
+    "to_club": {
+      "name": "AC Milan",
+      "logo": "images/clubs/ac-milan.svg"
+    },
+    "fee": "€74M + add-ons",
+    "url": "transfers/goncalo-ramos-ac-milan/"
   },
   {
     "status": "official",
     "player": "Kylian Mbappé",
-    "from_club_id": 85,
-    "from_club_name": "Paris Saint-Germain",
-    "to_club_id": 541,
-    "to_club_name": "Real Madrid",
+    "from_club": {
+      "name": "Paris Saint-Germain",
+      "logo": "images/clubs/psg.svg"
+    },
+    "to_club": {
+      "name": "Real Madrid",
+      "logo": "images/clubs/real-madrid.svg"
+    },
     "fee": "Свободный агент",
-    "url": "transfers/kylian-mbappe-real-madrid/",
-    "player_image": "images/players/api/278.png",
-    "player_id": 278
+    "url": "transfers/kylian-mbappe-real-madrid/"
   },
   {
-    "status": "official",
-    "player": "Dani Olmo",
-    "from_club_id": 173,
-    "from_club_name": "RB Leipzig",
-    "to_club_id": 529,
-    "to_club_name": "Barcelona",
-    "fee": "Сумма не разглашается",
-    "url": "transfers/"
+    "status": "rumour",
+    "player": "Florian Wirtz",
+    "from_club": {
+      "name": "Bayer Leverkusen",
+      "logo": "images/clubs/bayer-leverkusen.svg"
+    },
+    "to_club": {
+      "name": "Liverpool",
+      "logo": "images/clubs/liverpool.svg"
+    },
+    "fee": "Сумма обсуждается",
+    "url": "transfers/florian-wirtz-liverpool/"
+  },
+  {
+    "status": "rumour",
+    "player": "Bernardo Silva",
+    "from_club": {
+      "name": "Manchester City",
+      "logo": "images/clubs/manchester-city.svg"
+    },
+    "to_club": {
+      "name": "Real Madrid",
+      "logo": "images/clubs/real-madrid.svg"
+    },
+    "fee": "Сумма обсуждается",
+    "url": "transfers/bernardo-silva-real-madrid/"
+  },
+  {
+    "status": "confirmed",
+    "player": "Denzel Dumfries",
+    "from_club": {
+      "name": "Inter Milan",
+      "logo": "images/clubs/inter.svg"
+    },
+    "to_club": {
+      "name": "Real Madrid",
+      "logo": "images/clubs/real-madrid.svg"
+    },
+    "fee": "Сумма обсуждается",
+    "url": "transfers/denzel-dumfries-real-madrid/"
+  },
+  {
+    "status": "rumour",
+    "player": "Elliot Anderson",
+    "from_club": {
+      "name": "Newcastle United",
+      "logo": "images/clubs/newcastle.svg"
+    },
+    "to_club": {
+      "name": "Manchester City",
+      "logo": "images/clubs/manchester-city.svg"
+    },
+    "fee": "Сумма обсуждается",
+    "url": "transfers/elliot-anderson-manchester-city/"
+  },
+  {
+    "status": "agreement",
+    "player": "Ibrahima Konaté",
+    "from_club": {
+      "name": "Liverpool",
+      "logo": "images/clubs/liverpool.svg"
+    },
+    "to_club": {
+      "name": "Real Madrid",
+      "logo": "images/clubs/real-madrid.svg"
+    },
+    "fee": "Сумма обсуждается",
+    "url": "transfers/ibrahima-konate-real-madrid/"
   },
   {
     "status": "official",
     "player": "Julián Álvarez",
-    "from_club_id": 50,
-    "from_club_name": "Manchester City",
-    "to_club_id": 530,
-    "to_club_name": "Atlético Madrid",
+    "from_club": {
+      "name": "Manchester City",
+      "logo": "images/clubs/manchester-city.svg"
+    },
+    "to_club": {
+      "name": "Barcelona",
+      "logo": "images/clubs/barcelona.svg"
+    },
     "fee": "Сумма не разглашается",
-    "url": "transfers/"
+    "url": "transfers/julian-alvarez-barcelona/"
+  },
+  {
+    "status": "rumour",
+    "player": "Marc Cucurella",
+    "from_club": {
+      "name": "Chelsea",
+      "logo": "images/clubs/chelsea.svg"
+    },
+    "to_club": {
+      "name": "Real Madrid",
+      "logo": "images/clubs/real-madrid.svg"
+    },
+    "fee": "Сумма обсуждается",
+    "url": "transfers/marc-cucurella-real-madrid/"
   },
   {
     "status": "official",
     "player": "Matthijs de Ligt",
-    "from_club_id": 157,
-    "from_club_name": "Bayern Munich",
-    "to_club_id": 33,
-    "to_club_name": "Manchester United",
+    "from_club": {
+      "name": "Bayern Munich",
+      "logo": "images/clubs/bayern-munich.svg"
+    },
+    "to_club": {
+      "name": "Manchester United",
+      "logo": "images/clubs/manchester-united.svg"
+    },
     "fee": "Сумма не разглашается",
-    "url": "transfers/"
-  },
-  {
-    "status": "official",
-    "player": "Endrick",
-    "from_club_id": 121,
-    "from_club_name": "Palmeiras",
-    "to_club_id": 541,
-    "to_club_name": "Real Madrid",
-    "fee": "Сумма не разглашается",
-    "url": "transfers/"
+    "url": "transfers/matthijs-de-ligt/"
   }
 ]
