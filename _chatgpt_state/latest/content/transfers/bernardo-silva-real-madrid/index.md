@@ -21,7 +21,7 @@ age: 31
 age_at_transfer: 31
 birth_date: "10.08.1994"
 nationality: "Португалия"
-nationality_flag: "images/flags/portugal-v210.png"
+nationality_flag: "images/flags/portugal-v211.png"
 preferred_foot: "Левая"
 
 from_club_id: 50

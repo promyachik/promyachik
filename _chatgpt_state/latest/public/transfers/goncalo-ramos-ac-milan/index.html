@@ -59,8 +59,17 @@
     name="theme-color"
     content="#0b0b0b"
 >
-<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>\n
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
 
+\n
     <link rel="stylesheet" href="/promyachik/css/transfer-player-market-value-chart.css">
     <script defer src="/promyachik/js/transfer-player-market-value-chart.js"></script>
 
@@ -758,7 +767,7 @@
                             >
                                 
                                     <img
-                                        src="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"
+                                        src="/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png"
                                         alt=""
                                         loading="lazy"
                                         draggable="false"
@@ -2101,7 +2110,7 @@
                             >
                                 
                                     <img
-                                        src="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"
+                                        src="/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png"
                                         alt=""
                                         loading="lazy"
                                         draggable="false"
@@ -3150,10 +3159,28 @@
         });
     })();
 </script>
-<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>\n
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
 
-<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+\n
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>\n
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
 
+\n
 
 
 
@@ -3434,7 +3461,8 @@
 <li>Источник: <strong>Fabrizio Romano</strong></li>
 </ul>
 <h3 id="профиль-игрока">Профиль игрока</h3>
-<p>Gonçalo Ramos — португальский центральный нападающий. Рабочая нога — правая, рост — 1.85 м. На странице сохранены стандартные поля для карточки игрока: страна, флаг, позиция, рабочая нога, рост, рыночная стоимость и динамика стоимости.</p>
+<p>Gonçalo Ramos — португальский центральный нападающий. Рабочая нога — правая, рост — 1.85 м. На странице сохранены стандартные поля для карточки игрока: страна, флаг, позиция, рабочая нога, рост, рыночная стоимость и динамика стоимости.
+\nplayer_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png\n\napi_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png\n\ncutout_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png\n\nplayer_image_source_name: Transfermarkt\n\nplayer_image_source_url: <a href="https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550">https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550</a>\n\nneeds_cutout: false\n\ncountry_flag_image: /images/flags/portugal-v211.png\n\nflag_image: /images/flags/portugal-v211.png\n\nplayer_flag_image: /images/flags/portugal-v211.png\n\nplayer_country_flag_image: /images/flags/portugal-v211.png\n\nnationality_flag_image: /images/flags/portugal-v211.png\n\ncountry_code: PT\n\nnationality_code: PT\n\ncountry_flag: 🇵🇹\n\nflag: 🇵🇹\n\nplayer_flag: 🇵🇹\n\nplayer_country_flag: 🇵🇹\n\nnationality_flag: 🇵🇹\n\nmilan_logo: /images/clubs/ac-milan.svg\n\nmarket_value: €30M\n\nvalue: €30M\n</p>
 
             </div>
 
@@ -3505,7 +3533,7 @@
 
 
                                     <img
-                                        src="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"
+                                        src="/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png"
                                         data-api-fallback="https://media.api-sports.io/football/players/41585.png"
                                         alt="Gonçalo Ramos"
                                         loading="lazy"
@@ -3764,7 +3792,17 @@
 
                 </dl>
 
-                
+                \n
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
+
+\n
 
 
                 
@@ -3775,18 +3813,17 @@
 
     </section>
 
-        
+        \n
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
 
-
-
-
-
-
-
-
-
-
-
+\n
 
     
     
@@ -4898,7 +4935,7 @@
                                     
 
                                         <img
-                                            src="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"
+                                            src="/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png"
                                             alt="Gonçalo Ramos"
                                             loading="lazy"
                                             draggable="false"
@@ -5935,7 +5972,7 @@
                                     
 
                                         <img
-                                            src="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"
+                                            src="/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png"
                                             alt="Gonçalo Ramos"
                                             loading="lazy"
                                             draggable="false"
@@ -6652,6 +6689,27 @@
 </main>
 
     <script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
+
+
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
+
+
+
+<style id="pfb-ramos-v211-hardfix-style">
+body.pfb-ramos-v211-page img[src*="portugal-v211.png"],body.pfb-ramos-v211-page img[src*="/images/flags/"]{width:24px!important;height:16px!important;min-width:24px!important;max-width:24px!important;min-height:16px!important;max-height:16px!important;object-fit:cover!important;object-position:center center!important;display:inline-block!important;border-radius:2px!important;filter:none!important;opacity:1!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 24px!important;vertical-align:middle!important}
+body.pfb-ramos-v211-page img[src*="goncalo-ramos-550550-black-v211.png"],body.pfb-ramos-v211-page img[src*="41585.png"],body.pfb-ramos-v211-page img[src*="homepage/featured/goncalo-ramos"]{background:#000!important;object-fit:cover!important;object-position:center top!important}
+body.pfb-ramos-v211-page [class*="market"],body.pfb-ramos-v211-page [class*="value"],body.pfb-ramos-v211-page [class*="price"],body.pfb-ramos-v211-page [class*="fee"]{white-space:nowrap!important;min-width:0!important;align-items:center!important;text-align:left!important}
+</style>
+<script id="pfb-ramos-v211-hardfix">
+(function(){function rel(path){var base="\/promyachik\/";if(!base||base==="/")return path;return base.replace(/\/$/,"")+path;}var player=rel("/images/players/transfermarkt/goncalo-ramos-550550-black-v211.png")+"?v=211";var flag=rel("/images/flags/portugal-v211.png")+"?v=211";function ramos(src){src=String(src||"").toLowerCase();return src.indexOf("41585")!==-1||src.indexOf("goncalo-ramos")!==-1||src.indexOf("gonçalo-ramos")!==-1||src.indexOf("homepage/featured/goncalo-ramos")!==-1;}function isflag(src){src=String(src||"").toLowerCase();return src.indexOf("/images/flags/")!==-1||src.indexOf("images/flags/")!==-1||src.indexOf("flag")!==-1;}function addFlag(){var nodes=document.querySelectorAll("body *");for(var i=0;i<nodes.length;i++){var el=nodes[i];if(!el||el.children.length>6)continue;var txt=(el.textContent||"").trim();if((txt.indexOf("Portugal")!==-1||txt.indexOf("Португал")!==-1)&&!el.querySelector('img[data-pfb-ramos-v211-flag="1"]')){var im=document.createElement("img");im.src=flag;im.alt="Portugal";im.setAttribute("data-pfb-ramos-v211-flag","1");im.style.cssText="width:24px;height:16px;min-width:24px;object-fit:cover;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:middle;filter:none;opacity:1;background:transparent;";el.insertBefore(im,el.firstChild);break;}}}function fix(){if(location.pathname.indexOf("/transfers/goncalo-ramos-ac-milan")===-1)return;document.body.classList.add("pfb-ramos-v211-page");document.documentElement.setAttribute("data-pfb-ramos-v211","1");document.querySelectorAll("img").forEach(function(img){var src=img.getAttribute("src")||"";var alt=(img.getAttribute("alt")||"").toLowerCase();if(ramos(src)||alt.indexOf("gonçalo")!==-1||alt.indexOf("goncalo")!==-1||alt.indexOf("ramos")!==-1){img.setAttribute("src",player);img.setAttribute("data-pfb-ramos-v211-photo","1");img.style.background="#000";img.style.objectFit="cover";img.style.objectPosition="center top";}if(isflag(src)||alt.indexOf("portugal")!==-1||alt.indexOf("португал")!==-1){img.setAttribute("src",flag);img.setAttribute("data-pfb-ramos-v211-flag","1");img.style.width="24px";img.style.height="16px";img.style.minWidth="24px";img.style.objectFit="cover";img.style.filter="none";img.style.opacity="1";}});document.querySelectorAll("*").forEach(function(el){var bg="";try{bg=getComputedStyle(el).backgroundImage||"";}catch(e){}if(ramos(bg)){el.style.backgroundImage="url('"+player+"')";el.style.backgroundColor="#000";el.setAttribute("data-pfb-ramos-v211-bg","1");}});addFlag();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",fix);}else{fix();}setTimeout(fix,250);setTimeout(fix,1000);setTimeout(fix,2500);})();
+</script>
 
 </body>
 </html>

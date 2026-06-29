@@ -34,8 +34,8 @@ concept_art: "/images/homepage/featured/goncalo-ramos-ac-milan-card.png"
 hero_image: "/images/homepage/featured/goncalo-ramos-ac-milan-hero.png"
 card_image: "/images/homepage/featured/goncalo-ramos-ac-milan-card.png"
 
-player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v210.png
-api_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v210.png
+player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png
+api_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png
 api_photo_missing: false
 player_image_source_name: Transfermarkt
 player_image_source_url: https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550
@@ -106,11 +106,11 @@ flag: 🇵🇹
 player_flag: 🇵🇹
 player_country_flag: 🇵🇹
 nationality_flag: 🇵🇹
-country_flag_image: /images/flags/portugal-v210.png
-flag_image: /images/flags/portugal-v210.png
-player_flag_image: /images/flags/portugal-v210.png
-player_country_flag_image: /images/flags/portugal-v210.png
-nationality_flag_image: /images/flags/portugal-v210.png
+country_flag_image: /images/flags/portugal-v211.png
+flag_image: /images/flags/portugal-v211.png
+player_flag_image: /images/flags/portugal-v211.png
+player_country_flag_image: /images/flags/portugal-v211.png
+nationality_flag_image: /images/flags/portugal-v211.png
 preferred_foot: "Right"
 preferred_foot_ru: "Правая"
 dominant_foot: "Right"
@@ -143,7 +143,7 @@ permalink: "/transfers/goncalo-ramos-ac-milan/"
 page_url: "/transfers/goncalo-ramos-ac-milan/"
 player_id: "41585"
 api_player_id: "41585"
-cutout_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v210.png
+cutout_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png
 show_in_top_ticker: "True"
 show_in_footer_ticker: "True"
 needs_cutout: false
@@ -168,3 +168,4 @@ Gonçalo Ramos готовится перейти из Paris Saint Germain в AC 
 ### Профиль игрока
 
 Gonçalo Ramos — португальский центральный нападающий. Рабочая нога — правая, рост — 1.85 м. На странице сохранены стандартные поля для карточки игрока: страна, флаг, позиция, рабочая нога, рост, рыночная стоимость и динамика стоимости.
+\nplayer_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png\n\napi_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png\n\ncutout_player_image: /images/players/transfermarkt/goncalo-ramos-550550-black-v211.png\n\nplayer_image_source_name: Transfermarkt\n\nplayer_image_source_url: https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550\n\nneeds_cutout: false\n\ncountry_flag_image: /images/flags/portugal-v211.png\n\nflag_image: /images/flags/portugal-v211.png\n\nplayer_flag_image: /images/flags/portugal-v211.png\n\nplayer_country_flag_image: /images/flags/portugal-v211.png\n\nnationality_flag_image: /images/flags/portugal-v211.png\n\ncountry_code: PT\n\nnationality_code: PT\n\ncountry_flag: 🇵🇹\n\nflag: 🇵🇹\n\nplayer_flag: 🇵🇹\n\nplayer_country_flag: 🇵🇹\n\nnationality_flag: 🇵🇹\n\nmilan_logo: /images/clubs/ac-milan.svg\n\nmarket_value: €30M\n\nvalue: €30M\n
