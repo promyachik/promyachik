@@ -1,187 +1,203 @@
+{{ $styleCSS := "css/style.css" | relURL }}
+{{ $headerCSS := "header.css" | relURL }}
+{{ $homeCSS := "css/homepage-featured-wirtz-compact.css" | relURL }}
+{{ $sliderJS := "js/homepage-featured-switcher.js" | relURL }}
+
+{{ $transfersURL := "transfers/" | relURL }}
+{{ $mbappeURL := "transfers/kylian-mbappe-real-madrid/" | relURL }}
+{{ $wirtzURL := "transfers/florian-wirtz-liverpool/" | relURL }}
+{{ $bernardoURL := "transfers/bernardo-silva-real-madrid/" | relURL }}
+{{ $ramosURL := "transfers/goncalo-ramos-ac-milan/" | relURL }}
+
+{{ $mbappeHero := "images/homepage/featured/kylian-mbappe-real-madrid-hero.png" | relURL }}
+{{ $mbappeCard := "images/homepage/featured/kylian-mbappe-real-madrid-card.png" | relURL }}
+{{ $wirtzHero := "images/homepage/featured/florian-wirtz-liverpool-hero.png" | relURL }}
+{{ $bernardoHero := "images/homepage/featured/bernardo-silva-real-madrid-hero.png" | relURL }}
+{{ $ramosHero := "images/homepage/featured/goncalo-ramos-ac-milan-hero.png" | relURL }}
+
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-    >
-
-    <title>{{ .Site.Title }}</title>
-
-    <meta
-        name="description"
-        content="Promyachik — футбольные трансферы, слухи, переговоры и официальные переходы."
-    >
-
-    <link
-        rel="stylesheet"
-        href="{{ "css/style.css" | relURL }}"
-    >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProFutbik — трансферы, слухи и рыночная стоимость игроков</title>
+    <link rel="stylesheet" href="{{ $styleCSS }}">
+    <link rel="stylesheet" href="{{ $headerCSS }}">
+    <link rel="stylesheet" href="{{ $homeCSS }}">
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 </head>
+<body class="pf-homepage pf-homepage--compact-featured">
+    {{ partial "header.html" . }}
 
-<body class="home-page">
+    <main class="pf-home-main">
+        <section class="pf-home-hero">
+            <div class="pf-home-hero__text">
+                <span class="pf-home-hero__eyebrow">TRANSFER WATCH</span>
+                <h1>Футбольные трансферы, слухи и стоимость игроков</h1>
+                <p>
+                    Главные сделки дня, подтверждённые переходы, переговоры клубов,
+                    суммы трансферов и динамика рыночной стоимости футболистов —
+                    в одном месте.
+                </p>
 
-{{ partial "header.html" . }}
+                <div class="pf-home-hero__actions">
+                    <a class="pf-btn pf-btn--gold" href="{{ $transfersURL }}">Смотреть трансферы</a>
+                </div>
 
-<main class="home-main">
-
-    <section class="home-hero" aria-label="Важные трансферы">
-
-        <div class="home-hero__copy">
-
-            <p class="home-kicker">
-                Важные трансферы
-            </p>
-
-            <h1>
-                Главные футбольные переходы и слухи
-            </h1>
-
-            <p>
-                Следим за трансферами, статусами сделок, клубами и игроками.
-            </p>
-
-        </div>
-
-        <div class="home-slider" data-home-slider>
-
-            <article class="home-slide is-active" data-slide="0">
-                <a href="{{ "transfers/kylian-mbappe-real-madrid/" | relURL }}">
-                    <img
-                        src="{{ "images/homepage/featured/kylian-mbappe-real-madrid-hero.png" | relURL }}"
-                        alt="Kylian Mbappé — Real Madrid"
-                        loading="eager"
-                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
-                    >
-                    <span>Kylian Mbappé → Real Madrid</span>
-                </a>
-            </article>
-
-            <article class="home-slide" data-slide="1">
-                <a href="{{ "transfers/florian-wirtz-liverpool/" | relURL }}">
-                    <img
-                        src="{{ "images/homepage/featured/florian-wirtz-liverpool-hero.png" | relURL }}"
-                        alt="Florian Wirtz — Liverpool"
-                        loading="lazy"
-                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
-                    >
-                    <span>Florian Wirtz → Liverpool</span>
-                </a>
-            </article>
-
-            <article class="home-slide" data-slide="2">
-                <a href="{{ "transfers/bernardo-silva-real-madrid/" | relURL }}">
-                    <img
-                        src="{{ "images/homepage/featured/bernardo-silva-real-madrid-hero.png" | relURL }}"
-                        alt="Bernardo Silva — Real Madrid"
-                        loading="lazy"
-                        onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
-                    >
-                    <span>Bernardo Silva → Real Madrid</span>
-                </a>
-            </article>
-
-            <div class="home-slider__dots" aria-label="Переключение слайдера">
-                <button class="is-active" type="button" data-slide-button="0" aria-label="Mbappé"></button>
-                <button type="button" data-slide-button="1" aria-label="Wirtz"></button>
-                <button type="button" data-slide-button="2" aria-label="Bernardo"></button>
+                <div class="pf-featured-dots" aria-label="Переключить важный трансфер">
+                    <button class="pf-featured-dot is-active" type="button" data-featured-index="0" aria-label="Kylian Mbappé — Real Madrid">
+                        <span></span>
+                    </button>
+                    <button class="pf-featured-dot" type="button" data-featured-index="1" aria-label="Florian Wirtz — Liverpool">
+                        <span></span>
+                    </button>
+                    <button class="pf-featured-dot" type="button" data-featured-index="2" aria-label="Bernardo Silva — Real Madrid">
+                        <span></span>
+                    </button>
+                    <button class="pf-featured-dot" type="button" data-featured-index="3" aria-label="Gonçalo Ramos — AC Milan">
+                        <span></span>
+                    </button>
+                </div>
             </div>
 
-        </div>
-
-    </section>
-
-    <section class="home-main-transfer" aria-label="Главный трансфер дня">
-
-        <div class="home-section-title">
-
-            <p class="home-kicker">
-                ⭐ Главный трансфер дня
-            </p>
-
-            <h2>
-                Kylian Mbappé остаётся главным трансфером дня
-            </h2>
-
-            <p>
-                Нижний блок не меняется при переключении hero-слайдера.
-            </p>
-
-        </div>
-
-        <a class="home-main-transfer__card" href="{{ "transfers/kylian-mbappe-real-madrid/" | relURL }}">
-            <img
-                src="{{ "images/homepage/featured/kylian-mbappe-real-madrid-card.png" | relURL }}"
-                alt="Kylian Mbappé — Real Madrid"
-                loading="lazy"
-                onerror="this.style.display='none';this.parentElement.classList.add('is-placeholder');"
-            >
-
-            <div>
-                <span class="home-status">ОФИЦИАЛЬНО</span>
-                <h3>Kylian Mbappé → Real Madrid</h3>
-                <p>Самый дорогой трансфер среди текущих важных сделок.</p>
+            <div class="pf-home-hero__visual">
+                <div class="pf-home-hero__image">
+                    <a
+                        id="pf-featured-hero-link"
+                        class="pf-home-hero__image-link"
+                        href="{{ $mbappeURL }}"
+                        aria-label="Открыть трансфер Kylian Mbappé"
+                    >
+                        <img
+                            id="pf-featured-hero-image"
+                            src="{{ $mbappeHero }}"
+                            alt="Kylian Mbappé — трансфер Real Madrid"
+                        >
+                    </a>
+                </div>
             </div>
-        </a>
+        </section>
 
-    </section>
+        <section class="pf-home-search" aria-label="Поиск игрока">
+            <span class="pf-home-search__icon">⌕</span>
+            <input type="text" placeholder="Поиск игрока, клуба или трансфера..." aria-label="Поиск игрока">
+            <button type="button">Поиск</button>
+        </section>
 
-    <section class="home-transfer-list" aria-label="Последние трансферы">
+        <section class="pf-featured-transfer" id="featured-transfer" data-featured-transfer>
+            <div class="pf-section-head">
+                <span id="pf-featured-rank-title">⭐ Главный трансфер дня</span>
+            </div>
 
-        <div class="home-section-title">
-            <p class="home-kicker">Трансферы</p>
-            <h2>Последние страницы игроков</h2>
-        </div>
+            <div class="pf-featured-transfer__grid">
+                <article class="pf-featured-card">
+                    <div class="pf-featured-card__image">
+                        <img
+                            id="pf-featured-card-image"
+                            src="{{ $mbappeCard }}"
+                            alt="Kylian Mbappé — главный трансфер дня"
+                        >
+                    </div>
 
-        <div class="home-transfer-grid">
+                    <div class="pf-featured-card__body">
+                        <span class="pf-badge pf-badge--official" id="pf-featured-status">Официально</span>
+                        <h2 id="pf-featured-name">Kylian Mbappé</h2>
+                        <p id="pf-featured-route">PSG → Real Madrid</p>
 
-            {{ range first 9 (where .Site.RegularPages "Section" "transfers").ByDate.Reverse }}
-                <a class="home-transfer-card" href="{{ .RelPermalink }}">
-                    <span>{{ or .Params.status_label "ТРАНСФЕР" }}</span>
-                    <strong>{{ or .Params.player .Title }}</strong>
-                    <em>{{ .Title }}</em>
-                </a>
-            {{ end }}
+                        <div class="pf-featured-card__facts">
+                            <div>
+                                <span>Сумма</span>
+                                <strong id="pf-featured-fee">€180M</strong>
+                            </div>
+                            <div>
+                                <span>Источник</span>
+                                <strong id="pf-featured-source">Real Madrid</strong>
+                            </div>
+                        </div>
 
-        </div>
+                        <a class="pf-featured-card__link" id="pf-featured-link" href="{{ $mbappeURL }}">
+                            Открыть страницу трансфера →
+                        </a>
+                    </div>
+                </article>
 
-    </section>
+                <aside class="pf-mini-market">
+                    <div class="pf-mini-market__top">
+                        <span>Динамика стоимости</span>
+                        <strong id="pf-featured-chart-value">€180M</strong>
+                    </div>
 
-</main>
+                    <svg viewBox="0 0 620 250" role="img" aria-label="Мини-график стоимости Kylian Mbappé">
+                        <g class="pf-mini-market__grid">
+                            <line x1="42" y1="210" x2="590" y2="210"></line>
+                            <line x1="42" y1="160" x2="590" y2="160"></line>
+                            <line x1="42" y1="110" x2="590" y2="110"></line>
+                            <line x1="42" y1="60" x2="590" y2="60"></line>
+                        </g>
+                        <path class="pf-mini-market__fill" d="M50 210 L145 205 L240 183 L335 142 L430 103 L520 78 L580 55 L580 210 Z"></path>
+                        <path class="pf-mini-market__line" d="M50 210 L145 205 L240 183 L335 142 L430 103 L520 78 L580 55"></path>
+                        <g class="pf-mini-market__points">
+                            <circle cx="50" cy="210" r="5"></circle>
+                            <circle cx="145" cy="205" r="5"></circle>
+                            <circle cx="240" cy="183" r="5"></circle>
+                            <circle cx="335" cy="142" r="5"></circle>
+                            <circle cx="430" cy="103" r="5"></circle>
+                            <circle cx="520" cy="78" r="5"></circle>
+                            <circle cx="580" cy="55" r="5"></circle>
+                        </g>
+                        <g class="pf-mini-market__labels">
+                            <text x="40" y="235">2019</text>
+                            <text x="225" y="235">2021</text>
+                            <text x="415" y="235">2023</text>
+                            <text x="555" y="235">2025</text>
+                            <text id="pf-featured-chart-label" x="530" y="43">€180M</text>
+                        </g>
+                    </svg>
+                </aside>
+            </div>
+        </section>
+    </main>
 
-{{ partial "footer-transfer-ticker.html" . }}
+    {{ if templates.Exists "partials/official-transfer-ticker.html" }}
+        {{ partial "official-transfer-ticker.html" . }}
+    {{ else if templates.Exists "partials/official-transfers-ticker.html" }}
+        {{ partial "official-transfers-ticker.html" . }}
+    {{ else if templates.Exists "partials/bottom-transfer-ticker.html" }}
+        {{ partial "bottom-transfer-ticker.html" . }}
+    {{ else if templates.Exists "partials/transfer-ticker-bottom.html" }}
+        {{ partial "transfer-ticker-bottom.html" . }}
+    {{ end }}
 
-<script>
-    (function () {
-        const root = document.querySelector("[data-home-slider]");
-
-        if (!root) {
-            return;
-        }
-
-        const slides = Array.from(root.querySelectorAll(".home-slide"));
-        const buttons = Array.from(root.querySelectorAll("[data-slide-button]"));
-
-        function activate(index) {
-            slides.forEach(function (slide, slideIndex) {
-                slide.classList.toggle("is-active", slideIndex === index);
-            });
-
-            buttons.forEach(function (button, buttonIndex) {
-                button.classList.toggle("is-active", buttonIndex === index);
-            });
-        }
-
-        buttons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                activate(Number(button.dataset.slideButton));
-            });
-        });
-    })();
-</script>
-
+    <script>
+        window.PF_FEATURED_TRANSFERS = [
+            {
+                name: "Kylian Mbappé",
+                link: "{{ $mbappeURL }}",
+                heroImage: "{{ $mbappeHero }}",
+                alt: "Kylian Mbappé — трансфер Real Madrid"
+            },
+            {
+                name: "Florian Wirtz",
+                link: "{{ $wirtzURL }}",
+                heroImage: "{{ $wirtzHero }}",
+                alt: "Florian Wirtz — трансфер Liverpool"
+            },
+            {
+                name: "Bernardo Silva",
+                link: "{{ $bernardoURL }}",
+                heroImage: "{{ $bernardoHero }}",
+                alt: "Bernardo Silva — трансфер Real Madrid"
+            },
+            {
+                name: "Gonçalo Ramos",
+                link: "{{ $ramosURL }}",
+                heroImage: "{{ $ramosHero }}",
+                alt: "Gonçalo Ramos — трансфер AC Milan"
+            }
+        ];
+    </script>
+    <script src="{{ $sliderJS }}"></script>
+    <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
 </body>
 </html>

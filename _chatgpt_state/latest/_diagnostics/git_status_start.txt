@@ -13,9 +13,23 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
  M _chatgpt_state/latest/data/transfers.json
  M _chatgpt_state/latest/layouts/_default/baseof.html
+ M _chatgpt_state/latest/layouts/_default/single.html
  M _chatgpt_state/latest/layouts/index.html
- M _chatgpt_state/latest/layouts/partials/header.html
+ M _chatgpt_state/latest/layouts/partials/favicon.html
+ M _chatgpt_state/latest/layouts/partials/featured-transfer-of-day.html
+ M _chatgpt_state/latest/layouts/partials/footer-transfer-ticker.html
+ M _chatgpt_state/latest/layouts/partials/mbappe-player-market-value-chart.html
+ M _chatgpt_state/latest/layouts/partials/mbappe-standalone-chart-runtime.html
+ M _chatgpt_state/latest/layouts/partials/player-value-chart.html
+ M _chatgpt_state/latest/layouts/partials/post-card.html
+ M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
+ M _chatgpt_state/latest/layouts/partials/transfer-player-value-history.html
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker(1).html
+ M _chatgpt_state/latest/layouts/partials/transfer-ticker(2).html
  M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
+ M _chatgpt_state/latest/layouts/players/single.html
+ M _chatgpt_state/latest/layouts/shortcodes/mbappe-market-chart.html
+ M _chatgpt_state/latest/layouts/transfers/single.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
@@ -27,7 +41,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M _chatgpt_state/latest/static/css/style.css
- M _chatgpt_state/latest/static/css/transfer-ticker.css
  M layouts/index.html
 ?? .env
 ?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
@@ -123,6 +136,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 224_PROMYACHIK_RESTORE_OLD_TICKER_CLICK_RUN.bat
 ?? 225_PROMYACHIK_RESTORE_TICKER_FULL_SET_CLICK_RUN.bat
 ?? 226_PROMYACHIK_RESTORE_HOME_TICKERS_LINKS_CLICK_RUN.bat
+?? 227_PROMYACHIK_RESTORE_REAL_HOME_API_TICKERS_CLICK_RUN.bat
+?? 228_PROMYACHIK_REMOVE_RAMOS_V211_HARDFIX_CLICK_RUN.bat
+?? 229_PROMYACHIK_TICKER_DRAG_AND_CLEAN_BOTTOM_CLICK_RUN.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -175,6 +191,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_224_PROMYACHIK.txt
 ?? README_225_PROMYACHIK.txt
 ?? README_226_PROMYACHIK.txt
+?? README_227_PROMYACHIK.txt
+?? README_228_PROMYACHIK.txt
+?? README_229_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -321,8 +340,12 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_224_before_old_ticker_20260629_211255/
 ?? _backup_promyachik_225_before_old_ticker_full_set_20260629_212311/
 ?? _backup_promyachik_226_before_home_tickers_links_20260629_213048/
-?? _chatgpt_state/latest/layouts/partials/footer-transfer-ticker.html
-?? _chatgpt_state/latest/scripts/226_promyachik_restore_home_tickers_links_click_run.py
+?? _backup_promyachik_227_before_real_home_api_tickers_20260629_214235/
+?? _backup_promyachik_228_before_remove_ramos_v211_hardfix_20260629_214423/
+?? _backup_promyachik_229_before_ticker_drag_clean_bottom_20260629_215050/
+?? _chatgpt_state/latest/scripts/227_promyachik_restore_real_home_api_tickers.py
+?? _chatgpt_state/latest/scripts/228_promyachik_remove_ramos_v211_hardfix.py
+?? _chatgpt_state/latest/scripts/229_promyachik_ticker_drag_clean_bottom.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -397,6 +420,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/224_promyachik_restore_old_ticker_click_run.py
 ?? scripts/225_promyachik_restore_old_ticker_full_set_click_run.py
 ?? scripts/226_promyachik_restore_home_tickers_links_click_run.py
+?? scripts/227_promyachik_restore_real_home_api_tickers.py
+?? scripts/228_promyachik_remove_ramos_v211_hardfix.py
+?? scripts/229_promyachik_ticker_drag_clean_bottom.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
