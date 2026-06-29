@@ -139,129 +139,355 @@
 
 
 
-<div class="transfer-ticker transfer-ticker--top" aria-label="Трансферная строка">
-  <div class="transfer-ticker__viewport">
-    <div class="transfer-ticker__track">
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/goncalo-ramos-ac-milan/">
-          <span class="transfer-ticker__badge">СОГЛАСОВАНО</span>
-          <span class="transfer-ticker__player">Gonçalo Ramos</span>
-          
-            <span class="transfer-ticker__arrow">→</span>
-            <span class="transfer-ticker__club">AC Milan</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/elliot-anderson-manchester-city/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Elliot Anderson</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/ibrahima-konate-real-madrid/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Ibrahima Konaté</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/marc-cucurella-real-madrid/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Marc Cucurella</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/denzel-dumfries-real-madrid/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Denzel Dumfries</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/julian-alvarez-barcelona/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Julián Álvarez</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/florian-wirtz-liverpool/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Florian Wirtz</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/matthijs-de-ligt/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Matthijs de Ligt</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/kylian-mbappe-real-madrid/">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Килиан Мбаппе</span>
-          
-        </a>
-      
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/goncalo-ramos-ac-milan/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">СОГЛАСОВАНО</span>
-          <span class="transfer-ticker__player">Gonçalo Ramos</span>
-          
-            <span class="transfer-ticker__arrow">→</span>
-            <span class="transfer-ticker__club">AC Milan</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/elliot-anderson-manchester-city/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Elliot Anderson</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/ibrahima-konate-real-madrid/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Ibrahima Konaté</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/marc-cucurella-real-madrid/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Marc Cucurella</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/denzel-dumfries-real-madrid/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Denzel Dumfries</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/julian-alvarez-barcelona/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Julián Álvarez</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/florian-wirtz-liverpool/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Florian Wirtz</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/matthijs-de-ligt/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Matthijs de Ligt</span>
-          
-        </a>
-      
-        <a class="transfer-ticker__item" href="/promyachik/transfers/kylian-mbappe-real-madrid/" aria-hidden="true" tabindex="-1">
-          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
-          <span class="transfer-ticker__player">Килиан Мбаппе</span>
-          
-        </a>
-      
+
+
+
+
+
+
+<style>
+     
+    .pf-ticker,
+    .pf-ticker__viewport,
+    .pf-ticker__track,
+    .pf-ticker__group {
+        background: #000000 !important;
+        background-color: #000000 !important;
+        background-image: none !important;
+    }
+
+    .pf-ticker__badge .pf-ticker__live-dot,
+    .pf-ticker__live-dot {
+        display: none !important;
+        width: 0 !important;
+        min-width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        opacity: 0 !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+
+    .pf-ticker__badge {
+        gap: 0 !important;
+    }
+
+    .pf-ticker__divider {
+        display: inline-flex !important;
+        align-self: center !important;
+        flex: 0 0 1px !important;
+        width: 1px !important;
+        min-width: 1px !important;
+        height: 24px !important;
+        margin: 0 18px !important;
+        border-radius: 999px !important;
+        pointer-events: none !important;
+        background: linear-gradient(
+            180deg,
+            rgba(212, 175, 55, 0) 0%,
+            rgba(212, 175, 55, 0.20) 12%,
+            rgba(212, 175, 55, 0.68) 50%,
+            rgba(212, 175, 55, 0.20) 88%,
+            rgba(212, 175, 55, 0) 100%
+        ) !important;
+        box-shadow: 0 0 8px rgba(212, 175, 55, 0.20) !important;
+    }
+
+    .pf-ticker__player-photo {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 34px;
+        width: 34px;
+        height: 34px;
+        overflow: hidden;
+        border: 0 !important;
+        outline: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+        box-shadow: none !important;
+    }
+
+    .pf-ticker__player-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+        border: 0 !important;
+        outline: 0 !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+
+    .pf-ticker__player-photo.is-placeholder::before {
+        content: "PF";
+        color: #e3bd4f;
+        font-size: 12px;
+        font-weight: 950;
+        letter-spacing: 0.02em;
+    }
+
+    .pf-ticker__status--confirmed {
+        border-color: rgba(74, 222, 128, 0.48) !important;
+        color: #91f0ad !important;
+        background: rgba(34, 197, 94, 0.18) !important;
+    }
+
+    .pf-ticker__status--official {
+        border-color: rgba(74, 222, 128, 0.62) !important;
+        color: #a7f3bb !important;
+        background: rgba(22, 163, 74, 0.24) !important;
+    }
+</style>
+
+<div
+    class="pf-ticker"
+    data-ticker-duration="42"
+    aria-label="Последние футбольные трансферы"
+>
+    <div class="pf-ticker__badge">
+        <span class="pf-ticker__live-dot"></span>
+        <span>ТРАНСФЕРЫ</span>
     </div>
-  </div>
+
+    <div class="pf-ticker__viewport">
+        <div class="pf-ticker__track">
+
+            
+
+                <div
+                    class="pf-ticker__group"
+                    
+                >
+
+                    
+
+                </div>
+
+            
+
+                <div
+                    class="pf-ticker__group"
+                    aria-hidden="true"
+                >
+
+                    
+
+                </div>
+
+            
+
+        </div>
+    </div>
 </div>
 
+<script>
+    (function () {
+        const ticker = document.querySelector(".pf-ticker");
+
+        if (!ticker || ticker.dataset.dragReady === "true") {
+            return;
+        }
+
+        const viewport = ticker.querySelector(".pf-ticker__viewport");
+        const track = ticker.querySelector(".pf-ticker__track");
+        const firstGroup = track
+            ? track.querySelector(".pf-ticker__group")
+            : null;
+
+        if (!viewport || !track || !firstGroup) {
+            return;
+        }
+
+        ticker.dataset.dragReady = "true";
+        ticker.classList.add("pf-ticker--interactive");
+
+        const baseDuration =
+            Math.max(Number(ticker.dataset.tickerDuration) || 42, 1);
+
+        const reducedMotion =
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        const duration =
+            reducedMotion ? baseDuration * 2 : baseDuration;
+
+        const dragThreshold = 10;
+
+        let loopWidth = 0;
+        let offset = 0;
+        let lastFrame = performance.now();
+
+        let pointerIsDown = false;
+        let isDragging = false;
+        let activePointerId = null;
+        let dragStartX = 0;
+        let dragStartOffset = 0;
+        let resumeAt = 0;
+
+        function normalizeOffset(value) {
+            if (!loopWidth) {
+                return 0;
+            }
+
+            while (value <= -loopWidth) {
+                value += loopWidth;
+            }
+
+            while (value > 0) {
+                value -= loopWidth;
+            }
+
+            return value;
+        }
+
+        function render() {
+            track.style.transform =
+                "translate3d(" + offset + "px, 0, 0)";
+        }
+
+        function measure() {
+            const previousWidth = loopWidth;
+
+            const progress = previousWidth
+                ? -offset / previousWidth
+                : ((Date.now() / 1000) % duration) / duration;
+
+            loopWidth = firstGroup.getBoundingClientRect().width;
+
+            if (!loopWidth) {
+                return;
+            }
+
+            offset = normalizeOffset(-progress * loopWidth);
+            render();
+        }
+
+        function animate(now) {
+            const elapsed =
+                Math.min((now - lastFrame) / 1000, 0.1);
+
+            lastFrame = now;
+
+            if (
+                !pointerIsDown &&
+                now >= resumeAt &&
+                loopWidth
+            ) {
+                const speed = loopWidth / duration;
+
+                offset = normalizeOffset(
+                    offset - speed * elapsed
+                );
+
+                render();
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        function finishPointer(event) {
+            if (
+                !pointerIsDown ||
+                event.pointerId !== activePointerId
+            ) {
+                return;
+            }
+
+            pointerIsDown = false;
+
+            if (isDragging) {
+                isDragging = false;
+                viewport.classList.remove("is-dragging");
+
+                if (viewport.hasPointerCapture(event.pointerId)) {
+                    viewport.releasePointerCapture(event.pointerId);
+                }
+
+                resumeAt = performance.now() + 800;
+            } else {
+                resumeAt = performance.now();
+            }
+
+            activePointerId = null;
+        }
+
+        viewport.addEventListener("pointerdown", function (event) {
+            if (event.button !== 0 || !loopWidth) {
+                return;
+            }
+
+            pointerIsDown = true;
+            isDragging = false;
+            activePointerId = event.pointerId;
+            dragStartX = event.clientX;
+            dragStartOffset = offset;
+            resumeAt = Number.POSITIVE_INFINITY;
+        });
+
+        viewport.addEventListener("pointermove", function (event) {
+            if (
+                !pointerIsDown ||
+                event.pointerId !== activePointerId
+            ) {
+                return;
+            }
+
+            const deltaX = event.clientX - dragStartX;
+
+            if (!isDragging) {
+                if (Math.abs(deltaX) < dragThreshold) {
+                    return;
+                }
+
+                isDragging = true;
+                viewport.classList.add("is-dragging");
+                viewport.setPointerCapture(event.pointerId);
+            }
+
+            offset = normalizeOffset(
+                dragStartOffset + deltaX
+            );
+
+            render();
+            event.preventDefault();
+        });
+
+        viewport.addEventListener("pointerup", finishPointer);
+        viewport.addEventListener("pointercancel", finishPointer);
+
+        viewport.addEventListener("dragstart", function (event) {
+            event.preventDefault();
+        });
+
+        if ("ResizeObserver" in window) {
+            const resizeObserver =
+                new ResizeObserver(measure);
+
+            resizeObserver.observe(firstGroup);
+            resizeObserver.observe(viewport);
+        } else {
+            window.addEventListener("resize", measure);
+        }
+
+        document.addEventListener(
+            "visibilitychange",
+            function () {
+                lastFrame = performance.now();
+            }
+        );
+
+        requestAnimationFrame(function () {
+            measure();
+            lastFrame = performance.now();
+            requestAnimationFrame(animate);
+        });
+    })();
+</script>
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
 
 <script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
 

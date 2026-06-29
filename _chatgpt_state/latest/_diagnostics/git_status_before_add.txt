@@ -11,13 +11,8 @@ EXIT_CODE: 0
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
  M _chatgpt_state/latest/layouts/_default/baseof.html
- M _chatgpt_state/latest/layouts/_default/single.html
- M _chatgpt_state/latest/layouts/partials/header.html
- M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
- M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
- M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
+ D _chatgpt_state/latest/layouts/partials/footer-transfer-ticker.html
  M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
- M _chatgpt_state/latest/layouts/transfers/single.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
@@ -28,6 +23,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
+ M _chatgpt_state/latest/static/css/style.css
 ?? .env
 ?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
 ?? 110_FIX_DE_LIGT_PAGE_CLUBS_DATE.bat
@@ -115,6 +111,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 216_RESTORE_STATS_ICON_SIZE_ONLY_PACKAGE.bat
 ?? 217_RESTORE_SITE_BLOCKS_FROM_REAL_BACKUP_PACKAGE.bat
 ?? 218_RESTORE_RAMOS_PAGE_AND_TICKERS_ONLY_PACKAGE.bat
+?? 219_RESTORE_TESTED_TICKERS_FROM_BACKUP_ONLY_PACKAGE.bat
+?? 220_FULL_RESTORE_FROM_WORKING_SNAPSHOT_PACKAGE.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -160,6 +158,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_216.txt
 ?? README_217.txt
 ?? README_218.txt
+?? README_219.txt
+?? README_220.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -298,13 +298,11 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_216_restore_stats_icon_size_only/
 ?? _backup_217_before_restore_site_blocks_from_real_backup/
 ?? _backup_218_restore_ramos_page_and_tickers_only/
+?? _backup_219_before_restore_tested_tickers_from_backup_only/
+?? _backup_220_before_full_restore_from_working_snapshot/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/
-?? _chatgpt_state/latest/layouts/partials/footer-transfer-ticker.html
-?? _chatgpt_state/latest/scripts/216_restore_stats_icon_size_only.py
-?? _chatgpt_state/latest/scripts/217_restore_site_blocks_from_real_backup.py
-?? _chatgpt_state/latest/scripts/218_restore_ramos_page_and_tickers_only.py
-?? _chatgpt_state/latest/static/css/style.css
+?? _chatgpt_state/latest/scripts/219_restore_tested_tickers_from_backup_only.py
+?? _chatgpt_state/latest/scripts/220_full_restore_from_working_snapshot.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -371,6 +369,8 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/216_restore_stats_icon_size_only.py
 ?? scripts/217_restore_site_blocks_from_real_backup.py
 ?? scripts/218_restore_ramos_page_and_tickers_only.py
+?? scripts/219_restore_tested_tickers_from_backup_only.py
+?? scripts/220_full_restore_from_working_snapshot.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
