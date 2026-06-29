@@ -1,0 +1,29 @@
+START PUSH_STATE_TO_GITHUB V2
+ROOT: C:\Users\Dmitrii\Promyachik
+hugo_build: exit 0
+git_root: exit 0
+git_status_start: exit 0
+git_remote_verbose: exit 0
+git_branch_verbose: exit 0
+git_log_last_10: exit 0
+git_status_before_add: exit 0
+git_add_state_force: exit 0
+git_add_push_scripts: exit 128
+
+--- git_add_push_scripts OUTPUT ---
+COMMAND: git add -f PUSH_STATE_TO_GITHUB.bat scripts/push_state_to_github.py
+EXIT_CODE: 128
+
+--- STDOUT ---
+
+
+--- STDERR ---
+fatal: pathspec 'PUSH_STATE_TO_GITHUB.bat' did not match any files
+
+--- END git_add_push_scripts OUTPUT ---
+
+git_status_after_add: exit 0
+git_commit_state: exit 0
+git_push_head_to_main: exit 0
+git_ls_remote_main: exit 0
+git_status_final: exit 0

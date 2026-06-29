@@ -1,0 +1,697 @@
+@charset "UTF-8";
+
+:root {
+    --site-text-blur: 0.10px;
+}
+
+/* =========================
+   БАЗОВЫЕ НАСТРОЙКИ
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+        text-shadow: 0 0 var(--site-text-blur) currentColor;
+margin: 0;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(212, 175, 55, 0.08), transparent 35%),
+        #0b0d10;
+    color: #f5f5f5;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   ШАПКА САЙТА
+========================= */
+
+.site-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 30px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #d4af37;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.site-header nav a {
+    position: relative;
+    color: #d3d3d3;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.site-header nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: width 0.2s ease;
+}
+
+.site-header nav a:hover {
+    color: #ffffff;
+}
+
+.site-header nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   ГЛАВНЫЙ БЛОК
+========================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(300px, 420px) 1fr;
+    gap: 28px;
+    max-width: 1200px;
+    margin: 36px auto;
+    padding: 0 30px;
+}
+
+
+/* =========================
+   КАРТОЧКА ИГРОКА
+========================= */
+
+.player-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 430px;
+    padding: 34px;
+    border: 1px solid rgba(212, 175, 55, 0.7);
+    border-radius: 26px;
+    background:
+        linear-gradient(145deg, rgba(212, 175, 55, 0.13), transparent 45%),
+        #15181d;
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.35),
+        inset 0 0 35px rgba(212, 175, 55, 0.04);
+}
+
+.player-card::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -90px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.09);
+    filter: blur(2px);
+}
+
+.player-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #999ea8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.player-card h1 {
+    margin: 0 0 14px;
+    color: #ffffff;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.player-card p {
+    margin: 13px 0;
+    color: #c6c8cd;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.elite {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 22px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #f7df88, #b88a18);
+    color: #111111;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+}
+
+.price {
+    margin-top: 28px;
+    color: #d4af37;
+    font-size: clamp(42px, 5vw, 58px);
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.growth {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 13px;
+    border: 1px solid rgba(50, 215, 75, 0.22);
+    border-radius: 10px;
+    background: rgba(50, 215, 75, 0.08);
+    color: #46dc64;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* =========================
+   ГРАФИК СТОИМОСТИ
+========================= */
+
+.chart-card {
+    min-width: 0;
+    padding: 32px;
+    border: 1px solid rgba(212, 175, 55, 0.42);
+    border-radius: 26px;
+    background: #15181d;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.3);
+}
+
+.chart-card h2 {
+    margin: 0 0 26px;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.chart {
+    position: relative;
+    overflow: hidden;
+    height: 330px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    background-color: #0d1014;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 55px 55px;
+}
+
+.chart::before {
+    content: "";
+    position: absolute;
+    inset: 42px 30px 45px;
+    background: linear-gradient(
+        90deg,
+        #9f7514,
+        #d4af37 35%,
+        #f4d875 68%,
+        #d4af37
+    );
+    clip-path: polygon(
+        0 76%,
+        8% 68%,
+        17% 71%,
+        26% 54%,
+        34% 59%,
+        44% 35%,
+        53% 45%,
+        62% 25%,
+        70% 36%,
+        79% 16%,
+        88% 27%,
+        100% 4%,
+        100% 8%,
+        88% 31%,
+        79% 20%,
+        70% 40%,
+        62% 29%,
+        53% 49%,
+        44% 39%,
+        34% 63%,
+        26% 58%,
+        17% 75%,
+        8% 72%,
+        0 80%
+    );
+    filter: drop-shadow(0 0 9px rgba(212, 175, 55, 0.65));
+}
+
+.chart::after {
+    content: "€180M";
+    position: absolute;
+    top: 32px;
+    right: 28px;
+    padding: 8px 12px;
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    border-radius: 9px;
+    background: rgba(212, 175, 55, 0.1);
+    color: #e3c45f;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+/* =========================
+   ОБЫЧНЫЕ СЕКЦИИ
+========================= */
+
+body > section:not(.hero) {
+    max-width: 1200px;
+    margin: 55px auto;
+    padding: 0 30px;
+}
+
+body > section > h3 {
+    margin: 0 0 24px;
+    color: #ffffff;
+    font-size: 27px;
+}
+
+
+/* =========================
+   НОВОСТНЫЕ КАРТОЧКИ
+========================= */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    background: #15181d;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.card h3 {
+    margin: 0 0 14px;
+    font-size: 21px;
+    line-height: 1.35;
+}
+
+.card p {
+    color: #aeb2b9;
+    line-height: 1.7;
+}
+
+.card a {
+    color: #d4af37;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.card h3 a {
+    color: #ffffff;
+}
+
+.card h3 a:hover {
+    color: #d4af37;
+}
+
+.date {
+    color: #777e89;
+    font-size: 13px;
+}
+
+
+/* =========================
+   ТРАНСФЕРЫ
+========================= */
+
+.transfers-preview {
+    padding: 30px !important;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 22px;
+    background:
+        linear-gradient(135deg, rgba(212, 175, 55, 0.1), transparent 50%),
+        #111419;
+}
+
+.transfers-preview p {
+    margin: 0;
+    color: #aeb2b9;
+    font-size: 16px;
+}
+
+
+/* =========================
+   СТРАНИЦА СТАТЬИ
+========================= */
+
+.article {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 30px 60px;
+}
+
+.article h1 {
+    color: #ffffff;
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.15;
+}
+
+.content {
+    color: #d1d3d7;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.content a {
+    color: #d4af37;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #d4af37;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+/* =========================
+   АДАПТАЦИЯ ПОД ТЕЛЕФОН
+========================= */
+
+@media (max-width: 850px) {
+
+    .site-header {
+        padding: 22px 20px;
+    }
+
+    .site-header nav {
+        gap: 16px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .player-card {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .chart {
+        height: 270px;
+    }
+
+    body > section:not(.hero) {
+        padding: 0 20px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .player-card,
+    .chart-card {
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    .player-card h1 {
+        font-size: 36px;
+    }
+
+    .price {
+        font-size: 43px;
+    }
+
+    .chart {
+        height: 230px;
+    }
+
+}
+
+.hero--player {
+    grid-template-columns: minmax(300px, 460px);
+    justify-content: center;
+}
+
+.player-value-section {
+    max-width: 1200px;
+    margin: 35px auto 55px;
+    padding: 0 30px;
+}
+
+@media (max-width: 850px) {
+
+    .player-value-section {
+        padding: 0 20px;
+    }
+
+}
+/* Step 78: global transfer ticker tab style */
+.pf-transfer-tab-link {
+    position: relative !important;
+    cursor: pointer !important;
+    overflow: visible !important;
+    z-index: 30 !important;
+    isolation: isolate !important;
+    border-right: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 6px 6px 0 !important;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: .035em !important;
+    text-transform: uppercase !important;
+    color: #111722 !important;
+    text-decoration: none !important;
+    transition: color .16s ease, filter .16s ease;
+    background: linear-gradient(
+        90deg,
+        rgba(229, 180, 58, .98) 0%,
+        rgba(229, 180, 58, .98) 58%,
+        rgba(229, 180, 58, .72) 76%,
+        rgba(229, 180, 58, .36) 90%,
+        rgba(5, 9, 16, .92) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link *,
+.pf-transfer-tab-link span,
+.pf-transfer-tab-link strong {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.pf-transfer-tab-link:hover,
+.pf-transfer-tab-link:hover *,
+.pf-transfer-tab-link:focus-visible,
+.pf-transfer-tab-link:focus-visible * {
+    color: #ffffff !important;
+}
+
+.pf-transfer-tab-dot-hidden,
+.pf-transfer-tab-link .pf-transfer-tab-dot-hidden {
+    display: none !important;
+}
+
+.pf-transfer-tab-link::before {
+    display: none !important;
+    content: none !important;
+}
+
+.pf-transfer-tab-link::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -96px !important;
+    width: 96px !important;
+    height: 100% !important;
+    display: block !important;
+    pointer-events: none !important;
+    z-index: 40 !important;
+    border-radius: 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, .94) 0%,
+        rgba(5, 9, 16, .74) 30%,
+        rgba(5, 9, 16, .36) 68%,
+        rgba(5, 9, 16, 0) 100%
+    ) !important;
+}
+
+.pf-transfer-tab-link:hover::after,
+.pf-transfer-tab-link:focus-visible::after {
+    content: "" !important;
+    display: block !important;
+    right: -96px !important;
+    width: 96px !important;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 9, 16, .92) 0%,
+        rgba(5, 9, 16, .70) 30%,
+        rgba(5, 9, 16, .34) 68%,
+        rgba(5, 9, 16, 0) 100%
+    ) !important;
+}
+
+/* 208 ramos flag visibility and market value alignment */
+body.transfer-page img[src*="/images/flags/"],
+body.transfer-page img[src*="images/flags/"] {
+  width: 24px !important;
+  height: 16px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  display: inline-block !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 2px !important;
+  background: transparent !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  box-shadow: none !important;
+  flex: 0 0 24px !important;
+  vertical-align: middle !important;
+}
+
+body.transfer-page [class*="market"],
+body.transfer-page [class*="value"],
+body.transfer-page [class*="price"],
+body.transfer-page [class*="fee"] {
+  white-space: nowrap !important;
+  align-items: center !important;
+  text-align: left !important;
+}
+
+/* 209 final Ramos photo flag value fix */
+body.transfer-page img[src*="/images/flags/portugal-v210.png"],
+body.transfer-page img[src*="images/flags/portugal-v210.png"],
+body.transfer-page img[src*="/images/flags/"],
+body.transfer-page img[src*="images/flags/"] {
+  width: 24px !important;
+  height: 16px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: inline-block !important;
+  border-radius: 2px !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  background: transparent !important;
+  flex: 0 0 24px !important;
+  vertical-align: middle !important;
+}
+
+body.transfer-page img[src*="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"] {
+  background: #000000 !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+body.transfer-page [class*="market"],
+body.transfer-page [class*="value"],
+body.transfer-page [class*="price"],
+body.transfer-page [class*="fee"] {
+  white-space: nowrap !important;
+  min-width: 0 !important;
+  align-items: center !important;
+  text-align: left !important;
+}
+
+/* 210 hard Ramos photo flag value fix */
+body.transfer-page img[src*="goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="/images/players/api/41585.png"] {
+  background: #000000 !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+body.transfer-page img[src*="portugal-v210.png"],
+body.transfer-page img[src*="/images/flags/"] {
+  width: 24px !important;
+  height: 16px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: inline-block !important;
+  border-radius: 2px !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  background: transparent !important;
+  flex: 0 0 24px !important;
+  vertical-align: middle !important;
+}
+
+body.transfer-page [class*="market"],
+body.transfer-page [class*="value"],
+body.transfer-page [class*="price"],
+body.transfer-page [class*="fee"] {
+  white-space: nowrap !important;
+  min-width: 0 !important;
+  align-items: center !important;
+  text-align: left !important;
+}

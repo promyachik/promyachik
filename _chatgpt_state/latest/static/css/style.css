@@ -617,8 +617,8 @@ body.transfer-page [class*="fee"] {
 }
 
 /* 209 final Ramos photo flag value fix */
-body.transfer-page img[src*="/images/flags/portugal-proper.png"],
-body.transfer-page img[src*="images/flags/portugal-proper.png"],
+body.transfer-page img[src*="/images/flags/portugal-v210.png"],
+body.transfer-page img[src*="images/flags/portugal-v210.png"],
 body.transfer-page img[src*="/images/flags/"],
 body.transfer-page img[src*="images/flags/"] {
   width: 24px !important;
@@ -639,10 +639,10 @@ body.transfer-page img[src*="images/flags/"] {
   vertical-align: middle !important;
 }
 
-body.transfer-page img[src*="/images/players/transfermarkt/goncalo-ramos-550550-black.png"],
-body.transfer-page img[src*="images/players/transfermarkt/goncalo-ramos-550550-black.png"],
-body.transfer-page img[src*="/images/players/api/41585.png"],
-body.transfer-page img[src*="images/players/api/41585.png"] {
+body.transfer-page img[src*="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="/images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"],
+body.transfer-page img[src*="images/players/transfermarkt/goncalo-ramos-550550-black-v210.png"] {
   background: #000000 !important;
   object-fit: cover !important;
   object-position: center top !important;

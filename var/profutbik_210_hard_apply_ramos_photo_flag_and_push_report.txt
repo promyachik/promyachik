@@ -1,0 +1,104 @@
+PROFUTBIK 210 - HARD APPLY RAMOS PHOTO FLAG AND PUSH EXACT FILES
+==========================================================================================
+Time: 2026-06-29 20:04:11
+Project: C:\Users\Dmitrii\Promyachik
+
+FIXED VISUAL PATHS
+- New player photo path: /images/players/transfermarkt/goncalo-ramos-550550-black-v210.png
+- New Portugal flag path: /images/flags/portugal-v210.png
+- Old API photo 41585.png overwritten in static/public/root when those folders exist.
+- Generated HTML/CSS layers patched after Hugo build if present.
+
+TRANSFERMARKT
+- Profile: https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550
+- Portrait used: https://img.a.transfermarkt.technology/portrait/header/550550-1681906158.jpg
+
+HUGO BUILD
+{'returncode': 0, 'stdout_tail': 'Start building sites вЂ¦ \nhugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2026-06-18T16:18:24Z VendorInfo=gohugoio\n\n\n                  в”‚  EN  \nв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”јв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ\n Pages            в”‚   25 \n Paginator pages  в”‚    0 \n Non-page files   в”‚    0 \n Static files     в”‚ 4573 \n Processed images в”‚    0 \n Aliases          в”‚    1 \n Cleaned          в”‚    0 \n\nTotal in 1713 ms\n', 'stderr_tail': 'WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.\nWARN  deprecated: .Site.Data was deprecated in Hugo v0.156.0 and will be removed in a future release. Use hugo.Data instead.\nWARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.\nWARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.\n'}
+
+TOUCHED FILES
+- static\images\flags\portugal-v210.png
+- static\images\flags\portugal-proper.png
+- public\images\flags\portugal-v210.png
+- public\images\flags\portugal-proper.png
+- images\flags\portugal-v210.png
+- images\flags\portugal-proper.png
+- static\images\flags\portugal.svg
+- public\images\flags\portugal.svg
+- images\flags\portugal.svg
+- static\images\players\transfermarkt\goncalo-ramos-550550-black-v210.png
+- static\images\players\transfermarkt\goncalo-ramos-550550-black.png
+- static\images\players\api\41585.png
+- public\images\players\transfermarkt\goncalo-ramos-550550-black-v210.png
+- public\images\players\transfermarkt\goncalo-ramos-550550-black.png
+- public\images\players\api\41585.png
+- images\players\transfermarkt\goncalo-ramos-550550-black-v210.png
+- images\players\transfermarkt\goncalo-ramos-550550-black.png
+- images\players\api\41585.png
+- content\transfers\goncalo-ramos-ac-milan\index.md
+- public\index.html
+- public\about\index.html
+- public\css\style.css
+- public\news\index.html
+- public\transfers\index.html
+- public\transfers\bernardo-silva-real-madrid\index.html
+- public\transfers\denzel-dumfries-real-madrid\index.html
+- public\transfers\elliot-anderson-manchester-city\index.html
+- public\transfers\florian-wirtz-liverpool\index.html
+- public\transfers\goncalo-ramos-ac-milan\index.html
+- public\transfers\ibrahima-konate-real-madrid\index.html
+- public\transfers\julian-alvarez-barcelona\index.html
+- public\transfers\kylian-mbappe-real-madrid\index.html
+- public\transfers\marc-cucurella-real-madrid\index.html
+- public\transfers\matthijs-de-ligt\index.html
+- public\posts\test\index.html
+- data\transfers.json
+- docs\PROFUTBIK_TRANSFER_PLAYER_PAGE_RULES.md
+- _backup_109_de_ligt_page\transfers-json.before_109_20260627_201927.json
+- _backup_110_de_ligt_page\transfers-json.before_110_20260627_202212.json
+- _backup_111_de_ligt_full_page\transfers-json.before_111_20260627_202709.json
+- _backup_112_de_ligt_clone_structure\transfers-json.before_112_20260627_203024.json
+- _backup_113_fix_status_install_cloner\transfers-json.before_113_20260627_203646.json
+- _backup_114_de_ligt_rich_structure\transfers-json.before_114_20260627_204551.json
+- _backup_119_de_ligt_match_dumfries_cucurella\transfers-json.before_119_20260627_212842.json
+- _backup_120_de_ligt_photo_value_history\transfers-json.before_120_20260627_213730.json
+- _backup_122_de_ligt_cache_safe_photo_value\transfers-json.before_122_20260627_214848.json
+- _backup_126_de_ligt_transfermarkt_fallback\transfers-json.before_126_20260627_222117.json
+- _backup_128_de_ligt_base_photo\transfers-json.before_128_20260627_224054.json
+- _send_to_chatgpt_compare_pages\data\transfers.json
+- _send_to_chatgpt_compare_pages\content\transfers\goncalo-ramos-ac-milan\index.md
+- _chatgpt_state\latest\data\transfers.json
+- _chatgpt_state\latest\static\css\style.css
+- _chatgpt_state\latest\public\transfers\index.html
+- _chatgpt_state\latest\public\transfers\bernardo-silva-real-madrid\index.html
+- _chatgpt_state\latest\public\transfers\denzel-dumfries-real-madrid\index.html
+- _chatgpt_state\latest\public\transfers\elliot-anderson-manchester-city\index.html
+- _chatgpt_state\latest\public\transfers\florian-wirtz-liverpool\index.html
+- _chatgpt_state\latest\public\transfers\goncalo-ramos-ac-milan\index.html
+- _chatgpt_state\latest\public\transfers\ibrahima-konate-real-madrid\index.html
+- _chatgpt_state\latest\public\transfers\julian-alvarez-barcelona\index.html
+- _chatgpt_state\latest\public\transfers\kylian-mbappe-real-madrid\index.html
+- _chatgpt_state\latest\public\transfers\marc-cucurella-real-madrid\index.html
+- _chatgpt_state\latest\public\transfers\matthijs-de-ligt\index.html
+- _chatgpt_state\latest\data\image-processing\background-removal-queue.json
+- _chatgpt_state\latest\data\playerdb\players.json
+- _chatgpt_state\latest\content\transfers\bernardo-silva-real-madrid\index.md
+- _chatgpt_state\latest\content\transfers\goncalo-ramos-ac-milan\index.md
+- _backup_209_redownload_ramos_transfermarkt_black_bg_and_real_flag\docs\PROFUTBIK_TRANSFER_PLAYER_PAGE_RULES.md
+- _backup_209_redownload_ramos_transfermarkt_black_bg_and_real_flag\content\transfers\goncalo-ramos-ac-milan\index.md
+- _backup_208_fix_ramos_photo_black_bg_and_portugal_flag\content\transfers\goncalo-ramos-ac-milan\index.md
+- _backup_207_real_fix_ramos_flag_and_value_alignment\docs\PROFUTBIK_TRANSFER_PLAYER_PAGE_RULES.md
+- _backup_207_real_fix_ramos_flag_and_value_alignment\content\transfers\goncalo-ramos-ac-milan\index.md
+- _backup_153_before_rollback_152_20260628_182112\data\transfers.json
+- _backup_152_restore_approved_market_chart_last5_20260628_181907\data\transfers.json
+- static\css\style.css
+- data\image-processing\background-removal-queue.json
+- data\playerdb\players.json
+- content\transfers\bernardo-silva-real-madrid\index.md
+- backups\150_FULL_SAFE_AUTOSYNC_DE_LIGT_DYNAMIC_VALUE_20260628_181125\data\transfers.json
+- css\style.css
+- transfers\goncalo-ramos-ac-milan\index.html
+- var\profutbik_210_hard_apply_ramos_photo_flag_and_push_report.txt
+
+NO SITE OPENED.
+NO Y/N ASKED.
