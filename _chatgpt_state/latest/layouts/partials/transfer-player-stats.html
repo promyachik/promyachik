@@ -1,114 +1,467 @@
-{{ if not .Params.hide_stats_block }}
-<section id="pfb-stats-v184" class="transfer-stats pfb-stats-v184 transfer-stats--under-market-chart" aria-label="Player statistics">
-  <style>
-    /* 214 restore approved icon-only stats block */
+﻿{{ with .Params.previous_club_stats }}
+{{ $matches := .matches | default "—" }}
+{{ $goals := .goals | default "—" }}
+{{ $assists := .assists | default "—" }}
+{{ $yellowCards := .yellow_cards | default "—" }}
+{{ $redCards := .red_cards | default "—" }}
+
+<style>
+/* PROFUTBIK APPROVED SCREENSHOT STATS BLOCK V184 START */
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+    display: block !important;
+    width: 100% !important;
+    max-width: 390px !important;
+    margin: 26px auto 22px !important;
+    padding: 18px 12px 20px !important;
+    border: 1px solid rgba(245, 199, 65, 0.18) !important;
+    border-radius: 20px !important;
+    background:
+        radial-gradient(circle at 50% 28%, rgba(245, 199, 65, 0.10), transparent 43%),
+        linear-gradient(180deg, rgba(13, 15, 18, 0.95), rgba(5, 6, 8, 0.98)) !important;
+    box-shadow: 0 16px 42px rgba(0,0,0,0.40) !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+body.transfer-page #pfb-stats-v184,
+body.transfer-page #pfb-stats-v184 * {
+    box-sizing: border-box !important;
+    overflow: visible !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-rows: 88px 88px !important;
+    grid-auto-rows: 88px !important;
+    gap: 17px 13px !important;
+    align-items: center !important;
+    justify-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+    height: 88px !important;
+    min-height: 88px !important;
+    max-height: 88px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    aspect-ratio: auto !important;
+    border: 1.5px solid rgba(245, 199, 65, 0.78) !important;
+    border-radius: 17px !important;
+    background:
+        radial-gradient(circle at 50% 42%, rgba(245,199,65,0.18), transparent 46%),
+        linear-gradient(145deg, rgba(27,27,24,0.96), rgba(6,7,9,0.99)) !important;
+    box-shadow:
+        inset 0 0 24px rgba(245,199,65,0.08),
+        0 12px 26px rgba(0,0,0,0.43) !important;
+    cursor: pointer !important;
+    z-index: 2 !important;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:hover,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:focus-visible {
+    transform: translateY(-3px) !important;
+    border-color: rgba(255, 218, 83, 1) !important;
+    box-shadow:
+        inset 0 0 28px rgba(245,199,65,0.13),
+        0 0 22px rgba(245,199,65,0.24),
+        0 16px 34px rgba(0,0,0,0.48) !important;
+    outline: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__matches { grid-column: 1 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals   { grid-column: 3 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__assists { grid-column: 5 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__yellow  { grid-column: 2 / span 2 !important; grid-row: 2 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__red     { grid-column: 4 / span 2 !important; grid-row: 2 !important; }
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon {
+    display: block !important;
+    width: 72px !important;
+    height: 72px !important;
+    object-fit: contain !important;
+    pointer-events: none !important;
+    filter: drop-shadow(0 0 8px rgba(245,199,65,0.35)) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals {
+ overflow: visible !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+ width: 74px !important;
+ height: 74px !important;
+ max-width: 74px !important;
+ max-height: 74px !important;
+ object-fit: contain !important;
+ object-position: center center !important;
+ transform: translateX(-1px) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__yellow .pfb-stats-v184__icon,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__red .pfb-stats-v184__icon {
+    width: 76px !important;
+    height: 76px !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: calc(100% + 13px) !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    z-index: 999999 !important;
+    min-width: 148px !important;
+    padding: 12px 16px 13px !important;
+    border: 1.5px solid rgba(255, 218, 83, 0.96) !important;
+    border-radius: 12px !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(245,199,65,0.14), transparent 50%),
+        rgba(6,7,9,0.99) !important;
+    box-shadow: 0 0 18px rgba(245,199,65,0.24), 0 16px 34px rgba(0,0,0,0.56) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    transition: opacity .16s ease, visibility .16s ease, transform .16s ease !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 100% !important;
+    width: 17px !important;
+    height: 17px !important;
+    background: rgba(6,7,9,0.99) !important;
+    border-right: 1.5px solid rgba(255,218,83,0.96) !important;
+    border-bottom: 1.5px solid rgba(255,218,83,0.96) !important;
+    transform: translate(-50%, -8.5px) rotate(45deg) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip b {
+    display: block !important;
+    margin: 0 0 5px !important;
+    padding: 0 !important;
+    color: #f5c741 !important;
+    -webkit-text-fill-color: #f5c741 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 42px !important;
+    line-height: .88 !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 15px rgba(245,199,65,0.35) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip span {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #f5c741 !important;
+    -webkit-text-fill-color: #f5c741 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: .04em !important;
+    text-transform: uppercase !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:hover .pfb-stats-v184__tip,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:focus-visible .pfb-stats-v184__tip {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+@media (max-width: 640px) {
     body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
-    #pfb-stats-v184.transfer-stats.pfb-stats-v184 {
-      padding: 0 !important;
-      border: 0 !important;
-      border-radius: 0 !important;
-      background: transparent !important;
-      background-image: none !important;
-      box-shadow: none !important;
-      outline: 0 !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-      margin-top: 18px !important;
+    body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+        max-width: 335px !important;
+        padding: 16px 9px 18px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__grid {
-      display: grid !important;
-      gap: 10px !important;
-      justify-items: center !important;
-      align-items: center !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid {
+        max-width: 312px !important;
+        grid-template-rows: 78px 78px !important;
+        grid-auto-rows: 78px !important;
+        gap: 14px 9px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__row {
-      display: grid !important;
-      gap: 10px !important;
-      justify-items: center !important;
-      align-items: center !important;
-      width: 100% !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+        width: 96px !important;
+        min-width: 96px !important;
+        max-width: 96px !important;
+        height: 78px !important;
+        min-height: 78px !important;
+        max-height: 78px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__row--top {
-      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon {
+        width: 62px !important;
+        height: 62px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__row--bottom {
-      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-      width: 66% !important;
-      margin: 0 auto !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__card {
-      position: relative !important;
-      width: calc(100% - 9px) !important;
-      min-width: 0 !important;
-      min-height: calc(100% - 4px) !important;
-      aspect-ratio: 1 / 1 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      box-sizing: border-box !important;
-      justify-self: center !important;
-      align-self: center !important;
-      border: 1px solid rgba(212, 175, 55, 0.34) !important;
-      border-radius: 16px !important;
-      background: radial-gradient(circle at 50% 30%, rgba(212,175,55,.12), rgba(12,15,20,.96) 60%) !important;
-      box-shadow: inset 0 0 18px rgba(212,175,55,.06), 0 8px 22px rgba(0,0,0,.26) !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__icon {
-      width: 54% !important;
-      height: 54% !important;
-      object-fit: contain !important;
-      display: block !important;
-      filter: drop-shadow(0 0 7px rgba(212,175,55,.35)) !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__tooltip {
-      position: absolute !important;
-      left: 50% !important;
-      bottom: calc(100% + 8px) !important;
-      transform: translateX(-50%) translateY(4px) !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-      white-space: nowrap !important;
-      padding: 8px 10px !important;
-      border-radius: 10px !important;
-      border: 1px solid rgba(212,175,55,.42) !important;
-      background: rgba(8,10,14,.96) !important;
-      color: #f4d875 !important;
-      font-size: 12px !important;
-      font-weight: 800 !important;
-      letter-spacing: .02em !important;
-      transition: opacity .14s ease, transform .14s ease !important;
-      z-index: 20 !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__card:hover .pfb-stats-v184__tooltip {
-      opacity: 1 !important;
-      transform: translateX(-50%) translateY(0) !important;
-    }
-  </style>
-  <div class="pfb-stats-v184__grid">
-    <div class="pfb-stats-v184__row pfb-stats-v184__row--top">
-      <div class="pfb-stats-v184__card" aria-label="Матчи">
-        <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/matches.png" | relURL }}" alt="">
-        <span class="pfb-stats-v184__tooltip">Матчи</span>
-      </div>
-      <div class="pfb-stats-v184__card" aria-label="Голы">
-        <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/goals.png" | relURL }}" alt="">
-        <span class="pfb-stats-v184__tooltip">Голы</span>
-      </div>
-      <div class="pfb-stats-v184__card" aria-label="Ассисты">
-        <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/assists.png" | relURL }}" alt="">
-        <span class="pfb-stats-v184__tooltip">Ассисты</span>
-      </div>
+}
+/* PROFUTBIK APPROVED SCREENSHOT STATS BLOCK V184 END */
+
+/* 194 goals icon no crop start */
+body.transfer-page #pfb-stats-v184,
+body.transfer-page #pfb-stats-v184 *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 img[src*="goals.png"] {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals img,
+body.transfer-page #pfb-stats-v184 img[src*="goals.png"] {
+  display: block !important;
+  width: 70px !important;
+  height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+/* 194 goals icon no crop end */
+
+/* 195 goals icon approved design no crop fix */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-2px) !important;
+}
+
+
+/* 196 redrawn football goals icon no crop */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+/* 197 test goals icon variant 1 no crop */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+/* 198 test goals icon variant 1 full no holes */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+/* 199 approved neon goals icon */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+/* 200 test goals icon variant 3 no crop */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+/* 201 remove outer stats block visual wrapper */
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+@media (max-width: 640px) {
+  body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+  body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+}
+
+/* 202 shrink individual stats icon cards by 4px */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+  width: calc(100% - 4px) !important;
+  min-width: 0 !important;
+  min-height: calc(100% - 4px) !important;
+  box-sizing: border-box !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__row {
+  justify-items: center !important;
+  align-items: center !important;
+}
+
+/* 203 shrink individual stats icon cards width 5px more */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+  width: calc(100% - 9px) !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  justify-self: center !important;
+}
+</style>
+
+<section id="pfb-stats-v184" class="transfer-stats pfb-stats-v184" aria-label="Статистика игрока">
+    <div class="pfb-stats-v184__grid" role="list">
+        <article class="pfb-stats-v184__card pfb-stats-v184__matches" role="listitem" tabindex="0" aria-label="Матчей: {{ $matches }}">
+            <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/matches.png" | relURL }}" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>{{ $matches }}</b><span>МАТЧА</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__goals" role="listitem" tabindex="0" aria-label="Голов: {{ $goals }}">
+            <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/goals.png?v=194" | relURL }}?v=188" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>{{ $goals }}</b><span>ГОЛА</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__assists" role="listitem" tabindex="0" aria-label="Голевых передач: {{ $assists }}">
+            <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/assists.png" | relURL }}" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>{{ $assists }}</b><span>ПЕРЕДАЧА</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: {{ $yellowCards }}">
+            <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/yellow_cards.png" | relURL }}" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>{{ $yellowCards }}</b><span>ЖЁЛТЫХ</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__red" role="listitem" tabindex="0" aria-label="Красных карточек: {{ $redCards }}">
+            <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/red_cards.png" | relURL }}" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>{{ $redCards }}</b><span>КРАСНЫХ</span></span>
+        </article>
     </div>
-    <div class="pfb-stats-v184__row pfb-stats-v184__row--bottom">
-      <div class="pfb-stats-v184__card" aria-label="Жёлтые карточки">
-        <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/yellow_cards.png" | relURL }}" alt="">
-        <span class="pfb-stats-v184__tooltip">Жёлтые карточки</span>
-      </div>
-      <div class="pfb-stats-v184__card" aria-label="Красные карточки">
-        <img class="pfb-stats-v184__icon" src="{{ "images/stats-icons-v184/red_cards.png" | relURL }}" alt="">
-        <span class="pfb-stats-v184__tooltip">Красные карточки</span>
-      </div>
-    </div>
-  </div>
 </section>
 {{ end }}
+
+
+
+
+
+
+
+
+
+

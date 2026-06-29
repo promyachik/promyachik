@@ -2,42 +2,22 @@ COMMAND: git status --short
 EXIT_CODE: 0
 
 --- STDOUT ---
- M _chatgpt_state/latest/.gitignore
  M _chatgpt_state/latest/_STATE_INFO.json
  M _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
+AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- D _chatgpt_state/latest/content/transfers/bernardo-silva-real-madrid/index.md
- D _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/index.md
- D _chatgpt_state/latest/data/image-processing/background-removal-queue.json
- D _chatgpt_state/latest/data/playerdb/players.json
- D _chatgpt_state/latest/data/transfers.json
- M _chatgpt_state/latest/hugo.toml
  M _chatgpt_state/latest/layouts/_default/baseof.html
  M _chatgpt_state/latest/layouts/_default/single.html
- M _chatgpt_state/latest/layouts/index.html
- M _chatgpt_state/latest/layouts/partials/favicon.html
- M _chatgpt_state/latest/layouts/partials/featured-transfer-of-day.html
  M _chatgpt_state/latest/layouts/partials/header.html
- M _chatgpt_state/latest/layouts/partials/mbappe-player-market-value-chart.html
- M _chatgpt_state/latest/layouts/partials/mbappe-standalone-chart-runtime.html
- M _chatgpt_state/latest/layouts/partials/player-value-chart.html
- M _chatgpt_state/latest/layouts/partials/post-card.html
  M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
  M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
  M _chatgpt_state/latest/layouts/partials/transfer-player-stats.html
- M _chatgpt_state/latest/layouts/partials/transfer-player-value-history.html
- M _chatgpt_state/latest/layouts/partials/transfer-ticker(1).html
- M _chatgpt_state/latest/layouts/partials/transfer-ticker(2).html
  M _chatgpt_state/latest/layouts/partials/transfer-ticker.html
- M _chatgpt_state/latest/layouts/players/single.html
- M _chatgpt_state/latest/layouts/shortcodes/mbappe-market-chart.html
- M _chatgpt_state/latest/layouts/transfers/list.html
  M _chatgpt_state/latest/layouts/transfers/single.html
- M _chatgpt_state/latest/public/transfers/bernardo-silva-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
  M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
@@ -48,8 +28,6 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
- D _chatgpt_state/latest/static/css/style.css
- M _chatgpt_state/latest/static/css/transfer-article.css
 ?? .env
 ?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
 ?? 110_FIX_DE_LIGT_PAGE_CLUBS_DATE.bat
@@ -119,6 +97,7 @@ EXIT_CODE: 0
 ?? 201_REMOVE_OUTER_STATS_BLOCK_WRAPPER_PACKAGE.bat
 ?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
 ?? 20260629_191559_20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
+?? 20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
 ?? 202_SHRINK_STATS_ICON_CARDS_BY_4PX_PACKAGE.bat
 ?? 203_SHRINK_STATS_ICON_CARDS_WIDTH_5PX_MORE_PACKAGE.bat
 ?? 204_APPLY_APPROVED_STATS_BLOCK_TO_ALL_TRANSFER_PLAYERS_PACKAGE.bat
@@ -133,6 +112,9 @@ EXIT_CODE: 0
 ?? 213_EMERGENCY_RESTORE_RAMOS_PAGE_AND_BLOCKS_PACKAGE.bat
 ?? 214_RESTORE_RAMOS_PAGE_CHART_AND_STATS_BLOCK_PACKAGE.bat
 ?? 215_ROLLBACK_6_COMMITS_AND_PUSH_PACKAGE.bat
+?? 216_RESTORE_STATS_ICON_SIZE_ONLY_PACKAGE.bat
+?? 217_RESTORE_SITE_BLOCKS_FROM_REAL_BACKUP_PACKAGE.bat
+?? 218_RESTORE_RAMOS_PAGE_AND_TICKERS_ONLY_PACKAGE.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -175,6 +157,9 @@ EXIT_CODE: 0
 ?? README_213.txt
 ?? README_214.txt
 ?? README_215.txt
+?? README_216.txt
+?? README_217.txt
+?? README_218.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -310,18 +295,16 @@ EXIT_CODE: 0
 ?? _backup_212_rollback_broken_ramos_hardfix/
 ?? _backup_214_restore_ramos_page_chart_and_stats_block/
 ?? _backup_215_rollback_6_commits_and_push/
+?? _backup_216_restore_stats_icon_size_only/
+?? _backup_217_before_restore_site_blocks_from_real_backup/
+?? _backup_218_restore_ramos_page_and_tickers_only/
 ?? _backup_clone_transfer_page_20260627_203952/
-?? _chatgpt_state/latest/scripts/205_check_goncalo_ramos_page_state.py
-?? _chatgpt_state/latest/scripts/206_fix_player_flags_by_nationality.py
-?? _chatgpt_state/latest/scripts/207_real_fix_ramos_flag_and_value_alignment.py
-?? _chatgpt_state/latest/scripts/208_fix_ramos_photo_black_bg_and_portugal_flag.py
-?? _chatgpt_state/latest/scripts/209_redownload_ramos_transfermarkt_black_bg_and_real_flag.py
-?? _chatgpt_state/latest/scripts/210_hard_apply_ramos_photo_flag_and_push.py
-?? _chatgpt_state/latest/scripts/211_verified_ramos_page_hard_fix.py
-?? _chatgpt_state/latest/scripts/212_rollback_broken_ramos_hardfix.py
-?? _chatgpt_state/latest/scripts/213_emergency_restore_ramos_page_and_blocks.py
-?? _chatgpt_state/latest/scripts/214_restore_ramos_page_chart_and_stats_block.py
-?? _chatgpt_state/latest/scripts/215_rollback_6_commits_and_push.py
+?? _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/
+?? _chatgpt_state/latest/layouts/partials/footer-transfer-ticker.html
+?? _chatgpt_state/latest/scripts/216_restore_stats_icon_size_only.py
+?? _chatgpt_state/latest/scripts/217_restore_site_blocks_from_real_backup.py
+?? _chatgpt_state/latest/scripts/218_restore_ramos_page_and_tickers_only.py
+?? _chatgpt_state/latest/static/css/style.css
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -385,6 +368,9 @@ EXIT_CODE: 0
 ?? scripts/213_emergency_restore_ramos_page_and_blocks.py
 ?? scripts/214_restore_ramos_page_chart_and_stats_block.py
 ?? scripts/215_rollback_6_commits_and_push.py
+?? scripts/216_restore_stats_icon_size_only.py
+?? scripts/217_restore_site_blocks_from_real_backup.py
+?? scripts/218_restore_ramos_page_and_tickers_only.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

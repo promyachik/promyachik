@@ -1,0 +1,84 @@
+
+
+/* 216 restore stats icon visual size */
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon,
+#pfb-stats-v184 .pfb-stats-v184__icon,
+body.transfer-page #pfb-stats-v184 img.pfb-stats-v184__icon,
+#pfb-stats-v184 img.pfb-stats-v184__icon {
+  width: 74% !important;
+  height: 74% !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 78px !important;
+  max-height: 78px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 0 8px rgba(212,175,55,.42)) !important;
+}
+
+@media (max-width: 700px) {
+  body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon,
+  #pfb-stats-v184 .pfb-stats-v184__icon {
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 64px !important;
+    max-height: 64px !important;
+  }
+}
+
+/* 218 restore top bottom transfer tickers */
+.transfer-ticker {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  border-top: 1px solid rgba(212,175,55,.22);
+  border-bottom: 1px solid rgba(212,175,55,.22);
+  color: #f6d56b;
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+  position: relative;
+  z-index: 20;
+}
+.transfer-ticker--top { margin: 0; }
+.transfer-ticker--bottom { margin-top: 28px; }
+.transfer-ticker__viewport { width: 100%; overflow: hidden; }
+.transfer-ticker__track {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  min-width: max-content;
+  padding: 9px 0;
+  animation: pfb-transfer-ticker-scroll 34s linear infinite;
+}
+.transfer-ticker__track--reverse {
+  animation-name: pfb-transfer-ticker-scroll-reverse;
+  animation-duration: 38s;
+}
+.transfer-ticker__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 4px;
+}
+.transfer-ticker__badge {
+  color: #000;
+  background: #d4af37;
+  border-radius: 999px;
+  padding: 4px 7px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .05em;
+}
+.transfer-ticker__player { color: #fff4ba; font-weight: 800; }
+.transfer-ticker__arrow, .transfer-ticker__club { color: #d4af37; font-weight: 700; }
+@keyframes pfb-transfer-ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes pfb-transfer-ticker-scroll-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}

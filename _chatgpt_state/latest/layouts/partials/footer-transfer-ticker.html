@@ -1,9 +1,9 @@
-{{/* Restored top transfer ticker. Do not put literal \n in this file. */}}
+{{/* Restored bottom transfer ticker. Do not put literal \n in this file. */}}
 {{ $pages := where .Site.RegularPages "Section" "transfers" }}
 {{ if gt (len $pages) 0 }}
-<div class="transfer-ticker transfer-ticker--top" aria-label="Трансферная строка">
+<div class="transfer-ticker transfer-ticker--bottom" aria-label="Нижняя трансферная строка">
   <div class="transfer-ticker__viewport">
-    <div class="transfer-ticker__track">
+    <div class="transfer-ticker__track transfer-ticker__track--reverse">
       {{ range first 16 $pages.ByDate.Reverse }}
         <a class="transfer-ticker__item" href="{{ .RelPermalink }}">
           <span class="transfer-ticker__badge">{{ or .Params.status_label "ТРАНСФЕР" }}</span>

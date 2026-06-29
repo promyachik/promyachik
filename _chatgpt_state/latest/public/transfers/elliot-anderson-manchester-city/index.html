@@ -139,356 +139,132 @@
 
 
 
-
-
-
-
-
-
-<style>
-     
-    .pf-ticker,
-    .pf-ticker__viewport,
-    .pf-ticker__track,
-    .pf-ticker__group {
-        background: #000000 !important;
-        background-color: #000000 !important;
-        background-image: none !important;
-    }
-
-    .pf-ticker__badge .pf-ticker__live-dot,
-    .pf-ticker__live-dot {
-        display: none !important;
-        width: 0 !important;
-        min-width: 0 !important;
-        height: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        opacity: 0 !important;
-        box-shadow: none !important;
-        background: transparent !important;
-    }
-
-    .pf-ticker__badge {
-        gap: 0 !important;
-    }
-
-    .pf-ticker__divider {
-        display: inline-flex !important;
-        align-self: center !important;
-        flex: 0 0 1px !important;
-        width: 1px !important;
-        min-width: 1px !important;
-        height: 24px !important;
-        margin: 0 18px !important;
-        border-radius: 999px !important;
-        pointer-events: none !important;
-        background: linear-gradient(
-            180deg,
-            rgba(212, 175, 55, 0) 0%,
-            rgba(212, 175, 55, 0.20) 12%,
-            rgba(212, 175, 55, 0.68) 50%,
-            rgba(212, 175, 55, 0.20) 88%,
-            rgba(212, 175, 55, 0) 100%
-        ) !important;
-        box-shadow: 0 0 8px rgba(212, 175, 55, 0.20) !important;
-    }
-
-    .pf-ticker__player-photo {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        flex: 0 0 34px;
-        width: 34px;
-        height: 34px;
-        overflow: hidden;
-        border: 0 !important;
-        outline: 0 !important;
-        border-radius: 0 !important;
-        background: transparent !important;
-        background-color: transparent !important;
-        background-image: none !important;
-        box-shadow: none !important;
-    }
-
-    .pf-ticker__player-photo img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center bottom;
-        border: 0 !important;
-        outline: 0 !important;
-        box-shadow: none !important;
-        background: transparent !important;
-    }
-
-    .pf-ticker__player-photo.is-placeholder::before {
-        content: "PF";
-        color: #e3bd4f;
-        font-size: 12px;
-        font-weight: 950;
-        letter-spacing: 0.02em;
-    }
-
-    .pf-ticker__status--confirmed {
-        border-color: rgba(74, 222, 128, 0.48) !important;
-        color: #91f0ad !important;
-        background: rgba(34, 197, 94, 0.18) !important;
-    }
-
-    .pf-ticker__status--official {
-        border-color: rgba(74, 222, 128, 0.62) !important;
-        color: #a7f3bb !important;
-        background: rgba(22, 163, 74, 0.24) !important;
-    }
-</style>
-
-<div
-    class="pf-ticker"
-    data-ticker-duration="42"
-    aria-label="Последние футбольные трансферы"
->
-    <div class="pf-ticker__badge">
-        <span class="pf-ticker__live-dot"></span>
-        <span>ТРАНСФЕРЫ</span>
+<div class="transfer-ticker transfer-ticker--top" aria-label="Трансферная строка">
+  <div class="transfer-ticker__viewport">
+    <div class="transfer-ticker__track">
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/goncalo-ramos-ac-milan/">
+          <span class="transfer-ticker__badge">СОГЛАСОВАНО</span>
+          <span class="transfer-ticker__player">Gonçalo Ramos</span>
+          
+            <span class="transfer-ticker__arrow">→</span>
+            <span class="transfer-ticker__club">AC Milan</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/elliot-anderson-manchester-city/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Elliot Anderson</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/ibrahima-konate-real-madrid/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Ibrahima Konaté</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/marc-cucurella-real-madrid/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Marc Cucurella</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/denzel-dumfries-real-madrid/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Denzel Dumfries</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/julian-alvarez-barcelona/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Julián Álvarez</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/florian-wirtz-liverpool/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Florian Wirtz</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/matthijs-de-ligt/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Matthijs de Ligt</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/kylian-mbappe-real-madrid/">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Килиан Мбаппе</span>
+          
+        </a>
+      
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/goncalo-ramos-ac-milan/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">СОГЛАСОВАНО</span>
+          <span class="transfer-ticker__player">Gonçalo Ramos</span>
+          
+            <span class="transfer-ticker__arrow">→</span>
+            <span class="transfer-ticker__club">AC Milan</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/elliot-anderson-manchester-city/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Elliot Anderson</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/ibrahima-konate-real-madrid/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Ibrahima Konaté</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/marc-cucurella-real-madrid/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Marc Cucurella</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/denzel-dumfries-real-madrid/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Denzel Dumfries</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/julian-alvarez-barcelona/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Julián Álvarez</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/florian-wirtz-liverpool/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Florian Wirtz</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/matthijs-de-ligt/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Matthijs de Ligt</span>
+          
+        </a>
+      
+        <a class="transfer-ticker__item" href="/promyachik/transfers/kylian-mbappe-real-madrid/" aria-hidden="true" tabindex="-1">
+          <span class="transfer-ticker__badge">ТРАНСФЕР</span>
+          <span class="transfer-ticker__player">Килиан Мбаппе</span>
+          
+        </a>
+      
     </div>
-
-    <div class="pf-ticker__viewport">
-        <div class="pf-ticker__track">
-
-            
-
-                <div
-                    class="pf-ticker__group"
-                    
-                >
-
-                    
-
-                </div>
-
-            
-
-                <div
-                    class="pf-ticker__group"
-                    aria-hidden="true"
-                >
-
-                    
-
-                </div>
-
-            
-
-        </div>
-    </div>
+  </div>
 </div>
 
-<script>
-    (function () {
-        const ticker = document.querySelector(".pf-ticker");
 
-        if (!ticker || ticker.dataset.dragReady === "true") {
-            return;
-        }
+<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
 
-        const viewport = ticker.querySelector(".pf-ticker__viewport");
-        const track = ticker.querySelector(".pf-ticker__track");
-        const firstGroup = track
-            ? track.querySelector(".pf-ticker__group")
-            : null;
-
-        if (!viewport || !track || !firstGroup) {
-            return;
-        }
-
-        ticker.dataset.dragReady = "true";
-        ticker.classList.add("pf-ticker--interactive");
-
-        const baseDuration =
-            Math.max(Number(ticker.dataset.tickerDuration) || 42, 1);
-
-        const reducedMotion =
-            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-        const duration =
-            reducedMotion ? baseDuration * 2 : baseDuration;
-
-        const dragThreshold = 10;
-
-        let loopWidth = 0;
-        let offset = 0;
-        let lastFrame = performance.now();
-
-        let pointerIsDown = false;
-        let isDragging = false;
-        let activePointerId = null;
-        let dragStartX = 0;
-        let dragStartOffset = 0;
-        let resumeAt = 0;
-
-        function normalizeOffset(value) {
-            if (!loopWidth) {
-                return 0;
-            }
-
-            while (value <= -loopWidth) {
-                value += loopWidth;
-            }
-
-            while (value > 0) {
-                value -= loopWidth;
-            }
-
-            return value;
-        }
-
-        function render() {
-            track.style.transform =
-                "translate3d(" + offset + "px, 0, 0)";
-        }
-
-        function measure() {
-            const previousWidth = loopWidth;
-
-            const progress = previousWidth
-                ? -offset / previousWidth
-                : ((Date.now() / 1000) % duration) / duration;
-
-            loopWidth = firstGroup.getBoundingClientRect().width;
-
-            if (!loopWidth) {
-                return;
-            }
-
-            offset = normalizeOffset(-progress * loopWidth);
-            render();
-        }
-
-        function animate(now) {
-            const elapsed =
-                Math.min((now - lastFrame) / 1000, 0.1);
-
-            lastFrame = now;
-
-            if (
-                !pointerIsDown &&
-                now >= resumeAt &&
-                loopWidth
-            ) {
-                const speed = loopWidth / duration;
-
-                offset = normalizeOffset(
-                    offset - speed * elapsed
-                );
-
-                render();
-            }
-
-            requestAnimationFrame(animate);
-        }
-
-        function finishPointer(event) {
-            if (
-                !pointerIsDown ||
-                event.pointerId !== activePointerId
-            ) {
-                return;
-            }
-
-            pointerIsDown = false;
-
-            if (isDragging) {
-                isDragging = false;
-                viewport.classList.remove("is-dragging");
-
-                if (viewport.hasPointerCapture(event.pointerId)) {
-                    viewport.releasePointerCapture(event.pointerId);
-                }
-
-                resumeAt = performance.now() + 800;
-            } else {
-                resumeAt = performance.now();
-            }
-
-            activePointerId = null;
-        }
-
-        viewport.addEventListener("pointerdown", function (event) {
-            if (event.button !== 0 || !loopWidth) {
-                return;
-            }
-
-            pointerIsDown = true;
-            isDragging = false;
-            activePointerId = event.pointerId;
-            dragStartX = event.clientX;
-            dragStartOffset = offset;
-            resumeAt = Number.POSITIVE_INFINITY;
-        });
-
-        viewport.addEventListener("pointermove", function (event) {
-            if (
-                !pointerIsDown ||
-                event.pointerId !== activePointerId
-            ) {
-                return;
-            }
-
-            const deltaX = event.clientX - dragStartX;
-
-            if (!isDragging) {
-                if (Math.abs(deltaX) < dragThreshold) {
-                    return;
-                }
-
-                isDragging = true;
-                viewport.classList.add("is-dragging");
-                viewport.setPointerCapture(event.pointerId);
-            }
-
-            offset = normalizeOffset(
-                dragStartOffset + deltaX
-            );
-
-            render();
-            event.preventDefault();
-        });
-
-        viewport.addEventListener("pointerup", finishPointer);
-        viewport.addEventListener("pointercancel", finishPointer);
-
-        viewport.addEventListener("dragstart", function (event) {
-            event.preventDefault();
-        });
-
-        if ("ResizeObserver" in window) {
-            const resizeObserver =
-                new ResizeObserver(measure);
-
-            resizeObserver.observe(firstGroup);
-            resizeObserver.observe(viewport);
-        } else {
-            window.addEventListener("resize", measure);
-        }
-
-        document.addEventListener(
-            "visibilitychange",
-            function () {
-                lastFrame = performance.now();
-            }
-        );
-
-        requestAnimationFrame(function () {
-            measure();
-            lastFrame = performance.now();
-            requestAnimationFrame(animate);
-        });
-    })();
-</script>
-<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>\n\n
-<script src="/promyachik/js/ticker-transfer-tab.js" defer></script>\n\n
 
 
 
@@ -1120,7 +896,7 @@
 
                 </dl>
 
-                \n\n
+                
 
 
                 
@@ -1132,118 +908,471 @@
     </section>
 
         
-<section id="pfb-stats-v184" class="transfer-stats pfb-stats-v184 transfer-stats--under-market-chart" aria-label="Player statistics">
-  <style>
-     
+
+
+
+
+
+
+<style>
+ 
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+    display: block !important;
+    width: 100% !important;
+    max-width: 390px !important;
+    margin: 26px auto 22px !important;
+    padding: 18px 12px 20px !important;
+    border: 1px solid rgba(245, 199, 65, 0.18) !important;
+    border-radius: 20px !important;
+    background:
+        radial-gradient(circle at 50% 28%, rgba(245, 199, 65, 0.10), transparent 43%),
+        linear-gradient(180deg, rgba(13, 15, 18, 0.95), rgba(5, 6, 8, 0.98)) !important;
+    box-shadow: 0 16px 42px rgba(0,0,0,0.40) !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+}
+
+body.transfer-page #pfb-stats-v184,
+body.transfer-page #pfb-stats-v184 * {
+    box-sizing: border-box !important;
+    overflow: visible !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-rows: 88px 88px !important;
+    grid-auto-rows: 88px !important;
+    gap: 17px 13px !important;
+    align-items: center !important;
+    justify-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+    height: 88px !important;
+    min-height: 88px !important;
+    max-height: 88px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    aspect-ratio: auto !important;
+    border: 1.5px solid rgba(245, 199, 65, 0.78) !important;
+    border-radius: 17px !important;
+    background:
+        radial-gradient(circle at 50% 42%, rgba(245,199,65,0.18), transparent 46%),
+        linear-gradient(145deg, rgba(27,27,24,0.96), rgba(6,7,9,0.99)) !important;
+    box-shadow:
+        inset 0 0 24px rgba(245,199,65,0.08),
+        0 12px 26px rgba(0,0,0,0.43) !important;
+    cursor: pointer !important;
+    z-index: 2 !important;
+    transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:hover,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:focus-visible {
+    transform: translateY(-3px) !important;
+    border-color: rgba(255, 218, 83, 1) !important;
+    box-shadow:
+        inset 0 0 28px rgba(245,199,65,0.13),
+        0 0 22px rgba(245,199,65,0.24),
+        0 16px 34px rgba(0,0,0,0.48) !important;
+    outline: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__matches { grid-column: 1 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals   { grid-column: 3 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__assists { grid-column: 5 / span 2 !important; grid-row: 1 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__yellow  { grid-column: 2 / span 2 !important; grid-row: 2 !important; }
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__red     { grid-column: 4 / span 2 !important; grid-row: 2 !important; }
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon {
+    display: block !important;
+    width: 72px !important;
+    height: 72px !important;
+    object-fit: contain !important;
+    pointer-events: none !important;
+    filter: drop-shadow(0 0 8px rgba(245,199,65,0.35)) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals {
+ overflow: visible !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+ width: 74px !important;
+ height: 74px !important;
+ max-width: 74px !important;
+ max-height: 74px !important;
+ object-fit: contain !important;
+ object-position: center center !important;
+ transform: translateX(-1px) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__yellow .pfb-stats-v184__icon,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__red .pfb-stats-v184__icon {
+    width: 76px !important;
+    height: 76px !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: calc(100% + 13px) !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    z-index: 999999 !important;
+    min-width: 148px !important;
+    padding: 12px 16px 13px !important;
+    border: 1.5px solid rgba(255, 218, 83, 0.96) !important;
+    border-radius: 12px !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(245,199,65,0.14), transparent 50%),
+        rgba(6,7,9,0.99) !important;
+    box-shadow: 0 0 18px rgba(245,199,65,0.24), 0 16px 34px rgba(0,0,0,0.56) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    transition: opacity .16s ease, visibility .16s ease, transform .16s ease !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 100% !important;
+    width: 17px !important;
+    height: 17px !important;
+    background: rgba(6,7,9,0.99) !important;
+    border-right: 1.5px solid rgba(255,218,83,0.96) !important;
+    border-bottom: 1.5px solid rgba(255,218,83,0.96) !important;
+    transform: translate(-50%, -8.5px) rotate(45deg) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip b {
+    display: block !important;
+    margin: 0 0 5px !important;
+    padding: 0 !important;
+    color: #f5c741 !important;
+    -webkit-text-fill-color: #f5c741 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 42px !important;
+    line-height: .88 !important;
+    font-weight: 900 !important;
+    text-shadow: 0 0 15px rgba(245,199,65,0.35) !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__tip span {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #f5c741 !important;
+    -webkit-text-fill-color: #f5c741 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: .04em !important;
+    text-transform: uppercase !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:hover .pfb-stats-v184__tip,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card:focus-visible .pfb-stats-v184__tip {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+@media (max-width: 640px) {
     body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
-    #pfb-stats-v184.transfer-stats.pfb-stats-v184 {
-      padding: 0 !important;
-      border: 0 !important;
-      border-radius: 0 !important;
-      background: transparent !important;
-      background-image: none !important;
-      box-shadow: none !important;
-      outline: 0 !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-      margin-top: 18px !important;
+    body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+        max-width: 335px !important;
+        padding: 16px 9px 18px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__grid {
-      display: grid !important;
-      gap: 10px !important;
-      justify-items: center !important;
-      align-items: center !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid {
+        max-width: 312px !important;
+        grid-template-rows: 78px 78px !important;
+        grid-auto-rows: 78px !important;
+        gap: 14px 9px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__row {
-      display: grid !important;
-      gap: 10px !important;
-      justify-items: center !important;
-      align-items: center !important;
-      width: 100% !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+        width: 96px !important;
+        min-width: 96px !important;
+        max-width: 96px !important;
+        height: 78px !important;
+        min-height: 78px !important;
+        max-height: 78px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__row--top {
-      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    body.transfer-page #pfb-stats-v184 .pfb-stats-v184__icon {
+        width: 62px !important;
+        height: 62px !important;
     }
-    #pfb-stats-v184 .pfb-stats-v184__row--bottom {
-      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-      width: 66% !important;
-      margin: 0 auto !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__card {
-      position: relative !important;
-      width: calc(100% - 9px) !important;
-      min-width: 0 !important;
-      min-height: calc(100% - 4px) !important;
-      aspect-ratio: 1 / 1 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      box-sizing: border-box !important;
-      justify-self: center !important;
-      align-self: center !important;
-      border: 1px solid rgba(212, 175, 55, 0.34) !important;
-      border-radius: 16px !important;
-      background: radial-gradient(circle at 50% 30%, rgba(212,175,55,.12), rgba(12,15,20,.96) 60%) !important;
-      box-shadow: inset 0 0 18px rgba(212,175,55,.06), 0 8px 22px rgba(0,0,0,.26) !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__icon {
-      width: 54% !important;
-      height: 54% !important;
-      object-fit: contain !important;
-      display: block !important;
-      filter: drop-shadow(0 0 7px rgba(212,175,55,.35)) !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__tooltip {
-      position: absolute !important;
-      left: 50% !important;
-      bottom: calc(100% + 8px) !important;
-      transform: translateX(-50%) translateY(4px) !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
-      white-space: nowrap !important;
-      padding: 8px 10px !important;
-      border-radius: 10px !important;
-      border: 1px solid rgba(212,175,55,.42) !important;
-      background: rgba(8,10,14,.96) !important;
-      color: #f4d875 !important;
-      font-size: 12px !important;
-      font-weight: 800 !important;
-      letter-spacing: .02em !important;
-      transition: opacity .14s ease, transform .14s ease !important;
-      z-index: 20 !important;
-    }
-    #pfb-stats-v184 .pfb-stats-v184__card:hover .pfb-stats-v184__tooltip {
-      opacity: 1 !important;
-      transform: translateX(-50%) translateY(0) !important;
-    }
-  </style>
-  <div class="pfb-stats-v184__grid">
-    <div class="pfb-stats-v184__row pfb-stats-v184__row--top">
-      <div class="pfb-stats-v184__card" aria-label="Матчи">
-        <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/matches.png" alt="">
-        <span class="pfb-stats-v184__tooltip">Матчи</span>
-      </div>
-      <div class="pfb-stats-v184__card" aria-label="Голы">
-        <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/goals.png" alt="">
-        <span class="pfb-stats-v184__tooltip">Голы</span>
-      </div>
-      <div class="pfb-stats-v184__card" aria-label="Ассисты">
-        <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/assists.png" alt="">
-        <span class="pfb-stats-v184__tooltip">Ассисты</span>
-      </div>
+}
+ 
+
+ 
+body.transfer-page #pfb-stats-v184,
+body.transfer-page #pfb-stats-v184 *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 img[src*="goals.png"] {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals img,
+body.transfer-page #pfb-stats-v184 img[src*="goals.png"] {
+  display: block !important;
+  width: 70px !important;
+  height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+ 
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-2px) !important;
+}
+
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals *,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  overflow: visible !important;
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  mask: none !important;
+  -webkit-mask: none !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__goals .pfb-stats-v184__icon {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translateX(-1px) !important;
+}
+
+ 
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+@media (max-width: 640px) {
+  body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184,
+  body.transfer-page #pfb-stats-v184.transfer-stats.pfb-stats-v184.transfer-stats--under-market-chart {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+}
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+  width: calc(100% - 4px) !important;
+  min-width: 0 !important;
+  min-height: calc(100% - 4px) !important;
+  box-sizing: border-box !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__grid,
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__row {
+  justify-items: center !important;
+  align-items: center !important;
+}
+
+ 
+body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
+  width: calc(100% - 9px) !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  justify-self: center !important;
+}
+</style>
+
+<section id="pfb-stats-v184" class="transfer-stats pfb-stats-v184" aria-label="Статистика игрока">
+    <div class="pfb-stats-v184__grid" role="list">
+        <article class="pfb-stats-v184__card pfb-stats-v184__matches" role="listitem" tabindex="0" aria-label="Матчей: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/matches.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>МАТЧА</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__goals" role="listitem" tabindex="0" aria-label="Голов: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/goals.png?v=194?v=188" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>ГОЛА</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__assists" role="listitem" tabindex="0" aria-label="Голевых передач: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/assists.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>ПЕРЕДАЧА</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__yellow" role="listitem" tabindex="0" aria-label="Жёлтых карточек: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/yellow_cards.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>ЖЁЛТЫХ</span></span>
+        </article>
+
+        <article class="pfb-stats-v184__card pfb-stats-v184__red" role="listitem" tabindex="0" aria-label="Красных карточек: —">
+            <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/red_cards.png" alt="" aria-hidden="true">
+            <span class="pfb-stats-v184__tip" aria-hidden="true"><b>—</b><span>КРАСНЫХ</span></span>
+        </article>
     </div>
-    <div class="pfb-stats-v184__row pfb-stats-v184__row--bottom">
-      <div class="pfb-stats-v184__card" aria-label="Жёлтые карточки">
-        <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/yellow_cards.png" alt="">
-        <span class="pfb-stats-v184__tooltip">Жёлтые карточки</span>
-      </div>
-      <div class="pfb-stats-v184__card" aria-label="Красные карточки">
-        <img class="pfb-stats-v184__icon" src="/promyachik/images/stats-icons-v184/red_cards.png" alt="">
-        <span class="pfb-stats-v184__tooltip">Красные карточки</span>
-      </div>
-    </div>
-  </div>
 </section>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2017,7 +2146,6 @@
 </main>
 
     <script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
-
 
 
 </body>
