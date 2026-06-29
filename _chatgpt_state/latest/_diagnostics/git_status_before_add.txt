@@ -3,8 +3,6 @@ EXIT_CODE: 0
 
 --- STDOUT ---
  M .gitignore
- D PUSH_STATE_TO_GITHUB.bat
- D _chatgpt_state/latest/PUSH_STATE_TO_GITHUB.bat
  M _chatgpt_state/latest/_STATE_INFO.json
  M _chatgpt_state/latest/_diagnostics/git_branch_verbose.txt
  M _chatgpt_state/latest/_diagnostics/git_log_last_10.txt
@@ -89,8 +87,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 195_RESTORE_APPROVED_GOALS_BALL_NO_CROP_PACKAGE.bat
 ?? 196_REDRAW_FULL_FOOTBALL_GOALS_ICON_PACKAGE.bat
 ?? 197_TEST_GOALS_ICON_VARIANT_1_ONLY_PACKAGE.bat
-?? 20260628_210641_20260628_PROFUTBIK_PROGRESS_STATS_ICONS_STOP.md
+?? 198_TEST_GOALS_ICON_VARIANT_1_FULL_NO_HOLES_PACKAGE.bat
+?? 199_INTEGRATE_APPROVED_NEON_GOALS_ICON_PACKAGE.bat
+?? 200_TEST_GOALS_ICON_VARIANT_3_PACKAGE.bat
+?? 201_REMOVE_OUTER_STATS_BLOCK_WRAPPER_PACKAGE.bat
 ?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
+?? 20260629_191559_20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
+?? 202_SHRINK_STATS_ICON_CARDS_BY_4PX_PACKAGE.bat
+?? 203_SHRINK_STATS_ICON_CARDS_WIDTH_5PX_MORE_PACKAGE.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -115,6 +119,12 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_195.txt
 ?? README_196.txt
 ?? README_197.txt
+?? README_198.txt
+?? README_199.txt
+?? README_200.txt
+?? README_201.txt
+?? README_202.txt
+?? README_203.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -235,6 +245,12 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_195_restore_approved_goals_ball_no_crop/
 ?? _backup_196_redraw_full_football_goals_icon/
 ?? _backup_197_test_goals_icon_variant_1/
+?? _backup_198_test_goals_icon_variant_1_full_no_holes/
+?? _backup_199_integrate_approved_neon_goals_icon/
+?? _backup_200_test_goals_icon_variant_3/
+?? _backup_201_remove_outer_stats_block_wrapper/
+?? _backup_202_shrink_stats_icon_cards_by_4px/
+?? _backup_203_shrink_stats_icon_cards_width_5px_more/
 ?? _backup_clone_transfer_page_20260627_203952/
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
@@ -280,6 +296,12 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/195_restore_approved_goals_ball_no_crop.py
 ?? scripts/196_redraw_full_football_goals_icon.ps1
 ?? scripts/197_test_goals_icon_variant_1.ps1
+?? scripts/198_test_goals_icon_variant_1_full_no_holes.ps1
+?? scripts/199_integrate_approved_neon_goals_icon.ps1
+?? scripts/200_test_goals_icon_variant_3.ps1
+?? scripts/201_remove_outer_stats_block_wrapper.ps1
+?? scripts/202_shrink_stats_icon_cards_by_4px.ps1
+?? scripts/203_shrink_stats_icon_cards_width_5px_more.ps1
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
