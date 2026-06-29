@@ -1,0 +1,394 @@
+{{ if in .RelPermalink "/transfers/marc-cucurella-real-madrid/" }}
+<!-- PROMYACHIK 244 CUCURELLA HARD MOVE PRICE LABELS TO CLUB X START -->
+<script>
+(function () {
+    if (window.__promyachikCucurellaMovePrices244Ready) {
+        return;
+    }
+
+    window.__promyachikCucurellaMovePrices244Ready = true;
+
+    const PRICE_RE = /€\s*\d+(?:[.,]\d+)?\s*(?:M|млн|m|тыс|k)?/i;
+    const YEAR_RE = /\b20\d{2}\b/i;
+    const BAD_RE = /(bonus|бонус|сделк|переход|источник|обновлено|сейчас|current|fee|официально)/i;
+    const CHART_HINT_RE = /(chart|market|value|стоим|динамик|graph|progress)/i;
+
+    function text(el) {
+        return (el && el.textContent || "").replace(/\s+/g, " ").trim();
+    }
+
+    function visible(el) {
+        if (!el || !(el instanceof Element)) {
+            return false;
+        }
+
+        const r = el.getBoundingClientRect();
+        const s = window.getComputedStyle(el);
+
+        return r.width > 0 &&
+            r.height > 0 &&
+            s.display !== "none" &&
+            s.visibility !== "hidden" &&
+            s.opacity !== "0";
+    }
+
+    function centerX(el) {
+        const r = el.getBoundingClientRect();
+        return r.left + r.width / 2;
+    }
+
+    function centerY(el) {
+        const r = el.getBoundingClientRect();
+        return r.top + r.height / 2;
+    }
+
+    function uniqByX(nodes) {
+        const arr = nodes
+            .filter(visible)
+            .map(function (node) {
+                return { node: node, x: centerX(node), y: centerY(node), rect: node.getBoundingClientRect() };
+            })
+            .sort(function (a, b) { return a.x - b.x; });
+
+        const out = [];
+
+        arr.forEach(function (item) {
+            const last = out[out.length - 1];
+
+            if (!last || Math.abs(last.x - item.x) > 10) {
+                out.push(item);
+            } else {
+                const lastArea = last.rect.width * last.rect.height;
+                const itemArea = item.rect.width * item.rect.height;
+
+                if (itemArea > lastArea) {
+                    out[out.length - 1] = item;
+                }
+            }
+        });
+
+        return out;
+    }
+
+    function chooseSpread(items, expectedCount) {
+        if (items.length <= expectedCount) {
+            return items;
+        }
+
+        let best = items.slice(0, expectedCount);
+        let bestSpread = -1;
+
+        for (let i = 0; i <= items.length - expectedCount; i += 1) {
+            const slice = items.slice(i, i + expectedCount);
+            const spread = slice[slice.length - 1].x - slice[0].x;
+
+            if (spread > bestSpread) {
+                bestSpread = spread;
+                best = slice;
+            }
+        }
+
+        return best;
+    }
+
+    function candidateRoots() {
+        const roots = [];
+
+        Array.from(document.querySelectorAll("section, article, main, div")).forEach(function (node) {
+            if (!visible(node)) {
+                return;
+            }
+
+            const r = node.getBoundingClientRect();
+
+            if (r.width < 280 || r.height < 120 || r.height > 1200) {
+                return;
+            }
+
+            const t = text(node);
+            const cls = String(node.className || "");
+            const clubImgs = node.querySelectorAll('img[src*="/clubs/"], img[src*="clubs"], img[src*="/images/clubs/"]').length;
+            const circles = node.querySelectorAll("svg circle").length;
+            const priceCount = (t.match(/€\s*\d/gi) || []).length;
+            const clubText = /(Barcelona|Barça|Getafe|Brighton|Chelsea|Real Madrid|Барселона|Челси|Реал)/i.test(t);
+
+            if (priceCount < 2 && clubImgs < 2 && circles < 2) {
+                return;
+            }
+
+            let score = 0;
+            score += clubImgs * 120;
+            score += Math.min(circles, 10) * 30;
+            score += priceCount * 20;
+
+            if (clubText) {
+                score += 250;
+            }
+
+            if (CHART_HINT_RE.test(cls) || CHART_HINT_RE.test(t)) {
+                score += 120;
+            }
+
+            if (node.closest("header, footer, nav, .pf-ticker, .bottom-transfer-strip-v3")) {
+                score -= 1000;
+            }
+
+            roots.push({ node: node, score: score, area: r.width * r.height });
+        });
+
+        roots.sort(function (a, b) {
+            if (b.score !== a.score) {
+                return b.score - a.score;
+            }
+            return a.area - b.area;
+        });
+
+        const selected = [];
+
+        roots.forEach(function (item) {
+            if (selected.some(function (chosen) {
+                return chosen.node.contains(item.node);
+            })) {
+                return;
+            }
+
+            selected.push(item);
+        });
+
+        return selected.map(function (item) { return item.node; }).slice(0, 5);
+    }
+
+    function getClubTargets(root, expectedCount) {
+        let targets = [];
+
+        const imgs = Array.from(root.querySelectorAll('img[src*="/clubs/"], img[src*="clubs"], img[src*="/images/clubs/"]'))
+            .filter(function (img) {
+                const r = img.getBoundingClientRect();
+                return visible(img) && r.width >= 12 && r.width <= 120 && r.height >= 12 && r.height <= 120;
+            });
+
+        targets = uniqByX(imgs);
+
+        if (targets.length < expectedCount) {
+            const dotNodes = Array.from(root.querySelectorAll("svg circle, [class*='dot'], [class*='point'], [class*='marker']"))
+                .filter(function (node) {
+                    const r = node.getBoundingClientRect();
+                    return visible(node) && r.width >= 5 && r.width <= 60 && r.height >= 5 && r.height <= 60;
+                });
+
+            targets = uniqByX(targets.map(function (i) { return i.node; }).concat(dotNodes));
+        }
+
+        targets = chooseSpread(targets, expectedCount);
+
+        return targets.sort(function (a, b) { return a.x - b.x; });
+    }
+
+    function priceLeafElements(root) {
+        const leaves = [];
+
+        Array.from(root.querySelectorAll("span, strong, em, b, div, li, p, a, text")).forEach(function (el) {
+            if (!visible(el)) {
+                return;
+            }
+
+            const t = text(el);
+
+            if (!PRICE_RE.test(t) || BAD_RE.test(t) || t.length > 90) {
+                return;
+            }
+
+            const priceChildren = Array.from(el.children || []).filter(function (child) {
+                return PRICE_RE.test(text(child));
+            });
+
+            if (priceChildren.length > 1) {
+                return;
+            }
+
+            let item = el;
+
+            for (let i = 0; i < 4; i += 1) {
+                const p = item.parentElement;
+
+                if (!p || p === root || !visible(p)) {
+                    break;
+                }
+
+                const pt = text(p);
+
+                if (pt.length <= 95 && PRICE_RE.test(pt) && (YEAR_RE.test(pt) || p.children.length <= 4)) {
+                    item = p;
+                } else {
+                    break;
+                }
+            }
+
+            if (!leaves.some(function (old) {
+                return old === item || old.contains(item) || item.contains(old);
+            })) {
+                leaves.push(item);
+            }
+        });
+
+        return leaves;
+    }
+
+    function choosePriceItems(root, expectedCount) {
+        let items = priceLeafElements(root)
+            .map(function (node) {
+                return { node: node, x: centerX(node), y: centerY(node), rect: node.getBoundingClientRect(), text: text(node) };
+            })
+            .filter(function (item) {
+                return item.rect.width >= 10 && item.rect.height >= 6;
+            });
+
+        if (items.length > expectedCount) {
+            items.sort(function (a, b) { return b.y - a.y; });
+            items = items.slice(0, expectedCount);
+        }
+
+        items.sort(function (a, b) { return a.x - b.x; });
+
+        return items;
+    }
+
+    function svgPriceTexts(root, expectedCount) {
+        const texts = Array.from(root.querySelectorAll("svg text"))
+            .filter(function (node) {
+                const t = text(node);
+                return visible(node) && PRICE_RE.test(t) && !BAD_RE.test(t) && t.length <= 60;
+            })
+            .map(function (node) {
+                return { node: node, x: centerX(node), y: centerY(node), rect: node.getBoundingClientRect(), text: text(node) };
+            });
+
+        texts.sort(function (a, b) { return a.x - b.x; });
+
+        return texts.slice(0, expectedCount);
+    }
+
+    function setImportant(el, prop, value) {
+        el.style.setProperty(prop, value, "important");
+    }
+
+    function moveHtmlPrices(root, targets, items) {
+        const rootRect = root.getBoundingClientRect();
+        setImportant(root, "position", "relative");
+        setImportant(root, "overflow", "visible");
+
+        items.forEach(function (item, index) {
+            const node = item.node;
+            const y = item.rect.top - rootRect.top;
+            const x = targets[index].x - rootRect.left;
+
+            node.classList.add("promyachik-cucurella-price-moved-244");
+            node.setAttribute("data-promyachik-target-x-244", String(Math.round(targets[index].x)));
+            node.setAttribute("data-promyachik-original-x-244", String(Math.round(item.x)));
+
+            setImportant(node, "position", "absolute");
+            setImportant(node, "left", Math.round(x) + "px");
+            setImportant(node, "top", Math.round(y) + "px");
+            setImportant(node, "right", "auto");
+            setImportant(node, "bottom", "auto");
+            setImportant(node, "transform", "translateX(-50%)");
+            setImportant(node, "display", "flex");
+            setImportant(node, "flex-direction", "column");
+            setImportant(node, "align-items", "center");
+            setImportant(node, "justify-content", "flex-start");
+            setImportant(node, "min-width", "74px");
+            setImportant(node, "max-width", "120px");
+            setImportant(node, "text-align", "center");
+            setImportant(node, "white-space", "nowrap");
+            setImportant(node, "z-index", "80");
+            setImportant(node, "float", "none");
+
+            Array.from(node.querySelectorAll("*")).forEach(function (child) {
+                setImportant(child, "text-align", "center");
+                setImportant(child, "float", "none");
+            });
+        });
+    }
+
+    function moveSvgPrices(root, targets, items) {
+        const svg = root.querySelector("svg");
+
+        if (!svg || !svg.viewBox || !svg.viewBox.baseVal || !items.length) {
+            return false;
+        }
+
+        const svgRect = svg.getBoundingClientRect();
+        const vb = svg.viewBox.baseVal;
+        const scaleX = vb.width / svgRect.width;
+
+        items.forEach(function (item, index) {
+            const xSvg = vb.x + ((targets[index].x - svgRect.left) * scaleX);
+            item.node.setAttribute("x", String(Math.round(xSvg * 100) / 100));
+            item.node.setAttribute("text-anchor", "middle");
+            item.node.classList.add("promyachik-cucurella-price-moved-244");
+        });
+
+        return true;
+    }
+
+    function alignRoot(root) {
+        const htmlPrices = choosePriceItems(root, 5);
+        const svgPrices = svgPriceTexts(root, 5);
+        const expected = Math.max(2, Math.min(5, htmlPrices.length || svgPrices.length || 5));
+        const targets = getClubTargets(root, expected);
+
+        if (targets.length < 2) {
+            return false;
+        }
+
+        if (htmlPrices.length >= 2) {
+            moveHtmlPrices(root, targets.slice(0, htmlPrices.length), htmlPrices);
+            root.setAttribute("data-promyachik-cucurella-align-244", "html");
+            return true;
+        }
+
+        if (svgPrices.length >= 2) {
+            moveSvgPrices(root, targets.slice(0, svgPrices.length), svgPrices);
+            root.setAttribute("data-promyachik-cucurella-align-244", "svg");
+            return true;
+        }
+
+        return false;
+    }
+
+    function align() {
+        let done = 0;
+
+        candidateRoots().forEach(function (root) {
+            if (done > 0) {
+                return;
+            }
+
+            if (alignRoot(root)) {
+                done += 1;
+            }
+        });
+
+        document.documentElement.setAttribute("data-promyachik-cucurella-price-align-244", String(done));
+    }
+
+    function boot() {
+        align();
+        [80, 180, 420, 900, 1600, 2600, 4200].forEach(function (delay) {
+            window.setTimeout(align, delay);
+        });
+
+        window.addEventListener("resize", function () {
+            window.requestAnimationFrame(align);
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", boot);
+    } else {
+        boot();
+    }
+})();
+</script>
+<!-- PROMYACHIK 244 CUCURELLA HARD MOVE PRICE LABELS TO CLUB X END -->
+{{ end }}

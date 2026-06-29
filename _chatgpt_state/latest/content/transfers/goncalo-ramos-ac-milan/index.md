@@ -68,6 +68,106 @@ value_history:
   - year: "2026"
     value: "€30M"
 
+market_value_chart:
+  current_label: "€30M"
+  updated_at: "2026"
+  source_name: "Transfermarkt"
+  source_url: "https://www.transfermarkt.com/goncalo-ramos/profil/spieler/550550"
+  line_path: "M 10.00 74.08 L 26.00 65.40 L 42.00 53.00 L 58.00 40.60 L 74.00 22.00 L 90.00 46.80"
+  path: "M 10.00 74.08 L 26.00 65.40 L 42.00 53.00 L 58.00 40.60 L 74.00 22.00 L 90.00 46.80"
+  area_path: "M 10.00 74.08 L 26.00 65.40 L 42.00 53.00 L 58.00 40.60 L 74.00 22.00 L 90.00 46.80 L 90.00 100 L 10.00 100 Z"
+  points:
+    - date: "2020"
+      date_label: "2020"
+      value_label: "€8M"
+      value: "€8M"
+      value_number: 8
+      x: 10.00
+      y: 74.08
+      left: 10.00
+      bottom: 25.92
+      x_percent: 10.00
+      y_percent: 74.08
+      club: "Benfica"
+      club_logo: "/images/clubs/api/211.png"
+      logo: "/images/clubs/api/211.png"
+      fallback_letter: "B"
+    - date: "2021"
+      date_label: "2021"
+      value_label: "€15M"
+      value: "€15M"
+      value_number: 15
+      x: 26.00
+      y: 65.40
+      left: 26.00
+      bottom: 34.60
+      x_percent: 26.00
+      y_percent: 65.40
+      club: "Benfica"
+      club_logo: "/images/clubs/api/211.png"
+      logo: "/images/clubs/api/211.png"
+      fallback_letter: "B"
+    - date: "2022"
+      date_label: "2022"
+      value_label: "€25M"
+      value: "€25M"
+      value_number: 25
+      x: 42.00
+      y: 53.00
+      left: 42.00
+      bottom: 47.00
+      x_percent: 42.00
+      y_percent: 53.00
+      club: "Benfica"
+      club_logo: "/images/clubs/api/211.png"
+      logo: "/images/clubs/api/211.png"
+      fallback_letter: "B"
+    - date: "2023"
+      date_label: "2023"
+      value_label: "€35M"
+      value: "€35M"
+      value_number: 35
+      x: 58.00
+      y: 40.60
+      left: 58.00
+      bottom: 59.40
+      x_percent: 58.00
+      y_percent: 40.60
+      club: "Paris Saint-Germain"
+      club_logo: "/images/clubs/api/85.png"
+      logo: "/images/clubs/api/85.png"
+      fallback_letter: "P"
+    - date: "2024"
+      date_label: "2024"
+      value_label: "€50M"
+      value: "€50M"
+      value_number: 50
+      x: 74.00
+      y: 22.00
+      left: 74.00
+      bottom: 78.00
+      x_percent: 74.00
+      y_percent: 22.00
+      club: "Paris Saint-Germain"
+      club_logo: "/images/clubs/api/85.png"
+      logo: "/images/clubs/api/85.png"
+      fallback_letter: "P"
+    - date: "2026"
+      date_label: "2026"
+      value_label: "€30M"
+      value: "€30M"
+      value_number: 30
+      x: 90.00
+      y: 46.80
+      left: 90.00
+      bottom: 53.20
+      x_percent: 90.00
+      y_percent: 46.80
+      club: "AC Milan"
+      club_logo: "/images/clubs/api/489.png"
+      logo: "/images/clubs/api/489.png"
+      fallback_letter: "M"
+
 keywords:
   - Gonçalo Ramos
   - AC Milan
@@ -149,7 +249,6 @@ show_in_footer_ticker: "True"
 needs_cutout: false
 value: €30M
 ---
-
 ## Gonçalo Ramos → AC Milan
 
 Gonçalo Ramos готовится перейти из Paris Saint Germain в AC Milan. По информации Fabrizio Romano, клубы согласовали сделку, а сумма перехода составляет **€74M + add-ons**.

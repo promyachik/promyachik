@@ -10,20 +10,11 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/layouts/_default/baseof.html
+ M _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/index.md
  M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
- D _chatgpt_state/latest/layouts/partials/promyachik-align-value-labels-232.html
- D _chatgpt_state/latest/layouts/partials/promyachik-force-align-value-labels-233.html
  M _chatgpt_state/latest/layouts/transfers/single.html
- M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
- M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
  M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
- M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
- M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
  M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
- M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M _chatgpt_state/latest/static/css/style.css
  M layouts/index.html
 ?? .env
@@ -131,6 +122,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 235_PROMYACHIK_VERTICAL_ALIGN_VALUE_LABELS_WITH_DOTS_CLICK_RUN.bat
 ?? 236_PROMYACHIK_INSET_VALUE_CHART_POINTS_AND_LABELS_CLICK_RUN.bat
 ?? 237_PROMYACHIK_RESTORE_WORKING_VALUE_CHART_FROM_BACKUP_CLICK_RUN.bat
+?? 238_PROMYACHIK_FIX_VALUE_CHART_AXIS_INSET_CLICK_RUN.bat
+?? 239_PROMYACHIK_REPLACE_ACTUAL_DYNAMIC_VALUE_CHART_CLICK_RUN.bat
+?? 240_PROMYACHIK_VALUE_CHART_USE_VALUE_HISTORY_CLICK_RUN.bat
+?? 241_PROMYACHIK_RESTORE_REAL_GRAPH_AND_ADD_RAMOS_CHART_DATA_CLICK_RUN.bat
+?? 242_PROMYACHIK_CUCURELLA_ALIGN_PRICE_LABELS_ONLY_CLICK_RUN.bat
+?? 243_PROMYACHIK_CUCURELLA_LABELS_UNDER_CLUB_POINTS_CLICK_RUN.bat
+?? 244_PROMYACHIK_CUCURELLA_MOVE_PRICES_TO_CLUB_X_BY_PYTHON_CLICK_RUN.bat
+?? 245_PROMYACHIK_CUCURELLA_SHIFT_PRICE_TEXT_RIGHT_CLICK_RUN.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -194,6 +193,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_235_PROMYACHIK.txt
 ?? README_236_PROMYACHIK.txt
 ?? README_237_PROMYACHIK.txt
+?? README_238_PROMYACHIK.txt
+?? README_239_PROMYACHIK.txt
+?? README_240_PROMYACHIK.txt
+?? README_241_PROMYACHIK.txt
+?? README_242_PROMYACHIK.txt
+?? README_243_PROMYACHIK.txt
+?? README_244_PROMYACHIK.txt
+?? README_245_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
@@ -350,10 +357,22 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_234_before_rebuild_value_chart_labels_20260629_221349/
 ?? _backup_promyachik_235_before_vertical_align_value_labels_20260629_221804/
 ?? _backup_promyachik_236_before_inset_value_chart_20260629_222321/
-?? _chatgpt_state/latest/scripts/234_promyachik_rebuild_value_chart_labels_in_svg.py
-?? _chatgpt_state/latest/scripts/235_promyachik_vertical_align_value_labels_with_dots.py
-?? _chatgpt_state/latest/scripts/236_promyachik_inset_value_chart_points_and_labels.py
-?? _chatgpt_state/latest/scripts/237_promyachik_restore_working_value_chart_from_backup.py
+?? _backup_promyachik_238_before_fix_value_chart_axis_20260629_223236/
+?? _backup_promyachik_239_before_replace_actual_dynamic_value_chart_20260629_223701/
+?? _backup_promyachik_240_before_value_history_chart_20260629_224257/
+?? _backup_promyachik_241_before_restore_real_graph_ramos_data_20260629_230030/
+?? _backup_promyachik_242_before_cucurella_label_align_20260629_230530/
+?? _backup_promyachik_243_before_cucurella_labels_under_points_20260629_231148/
+?? _backup_promyachik_244_before_cucurella_move_prices_20260629_231735/
+?? _chatgpt_state/latest/layouts/partials/promyachik-cucurella-move-prices-to-club-x-244.html
+?? _chatgpt_state/latest/scripts/238_promyachik_fix_value_chart_axis_inset.py
+?? _chatgpt_state/latest/scripts/239_promyachik_replace_actual_dynamic_value_chart.py
+?? _chatgpt_state/latest/scripts/240_promyachik_value_chart_use_value_history.py
+?? _chatgpt_state/latest/scripts/241_promyachik_restore_real_graph_and_add_ramos_chart_data.py
+?? _chatgpt_state/latest/scripts/242_promyachik_cucurella_align_price_labels_only.py
+?? _chatgpt_state/latest/scripts/243_promyachik_cucurella_labels_under_club_points.py
+?? _chatgpt_state/latest/scripts/244_promyachik_cucurella_move_prices_to_club_x_by_python.py
+?? _chatgpt_state/latest/scripts/245_promyachik_cucurella_shift_price_text_right.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -439,6 +458,14 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/235_promyachik_vertical_align_value_labels_with_dots.py
 ?? scripts/236_promyachik_inset_value_chart_points_and_labels.py
 ?? scripts/237_promyachik_restore_working_value_chart_from_backup.py
+?? scripts/238_promyachik_fix_value_chart_axis_inset.py
+?? scripts/239_promyachik_replace_actual_dynamic_value_chart.py
+?? scripts/240_promyachik_value_chart_use_value_history.py
+?? scripts/241_promyachik_restore_real_graph_and_add_ramos_chart_data.py
+?? scripts/242_promyachik_cucurella_align_price_labels_only.py
+?? scripts/243_promyachik_cucurella_labels_under_club_points.py
+?? scripts/244_promyachik_cucurella_move_prices_to_club_x_by_python.py
+?? scripts/245_promyachik_cucurella_shift_price_text_right.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
