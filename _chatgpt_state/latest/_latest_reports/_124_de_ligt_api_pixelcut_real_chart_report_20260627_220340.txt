@@ -1,8 +1,0 @@
-START 124 DE LIGT API-FOOTBALL + PIXELCUT + REAL MARKET CHART
-This replaces the wrong UniqRenders path with the required API-Football -> Pixelcut flow.
-This removes my custom value_history bar block and uses the existing player-market-chart structure.
-If Pixelcut/API step fails, no left external image fallback is used.
-
-STEP: download API-Football photo 532
-BACKUP: static\images\players\api\532.png -> _backup_124_de_ligt_api_pixelcut_real_chart\api-532.before_124_20260627_220340.png
-ERROR: Network error during API/Pixelcut photo step: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение

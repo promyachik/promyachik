@@ -45,12 +45,58 @@
     </div>
 
     <div class="player-market-chart__points">
-        {{ range $chart.points }}
+        {{ if in $.RelPermalink "/transfers/marc-cucurella-real-madrid/" }}
+<!-- PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT START -->
+{{ $promyachikCucPointCount249 := len $chart.points }}
+{{ $promyachikCucDenom249 := sub $promyachikCucPointCount249 1 }}
+{{ if lt $promyachikCucDenom249 1 }}
+    {{ $promyachikCucDenom249 = 1 }}
+{{ end }}
+
+<div class="promyachik-cucurella-price-layer-249" aria-label="Стоимость игрока под точками клубов">
+    {{ range $promyachikCucIndex249, $promyachikCucPoint249 := $chart.points }}
+        {{ $promyachikCucComputedLeft249 := add 10.0 (mul (div (float $promyachikCucIndex249) (float $promyachikCucDenom249)) 80.0) }}
+        {{ $promyachikCucLeft249 := $promyachikCucComputedLeft249 }}
+
+        {{ with $promyachikCucPoint249.left }}
+            {{ $promyachikCucLeft249 = . }}
+        {{ end }}
+
+        {{ with $promyachikCucPoint249.x }}
+            {{ $promyachikCucLeft249 = . }}
+        {{ end }}
+
+        {{ with $promyachikCucPoint249.x_percent }}
+            {{ $promyachikCucLeft249 = . }}
+        {{ end }}
+
+        {{ $promyachikCucLeftText249 := printf "%v" $promyachikCucLeft249 }}
+
+        <div
+            class="promyachik-cucurella-price-label-249"
+            style="left: {{ $promyachikCucLeftText249 }}{{ if not (in $promyachikCucLeftText249 "%") }}%{{ end }};"
+            data-point-index="{{ $promyachikCucIndex249 }}"
+            data-point-club="{{ default "" $promyachikCucPoint249.club }}"
+            data-point-left="{{ $promyachikCucLeftText249 }}"
+        >
+            <span class="promyachik-cucurella-price-label-249__date">
+                {{ default $promyachikCucPoint249.date $promyachikCucPoint249.date_label }}
+            </span>
+            <strong class="promyachik-cucurella-price-label-249__value">
+                {{ $promyachikCucPoint249.value_label }}
+            </strong>
+        </div>
+    {{ end }}
+</div>
+<!-- PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT END -->
+{{ else }}
+{{ range $chart.points }}
             <div class="player-market-chart__point">
                 <small>{{ .date }}</small>
                 <strong>{{ .value_label }}</strong>
             </div>
         {{ end }}
+{{ end }}
     </div>
 
     <p class="player-market-chart__note">

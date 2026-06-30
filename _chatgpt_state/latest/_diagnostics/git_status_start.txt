@@ -11,114 +11,59 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- M _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/index.md
- M _chatgpt_state/latest/layouts/partials/profutbik-market-chart-static.html
- M _chatgpt_state/latest/layouts/transfers/single.html
+ D _chatgpt_state/latest/_latest_reports/_110_fix_de_ligt_page_clubs_date_report_20260627_202212.txt
+ D _chatgpt_state/latest/_latest_reports/_111_de_ligt_full_page_report_20260627_202709.txt
+ D _chatgpt_state/latest/_latest_reports/_112_clone_cucurella_dumfries_structure_de_ligt_report_20260627_203024.txt
+ D _chatgpt_state/latest/_latest_reports/_113_fix_status_install_cloner_report_20260627_203646.txt
+ D _chatgpt_state/latest/_latest_reports/_114_de_ligt_rich_structure_selfcheck_report_20260627_204551.txt
+ D _chatgpt_state/latest/_latest_reports/_115_render_de_ligt_missing_blocks_report_20260627_204859.txt
+ D _chatgpt_state/latest/_latest_reports/_116_insert_de_ligt_block_inside_main_report_20260627_205125.txt
+ D _chatgpt_state/latest/_latest_reports/_117_de_ligt_raw_content_block_report_20260627_205416.txt
+ D _chatgpt_state/latest/_latest_reports/_118_rollback_117_raw_content_report_20260627_205548.txt
+ D _chatgpt_state/latest/_latest_reports/_119_de_ligt_match_dumfries_cucurella_report_20260627_212842.txt
+ D _chatgpt_state/latest/_latest_reports/_120_de_ligt_photo_value_history_report_20260627_213730.txt
+ D _chatgpt_state/latest/_latest_reports/_122_de_ligt_cache_safe_photo_value_report_20260627_214848.txt
+ D _chatgpt_state/latest/_latest_reports/_123_de_ligt_no_avatar_overlay_report_20260627_215414.txt
+ D _chatgpt_state/latest/_latest_reports/_124_de_ligt_api_pixelcut_real_chart_report_20260627_220340.txt
+ D _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_220652.txt
+ D _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.txt
+ D _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt
+ D _chatgpt_state/latest/_latest_reports/_126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt
+ D _chatgpt_state/latest/_latest_reports/_127_fix_market_chart_partial_context_report_20260627_222343.txt
+ D _chatgpt_state/latest/_latest_reports/_128_de_ligt_base_photo_report_20260627_224054.txt
+ D _chatgpt_state/latest/_latest_reports/_129_market_chart_inside_player_card_report_20260627_224415.txt
+ D _chatgpt_state/latest/_latest_reports/_130_remove_market_chart_title_report_20260627_224654.txt
+ D _chatgpt_state/latest/_latest_reports/_131_bottom_ticker_solid_black_report_20260627_230126.txt
+ D _chatgpt_state/latest/_latest_reports/_132_bottom_ticker_pure_black_report_20260627_231406.txt
+ D _chatgpt_state/latest/_latest_reports/_133_top_ticker_pure_black_report_20260627_231712.txt
+ D _chatgpt_state/latest/_latest_reports/_134_top_ticker_wrapper_black_report_20260627_232155.txt
+ D _chatgpt_state/latest/_latest_reports/_135_restore_top_ticker_tab_and_fade_report_20260627_232647.txt
+ D _chatgpt_state/latest/_latest_reports/_136_top_ticker_black_only_report_20260627_233619.txt
+ D _chatgpt_state/latest/_latest_reports/_137_remove_top_ticker_player_photo_frame_report_20260627_234019.txt
+ D _chatgpt_state/latest/_latest_reports/_138_top_ticker_soft_gold_separators_report_20260627_234613.txt
+ D _chatgpt_state/latest/_latest_reports/_139_remove_bad_top_ticker_separators_report_20260627_234838.txt
+ D _chatgpt_state/latest/_latest_reports/_140_top_ticker_clean_dividers_report_20260627_235210.txt
+ D _chatgpt_state/latest/_latest_reports/_141_top_ticker_stronger_dividers_report_20260627_235435.txt
+ D _chatgpt_state/latest/_latest_reports/_142_top_ticker_all_seam_dividers_report_20260627_235749.txt
+ D _chatgpt_state/latest/_latest_reports/_143_top_ticker_dividers_with_seam_report_20260628_000045.txt
+ D _chatgpt_state/latest/_latest_reports/_144_top_ticker_real_dom_dividers_report_20260628_000336.txt
+ D _chatgpt_state/latest/_latest_reports/_145_top_ticker_divider_before_every_item_report_20260628_000641.txt
+ D _chatgpt_state/latest/_latest_reports/_146_full_upper_ticker_real_seam_divider_report_20260628_000952.txt
+ D _chatgpt_state/latest/_latest_reports/_151_limit_player_teams_last5_report_20260628_181442.txt
+ D _chatgpt_state/latest/_latest_reports/_152_restore_approved_market_chart_last5_report_20260628_181907.txt
+ D _chatgpt_state/latest/_latest_reports/_153_rollback_152_restore_market_chart_report_20260628_182112.txt
+ D _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_MARKET_SOURCE.txt
+ D _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
+ D _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_STATS_BLOCK.txt
+ M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
  M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
- M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
  M _chatgpt_state/latest/static/css/style.css
  M layouts/index.html
 ?? .env
-?? 109_RESTORE_REAL_DE_LIGT_PAGE.bat
-?? 110_FIX_DE_LIGT_PAGE_CLUBS_DATE.bat
-?? 111_DE_LIGT_FULL_PAGE_STATS_VALUE_PHOTO.bat
-?? 112_CLONE_CUCURELLA_DUMFRIES_STRUCTURE_DE_LIGT.bat
-?? 113_FIX_STATUS_INSTALL_SAFE_STRUCTURE_CLONER.bat
-?? 114_DE_LIGT_RICH_STRUCTURE_SELFCHECK.bat
-?? 115_RENDER_DE_LIGT_FLAG_VALUE_STATS.bat
-?? 116_INSERT_DE_LIGT_BLOCK_INSIDE_MAIN.bat
-?? 117_DE_LIGT_RAW_CONTENT_BLOCK.bat
-?? 118_ROLLBACK_117_RAW_CONTENT.bat
-?? 119_DE_LIGT_MATCH_DUMFRIES_CUCURELLA_STRUCTURE.bat
-?? 120_DE_LIGT_PHOTO_VALUE_HISTORY.bat
-?? 122_DE_LIGT_CACHE_SAFE_PHOTO_VALUE.bat
-?? 123_DE_LIGT_NO_AVATAR_OVERLAY.bat
-?? 124_DE_LIGT_API_PIXELCUT_REAL_CHART.bat
-?? 125_DE_LIGT_EXISTING_API_PIXELCUT_CHART.bat
-?? 126_DE_LIGT_TRANSFERMARKT_FALLBACK.bat
-?? 127_FIX_MARKET_CHART_PARTIAL_CONTEXT.bat
-?? 128_DE_LIGT_BASE_TRANSFERMARKT_PHOTO.bat
-?? 129_MOVE_MARKET_CHART_UNDER_PLAYER_CARD.bat
-?? 130_REMOVE_MARKET_CHART_TITLE.bat
-?? 131_BOTTOM_TICKER_SOLID_BLACK.bat
-?? 132_BOTTOM_TICKER_PURE_BLACK.bat
-?? 133_TOP_TICKER_PURE_BLACK.bat
-?? 134_TOP_TICKER_WRAPPER_BLACK.bat
-?? 135_RESTORE_TOP_TICKER_TAB_AND_FADE.bat
-?? 136_TOP_TICKER_BLACK_ONLY.bat
-?? 137_REMOVE_TOP_TICKER_PLAYER_PHOTO_FRAME.bat
-?? 138_TOP_TICKER_SOFT_GOLD_SEPARATORS.bat
-?? 139_REMOVE_BAD_TOP_TICKER_SEPARATORS.bat
-?? 140_TOP_TICKER_CLEAN_DIVIDERS.bat
-?? 141_TOP_TICKER_STRONGER_DIVIDERS.bat
-?? 142_TOP_TICKER_ALL_SEAM_DIVIDERS.bat
-?? 143_TOP_TICKER_DIVIDERS_WITH_SEAM.bat
-?? 144_TOP_TICKER_REAL_DOM_DIVIDERS.bat
-?? 145_TOP_TICKER_DIVIDER_BEFORE_EVERY_ITEM.bat
-?? 146_FULL_UPPER_TICKER_REAL_SEAM_DIVIDER.bat
 ?? 147_UPDATE_DE_LIGT_DYNAMIC_VALUE/
-?? 148_FULL_AUTOSYNC_DE_LIGT_DYNAMIC_VALUE.bat
-?? 150_FULL_SAFE_AUTOSYNC_DE_LIGT_DYNAMIC_VALUE.bat
-?? 151_FULL_LIMIT_PLAYER_TEAMS_LAST5.bat
-?? 152_FULL_RESTORE_APPROVED_MARKET_CHART_LAST5.bat
-?? 153_FULL_ROLLBACK_152_RESTORE_MARKET_CHART.bat
-?? 163_FULL_APPROVED_STATS_ICONS.bat
-?? 164_FULL_FIX_YELLOW_RED_STATS_ICONS.bat
-?? 171_FULL_FIX_GOALS_ICON_SOURCE.bat
-?? 172_FULL_RESTORE_APPROVED_GOALS_ICON.bat
-?? 178_STATS_APPROVED_CARD_BLOCK.bat
-?? 179_FIX_STATS_CARD_BLOCK.bat
-?? 180_APPROVED_STATS_EXACT_BLOCK.bat
-?? 181_EXACT_SCREEN_STATS_BLOCK.bat
-?? 184_APPROVED_SCREENSHOT_STATS_BLOCK.bat
-?? 185_FIX_MATCHES_FIELD_ICON_FULL.bat
-?? 186_NOTE.txt
-?? 186_RESTORE_APPROVED_GOALS_ICON.bat
-?? 187_FIX_GOALS_ICON_RIGHT_CROP.bat
-?? 188_FIX_APPROVED_GOALS_ICON_RIGHT_EDGE.bat
-?? 189_FIX_GOALS_ICON_FULL_RIGHT_PADDING.bat
-?? 194_FIX_GOALS_ICON_NO_CROP_PACKAGE.bat
-?? 195_RESTORE_APPROVED_GOALS_BALL_NO_CROP_PACKAGE.bat
-?? 196_REDRAW_FULL_FOOTBALL_GOALS_ICON_PACKAGE.bat
-?? 197_TEST_GOALS_ICON_VARIANT_1_ONLY_PACKAGE.bat
-?? 198_TEST_GOALS_ICON_VARIANT_1_FULL_NO_HOLES_PACKAGE.bat
-?? 199_INTEGRATE_APPROVED_NEON_GOALS_ICON_PACKAGE.bat
-?? 200_TEST_GOALS_ICON_VARIANT_3_PACKAGE.bat
-?? 201_REMOVE_OUTER_STATS_BLOCK_WRAPPER_PACKAGE.bat
 ?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
 ?? 20260629_191559_20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
 ?? 20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
-?? 202_SHRINK_STATS_ICON_CARDS_BY_4PX_PACKAGE.bat
-?? 203_SHRINK_STATS_ICON_CARDS_WIDTH_5PX_MORE_PACKAGE.bat
-?? 204_APPLY_APPROVED_STATS_BLOCK_TO_ALL_TRANSFER_PLAYERS_PACKAGE.bat
-?? 205_CHECK_GONCALO_RAMOS_PAGE_STATE_PACKAGE.bat
-?? 206_FIX_PLAYER_FLAGS_BY_NATIONALITY_PACKAGE.bat
-?? 207_REAL_FIX_RAMOS_FLAG_AND_VALUE_ALIGNMENT_PACKAGE.bat
-?? 208_FIX_RAMOS_PHOTO_BLACK_BG_AND_PORTUGAL_FLAG_PACKAGE.bat
-?? 209_REDOWNLOAD_RAMOS_TRANSFERMARKT_BLACK_BG_AND_REAL_FLAG_PACKAGE.bat
-?? 210_HARD_APPLY_RAMOS_PHOTO_FLAG_AND_PUSH_EXACT_FILES_PACKAGE.bat
-?? 211_VERIFIED_RAMOS_PAGE_HARD_FIX_PACKAGE.bat
-?? 212_ROLLBACK_BROKEN_RAMOS_HARDFIX_PACKAGE.bat
-?? 213_EMERGENCY_RESTORE_RAMOS_PAGE_AND_BLOCKS_PACKAGE.bat
-?? 214_RESTORE_RAMOS_PAGE_CHART_AND_STATS_BLOCK_PACKAGE.bat
-?? 215_ROLLBACK_6_COMMITS_AND_PUSH_PACKAGE.bat
-?? 216_RESTORE_STATS_ICON_SIZE_ONLY_PACKAGE.bat
-?? 217_RESTORE_SITE_BLOCKS_FROM_REAL_BACKUP_PACKAGE.bat
-?? 218_RESTORE_RAMOS_PAGE_AND_TICKERS_ONLY_PACKAGE.bat
-?? 219_RESTORE_TESTED_TICKERS_FROM_BACKUP_ONLY_PACKAGE.bat
-?? 220_FULL_RESTORE_FROM_WORKING_SNAPSHOT_PACKAGE.bat
-?? 221_RECOVER_REAL_SITE_PER_FILE_FROM_BACKUPS_PACKAGE.bat
-?? 222_HARD_RESTORE_LAST_GOOD_COMMIT_BEFORE_RAMOS_PHOTO_DAMAGE_PACKAGE.bat
-?? 224_PROMYACHIK_RESTORE_OLD_TICKER_CLICK_RUN.bat
-?? 225_PROMYACHIK_RESTORE_TICKER_FULL_SET_CLICK_RUN.bat
-?? 226_PROMYACHIK_RESTORE_HOME_TICKERS_LINKS_CLICK_RUN.bat
-?? 227_PROMYACHIK_RESTORE_REAL_HOME_API_TICKERS_CLICK_RUN.bat
-?? 228_PROMYACHIK_REMOVE_RAMOS_V211_HARDFIX_CLICK_RUN.bat
-?? 229_PROMYACHIK_TICKER_DRAG_AND_CLEAN_BOTTOM_CLICK_RUN.bat
-?? 230_PROMYACHIK_CENTER_MARKET_VALUE_UNDER_CHART_CLICK_RUN.bat
-?? 231_PROMYACHIK_CENTER_VALUE_CHART_TIMELINE_LABELS_CLICK_RUN.bat
-?? 232_PROMYACHIK_ALIGN_VALUE_LABELS_TO_POINTS_CLICK_RUN.bat
-?? 233_PROMYACHIK_FORCE_ALIGN_VALUE_LABELS_TO_POINTS_CLICK_RUN.bat
 ?? 234_PROMYACHIK_REBUILD_VALUE_CHART_LABELS_IN_SVG_CLICK_RUN.bat
 ?? 235_PROMYACHIK_VERTICAL_ALIGN_VALUE_LABELS_WITH_DOTS_CLICK_RUN.bat
 ?? 236_PROMYACHIK_INSET_VALUE_CHART_POINTS_AND_LABELS_CLICK_RUN.bat
@@ -131,6 +76,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 243_PROMYACHIK_CUCURELLA_LABELS_UNDER_CLUB_POINTS_CLICK_RUN.bat
 ?? 244_PROMYACHIK_CUCURELLA_MOVE_PRICES_TO_CLUB_X_BY_PYTHON_CLICK_RUN.bat
 ?? 245_PROMYACHIK_CUCURELLA_SHIFT_PRICE_TEXT_RIGHT_CLICK_RUN.bat
+?? 246_PROMYACHIK_CUCURELLA_FORCE_SHIFT_VISIBLE_PRICE_TEXT_RIGHT_CLICK_RUN.bat
+?? 247_PROMYACHIK_ROLLBACK_246_RESTORE_CUCURELLA_CLICK_RUN.bat
+?? 248_PROMYACHIK_FULL_BACKUP_NOW_CLICK_RUN.bat
+?? 249_PROMYACHIK_CUCURELLA_PRICE_LAYER_X_EQUALS_POINT_CLICK_RUN.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -202,52 +151,15 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_243_PROMYACHIK.txt
 ?? README_244_PROMYACHIK.txt
 ?? README_245_PROMYACHIK.txt
+?? README_246_PROMYACHIK.txt
+?? README_247_PROMYACHIK.txt
+?? README_248_PROMYACHIK.txt
+?? README_249_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
 ?? _107_favicon_report_20260627_201236.txt
 ?? _108_restore_de_ligt_report_20260627_201614.txt
 ?? _109_restore_de_ligt_page_report_20260627_201927.txt
-?? _110_fix_de_ligt_page_clubs_date_report_20260627_202212.txt
-?? _111_de_ligt_full_page_report_20260627_202709.txt
-?? _112_clone_cucurella_dumfries_structure_de_ligt_report_20260627_203024.txt
-?? _113_fix_status_install_cloner_report_20260627_203646.txt
-?? _114_de_ligt_rich_structure_selfcheck_report_20260627_204551.txt
-?? _115_render_de_ligt_missing_blocks_report_20260627_204859.txt
-?? _116_insert_de_ligt_block_inside_main_report_20260627_205125.txt
-?? _117_de_ligt_raw_content_block_report_20260627_205416.txt
-?? _118_rollback_117_raw_content_report_20260627_205548.txt
-?? _119_de_ligt_match_dumfries_cucurella_report_20260627_212842.txt
-?? _120_de_ligt_photo_value_history_report_20260627_213730.txt
-?? _122_de_ligt_cache_safe_photo_value_report_20260627_214848.txt
-?? _123_de_ligt_no_avatar_overlay_report_20260627_215414.txt
-?? _124_de_ligt_api_pixelcut_real_chart_report_20260627_220340.txt
-?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_220652.txt
-?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.txt
-?? _125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt
-?? _126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt
-?? _127_fix_market_chart_partial_context_report_20260627_222343.txt
-?? _128_de_ligt_base_photo_report_20260627_224054.txt
-?? _129_market_chart_inside_player_card_report_20260627_224415.txt
-?? _130_remove_market_chart_title_report_20260627_224654.txt
-?? _131_bottom_ticker_solid_black_report_20260627_230126.txt
-?? _132_bottom_ticker_pure_black_report_20260627_231406.txt
-?? _133_top_ticker_pure_black_report_20260627_231712.txt
-?? _134_top_ticker_wrapper_black_report_20260627_232155.txt
-?? _135_restore_top_ticker_tab_and_fade_report_20260627_232647.txt
-?? _136_top_ticker_black_only_report_20260627_233619.txt
-?? _137_remove_top_ticker_player_photo_frame_report_20260627_234019.txt
-?? _138_top_ticker_soft_gold_separators_report_20260627_234613.txt
-?? _139_remove_bad_top_ticker_separators_report_20260627_234838.txt
-?? _140_top_ticker_clean_dividers_report_20260627_235210.txt
-?? _141_top_ticker_stronger_dividers_report_20260627_235435.txt
-?? _142_top_ticker_all_seam_dividers_report_20260627_235749.txt
-?? _143_top_ticker_dividers_with_seam_report_20260628_000045.txt
-?? _144_top_ticker_real_dom_dividers_report_20260628_000336.txt
-?? _145_top_ticker_divider_before_every_item_report_20260628_000641.txt
-?? _146_full_upper_ticker_real_seam_divider_report_20260628_000952.txt
-?? _151_limit_player_teams_last5_report_20260628_181442.txt
-?? _152_restore_approved_market_chart_last5_report_20260628_181907.txt
-?? _153_rollback_152_restore_market_chart_report_20260628_182112.txt
 ?? _163_approved_stats_icons_report.txt
 ?? _164_fix_yellow_red_stats_icons_report.txt
 ?? _171_fix_goals_icon_source_report.txt
@@ -261,9 +173,6 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _188_fix_approved_goals_icon_right_edge_report.txt
 ?? _189_fix_goals_icon_full_right_padding_report.txt
 ?? _194_goals_icon_fix_report.txt
-?? _SEND_TO_CHATGPT_MARKET_SOURCE.txt
-?? _SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
-?? _SEND_TO_CHATGPT_STATS_BLOCK.txt
 ?? _SEND_TO_CHATGPT_compare_pages.zip
 ?? _backup_107_favicon/
 ?? _backup_108_de_ligt/
@@ -365,15 +274,13 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_242_before_cucurella_label_align_20260629_230530/
 ?? _backup_promyachik_243_before_cucurella_labels_under_points_20260629_231148/
 ?? _backup_promyachik_244_before_cucurella_move_prices_20260629_231735/
-?? _chatgpt_state/latest/layouts/partials/promyachik-cucurella-move-prices-to-club-x-244.html
-?? _chatgpt_state/latest/scripts/238_promyachik_fix_value_chart_axis_inset.py
-?? _chatgpt_state/latest/scripts/239_promyachik_replace_actual_dynamic_value_chart.py
-?? _chatgpt_state/latest/scripts/240_promyachik_value_chart_use_value_history.py
-?? _chatgpt_state/latest/scripts/241_promyachik_restore_real_graph_and_add_ramos_chart_data.py
-?? _chatgpt_state/latest/scripts/242_promyachik_cucurella_align_price_labels_only.py
-?? _chatgpt_state/latest/scripts/243_promyachik_cucurella_labels_under_club_points.py
-?? _chatgpt_state/latest/scripts/244_promyachik_cucurella_move_prices_to_club_x_by_python.py
-?? _chatgpt_state/latest/scripts/245_promyachik_cucurella_shift_price_text_right.py
+?? _backup_promyachik_246_before_force_shift_cucurella_price_right_20260629_232933/
+?? _backup_promyachik_247_before_rollback_246_20260629_233212/
+?? _backup_promyachik_249_before_cucurella_price_layer_20260630_003932/
+?? _chatgpt_state/latest/scripts/246_promyachik_cucurella_force_shift_visible_price_text_right.py
+?? _chatgpt_state/latest/scripts/247_promyachik_rollback_246_restore_cucurella.py
+?? _chatgpt_state/latest/scripts/248_promyachik_full_backup_now_progress.py
+?? _chatgpt_state/latest/scripts/249_promyachik_cucurella_price_layer_x_equals_point.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -467,6 +374,10 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/243_promyachik_cucurella_labels_under_club_points.py
 ?? scripts/244_promyachik_cucurella_move_prices_to_club_x_by_python.py
 ?? scripts/245_promyachik_cucurella_shift_price_text_right.py
+?? scripts/246_promyachik_cucurella_force_shift_visible_price_text_right.py
+?? scripts/247_promyachik_rollback_246_restore_cucurella.py
+?? scripts/248_promyachik_full_backup_now_progress.py
+?? scripts/249_promyachik_cucurella_price_layer_x_equals_point.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py

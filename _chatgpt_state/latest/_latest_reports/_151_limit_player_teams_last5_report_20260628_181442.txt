@@ -1,8 +1,0 @@
-VERSION 151_full_limit_player_teams_last5
-PROJECT C:\Users\Dmitrii\Promyachik
-BACKUP layouts\partials\profutbik-market-chart-static.html -> _backup_151_limit_player_teams_last5\layouts\partials\profutbik-market-chart-static.html
-UPDATED layouts\partials\profutbik-market-chart-static.html
-ACTION appended_new_block
-RULE show only last 5 team logos in player market charts
-SCOPE all players
-DO_NOT_TOUCH ticker ramos endrick favicon var

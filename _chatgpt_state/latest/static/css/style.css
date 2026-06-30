@@ -780,3 +780,59 @@ body.transfer-page .promyachik-cucurella-price-moved-244 {
 }
 
 /* PROMYACHIK 244 CUCURELLA PRICE MOVE SUPPORT END */
+
+/* PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT START */
+
+/*
+   Страница Marc Cucurella.
+   Отдельный слой цен под графиком.
+   Каждый label получает тот же X, что и его point.left / point.x / point.x_percent.
+   Y у всех labels общий: один нижний ряд под графиком.
+   График, линия, точки и логотипы не перерисовываются.
+*/
+
+.promyachik-cucurella-price-layer-249 {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: 62px !important;
+    min-height: 62px !important;
+    margin: 10px 0 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    pointer-events: none !important;
+    box-sizing: border-box !important;
+}
+
+.promyachik-cucurella-price-label-249 {
+    position: absolute !important;
+    top: 0 !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    min-width: 72px !important;
+    max-width: 120px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    line-height: 1.08 !important;
+    z-index: 20 !important;
+    box-sizing: border-box !important;
+}
+
+.promyachik-cucurella-price-label-249__date {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 5px !important;
+    text-align: center !important;
+}
+
+.promyachik-cucurella-price-label-249__value {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+/* PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT END */
