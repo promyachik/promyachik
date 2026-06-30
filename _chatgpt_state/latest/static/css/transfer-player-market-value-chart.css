@@ -472,20 +472,3 @@ body.transfer-page .player-market-chart__note,
 }
 /* PROFUTBIK HIDE MARKET VALUE NOTE V167 END */
 
-/* =========================================
-   PROMYACHIK 250 - HIDE YEAR ABOVE PRICE - NO BACKUP
-   Removes only the year/date label above chart prices.
-   No backup is created by this package.
-========================================= */
-body.transfer-page .player-market-chart__point small,
-.player-market-chart-modal .player-market-chart__point small,
-body.transfer-page .player-market-chart__x-label,
-.player-market-chart-modal .player-market-chart__x-label {
-    display: none !important;
-}
-
-body.transfer-page .player-market-chart__point,
-.player-market-chart-modal .player-market-chart__point {
-    gap: 0 !important;
-}
-

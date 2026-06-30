@@ -838,19 +838,26 @@ body.transfer-page .promyachik-cucurella-price-moved-244 {
 /* PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT END */
 
 /* =========================================
-   PROMYACHIK 250 - HIDE YEAR ABOVE PRICE - NO BACKUP
-   Removes only the year/date label above chart prices.
+   PROMYACHIK 251 - RESTORE PRICE HIDE YEAR - NO BACKUP
+   Fixes package 250: price labels must stay visible.
    No backup is created by this package.
 ========================================= */
-body.transfer-page .player-market-chart__point small,
-.player-market-chart-modal .player-market-chart__point small,
 body.transfer-page .player-market-chart__x-label,
-.player-market-chart-modal .player-market-chart__x-label {
-    display: none !important;
+.player-market-chart-modal .player-market-chart__x-label,
+body.transfer-page .player-market-chart__price,
+.player-market-chart-modal .player-market-chart__price,
+body.transfer-page .player-market-chart__value,
+.player-market-chart-modal .player-market-chart__value,
+body.transfer-page .pf-market-chart__price,
+.player-market-chart-modal .pf-market-chart__price,
+body.transfer-page .pf-market-chart__value,
+.player-market-chart-modal .pf-market-chart__value {
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-body.transfer-page .player-market-chart__point,
-.player-market-chart-modal .player-market-chart__point {
-    gap: 0 !important;
+body.transfer-page .player-market-chart__x-label,
+.player-market-chart-modal .player-market-chart__x-label {
+    display: block !important;
 }
 

@@ -190,6 +190,7 @@ scripts\profutbik_clone_transfer_page_structure.py	4002
 scripts\profutbik_news_on_main_auto.py	28842
 scripts\profutbik_strict_news_on_main_validator.py	20221
 scripts\promyachik_250_hide_year_above_price_no_backup.py	8289
+scripts\promyachik_251_restore_price_hide_year_no_backup.py	12205
 scripts\pull_last_point_inside_keep_center.py	7825
 scripts\push_state_to_github.py	10290
 scripts\remove_api_football_photo_source.py	3022
@@ -209,9 +210,9 @@ static\css\homepage-featured-wirtz.css	10513
 static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
-static\css\style.css	23965
+static\css\style.css	24294
 static\css\transfer-article.css	108158
-static\css\transfer-player-market-value-chart.css	11206
+static\css\transfer-player-market-value-chart.css	10576
 static\css\transfer-ticker.css	6015
 static\header.css	15286
 static\images\clubs\ac-milan.svg	461

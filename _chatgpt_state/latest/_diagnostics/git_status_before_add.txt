@@ -35,6 +35,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 248_PROMYACHIK_FULL_BACKUP_NOW_CLICK_RUN.bat
 ?? 249_PROMYACHIK_CUCURELLA_PRICE_LAYER_X_EQUALS_POINT_CLICK_RUN.bat
 ?? 250_HIDE_YEAR_ABOVE_PRICE_NO_BACKUP.bat
+?? 251_RESTORE_PRICE_HIDE_YEAR_NO_BACKUP.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -232,7 +233,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_246_before_force_shift_cucurella_price_right_20260629_232933/
 ?? _backup_promyachik_247_before_rollback_246_20260629_233212/
 ?? _backup_promyachik_249_before_cucurella_price_layer_20260630_003932/
-?? _chatgpt_state/latest/scripts/promyachik_250_hide_year_above_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_251_restore_price_hide_year_no_backup.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -381,6 +382,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/profutbik_news_on_main_auto.py
 ?? scripts/profutbik_strict_news_on_main_validator.py
 ?? scripts/promyachik_250_hide_year_above_price_no_backup.py
+?? scripts/promyachik_251_restore_price_hide_year_no_backup.py
 ?? scripts/pull_last_point_inside_keep_center.py
 ?? scripts/remove_api_football_photo_source.py
 ?? scripts/remove_chart_current_value_and_source.py
