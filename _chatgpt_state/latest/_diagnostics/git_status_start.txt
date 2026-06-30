@@ -11,53 +11,8 @@ EXIT_CODE: 0
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
 AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
- D _chatgpt_state/latest/_latest_reports/_110_fix_de_ligt_page_clubs_date_report_20260627_202212.txt
- D _chatgpt_state/latest/_latest_reports/_111_de_ligt_full_page_report_20260627_202709.txt
- D _chatgpt_state/latest/_latest_reports/_112_clone_cucurella_dumfries_structure_de_ligt_report_20260627_203024.txt
- D _chatgpt_state/latest/_latest_reports/_113_fix_status_install_cloner_report_20260627_203646.txt
- D _chatgpt_state/latest/_latest_reports/_114_de_ligt_rich_structure_selfcheck_report_20260627_204551.txt
- D _chatgpt_state/latest/_latest_reports/_115_render_de_ligt_missing_blocks_report_20260627_204859.txt
- D _chatgpt_state/latest/_latest_reports/_116_insert_de_ligt_block_inside_main_report_20260627_205125.txt
- D _chatgpt_state/latest/_latest_reports/_117_de_ligt_raw_content_block_report_20260627_205416.txt
- D _chatgpt_state/latest/_latest_reports/_118_rollback_117_raw_content_report_20260627_205548.txt
- D _chatgpt_state/latest/_latest_reports/_119_de_ligt_match_dumfries_cucurella_report_20260627_212842.txt
- D _chatgpt_state/latest/_latest_reports/_120_de_ligt_photo_value_history_report_20260627_213730.txt
- D _chatgpt_state/latest/_latest_reports/_122_de_ligt_cache_safe_photo_value_report_20260627_214848.txt
- D _chatgpt_state/latest/_latest_reports/_123_de_ligt_no_avatar_overlay_report_20260627_215414.txt
- D _chatgpt_state/latest/_latest_reports/_124_de_ligt_api_pixelcut_real_chart_report_20260627_220340.txt
- D _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_220652.txt
- D _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221122.txt
- D _chatgpt_state/latest/_latest_reports/_125_de_ligt_existing_api_pixelcut_chart_report_20260627_221746.txt
- D _chatgpt_state/latest/_latest_reports/_126_de_ligt_transfermarkt_fallback_report_20260627_222117.txt
- D _chatgpt_state/latest/_latest_reports/_127_fix_market_chart_partial_context_report_20260627_222343.txt
- D _chatgpt_state/latest/_latest_reports/_128_de_ligt_base_photo_report_20260627_224054.txt
- D _chatgpt_state/latest/_latest_reports/_129_market_chart_inside_player_card_report_20260627_224415.txt
- D _chatgpt_state/latest/_latest_reports/_130_remove_market_chart_title_report_20260627_224654.txt
- D _chatgpt_state/latest/_latest_reports/_131_bottom_ticker_solid_black_report_20260627_230126.txt
- D _chatgpt_state/latest/_latest_reports/_132_bottom_ticker_pure_black_report_20260627_231406.txt
- D _chatgpt_state/latest/_latest_reports/_133_top_ticker_pure_black_report_20260627_231712.txt
- D _chatgpt_state/latest/_latest_reports/_134_top_ticker_wrapper_black_report_20260627_232155.txt
- D _chatgpt_state/latest/_latest_reports/_135_restore_top_ticker_tab_and_fade_report_20260627_232647.txt
- D _chatgpt_state/latest/_latest_reports/_136_top_ticker_black_only_report_20260627_233619.txt
- D _chatgpt_state/latest/_latest_reports/_137_remove_top_ticker_player_photo_frame_report_20260627_234019.txt
- D _chatgpt_state/latest/_latest_reports/_138_top_ticker_soft_gold_separators_report_20260627_234613.txt
- D _chatgpt_state/latest/_latest_reports/_139_remove_bad_top_ticker_separators_report_20260627_234838.txt
- D _chatgpt_state/latest/_latest_reports/_140_top_ticker_clean_dividers_report_20260627_235210.txt
- D _chatgpt_state/latest/_latest_reports/_141_top_ticker_stronger_dividers_report_20260627_235435.txt
- D _chatgpt_state/latest/_latest_reports/_142_top_ticker_all_seam_dividers_report_20260627_235749.txt
- D _chatgpt_state/latest/_latest_reports/_143_top_ticker_dividers_with_seam_report_20260628_000045.txt
- D _chatgpt_state/latest/_latest_reports/_144_top_ticker_real_dom_dividers_report_20260628_000336.txt
- D _chatgpt_state/latest/_latest_reports/_145_top_ticker_divider_before_every_item_report_20260628_000641.txt
- D _chatgpt_state/latest/_latest_reports/_146_full_upper_ticker_real_seam_divider_report_20260628_000952.txt
- D _chatgpt_state/latest/_latest_reports/_151_limit_player_teams_last5_report_20260628_181442.txt
- D _chatgpt_state/latest/_latest_reports/_152_restore_approved_market_chart_last5_report_20260628_181907.txt
- D _chatgpt_state/latest/_latest_reports/_153_rollback_152_restore_market_chart_report_20260628_182112.txt
- D _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_MARKET_SOURCE.txt
- D _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_MARKET_STRUCTURE.txt
- D _chatgpt_state/latest/_latest_reports/_SEND_TO_CHATGPT_STATS_BLOCK.txt
- M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
- M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
  M _chatgpt_state/latest/static/css/style.css
+ M _chatgpt_state/latest/static/css/transfer-player-market-value-chart.css
  M layouts/index.html
 ?? .env
 ?? 147_UPDATE_DE_LIGT_DYNAMIC_VALUE/
@@ -80,6 +35,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 247_PROMYACHIK_ROLLBACK_246_RESTORE_CUCURELLA_CLICK_RUN.bat
 ?? 248_PROMYACHIK_FULL_BACKUP_NOW_CLICK_RUN.bat
 ?? 249_PROMYACHIK_CUCURELLA_PRICE_LAYER_X_EQUALS_POINT_CLICK_RUN.bat
+?? 250_HIDE_YEAR_ABOVE_PRICE_NO_BACKUP.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -277,10 +233,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_246_before_force_shift_cucurella_price_right_20260629_232933/
 ?? _backup_promyachik_247_before_rollback_246_20260629_233212/
 ?? _backup_promyachik_249_before_cucurella_price_layer_20260630_003932/
-?? _chatgpt_state/latest/scripts/246_promyachik_cucurella_force_shift_visible_price_text_right.py
-?? _chatgpt_state/latest/scripts/247_promyachik_rollback_246_restore_cucurella.py
-?? _chatgpt_state/latest/scripts/248_promyachik_full_backup_now_progress.py
-?? _chatgpt_state/latest/scripts/249_promyachik_cucurella_price_layer_x_equals_point.py
+?? _chatgpt_state/latest/scripts/promyachik_250_hide_year_above_price_no_backup.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -428,6 +381,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/profutbik_enhancement_payload/
 ?? scripts/profutbik_news_on_main_auto.py
 ?? scripts/profutbik_strict_news_on_main_validator.py
+?? scripts/promyachik_250_hide_year_above_price_no_backup.py
 ?? scripts/pull_last_point_inside_keep_center.py
 ?? scripts/remove_api_football_photo_source.py
 ?? scripts/remove_chart_current_value_and_source.py
