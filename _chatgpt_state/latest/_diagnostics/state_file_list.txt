@@ -59,7 +59,7 @@ layouts\partials\player-value-chart.html	11802
 layouts\partials\post-card.html	334
 layouts\partials\profutbik-market-chart-static.html	15825
 layouts\partials\promyachik-cucurella-move-prices-to-club-x-244.html	12985
-layouts\partials\transfer-player-market-value-chart.html	4726
+layouts\partials\transfer-player-market-value-chart.html	3147
 layouts\partials\transfer-player-stats.html	17831
 layouts\partials\transfer-player-value-history.html	5956
 layouts\partials\transfer-ticker(1).html	675
@@ -73,7 +73,7 @@ public\transfers\bernardo-silva-real-madrid\index.html	236403
 public\transfers\denzel-dumfries-real-madrid\index.html	190232
 public\transfers\elliot-anderson-manchester-city\index.html	190280
 public\transfers\florian-wirtz-liverpool\index.html	193386
-public\transfers\goncalo-ramos-ac-milan\index.html	194606
+public\transfers\goncalo-ramos-ac-milan\index.html	194558
 public\transfers\ibrahima-konate-real-madrid\index.html	191149
 public\transfers\index.html	82983
 public\transfers\julian-alvarez-barcelona\index.html	191007
@@ -145,6 +145,7 @@ scripts\246_promyachik_cucurella_force_shift_visible_price_text_right.py	21194
 scripts\247_promyachik_rollback_246_restore_cucurella.py	12114
 scripts\248_promyachik_full_backup_now_progress.py	11839
 scripts\249_promyachik_cucurella_price_layer_x_equals_point.py	18118
+scripts\253_cucurella_hide_year_only_restore_price_no_backup.py	5817
 scripts\44_homepage_desktop_step1_hero.py	16037
 scripts\45_homepage_desktop_match_approved_design.py	22508
 scripts\46_rollback_bad_homepage_step44_45.py	2433
@@ -154,6 +155,7 @@ scripts\build_current_transfer_batch.py	40989
 scripts\build_seven_league_player_database.py	17152
 scripts\center_club_logos.py	7184
 scripts\center_last_logo_hide_area.py	7560
+scripts\chatgpt_light_state_push.py	7066
 scripts\clean_profutbik_var.py	5266
 scripts\collect_mbappe_chart_diagnostic.py	6404
 scripts\download_club_logos.py	18844
@@ -191,6 +193,16 @@ scripts\profutbik_news_on_main_auto.py	28842
 scripts\profutbik_strict_news_on_main_validator.py	20221
 scripts\promyachik_250_hide_year_above_price_no_backup.py	8289
 scripts\promyachik_251_restore_price_hide_year_no_backup.py	12205
+scripts\promyachik_254_restore_cucurella_price_from_backup_no_backup.py	11342
+scripts\promyachik_255_restore_cucurella_price_and_year_fixed_bat_no_backup.py	12399
+scripts\promyachik_257_restore_graph_from_uploaded_247_backup_no_backup.py	5420
+scripts\promyachik_259_cucurella_hide_year_keep_price_real_no_backup.py	9062
+scripts\promyachik_260_cucurella_remove_year_token_keep_price_no_backup.py	8178
+scripts\promyachik_261_hide_year_keep_price_generic_partial_no_backup.py	6826
+scripts\promyachik_262_cucurella_remove_date_span_keep_price_no_backup.py	5325
+scripts\promyachik_263_cucurella_remove_year_relpermalink_branch_no_backup.py	6646
+scripts\promyachik_264_cucurella_remove_inline_date_keep_price_no_backup.py	5664
+scripts\promyachik_265_cucurella_remove_date_from_real_rel_branch_no_backup.py	7284
 scripts\pull_last_point_inside_keep_center.py	7825
 scripts\push_state_to_github.py	10290
 scripts\remove_api_football_photo_source.py	3022
@@ -210,9 +222,9 @@ static\css\homepage-featured-wirtz.css	10513
 static\css\images\players\player-value-chart.css	0
 static\css\player-brief-standalone-addon.css	655
 static\css\player-value-chart.css	10212
-static\css\style.css	24294
+static\css\style.css	22602
 static\css\transfer-article.css	108158
-static\css\transfer-player-market-value-chart.css	10576
+static\css\transfer-player-market-value-chart.css	11623
 static\css\transfer-ticker.css	6015
 static\header.css	15286
 static\images\clubs\ac-milan.svg	461

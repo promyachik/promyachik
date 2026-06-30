@@ -8,8 +8,9 @@ EXIT_CODE: 0
  D _chatgpt_state/latest/_diagnostics/git_status_before_add.txt
  M _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
-AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
+ M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
  M _chatgpt_state/latest/static/css/style.css
  M _chatgpt_state/latest/static/css/transfer-player-market-value-chart.css
  M layouts/index.html
@@ -36,6 +37,19 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? 249_PROMYACHIK_CUCURELLA_PRICE_LAYER_X_EQUALS_POINT_CLICK_RUN.bat
 ?? 250_HIDE_YEAR_ABOVE_PRICE_NO_BACKUP.bat
 ?? 251_RESTORE_PRICE_HIDE_YEAR_NO_BACKUP.bat
+?? 252_INSTALL_LIGHT_CHATGPT_PUSH_NO_BACKUP.bat
+?? 253_CUCURELLA_HIDE_YEAR_ONLY_RESTORE_PRICE_NO_BACKUP.bat
+?? 254_RESTORE_CUCURELLA_PRICE_FROM_BACKUP_NO_BACKUP.bat
+?? 255_RESTORE_CUCURELLA_PRICE_AND_YEAR_FIXED_BAT_NO_BACKUP.bat
+?? 257_RESTORE_GRAPH_FROM_UPLOADED_247_BACKUP_NO_BACKUP.bat
+?? 258_CUCURELLA_HIDE_YEAR_KEEP_PRICE_TEMPLATE_ONLY_NO_BACKUP.bat
+?? 259_CUCURELLA_HIDE_YEAR_KEEP_PRICE_REAL_NO_BACKUP.bat
+?? 260_CUCURELLA_REMOVE_YEAR_TOKEN_KEEP_PRICE_NO_BACKUP.bat
+?? 261_HIDE_YEAR_KEEP_PRICE_GENERIC_PARTIAL_NO_BACKUP.bat
+?? 262_CUCURELLA_REMOVE_DATE_SPAN_KEEP_PRICE_NO_BACKUP.bat
+?? 263_CUCURELLA_REMOVE_YEAR_REL_PERMALINK_BRANCH_NO_BACKUP.bat
+?? 264_CUCURELLA_REMOVE_INLINE_DATE_KEEP_PRICE_NO_BACKUP.bat
+?? 265_CUCURELLA_REMOVE_DATE_FROM_REAL_REL_BRANCH_NO_BACKUP.bat
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
@@ -113,6 +127,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? README_249_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
+?? R_00_CHATGPT_LIGHT_STATE_PUSH.bat
 ?? _107_favicon_report_20260627_201236.txt
 ?? _108_restore_de_ligt_report_20260627_201614.txt
 ?? _109_restore_de_ligt_page_report_20260627_201927.txt
@@ -233,7 +248,18 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? _backup_promyachik_246_before_force_shift_cucurella_price_right_20260629_232933/
 ?? _backup_promyachik_247_before_rollback_246_20260629_233212/
 ?? _backup_promyachik_249_before_cucurella_price_layer_20260630_003932/
-?? _chatgpt_state/latest/scripts/promyachik_251_restore_price_hide_year_no_backup.py
+?? _chatgpt_state/latest/scripts/253_cucurella_hide_year_only_restore_price_no_backup.py
+?? _chatgpt_state/latest/scripts/chatgpt_light_state_push.py
+?? _chatgpt_state/latest/scripts/promyachik_254_restore_cucurella_price_from_backup_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_255_restore_cucurella_price_and_year_fixed_bat_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_257_restore_graph_from_uploaded_247_backup_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_259_cucurella_hide_year_keep_price_real_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_260_cucurella_remove_year_token_keep_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_261_hide_year_keep_price_generic_partial_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_262_cucurella_remove_date_span_keep_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_263_cucurella_remove_year_relpermalink_branch_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_264_cucurella_remove_inline_date_keep_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_265_cucurella_remove_date_from_real_rel_branch_no_backup.py
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -251,7 +277,9 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? layouts/shortcodes/
 ?? layouts/transfers/
 ?? payload/
+?? pkg258/
 ?? restore_files/
+?? restore_payload_257_after_247/
 ?? run_api_football_photos_fixed.bat
 ?? run_api_football_photos_v3.bat
 ?? run_api_football_photos_v4.bat
@@ -331,6 +359,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/247_promyachik_rollback_246_restore_cucurella.py
 ?? scripts/248_promyachik_full_backup_now_progress.py
 ?? scripts/249_promyachik_cucurella_price_layer_x_equals_point.py
+?? scripts/253_cucurella_hide_year_only_restore_price_no_backup.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
@@ -341,6 +370,7 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/build_seven_league_player_database.py
 ?? scripts/center_club_logos.py
 ?? scripts/center_last_logo_hide_area.py
+?? scripts/chatgpt_light_state_push.py
 ?? scripts/clean_profutbik_var.py
 ?? scripts/collect_mbappe_chart_diagnostic.py
 ?? scripts/download_club_logos.py
@@ -383,6 +413,16 @@ AD _chatgpt_state/latest/_diagnostics/push_state_v2_log.txt
 ?? scripts/profutbik_strict_news_on_main_validator.py
 ?? scripts/promyachik_250_hide_year_above_price_no_backup.py
 ?? scripts/promyachik_251_restore_price_hide_year_no_backup.py
+?? scripts/promyachik_254_restore_cucurella_price_from_backup_no_backup.py
+?? scripts/promyachik_255_restore_cucurella_price_and_year_fixed_bat_no_backup.py
+?? scripts/promyachik_257_restore_graph_from_uploaded_247_backup_no_backup.py
+?? scripts/promyachik_259_cucurella_hide_year_keep_price_real_no_backup.py
+?? scripts/promyachik_260_cucurella_remove_year_token_keep_price_no_backup.py
+?? scripts/promyachik_261_hide_year_keep_price_generic_partial_no_backup.py
+?? scripts/promyachik_262_cucurella_remove_date_span_keep_price_no_backup.py
+?? scripts/promyachik_263_cucurella_remove_year_relpermalink_branch_no_backup.py
+?? scripts/promyachik_264_cucurella_remove_inline_date_keep_price_no_backup.py
+?? scripts/promyachik_265_cucurella_remove_date_from_real_rel_branch_no_backup.py
 ?? scripts/pull_last_point_inside_keep_center.py
 ?? scripts/remove_api_football_photo_source.py
 ?? scripts/remove_chart_current_value_and_source.py

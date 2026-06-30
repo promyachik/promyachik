@@ -781,83 +781,32 @@ body.transfer-page .promyachik-cucurella-price-moved-244 {
 
 /* PROMYACHIK 244 CUCURELLA PRICE MOVE SUPPORT END */
 
-/* PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT START */
-
-/*
-   Страница Marc Cucurella.
-   Отдельный слой цен под графиком.
-   Каждый label получает тот же X, что и его point.left / point.x / point.x_percent.
-   Y у всех labels общий: один нижний ряд под графиком.
-   График, линия, точки и логотипы не перерисовываются.
-*/
-
-.promyachik-cucurella-price-layer-249 {
-    position: relative !important;
-    display: block !important;
-    width: 100% !important;
-    height: 62px !important;
-    min-height: 62px !important;
-    margin: 10px 0 0 !important;
-    padding: 0 !important;
-    overflow: visible !important;
-    pointer-events: none !important;
-    box-sizing: border-box !important;
+/* PROMYACHIK 259 CUCURELLA HIDE YEAR KEEP PRICE START */
+/* Only the year/date row in the Cucurella 249 price layer is hidden. Price value stays visible. */
+.promyachik-cucurella-price-layer-249 .promyachik-cucurella-price-label-249__date,
+.promyachik-cucurella-price-layer-249 .promyachik-cucurella-price-label-249__date-hidden-259 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
 }
-
-.promyachik-cucurella-price-label-249 {
-    position: absolute !important;
-    top: 0 !important;
-    transform: translateX(-50%) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    min-width: 72px !important;
-    max-width: 120px !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-    line-height: 1.08 !important;
-    z-index: 20 !important;
-    box-sizing: border-box !important;
+.promyachik-cucurella-price-layer-249 .promyachik-cucurella-price-label-249__value {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.08 !important;
+  white-space: nowrap !important;
 }
-
-.promyachik-cucurella-price-label-249__date {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 0 5px !important;
-    text-align: center !important;
-}
-
-.promyachik-cucurella-price-label-249__value {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-    text-align: center !important;
-}
-
-/* PROMYACHIK 249 CUCURELLA PRICE LAYER X EQUALS POINT END */
-
-/* =========================================
-   PROMYACHIK 251 - RESTORE PRICE HIDE YEAR - NO BACKUP
-   Fixes package 250: price labels must stay visible.
-   No backup is created by this package.
-========================================= */
-body.transfer-page .player-market-chart__x-label,
-.player-market-chart-modal .player-market-chart__x-label,
-body.transfer-page .player-market-chart__price,
-.player-market-chart-modal .player-market-chart__price,
-body.transfer-page .player-market-chart__value,
-.player-market-chart-modal .player-market-chart__value,
-body.transfer-page .pf-market-chart__price,
-.player-market-chart-modal .pf-market-chart__price,
-body.transfer-page .pf-market-chart__value,
-.player-market-chart-modal .pf-market-chart__value {
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-body.transfer-page .player-market-chart__x-label,
-.player-market-chart-modal .player-market-chart__x-label {
-    display: block !important;
-}
+/* PROMYACHIK 259 CUCURELLA HIDE YEAR KEEP PRICE END */
 

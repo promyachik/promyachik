@@ -472,3 +472,33 @@ body.transfer-page .player-market-chart__note,
 }
 /* PROFUTBIK HIDE MARKET VALUE NOTE V167 END */
 
+
+/* PROMYACHIK 259 CUCURELLA HIDE YEAR KEEP PRICE START */
+/* Only the year/date row in the Cucurella 249 price layer is hidden. Price value stays visible. */
+.promyachik-cucurella-price-layer-249 .promyachik-cucurella-price-label-249__date,
+.promyachik-cucurella-price-layer-249 .promyachik-cucurella-price-label-249__date-hidden-259 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+.promyachik-cucurella-price-layer-249 .promyachik-cucurella-price-label-249__value {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.08 !important;
+  white-space: nowrap !important;
+}
+/* PROMYACHIK 259 CUCURELLA HIDE YEAR KEEP PRICE END */
+
