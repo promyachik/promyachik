@@ -304,3 +304,25 @@
         animation: none;
     }
 }
+
+/* PROMYACHIK 298 TICKER STABILIZE START */
+.pf-ticker,
+.pf-ticker__viewport,
+.pf-ticker__track {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.pf-ticker {
+  contain: paint;
+  transform: translateZ(0);
+}
+.pf-ticker__track {
+  will-change: transform;
+}
+@keyframes pfTickerScroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+/* PROMYACHIK 298 TICKER STABILIZE END */
+

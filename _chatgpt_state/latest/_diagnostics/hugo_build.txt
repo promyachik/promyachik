@@ -11,12 +11,12 @@ hugo v0.163.3-4d22555aebf458d5d150500c9ac4bee5b24cf0d3 windows/amd64 BuildDate=2
  Pages            │   23 
  Paginator pages  │    0 
  Non-page files   │    0 
- Static files     │ 4569 
+ Static files     │ 4571 
  Processed images │    0 
  Aliases          │    1 
  Cleaned          │    0 
 
-Total in 1738 ms
+Total in 5343 ms
 
 
 --- STDERR ---

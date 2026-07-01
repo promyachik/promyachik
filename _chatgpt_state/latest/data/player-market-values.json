@@ -437,6 +437,71 @@
       "current_value_label": "€22 млн",
       "path": "M 20 107.9 L 76 107.06 L 132 76.43 L 188 26.07 L 244 87.34 L 300 91.54",
       "area_path": "M 20 107.9 L 76 107.06 L 132 76.43 L 188 26.07 L 244 87.34 L 300 91.54 L 300 110 L 20 110 Z"
+    },
+    {
+      "player_id": "41585",
+      "player": "Гонсалу Рамуш",
+      "aliases": [
+        "Гонсалу Рамуш",
+        "Gonçalo Ramos",
+        "Goncalo Ramos",
+        "G. Ramos"
+      ],
+      "current_value_million": 30,
+      "current_value_label": "€30M",
+      "source_url": "https://www.transfermarkt.com/goncalo-ramos/marktwertverlauf/spieler/550550",
+      "points": [
+        {
+          "date_full": "01.07.2020",
+          "date": "2020",
+          "value_million": 8,
+          "value_label": "€8M",
+          "x": 20.0,
+          "y": 74.08
+        },
+        {
+          "date_full": "01.07.2021",
+          "date": "2021",
+          "value_million": 15,
+          "value_label": "€15M",
+          "x": 76.0,
+          "y": 65.4
+        },
+        {
+          "date_full": "01.07.2022",
+          "date": "2022",
+          "value_million": 25,
+          "value_label": "€25M",
+          "x": 132.0,
+          "y": 53.0
+        },
+        {
+          "date_full": "01.07.2023",
+          "date": "2023",
+          "value_million": 35,
+          "value_label": "€35M",
+          "x": 188.0,
+          "y": 40.6
+        },
+        {
+          "date_full": "01.07.2024",
+          "date": "2024",
+          "value_million": 50,
+          "value_label": "€50M",
+          "x": 244.0,
+          "y": 22.0
+        },
+        {
+          "date_full": "30.06.2026",
+          "date": "2026",
+          "value_million": 30,
+          "value_label": "€30M",
+          "x": 300.0,
+          "y": 46.8
+        }
+      ],
+      "path": "M 20 74.08 L 76 65.40 L 132 53.00 L 188 40.60 L 244 22.00 L 300 46.80",
+      "area_path": "M 20 74.08 L 76 65.40 L 132 53.00 L 188 40.60 L 244 22.00 L 300 46.80 L 300 110 L 20 110 Z"
     }
   ]
 }

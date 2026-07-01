@@ -502,3 +502,223 @@ body.transfer-page .player-market-chart__note,
 }
 /* PROMYACHIK 259 CUCURELLA HIDE YEAR KEEP PRICE END */
 
+/* PROMYACHIK 276 CUCURELLA HIDE YEAR CSS ONLY NO LAYOUT START */
+/*
+   Safe mode: do not remove DOM nodes and do not change element height/position.
+   The old 244 alignment script still sees the same text and geometry, so prices
+   should not jump to the footer. Only the year line becomes invisible visually.
+*/
+body.transfer-page
+.player-market-chart[data-market-chart-key="cucurella"]
+.player-market-chart__point small {
+    color: transparent !important;
+    text-shadow: none !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+body.transfer-page
+.player-market-chart[data-market-chart-key="cucurella"]
+.player-market-chart__point strong {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.player-market-chart-modal
+.player-market-chart--enlarged[data-market-chart-key="cucurella"]
+.player-market-chart__point small {
+    color: transparent !important;
+    text-shadow: none !important;
+    -webkit-text-fill-color: transparent !important;
+}
+/* PROMYACHIK 276 CUCURELLA HIDE YEAR CSS ONLY NO LAYOUT END */
+
+/* PROMYACHIK 277 HIDE YEAR ALL PLAYER CHARTS CSS ONLY START */
+/*
+   Global safe mode for all current and future player market charts.
+   Do not remove DOM nodes, do not change layout, do not touch JS.
+   The year/date <small> stays in the DOM for old positioning scripts,
+   but becomes visually invisible. The price <strong> remains visible.
+*/
+body.transfer-page .player-market-chart .player-market-chart__point small {
+    color: transparent !important;
+    text-shadow: none !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+body.transfer-page .player-market-chart .player-market-chart__point strong {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.player-market-chart-modal .player-market-chart--enlarged .player-market-chart__point small {
+    color: transparent !important;
+    text-shadow: none !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.player-market-chart-modal .player-market-chart--enlarged .player-market-chart__point strong {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+/* PROMYACHIK 277 HIDE YEAR ALL PLAYER CHARTS CSS ONLY END */
+
+/* PROMYACHIK 279 ALIGN MARKET PRICE LABELS TO POINTS CSS START */
+body.transfer-page .player-market-chart__points.promyachik-price-align-279,
+.player-market-chart-modal .player-market-chart__points.promyachik-price-align-279 {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  overflow: visible !important;
+}
+
+body.transfer-page .player-market-chart__point.promyachik-price-align-item-279,
+.player-market-chart-modal .player-market-chart__point.promyachik-price-align-item-279 {
+  position: absolute !important;
+  top: 0 !important;
+  transform: translateX(-50%) !important;
+  display: grid !important;
+  justify-items: center !important;
+  align-items: start !important;
+  gap: 0 !important;
+  min-width: 0 !important;
+  width: max-content !important;
+  max-width: 78px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+body.transfer-page .player-market-chart__point.promyachik-price-align-item-279 strong,
+.player-market-chart-modal .player-market-chart__point.promyachik-price-align-item-279 strong {
+  display: block !important;
+  text-align: center !important;
+}
+/* PROMYACHIK 279 ALIGN MARKET PRICE LABELS TO POINTS CSS END */
+
+/* PROMYACHIK 282 PRICE ROW UP ALL PLAYER CHARTS START */
+/* Same vertical position tested successfully on Konate in package 281.
+   CSS-only: preserve DOM and JS positioning, just move the already aligned price row closer to the chart. */
+body.transfer-page .player-market-chart:not(.player-market-chart--enlarged) .player-market-chart__points {
+  margin-top: 1px !important;
+  transform: translateY(-6px) !important;
+}
+/* PROMYACHIK 282 PRICE ROW UP ALL PLAYER CHARTS END */
+
+/* PROMYACHIK 299 KONATE MOVE ALL PRICES UNDER DOTS GOLD NO BORDER START */
+body.promyachik-konate-prices-under-dots-299 .player-market-chart.promyachik-konate-price-layout-299 {
+  position: relative !important;
+}
+
+body.promyachik-konate-prices-under-dots-299 .player-market-chart.promyachik-konate-price-layout-299 .player-market-chart__points.promyachik-konate-price-layer-299 {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 5 !important;
+  display: block !important;
+  grid-template-columns: none !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+}
+
+body.promyachik-konate-prices-under-dots-299 .player-market-chart.promyachik-konate-price-layout-299 .player-market-chart__point.promyachik-konate-price-point-299 {
+  position: absolute !important;
+  left: var(--pmk-price-left-299) !important;
+  top: var(--pmk-price-top-299) !important;
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  transform: translate(-50%, 0) !important;
+  text-align: center !important;
+  pointer-events: none !important;
+}
+
+body.promyachik-konate-prices-under-dots-299 .player-market-chart.promyachik-konate-price-layout-299 .player-market-chart__point.promyachik-konate-price-point-299 small {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+body.promyachik-konate-prices-under-dots-299 .player-market-chart.promyachik-konate-price-layout-299 .player-market-chart__point.promyachik-konate-price-point-299 strong,
+body.promyachik-konate-prices-under-dots-299 .player-market-chart.promyachik-konate-price-layout-299 .player-market-chart__point.promyachik-konate-price-point-299 strong.promyachik-konate-price-value-299 {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  color: #f0d16d !important;
+  font-family: "Russo One", "Montserrat", Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.01em !important;
+  white-space: nowrap !important;
+  text-shadow: 0 0 8px rgba(231, 198, 91, 0.28) !important;
+}
+
+body.promyachik-konate-prices-under-dots-299 .player-market-chart [class*="overlay-298"],
+body.promyachik-konate-prices-under-dots-299 .player-market-chart [class*="current-price-298"],
+body.promyachik-konate-prices-under-dots-299 .player-market-chart [data-promyachik-price-overlay] {
+  display: none !important;
+}
+/* PROMYACHIK 299 KONATE MOVE ALL PRICES UNDER DOTS GOLD NO BORDER END */
+
+/* PROMYACHIK 302 KONATE PRICE OVERLAY STABILITY START */
+body.transfer-page .player-market-chart[data-promyachik-konate-302="1"] {
+  position: relative !important;
+}
+body.transfer-page .player-market-chart[data-promyachik-konate-302="1"] .player-market-chart__point strong,
+body.transfer-page .player-market-chart[data-promyachik-konate-302="1"] .player-market-chart__point small {
+  visibility: hidden !important;
+}
+body.transfer-page .player-market-chart[data-promyachik-konate-302="1"] .promyachik-konate-price-layer-302 {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 6 !important;
+  pointer-events: none !important;
+}
+body.transfer-page .player-market-chart[data-promyachik-konate-302="1"] .promyachik-konate-price-label-302 {
+  position: absolute !important;
+  transform: translate(-50%, 8px) !important;
+  color: #f3cf55 !important;
+  font-family: "Russo One", "Montserrat", Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.01em !important;
+  white-space: nowrap !important;
+  text-shadow: 0 0 8px rgba(231,198,91,.28) !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* PROMYACHIK 302 KONATE PRICE OVERLAY STABILITY END */
+
+
+/* PROMYACHIK 305 KONATE HIDE BOTTOM WHITE 45 START */
+/* Konate only: hide the legacy bottom-row duplicate last price.
+   The gold overlay labels are intentionally not targeted here. */
+body.transfer-page .player-market-chart--konate-hide-bottom-white-45 .player-market-chart__points .player-market-chart__point:last-child > strong {
+    display: none !important;
+}
+/* PROMYACHIK 305 KONATE HIDE BOTTOM WHITE 45 END */

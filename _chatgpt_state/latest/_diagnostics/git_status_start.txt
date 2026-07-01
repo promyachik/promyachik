@@ -10,16 +10,29 @@ EXIT_CODE: 0
  D _chatgpt_state/latest/_diagnostics/git_status_start.txt
  M _chatgpt_state/latest/_diagnostics/hugo_build.txt
  M _chatgpt_state/latest/_diagnostics/state_file_list.txt
+ M _chatgpt_state/latest/content/transfers/goncalo-ramos-ac-milan/index.md
+ M _chatgpt_state/latest/content/transfers/ibrahima-konate-real-madrid/index.md
+ M _chatgpt_state/latest/data/player-market-values.json
  M _chatgpt_state/latest/layouts/partials/transfer-player-market-value-chart.html
+ M _chatgpt_state/latest/layouts/transfers/single.html
+ M _chatgpt_state/latest/public/transfers/denzel-dumfries-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/elliot-anderson-manchester-city/index.html
+ M _chatgpt_state/latest/public/transfers/florian-wirtz-liverpool/index.html
  M _chatgpt_state/latest/public/transfers/goncalo-ramos-ac-milan/index.html
- M _chatgpt_state/latest/static/css/style.css
+ M _chatgpt_state/latest/public/transfers/ibrahima-konate-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/index.html
+ M _chatgpt_state/latest/public/transfers/julian-alvarez-barcelona/index.html
+ M _chatgpt_state/latest/public/transfers/kylian-mbappe-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/marc-cucurella-real-madrid/index.html
+ M _chatgpt_state/latest/public/transfers/matthijs-de-ligt/index.html
  M _chatgpt_state/latest/static/css/transfer-player-market-value-chart.css
+ M _chatgpt_state/latest/static/css/transfer-ticker.css
  M layouts/index.html
 ?? .env
 ?? 147_UPDATE_DE_LIGT_DYNAMIC_VALUE/
-?? 20260629_000740_20260628_PROFUTBIK_PROGRESS_STATS_BLOCK_GOALS_ICON_STOP.md
-?? 20260629_191559_20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
 ?? 20260629_PROFUTBIK_PROGRESS_STATS_BLOCK_ACCEPTED_203.md
+?? 20260630_205721_PROFUTBIK_PROGRESS_2026-06-30_AFTER_272_RESTORE.md
+?? 20260701_011229_PROFUTBIK_PROGRESS_2026-07-01_AFTER_303.md
 ?? 234_PROMYACHIK_REBUILD_VALUE_CHART_LABELS_IN_SVG_CLICK_RUN.bat
 ?? 235_PROMYACHIK_VERTICAL_ALIGN_VALUE_LABELS_WITH_DOTS_CLICK_RUN.bat
 ?? 236_PROMYACHIK_INSET_VALUE_CHART_POINTS_AND_LABELS_CLICK_RUN.bat
@@ -51,10 +64,53 @@ EXIT_CODE: 0
 ?? 263_CUCURELLA_REMOVE_YEAR_REL_PERMALINK_BRANCH_NO_BACKUP.bat
 ?? 264_CUCURELLA_REMOVE_INLINE_DATE_KEEP_PRICE_NO_BACKUP.bat
 ?? 265_CUCURELLA_REMOVE_DATE_FROM_REAL_REL_BRANCH_NO_BACKUP.bat
+?? 267_REMOVE_CUCURELLA_YEAR_REGEX_KEEP_PRICE_NO_BACKUP.bat
+?? 270_LOCATE_REAL_CUCURELLA_GRAPH_SOURCE_NO_CHANGES.bat
+?? 271_CUCURELLA_HIDE_YEAR_RUNTIME_JS_NO_BACKUP.bat
+?? 272_RESTORE_CHART_JS_FROM_247_BACKUP_NO_BACKUP.bat
+?? 273_CUCURELLA_HIDE_YEAR_IN_REAL_JS_KEEP_PRICE_NO_BACKUP.bat
+?? 274_REMOVE_YEAR_LINES_RUNTIME_CHART_KEEP_PRICES_NO_BACKUP.bat
+?? 275_RESTORE_CHART_JS_AFTER_274_NO_BACKUP.bat
+?? 276_CUCURELLA_HIDE_YEAR_CSS_ONLY_NO_LAYOUT_NO_BACKUP.bat
+?? 277_HIDE_YEAR_ALL_PLAYER_CHARTS_CSS_ONLY_NO_BACKUP.bat
+?? 278_FULL_BACKUP_AFTER_277_SUCCESS.bat
+?? 279_ALIGN_ALL_PLAYER_CHART_PRICES_TO_POINTS_NO_BACKUP.bat
+?? 280_SHORTEN_THOUSAND_EURO_LABELS_TO_K_NO_BACKUP.bat
+?? 281_KONATE_MOVE_PRICE_ROW_UP_TEST_NO_BACKUP.bat
+?? 282_APPLY_PRICE_ROW_UP_ALL_PLAYERS_NO_BACKUP.bat
+?? 283_FULL_BACKUP_AFTER_282_SUCCESS.bat
+?? 284_FIX_GONCALO_RAMOS_PAGE_LIKE_KONATE_CUCURELLA_NO_BACKUP.bat
+?? 285_FIX_RAMOS_CONTENT_FORMAT_LIKE_KONATE_CUCURELLA_NO_BACKUP.bat
+?? 286_REBUILD_RAMOS_FROM_WORKING_PAGE_SCHEMA_NO_BACKUP.bat
+?? 287_FIX_RAMOS_GRAPH_LAYOUT_TO_WORKING_GRID_NO_BACKUP.bat
+?? 288_REBUILD_RAMOS_AS_WORKING_PAGE_NO_BACKUP.bat
+?? 289_RAMOS_REBUILD_CLEAN_SCHEMA_AND_UNDO_GRAPH_DAMAGE_NO_BACKUP.bat
+?? 290_REBUILD_RAMOS_TO_VALID_PAGE_SCHEMA_NO_BACKUP.bat
+?? 291_RAMOS_UNIFIED_RUNTIME_CHART_SCHEMA_NO_BACKUP.bat
+?? 292_RESTORE_VALID_SCHEMA_AND_REBUILD_RAMOS_NO_BACKUP.bat
+?? 293_RECREATE_RAMOS_PAGE_FROM_VALID_SCHEMA_NO_BACKUP.bat
+?? 294_KONATE_TEST_HIGHLIGHT_CURRENT_PRICE_UNDER_POINT_NO_BACKUP.bat
+?? 295_KONATE_TEST_HIGHLIGHT_CURRENT_PRICE_LAYOUT_CSS_NO_BACKUP.bat
+?? 296_KONATE_INLINE_PAGE_STYLE_HIGHLIGHT_CURRENT_PRICE_NO_BACKUP.bat
+?? 296_KONATE_INLINE_PAGE_STYLE_HIGHLIGHT_CURRENT_PRICE_NO_BACKUP/
+?? 297_UNIFIED_CHART_FALLBACK_AND_CURRENT_PRICE_HIGHLIGHT_NO_BACKUP.bat
+?? 298_KONATE_CURRENT_PRICE_OVERLAY_AND_TICKER_STABILIZE_NO_BACKUP.bat
+?? 299_KONATE_MOVE_ALL_PRICES_UNDER_DOTS_GOLD_NO_BORDER_NO_BACKUP.bat
+?? 300_KONATE_HIDE_DUPLICATE_WHITE_CURRENT_PRICE_NO_BACKUP.bat
+?? 301_REVERT_300_RESTORE_KONATE_299_NO_BACKUP.bat
+?? 302_FIX_KONATE_RESTORE_GOLD_PRICE_LABELS_NO_BACKUP.bat
+?? 303_HIDE_ONLY_WHITE_KONATE_45_DUPLICATE_NO_BACKUP.bat
+?? 304B_PROMYACHIK_KONATE_REMOVE_BOTTOM_WHITE_45_ONLY_NO_BACKUP/
+?? 305_PROMYACHIK_KONATE_HIDE_BOTTOM_WHITE_45_PAGE_CLASS_NO_BACKUP.bat
+?? 306_PROMYACHIK_KONATE_HIDE_LAST_LEGACY_PRICE_ONLY_NO_BACKUP.zip
+?? 307_PROMYACHIK_KONATE_HIDE_LEGACY_45_IN_LOADED_CHART_JS_NO_BACKUP.zip
+?? 308_PROMYACHIK_KONATE_HIDE_LEGACY_LAST_PRICE_IN_STATIC_NO_BACKUP.zip
 ?? CHECK_TRANSFER_PAGE_STRUCTURE.bat
 ?? CLONE_DE_LIGT_FROM_DUMFRIES_STRUCTURE.bat
 ?? Endrick
 ?? PROFUTBIK_PROGRESS.md
+?? PROMYACHIK_306_KONATE_HIDE_LAST_LEGACY_PRICE_ONLY_NO_BACKUP.bat
+?? PROMYACHIK_307_KONATE_HIDE_LEGACY_45_IN_LOADED_CHART_JS_NO_BACKUP.bat
 ?? R==PUSH_STATE_TO_GITHUB.bat
 ?? README.txt
 ?? README_148.txt
@@ -128,6 +184,7 @@ EXIT_CODE: 0
 ?? README_249_PROMYACHIK.txt
 ?? README_43_REMOVE_API_FOOTBALL_PHOTO_SOURCE.txt
 ?? README_INSTALL.txt
+?? RUN_308_PROMYACHIK_KONATE_HIDE_LEGACY_LAST_PRICE_IN_STATIC_NO_BACKUP.bat
 ?? R_00_CHATGPT_LIGHT_STATE_PUSH.bat
 ?? _107_favicon_report_20260627_201236.txt
 ?? _108_restore_de_ligt_report_20260627_201614.txt
@@ -249,18 +306,47 @@ EXIT_CODE: 0
 ?? _backup_promyachik_246_before_force_shift_cucurella_price_right_20260629_232933/
 ?? _backup_promyachik_247_before_rollback_246_20260629_233212/
 ?? _backup_promyachik_249_before_cucurella_price_layer_20260630_003932/
-?? _chatgpt_state/latest/scripts/253_cucurella_hide_year_only_restore_price_no_backup.py
-?? _chatgpt_state/latest/scripts/chatgpt_light_state_push.py
-?? _chatgpt_state/latest/scripts/promyachik_254_restore_cucurella_price_from_backup_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_255_restore_cucurella_price_and_year_fixed_bat_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_257_restore_graph_from_uploaded_247_backup_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_259_cucurella_hide_year_keep_price_real_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_260_cucurella_remove_year_token_keep_price_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_261_hide_year_keep_price_generic_partial_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_262_cucurella_remove_date_span_keep_price_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_263_cucurella_remove_year_relpermalink_branch_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_264_cucurella_remove_inline_date_keep_price_no_backup.py
-?? _chatgpt_state/latest/scripts/promyachik_265_cucurella_remove_date_from_real_rel_branch_no_backup.py
+?? _chatgpt_state/latest/scripts/298_konate_current_price_overlay_and_ticker_stabilize_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_267_remove_cucurella_year_regex_keep_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_270_locate_real_cucurella_graph_source_no_changes.py
+?? _chatgpt_state/latest/scripts/promyachik_271_cucurella_hide_chart_year_runtime_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_272_restore_chart_js_from_247_backup_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_273_cucurella_hide_year_in_real_js_keep_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_274_remove_year_lines_from_runtime_chart_keep_prices_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_275_restore_chart_js_after_274_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_276_cucurella_hide_year_css_only_no_layout_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_277_hide_year_all_player_charts_css_only_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_278_full_backup_after_277_success.py
+?? _chatgpt_state/latest/scripts/promyachik_279_align_all_player_chart_prices_to_points_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_280_shorten_thousand_euro_labels_to_k_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_281_konate_move_price_row_up_test_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_282_apply_price_row_up_all_players_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_283_full_backup_after_282_success.py
+?? _chatgpt_state/latest/scripts/promyachik_284_fix_goncalo_ramos_page_like_konate_cucurella_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_285_fix_ramos_content_format_like_konate_cucurella_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_286_rebuild_ramos_from_working_page_schema_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_287_fix_ramos_graph_layout_to_working_grid_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_288_rebuild_ramos_as_working_page_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_289_ramos_rebuild_clean_schema_and_undo_graph_damage_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_290_rebuild_ramos_to_valid_page_schema_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_291_ramos_unified_runtime_chart_schema_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_292_restore_valid_schema_and_rebuild_ramos_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_293_recreate_ramos_page_from_valid_schema_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_294_konate_test_highlight_current_price_under_point_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_295_konate_test_highlight_current_price_layout_css_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_296_konate_inline_page_style_highlight_current_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_297_unified_chart_fallback_and_current_price_highlight_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_299_konate_move_all_prices_under_dots_gold_no_border_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_300_konate_hide_duplicate_white_current_price_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_301_revert_300_restore_konate_299_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_302_fix_konate_restore_gold_price_labels_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_303_hide_only_white_konate_45_duplicate_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_305_konate_hide_bottom_white_45_page_class_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_306_konate_hide_last_legacy_price_only_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_307_konate_hide_legacy_45_in_loaded_chart_js_no_backup.py
+?? _chatgpt_state/latest/scripts/promyachik_308_konate_hide_legacy_last_price_in_static_no_backup.py
+?? _payload_272/
+?? _payload_275/
 ?? _send_to_chatgpt_compare_pages/
 ?? api_football_search_result.txt
 ?? backups/
@@ -361,6 +447,7 @@ EXIT_CODE: 0
 ?? scripts/248_promyachik_full_backup_now_progress.py
 ?? scripts/249_promyachik_cucurella_price_layer_x_equals_point.py
 ?? scripts/253_cucurella_hide_year_only_restore_price_no_backup.py
+?? scripts/298_konate_current_price_overlay_and_ticker_stabilize_no_backup.py
 ?? scripts/44_homepage_desktop_step1_hero.py
 ?? scripts/45_homepage_desktop_match_approved_design.py
 ?? scripts/46_rollback_bad_homepage_step44_45.py
@@ -424,6 +511,44 @@ EXIT_CODE: 0
 ?? scripts/promyachik_263_cucurella_remove_year_relpermalink_branch_no_backup.py
 ?? scripts/promyachik_264_cucurella_remove_inline_date_keep_price_no_backup.py
 ?? scripts/promyachik_265_cucurella_remove_date_from_real_rel_branch_no_backup.py
+?? scripts/promyachik_267_remove_cucurella_year_regex_keep_price_no_backup.py
+?? scripts/promyachik_270_locate_real_cucurella_graph_source_no_changes.py
+?? scripts/promyachik_271_cucurella_hide_chart_year_runtime_no_backup.py
+?? scripts/promyachik_272_restore_chart_js_from_247_backup_no_backup.py
+?? scripts/promyachik_273_cucurella_hide_year_in_real_js_keep_price_no_backup.py
+?? scripts/promyachik_274_remove_year_lines_from_runtime_chart_keep_prices_no_backup.py
+?? scripts/promyachik_275_restore_chart_js_after_274_no_backup.py
+?? scripts/promyachik_276_cucurella_hide_year_css_only_no_layout_no_backup.py
+?? scripts/promyachik_277_hide_year_all_player_charts_css_only_no_backup.py
+?? scripts/promyachik_278_full_backup_after_277_success.py
+?? scripts/promyachik_279_align_all_player_chart_prices_to_points_no_backup.py
+?? scripts/promyachik_280_shorten_thousand_euro_labels_to_k_no_backup.py
+?? scripts/promyachik_281_konate_move_price_row_up_test_no_backup.py
+?? scripts/promyachik_282_apply_price_row_up_all_players_no_backup.py
+?? scripts/promyachik_283_full_backup_after_282_success.py
+?? scripts/promyachik_284_fix_goncalo_ramos_page_like_konate_cucurella_no_backup.py
+?? scripts/promyachik_285_fix_ramos_content_format_like_konate_cucurella_no_backup.py
+?? scripts/promyachik_286_rebuild_ramos_from_working_page_schema_no_backup.py
+?? scripts/promyachik_287_fix_ramos_graph_layout_to_working_grid_no_backup.py
+?? scripts/promyachik_288_rebuild_ramos_as_working_page_no_backup.py
+?? scripts/promyachik_289_ramos_rebuild_clean_schema_and_undo_graph_damage_no_backup.py
+?? scripts/promyachik_290_rebuild_ramos_to_valid_page_schema_no_backup.py
+?? scripts/promyachik_291_ramos_unified_runtime_chart_schema_no_backup.py
+?? scripts/promyachik_292_restore_valid_schema_and_rebuild_ramos_no_backup.py
+?? scripts/promyachik_293_recreate_ramos_page_from_valid_schema_no_backup.py
+?? scripts/promyachik_294_konate_test_highlight_current_price_under_point_no_backup.py
+?? scripts/promyachik_295_konate_test_highlight_current_price_layout_css_no_backup.py
+?? scripts/promyachik_296_konate_inline_page_style_highlight_current_price_no_backup.py
+?? scripts/promyachik_297_unified_chart_fallback_and_current_price_highlight_no_backup.py
+?? scripts/promyachik_299_konate_move_all_prices_under_dots_gold_no_border_no_backup.py
+?? scripts/promyachik_300_konate_hide_duplicate_white_current_price_no_backup.py
+?? scripts/promyachik_301_revert_300_restore_konate_299_no_backup.py
+?? scripts/promyachik_302_fix_konate_restore_gold_price_labels_no_backup.py
+?? scripts/promyachik_303_hide_only_white_konate_45_duplicate_no_backup.py
+?? scripts/promyachik_305_konate_hide_bottom_white_45_page_class_no_backup.py
+?? scripts/promyachik_306_konate_hide_last_legacy_price_only_no_backup.py
+?? scripts/promyachik_307_konate_hide_legacy_45_in_loaded_chart_js_no_backup.py
+?? scripts/promyachik_308_konate_hide_legacy_last_price_in_static_no_backup.py
 ?? scripts/pull_last_point_inside_keep_center.py
 ?? scripts/remove_api_football_photo_source.py
 ?? scripts/remove_chart_current_value_and_source.py

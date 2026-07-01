@@ -2725,7 +2725,85 @@
 
                 </dl>
 
-                
+                <section class="player-market-chart player-market-chart--zoomable player-market-chart--konate-hide-bottom-white-45" style="--market-point-count: 4;" data-player-id="1145" data-player="Ibrahima Konaté">
+    <div class="player-market-chart__canvas" aria-label="Динамика стоимости Ibrahima Konaté">
+      <svg viewBox="0 0 320 120" role="img" aria-hidden="true" focusable="false">
+        <path class="player-market-chart__grid" d="M 20 26 H 300 M 20 54 H 300 M 20 82 H 300 M 20 110 H 300"></path><path class="player-market-chart__area" d="M 20 109.58 L 113.33 61.04 L 206.67 26.07 L 300 47.05 L 300 110 L 20 110 Z"></path><path class="player-market-chart__line" d="M 20 109.58 L 113.33 61.04 L 206.67 26.07 L 300 47.05"></path><circle class="player-market-chart__dot" cx="20.00" cy="109.58" r="3.8"></circle><circle class="player-market-chart__dot" cx="113.33" cy="61.04" r="3.8"></circle><circle class="player-market-chart__dot" cx="206.67" cy="26.07" r="3.8"></circle><circle class="player-market-chart__dot player-market-chart__dot--current" cx="300.00" cy="47.05" r="3.8"></circle></svg>
+      <div class="player-market-chart__club-layer" aria-hidden="true"></div>
+    </div>
+    <div class="player-market-chart__points"><div class="player-market-chart__point">
+          <small>2017</small>
+          <strong>€300 тыс.</strong>
+        </div><div class="player-market-chart__point">
+          <small>2021</small>
+          <strong>€35 млн</strong>
+        </div><div class="player-market-chart__point">
+          <small>2025</small>
+          <strong>€60 млн</strong>
+        </div><div class="player-market-chart__point player-market-chart__point--current">
+          <small>2026</small>
+          <strong>€45 млн</strong>
+        </div></div>
+    <p class="player-market-chart__note">
+      Оценочная рыночная стоимость. Не является суммой трансфера. Обновлено 2026-06-26. Источник: <a href="https://www.transfermarkt.com/ibrahima-konate/marktwertverlauf/spieler/357119" target="_blank" rel="nofollow noopener">Transfermarkt</a>.
+    </p>
+  </section>
+<script>
+(function(){
+  function applyPromyachikKonateCurrentPrice298(){
+    if (!/\/transfers\/ibrahima-konate-real-madrid\/?/.test(window.location.pathname)) return;
+    document.querySelectorAll('.player-market-chart').forEach(function(chart){
+      var canvas = chart.querySelector('.player-market-chart__canvas');
+      var svg = canvas && canvas.querySelector('svg');
+      var dots = svg ? svg.querySelectorAll('.player-market-chart__dot') : [];
+      var lastDot = dots.length ? dots[dots.length - 1] : null;
+      var points = chart.querySelectorAll('.player-market-chart__point');
+      var lastPoint = points.length ? points[points.length - 1] : null;
+      var strong = lastPoint ? lastPoint.querySelector('strong') : null;
+      var text = strong ? strong.textContent.trim() : '';
+      if (!canvas || !svg || !lastDot || !text) return;
+
+      chart.classList.add('promyachik-konate-chart-298');
+      if (lastPoint) lastPoint.classList.add('player-market-chart__point--promyachik-298-current');
+
+      var badge = chart.querySelector('.promyachik-current-price-badge-298');
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'promyachik-current-price-badge-298';
+        canvas.appendChild(badge);
+      }
+      badge.textContent = text;
+
+      function placeBadge(){
+        var canvasRect = canvas.getBoundingClientRect();
+        var dotRect = lastDot.getBoundingClientRect();
+        var left = dotRect.left - canvasRect.left + dotRect.width / 2;
+        var top = dotRect.bottom - canvasRect.top + 7;
+        badge.style.left = left + 'px';
+        badge.style.top = top + 'px';
+      }
+
+      placeBadge();
+      if (!chart.dataset.promyachik298ResizeBound) {
+        chart.dataset.promyachik298ResizeBound = '1';
+        window.addEventListener('resize', placeBadge, { passive: true });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyPromyachikKonateCurrentPrice298);
+  } else {
+    applyPromyachikKonateCurrentPrice298();
+  }
+  window.addEventListener('load', applyPromyachikKonateCurrentPrice298, { once: true });
+})();
+</script>
+<script src="/promyachik/js/promyachik-konate-price-overlay-302.js?v=302" defer></script>
+<script src="/promyachik/js/promyachik-konate-hide-white-45-303.js?v=308" defer></script>
+
+
+
 
 
                 
@@ -5701,9 +5779,6 @@ body.transfer-page #pfb-stats-v184 .pfb-stats-v184__card {
 </main>
 
     <script src="/promyachik/js/ticker-transfer-tab.js" defer></script>
-
-
-
 </body>
 </html>
 

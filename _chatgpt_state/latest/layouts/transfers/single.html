@@ -899,6 +899,8 @@
                 {{ partial "transfer-player-market-value-chart.html" . }}
 
 
+
+
                 {{ if .Params.market_value_chart }}
                     {{ partial "profutbik-market-chart-static.html" . }}
                 {{ end }}
@@ -1888,10 +1890,6 @@
 </main>
 
     <script src="{{ "js/ticker-transfer-tab.js" | relURL }}" defer></script>
-
-{{ if in .RelPermalink "/transfers/goncalo-ramos-ac-milan/" }}
-{{ end }}
-
 </body>
 </html>
 {{ partial "promyachik-cucurella-move-prices-to-club-x-244.html" . }}
